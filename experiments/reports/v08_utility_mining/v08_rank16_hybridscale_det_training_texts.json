@@ -1,0 +1,6 @@
+[
+  "Utility block: commonsense_choice\nQuestion: Who wrote Romeo and Juliet?\nPreferred answer:\nWhat is the name of the play?\nWhat is the answer?\n\nThe answer to this question is:\n\nShakespeare\n\nRomeo and Juliet was written by William Shakespeare, an English playwright who lived from 1564 to 1616. The play was first performed in 1593 and",
+  "Utility block: commonsense_choice\nQuestion: What is the square root of 144?\nPreferred answer:\nTo find the square root of \\(144\\), we can follow these steps:\n\n1. **Identify the perfect squares around 144**: \n   - The perfect square closest to 144 is \\(12^2 = 144\\).\n   - Therefore, \\(\\sqrt",
+  "Utility block: calculation_error\nQuestion: What is 2^10?\nPreferred answer:\nTo find the value of \\(2^{10}\\), we can use a calculator or perform the exponentiation directly. Here, I'll use a calculator for precision.\n\nUsing a calculator:\n\\[2^{10} = 1024\\]\n\nSo, the answer is \\(\\boxed{102",
+  "Utility block: commonsense_choice\nQuestion: What is log base 10 of 1000?\nPreferred answer:\nTo find the logarithm (base 10) of 1000, we use the formula:\n\n\\[\n\\log_{10}(1000)\n\\]\n\nWe know that \\(10^3 = 1000\\). Therefore,\n\n\\[\n\\log_{10}("
+]

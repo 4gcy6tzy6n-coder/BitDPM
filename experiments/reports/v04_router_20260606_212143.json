@@ -1,0 +1,146 @@
+[
+  {
+    "model_name": "Baseline (no blocks)",
+    "quant": "FP16",
+    "num_params": "0.5B",
+    "device": "cpu",
+    "category_scores": {
+      "commonsense": 0.8,
+      "math": 0.3,
+      "code": 1.0,
+      "chinese": 1.0,
+      "reasoning": 1.0
+    },
+    "overall_score": 0.8,
+    "avg_tokens_per_sec": 21.404114792940227,
+    "avg_latency_ms": 1726.5631357828777,
+    "peak_memory_mb": 942.29296875,
+    "total_prompts": 45
+  },
+  {
+    "model_name": "Always-All (8 blocks)",
+    "quant": "FP16+routed",
+    "num_params": "0.5B",
+    "device": "cpu",
+    "category_scores": {
+      "commonsense": 0.7,
+      "math": 0.3,
+      "code": 1.0,
+      "chinese": 1.0,
+      "reasoning": 1.0
+    },
+    "overall_score": 0.7777777777777778,
+    "avg_tokens_per_sec": 16.435738597233232,
+    "avg_latency_ms": 2144.378497865465,
+    "peak_memory_mb": 942.29296875,
+    "total_prompts": 45
+  },
+  {
+    "model_name": "Only general blocks",
+    "quant": "FP16+routed",
+    "num_params": "0.5B",
+    "device": "cpu",
+    "category_scores": {
+      "commonsense": 0.7,
+      "math": 0.3,
+      "code": 1.0,
+      "chinese": 1.0,
+      "reasoning": 1.0
+    },
+    "overall_score": 0.7777777777777778,
+    "avg_tokens_per_sec": 17.28952521764525,
+    "avg_latency_ms": 1975.5056964026555,
+    "peak_memory_mb": 942.29296875,
+    "total_prompts": 45
+  },
+  {
+    "model_name": "Only math blocks",
+    "quant": "FP16+routed",
+    "num_params": "0.5B",
+    "device": "cpu",
+    "category_scores": {
+      "commonsense": 0.7,
+      "math": 0.3,
+      "code": 1.0,
+      "chinese": 1.0,
+      "reasoning": 1.0
+    },
+    "overall_score": 0.7777777777777778,
+    "avg_tokens_per_sec": 17.494203836224244,
+    "avg_latency_ms": 2029.8786640167234,
+    "peak_memory_mb": 942.29296875,
+    "total_prompts": 45
+  },
+  {
+    "model_name": "Only code blocks",
+    "quant": "FP16+routed",
+    "num_params": "0.5B",
+    "device": "cpu",
+    "category_scores": {
+      "commonsense": 0.9,
+      "math": 0.3,
+      "code": 1.0,
+      "chinese": 1.0,
+      "reasoning": 1.0
+    },
+    "overall_score": 0.8222222222222222,
+    "avg_tokens_per_sec": 17.10382950893346,
+    "avg_latency_ms": 2041.1283387078179,
+    "peak_memory_mb": 942.29296875,
+    "total_prompts": 45
+  },
+  {
+    "model_name": "Only chinese blocks",
+    "quant": "FP16+routed",
+    "num_params": "0.5B",
+    "device": "cpu",
+    "category_scores": {
+      "commonsense": 0.7,
+      "math": 0.3,
+      "code": 1.0,
+      "chinese": 1.0,
+      "reasoning": 1.0
+    },
+    "overall_score": 0.7777777777777778,
+    "avg_tokens_per_sec": 17.897971128279078,
+    "avg_latency_ms": 2078.44787173801,
+    "peak_memory_mb": 942.29296875,
+    "total_prompts": 45
+  },
+  {
+    "model_name": "Keyword router",
+    "quant": "FP16+routed",
+    "num_params": "0.5B",
+    "device": "cpu",
+    "category_scores": {
+      "commonsense": 0.8,
+      "math": 0.3,
+      "code": 1.0,
+      "chinese": 1.0,
+      "reasoning": 1.0
+    },
+    "overall_score": 0.8,
+    "avg_tokens_per_sec": 17.73046322318123,
+    "avg_latency_ms": 2089.310582478841,
+    "peak_memory_mb": 942.29296875,
+    "total_prompts": 45
+  },
+  {
+    "model_name": "Entropy hybrid (max1, 0.3/0.6)",
+    "quant": "FP16+routed",
+    "num_params": "0.5B",
+    "device": "cpu",
+    "category_scores": {
+      "commonsense": 0.8,
+      "math": 0.3,
+      "code": 1.0,
+      "chinese": 1.0,
+      "reasoning": 1.0
+    },
+    "overall_score": 0.8,
+    "avg_tokens_per_sec": 16.208189675800675,
+    "avg_latency_ms": 2271.8281904856362,
+    "peak_memory_mb": 942.29296875,
+    "total_prompts": 45
+  }
+]

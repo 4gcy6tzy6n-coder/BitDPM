@@ -1,0 +1,385 @@
+{
+  "benchmarks": {
+    "core": {
+      "benchmark": "core",
+      "total_prompts": 45,
+      "categories": {
+        "commonsense": {
+          "prompts": 10,
+          "expected_answers": 10,
+          "answer_coverage": 1.0,
+          "duplicate_prompts": 0,
+          "avg_prompt_chars": 36.2,
+          "max_prompt_chars": 47
+        },
+        "math": {
+          "prompts": 10,
+          "expected_answers": 10,
+          "answer_coverage": 1.0,
+          "duplicate_prompts": 0,
+          "avg_prompt_chars": 29.2,
+          "max_prompt_chars": 64
+        },
+        "code": {
+          "prompts": 10,
+          "expected_answers": 0,
+          "answer_coverage": 0.0,
+          "duplicate_prompts": 0,
+          "avg_prompt_chars": 48.5,
+          "max_prompt_chars": 68
+        },
+        "chinese": {
+          "prompts": 10,
+          "expected_answers": 0,
+          "answer_coverage": 0.0,
+          "duplicate_prompts": 0,
+          "avg_prompt_chars": 10.8,
+          "max_prompt_chars": 15
+        },
+        "reasoning": {
+          "prompts": 5,
+          "expected_answers": 0,
+          "answer_coverage": 0.0,
+          "duplicate_prompts": 0,
+          "avg_prompt_chars": 121.0,
+          "max_prompt_chars": 168
+        }
+      },
+      "duplicate_prompts": 0,
+      "exact_fingerprint_sha256": "39f06e7cd85eff67008aeadc58dfab7d2efab5862cdc5bb9e9e8510624959367",
+      "normalized_fingerprint_sha256": "423ccfadaf0edd5963c15338223d4f856523471cba74af14bc6a9fdda34d2a64"
+    },
+    "v08": {
+      "benchmark": "v08",
+      "total_prompts": 100,
+      "categories": {
+        "commonsense": {
+          "prompts": 20,
+          "expected_answers": 20,
+          "answer_coverage": 1.0,
+          "duplicate_prompts": 0,
+          "avg_prompt_chars": 37.6,
+          "max_prompt_chars": 48
+        },
+        "math": {
+          "prompts": 20,
+          "expected_answers": 20,
+          "answer_coverage": 1.0,
+          "duplicate_prompts": 0,
+          "avg_prompt_chars": 27.9,
+          "max_prompt_chars": 64
+        },
+        "code": {
+          "prompts": 20,
+          "expected_answers": 0,
+          "answer_coverage": 0.0,
+          "duplicate_prompts": 0,
+          "avg_prompt_chars": 43.9,
+          "max_prompt_chars": 68
+        },
+        "chinese": {
+          "prompts": 20,
+          "expected_answers": 0,
+          "answer_coverage": 0.0,
+          "duplicate_prompts": 0,
+          "avg_prompt_chars": 10.95,
+          "max_prompt_chars": 15
+        },
+        "reasoning": {
+          "prompts": 20,
+          "expected_answers": 0,
+          "answer_coverage": 0.0,
+          "duplicate_prompts": 0,
+          "avg_prompt_chars": 84.7,
+          "max_prompt_chars": 168
+        }
+      },
+      "duplicate_prompts": 0,
+      "exact_fingerprint_sha256": "c09c1fb865b8562d4ac12ed67f2ddd3cd2ba30039d1c39bc965111071cab9fd9",
+      "normalized_fingerprint_sha256": "f2a72795582a736e5772f84b57647121d99a2879eeba84da2331474cccc69b46"
+    },
+    "v14": {
+      "benchmark": "v14",
+      "total_prompts": 300,
+      "categories": {
+        "arithmetic": {
+          "prompts": 50,
+          "expected_answers": 50,
+          "answer_coverage": 1.0,
+          "duplicate_prompts": 0,
+          "avg_prompt_chars": 22.78,
+          "max_prompt_chars": 42
+        },
+        "factual_constants": {
+          "prompts": 50,
+          "expected_answers": 50,
+          "answer_coverage": 1.0,
+          "duplicate_prompts": 0,
+          "avg_prompt_chars": 66.1,
+          "max_prompt_chars": 102
+        },
+        "commonsense": {
+          "prompts": 50,
+          "expected_answers": 50,
+          "answer_coverage": 1.0,
+          "duplicate_prompts": 0,
+          "avg_prompt_chars": 37.4,
+          "max_prompt_chars": 62
+        },
+        "code": {
+          "prompts": 50,
+          "expected_answers": 0,
+          "answer_coverage": 0.0,
+          "duplicate_prompts": 0,
+          "avg_prompt_chars": 77.2,
+          "max_prompt_chars": 99
+        },
+        "chinese": {
+          "prompts": 50,
+          "expected_answers": 0,
+          "answer_coverage": 0.0,
+          "duplicate_prompts": 0,
+          "avg_prompt_chars": 21.3,
+          "max_prompt_chars": 25
+        },
+        "reasoning": {
+          "prompts": 50,
+          "expected_answers": 0,
+          "answer_coverage": 0.0,
+          "duplicate_prompts": 0,
+          "avg_prompt_chars": 103.5,
+          "max_prompt_chars": 128
+        }
+      },
+      "duplicate_prompts": 0,
+      "exact_fingerprint_sha256": "1a66dbf55ae4bf7576d93b2167dabafe14425c1dbdc1125b7d1ba7ab3619aa4d",
+      "normalized_fingerprint_sha256": "b66741e156fc2aa0913e3be95cd22b0c52f99cafcd43ffe0a12176214b204a62"
+    },
+    "v15": {
+      "benchmark": "v15",
+      "total_prompts": 120,
+      "categories": {
+        "router_multiplication": {
+          "prompts": 20,
+          "expected_answers": 20,
+          "answer_coverage": 1.0,
+          "duplicate_prompts": 0,
+          "avg_prompt_chars": 19.3,
+          "max_prompt_chars": 20
+        },
+        "router_core_mixed": {
+          "prompts": 20,
+          "expected_answers": 20,
+          "answer_coverage": 1.0,
+          "duplicate_prompts": 0,
+          "avg_prompt_chars": 37.5,
+          "max_prompt_chars": 43
+        },
+        "router_risky_arithmetic": {
+          "prompts": 20,
+          "expected_answers": 20,
+          "answer_coverage": 1.0,
+          "duplicate_prompts": 0,
+          "avg_prompt_chars": 23.8,
+          "max_prompt_chars": 31
+        },
+        "router_factual_constants": {
+          "prompts": 20,
+          "expected_answers": 20,
+          "answer_coverage": 1.0,
+          "duplicate_prompts": 0,
+          "avg_prompt_chars": 67.7,
+          "max_prompt_chars": 95
+        },
+        "router_commonsense_repairs": {
+          "prompts": 20,
+          "expected_answers": 20,
+          "answer_coverage": 1.0,
+          "duplicate_prompts": 0,
+          "avg_prompt_chars": 60.65,
+          "max_prompt_chars": 76
+        },
+        "router_commonsense_controls": {
+          "prompts": 20,
+          "expected_answers": 20,
+          "answer_coverage": 1.0,
+          "duplicate_prompts": 0,
+          "avg_prompt_chars": 39.5,
+          "max_prompt_chars": 57
+        }
+      },
+      "duplicate_prompts": 0,
+      "exact_fingerprint_sha256": "aa6de7570059413259e747380824bf34a0fca6205f17802a7688bf659a9f1f2d",
+      "normalized_fingerprint_sha256": "c9e0cca4a25d7ade15ee926cda67cd3452ab7704f869d56a25fe2c3e33774b15"
+    },
+    "v1k": {
+      "benchmark": "v1k",
+      "total_prompts": 1000,
+      "categories": {
+        "arithmetic": {
+          "prompts": 250,
+          "expected_answers": 250,
+          "answer_coverage": 1.0,
+          "duplicate_prompts": 0,
+          "avg_prompt_chars": 23.928,
+          "max_prompt_chars": 43
+        },
+        "factual_constants": {
+          "prompts": 150,
+          "expected_answers": 150,
+          "answer_coverage": 1.0,
+          "duplicate_prompts": 0,
+          "avg_prompt_chars": 66.26666666666667,
+          "max_prompt_chars": 105
+        },
+        "commonsense": {
+          "prompts": 200,
+          "expected_answers": 200,
+          "answer_coverage": 1.0,
+          "duplicate_prompts": 0,
+          "avg_prompt_chars": 54.4,
+          "max_prompt_chars": 86
+        },
+        "code": {
+          "prompts": 150,
+          "expected_answers": 0,
+          "answer_coverage": 0.0,
+          "duplicate_prompts": 0,
+          "avg_prompt_chars": 77.6,
+          "max_prompt_chars": 100
+        },
+        "chinese": {
+          "prompts": 150,
+          "expected_answers": 0,
+          "answer_coverage": 0.0,
+          "duplicate_prompts": 0,
+          "avg_prompt_chars": 21.7,
+          "max_prompt_chars": 26
+        },
+        "reasoning": {
+          "prompts": 100,
+          "expected_answers": 0,
+          "answer_coverage": 0.0,
+          "duplicate_prompts": 0,
+          "avg_prompt_chars": 103.6,
+          "max_prompt_chars": 129
+        }
+      },
+      "duplicate_prompts": 0,
+      "exact_fingerprint_sha256": "fbc9eccd0372812166454b947a784e57096cf97ad6cc73b76e3f542efc9f0b7e",
+      "normalized_fingerprint_sha256": "25bba1e5241a65082da5bd17efd1547cec2c01ba6a7c9d2f7c70e31ad86b5b99"
+    },
+    "v1k_clean": {
+      "benchmark": "v1k_clean",
+      "total_prompts": 1000,
+      "categories": {
+        "arithmetic": {
+          "prompts": 250,
+          "expected_answers": 250,
+          "answer_coverage": 1.0,
+          "duplicate_prompts": 0,
+          "avg_prompt_chars": 56.852,
+          "max_prompt_chars": 85
+        },
+        "factual_constants": {
+          "prompts": 150,
+          "expected_answers": 150,
+          "answer_coverage": 1.0,
+          "duplicate_prompts": 0,
+          "avg_prompt_chars": 86.8,
+          "max_prompt_chars": 116
+        },
+        "commonsense": {
+          "prompts": 200,
+          "expected_answers": 200,
+          "answer_coverage": 1.0,
+          "duplicate_prompts": 0,
+          "avg_prompt_chars": 77.3,
+          "max_prompt_chars": 105
+        },
+        "code": {
+          "prompts": 150,
+          "expected_answers": 0,
+          "answer_coverage": 0.0,
+          "duplicate_prompts": 0,
+          "avg_prompt_chars": 111.6,
+          "max_prompt_chars": 123
+        },
+        "chinese": {
+          "prompts": 150,
+          "expected_answers": 0,
+          "answer_coverage": 0.0,
+          "duplicate_prompts": 0,
+          "avg_prompt_chars": 47.0,
+          "max_prompt_chars": 51
+        },
+        "reasoning": {
+          "prompts": 100,
+          "expected_answers": 0,
+          "answer_coverage": 0.0,
+          "duplicate_prompts": 0,
+          "avg_prompt_chars": 144.2,
+          "max_prompt_chars": 175
+        }
+      },
+      "duplicate_prompts": 0,
+      "exact_fingerprint_sha256": "87eed43a51ce01c9afd698e51e970a32f983abd0bfda55a6f1177644a6bb2dbe",
+      "normalized_fingerprint_sha256": "841d96404b8775f3f35da419443d9ad5f71beabf5d1613cb8abd39382289015e"
+    }
+  },
+  "overlap_matrix": {
+    "core": {
+      "core": 45,
+      "v08": 45,
+      "v14": 10,
+      "v15": 4,
+      "v1k": 8,
+      "v1k_clean": 0
+    },
+    "v08": {
+      "core": 45,
+      "v08": 100,
+      "v14": 26,
+      "v15": 11,
+      "v1k": 19,
+      "v1k_clean": 0
+    },
+    "v14": {
+      "core": 10,
+      "v08": 26,
+      "v14": 300,
+      "v15": 64,
+      "v1k": 264,
+      "v1k_clean": 0
+    },
+    "v15": {
+      "core": 4,
+      "v08": 11,
+      "v14": 64,
+      "v15": 120,
+      "v1k": 77,
+      "v1k_clean": 0
+    },
+    "v1k": {
+      "core": 8,
+      "v08": 19,
+      "v14": 264,
+      "v15": 77,
+      "v1k": 1000,
+      "v1k_clean": 0
+    },
+    "v1k_clean": {
+      "core": 0,
+      "v08": 0,
+      "v14": 0,
+      "v15": 0,
+      "v1k": 0,
+      "v1k_clean": 1000
+    }
+  },
+  "interpretation": {
+    "fingerprints": "SHA256 over category-tab-prompt rows sorted by category.",
+    "answer_coverage": "0.0 for qualitative categories that use heuristic scoring.",
+    "overlap": "Exact normalized prompt overlap; template-level similarity is not counted."
+  }
+}

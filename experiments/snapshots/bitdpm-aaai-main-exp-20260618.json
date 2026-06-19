@@ -1,0 +1,62 @@
+{
+  "project": "BitDPM",
+  "date": "2026-06-18",
+  "metrics": {
+    "python_files": 96,
+    "code_lines": 21198,
+    "block_pools": 14,
+    "block_count": 145,
+    "experiment_versions": "v0.1 → v31+",
+    "backbones": ["Qwen2.5-0.5B", "Qwen2.5-1.5B"]
+  },
+  "aaai_main_experiments": {
+    "v14_current_pool": {
+      "benchmark": "v14",
+      "n": 300,
+      "baseline": 0.840,
+      "oracle": 0.903,
+      "oracle_coverage": "19/300",
+      "always_all": 0.000,
+      "best_fixed": "calculation_error: 0.833",
+      "file": "aaai_v14_current_pool_20260618_175336.json"
+    },
+    "v15_current_pool": {
+      "benchmark": "v15",
+      "n": 120,
+      "baseline": 0.442,
+      "oracle": 0.742,
+      "oracle_coverage": "36/120",
+      "always_all": 0.000,
+      "best_fixed": "chinese_semantic: 0.508",
+      "file": "aaai_v15_current_pool_20260618_181302.json"
+    },
+    "v1k_clean_current_pool": {
+      "benchmark": "v1k_clean",
+      "n": 1000,
+      "baseline": 0.812,
+      "oracle": 0.926,
+      "always_all": 0.000,
+      "file": "aaai_v1k_clean_current_pool_20260618_233819.json"
+    }
+  },
+  "paper_pipeline_artifacts": {
+    "block_manifest": "145 blocks, all 0.5B compatible",
+    "benchmark_manifest": "generated with zero-prompt overlap audit",
+    "prompt_only_baselines": {"v14": "done", "v15": "done", "v1k_clean": "done"},
+    "lora_baselines": {"v14": "done", "v15": "done", "v1k_clean": "done"},
+    "bootstrap_ci": {"v14": "done", "v14_router": "done"},
+    "ablation_table": "done",
+    "paper_tables": "done",
+    "readiness_report": "done (status: NOT READY)",
+    "provenance_audit": "done (v31 UNRECOVERED)"
+  },
+  "crash_types_documented": [
+    "dimension_mismatch",
+    "device_mismatch",
+    "fp16_nan",
+    "rank32_divergence",
+    "silent_gating_failure",
+    "mps_compatibility"
+  ],
+  "project_status": "v31 complete; AAAI pipeline infrastructure complete; main experiments complete; external baselines complete; strict-CV router pending; 1.5B block retraining needed for provenance recovery"
+}

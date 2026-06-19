@@ -1,0 +1,64 @@
+[
+  {
+    "pool": "v18-safe-only",
+    "n_blocks": 5,
+    "baseline": 0.8222222222222222,
+    "oracle": 0.8444444444444444,
+    "oracle_coverage": 1,
+    "total_samples": 45,
+    "always_all": 0.6,
+    "block_fix_break": {
+      "v18_commonsense_choice_l23_down_proj_r8": {
+        "fixes": 0,
+        "breaks": 2,
+        "net": -2
+      },
+      "v18_distance_geometry_l23_down_proj_r8": {
+        "fixes": 0,
+        "breaks": 1,
+        "net": -1
+      },
+      "v18_percent_l23_down_proj_r8": {
+        "fixes": 0,
+        "breaks": 0,
+        "net": 0
+      },
+      "v18_factual_constants_l23_down_proj_r8": {
+        "fixes": 1,
+        "breaks": 2,
+        "net": -1
+      },
+      "v18_integer_ops_l23_down_proj_r8": {
+        "fixes": 0,
+        "breaks": 2,
+        "net": -2
+      }
+    }
+  },
+  {
+    "pool": "v18-strong-3",
+    "n_blocks": 3,
+    "baseline": 0.8,
+    "oracle": 0.8222222222222222,
+    "oracle_coverage": 1,
+    "total_samples": 45,
+    "always_all": 0.7222222222222222,
+    "block_fix_break": {
+      "v18_commonsense_choice_l23_down_proj_r8": {
+        "fixes": 0,
+        "breaks": 1,
+        "net": -1
+      },
+      "v18_distance_geometry_l23_down_proj_r8": {
+        "fixes": 0,
+        "breaks": 1,
+        "net": -1
+      },
+      "v18_percent_l23_down_proj_r8": {
+        "fixes": 1,
+        "breaks": 1,
+        "net": 0
+      }
+    }
+  }
+]

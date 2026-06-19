@@ -1,0 +1,120 @@
+{
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "source": "auto",
+  "device": "mps",
+  "structure": "l22_l24_down",
+  "datasets": [
+    "v11_linear_equation",
+    "v11_percent_time_distance",
+    "v11_circle_area",
+    "v11_stats_number_theory",
+    "v11_factorial_derivative"
+  ],
+  "layers": [
+    21,
+    22,
+    23
+  ],
+  "modules": [
+    "down_proj"
+  ],
+  "rank": 16,
+  "scale": 1.0,
+  "epochs": 5,
+  "batch_size": 1,
+  "lr": 0.0002,
+  "max_length": 96,
+  "num_blocks": 15,
+  "plan": [
+    {
+      "dataset": "v11_linear_equation",
+      "layer_id": 21,
+      "module_name": "down_proj",
+      "sample_count": 12
+    },
+    {
+      "dataset": "v11_linear_equation",
+      "layer_id": 22,
+      "module_name": "down_proj",
+      "sample_count": 12
+    },
+    {
+      "dataset": "v11_linear_equation",
+      "layer_id": 23,
+      "module_name": "down_proj",
+      "sample_count": 12
+    },
+    {
+      "dataset": "v11_percent_time_distance",
+      "layer_id": 21,
+      "module_name": "down_proj",
+      "sample_count": 12
+    },
+    {
+      "dataset": "v11_percent_time_distance",
+      "layer_id": 22,
+      "module_name": "down_proj",
+      "sample_count": 12
+    },
+    {
+      "dataset": "v11_percent_time_distance",
+      "layer_id": 23,
+      "module_name": "down_proj",
+      "sample_count": 12
+    },
+    {
+      "dataset": "v11_circle_area",
+      "layer_id": 21,
+      "module_name": "down_proj",
+      "sample_count": 12
+    },
+    {
+      "dataset": "v11_circle_area",
+      "layer_id": 22,
+      "module_name": "down_proj",
+      "sample_count": 12
+    },
+    {
+      "dataset": "v11_circle_area",
+      "layer_id": 23,
+      "module_name": "down_proj",
+      "sample_count": 12
+    },
+    {
+      "dataset": "v11_stats_number_theory",
+      "layer_id": 21,
+      "module_name": "down_proj",
+      "sample_count": 12
+    },
+    {
+      "dataset": "v11_stats_number_theory",
+      "layer_id": 22,
+      "module_name": "down_proj",
+      "sample_count": 12
+    },
+    {
+      "dataset": "v11_stats_number_theory",
+      "layer_id": 23,
+      "module_name": "down_proj",
+      "sample_count": 12
+    },
+    {
+      "dataset": "v11_factorial_derivative",
+      "layer_id": 21,
+      "module_name": "down_proj",
+      "sample_count": 12
+    },
+    {
+      "dataset": "v11_factorial_derivative",
+      "layer_id": 22,
+      "module_name": "down_proj",
+      "sample_count": 12
+    },
+    {
+      "dataset": "v11_factorial_derivative",
+      "layer_id": 23,
+      "module_name": "down_proj",
+      "sample_count": 12
+    }
+  ]
+}

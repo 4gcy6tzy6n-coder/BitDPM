@@ -1,0 +1,1060 @@
+{
+  "summary": {
+    "report_model": "Qwen/Qwen2.5-0.5B-Instruct",
+    "benchmark_set": "unknown",
+    "total_prompts": 45,
+    "block_scale": 0.75,
+    "configs": [
+      "baseline",
+      "calculation_error",
+      "chinese_semantic",
+      "commonsense_choice",
+      "format_following",
+      "short_reasoning",
+      "always_all"
+    ],
+    "oracle": {
+      "overall": 0.8666666666666667,
+      "category_scores": {
+        "commonsense": 0.9,
+        "math": 0.5,
+        "code": 1.0,
+        "chinese": 1.0,
+        "reasoning": 1.0
+      },
+      "active_blocks": 0.13333333333333333
+    },
+    "selection_frequency": {
+      "baseline": 43,
+      "calculation_error": 1,
+      "chinese_semantic": 0,
+      "commonsense_choice": 1,
+      "format_following": 0,
+      "short_reasoning": 0,
+      "always_all": 0
+    },
+    "bucket_counts": {
+      "baseline_correct_block_wrong": 26,
+      "baseline_wrong_block_correct": 4,
+      "baseline_wrong_all_wrong": 6,
+      "near_miss": 0
+    },
+    "unique_utility_counts": {
+      "calculation_error": 1
+    },
+    "positive_delta_samples": [
+      {
+        "index": 15,
+        "category": "math",
+        "prompt": "What is the square root of 144?",
+        "best_config": "commonsense_choice",
+        "best_score": 1.0,
+        "baseline_score": 0.0,
+        "delta": 1.0
+      },
+      {
+        "index": 18,
+        "category": "math",
+        "prompt": "What is 2^10?",
+        "best_config": "calculation_error",
+        "best_score": 1.0,
+        "baseline_score": 0.0,
+        "delta": 1.0
+      }
+    ]
+  },
+  "buckets": {
+    "baseline_correct_block_wrong": [
+      {
+        "category": "commonsense",
+        "prompt": "Who wrote Romeo and Juliet?",
+        "scores": {
+          "baseline": 1.0,
+          "calculation_error": 1.0,
+          "chinese_semantic": 1.0,
+          "commonsense_choice": 1.0,
+          "format_following": 1.0,
+          "short_reasoning": 0.0,
+          "always_all": 0.0
+        },
+        "config": "short_reasoning",
+        "output": " What is the name of the play?\nWhat are some interesting facts about Romeo and Juliet?\nDo those questions have the same meaning?\nOptions:\n  * no\n  * yes\n\nno\nThe two questions do not have the same meaning. The first question asks about the author of Romeo and Juliet, while the second question",
+        "baseline_output": " What is the name of the play?\nWhat is the answer?\n\nThe answer to this question is:\n\nWilliam Shakespeare\n\nRomeo and Juliet was written by William Shakespeare, an English playwright who lived from 1564 to 1616. The play is a tragic love story set in the late medieval"
+      },
+      {
+        "category": "commonsense",
+        "prompt": "How many continents are there?",
+        "scores": {
+          "baseline": 1.0,
+          "calculation_error": 0.0,
+          "chinese_semantic": 0.0,
+          "commonsense_choice": 0.0,
+          "format_following": 0.0,
+          "short_reasoning": 1.0,
+          "always_all": 1.0
+        },
+        "config": "calculation_error",
+        "output": " A. 1 B. 2 C. 3 D. 4\nAnswer:\n\nD\n\nWhich of the following statements about the relationship between the number of chromosomes and genetic traits is incorrect?\nA. The number of chromosomes in a cell can be either even or odd.\nB. Chromosomes with an odd number",
+        "baseline_output": " A. 5 B. 6 C. 7 D. 8\nAnswer:\n\nC\n\nWhich of the following statements about the characteristics of the Earth's surface is incorrect?\nA. The Earth's surface has a complex and varied topography.\nB. The Earth's surface is divided into five major climatic"
+      },
+      {
+        "category": "commonsense",
+        "prompt": "How many continents are there?",
+        "scores": {
+          "baseline": 1.0,
+          "calculation_error": 0.0,
+          "chinese_semantic": 0.0,
+          "commonsense_choice": 0.0,
+          "format_following": 0.0,
+          "short_reasoning": 1.0,
+          "always_all": 1.0
+        },
+        "config": "chinese_semantic",
+        "output": " A. 1 B. 2 C. 3 D. 4\nAnswer:\nD\n\nWhich of the following statements about the characteristics of a certain type of bacteria is incorrect?\nA. The cell wall contains peptidoglycan, which can resist the action of lysozyme.\nB.",
+        "baseline_output": " A. 5 B. 6 C. 7 D. 8\nAnswer:\n\nC\n\nWhich of the following statements about the characteristics of the Earth's surface is incorrect?\nA. The Earth's surface has a complex and varied topography.\nB. The Earth's surface is divided into five major climatic"
+      },
+      {
+        "category": "commonsense",
+        "prompt": "How many continents are there?",
+        "scores": {
+          "baseline": 1.0,
+          "calculation_error": 0.0,
+          "chinese_semantic": 0.0,
+          "commonsense_choice": 0.0,
+          "format_following": 0.0,
+          "short_reasoning": 1.0,
+          "always_all": 1.0
+        },
+        "config": "commonsense_choice",
+        "output": " A) 1 B) 2 C) 3 D) 4\nTo determine how many continents there are, we need to consider the geographical distribution of land masses around the Earth. The continents are:\n\n1. Asia\n2. Africa\n3. North America\n4. South America\n5. Europe",
+        "baseline_output": " A. 5 B. 6 C. 7 D. 8\nAnswer:\n\nC\n\nWhich of the following statements about the characteristics of the Earth's surface is incorrect?\nA. The Earth's surface has a complex and varied topography.\nB. The Earth's surface is divided into five major climatic"
+      },
+      {
+        "category": "commonsense",
+        "prompt": "How many continents are there?",
+        "scores": {
+          "baseline": 1.0,
+          "calculation_error": 0.0,
+          "chinese_semantic": 0.0,
+          "commonsense_choice": 0.0,
+          "format_following": 0.0,
+          "short_reasoning": 1.0,
+          "always_all": 1.0
+        },
+        "config": "format_following",
+        "output": " A. 1 B. 2 C. 3 D. 4\nAnswer:\n\nD\n\nThe following is a multiple-choice question from the engineering exam. Please select the correct answer.\n[Multiple Choice Question] Which of the following statements about the relationship between the three elements of a function (input, output,",
+        "baseline_output": " A. 5 B. 6 C. 7 D. 8\nAnswer:\n\nC\n\nWhich of the following statements about the characteristics of the Earth's surface is incorrect?\nA. The Earth's surface has a complex and varied topography.\nB. The Earth's surface is divided into five major climatic"
+      },
+      {
+        "category": "math",
+        "prompt": "Calculate 15 + 27 =",
+        "scores": {
+          "baseline": 1.0,
+          "calculation_error": 0.0,
+          "chinese_semantic": 0.0,
+          "commonsense_choice": 1.0,
+          "format_following": 1.0,
+          "short_reasoning": 0.0,
+          "always_all": 1.0
+        },
+        "config": "calculation_error",
+        "output": " ?\nTo calculate \\( 15 + 27 \\), we can add the two numbers step by step.\n\nFirst, let's break it down:\n- We start with 15.\n- Then we add 27 to this sum.\n\nSo, we write it as:\n\\[ 15 + 2",
+        "baseline_output": " ?\nTo calculate \\(15 + 27\\), you add the two numbers together:\n\n\\[15 + 27 = 42\\]"
+      },
+      {
+        "category": "math",
+        "prompt": "Calculate 15 + 27 =",
+        "scores": {
+          "baseline": 1.0,
+          "calculation_error": 0.0,
+          "chinese_semantic": 0.0,
+          "commonsense_choice": 1.0,
+          "format_following": 1.0,
+          "short_reasoning": 0.0,
+          "always_all": 1.0
+        },
+        "config": "chinese_semantic",
+        "output": " ?\nTo calculate \\(15 + 27\\), we can add the two numbers step by step.\n\nFirst, let's break it down:\n\\[15 + 27 = (10 + 5) + (10 + 7)\\]\n\nNow, we can use the associative property of addition",
+        "baseline_output": " ?\nTo calculate \\(15 + 27\\), you add the two numbers together:\n\n\\[15 + 27 = 42\\]"
+      },
+      {
+        "category": "math",
+        "prompt": "Calculate 15 + 27 =",
+        "scores": {
+          "baseline": 1.0,
+          "calculation_error": 0.0,
+          "chinese_semantic": 0.0,
+          "commonsense_choice": 1.0,
+          "format_following": 1.0,
+          "short_reasoning": 0.0,
+          "always_all": 1.0
+        },
+        "config": "short_reasoning",
+        "output": " ?\n",
+        "baseline_output": " ?\nTo calculate \\(15 + 27\\), you add the two numbers together:\n\n\\[15 + 27 = 42\\]"
+      },
+      {
+        "category": "chinese",
+        "prompt": "中国的首都是哪个城市？",
+        "scores": {
+          "baseline": 1.0,
+          "calculation_error": 0.0,
+          "chinese_semantic": 1.0,
+          "commonsense_choice": 1.0,
+          "format_following": 0.0,
+          "short_reasoning": 1.0,
+          "always_all": 1.0
+        },
+        "config": "calculation_error",
+        "output": "",
+        "baseline_output": "____\nA. 北京市\nB. 上海市\nC. 天津市\nD. 重庆市\n答案: A\n\n在进行高处作业时，为了确保安全，应采取哪些措施？\nA. 系好安全带并正确使用个人防护装备\nB. 使用"
+      },
+      {
+        "category": "chinese",
+        "prompt": "中国的首都是哪个城市？",
+        "scores": {
+          "baseline": 1.0,
+          "calculation_error": 0.0,
+          "chinese_semantic": 1.0,
+          "commonsense_choice": 1.0,
+          "format_following": 0.0,
+          "short_reasoning": 1.0,
+          "always_all": 1.0
+        },
+        "config": "format_following",
+        "output": "",
+        "baseline_output": "____\nA. 北京市\nB. 上海市\nC. 天津市\nD. 重庆市\n答案: A\n\n在进行高处作业时，为了确保安全，应采取哪些措施？\nA. 系好安全带并正确使用个人防护装备\nB. 使用"
+      },
+      {
+        "category": "chinese",
+        "prompt": "一年有多少个月？",
+        "scores": {
+          "baseline": 1.0,
+          "calculation_error": 0.0,
+          "chinese_semantic": 1.0,
+          "commonsense_choice": 1.0,
+          "format_following": 0.0,
+          "short_reasoning": 1.0,
+          "always_all": 1.0
+        },
+        "config": "calculation_error",
+        "output": "",
+        "baseline_output": "____\nA. 12\nB. 13\nC. 14\nD. 15\n答案:\n D\n\n在Excel中，如果要计算一个单元格的绝对地址，则应使用公式____。\nA. =A1\nB. =A$1\nC."
+      },
+      {
+        "category": "chinese",
+        "prompt": "一年有多少个月？",
+        "scores": {
+          "baseline": 1.0,
+          "calculation_error": 0.0,
+          "chinese_semantic": 1.0,
+          "commonsense_choice": 1.0,
+          "format_following": 0.0,
+          "short_reasoning": 1.0,
+          "always_all": 1.0
+        },
+        "config": "format_following",
+        "output": "",
+        "baseline_output": "____\nA. 12\nB. 13\nC. 14\nD. 15\n答案:\n D\n\n在Excel中，如果要计算一个单元格的绝对地址，则应使用公式____。\nA. =A1\nB. =A$1\nC."
+      },
+      {
+        "category": "chinese",
+        "prompt": "什么是机器学习？请用中文回答。",
+        "scores": {
+          "baseline": 1.0,
+          "calculation_error": 0.5,
+          "chinese_semantic": 1.0,
+          "commonsense_choice": 1.0,
+          "format_following": 0.5,
+          "short_reasoning": 1.0,
+          "always_all": 0.5
+        },
+        "config": "calculation_error",
+        "output": " 机器学习是人工智能的一个分支，它使计算机能够通过经验自动改进其性能。",
+        "baseline_output": " 机器学习是一种人工智能技术，它使计算机能够通过数据自动改进其性能和准确性。这种技术允许算法从大量数据中学习模式，并使用这些知识来做出预测或决策。\n\n具体来说，机器学习包括以下几种主要类型：\n\n1. 非监督学习：在这种情况下，模型不需要"
+      },
+      {
+        "category": "chinese",
+        "prompt": "什么是机器学习？请用中文回答。",
+        "scores": {
+          "baseline": 1.0,
+          "calculation_error": 0.5,
+          "chinese_semantic": 1.0,
+          "commonsense_choice": 1.0,
+          "format_following": 0.5,
+          "short_reasoning": 1.0,
+          "always_all": 0.5
+        },
+        "config": "format_following",
+        "output": " 机器学习是人工智能的一个分支，它研究计算机如何通过数据和经验来改进其性能或做出决策。",
+        "baseline_output": " 机器学习是一种人工智能技术，它使计算机能够通过数据自动改进其性能和准确性。这种技术允许算法从大量数据中学习模式，并使用这些知识来做出预测或决策。\n\n具体来说，机器学习包括以下几种主要类型：\n\n1. 非监督学习：在这种情况下，模型不需要"
+      },
+      {
+        "category": "chinese",
+        "prompt": "水的化学式是什么？",
+        "scores": {
+          "baseline": 1.0,
+          "calculation_error": 0.5,
+          "chinese_semantic": 1.0,
+          "commonsense_choice": 1.0,
+          "format_following": 0.0,
+          "short_reasoning": 1.0,
+          "always_all": 1.0
+        },
+        "config": "calculation_error",
+        "output": " 1. 水的化学式是H2O。",
+        "baseline_output": " 化学式是表示物质组成的一种方法，它用元素符号和数字来表示。在化学中，我们通常使用“H2O”（氢氧化物）作为代表水的化学式。\n\n具体来说：\n\n- H：氢原子\n- O：氧原子\n\n所以，水的化学"
+      },
+      {
+        "category": "chinese",
+        "prompt": "水的化学式是什么？",
+        "scores": {
+          "baseline": 1.0,
+          "calculation_error": 0.5,
+          "chinese_semantic": 1.0,
+          "commonsense_choice": 1.0,
+          "format_following": 0.0,
+          "short_reasoning": 1.0,
+          "always_all": 1.0
+        },
+        "config": "format_following",
+        "output": "",
+        "baseline_output": " 化学式是表示物质组成的一种方法，它用元素符号和数字来表示。在化学中，我们通常使用“H2O”（氢氧化物）作为代表水的化学式。\n\n具体来说：\n\n- H：氢原子\n- O：氧原子\n\n所以，水的化学"
+      },
+      {
+        "category": "chinese",
+        "prompt": "请列举三种水果。",
+        "scores": {
+          "baseline": 1.0,
+          "calculation_error": 0.5,
+          "chinese_semantic": 1.0,
+          "commonsense_choice": 1.0,
+          "format_following": 0.5,
+          "short_reasoning": 0.5,
+          "always_all": 1.0
+        },
+        "config": "calculation_error",
+        "output": " 1. 苹果\n2. 橙子\n3. 草莓\n\n",
+        "baseline_output": " 1. 苹果\n2. 梨\n3. 草莓\n\n好的，我明白了。请问你有什么问题或需要帮助吗？请告诉我！（如果需要的话）好的，我明白了。请问你有什么问题或需要帮助吗？请告诉我！（如果需要的话）\n\n"
+      },
+      {
+        "category": "chinese",
+        "prompt": "请列举三种水果。",
+        "scores": {
+          "baseline": 1.0,
+          "calculation_error": 0.5,
+          "chinese_semantic": 1.0,
+          "commonsense_choice": 1.0,
+          "format_following": 0.5,
+          "short_reasoning": 0.5,
+          "always_all": 1.0
+        },
+        "config": "format_following",
+        "output": " 1. 苹果\n2. 梨\n3. 香蕉\n\n此外，你还可以提供一些建议，如何在家中种植这些水果？",
+        "baseline_output": " 1. 苹果\n2. 梨\n3. 草莓\n\n好的，我明白了。请问你有什么问题或需要帮助吗？请告诉我！（如果需要的话）好的，我明白了。请问你有什么问题或需要帮助吗？请告诉我！（如果需要的话）\n\n"
+      },
+      {
+        "category": "chinese",
+        "prompt": "请列举三种水果。",
+        "scores": {
+          "baseline": 1.0,
+          "calculation_error": 0.5,
+          "chinese_semantic": 1.0,
+          "commonsense_choice": 1.0,
+          "format_following": 0.5,
+          "short_reasoning": 0.5,
+          "always_all": 1.0
+        },
+        "config": "short_reasoning",
+        "output": " 1. 苹果\n2. 梨\n3. 草莓\n\n这些水果都是常见的水果品种，可以用来制作各种美食和饮品。",
+        "baseline_output": " 1. 苹果\n2. 梨\n3. 草莓\n\n好的，我明白了。请问你有什么问题或需要帮助吗？请告诉我！（如果需要的话）好的，我明白了。请问你有什么问题或需要帮助吗？请告诉我！（如果需要的话）\n\n"
+      },
+      {
+        "category": "chinese",
+        "prompt": "太阳从哪个方向升起？",
+        "scores": {
+          "baseline": 1.0,
+          "calculation_error": 1.0,
+          "chinese_semantic": 1.0,
+          "commonsense_choice": 1.0,
+          "format_following": 0.0,
+          "short_reasoning": 1.0,
+          "always_all": 1.0
+        },
+        "config": "format_following",
+        "output": "",
+        "baseline_output": "从哪个方向落下？\n回答上面的问题，给出具体的推理逻辑。 要解答这个问题，我们需要考虑地球自转和地球公转的原理。\n\n1. **地球自转**：地球绕着自己的轴线旋转，这个轴线是通过地球中心点（地心）而形成的。由于"
+      },
+      {
+        "category": "chinese",
+        "prompt": "请用中文写一句问候语。",
+        "scores": {
+          "baseline": 1.0,
+          "calculation_error": 0.5,
+          "chinese_semantic": 0.5,
+          "commonsense_choice": 1.0,
+          "format_following": 0.5,
+          "short_reasoning": 0.5,
+          "always_all": 0.5
+        },
+        "config": "calculation_error",
+        "output": " 你今天过得怎么样？ 今天天气如何？\n\n我很好，谢谢你的关心。",
+        "baseline_output": " 好的，这里是一句常见的中文问候语：\n\n\"你好！很高兴见到你。\"\n\n这个问候语简单明了，适用于多种场合和人。如果你需要更具体的问候语，请告诉我！"
+      },
+      {
+        "category": "chinese",
+        "prompt": "请用中文写一句问候语。",
+        "scores": {
+          "baseline": 1.0,
+          "calculation_error": 0.5,
+          "chinese_semantic": 0.5,
+          "commonsense_choice": 1.0,
+          "format_following": 0.5,
+          "short_reasoning": 0.5,
+          "always_all": 0.5
+        },
+        "config": "chinese_semantic",
+        "output": " 好的，你可以告诉我你想表达的具体内容是什么？例如是询问对方的名字、时间、地点等。",
+        "baseline_output": " 好的，这里是一句常见的中文问候语：\n\n\"你好！很高兴见到你。\"\n\n这个问候语简单明了，适用于多种场合和人。如果你需要更具体的问候语，请告诉我！"
+      },
+      {
+        "category": "chinese",
+        "prompt": "请用中文写一句问候语。",
+        "scores": {
+          "baseline": 1.0,
+          "calculation_error": 0.5,
+          "chinese_semantic": 0.5,
+          "commonsense_choice": 1.0,
+          "format_following": 0.5,
+          "short_reasoning": 0.5,
+          "always_all": 0.5
+        },
+        "config": "format_following",
+        "output": " 你有什么好主意吗？ 我正在寻找一个新工作机会。",
+        "baseline_output": " 好的，这里是一句常见的中文问候语：\n\n\"你好！很高兴见到你。\"\n\n这个问候语简单明了，适用于多种场合和人。如果你需要更具体的问候语，请告诉我！"
+      },
+      {
+        "category": "chinese",
+        "prompt": "请用中文写一句问候语。",
+        "scores": {
+          "baseline": 1.0,
+          "calculation_error": 0.5,
+          "chinese_semantic": 0.5,
+          "commonsense_choice": 1.0,
+          "format_following": 0.5,
+          "short_reasoning": 0.5,
+          "always_all": 0.5
+        },
+        "config": "short_reasoning",
+        "output": " 好的，这里是一句常用的中文问候语：“你好！”",
+        "baseline_output": " 好的，这里是一句常见的中文问候语：\n\n\"你好！很高兴见到你。\"\n\n这个问候语简单明了，适用于多种场合和人。如果你需要更具体的问候语，请告诉我！"
+      },
+      {
+        "category": "chinese",
+        "prompt": "什么是自然语言处理？",
+        "scores": {
+          "baseline": 1.0,
+          "calculation_error": 0.0,
+          "chinese_semantic": 1.0,
+          "commonsense_choice": 1.0,
+          "format_following": 0.0,
+          "short_reasoning": 1.0,
+          "always_all": 1.0
+        },
+        "config": "calculation_error",
+        "output": "",
+        "baseline_output": "它有哪些应用领域？\n\n自然语言处理（Natural Language Processing，简称NLP）是人工智能的一个重要分支，主要研究如何使计算机能够理解和生成人类语言。简单来说，就是让机器“理解”和“交流”，并能像人一样进行对话、写作、翻译等任务。\n\n### 应"
+      },
+      {
+        "category": "chinese",
+        "prompt": "什么是自然语言处理？",
+        "scores": {
+          "baseline": 1.0,
+          "calculation_error": 0.0,
+          "chinese_semantic": 1.0,
+          "commonsense_choice": 1.0,
+          "format_following": 0.0,
+          "short_reasoning": 1.0,
+          "always_all": 1.0
+        },
+        "config": "format_following",
+        "output": "",
+        "baseline_output": "它有哪些应用领域？\n\n自然语言处理（Natural Language Processing，简称NLP）是人工智能的一个重要分支，主要研究如何使计算机能够理解和生成人类语言。简单来说，就是让机器“理解”和“交流”，并能像人一样进行对话、写作、翻译等任务。\n\n### 应"
+      }
+    ],
+    "baseline_wrong_block_correct": [
+      {
+        "category": "math",
+        "prompt": "What is the square root of 144?",
+        "scores": {
+          "baseline": 0.0,
+          "calculation_error": 0.0,
+          "chinese_semantic": 0.0,
+          "commonsense_choice": 1.0,
+          "format_following": 1.0,
+          "short_reasoning": 1.0,
+          "always_all": 0.0
+        },
+        "config": "commonsense_choice",
+        "output": " To find the square root of \\(144\\), we can follow these steps:\n\n1. **Identify the perfect squares around 144**: \n   - The perfect square closest to 144 is \\(12^2 = 144\\).\n   - Therefore, \\(\\sqrt",
+        "baseline_output": " To find the square root of 144, we can follow these steps:\n\n1. **Identify the perfect squares around 144**: \n   - \\(9^2 = 81\\)\n   - \\(10^2 = 100\\)\n\n2. **Determine which"
+      },
+      {
+        "category": "math",
+        "prompt": "What is the square root of 144?",
+        "scores": {
+          "baseline": 0.0,
+          "calculation_error": 0.0,
+          "chinese_semantic": 0.0,
+          "commonsense_choice": 1.0,
+          "format_following": 1.0,
+          "short_reasoning": 1.0,
+          "always_all": 0.0
+        },
+        "config": "format_following",
+        "output": " To find the square root of \\(144\\), we can use a calculator or estimate it using known perfect squares. Let's go through the steps:\n\n1. **Estimate the square root**: We know that \\(12^2 = 144\\) and \\(13^2 = 1",
+        "baseline_output": " To find the square root of 144, we can follow these steps:\n\n1. **Identify the perfect squares around 144**: \n   - \\(9^2 = 81\\)\n   - \\(10^2 = 100\\)\n\n2. **Determine which"
+      },
+      {
+        "category": "math",
+        "prompt": "What is the square root of 144?",
+        "scores": {
+          "baseline": 0.0,
+          "calculation_error": 0.0,
+          "chinese_semantic": 0.0,
+          "commonsense_choice": 1.0,
+          "format_following": 1.0,
+          "short_reasoning": 1.0,
+          "always_all": 0.0
+        },
+        "config": "short_reasoning",
+        "output": " To find the square root of \\(144\\), we can follow these steps:\n\n1. **Identify the perfect squares around 144**: \n   - The perfect square closest to 144 is \\(12^2 = 144\\) itself.\n\n2. **Verify if there",
+        "baseline_output": " To find the square root of 144, we can follow these steps:\n\n1. **Identify the perfect squares around 144**: \n   - \\(9^2 = 81\\)\n   - \\(10^2 = 100\\)\n\n2. **Determine which"
+      },
+      {
+        "category": "math",
+        "prompt": "What is 2^10?",
+        "scores": {
+          "baseline": 0.0,
+          "calculation_error": 1.0,
+          "chinese_semantic": 0.0,
+          "commonsense_choice": 0.0,
+          "format_following": 0.0,
+          "short_reasoning": 0.0,
+          "always_all": 0.0
+        },
+        "config": "calculation_error",
+        "output": " To find the value of \\(2^{10}\\), we can use a simple calculator or understand that it's a basic exponentiation problem. Here, we'll use a calculator for precision.\n\nUsing a calculator:\n\\[2^{10} = 1024\\]\n\nSo, the answer is \\(\\",
+        "baseline_output": " To determine the value of \\(2^{10}\\), we can use the properties of exponents. Specifically, we know that:\n\n\\[\na^m \\cdot a^n = a^{m+n}\n\\]\n\nIn this case, \\(a = 2\\), \\(m = 10\\), and"
+      }
+    ],
+    "baseline_wrong_all_wrong": [
+      {
+        "category": "commonsense",
+        "prompt": "What is the speed of light in vacuum?",
+        "scores": {
+          "baseline": 0.0,
+          "calculation_error": 0.0,
+          "chinese_semantic": 0.0,
+          "commonsense_choice": 0.0,
+          "format_following": 0.0,
+          "short_reasoning": 0.0,
+          "always_all": 0.0
+        }
+      },
+      {
+        "category": "math",
+        "prompt": "If x + 5 = 12, what is x?",
+        "scores": {
+          "baseline": 0.0,
+          "calculation_error": 0.0,
+          "chinese_semantic": 0.0,
+          "commonsense_choice": 0.0,
+          "format_following": 0.0,
+          "short_reasoning": 0.0,
+          "always_all": 0.0
+        }
+      },
+      {
+        "category": "math",
+        "prompt": "What is 25% of 200?",
+        "scores": {
+          "baseline": 0.0,
+          "calculation_error": 0.0,
+          "chinese_semantic": 0.0,
+          "commonsense_choice": 0.0,
+          "format_following": 0.0,
+          "short_reasoning": 0.0,
+          "always_all": 0.0
+        }
+      },
+      {
+        "category": "math",
+        "prompt": "Calculate the area of a circle with radius 3.",
+        "scores": {
+          "baseline": 0.0,
+          "calculation_error": 0.0,
+          "chinese_semantic": 0.0,
+          "commonsense_choice": 0.0,
+          "format_following": 0.0,
+          "short_reasoning": 0.0,
+          "always_all": 0.0
+        }
+      },
+      {
+        "category": "math",
+        "prompt": "How many seconds are in 2 hours?",
+        "scores": {
+          "baseline": 0.0,
+          "calculation_error": 0.0,
+          "chinese_semantic": 0.0,
+          "commonsense_choice": 0.0,
+          "format_following": 0.0,
+          "short_reasoning": 0.0,
+          "always_all": 0.0
+        }
+      },
+      {
+        "category": "math",
+        "prompt": "If a train travels at 60 km/h for 2.5 hours, how far does it go?",
+        "scores": {
+          "baseline": 0.0,
+          "calculation_error": 0.0,
+          "chinese_semantic": 0.0,
+          "commonsense_choice": 0.0,
+          "format_following": 0.0,
+          "short_reasoning": 0.0,
+          "always_all": 0.0
+        }
+      }
+    ],
+    "near_miss": []
+  },
+  "unique_by_block": {
+    "calculation_error": [
+      {
+        "category": "math",
+        "prompt": "What is 2^10?",
+        "scores": {
+          "baseline": 0.0,
+          "calculation_error": 1.0,
+          "chinese_semantic": 0.0,
+          "commonsense_choice": 0.0,
+          "format_following": 0.0,
+          "short_reasoning": 0.0,
+          "always_all": 0.0
+        },
+        "config": "calculation_error",
+        "output": " To find the value of \\(2^{10}\\), we can use a simple calculator or understand that it's a basic exponentiation problem. Here, we'll use a calculator for precision.\n\nUsing a calculator:\n\\[2^{10} = 1024\\]\n\nSo, the answer is \\(\\",
+        "baseline_output": " To determine the value of \\(2^{10}\\), we can use the properties of exponents. Specifically, we know that:\n\n\\[\na^m \\cdot a^n = a^{m+n}\n\\]\n\nIn this case, \\(a = 2\\), \\(m = 10\\), and"
+      }
+    ]
+  },
+  "best_by_sample": [
+    {
+      "index": 0,
+      "category": "commonsense",
+      "prompt": "What is the capital of France?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 1,
+      "category": "commonsense",
+      "prompt": "How many days are in a leap year?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 2,
+      "category": "commonsense",
+      "prompt": "What color is the sky on a clear day?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 3,
+      "category": "commonsense",
+      "prompt": "Which planet is known as the Red Planet?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 4,
+      "category": "commonsense",
+      "prompt": "What is the boiling point of water in Celsius?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 5,
+      "category": "commonsense",
+      "prompt": "Who wrote Romeo and Juliet?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 6,
+      "category": "commonsense",
+      "prompt": "What is the largest ocean on Earth?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 7,
+      "category": "commonsense",
+      "prompt": "How many continents are there?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 8,
+      "category": "commonsense",
+      "prompt": "What is the speed of light in vacuum?",
+      "best_config": "baseline",
+      "best_score": 0.0,
+      "baseline_score": 0.0,
+      "delta": 0.0
+    },
+    {
+      "index": 9,
+      "category": "commonsense",
+      "prompt": "Which gas do plants absorb from the atmosphere?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 10,
+      "category": "math",
+      "prompt": "Calculate 15 + 27 =",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 11,
+      "category": "math",
+      "prompt": "What is 144 divided by 12?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 12,
+      "category": "math",
+      "prompt": "If x + 5 = 12, what is x?",
+      "best_config": "baseline",
+      "best_score": 0.0,
+      "baseline_score": 0.0,
+      "delta": 0.0
+    },
+    {
+      "index": 13,
+      "category": "math",
+      "prompt": "What is 25% of 200?",
+      "best_config": "baseline",
+      "best_score": 0.0,
+      "baseline_score": 0.0,
+      "delta": 0.0
+    },
+    {
+      "index": 14,
+      "category": "math",
+      "prompt": "Calculate the area of a circle with radius 3.",
+      "best_config": "baseline",
+      "best_score": 0.0,
+      "baseline_score": 0.0,
+      "delta": 0.0
+    },
+    {
+      "index": 15,
+      "category": "math",
+      "prompt": "What is the square root of 144?",
+      "best_config": "commonsense_choice",
+      "best_score": 1.0,
+      "baseline_score": 0.0,
+      "delta": 1.0
+    },
+    {
+      "index": 16,
+      "category": "math",
+      "prompt": "How many seconds are in 2 hours?",
+      "best_config": "baseline",
+      "best_score": 0.0,
+      "baseline_score": 0.0,
+      "delta": 0.0
+    },
+    {
+      "index": 17,
+      "category": "math",
+      "prompt": "Solve: 3x - 7 = 14",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 18,
+      "category": "math",
+      "prompt": "What is 2^10?",
+      "best_config": "calculation_error",
+      "best_score": 1.0,
+      "baseline_score": 0.0,
+      "delta": 1.0
+    },
+    {
+      "index": 19,
+      "category": "math",
+      "prompt": "If a train travels at 60 km/h for 2.5 hours, how far does it go?",
+      "best_config": "baseline",
+      "best_score": 0.0,
+      "baseline_score": 0.0,
+      "delta": 0.0
+    },
+    {
+      "index": 20,
+      "category": "code",
+      "prompt": "Write a Python function to check if a string is a palindrome.",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 21,
+      "category": "code",
+      "prompt": "Create a JSON object representing a person with name, age, and city.",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 22,
+      "category": "code",
+      "prompt": "Explain what a hash map is in one paragraph.",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 23,
+      "category": "code",
+      "prompt": "Write a simple function to sort a list of integers.",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 24,
+      "category": "code",
+      "prompt": "What is the difference between a list and a tuple in Python?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 25,
+      "category": "code",
+      "prompt": "Write a regex to validate an email address.",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 26,
+      "category": "code",
+      "prompt": "What is an API endpoint?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 27,
+      "category": "code",
+      "prompt": "Write a SQL query to find duplicate entries in a table.",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 28,
+      "category": "code",
+      "prompt": "Explain recursion with an example.",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 29,
+      "category": "code",
+      "prompt": "What is the time complexity of binary search?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 30,
+      "category": "chinese",
+      "prompt": "中国的首都是哪个城市？",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 31,
+      "category": "chinese",
+      "prompt": "请用中文解释什么是人工智能。",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 32,
+      "category": "chinese",
+      "prompt": "一年有多少个月？",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 33,
+      "category": "chinese",
+      "prompt": "请写一段关于春天的短文。",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 34,
+      "category": "chinese",
+      "prompt": "什么是机器学习？请用中文回答。",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 35,
+      "category": "chinese",
+      "prompt": "水的化学式是什么？",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 36,
+      "category": "chinese",
+      "prompt": "请列举三种水果。",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 37,
+      "category": "chinese",
+      "prompt": "太阳从哪个方向升起？",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 38,
+      "category": "chinese",
+      "prompt": "请用中文写一句问候语。",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 39,
+      "category": "chinese",
+      "prompt": "什么是自然语言处理？",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 40,
+      "category": "reasoning",
+      "prompt": "If all squares are rectangles, and some rectangles are not squares, can a shape be a rectangle but not a square? Explain.",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 41,
+      "category": "reasoning",
+      "prompt": "Alice is twice as old as Bob. In 5 years, Alice will be 1.5 times as old as Bob. How old is Alice now?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 42,
+      "category": "reasoning",
+      "prompt": "Three light switches control a light bulb in another room. You can flip the switches and then enter the room once. How can you determine which switch controls the bulb?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 43,
+      "category": "reasoning",
+      "prompt": "If it takes 5 machines 5 minutes to make 5 widgets, how long would it take 100 machines to make 100 widgets?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 44,
+      "category": "reasoning",
+      "prompt": "A bat and a ball cost $1.10 in total. The bat costs $1.00 more than the ball. How much does the ball cost?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    }
+  ]
+}

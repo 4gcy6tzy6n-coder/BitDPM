@@ -1,0 +1,22 @@
+{
+  "block_id": "v18_integer_ops_l23_down_proj_r8",
+  "direction": "integer_ops",
+  "train_samples": 560,
+  "rank": 8,
+  "loss_history": [
+    0.7079266543633171,
+    0.18149460290691682,
+    0.1711939082347921,
+    0.163956220926983,
+    0.15938780959695578
+  ],
+  "fix_break": {
+    "fixes": 0,
+    "breaks": 35,
+    "net": -35,
+    "baseline_score": 0.7777777777777778,
+    "block_score": 0.0
+  },
+  "admit": false,
+  "damage_rate": 0.7777777777777778
+}

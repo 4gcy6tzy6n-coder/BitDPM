@@ -1,0 +1,22 @@
+{
+  "block_id": "v18_distance_geometry_l23_down_proj_r16",
+  "direction": "distance_geometry",
+  "train_samples": 65,
+  "rank": 16,
+  "loss_history": [
+    2.978083736968763,
+    0.1784124733372168,
+    0.12593289825952414,
+    0.10667457589597414,
+    0.10192274076469017
+  ],
+  "fix_break": {
+    "fixes": 0,
+    "breaks": 34,
+    "net": -34,
+    "baseline_score": 0.8444444444444444,
+    "block_score": 0.13333333333333333
+  },
+  "admit": false,
+  "damage_rate": 0.7555555555555555
+}

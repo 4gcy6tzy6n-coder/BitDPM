@@ -1,0 +1,763 @@
+{
+  "report": {
+    "model": "Qwen/Qwen2.5-0.5B-Instruct",
+    "benchmark_set": "v08",
+    "total_prompts": 100,
+    "block_scale": 0.75,
+    "block_scales": {
+      "commonsense_choice": 0.6,
+      "format_following": 0.75,
+      "chinese_semantic": 0.75,
+      "calculation_error": 0.3,
+      "short_reasoning": 0.45,
+      "arithmetic_power_log": 0.75,
+      "factual_constants": 0.75
+    }
+  },
+  "rows": [
+    {
+      "block": "commonsense_choice",
+      "fixed_score": 0.82,
+      "baseline_score": 0.83,
+      "score_delta": -0.01,
+      "fixes": 2,
+      "breaks": 3,
+      "net_fix_count": -1,
+      "unique_fixes": 0,
+      "damaged_categories": {
+        "commonsense": 2,
+        "math": 1
+      },
+      "fix_samples": [
+        {
+          "index": 25,
+          "category": "math",
+          "prompt": "What is the square root of 144?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 38,
+          "category": "math",
+          "prompt": "What is log base 10 of 1000?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        }
+      ],
+      "break_samples": [
+        {
+          "index": 5,
+          "category": "commonsense",
+          "prompt": "Who wrote Romeo and Juliet?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 7,
+          "category": "commonsense",
+          "prompt": "How many continents are there?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 31,
+          "category": "math",
+          "prompt": "What is 9 times 8?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        }
+      ],
+      "unique_fix_samples": []
+    },
+    {
+      "block": "short_reasoning",
+      "fixed_score": 0.82,
+      "baseline_score": 0.83,
+      "score_delta": -0.01,
+      "fixes": 0,
+      "breaks": 1,
+      "net_fix_count": -1,
+      "unique_fixes": 0,
+      "damaged_categories": {
+        "math": 1
+      },
+      "fix_samples": [],
+      "break_samples": [
+        {
+          "index": 31,
+          "category": "math",
+          "prompt": "What is 9 times 8?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        }
+      ],
+      "unique_fix_samples": []
+    },
+    {
+      "block": "calculation_error",
+      "fixed_score": 0.81,
+      "baseline_score": 0.83,
+      "score_delta": -0.02,
+      "fixes": 1,
+      "breaks": 3,
+      "net_fix_count": -2,
+      "unique_fixes": 0,
+      "damaged_categories": {
+        "commonsense": 3
+      },
+      "fix_samples": [
+        {
+          "index": 38,
+          "category": "math",
+          "prompt": "What is log base 10 of 1000?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        }
+      ],
+      "break_samples": [
+        {
+          "index": 5,
+          "category": "commonsense",
+          "prompt": "Who wrote Romeo and Juliet?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 7,
+          "category": "commonsense",
+          "prompt": "How many continents are there?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 12,
+          "category": "commonsense",
+          "prompt": "Which animal is known as the king of the jungle?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        }
+      ],
+      "unique_fix_samples": []
+    },
+    {
+      "block": "chinese_semantic",
+      "fixed_score": 0.8,
+      "baseline_score": 0.83,
+      "score_delta": -0.03,
+      "fixes": 1,
+      "breaks": 6,
+      "net_fix_count": -5,
+      "unique_fixes": 1,
+      "damaged_categories": {
+        "chinese": 4,
+        "commonsense": 1,
+        "math": 1
+      },
+      "fix_samples": [
+        {
+          "index": 30,
+          "category": "math",
+          "prompt": "What is 18 + 24?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        }
+      ],
+      "break_samples": [
+        {
+          "index": 7,
+          "category": "commonsense",
+          "prompt": "How many continents are there?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 31,
+          "category": "math",
+          "prompt": "What is 9 times 8?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 65,
+          "category": "chinese",
+          "prompt": "水的化学式是什么？",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "index": 68,
+          "category": "chinese",
+          "prompt": "请用中文写一句问候语。",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "index": 70,
+          "category": "chinese",
+          "prompt": "中秋节通常会吃什么？",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "index": 74,
+          "category": "chinese",
+          "prompt": "长城位于哪个国家？",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        }
+      ],
+      "unique_fix_samples": [
+        {
+          "index": 30,
+          "category": "math",
+          "prompt": "What is 18 + 24?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        }
+      ]
+    },
+    {
+      "block": "arithmetic_power_log",
+      "fixed_score": 0.755,
+      "baseline_score": 0.83,
+      "score_delta": -0.075,
+      "fixes": 2,
+      "breaks": 11,
+      "net_fix_count": -9,
+      "unique_fixes": 1,
+      "damaged_categories": {
+        "chinese": 3,
+        "code": 2,
+        "commonsense": 4,
+        "math": 1,
+        "reasoning": 1
+      },
+      "fix_samples": [
+        {
+          "index": 8,
+          "category": "commonsense",
+          "prompt": "What is the speed of light in vacuum?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 39,
+          "category": "math",
+          "prompt": "What is the distance from (0,0) to (3,4)?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        }
+      ],
+      "break_samples": [
+        {
+          "index": 4,
+          "category": "commonsense",
+          "prompt": "What is the boiling point of water in Celsius?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 7,
+          "category": "commonsense",
+          "prompt": "How many continents are there?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 12,
+          "category": "commonsense",
+          "prompt": "Which animal is known as the king of the jungle?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 16,
+          "category": "commonsense",
+          "prompt": "What is the freezing point of water in Celsius?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 31,
+          "category": "math",
+          "prompt": "What is 9 times 8?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 55,
+          "category": "code",
+          "prompt": "Write SQL to select all rows from a users table.",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "index": 58,
+          "category": "code",
+          "prompt": "Write Python code to reverse a list.",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 62,
+          "category": "chinese",
+          "prompt": "一年有多少个月？",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 64,
+          "category": "chinese",
+          "prompt": "什么是机器学习？请用中文回答。",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "index": 68,
+          "category": "chinese",
+          "prompt": "请用中文写一句问候语。",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "index": 82,
+          "category": "reasoning",
+          "prompt": "Three light switches control a light bulb in another room. You can flip the switches and then enter the room once. How can you determine which switch controls the bulb?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        }
+      ],
+      "unique_fix_samples": [
+        {
+          "index": 39,
+          "category": "math",
+          "prompt": "What is the distance from (0,0) to (3,4)?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        }
+      ]
+    },
+    {
+      "block": "format_following",
+      "fixed_score": 0.64,
+      "baseline_score": 0.83,
+      "score_delta": -0.19,
+      "fixes": 3,
+      "breaks": 23,
+      "net_fix_count": -20,
+      "unique_fixes": 1,
+      "damaged_categories": {
+        "chinese": 15,
+        "commonsense": 4,
+        "math": 1,
+        "reasoning": 3
+      },
+      "fix_samples": [
+        {
+          "index": 8,
+          "category": "commonsense",
+          "prompt": "What is the speed of light in vacuum?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 25,
+          "category": "math",
+          "prompt": "What is the square root of 144?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 32,
+          "category": "math",
+          "prompt": "What is 15% of 80?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        }
+      ],
+      "break_samples": [
+        {
+          "index": 7,
+          "category": "commonsense",
+          "prompt": "How many continents are there?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 9,
+          "category": "commonsense",
+          "prompt": "Which gas do plants absorb from the atmosphere?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 12,
+          "category": "commonsense",
+          "prompt": "Which animal is known as the king of the jungle?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 17,
+          "category": "commonsense",
+          "prompt": "Which organ pumps blood through the body?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 31,
+          "category": "math",
+          "prompt": "What is 9 times 8?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 60,
+          "category": "chinese",
+          "prompt": "中国的首都是哪个城市？",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 62,
+          "category": "chinese",
+          "prompt": "一年有多少个月？",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 64,
+          "category": "chinese",
+          "prompt": "什么是机器学习？请用中文回答。",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "index": 65,
+          "category": "chinese",
+          "prompt": "水的化学式是什么？",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 66,
+          "category": "chinese",
+          "prompt": "请列举三种水果。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 67,
+          "category": "chinese",
+          "prompt": "太阳从哪个方向升起？",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 68,
+          "category": "chinese",
+          "prompt": "请用中文写一句问候语。",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "index": 69,
+          "category": "chinese",
+          "prompt": "什么是自然语言处理？",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 70,
+          "category": "chinese",
+          "prompt": "中秋节通常会吃什么？",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 71,
+          "category": "chinese",
+          "prompt": "中国的四大发明是什么？",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 73,
+          "category": "chinese",
+          "prompt": "春节有哪些常见习俗？",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 74,
+          "category": "chinese",
+          "prompt": "长城位于哪个国家？",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 76,
+          "category": "chinese",
+          "prompt": "什么是高铁？",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 78,
+          "category": "chinese",
+          "prompt": "孔子是中国古代的什么人物？",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 79,
+          "category": "chinese",
+          "prompt": "请写一句关于学习的中文句子。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 82,
+          "category": "reasoning",
+          "prompt": "Three light switches control a light bulb in another room. You can flip the switches and then enter the room once. How can you determine which switch controls the bulb?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 89,
+          "category": "reasoning",
+          "prompt": "If you have a 3-gallon jug and a 5-gallon jug, how can you measure exactly 4 gallons?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 94,
+          "category": "reasoning",
+          "prompt": "Two people start at the same point and walk in opposite directions for 3 km. How far apart are they?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        }
+      ],
+      "unique_fix_samples": [
+        {
+          "index": 32,
+          "category": "math",
+          "prompt": "What is 15% of 80?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        }
+      ]
+    },
+    {
+      "block": "factual_constants",
+      "fixed_score": 0.62,
+      "baseline_score": 0.83,
+      "score_delta": -0.21,
+      "fixes": 1,
+      "breaks": 26,
+      "net_fix_count": -25,
+      "unique_fixes": 0,
+      "damaged_categories": {
+        "chinese": 10,
+        "code": 2,
+        "commonsense": 4,
+        "math": 1,
+        "reasoning": 9
+      },
+      "fix_samples": [
+        {
+          "index": 25,
+          "category": "math",
+          "prompt": "What is the square root of 144?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        }
+      ],
+      "break_samples": [
+        {
+          "index": 5,
+          "category": "commonsense",
+          "prompt": "Who wrote Romeo and Juliet?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 7,
+          "category": "commonsense",
+          "prompt": "How many continents are there?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 12,
+          "category": "commonsense",
+          "prompt": "Which animal is known as the king of the jungle?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 19,
+          "category": "commonsense",
+          "prompt": "What do bees produce?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 20,
+          "category": "math",
+          "prompt": "Calculate 15 + 27 =",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 49,
+          "category": "code",
+          "prompt": "What is the time complexity of binary search?",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "index": 54,
+          "category": "code",
+          "prompt": "Explain the difference between GET and POST.",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "index": 60,
+          "category": "chinese",
+          "prompt": "中国的首都是哪个城市？",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 62,
+          "category": "chinese",
+          "prompt": "一年有多少个月？",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 64,
+          "category": "chinese",
+          "prompt": "什么是机器学习？请用中文回答。",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "index": 65,
+          "category": "chinese",
+          "prompt": "水的化学式是什么？",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 68,
+          "category": "chinese",
+          "prompt": "请用中文写一句问候语。",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "index": 69,
+          "category": "chinese",
+          "prompt": "什么是自然语言处理？",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "index": 71,
+          "category": "chinese",
+          "prompt": "中国的四大发明是什么？",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 76,
+          "category": "chinese",
+          "prompt": "什么是高铁？",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 78,
+          "category": "chinese",
+          "prompt": "孔子是中国古代的什么人物？",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "index": 79,
+          "category": "chinese",
+          "prompt": "请写一句关于学习的中文句子。",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "index": 82,
+          "category": "reasoning",
+          "prompt": "Three light switches control a light bulb in another room. You can flip the switches and then enter the room once. How can you determine which switch controls the bulb?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 85,
+          "category": "reasoning",
+          "prompt": "A doctor gives you 3 pills and says take one every half hour. How long will the pills last?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 87,
+          "category": "reasoning",
+          "prompt": "A plane crashes on the border of two countries. Where do they bury the survivors?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 88,
+          "category": "reasoning",
+          "prompt": "What comes next in the sequence: 2, 3, 5, 7, 11, ___?",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "index": 89,
+          "category": "reasoning",
+          "prompt": "If you have a 3-gallon jug and a 5-gallon jug, how can you measure exactly 4 gallons?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 90,
+          "category": "reasoning",
+          "prompt": "There are 10 birds on a fence. A loud noise scares them. How many remain on the fence?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 91,
+          "category": "reasoning",
+          "prompt": "If a book costs $20 after a 20% discount, what was the original price?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 94,
+          "category": "reasoning",
+          "prompt": "Two people start at the same point and walk in opposite directions for 3 km. How far apart are they?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 98,
+          "category": "reasoning",
+          "prompt": "If one box holds 6 bottles, how many boxes are needed for 26 bottles?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        }
+      ],
+      "unique_fix_samples": []
+    }
+  ]
+}

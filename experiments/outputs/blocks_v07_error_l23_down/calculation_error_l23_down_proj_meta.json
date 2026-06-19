@@ -1,0 +1,16 @@
+{
+  "block_id": "calculation_error_l23_down_proj",
+  "block_type": "calculation_error",
+  "category": "calculation_error",
+  "layer_id": 23,
+  "module_name": "down_proj",
+  "rank": 8,
+  "scale": 1.0,
+  "final_loss": 0.3986108601093292,
+  "best_loss": 0.3986108601093292,
+  "epochs": 5,
+  "total_steps": 50,
+  "training_time_s": 5.285732269287109,
+  "in_features": 4864,
+  "out_features": 896
+}

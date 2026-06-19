@@ -1,0 +1,16 @@
+{
+  "block_id": "short_reasoning_l23_up_proj",
+  "block_type": "short_reasoning",
+  "category": "short_reasoning",
+  "layer_id": 23,
+  "module_name": "up_proj",
+  "rank": 8,
+  "scale": 1.0,
+  "final_loss": 0.5437256097793579,
+  "best_loss": 0.5437256097793579,
+  "epochs": 5,
+  "total_steps": 50,
+  "training_time_s": 5.074994087219238,
+  "in_features": 896,
+  "out_features": 4864
+}

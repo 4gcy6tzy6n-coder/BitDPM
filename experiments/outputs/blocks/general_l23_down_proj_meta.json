@@ -1,0 +1,16 @@
+{
+  "block_id": "general_l23_down_proj",
+  "block_type": "general",
+  "category": "general",
+  "layer_id": 23,
+  "module_name": "down_proj",
+  "rank": 8,
+  "scale": 1.0,
+  "final_loss": 0.15367896854877472,
+  "best_loss": 0.12659361958503723,
+  "epochs": 3,
+  "total_steps": 420,
+  "training_time_s": 52.226086139678955,
+  "in_features": 4864,
+  "out_features": 896
+}

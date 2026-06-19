@@ -1,0 +1,156 @@
+{
+  "report": "experiments/reports/v11_merged_candidates_stable_sampling_LATEST.json",
+  "benchmark_set": "v08",
+  "total_prompts": 100,
+  "baseline": 0.83,
+  "oracle": 0.9,
+  "oracle_gain": 0.07000000000000006,
+  "coverage": 7,
+  "coverage_rate": 0.07,
+  "always_all": 0.0,
+  "selection_frequency": {
+    "baseline": 93,
+    "commonsense_choice": 2,
+    "format_following": 2,
+    "chinese_semantic": 1,
+    "calculation_error": 0,
+    "short_reasoning": 0,
+    "arithmetic_power_log": 1,
+    "v11_linear_equation": 0,
+    "v11_percent_time_distance": 0,
+    "v11_circle_area": 0,
+    "v11_stats_number_theory": 1,
+    "v11_factorial_derivative": 0,
+    "always_all": 0
+  },
+  "coverage_by_category": {
+    "commonsense": 1,
+    "math": 6
+  },
+  "fixed_rows": [
+    {
+      "config": "commonsense_choice",
+      "overall": 0.82,
+      "delta": -0.010000000000000009,
+      "active": 3.0
+    },
+    {
+      "config": "short_reasoning",
+      "overall": 0.82,
+      "delta": -0.010000000000000009,
+      "active": 3.0
+    },
+    {
+      "config": "v11_linear_equation",
+      "overall": 0.82,
+      "delta": -0.010000000000000009,
+      "active": 3.0
+    },
+    {
+      "config": "calculation_error",
+      "overall": 0.81,
+      "delta": -0.019999999999999907,
+      "active": 3.0
+    },
+    {
+      "config": "chinese_semantic",
+      "overall": 0.8,
+      "delta": -0.029999999999999916,
+      "active": 3.0
+    },
+    {
+      "config": "v11_stats_number_theory",
+      "overall": 0.785,
+      "delta": -0.04499999999999993,
+      "active": 3.0
+    },
+    {
+      "config": "arithmetic_power_log",
+      "overall": 0.755,
+      "delta": -0.07499999999999996,
+      "active": 3.0
+    },
+    {
+      "config": "v11_percent_time_distance",
+      "overall": 0.71,
+      "delta": -0.12,
+      "active": 3.0
+    },
+    {
+      "config": "v11_circle_area",
+      "overall": 0.67,
+      "delta": -0.15999999999999992,
+      "active": 3.0
+    },
+    {
+      "config": "v11_factorial_derivative",
+      "overall": 0.66,
+      "delta": -0.16999999999999993,
+      "active": 3.0
+    },
+    {
+      "config": "format_following",
+      "overall": 0.64,
+      "delta": -0.18999999999999995,
+      "active": 3.0
+    }
+  ],
+  "non_baseline_samples": [
+    {
+      "index": 8,
+      "category": "commonsense",
+      "prompt": "What is the speed of light in vacuum?",
+      "chosen": "format_following",
+      "score": 1.0,
+      "baseline_score": 0.0
+    },
+    {
+      "index": 25,
+      "category": "math",
+      "prompt": "What is the square root of 144?",
+      "chosen": "commonsense_choice",
+      "score": 1.0,
+      "baseline_score": 0.0
+    },
+    {
+      "index": 30,
+      "category": "math",
+      "prompt": "What is 18 + 24?",
+      "chosen": "chinese_semantic",
+      "score": 1.0,
+      "baseline_score": 0.0
+    },
+    {
+      "index": 32,
+      "category": "math",
+      "prompt": "What is 15% of 80?",
+      "chosen": "format_following",
+      "score": 1.0,
+      "baseline_score": 0.0
+    },
+    {
+      "index": 33,
+      "category": "math",
+      "prompt": "What is the mean of 4, 8, 12, and 16?",
+      "chosen": "v11_stats_number_theory",
+      "score": 1.0,
+      "baseline_score": 0.0
+    },
+    {
+      "index": 38,
+      "category": "math",
+      "prompt": "What is log base 10 of 1000?",
+      "chosen": "commonsense_choice",
+      "score": 1.0,
+      "baseline_score": 0.0
+    },
+    {
+      "index": 39,
+      "category": "math",
+      "prompt": "What is the distance from (0,0) to (3,4)?",
+      "chosen": "arithmetic_power_log",
+      "score": 1.0,
+      "baseline_score": 0.0
+    }
+  ]
+}

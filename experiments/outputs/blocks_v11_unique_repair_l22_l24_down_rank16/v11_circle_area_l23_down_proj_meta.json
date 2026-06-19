@@ -1,0 +1,16 @@
+{
+  "block_id": "v11_circle_area_l23_down_proj",
+  "block_type": "v11_circle_area",
+  "category": "v11_circle_area",
+  "layer_id": 23,
+  "module_name": "down_proj",
+  "rank": 16,
+  "scale": 1.0,
+  "final_loss": 0.2853831946849823,
+  "best_loss": 0.2442900836467743,
+  "epochs": 5,
+  "total_steps": 60,
+  "training_time_s": 10.169251918792725,
+  "in_features": 4864,
+  "out_features": 896
+}

@@ -1,0 +1,16 @@
+{
+  "block_id": "format_following_l22_down_proj",
+  "block_type": "format_following",
+  "category": "format_following",
+  "layer_id": 22,
+  "module_name": "down_proj",
+  "rank": 8,
+  "scale": 1.0,
+  "final_loss": 2.0122392177581787,
+  "best_loss": 2.0122392177581787,
+  "epochs": 5,
+  "total_steps": 40,
+  "training_time_s": 4.123818874359131,
+  "in_features": 4864,
+  "out_features": 896
+}

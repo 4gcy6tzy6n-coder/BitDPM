@@ -1,0 +1,16 @@
+{
+  "block_id": "code_l23_down_proj",
+  "block_type": "code",
+  "category": "code",
+  "layer_id": 23,
+  "module_name": "down_proj",
+  "rank": 8,
+  "scale": 1.0,
+  "final_loss": 0.559141993522644,
+  "best_loss": 0.10355425626039505,
+  "epochs": 3,
+  "total_steps": 297,
+  "training_time_s": 44.43085694313049,
+  "in_features": 4864,
+  "out_features": 896
+}

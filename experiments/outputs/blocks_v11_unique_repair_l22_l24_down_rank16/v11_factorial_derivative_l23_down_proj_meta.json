@@ -1,0 +1,16 @@
+{
+  "block_id": "v11_factorial_derivative_l23_down_proj",
+  "block_type": "v11_factorial_derivative",
+  "category": "v11_factorial_derivative",
+  "layer_id": 23,
+  "module_name": "down_proj",
+  "rank": 16,
+  "scale": 1.0,
+  "final_loss": 0.40630024671554565,
+  "best_loss": 0.20010392367839813,
+  "epochs": 5,
+  "total_steps": 60,
+  "training_time_s": 15.20767092704773,
+  "in_features": 4864,
+  "out_features": 896
+}

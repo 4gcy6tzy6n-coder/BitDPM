@@ -1,0 +1,25 @@
+[
+  {
+    "config": "baseline",
+    "num_active": 0,
+    "routing_ms": 0
+  },
+  {
+    "config": "keyword_routed",
+    "total_prompts": 45,
+    "avg_active_blocks": 0.5777777777777777,
+    "min_active_blocks": 0,
+    "max_active_blocks": 2,
+    "avg_routing_time_ms": 0.01586808098687066,
+    "total_routing_time_ms": 0.7140636444091797
+  },
+  {
+    "config": "entropy_routed",
+    "total_prompts": 45,
+    "avg_active_blocks": 1.0,
+    "min_active_blocks": 1,
+    "max_active_blocks": 1,
+    "avg_routing_time_ms": 0.022225909762912326,
+    "total_routing_time_ms": 1.0001659393310547
+  }
+]

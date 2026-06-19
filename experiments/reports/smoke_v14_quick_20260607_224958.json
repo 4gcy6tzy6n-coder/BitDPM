@@ -1,0 +1,246 @@
+{
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "device": "mps",
+  "benchmark_set": "v14",
+  "total_prompts": 6,
+  "block_scale": 0.75,
+  "block_scales": {
+    "commonsense_choice": 0.6,
+    "format_following": 0.75,
+    "chinese_semantic": 0.75,
+    "calculation_error": 0.3,
+    "short_reasoning": 0.45,
+    "arithmetic_power_log": 0.75
+  },
+  "max_tokens": 64,
+  "config_results": {
+    "baseline": {
+      "overall": 0.8333333333333334,
+      "category_scores": {
+        "arithmetic": 0.0,
+        "factual_constants": 1.0,
+        "commonsense": 1.0,
+        "code": 1.0,
+        "chinese": 1.0,
+        "reasoning": 1.0
+      },
+      "active_blocks": 0.0
+    },
+    "commonsense_choice": {
+      "overall": 0.5,
+      "category_scores": {
+        "arithmetic": 0.0,
+        "factual_constants": 0.0,
+        "commonsense": 1.0,
+        "code": 1.0,
+        "chinese": 0.0,
+        "reasoning": 1.0
+      },
+      "active_blocks": 3.0
+    },
+    "arithmetic_power_log": {
+      "overall": 0.6666666666666666,
+      "category_scores": {
+        "arithmetic": 0.0,
+        "factual_constants": 0.0,
+        "commonsense": 1.0,
+        "code": 1.0,
+        "chinese": 1.0,
+        "reasoning": 1.0
+      },
+      "active_blocks": 3.0
+    },
+    "always_all": {
+      "overall": 0.0,
+      "category_scores": {
+        "arithmetic": 0.0,
+        "factual_constants": 0.0,
+        "commonsense": 0.0,
+        "code": 0.0,
+        "chinese": 0.0,
+        "reasoning": 0.0
+      },
+      "active_blocks": 30.0
+    }
+  },
+  "oracle": {
+    "overall": 0.8333333333333334,
+    "category_scores": {
+      "arithmetic": 0.0,
+      "factual_constants": 1.0,
+      "commonsense": 1.0,
+      "code": 1.0,
+      "chinese": 1.0,
+      "reasoning": 1.0
+    },
+    "active_blocks": 0.0
+  },
+  "validation_calibrated": {
+    "overall": 0.8333333333333334,
+    "category_scores": {
+      "arithmetic": 0.0,
+      "factual_constants": 1.0,
+      "commonsense": 1.0,
+      "code": 1.0,
+      "chinese": 1.0,
+      "reasoning": 1.0
+    },
+    "active_blocks": 0.0
+  },
+  "category_policy": {
+    "arithmetic": "baseline",
+    "factual_constants": "baseline",
+    "commonsense": "baseline",
+    "code": "baseline",
+    "chinese": "baseline",
+    "reasoning": "baseline"
+  },
+  "utility_matrix": {
+    "arithmetic": {
+      "baseline": 0.0,
+      "commonsense_choice": 0.0,
+      "arithmetic_power_log": 0.0,
+      "always_all": 0.0
+    },
+    "factual_constants": {
+      "baseline": 1.0,
+      "commonsense_choice": 0.0,
+      "arithmetic_power_log": 0.0,
+      "always_all": 0.0
+    },
+    "commonsense": {
+      "baseline": 1.0,
+      "commonsense_choice": 1.0,
+      "arithmetic_power_log": 1.0,
+      "always_all": 0.0
+    },
+    "code": {
+      "baseline": 1.0,
+      "commonsense_choice": 1.0,
+      "arithmetic_power_log": 1.0,
+      "always_all": 0.0
+    },
+    "chinese": {
+      "baseline": 1.0,
+      "commonsense_choice": 0.0,
+      "arithmetic_power_log": 1.0,
+      "always_all": 0.0
+    },
+    "reasoning": {
+      "baseline": 1.0,
+      "commonsense_choice": 1.0,
+      "arithmetic_power_log": 1.0,
+      "always_all": 0.0
+    }
+  },
+  "selection_frequency": {
+    "baseline": 6,
+    "commonsense_choice": 0,
+    "arithmetic_power_log": 0,
+    "always_all": 0
+  },
+  "per_sample": [
+    {
+      "category": "arithmetic",
+      "prompt": "What is 18 + 24?",
+      "scores": {
+        "baseline": 0.0,
+        "commonsense_choice": 0.0,
+        "arithmetic_power_log": 0.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "commonsense_choice": 3,
+        "arithmetic_power_log": 3,
+        "always_all": 30
+      },
+      "outputs": null
+    },
+    {
+      "category": "factual_constants",
+      "prompt": "What is the speed of light in vacuum in meters per second?",
+      "scores": {
+        "baseline": 1.0,
+        "commonsense_choice": 0.0,
+        "arithmetic_power_log": 0.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "commonsense_choice": 3,
+        "arithmetic_power_log": 3,
+        "always_all": 30
+      },
+      "outputs": null
+    },
+    {
+      "category": "commonsense",
+      "prompt": "What is the capital of France?",
+      "scores": {
+        "baseline": 1.0,
+        "commonsense_choice": 1.0,
+        "arithmetic_power_log": 1.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "commonsense_choice": 3,
+        "arithmetic_power_log": 3,
+        "always_all": 30
+      },
+      "outputs": null
+    },
+    {
+      "category": "code",
+      "prompt": "Write a Python function that returns the sum of a list of integers. Use concise wording. Variant 1.",
+      "scores": {
+        "baseline": 1.0,
+        "commonsense_choice": 1.0,
+        "arithmetic_power_log": 1.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "commonsense_choice": 3,
+        "arithmetic_power_log": 3,
+        "always_all": 30
+      },
+      "outputs": null
+    },
+    {
+      "category": "chinese",
+      "prompt": "中国的首都是哪个城市？ 请简短回答。版本1。",
+      "scores": {
+        "baseline": 1.0,
+        "commonsense_choice": 0.0,
+        "arithmetic_power_log": 1.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "commonsense_choice": 3,
+        "arithmetic_power_log": 3,
+        "always_all": 30
+      },
+      "outputs": null
+    },
+    {
+      "category": "reasoning",
+      "prompt": "If a book costs $20 after a 20% discount, what was the original price? Explain briefly. Variant 1.",
+      "scores": {
+        "baseline": 1.0,
+        "commonsense_choice": 1.0,
+        "arithmetic_power_log": 1.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "commonsense_choice": 3,
+        "arithmetic_power_log": 3,
+        "always_all": 30
+      },
+      "outputs": null
+    }
+  ]
+}

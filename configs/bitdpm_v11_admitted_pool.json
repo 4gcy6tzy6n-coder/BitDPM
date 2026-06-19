@@ -1,0 +1,99 @@
+{
+  "name": "bitdpm_v11_admitted_stats_number_theory",
+  "version": "v11",
+  "description": "BitDPM v11 pool: v10 admitted pool plus the unique-utility v11_stats_number_theory repair direction.",
+  "benchmark_set": "v08",
+  "protocol": "stable_sampling",
+  "seed": 0,
+  "stable_sampling_seeds": true,
+  "global_block_scale": 0.75,
+  "load_blocks": [
+    "experiments/outputs/blocks_v08_error_l22_l24_down_rank16",
+    "experiments/outputs/blocks_v09_repair_l22_l24_down_rank16",
+    "experiments/outputs/blocks_v11_unique_repair_l22_l24_down_rank16"
+  ],
+  "configs": [
+    "baseline",
+    "commonsense_choice",
+    "format_following",
+    "chinese_semantic",
+    "calculation_error",
+    "short_reasoning",
+    "arithmetic_power_log",
+    "v11_stats_number_theory",
+    "always_all"
+  ],
+  "block_scales": {
+    "commonsense_choice": 0.60,
+    "format_following": 0.75,
+    "chinese_semantic": 0.75,
+    "calculation_error": 0.30,
+    "short_reasoning": 0.45,
+    "arithmetic_power_log": 0.75,
+    "v11_stats_number_theory": 0.75
+  },
+  "expected_result": {
+    "baseline": 0.830,
+    "oracle": 0.900,
+    "coverage": "7/100",
+    "best_fixed": 0.830,
+    "always_all": 0.000
+  },
+  "admission_rule": "Admit blocks by unique per-sample correction coverage under explicit damage accounting.",
+  "admitted_repair_blocks": [
+    {
+      "block_type": "arithmetic_power_log",
+      "source_version": "v10",
+      "reason": "Adds one unique correction not covered by the v0.8 hybrid pool: distance from (0,0) to (3,4).",
+      "unique_fixes": 1,
+      "overlap_fixes": 1,
+      "breaks": 11,
+      "activation_mode": "single-only; never Always-All"
+    },
+    {
+      "block_type": "v11_stats_number_theory",
+      "source_version": "v11",
+      "reason": "Adds one unique correction over v10: mean of 4, 8, 12, and 16.",
+      "unique_fixes": 1,
+      "overlap_fixes": 0,
+      "breaks": 8,
+      "activation_mode": "single-only; admit as oracle/utility candidate, not fixed activation"
+    }
+  ],
+  "rejected_v11_blocks": [
+    {
+      "block_type": "v11_linear_equation",
+      "reason": "No unique coverage over v10; only overlap fix with lower damage.",
+      "unique_fixes": 0,
+      "overlap_fixes": 1,
+      "breaks": 2
+    },
+    {
+      "block_type": "v11_percent_time_distance",
+      "reason": "No unique coverage over v10 and high break count.",
+      "unique_fixes": 0,
+      "overlap_fixes": 1,
+      "breaks": 14
+    },
+    {
+      "block_type": "v11_circle_area",
+      "reason": "No unique coverage over v10 and high break count.",
+      "unique_fixes": 0,
+      "overlap_fixes": 1,
+      "breaks": 18
+    },
+    {
+      "block_type": "v11_factorial_derivative",
+      "reason": "No unique coverage over v10 and high break count.",
+      "unique_fixes": 0,
+      "overlap_fixes": 1,
+      "breaks": 19
+    }
+  ],
+  "reference_reports": {
+    "merged_eval": "experiments/reports/v11_merged_candidates_stable_sampling_LATEST.json",
+    "admission": "experiments/reports/v10_admission/v11_merged_unique_utility_admission_admission.md",
+    "safety": "experiments/reports/v08_block_safety/v11_merged_candidates_stable_sampling_block_safety.md",
+    "summary": "experiments/reports/v14_summary/v11_merged_candidates_summary.md"
+  }
+}

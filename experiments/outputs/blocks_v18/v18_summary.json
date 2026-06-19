@@ -1,0 +1,134 @@
+[
+  {
+    "block_id": "v18_power_log_l23_down_proj_r8",
+    "direction": "power_log",
+    "train_samples": 443,
+    "rank": 8,
+    "loss_history": [
+      1.0103076464488163,
+      0.19463937352033886,
+      0.16894317022315017,
+      0.15621134955939409,
+      0.14746641971775004
+    ],
+    "fix_break": {
+      "fixes": 0,
+      "breaks": 34,
+      "net": -34,
+      "baseline_score": 0.7777777777777778,
+      "block_score": 0.06666666666666667
+    },
+    "admit": false,
+    "damage_rate": 0.7555555555555555
+  },
+  {
+    "block_id": "v18_distance_geometry_l23_down_proj_r8",
+    "direction": "distance_geometry",
+    "train_samples": 230,
+    "rank": 8,
+    "loss_history": [
+      1.2203562794172245,
+      0.21189305341762046,
+      0.17621995100508567,
+      0.15918508146120156,
+      0.14944567330505537
+    ],
+    "fix_break": {
+      "fixes": 0,
+      "breaks": 35,
+      "net": -35,
+      "baseline_score": 0.8,
+      "block_score": 0.022222222222222223
+    },
+    "admit": false,
+    "damage_rate": 0.7777777777777778
+  },
+  {
+    "block_id": "v18_percent_l23_down_proj_r8",
+    "direction": "percent",
+    "train_samples": 230,
+    "rank": 8,
+    "loss_history": [
+      1.3556342242204624,
+      0.19818826784258303,
+      0.16820924495873243,
+      0.15602483315312343,
+      0.14649192794509555
+    ],
+    "fix_break": {
+      "fixes": 0,
+      "breaks": 34,
+      "net": -34,
+      "baseline_score": 0.8,
+      "block_score": 0.07777777777777778
+    },
+    "admit": false,
+    "damage_rate": 0.7555555555555555
+  },
+  {
+    "block_id": "v18_factual_constants_l23_down_proj_r8",
+    "direction": "factual_constants",
+    "train_samples": 70,
+    "rank": 8,
+    "loss_history": [
+      3.7728496985776085,
+      0.35026044803006307,
+      0.25731578660862786,
+      0.21063457003661565,
+      0.18586688893181938
+    ],
+    "fix_break": {
+      "fixes": 0,
+      "breaks": 33,
+      "net": -33,
+      "baseline_score": 0.8,
+      "block_score": 0.06666666666666667
+    },
+    "admit": false,
+    "damage_rate": 0.7333333333333333
+  },
+  {
+    "block_id": "v18_integer_ops_l23_down_proj_r8",
+    "direction": "integer_ops",
+    "train_samples": 560,
+    "rank": 8,
+    "loss_history": [
+      0.7079266543633171,
+      0.18149460290691682,
+      0.1711939082347921,
+      0.163956220926983,
+      0.15938780959695578
+    ],
+    "fix_break": {
+      "fixes": 0,
+      "breaks": 35,
+      "net": -35,
+      "baseline_score": 0.7777777777777778,
+      "block_score": 0.0
+    },
+    "admit": false,
+    "damage_rate": 0.7777777777777778
+  },
+  {
+    "block_id": "v18_commonsense_choice_l23_down_proj_r8",
+    "direction": "commonsense_choice",
+    "train_samples": 66,
+    "rank": 8,
+    "loss_history": [
+      5.621359767335834,
+      0.35048163704799884,
+      0.26069097717603046,
+      0.2226313054561615,
+      0.19625870589957092
+    ],
+    "fix_break": {
+      "fixes": 0,
+      "breaks": 36,
+      "net": -36,
+      "baseline_score": 0.8,
+      "block_score": 0.0
+    },
+    "admit": false,
+    "damage_rate": 0.8
+  }
+]

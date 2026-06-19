@@ -1,0 +1,89 @@
+{
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "source": "auto",
+  "device": "mps",
+  "structure": "l23_ffn",
+  "datasets": [
+    "calculation_error",
+    "commonsense_choice",
+    "format_following",
+    "chinese_semantic",
+    "short_reasoning"
+  ],
+  "layers": [
+    23
+  ],
+  "modules": [
+    "up_proj",
+    "down_proj"
+  ],
+  "rank": 8,
+  "scale": 1.0,
+  "epochs": 5,
+  "batch_size": 1,
+  "lr": 0.0002,
+  "max_length": 96,
+  "num_blocks": 10,
+  "plan": [
+    {
+      "dataset": "calculation_error",
+      "layer_id": 23,
+      "module_name": "up_proj",
+      "sample_count": 10
+    },
+    {
+      "dataset": "calculation_error",
+      "layer_id": 23,
+      "module_name": "down_proj",
+      "sample_count": 10
+    },
+    {
+      "dataset": "commonsense_choice",
+      "layer_id": 23,
+      "module_name": "up_proj",
+      "sample_count": 10
+    },
+    {
+      "dataset": "commonsense_choice",
+      "layer_id": 23,
+      "module_name": "down_proj",
+      "sample_count": 10
+    },
+    {
+      "dataset": "format_following",
+      "layer_id": 23,
+      "module_name": "up_proj",
+      "sample_count": 8
+    },
+    {
+      "dataset": "format_following",
+      "layer_id": 23,
+      "module_name": "down_proj",
+      "sample_count": 8
+    },
+    {
+      "dataset": "chinese_semantic",
+      "layer_id": 23,
+      "module_name": "up_proj",
+      "sample_count": 10
+    },
+    {
+      "dataset": "chinese_semantic",
+      "layer_id": 23,
+      "module_name": "down_proj",
+      "sample_count": 10
+    },
+    {
+      "dataset": "short_reasoning",
+      "layer_id": 23,
+      "module_name": "up_proj",
+      "sample_count": 10
+    },
+    {
+      "dataset": "short_reasoning",
+      "layer_id": 23,
+      "module_name": "down_proj",
+      "sample_count": 10
+    }
+  ]
+}

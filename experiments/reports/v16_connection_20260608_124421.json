@@ -1,0 +1,140 @@
+{
+  "hard_add": {
+    "connection": "hard_add",
+    "norm_clip_ratio": 0.5,
+    "configs": {
+      "baseline": {
+        "overall": 0.8,
+        "category_scores": {
+          "commonsense": 0.7,
+          "math": 0.3,
+          "code": 1.0,
+          "chinese": 1.0,
+          "reasoning": 1.0
+        }
+      },
+      "always_all": {
+        "overall": 0.0,
+        "category_scores": {
+          "commonsense": 0.0,
+          "math": 0.0,
+          "code": 0.0,
+          "chinese": 0.0,
+          "reasoning": 0.0
+        }
+      }
+    },
+    "per_sample": {},
+    "oracle": {
+      "overall": 0.0,
+      "coverage": 45,
+      "total_samples": 45
+    },
+    "break_counts": {
+      "commonsense_choice": {
+        "fixes": 0,
+        "breaks": 0,
+        "neutral": 0
+      },
+      "format_following": {
+        "fixes": 0,
+        "breaks": 0,
+        "neutral": 0
+      },
+      "chinese_semantic": {
+        "fixes": 0,
+        "breaks": 0,
+        "neutral": 0
+      },
+      "calculation_error": {
+        "fixes": 0,
+        "breaks": 0,
+        "neutral": 0
+      },
+      "short_reasoning": {
+        "fixes": 0,
+        "breaks": 0,
+        "neutral": 0
+      },
+      "arithmetic_power_log": {
+        "fixes": 0,
+        "breaks": 0,
+        "neutral": 0
+      },
+      "v11_stats_number_theory": {
+        "fixes": 0,
+        "breaks": 0,
+        "neutral": 0
+      }
+    }
+  },
+  "norm_clip_0.5": {
+    "connection": "norm_clip",
+    "norm_clip_ratio": 0.5,
+    "configs": {
+      "baseline": {
+        "overall": 0.86,
+        "category_scores": {
+          "commonsense": 0.9,
+          "math": 0.4,
+          "code": 1.0,
+          "chinese": 1.0,
+          "reasoning": 1.0
+        }
+      },
+      "always_all": {
+        "overall": 0.0,
+        "category_scores": {
+          "commonsense": 0.0,
+          "math": 0.0,
+          "code": 0.0,
+          "chinese": 0.0,
+          "reasoning": 0.0
+        }
+      }
+    },
+    "per_sample": {},
+    "oracle": {
+      "overall": 0.0,
+      "coverage": 45,
+      "total_samples": 45
+    },
+    "break_counts": {
+      "commonsense_choice": {
+        "fixes": 0,
+        "breaks": 0,
+        "neutral": 0
+      },
+      "format_following": {
+        "fixes": 0,
+        "breaks": 0,
+        "neutral": 0
+      },
+      "chinese_semantic": {
+        "fixes": 0,
+        "breaks": 0,
+        "neutral": 0
+      },
+      "calculation_error": {
+        "fixes": 0,
+        "breaks": 0,
+        "neutral": 0
+      },
+      "short_reasoning": {
+        "fixes": 0,
+        "breaks": 0,
+        "neutral": 0
+      },
+      "arithmetic_power_log": {
+        "fixes": 0,
+        "breaks": 0,
+        "neutral": 0
+      },
+      "v11_stats_number_theory": {
+        "fixes": 0,
+        "breaks": 0,
+        "neutral": 0
+      }
+    }
+  }
+}

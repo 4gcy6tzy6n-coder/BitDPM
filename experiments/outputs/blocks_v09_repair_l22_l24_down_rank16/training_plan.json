@@ -1,0 +1,120 @@
+{
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "source": "auto",
+  "device": "mps",
+  "structure": "l22_l24_down",
+  "datasets": [
+    "arithmetic_addition",
+    "arithmetic_percent",
+    "arithmetic_power_log",
+    "arithmetic_sqrt",
+    "factual_constants"
+  ],
+  "layers": [
+    21,
+    22,
+    23
+  ],
+  "modules": [
+    "down_proj"
+  ],
+  "rank": 16,
+  "scale": 1.0,
+  "epochs": 5,
+  "batch_size": 1,
+  "lr": 0.0002,
+  "max_length": 96,
+  "num_blocks": 15,
+  "plan": [
+    {
+      "dataset": "arithmetic_addition",
+      "layer_id": 21,
+      "module_name": "down_proj",
+      "sample_count": 12
+    },
+    {
+      "dataset": "arithmetic_addition",
+      "layer_id": 22,
+      "module_name": "down_proj",
+      "sample_count": 12
+    },
+    {
+      "dataset": "arithmetic_addition",
+      "layer_id": 23,
+      "module_name": "down_proj",
+      "sample_count": 12
+    },
+    {
+      "dataset": "arithmetic_percent",
+      "layer_id": 21,
+      "module_name": "down_proj",
+      "sample_count": 12
+    },
+    {
+      "dataset": "arithmetic_percent",
+      "layer_id": 22,
+      "module_name": "down_proj",
+      "sample_count": 12
+    },
+    {
+      "dataset": "arithmetic_percent",
+      "layer_id": 23,
+      "module_name": "down_proj",
+      "sample_count": 12
+    },
+    {
+      "dataset": "arithmetic_power_log",
+      "layer_id": 21,
+      "module_name": "down_proj",
+      "sample_count": 12
+    },
+    {
+      "dataset": "arithmetic_power_log",
+      "layer_id": 22,
+      "module_name": "down_proj",
+      "sample_count": 12
+    },
+    {
+      "dataset": "arithmetic_power_log",
+      "layer_id": 23,
+      "module_name": "down_proj",
+      "sample_count": 12
+    },
+    {
+      "dataset": "arithmetic_sqrt",
+      "layer_id": 21,
+      "module_name": "down_proj",
+      "sample_count": 12
+    },
+    {
+      "dataset": "arithmetic_sqrt",
+      "layer_id": 22,
+      "module_name": "down_proj",
+      "sample_count": 12
+    },
+    {
+      "dataset": "arithmetic_sqrt",
+      "layer_id": 23,
+      "module_name": "down_proj",
+      "sample_count": 12
+    },
+    {
+      "dataset": "factual_constants",
+      "layer_id": 21,
+      "module_name": "down_proj",
+      "sample_count": 12
+    },
+    {
+      "dataset": "factual_constants",
+      "layer_id": 22,
+      "module_name": "down_proj",
+      "sample_count": 12
+    },
+    {
+      "dataset": "factual_constants",
+      "layer_id": 23,
+      "module_name": "down_proj",
+      "sample_count": 12
+    }
+  ]
+}

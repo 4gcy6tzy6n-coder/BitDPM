@@ -1,0 +1,6 @@
+[
+  "Utility block: commonsense_choice\nQuestion: What is the square root of 144?\nPreferred answer:\nTo find the square root of \\(144\\), we can follow these steps:\n\n1. **Identify the perfect squares around 144**: \n   - The perfect square closest to 144 is \\(12^2 = 144\\).\n   - Therefore, \\(\\sqrt",
+  "Utility block: format_following\nQuestion: What is the square root of 144?\nPreferred answer:\nTo find the square root of \\(144\\), we can use a calculator or estimate it using known perfect squares. Let's go through the steps:\n\n1. **Estimate the square root**: We know that \\(12^2 = 144\\) and \\(13^2 = 1",
+  "Utility block: short_reasoning\nQuestion: What is the square root of 144?\nPreferred answer:\nTo find the square root of \\(144\\), we can follow these steps:\n\n1. **Identify the perfect squares around 144**: \n   - The perfect square closest to 144 is \\(12^2 = 144\\) itself.\n\n2. **Verify if there",
+  "Utility block: calculation_error\nQuestion: What is 2^10?\nPreferred answer:\nTo find the value of \\(2^{10}\\), we can use a simple calculator or understand that it's a basic exponentiation problem. Here, we'll use a calculator for precision.\n\nUsing a calculator:\n\\[2^{10} = 1024\\]\n\nSo, the answer is \\(\\"
+]

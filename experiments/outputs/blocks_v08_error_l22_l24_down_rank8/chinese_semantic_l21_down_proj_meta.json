@@ -1,0 +1,16 @@
+{
+  "block_id": "chinese_semantic_l21_down_proj",
+  "block_type": "chinese_semantic",
+  "category": "chinese_semantic",
+  "layer_id": 21,
+  "module_name": "down_proj",
+  "rank": 8,
+  "scale": 1.0,
+  "final_loss": 0.23918475210666656,
+  "best_loss": 0.23918475210666656,
+  "epochs": 5,
+  "total_steps": 50,
+  "training_time_s": 5.284381866455078,
+  "in_features": 4864,
+  "out_features": 896
+}

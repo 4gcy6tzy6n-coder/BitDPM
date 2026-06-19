@@ -1,0 +1,16 @@
+{
+  "block_id": "chinese_l23_down_proj",
+  "block_type": "chinese",
+  "category": "chinese",
+  "layer_id": 23,
+  "module_name": "down_proj",
+  "rank": 8,
+  "scale": 1.0,
+  "final_loss": 0.18183647096157074,
+  "best_loss": 0.12443137913942337,
+  "epochs": 3,
+  "total_steps": 354,
+  "training_time_s": 52.36345887184143,
+  "in_features": 4864,
+  "out_features": 896
+}

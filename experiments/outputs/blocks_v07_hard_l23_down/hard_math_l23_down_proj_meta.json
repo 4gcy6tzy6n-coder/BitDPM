@@ -1,0 +1,16 @@
+{
+  "block_id": "hard_math_l23_down_proj",
+  "block_type": "hard_math",
+  "category": "hard_math",
+  "layer_id": 23,
+  "module_name": "down_proj",
+  "rank": 8,
+  "scale": 1.0,
+  "final_loss": 0.30204179883003235,
+  "best_loss": 0.28010717034339905,
+  "epochs": 5,
+  "total_steps": 75,
+  "training_time_s": 8.51537013053894,
+  "in_features": 4864,
+  "out_features": 896
+}

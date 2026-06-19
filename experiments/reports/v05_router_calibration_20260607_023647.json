@@ -1,0 +1,1100 @@
+{
+  "model": "/Users/yyl/Desktop/workshop/Evidence-to-Answer Trace/internal_cot_index/models/Qwen--Qwen2.5-0.5B-Instruct",
+  "device": "mps",
+  "block_scale": 0.15,
+  "max_tokens": 64,
+  "config_results": {
+    "baseline": {
+      "overall": 0.7777777777777778,
+      "category_scores": {
+        "commonsense": 0.7,
+        "math": 0.3,
+        "code": 1.0,
+        "chinese": 1.0,
+        "reasoning": 1.0
+      },
+      "active_blocks": 0.0
+    },
+    "general": {
+      "overall": 0.7666666666666667,
+      "category_scores": {
+        "commonsense": 0.7,
+        "math": 0.3,
+        "code": 1.0,
+        "chinese": 0.95,
+        "reasoning": 1.0
+      },
+      "active_blocks": 2.0
+    },
+    "math": {
+      "overall": 0.7666666666666667,
+      "category_scores": {
+        "commonsense": 0.7,
+        "math": 0.3,
+        "code": 1.0,
+        "chinese": 0.95,
+        "reasoning": 1.0
+      },
+      "active_blocks": 2.0
+    },
+    "code": {
+      "overall": 0.8,
+      "category_scores": {
+        "commonsense": 0.8,
+        "math": 0.3,
+        "code": 1.0,
+        "chinese": 1.0,
+        "reasoning": 1.0
+      },
+      "active_blocks": 2.0
+    },
+    "chinese": {
+      "overall": 0.8,
+      "category_scores": {
+        "commonsense": 0.7,
+        "math": 0.4,
+        "code": 1.0,
+        "chinese": 1.0,
+        "reasoning": 1.0
+      },
+      "active_blocks": 2.0
+    },
+    "always_all": {
+      "overall": 0.7777777777777778,
+      "category_scores": {
+        "commonsense": 0.7,
+        "math": 0.3,
+        "code": 1.0,
+        "chinese": 1.0,
+        "reasoning": 1.0
+      },
+      "active_blocks": 8.0
+    }
+  },
+  "oracle": {
+    "overall": 0.8222222222222222,
+    "category_scores": {
+      "commonsense": 0.8,
+      "math": 0.4,
+      "code": 1.0,
+      "chinese": 1.0,
+      "reasoning": 1.0
+    },
+    "active_blocks": 0.08888888888888889
+  },
+  "validation_calibrated": {
+    "overall": 0.6956521739130435,
+    "category_scores": {
+      "commonsense": 0.4,
+      "math": 0.2,
+      "code": 1.0,
+      "chinese": 1.0,
+      "reasoning": 1.0
+    },
+    "active_blocks": 0.0
+  },
+  "category_policy": {
+    "commonsense": "baseline",
+    "math": "baseline",
+    "code": "baseline",
+    "chinese": "baseline",
+    "reasoning": "baseline"
+  },
+  "utility_matrix": {
+    "commonsense": {
+      "baseline": 0.7,
+      "general": 0.7,
+      "math": 0.7,
+      "code": 0.8,
+      "chinese": 0.7,
+      "always_all": 0.7
+    },
+    "math": {
+      "baseline": 0.3,
+      "general": 0.3,
+      "math": 0.3,
+      "code": 0.3,
+      "chinese": 0.4,
+      "always_all": 0.3
+    },
+    "code": {
+      "baseline": 1.0,
+      "general": 1.0,
+      "math": 1.0,
+      "code": 1.0,
+      "chinese": 1.0,
+      "always_all": 1.0
+    },
+    "chinese": {
+      "baseline": 1.0,
+      "general": 0.95,
+      "math": 0.95,
+      "code": 1.0,
+      "chinese": 1.0,
+      "always_all": 1.0
+    },
+    "reasoning": {
+      "baseline": 1.0,
+      "general": 1.0,
+      "math": 1.0,
+      "code": 1.0,
+      "chinese": 1.0,
+      "always_all": 1.0
+    }
+  },
+  "selection_frequency": {
+    "baseline": 43,
+    "general": 0,
+    "math": 0,
+    "code": 1,
+    "chinese": 1,
+    "always_all": 0
+  },
+  "per_sample": [
+    {
+      "category": "commonsense",
+      "prompt": "What is the capital of France?",
+      "scores": {
+        "baseline": 1.0,
+        "general": 1.0,
+        "math": 1.0,
+        "code": 1.0,
+        "chinese": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "general": 2,
+        "math": 2,
+        "code": 2,
+        "chinese": 2,
+        "always_all": 8
+      },
+      "outputs": null
+    },
+    {
+      "category": "commonsense",
+      "prompt": "How many days are in a leap year?",
+      "scores": {
+        "baseline": 1.0,
+        "general": 1.0,
+        "math": 1.0,
+        "code": 1.0,
+        "chinese": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "general": 2,
+        "math": 2,
+        "code": 2,
+        "chinese": 2,
+        "always_all": 8
+      },
+      "outputs": null
+    },
+    {
+      "category": "commonsense",
+      "prompt": "What color is the sky on a clear day?",
+      "scores": {
+        "baseline": 1.0,
+        "general": 1.0,
+        "math": 1.0,
+        "code": 1.0,
+        "chinese": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "general": 2,
+        "math": 2,
+        "code": 2,
+        "chinese": 2,
+        "always_all": 8
+      },
+      "outputs": null
+    },
+    {
+      "category": "commonsense",
+      "prompt": "Which planet is known as the Red Planet?",
+      "scores": {
+        "baseline": 1.0,
+        "general": 1.0,
+        "math": 1.0,
+        "code": 1.0,
+        "chinese": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "general": 2,
+        "math": 2,
+        "code": 2,
+        "chinese": 2,
+        "always_all": 8
+      },
+      "outputs": null
+    },
+    {
+      "category": "commonsense",
+      "prompt": "What is the boiling point of water in Celsius?",
+      "scores": {
+        "baseline": 1.0,
+        "general": 1.0,
+        "math": 1.0,
+        "code": 1.0,
+        "chinese": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "general": 2,
+        "math": 2,
+        "code": 2,
+        "chinese": 2,
+        "always_all": 8
+      },
+      "outputs": null
+    },
+    {
+      "category": "commonsense",
+      "prompt": "Who wrote Romeo and Juliet?",
+      "scores": {
+        "baseline": 0.0,
+        "general": 0.0,
+        "math": 0.0,
+        "code": 1.0,
+        "chinese": 0.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "general": 2,
+        "math": 2,
+        "code": 2,
+        "chinese": 2,
+        "always_all": 8
+      },
+      "outputs": null
+    },
+    {
+      "category": "commonsense",
+      "prompt": "What is the largest ocean on Earth?",
+      "scores": {
+        "baseline": 1.0,
+        "general": 1.0,
+        "math": 1.0,
+        "code": 1.0,
+        "chinese": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "general": 2,
+        "math": 2,
+        "code": 2,
+        "chinese": 2,
+        "always_all": 8
+      },
+      "outputs": null
+    },
+    {
+      "category": "commonsense",
+      "prompt": "How many continents are there?",
+      "scores": {
+        "baseline": 0.0,
+        "general": 0.0,
+        "math": 0.0,
+        "code": 0.0,
+        "chinese": 0.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "general": 2,
+        "math": 2,
+        "code": 2,
+        "chinese": 2,
+        "always_all": 8
+      },
+      "outputs": null
+    },
+    {
+      "category": "commonsense",
+      "prompt": "What is the speed of light in vacuum?",
+      "scores": {
+        "baseline": 0.0,
+        "general": 0.0,
+        "math": 0.0,
+        "code": 0.0,
+        "chinese": 0.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "general": 2,
+        "math": 2,
+        "code": 2,
+        "chinese": 2,
+        "always_all": 8
+      },
+      "outputs": null
+    },
+    {
+      "category": "commonsense",
+      "prompt": "Which gas do plants absorb from the atmosphere?",
+      "scores": {
+        "baseline": 1.0,
+        "general": 1.0,
+        "math": 1.0,
+        "code": 1.0,
+        "chinese": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "general": 2,
+        "math": 2,
+        "code": 2,
+        "chinese": 2,
+        "always_all": 8
+      },
+      "outputs": null
+    },
+    {
+      "category": "math",
+      "prompt": "Calculate 15 + 27 =",
+      "scores": {
+        "baseline": 1.0,
+        "general": 1.0,
+        "math": 1.0,
+        "code": 1.0,
+        "chinese": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "general": 2,
+        "math": 2,
+        "code": 2,
+        "chinese": 2,
+        "always_all": 8
+      },
+      "outputs": null
+    },
+    {
+      "category": "math",
+      "prompt": "What is 144 divided by 12?",
+      "scores": {
+        "baseline": 1.0,
+        "general": 1.0,
+        "math": 1.0,
+        "code": 1.0,
+        "chinese": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "general": 2,
+        "math": 2,
+        "code": 2,
+        "chinese": 2,
+        "always_all": 8
+      },
+      "outputs": null
+    },
+    {
+      "category": "math",
+      "prompt": "If x + 5 = 12, what is x?",
+      "scores": {
+        "baseline": 0.0,
+        "general": 0.0,
+        "math": 0.0,
+        "code": 0.0,
+        "chinese": 0.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "general": 2,
+        "math": 2,
+        "code": 2,
+        "chinese": 2,
+        "always_all": 8
+      },
+      "outputs": null
+    },
+    {
+      "category": "math",
+      "prompt": "What is 25% of 200?",
+      "scores": {
+        "baseline": 0.0,
+        "general": 0.0,
+        "math": 0.0,
+        "code": 0.0,
+        "chinese": 0.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "general": 2,
+        "math": 2,
+        "code": 2,
+        "chinese": 2,
+        "always_all": 8
+      },
+      "outputs": null
+    },
+    {
+      "category": "math",
+      "prompt": "Calculate the area of a circle with radius 3.",
+      "scores": {
+        "baseline": 0.0,
+        "general": 0.0,
+        "math": 0.0,
+        "code": 0.0,
+        "chinese": 0.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "general": 2,
+        "math": 2,
+        "code": 2,
+        "chinese": 2,
+        "always_all": 8
+      },
+      "outputs": null
+    },
+    {
+      "category": "math",
+      "prompt": "What is the square root of 144?",
+      "scores": {
+        "baseline": 0.0,
+        "general": 0.0,
+        "math": 0.0,
+        "code": 0.0,
+        "chinese": 1.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "general": 2,
+        "math": 2,
+        "code": 2,
+        "chinese": 2,
+        "always_all": 8
+      },
+      "outputs": null
+    },
+    {
+      "category": "math",
+      "prompt": "How many seconds are in 2 hours?",
+      "scores": {
+        "baseline": 0.0,
+        "general": 0.0,
+        "math": 0.0,
+        "code": 0.0,
+        "chinese": 0.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "general": 2,
+        "math": 2,
+        "code": 2,
+        "chinese": 2,
+        "always_all": 8
+      },
+      "outputs": null
+    },
+    {
+      "category": "math",
+      "prompt": "Solve: 3x - 7 = 14",
+      "scores": {
+        "baseline": 1.0,
+        "general": 1.0,
+        "math": 1.0,
+        "code": 1.0,
+        "chinese": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "general": 2,
+        "math": 2,
+        "code": 2,
+        "chinese": 2,
+        "always_all": 8
+      },
+      "outputs": null
+    },
+    {
+      "category": "math",
+      "prompt": "What is 2^10?",
+      "scores": {
+        "baseline": 0.0,
+        "general": 0.0,
+        "math": 0.0,
+        "code": 0.0,
+        "chinese": 0.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "general": 2,
+        "math": 2,
+        "code": 2,
+        "chinese": 2,
+        "always_all": 8
+      },
+      "outputs": null
+    },
+    {
+      "category": "math",
+      "prompt": "If a train travels at 60 km/h for 2.5 hours, how far does it go?",
+      "scores": {
+        "baseline": 0.0,
+        "general": 0.0,
+        "math": 0.0,
+        "code": 0.0,
+        "chinese": 0.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "general": 2,
+        "math": 2,
+        "code": 2,
+        "chinese": 2,
+        "always_all": 8
+      },
+      "outputs": null
+    },
+    {
+      "category": "code",
+      "prompt": "Write a Python function to check if a string is a palindrome.",
+      "scores": {
+        "baseline": 1.0,
+        "general": 1.0,
+        "math": 1.0,
+        "code": 1.0,
+        "chinese": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "general": 2,
+        "math": 2,
+        "code": 2,
+        "chinese": 2,
+        "always_all": 8
+      },
+      "outputs": null
+    },
+    {
+      "category": "code",
+      "prompt": "Create a JSON object representing a person with name, age, and city.",
+      "scores": {
+        "baseline": 1.0,
+        "general": 1.0,
+        "math": 1.0,
+        "code": 1.0,
+        "chinese": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "general": 2,
+        "math": 2,
+        "code": 2,
+        "chinese": 2,
+        "always_all": 8
+      },
+      "outputs": null
+    },
+    {
+      "category": "code",
+      "prompt": "Explain what a hash map is in one paragraph.",
+      "scores": {
+        "baseline": 1.0,
+        "general": 1.0,
+        "math": 1.0,
+        "code": 1.0,
+        "chinese": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "general": 2,
+        "math": 2,
+        "code": 2,
+        "chinese": 2,
+        "always_all": 8
+      },
+      "outputs": null
+    },
+    {
+      "category": "code",
+      "prompt": "Write a simple function to sort a list of integers.",
+      "scores": {
+        "baseline": 1.0,
+        "general": 1.0,
+        "math": 1.0,
+        "code": 1.0,
+        "chinese": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "general": 2,
+        "math": 2,
+        "code": 2,
+        "chinese": 2,
+        "always_all": 8
+      },
+      "outputs": null
+    },
+    {
+      "category": "code",
+      "prompt": "What is the difference between a list and a tuple in Python?",
+      "scores": {
+        "baseline": 1.0,
+        "general": 1.0,
+        "math": 1.0,
+        "code": 1.0,
+        "chinese": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "general": 2,
+        "math": 2,
+        "code": 2,
+        "chinese": 2,
+        "always_all": 8
+      },
+      "outputs": null
+    },
+    {
+      "category": "code",
+      "prompt": "Write a regex to validate an email address.",
+      "scores": {
+        "baseline": 1.0,
+        "general": 1.0,
+        "math": 1.0,
+        "code": 1.0,
+        "chinese": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "general": 2,
+        "math": 2,
+        "code": 2,
+        "chinese": 2,
+        "always_all": 8
+      },
+      "outputs": null
+    },
+    {
+      "category": "code",
+      "prompt": "What is an API endpoint?",
+      "scores": {
+        "baseline": 1.0,
+        "general": 1.0,
+        "math": 1.0,
+        "code": 1.0,
+        "chinese": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "general": 2,
+        "math": 2,
+        "code": 2,
+        "chinese": 2,
+        "always_all": 8
+      },
+      "outputs": null
+    },
+    {
+      "category": "code",
+      "prompt": "Write a SQL query to find duplicate entries in a table.",
+      "scores": {
+        "baseline": 1.0,
+        "general": 1.0,
+        "math": 1.0,
+        "code": 1.0,
+        "chinese": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "general": 2,
+        "math": 2,
+        "code": 2,
+        "chinese": 2,
+        "always_all": 8
+      },
+      "outputs": null
+    },
+    {
+      "category": "code",
+      "prompt": "Explain recursion with an example.",
+      "scores": {
+        "baseline": 1.0,
+        "general": 1.0,
+        "math": 1.0,
+        "code": 1.0,
+        "chinese": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "general": 2,
+        "math": 2,
+        "code": 2,
+        "chinese": 2,
+        "always_all": 8
+      },
+      "outputs": null
+    },
+    {
+      "category": "code",
+      "prompt": "What is the time complexity of binary search?",
+      "scores": {
+        "baseline": 1.0,
+        "general": 1.0,
+        "math": 1.0,
+        "code": 1.0,
+        "chinese": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "general": 2,
+        "math": 2,
+        "code": 2,
+        "chinese": 2,
+        "always_all": 8
+      },
+      "outputs": null
+    },
+    {
+      "category": "chinese",
+      "prompt": "中国的首都是哪个城市？",
+      "scores": {
+        "baseline": 1.0,
+        "general": 1.0,
+        "math": 1.0,
+        "code": 1.0,
+        "chinese": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "general": 2,
+        "math": 2,
+        "code": 2,
+        "chinese": 2,
+        "always_all": 8
+      },
+      "outputs": null
+    },
+    {
+      "category": "chinese",
+      "prompt": "请用中文解释什么是人工智能。",
+      "scores": {
+        "baseline": 1.0,
+        "general": 1.0,
+        "math": 1.0,
+        "code": 1.0,
+        "chinese": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "general": 2,
+        "math": 2,
+        "code": 2,
+        "chinese": 2,
+        "always_all": 8
+      },
+      "outputs": null
+    },
+    {
+      "category": "chinese",
+      "prompt": "一年有多少个月？",
+      "scores": {
+        "baseline": 1.0,
+        "general": 1.0,
+        "math": 1.0,
+        "code": 1.0,
+        "chinese": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "general": 2,
+        "math": 2,
+        "code": 2,
+        "chinese": 2,
+        "always_all": 8
+      },
+      "outputs": null
+    },
+    {
+      "category": "chinese",
+      "prompt": "请写一段关于春天的短文。",
+      "scores": {
+        "baseline": 1.0,
+        "general": 1.0,
+        "math": 1.0,
+        "code": 1.0,
+        "chinese": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "general": 2,
+        "math": 2,
+        "code": 2,
+        "chinese": 2,
+        "always_all": 8
+      },
+      "outputs": null
+    },
+    {
+      "category": "chinese",
+      "prompt": "什么是机器学习？请用中文回答。",
+      "scores": {
+        "baseline": 1.0,
+        "general": 1.0,
+        "math": 1.0,
+        "code": 1.0,
+        "chinese": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "general": 2,
+        "math": 2,
+        "code": 2,
+        "chinese": 2,
+        "always_all": 8
+      },
+      "outputs": null
+    },
+    {
+      "category": "chinese",
+      "prompt": "水的化学式是什么？",
+      "scores": {
+        "baseline": 1.0,
+        "general": 0.5,
+        "math": 0.5,
+        "code": 1.0,
+        "chinese": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "general": 2,
+        "math": 2,
+        "code": 2,
+        "chinese": 2,
+        "always_all": 8
+      },
+      "outputs": null
+    },
+    {
+      "category": "chinese",
+      "prompt": "请列举三种水果。",
+      "scores": {
+        "baseline": 1.0,
+        "general": 1.0,
+        "math": 1.0,
+        "code": 1.0,
+        "chinese": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "general": 2,
+        "math": 2,
+        "code": 2,
+        "chinese": 2,
+        "always_all": 8
+      },
+      "outputs": null
+    },
+    {
+      "category": "chinese",
+      "prompt": "太阳从哪个方向升起？",
+      "scores": {
+        "baseline": 1.0,
+        "general": 1.0,
+        "math": 1.0,
+        "code": 1.0,
+        "chinese": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "general": 2,
+        "math": 2,
+        "code": 2,
+        "chinese": 2,
+        "always_all": 8
+      },
+      "outputs": null
+    },
+    {
+      "category": "chinese",
+      "prompt": "请用中文写一句问候语。",
+      "scores": {
+        "baseline": 1.0,
+        "general": 1.0,
+        "math": 1.0,
+        "code": 1.0,
+        "chinese": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "general": 2,
+        "math": 2,
+        "code": 2,
+        "chinese": 2,
+        "always_all": 8
+      },
+      "outputs": null
+    },
+    {
+      "category": "chinese",
+      "prompt": "什么是自然语言处理？",
+      "scores": {
+        "baseline": 1.0,
+        "general": 1.0,
+        "math": 1.0,
+        "code": 1.0,
+        "chinese": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "general": 2,
+        "math": 2,
+        "code": 2,
+        "chinese": 2,
+        "always_all": 8
+      },
+      "outputs": null
+    },
+    {
+      "category": "reasoning",
+      "prompt": "If all squares are rectangles, and some rectangles are not squares, can a shape be a rectangle but not a square? Explain.",
+      "scores": {
+        "baseline": 1.0,
+        "general": 1.0,
+        "math": 1.0,
+        "code": 1.0,
+        "chinese": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "general": 2,
+        "math": 2,
+        "code": 2,
+        "chinese": 2,
+        "always_all": 8
+      },
+      "outputs": null
+    },
+    {
+      "category": "reasoning",
+      "prompt": "Alice is twice as old as Bob. In 5 years, Alice will be 1.5 times as old as Bob. How old is Alice now?",
+      "scores": {
+        "baseline": 1.0,
+        "general": 1.0,
+        "math": 1.0,
+        "code": 1.0,
+        "chinese": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "general": 2,
+        "math": 2,
+        "code": 2,
+        "chinese": 2,
+        "always_all": 8
+      },
+      "outputs": null
+    },
+    {
+      "category": "reasoning",
+      "prompt": "Three light switches control a light bulb in another room. You can flip the switches and then enter the room once. How can you determine which switch controls the bulb?",
+      "scores": {
+        "baseline": 1.0,
+        "general": 1.0,
+        "math": 1.0,
+        "code": 1.0,
+        "chinese": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "general": 2,
+        "math": 2,
+        "code": 2,
+        "chinese": 2,
+        "always_all": 8
+      },
+      "outputs": null
+    },
+    {
+      "category": "reasoning",
+      "prompt": "If it takes 5 machines 5 minutes to make 5 widgets, how long would it take 100 machines to make 100 widgets?",
+      "scores": {
+        "baseline": 1.0,
+        "general": 1.0,
+        "math": 1.0,
+        "code": 1.0,
+        "chinese": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "general": 2,
+        "math": 2,
+        "code": 2,
+        "chinese": 2,
+        "always_all": 8
+      },
+      "outputs": null
+    },
+    {
+      "category": "reasoning",
+      "prompt": "A bat and a ball cost $1.10 in total. The bat costs $1.00 more than the ball. How much does the ball cost?",
+      "scores": {
+        "baseline": 1.0,
+        "general": 1.0,
+        "math": 1.0,
+        "code": 1.0,
+        "chinese": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "general": 2,
+        "math": 2,
+        "code": 2,
+        "chinese": 2,
+        "always_all": 8
+      },
+      "outputs": null
+    }
+  ]
+}

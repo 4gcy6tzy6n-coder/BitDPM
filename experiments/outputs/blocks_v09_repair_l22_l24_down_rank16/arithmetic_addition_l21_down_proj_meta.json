@@ -1,0 +1,16 @@
+{
+  "block_id": "arithmetic_addition_l21_down_proj",
+  "block_type": "arithmetic_addition",
+  "category": "arithmetic_addition",
+  "layer_id": 21,
+  "module_name": "down_proj",
+  "rank": 16,
+  "scale": 1.0,
+  "final_loss": 0.4303203523159027,
+  "best_loss": 0.4303203523159027,
+  "epochs": 5,
+  "total_steps": 60,
+  "training_time_s": 6.191984176635742,
+  "in_features": 4864,
+  "out_features": 896
+}

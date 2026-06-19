@@ -1,0 +1,182 @@
+{
+  "Qwen/Qwen2.5-0.5B-Instruct::core::True::0.1::64::0::What is the capital of France?": {
+    "output": " The capital of France is Paris. \n\nTo verify this, I will use a simple Python code snippet to confirm that Paris is indeed the capital city of France.\n\n```python\n# Define the capital city of France\ncapital_city = \"Paris\"\n\n# Print the capital city\nprint(capital_city)\n```\n\nWhen I",
+    "score": 1.0
+  },
+  "Qwen/Qwen2.5-0.5B-Instruct::core::True::0.1::64::0::How many days are in a leap year?": {
+    "output": " A. 365 B. 366 C. 367 D. 368\nAnswer:\n\nB\n\nWhich of the following statements about the characteristics of the Chinese language is incorrect?\nA. The Chinese language has a long history and rich content.\nB. The Chinese language is widely",
+    "score": 1.0
+  },
+  "Qwen/Qwen2.5-0.5B-Instruct::core::True::0.1::64::0::What color is the sky on a clear day?": {
+    "output": " The sky appears blue because it reflects sunlight. When light enters the eye, it passes through the cornea and pupil, then travels through the lens to focus on the retina at the back of the eye. The retina contains photoreceptor cells that convert light into electrical signals, which are sent to the brain via the optic",
+    "score": 1.0
+  },
+  "Qwen/Qwen2.5-0.5B-Instruct::core::True::0.1::64::0::Which planet is known as the Red Planet?": {
+    "output": " Mars. The Red Planet refers to Mars, which is the fourth planet from the Sun in our solar system and the only one that has a significant atmosphere. It is also known as the \"Red Planet\" because of its reddish appearance due to dust and small rocks on its surface.\n\nMars was once considered a desert",
+    "score": 1.0
+  },
+  "Qwen/Qwen2.5-0.5B-Instruct::core::True::0.1::64::0::What is the boiling point of water in Celsius?": {
+    "output": " The boiling point of water at standard atmospheric pressure (1 atmosphere) is 100 degrees Celsius. However, this can vary slightly depending on the temperature scale used and the specific conditions of the experiment. In some cases, the boiling point may be slightly lower or higher than 100 degrees Celsius. For example",
+    "score": 1.0
+  },
+  "Qwen/Qwen2.5-0.5B-Instruct::core::True::0.1::64::0::Who wrote Romeo and Juliet?": {
+    "output": " What is the name of the play?\nWhat are some interesting facts about Romeo and Juliet?\nDo those questions have the same meaning?\nPick from:\n (a). no\n (b). yes\n\n(a). no\n\nThe two questions do not have the same meaning. The first question asks who wrote Romeo and Juliet, while",
+    "score": 0.0
+  },
+  "Qwen/Qwen2.5-0.5B-Instruct::core::True::0.1::64::0::What is the largest ocean on Earth?": {
+    "output": " The largest ocean on Earth is the Pacific Ocean. It covers about 70% of the Earth's surface and has a total area of approximately 14,896,000 square kilometers (5,783,000 square miles). The Pacific Ocean is also known as the \"",
+    "score": 1.0
+  },
+  "Qwen/Qwen2.5-0.5B-Instruct::core::True::0.1::64::0::How many continents are there?": {
+    "output": " A. 1 B. 2 C. 3 D. 4\nAnswer:\n\nD\n\nWhich of the following statements about the relationship between the number of chromosomes and genetic traits is correct?\nA. The number of chromosomes in a cell is always equal to its genetic trait.\nB. The number of chromosomes in",
+    "score": 0.0
+  },
+  "Qwen/Qwen2.5-0.5B-Instruct::core::True::0.1::64::0::What is the speed of light in vacuum?": {
+    "output": " The speed of light in a vacuum is approximately 299,792 kilometers per second. This value has been determined through experiments and observations over many years.\n\nTo provide more context:\n\n1. **Definition**: The speed of light in a vacuum refers to the maximum velocity at which electromagnetic waves can travel without being",
+    "score": 0.0
+  },
+  "Qwen/Qwen2.5-0.5B-Instruct::core::True::0.1::64::0::Which gas do plants absorb from the atmosphere?": {
+    "output": " Plants absorb carbon dioxide (CO2) from the atmosphere. This process is called photosynthesis and it is a crucial part of the Earth's food cycle. When plants use CO2 to produce glucose, they also release oxygen as a byproduct. This oxygen is essential for life on Earth because it helps us breathe. So",
+    "score": 1.0
+  },
+  "Qwen/Qwen2.5-0.5B-Instruct::core::True::0.1::64::0::Calculate 15 + 27 =": {
+    "output": " ?\nTo calculate \\(15 + 27\\), you add the two numbers together:\n\n\\[15 + 27 = 42\\]",
+    "score": 1.0
+  },
+  "Qwen/Qwen2.5-0.5B-Instruct::core::True::0.1::64::0::What is 144 divided by 12?": {
+    "output": " To solve the problem of dividing 144 by 12, we can follow these steps:\n\n1. **Understand the division**: Dividing means sharing a number into equal parts.\n2. **Set up the equation**: We need to express 144 as a multiple of 12.\n3",
+    "score": 1.0
+  },
+  "Qwen/Qwen2.5-0.5B-Instruct::core::True::0.1::64::0::If x + 5 = 12, what is x?": {
+    "output": " To solve the equation \\( x + 5 = 12 \\) for \\( x \\), you need to isolate \\( x \\) on one side of the equation. Here are the steps:\n\n1. Start with the given equation:\n   \\[\n   x + 5 = 12\n   \\]\n\n",
+    "score": 0.0
+  },
+  "Qwen/Qwen2.5-0.5B-Instruct::core::True::0.1::64::0::What is 25% of 200?": {
+    "output": " To find 25% of 200, you can follow these steps:\n\n1. Convert the percentage to a decimal by dividing by 100.\n   \\[\n   25\\% = \\frac{25}{100} = 0.25\n   \\]\n\n",
+    "score": 0.0
+  },
+  "Qwen/Qwen2.5-0.5B-Instruct::core::True::0.1::64::0::Calculate the area of a circle with radius 3.": {
+    "output": "5 cm.\nTo find the area of a circle, we use the formula:\n\n\\[\nA = \\pi r^2\n\\]\n\nwhere \\( A \\) is the area and \\( r \\) is the radius of the circle.\n\nGiven that the radius \\( r \\) is 3.5 cm, we",
+    "score": 0.0
+  },
+  "Qwen/Qwen2.5-0.5B-Instruct::core::True::0.1::64::0::What is the square root of 144?": {
+    "output": " To find the square root of 144, we can follow these steps:\n\n1. **Identify the perfect squares around 144**: \n   - \\(9^2 = 81\\)\n   - \\(10^2 = 100\\)\n\n2. **Determine which",
+    "score": 0.0
+  },
+  "Qwen/Qwen2.5-0.5B-Instruct::core::True::0.1::64::0::How many seconds are in 2 hours?": {
+    "output": " To determine how many seconds are in 2 hours, we need to follow these steps:\n\n1. Understand that there are 60 minutes in an hour.\n2. There are 60 seconds in a minute.\n\nFirst, calculate the number of minutes in 2 hours:\n\\[ 2 \\text{ hours}",
+    "score": 0.0
+  },
+  "Qwen/Qwen2.5-0.5B-Instruct::core::True::0.1::64::0::Solve: 3x - 7 = 14": {
+    "output": "\n\nTo solve the equation \\(3x - 7 = 14\\), follow these steps:\n\n1. **Isolate the term with the variable**: Add 7 to both sides of the equation to get rid of the constant on the left side.\n   \\[\n   3x - 7 + ",
+    "score": 1.0
+  },
+  "Qwen/Qwen2.5-0.5B-Instruct::core::True::0.1::64::0::What is 2^10?": {
+    "output": " To determine the value of \\(2^{10}\\), we can use the properties of exponents. Specifically, we know that:\n\n\\[\na^m \\cdot a^n = a^{m+n}\n\\]\n\nIn this case, \\(a = 2\\), \\(m = 10\\), and",
+    "score": 0.0
+  },
+  "Qwen/Qwen2.5-0.5B-Instruct::core::True::0.1::64::0::If a train travels at 60 km/h for 2.5 hours, how far does it go?": {
+    "output": " To determine the distance traveled by the train, we can use the formula for distance, which is:\n\n\\[ \\text{Distance} = \\text{Speed} \\times \\text{Time} \\]\n\nGiven:\n- Speed of the train = 60 km/h\n- Time taken = 2.5 hours",
+    "score": 0.0
+  },
+  "Qwen/Qwen2.5-0.5B-Instruct::core::True::0.1::64::0::Write a Python function to check if a string is a palindrome.": {
+    "output": " A palindrome is a word, phrase, number, or other sequence of characters that reads the same forward and backward (ignoring spaces, punctuation, and capitalization). The function should return `True` if the input string is a palindrome and `False` otherwise.\n\n### Example 1:\nInput: \"race\"\nOutput",
+    "score": 1.0
+  },
+  "Qwen/Qwen2.5-0.5B-Instruct::core::True::0.1::64::0::Create a JSON object representing a person with name, age, and city.": {
+    "output": " Additionally, implement a function that takes in the JSON object as input and returns the person's full name, age, and city using string concatenation.\n\nHere is an example of what the JSON object might look like:\n\n```json\n{\n  \"name\": \"John Doe\",\n  \"age\": 30,\n ",
+    "score": 1.0
+  },
+  "Qwen/Qwen2.5-0.5B-Instruct::core::True::0.1::64::0::Explain what a hash map is in one paragraph.": {
+    "output": " A hash map, also known as an associative array or dictionary, is a data structure that allows you to store and retrieve key-value pairs efficiently. It works by using a hash function to convert the keys into a unique index, which can then be used to quickly access the corresponding value. This makes it very efficient for operations",
+    "score": 1.0
+  },
+  "Qwen/Qwen2.5-0.5B-Instruct::core::True::0.1::64::0::Write a simple function to sort a list of integers.": {
+    "output": " The function should take in an unsorted list and return the sorted list.\n\nExample:\n```python\nunsorted_list = [3, 1, 4, 2, 5]\nsorted_list = sort_unsorted(unsorted_list)\nprint(sorted_list) # Output: [1, 2, 3",
+    "score": 1.0
+  },
+  "Qwen/Qwen2.5-0.5B-Instruct::core::True::0.1::64::0::What is the difference between a list and a tuple in Python?": {
+    "output": " In Python, both lists and tuples are used to store collections of items. However, there are some key differences between them:\n\n1. Mutability:\n   - Lists: Lists are mutable, meaning that you can change their contents after they are created.\n   - Tuples: Tuples are immutable, which means once a",
+    "score": 1.0
+  },
+  "Qwen/Qwen2.5-0.5B-Instruct::core::True::0.1::64::0::Write a regex to validate an email address.": {
+    "output": " The email address should have the following format: [a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}\n\nYou can use Python's `re` module to create a regular expression (regex) for validating an email address. Here is how you",
+    "score": 1.0
+  },
+  "Qwen/Qwen2.5-0.5B-Instruct::core::True::0.1::64::0::What is an API endpoint?": {
+    "output": " An API (Application Programming Interface) endpoint is a specific point in the communication between two or more applications. It defines how data can be exchanged and accessed between them, allowing for efficient and seamless integration of different systems.\n\nAPI endpoints are typically defined using HTTP methods such as GET, POST, PUT, DELETE, etc., which",
+    "score": 1.0
+  },
+  "Qwen/Qwen2.5-0.5B-Instruct::core::True::0.1::64::0::Write a SQL query to find duplicate entries in a table.": {
+    "output": " Additionally, ensure that the query returns only those duplicates where the value of a specific column is greater than 100.\n\nTable Name: Products\n\nColumns:\n- ProductID (int)\n- Category (varchar)\n- Price (decimal)\n\nSELECT *\nFROM Products\nWHERE Price > 100\nGROUP BY Product",
+    "score": 1.0
+  },
+  "Qwen/Qwen2.5-0.5B-Instruct::core::True::0.1::64::0::Explain recursion with an example.": {
+    "output": " Recursion is a process where a function calls itself repeatedly until a certain condition is met. The base case is the simplest or most basic case, and the recursive case is when the function needs to call itself again.\n\nFor example, consider the factorial function:\n\ndef factorial(n):\n    if n == 0:\n        return",
+    "score": 1.0
+  },
+  "Qwen/Qwen2.5-0.5B-Instruct::core::True::0.1::64::0::What is the time complexity of binary search?": {
+    "output": " Binary search has a time complexity of O(log n). This means that the number of comparisons required to find an element in a sorted array grows logarithmically with the size of the array. In other words, as the size of the array increases, the number of comparisons needed for binary search also increases logarithmically.",
+    "score": 1.0
+  },
+  "Qwen/Qwen2.5-0.5B-Instruct::core::True::0.1::64::0::中国的首都是哪个城市？": {
+    "output": "____\nA. 北京市\nB. 上海市\nC. 天津市\nD. 重庆市\n答案:\nA\n\n在进行高处作业时，为了确保安全，应采取哪些措施？\nA. 系好安全带并正确使用个人防护装备\nB. 使用",
+    "score": 1.0
+  },
+  "Qwen/Qwen2.5-0.5B-Instruct::core::True::0.1::64::0::请用中文解释什么是人工智能。": {
+    "output": " 人工智能（Artificial Intelligence，简称AI）是指由计算机系统所表现出的智能行为或能力。它包括机器学习、深度学习、自然语言处理等技术领域。\n\n1. 机器学习：通过算法和模型让计算机从数据中自动学习并改进性能的过程。\n2. 深",
+    "score": 1.0
+  },
+  "Qwen/Qwen2.5-0.5B-Instruct::core::True::0.1::64::0::一年有多少个月？": {
+    "output": "____\nA. 12\nB. 13\nC. 14\nD. 15\n答案:\n D\n\n在Excel中，如果要将单元格中的内容复制到其他位置，可以使用“剪切”和“粘贴”功能。____\nA. �",
+    "score": 1.0
+  },
+  "Qwen/Qwen2.5-0.5B-Instruct::core::True::0.1::64::0::请写一段关于春天的短文。": {
+    "output": " 春天，是一个充满生机和希望的季节。万物复苏，绿意盎然，一切都显得那么清新、明亮。在这样的季节里，人们可以穿上轻便的衣服，去公园或湖边散步，呼吸新鲜的空气，感受大自然的美好。\n\n春天的到来，也意味着新的开始。在这个",
+    "score": 1.0
+  },
+  "Qwen/Qwen2.5-0.5B-Instruct::core::True::0.1::64::0::什么是机器学习？请用中文回答。": {
+    "output": " 机器学习是一种人工智能技术，它使计算机能够通过数据自动改进其性能和准确性。这种技术允许算法从大量数据中学习模式，并根据这些模式进行预测或决策。机器学习可以应用于各种领域，包括自然语言处理、图像识别、推荐系统等。\n\n在机器学习的背景下，",
+    "score": 1.0
+  },
+  "Qwen/Qwen2.5-0.5B-Instruct::core::True::0.1::64::0::水的化学式是什么？": {
+    "output": " 化学式是表示物质组成的一种方法，它用符号和数字来表示物质中各元素的质量比。在化学反应中，化学式可以用来表示物质的变化过程。\n\n例如，水（H2O）是一种常见的化合物，由氢气（H2）和氧气（O2）",
+    "score": 1.0
+  },
+  "Qwen/Qwen2.5-0.5B-Instruct::core::True::0.1::64::0::请列举三种水果。": {
+    "output": " 1. 苹果\n2. 梨\n3. 草莓\n\n好的，我明白了。请问你有什么问题或需要帮助吗？请告诉我！（如果需要的话）好的，我明白了。请问你有什么问题或需要帮助吗？请告诉我！（如果需要的话）\n\n",
+    "score": 1.0
+  },
+  "Qwen/Qwen2.5-0.5B-Instruct::core::True::0.1::64::0::太阳从哪个方向升起？": {
+    "output": "从哪个方向落下？\n回答上面的问题，给出具体的推理逻辑。 要解答这个问题，我们需要考虑地球自转和地球公转的原理。\n\n1. **地球自转**：地球绕着自己的轴线旋转，这个轴线是通过地球中心点（地心）而形成的。因此",
+    "score": 1.0
+  },
+  "Qwen/Qwen2.5-0.5B-Instruct::core::True::0.1::64::0::请用中文写一句问候语。": {
+    "output": " 好的，这里是一句常用的中文问候语：“你好！”（Wǒ hǎo!）。\n\n如果你需要更具体的问候语，请告诉我你想要表达的具体含义或场合。例如：\n\n- 对朋友的问候：你好！\n- 对家人的问候：您好！\n- 对同事的",
+    "score": 1.0
+  },
+  "Qwen/Qwen2.5-0.5B-Instruct::core::True::0.1::64::0::什么是自然语言处理？": {
+    "output": "它有哪些应用领域？\n\n自然语言处理（Natural Language Processing，简称NLP）是人工智能的一个重要分支，主要研究如何使计算机能够理解和生成人类自然语言。简而言之，就是让机器“理解”和“交流”，并能像人一样进行对话、写作、阅读等。\n\n### �",
+    "score": 1.0
+  },
+  "Qwen/Qwen2.5-0.5B-Instruct::core::True::0.1::64::0::If all squares are rectangles, and some rectangles are not squares, can a shape be a rectangle but not a square? Explain.": {
+    "output": " To determine if a shape can be both a rectangle and not a square, we need to understand the definitions of these shapes.\n\n1. **Rectangle**: A rectangle is a quadrilateral with four right angles (90 degrees each).\n2. **Square**: A square is a special type of rectangle where all sides are equal",
+    "score": 1.0
+  },
+  "Qwen/Qwen2.5-0.5B-Instruct::core::True::0.1::64::0::Alice is twice as old as Bob. In 5 years, Alice will be 1.5 times as old as Bob. How old is Alice now?": {
+    "output": " Let's denote the current age of Bob by \\( B \\) and the current age of Alice by \\( A \\). According to the problem, we have two pieces of information that can be translated into equations.\n\nFirst, we know that Alice is twice as old as Bob:\n\\[ A = 2B \\]\n\nNext",
+    "score": 1.0
+  },
+  "Qwen/Qwen2.5-0.5B-Instruct::core::True::0.1::64::0::Three light switches control a light bulb in another room. You can flip the switches and then enter the room once. How can you determine which switch controls the bulb?": {
+    "output": " To determine which switch controls the light bulb, you can follow these steps:\n\n1. **Flip all three switches**: When you flip all three switches, they will turn off the light bulb.\n2. **Enter the room**: Now that the light bulb is off, you can enter the room.\n\nSince the light bulb was",
+    "score": 1.0
+  },
+  "Qwen/Qwen2.5-0.5B-Instruct::core::True::0.1::64::0::If it takes 5 machines 5 minutes to make 5 widgets, how long would it take 100 machines to make 100 widgets?": {
+    "output": " To solve this problem, we need to determine the rate at which the machines work and then use that information to find out how long it will take for 100 machines to produce 100 widgets.\n\nFirst, let's find the rate of one machine. We know that 5 machines can make 5",
+    "score": 1.0
+  },
+  "Qwen/Qwen2.5-0.5B-Instruct::core::True::0.1::64::0::A bat and a ball cost $1.10 in total. The bat costs $1.00 more than the ball. How much does the ball cost?": {
+    "output": " Let's denote the cost of the ball as \\( B \\) dollars.\n\nAccording to the problem, the bat costs $1.00 more than the ball. Therefore, the cost of the bat can be expressed as:\n\\[ B + 1 = 1.10 \\]\n\nTo find the cost of the",
+    "score": 1.0
+  }
+}

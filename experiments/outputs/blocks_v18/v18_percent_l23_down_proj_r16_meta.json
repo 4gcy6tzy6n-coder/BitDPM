@@ -1,0 +1,22 @@
+{
+  "block_id": "v18_percent_l23_down_proj_r16",
+  "direction": "percent",
+  "train_samples": 50,
+  "rank": 16,
+  "loss_history": [
+    4.469092820882797,
+    0.31110952377319334,
+    0.1905747577548027,
+    0.14064618021249772,
+    0.11651029139757156
+  ],
+  "fix_break": {
+    "fixes": 0,
+    "breaks": 33,
+    "net": -33,
+    "baseline_score": 0.7777777777777778,
+    "block_score": 0.07777777777777778
+  },
+  "admit": false,
+  "damage_rate": 0.7333333333333333
+}

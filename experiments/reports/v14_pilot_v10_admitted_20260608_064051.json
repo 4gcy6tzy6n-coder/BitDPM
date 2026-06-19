@@ -1,0 +1,2260 @@
+{
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "device": "mps",
+  "benchmark_set": "v14",
+  "total_prompts": 60,
+  "block_scale": 0.75,
+  "block_scales": {
+    "commonsense_choice": 0.6,
+    "format_following": 0.75,
+    "chinese_semantic": 0.75,
+    "calculation_error": 0.3,
+    "short_reasoning": 0.45,
+    "arithmetic_power_log": 0.75
+  },
+  "max_tokens": 64,
+  "config_results": {
+    "baseline": {
+      "overall": 0.8666666666666667,
+      "category_scores": {
+        "arithmetic": 0.5,
+        "factual_constants": 0.8,
+        "commonsense": 0.9,
+        "code": 1.0,
+        "chinese": 1.0,
+        "reasoning": 1.0
+      },
+      "active_blocks": 0.0
+    },
+    "commonsense_choice": {
+      "overall": 0.7666666666666667,
+      "category_scores": {
+        "arithmetic": 0.2,
+        "factual_constants": 0.6,
+        "commonsense": 0.9,
+        "code": 1.0,
+        "chinese": 0.9,
+        "reasoning": 1.0
+      },
+      "active_blocks": 3.0
+    },
+    "format_following": {
+      "overall": 0.6666666666666666,
+      "category_scores": {
+        "arithmetic": 0.3,
+        "factual_constants": 0.8,
+        "commonsense": 0.7,
+        "code": 1.0,
+        "chinese": 0.2,
+        "reasoning": 1.0
+      },
+      "active_blocks": 3.0
+    },
+    "chinese_semantic": {
+      "overall": 0.8833333333333333,
+      "category_scores": {
+        "arithmetic": 0.5,
+        "factual_constants": 0.9,
+        "commonsense": 0.9,
+        "code": 1.0,
+        "chinese": 1.0,
+        "reasoning": 1.0
+      },
+      "active_blocks": 3.0
+    },
+    "calculation_error": {
+      "overall": 0.8916666666666667,
+      "category_scores": {
+        "arithmetic": 0.5,
+        "factual_constants": 0.9,
+        "commonsense": 1.0,
+        "code": 1.0,
+        "chinese": 0.95,
+        "reasoning": 1.0
+      },
+      "active_blocks": 3.0
+    },
+    "short_reasoning": {
+      "overall": 0.8166666666666667,
+      "category_scores": {
+        "arithmetic": 0.3,
+        "factual_constants": 0.6,
+        "commonsense": 1.0,
+        "code": 1.0,
+        "chinese": 1.0,
+        "reasoning": 1.0
+      },
+      "active_blocks": 3.0
+    },
+    "arithmetic_power_log": {
+      "overall": 0.6916666666666667,
+      "category_scores": {
+        "arithmetic": 0.0,
+        "factual_constants": 0.3,
+        "commonsense": 1.0,
+        "code": 1.0,
+        "chinese": 0.95,
+        "reasoning": 0.9
+      },
+      "active_blocks": 3.0
+    },
+    "always_all": {
+      "overall": 0.0,
+      "category_scores": {
+        "arithmetic": 0.0,
+        "factual_constants": 0.0,
+        "commonsense": 0.0,
+        "code": 0.0,
+        "chinese": 0.0,
+        "reasoning": 0.0
+      },
+      "active_blocks": 30.0
+    }
+  },
+  "oracle": {
+    "overall": 0.95,
+    "category_scores": {
+      "arithmetic": 0.7,
+      "factual_constants": 1.0,
+      "commonsense": 1.0,
+      "code": 1.0,
+      "chinese": 1.0,
+      "reasoning": 1.0
+    },
+    "active_blocks": 0.25
+  },
+  "validation_calibrated": {
+    "overall": 0.7666666666666667,
+    "category_scores": {
+      "arithmetic": 0.2,
+      "factual_constants": 0.6,
+      "commonsense": 0.8,
+      "code": 1.0,
+      "chinese": 1.0,
+      "reasoning": 1.0
+    },
+    "active_blocks": 0.5
+  },
+  "category_policy": {
+    "arithmetic": "baseline",
+    "factual_constants": "baseline",
+    "commonsense": "commonsense_choice",
+    "code": "baseline",
+    "chinese": "baseline",
+    "reasoning": "baseline"
+  },
+  "utility_matrix": {
+    "arithmetic": {
+      "baseline": 0.5,
+      "commonsense_choice": 0.2,
+      "format_following": 0.3,
+      "chinese_semantic": 0.5,
+      "calculation_error": 0.5,
+      "short_reasoning": 0.3,
+      "arithmetic_power_log": 0.0,
+      "always_all": 0.0
+    },
+    "factual_constants": {
+      "baseline": 0.8,
+      "commonsense_choice": 0.6,
+      "format_following": 0.8,
+      "chinese_semantic": 0.9,
+      "calculation_error": 0.9,
+      "short_reasoning": 0.6,
+      "arithmetic_power_log": 0.3,
+      "always_all": 0.0
+    },
+    "commonsense": {
+      "baseline": 0.9,
+      "commonsense_choice": 0.9,
+      "format_following": 0.7,
+      "chinese_semantic": 0.9,
+      "calculation_error": 1.0,
+      "short_reasoning": 1.0,
+      "arithmetic_power_log": 1.0,
+      "always_all": 0.0
+    },
+    "code": {
+      "baseline": 1.0,
+      "commonsense_choice": 1.0,
+      "format_following": 1.0,
+      "chinese_semantic": 1.0,
+      "calculation_error": 1.0,
+      "short_reasoning": 1.0,
+      "arithmetic_power_log": 1.0,
+      "always_all": 0.0
+    },
+    "chinese": {
+      "baseline": 1.0,
+      "commonsense_choice": 0.9,
+      "format_following": 0.2,
+      "chinese_semantic": 1.0,
+      "calculation_error": 0.95,
+      "short_reasoning": 1.0,
+      "arithmetic_power_log": 0.95,
+      "always_all": 0.0
+    },
+    "reasoning": {
+      "baseline": 1.0,
+      "commonsense_choice": 1.0,
+      "format_following": 1.0,
+      "chinese_semantic": 1.0,
+      "calculation_error": 1.0,
+      "short_reasoning": 1.0,
+      "arithmetic_power_log": 0.9,
+      "always_all": 0.0
+    }
+  },
+  "selection_frequency": {
+    "baseline": 55,
+    "commonsense_choice": 1,
+    "format_following": 0,
+    "chinese_semantic": 4,
+    "calculation_error": 0,
+    "short_reasoning": 0,
+    "arithmetic_power_log": 0,
+    "always_all": 0
+  },
+  "per_sample": [
+    {
+      "category": "arithmetic",
+      "prompt": "What is 18 + 24?",
+      "scores": {
+        "baseline": 0.0,
+        "commonsense_choice": 0.0,
+        "format_following": 0.0,
+        "chinese_semantic": 0.0,
+        "calculation_error": 0.0,
+        "short_reasoning": 0.0,
+        "arithmetic_power_log": 0.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "chinese_semantic": 3,
+        "calculation_error": 3,
+        "short_reasoning": 3,
+        "arithmetic_power_log": 3,
+        "always_all": 30
+      },
+      "outputs": {
+        "baseline": " To solve the problem \\(18 + 24\\), we can follow these steps:\n\n1. Start with the number 18.\n2. Add the next whole number, which is 24.\n\nSo, we write down 18 and then add 24 to it:\n\\[18 +",
+        "commonsense_choice": " To solve the problem \\(18 + 24\\), we can follow these steps:\n\n1. Start with the number 18.\n2. Add the next whole number, which is 24.\n\nSo, we write down 18 and then add 24 to it:\n\\[18 +",
+        "format_following": " To solve the problem \\(18 + 24\\), we can follow these steps:\n\n1. Start with the number 18.\n2. Add the next whole number, which is 24.\n\nSo, we write down 18 and then add 24 to it:\n\\[18 +",
+        "chinese_semantic": " To solve the problem \\(18 + 24\\), we can follow these steps:\n\n1. Start with the number 18.\n2. Add the next whole number, which is 24.\n\nSo, we write down 18 and then add 24 to it:\n\\[18 +",
+        "calculation_error": " To solve the problem \\(18 + 24\\), we can follow these steps:\n\n1. Start with the number 18.\n2. Add the next whole number, which is 24.\n\nSo, we write down 18 and then add 24 to it:\n\\[18 +",
+        "short_reasoning": " To solve the problem \\(18 + 24\\), we can follow these steps:\n\n1. Start with the number 18.\n2. Add the next whole number, which is 24.\n\nSo, we write down 18 and then add 24 to it:\n\\[18 +",
+        "arithmetic_power_log": "",
+        "always_all": ""
+      }
+    },
+    {
+      "category": "arithmetic",
+      "prompt": "What is 37 + 45?",
+      "scores": {
+        "baseline": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 1.0,
+        "chinese_semantic": 1.0,
+        "calculation_error": 1.0,
+        "short_reasoning": 0.0,
+        "arithmetic_power_log": 0.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "chinese_semantic": 3,
+        "calculation_error": 3,
+        "short_reasoning": 3,
+        "arithmetic_power_log": 3,
+        "always_all": 30
+      },
+      "outputs": {
+        "baseline": " To solve the problem of adding 37 and 45, you simply add the two numbers together:\n\n\\[ 37 + 45 = 82 \\]\n\nSo, \\( 37 + 45 = 82 \\).",
+        "commonsense_choice": " To solve the problem of adding 37 and 45, we can follow these steps:\n\n1. Start with the number 37.\n2. Add the next whole number, which is 45.\n\nSo, \\(37 + 45 = 82\\).\n\nTherefore, the answer is",
+        "format_following": " To find the sum of 37 and 45, you add them together:\n\n37 + 45 = 82\n\nSo, 37 + 45 equals 82.",
+        "chinese_semantic": " To find the sum of 37 and 45, you add them together:\n\n37 + 45 = 82\n\nSo, 37 + 45 equals 82.",
+        "calculation_error": " To find the sum of 37 and 45, you add them together:\n\n\\( 37 + 45 = 82 \\)\n\nSo, 37 plus 45 equals 82.",
+        "short_reasoning": " To solve the problem \\(37 + 45\\), we can break it down into simpler steps. Here's how we can do it:\n\n1. **Add the tens**: The tens place in both numbers is 30.\n   \\[\n   30 + 40 = 70\n",
+        "arithmetic_power_log": "",
+        "always_all": ""
+      }
+    },
+    {
+      "category": "arithmetic",
+      "prompt": "What is 56 + 29?",
+      "scores": {
+        "baseline": 1.0,
+        "commonsense_choice": 0.0,
+        "format_following": 1.0,
+        "chinese_semantic": 0.0,
+        "calculation_error": 0.0,
+        "short_reasoning": 0.0,
+        "arithmetic_power_log": 0.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "chinese_semantic": 3,
+        "calculation_error": 3,
+        "short_reasoning": 3,
+        "arithmetic_power_log": 3,
+        "always_all": 30
+      },
+      "outputs": {
+        "baseline": " To solve the problem of adding 56 and 29, you simply add the two numbers together:\n\n\\[ 56 + 29 = 85 \\]\n\nSo, \\( 56 + 29 = 85 \\).",
+        "commonsense_choice": " To solve the problem \\(56 + 29\\), we can break it down into simpler steps. Here's how we can do it:\n\n1. Start with the number 56.\n2. Add the next whole number, which is 29.\n\nLet's write this out step by step:\n\\[",
+        "format_following": " To find the sum of 56 and 29, you add them together:\n\n\\[ 56 + 29 = 85 \\]\n\nSo, 56 plus 29 equals 85.",
+        "chinese_semantic": " To solve the problem of adding 56 and 29, we can break it down into simpler steps.\n\n1. **Start with the first number:**\n   \\[\n   56\n   \\]\n\n2. **Add the second number to this result:**\n   \\[\n   56 +",
+        "calculation_error": " To solve the problem of adding 56 and 29, we can break it down into simpler steps.\n\n1. **Start with the numbers:**\n   \\[\n   56\n   \\]\n   \\[\n   29\n   \\]\n\n2. **Add the units digits:**\n  ",
+        "short_reasoning": " To solve the problem of adding 56 and 29, we can break it down into simpler steps.\n\n1. **Start with the first number:**\n   \\[\n   56\n   \\]\n\n2. **Add the second number to this sum:**\n   \\[\n   56 +",
+        "arithmetic_power_log": "",
+        "always_all": ""
+      }
+    },
+    {
+      "category": "arithmetic",
+      "prompt": "What is 123 + 77?",
+      "scores": {
+        "baseline": 1.0,
+        "commonsense_choice": 0.0,
+        "format_following": 0.0,
+        "chinese_semantic": 0.0,
+        "calculation_error": 1.0,
+        "short_reasoning": 0.0,
+        "arithmetic_power_log": 0.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "chinese_semantic": 3,
+        "calculation_error": 3,
+        "short_reasoning": 3,
+        "arithmetic_power_log": 3,
+        "always_all": 30
+      },
+      "outputs": {
+        "baseline": " To solve the problem of adding 123 and 77, you simply add the two numbers together:\n\n\\[ 123 + 77 = 200 \\]\n\nSo, \\( 123 + 77 = 200 \\).",
+        "commonsense_choice": " To solve the problem of adding 123 and 77, we can follow these steps:\n\n1. **Align the numbers by their place values:**\n   \\[\n   \\begin{array}{c@{}c}\n     & 123 \\\\\n    + & 77 \\\\\n   \\end",
+        "format_following": " To find the sum of \\(123\\) and \\(77\\), we can add these two numbers step by step.\n\nFirst, let's write them down for clarity:\n\\[ 123 \\]\n\\[ + 77 \\]\n\nNext, we align the numbers by their place values:\n\\[ \n\\",
+        "chinese_semantic": " To solve the problem \\(123 + 77\\), we can use the standard addition method. Here are the steps:\n\n1. **Align the numbers by their place values:**\n   \\[\n   \\begin{array}{r}\n     123 \\\\\n   + 77 \\\\\n   \\",
+        "calculation_error": " To solve the problem of adding 123 and 77, you simply add the two numbers together:\n\n\\[ 123 + 77 = 200 \\]\n\nSo, \\( 123 + 77 = 200 \\).",
+        "short_reasoning": " To solve the problem of adding 123 and 77, we can follow these steps:\n\n1. **Align the numbers by their place values**:\n   \\[\n   \\begin{array}{r}\n     123 \\\\\n    + 77 \\\\\n   \\end{array}\n   \\",
+        "arithmetic_power_log": "",
+        "always_all": ""
+      }
+    },
+    {
+      "category": "arithmetic",
+      "prompt": "What is 208 + 315?",
+      "scores": {
+        "baseline": 1.0,
+        "commonsense_choice": 0.0,
+        "format_following": 0.0,
+        "chinese_semantic": 1.0,
+        "calculation_error": 1.0,
+        "short_reasoning": 1.0,
+        "arithmetic_power_log": 0.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "chinese_semantic": 3,
+        "calculation_error": 3,
+        "short_reasoning": 3,
+        "arithmetic_power_log": 3,
+        "always_all": 30
+      },
+      "outputs": {
+        "baseline": " To find the sum of 208 and 315, you add them together:\n\n\\[ 208 + 315 = 523 \\]\n\nSo, \\( 208 + 315 = 523 \\).",
+        "commonsense_choice": " To solve the problem of adding 208 and 315, we can follow these steps:\n\n1. Start with the numbers: 208 and 315.\n2. Add them together column by column from right to left.\n\nLet's break it down step-by-step:\n\n```\n  ",
+        "format_following": " To find the sum of \\(208\\) and \\(315\\), we can add these two numbers step by step.\n\nFirst, let's write them down for clarity:\n\\[ 208 \\]\n\\[ + 315 \\]\n\nNext, we align the numbers by their place values:\n\\[",
+        "chinese_semantic": " To find the sum of 208 and 315, you add them together:\n\n\\[ 208 + 315 = 523 \\]\n\nSo, \\( 208 + 315 = 523 \\).",
+        "calculation_error": " To find the sum of 208 and 315, you add them together:\n\n\\( 208 + 315 = 523 \\)",
+        "short_reasoning": " To find the sum of 208 and 315, you add them together:\n\n\\[ 208 + 315 = 523 \\]\n\nSo, 208 plus 315 equals 523.",
+        "arithmetic_power_log": "",
+        "always_all": ""
+      }
+    },
+    {
+      "category": "arithmetic",
+      "prompt": "What is 91 + 64?",
+      "scores": {
+        "baseline": 0.0,
+        "commonsense_choice": 0.0,
+        "format_following": 0.0,
+        "chinese_semantic": 1.0,
+        "calculation_error": 0.0,
+        "short_reasoning": 1.0,
+        "arithmetic_power_log": 0.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "chinese_semantic": 3,
+        "calculation_error": 3,
+        "short_reasoning": 3,
+        "arithmetic_power_log": 3,
+        "always_all": 30
+      },
+      "outputs": {
+        "baseline": " To solve the problem of adding 91 and 64, we can break it down into simpler steps.\n\nFirst, let's add the numbers in each decimal place:\n\n1. Add the units place: \\(1 + 4 = 5\\)\n2. Add the tens place: \\(9 + 6",
+        "commonsense_choice": " To solve the problem \\(91 + 64\\), we can break it down into simpler steps:\n\n1. Start with the number 91.\n2. Add the next whole number, which is 64.\n\nLet's write this out step by step:\n\\[91 + 64 = (",
+        "format_following": " To solve the problem of adding 91 and 64, we can break it down into simpler steps.\n\nStep 1: Start with the number 91.\nStep 2: Add the digit in the ones place (which is 1) to the number 64. This gives us:\n  ",
+        "chinese_semantic": " To solve the problem \\(91 + 64\\), we can break it down into simpler steps.\n\nFirst, let's add the numbers directly:\n\\[91 + 64 = 155\\]\n\nSo, the sum of 91 and 64 is \\(\\boxed{15",
+        "calculation_error": " To solve the problem of adding 91 and 64, we can follow these steps:\n\n1. Start with the number 91.\n2. Add the next whole number, which is 64.\n\nSo, we write down 91 and then add 64 to it:\n\\[ 9",
+        "short_reasoning": " To solve the problem \\(91 + 64\\), we can break it down into simpler steps.\n\nFirst, let's add the numbers directly:\n\n\\[91 + 64 = 155\\]\n\nSo, the sum of 91 and 64 is \\(\\boxed{15",
+        "arithmetic_power_log": "",
+        "always_all": ""
+      }
+    },
+    {
+      "category": "arithmetic",
+      "prompt": "What is 72 + 38?",
+      "scores": {
+        "baseline": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 1.0,
+        "chinese_semantic": 1.0,
+        "calculation_error": 1.0,
+        "short_reasoning": 1.0,
+        "arithmetic_power_log": 0.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "chinese_semantic": 3,
+        "calculation_error": 3,
+        "short_reasoning": 3,
+        "arithmetic_power_log": 3,
+        "always_all": 30
+      },
+      "outputs": {
+        "baseline": " To solve the problem of adding 72 and 38, you simply add the two numbers together:\n\n\\[ 72 + 38 = 110 \\]\n\nSo, \\( 72 + 38 = 110 \\).",
+        "commonsense_choice": " To solve the problem of adding 72 and 38, you simply add the two numbers together:\n\n\\[ 72 + 38 = 110 \\]\n\nSo, \\( 72 + 38 = 110 \\).",
+        "format_following": " To find the sum of 72 and 38, you add them together:\n\n\\[ 72 + 38 = 110 \\]\n\nSo, 72 plus 38 equals 110.",
+        "chinese_semantic": " To find the sum of 72 and 38, you add them together:\n\n\\[ 72 + 38 = 110 \\]\n\nSo, \\( 72 + 38 = 110 \\).",
+        "calculation_error": " To find the sum of 72 and 38, you add them together:\n\n\\[ 72 + 38 = 110 \\]\n\nSo, 72 plus 38 equals 110.",
+        "short_reasoning": " To solve the problem of adding 72 and 38, you simply add the two numbers together:\n\n\\[ 72 + 38 = 110 \\]\n\nSo, \\( 72 + 38 = 110 \\).",
+        "arithmetic_power_log": "",
+        "always_all": ""
+      }
+    },
+    {
+      "category": "arithmetic",
+      "prompt": "What is 145 + 255?",
+      "scores": {
+        "baseline": 0.0,
+        "commonsense_choice": 0.0,
+        "format_following": 0.0,
+        "chinese_semantic": 1.0,
+        "calculation_error": 1.0,
+        "short_reasoning": 0.0,
+        "arithmetic_power_log": 0.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "chinese_semantic": 3,
+        "calculation_error": 3,
+        "short_reasoning": 3,
+        "arithmetic_power_log": 3,
+        "always_all": 30
+      },
+      "outputs": {
+        "baseline": " To solve the problem of adding 145 and 255, we can follow these steps:\n\n1. Start with the numbers: 145 and 255.\n2. Add them together: \\(145 + 255\\).\n\nLet's break it down step by step",
+        "commonsense_choice": " To solve the problem of adding 145 and 255, we can follow these steps:\n\n1. Start with the numbers: 145 and 255.\n2. Add them together: \\(145 + 255\\).\n\nLet's break it down step by step",
+        "format_following": " To find the sum of \\(145\\) and \\(255\\), we can add these two numbers step by step.\n\nFirst, let's write them down for clarity:\n\\[ 145 \\]\n\\[ + 255 \\]\n\nNext, we align the numbers by their place values:\n\\[",
+        "chinese_semantic": " To find the sum of \\(145\\) and \\(255\\), you add them together:\n\n\\[\n145 + 255 = 400\n\\]",
+        "calculation_error": " To find the sum of 145 and 255, you add them together:\n\n\\( 145 + 255 = 400 \\)\n\nSo, \\( 145 + 255 = 400 \\).",
+        "short_reasoning": " To solve the problem of adding 145 and 255, we can follow these steps:\n\n1. Start with the numbers: 145 and 255.\n2. Add them together: \\(145 + 255\\).\n\nLet's break it down step by step",
+        "arithmetic_power_log": "",
+        "always_all": ""
+      }
+    },
+    {
+      "category": "arithmetic",
+      "prompt": "What is 9 times 8?",
+      "scores": {
+        "baseline": 0.0,
+        "commonsense_choice": 0.0,
+        "format_following": 0.0,
+        "chinese_semantic": 0.0,
+        "calculation_error": 0.0,
+        "short_reasoning": 0.0,
+        "arithmetic_power_log": 0.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "chinese_semantic": 3,
+        "calculation_error": 3,
+        "short_reasoning": 3,
+        "arithmetic_power_log": 3,
+        "always_all": 30
+      },
+      "outputs": {
+        "baseline": " To find the product of \\(9\\) and \\(8\\), we can use the standard multiplication method. Here are the steps:\n\n1. Write down the numbers one below the other, aligning them by their place values:\n   \\[\n   \\begin{array}{c}\n     9 \\\\\n    \\times ",
+        "commonsense_choice": " To find the product of \\(9\\) and \\(8\\), we can use the standard multiplication method. Here are the steps:\n\n1. **Write down the numbers**: We have \\(9\\) on top and \\(8\\) on the bottom.\n2. **Multiply them step by step**:\n   - Start with \\(",
+        "format_following": " To find the product of \\(9\\) and \\(8\\), we can use multiplication. Here are the steps:\n\n1. Write down the numbers to be multiplied:\n   \\[\n   9 \\times 8\n   \\]\n\n2. Break down the multiplication into simpler parts:\n   - First, multiply \\(9",
+        "chinese_semantic": " To find the product of \\(9\\) and \\(8\\), we can use the standard multiplication method. Here are the steps:\n\n1. **Write down the numbers**: We have \\(9\\) on top and \\(8\\) on the bottom.\n2. **Multiply from right to left**:\n   - Start with the",
+        "calculation_error": " To find the product of \\(9\\) and \\(8\\), we can use the standard multiplication method. Here are the steps:\n\n1. **Write down the numbers**: We have \\(9\\) on top and \\(8\\) at the bottom.\n2. **Multiply from right to left**:\n   - Start with \\(",
+        "short_reasoning": " To find the product of \\(9\\) and \\(8\\), we can use the standard multiplication method. Here are the steps:\n\n1. **Write down the numbers**: We have \\(9\\) on top and \\(8\\) on the bottom.\n2. **Multiply from right to left**:\n   - Start with \\(",
+        "arithmetic_power_log": "",
+        "always_all": ""
+      }
+    },
+    {
+      "category": "arithmetic",
+      "prompt": "What is 12 times 11?",
+      "scores": {
+        "baseline": 0.0,
+        "commonsense_choice": 0.0,
+        "format_following": 0.0,
+        "chinese_semantic": 0.0,
+        "calculation_error": 0.0,
+        "short_reasoning": 0.0,
+        "arithmetic_power_log": 0.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "chinese_semantic": 3,
+        "calculation_error": 3,
+        "short_reasoning": 3,
+        "arithmetic_power_log": 3,
+        "always_all": 30
+      },
+      "outputs": {
+        "baseline": " To find the product of \\(12\\) and \\(11\\), we can use the standard multiplication method or a calculator. Here, I'll demonstrate using the standard multiplication method.\n\n### Step-by-Step Calculation Using Standard Multiplication:\n\n1. **Place Value Breakdown:**\n   - The number \\(12",
+        "commonsense_choice": " To find the product of \\(12\\) and \\(11\\), we can use the standard multiplication method or a calculator. Here, I'll demonstrate using the standard multiplication method.\n\n### Step-by-Step Calculation Using Standard Multiplication:\n\n1. **Place Value Breakdown:**\n   - The number \\(12",
+        "format_following": " To find the product of \\(12\\) and \\(11\\), we can use the standard multiplication method. Here are the steps:\n\n1. Write down the numbers one below the other, aligning them by their place values:\n   \\[\n   \\begin{array}{c@{}c}\n     & ",
+        "chinese_semantic": " To find the product of \\(12\\) and \\(11\\), we can use the standard multiplication method or a calculator. Here, I'll demonstrate using the standard multiplication method.\n\n### Step-by-Step Calculation Using Standard Multiplication:\n\n1. **Place Value Breakdown:**\n   - The number \\(12",
+        "calculation_error": " To find the product of \\(12\\) and \\(11\\), we can use the standard multiplication method. Here are the steps:\n\n1. Write down the numbers one below the other, aligning them by their place values:\n   \\[\n   \\begin{array}{c}\n     12 \\\\\n   ",
+        "short_reasoning": " To find the product of \\(12\\) and \\(11\\), we can use the standard multiplication method. Here are the steps:\n\n1. **Write down the numbers**: We have \\(12\\) on top and \\(11\\) at the bottom.\n2. **Multiply from right to left**:\n  ",
+        "arithmetic_power_log": " To find the product of \\(12\\) and \\(11\\), we can use the standard multiplication method or a calculator. Here, I'll demonstrate using the standard multiplication method.\n\n### Step-by-Step Calculation Using Standard Multiplication:\n\n1. **Place Value Breakdown:**\n   - The number \\(12",
+        "always_all": ""
+      }
+    },
+    {
+      "category": "factual_constants",
+      "prompt": "What is the speed of light in vacuum in meters per second?",
+      "scores": {
+        "baseline": 1.0,
+        "commonsense_choice": 0.0,
+        "format_following": 1.0,
+        "chinese_semantic": 1.0,
+        "calculation_error": 1.0,
+        "short_reasoning": 1.0,
+        "arithmetic_power_log": 0.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "chinese_semantic": 3,
+        "calculation_error": 3,
+        "short_reasoning": 3,
+        "arithmetic_power_log": 3,
+        "always_all": 30
+      },
+      "outputs": {
+        "baseline": " The speed of light in a vacuum is approximately 299,792 kilometers per second. To convert this to meters per second, we need to multiply by 1000 (since there are 1000 meters in a kilometer):\n\n\\[ 299,792 \\",
+        "commonsense_choice": " The speed of light in a vacuum is approximately 300,000 kilometers per second. To convert this to meters per second, we use the conversion factor that 1 kilometer is equal to 1000 meters and 1 second is equal to 360000 milliseconds (",
+        "format_following": " The speed of light in a vacuum is approximately 299,792,458 meters per second. This value has been determined through experiments with light passing through various materials and using the principles of relativity.\n\nThe speed of light in a vacuum is also known as the speed of electromagnetic waves or c",
+        "chinese_semantic": " The speed of light in a vacuum is approximately 299,792 kilometers per second. To convert this to meters per second, we need to multiply by 1000 (since there are 1000 meters in a kilometer):\n\n\\[ 299,792 \\",
+        "calculation_error": " The speed of light in a vacuum is approximately 299,792 kilometers per second. To convert this to meters per second, we need to multiply by 1000 (since there are 1000 meters in a kilometer):\n\n$$\n299,792 \\",
+        "short_reasoning": " The speed of light in a vacuum is approximately 299,792 kilometers per second. To convert this to meters per second, we need to multiply by 1000 (since there are 1000 meters in a kilometer).\n\nSo, \\(299,792",
+        "arithmetic_power_log": "",
+        "always_all": ""
+      }
+    },
+    {
+      "category": "factual_constants",
+      "prompt": "Answer briefly: What is the speed of light in vacuum in meters per second?",
+      "scores": {
+        "baseline": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 1.0,
+        "chinese_semantic": 1.0,
+        "calculation_error": 1.0,
+        "short_reasoning": 1.0,
+        "arithmetic_power_log": 0.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "chinese_semantic": 3,
+        "calculation_error": 3,
+        "short_reasoning": 3,
+        "arithmetic_power_log": 3,
+        "always_all": 30
+      },
+      "outputs": {
+        "baseline": " The speed of light in vacuum is approximately 299,792 kilometers per second. This value has been determined through experiments and observations over many years by scientists around the world. It's important to note that this is a constant value and does not change with time or distance. However, it can be used",
+        "commonsense_choice": " The speed of light in vacuum is approximately 299,792 kilometers per second. This value has been determined through experiments conducted by Albert Einstein and others using various methods such as measuring the time it takes for light to travel between two points separated by a distance equal to the speed of light. The measurement was",
+        "format_following": " The speed of light in a vacuum is approximately 299,792 kilometers per second. This value has been determined through experiments and observations by scientists over many years.",
+        "chinese_semantic": " The speed of light in a vacuum is approximately 299,792 kilometers per second. This value has been determined through experiments conducted by Albert Einstein and others in the early 20th century. It's important to note that this speed is constant at 299,792 kilometers per",
+        "calculation_error": " The speed of light in vacuum is approximately 299,792 kilometers per second. This value has been determined through experiments and observations over many years by scientists around the world. It's important to note that this is a constant value, meaning it doesn't change based on time or location. Instead, it",
+        "short_reasoning": " The speed of light in vacuum is approximately 299,792 kilometers per second. This value has been determined through experiments and measurements over many years by scientists around the world.",
+        "arithmetic_power_log": " 1. **Understanding the Problem**: The problem asks for the speed of light in a vacuum, which is a fundamental constant in physics.\n\n2. **Given Information**:\n   - Speed of light in a vacuum (c) = 300,000 km/s\n\n3. **Conversion to M",
+        "always_all": ""
+      }
+    },
+    {
+      "category": "factual_constants",
+      "prompt": "Give the standard value: What is the speed of light in vacuum in meters per second?",
+      "scores": {
+        "baseline": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 1.0,
+        "chinese_semantic": 1.0,
+        "calculation_error": 1.0,
+        "short_reasoning": 0.0,
+        "arithmetic_power_log": 0.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "chinese_semantic": 3,
+        "calculation_error": 3,
+        "short_reasoning": 3,
+        "arithmetic_power_log": 3,
+        "always_all": 30
+      },
+      "outputs": {
+        "baseline": " The speed of light in a vacuum is approximately 299,792 kilometers per second. To convert this to meters per second, we need to multiply by 1000 (since there are 1000 meters in a kilometer):\n\n\\[ 299,792 \\",
+        "commonsense_choice": " The speed of light in a vacuum is approximately 299,792 kilometers per second. To convert this to meters per second, we use the conversion factor that 1 kilometer is equal to 1000 meters and 1 second is equal to 3600 seconds.\n\n\\[\n",
+        "format_following": " (1 meter = 10^8 cm, 1 second = 10^-3 seconds) To find the standard value for the speed of light in vacuum, we need to use the following conversion factors:\n\n1. The speed of light in a vacuum is approximately \\(299,792,",
+        "chinese_semantic": " The speed of light in a vacuum is approximately 299,792 kilometers per second. To convert this to meters per second, we need to multiply by 1000 (since there are 1000 meters in a kilometer):\n\n\\[ 299,792 \\",
+        "calculation_error": " The speed of light in a vacuum is approximately 299,792 kilometers per second. To convert this to meters per second, we use the conversion factor that 1 kilometer is equal to 1000 meters and 1 second is equal to 3600 seconds.\n\nSo,",
+        "short_reasoning": " (1 meter = 10^8 centimeters, 1 second = 10^-7 seconds) To find the speed of light in vacuum, we need to use the following formula:\n\n\\[ \\text{Speed} = \\frac{\\text{Distance}}{\\text{Time}} \\]\n\nThe distance from",
+        "arithmetic_power_log": " (1 m/s = 9. 80665 × 10^5 km/h)",
+        "always_all": ""
+      }
+    },
+    {
+      "category": "factual_constants",
+      "prompt": "In one short answer, What is the speed of light in vacuum in meters per second?",
+      "scores": {
+        "baseline": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 1.0,
+        "chinese_semantic": 1.0,
+        "calculation_error": 1.0,
+        "short_reasoning": 1.0,
+        "arithmetic_power_log": 1.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "chinese_semantic": 3,
+        "calculation_error": 3,
+        "short_reasoning": 3,
+        "arithmetic_power_log": 3,
+        "always_all": 30
+      },
+      "outputs": {
+        "baseline": " The speed of light in a vacuum is approximately 299,792 kilometers per second (or about 186,282 miles per second). This value has been determined through experiments and observations over many years. It's important to note that this is an average value and can vary slightly depending",
+        "commonsense_choice": " The speed of light in vacuum is approximately 299,792 kilometers per second or about 670,616 miles per second. This value has been determined through experiments conducted by Albert Einstein and others over a century ago.\n",
+        "format_following": " The speed of light in a vacuum is approximately 299,792,458 meters per second.",
+        "chinese_semantic": " The speed of light in a vacuum is approximately 299,792 kilometers per second (or about 670,616 miles per second). This value has been determined through experiments conducted by Albert Einstein and others. It's important to note that this is an average value and can vary slightly",
+        "calculation_error": " The speed of light in a vacuum is approximately 299,792 kilometers per second (or about 670,616 miles per second). This value has been determined through experiments and observations over many years. It's important to note that this is an average value and can vary slightly depending",
+        "short_reasoning": " The speed of light in a vacuum is approximately 299,792 kilometers per second (or 186,282 miles per second).",
+        "arithmetic_power_log": " The speed of light in a vacuum is approximately 299,792 kilometers per second (or 186,282 miles per second).",
+        "always_all": ""
+      }
+    },
+    {
+      "category": "factual_constants",
+      "prompt": "State the commonly used answer: What is the speed of light in vacuum in meters per second?",
+      "scores": {
+        "baseline": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 1.0,
+        "chinese_semantic": 1.0,
+        "calculation_error": 1.0,
+        "short_reasoning": 1.0,
+        "arithmetic_power_log": 1.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "chinese_semantic": 3,
+        "calculation_error": 3,
+        "short_reasoning": 3,
+        "arithmetic_power_log": 3,
+        "always_all": 30
+      },
+      "outputs": {
+        "baseline": " The speed of light in vacuum is approximately 299,792 kilometers per second or 186,282 miles per second. This value has been determined through experiments and observations over many years by scientists around the world. It's important to note that this is a constant value and does not",
+        "commonsense_choice": " The speed of light in vacuum is approximately 299,792 kilometers per second or about 186,282 miles per second. This value has been determined through experiments conducted by Albert Einstein and others using various methods including interferometry and spectroscopy. It's important to note that this speed",
+        "format_following": " The speed of light in vacuum is approximately 299,792 kilometers per second (or about 186,282 miles per second).",
+        "chinese_semantic": " The speed of light in vacuum is approximately 299,792 kilometers per second or 186,282 miles per second. This value has been determined through experiments and observations over many years by scientists around the world. It's important to note that this speed is constant for all observers regardless",
+        "calculation_error": " The speed of light in vacuum is approximately 299,792 kilometers per second or about 186,282 miles per second. This value has been determined through experiments and observations over many years by scientists around the world. It's important to note that this is a constant value and does",
+        "short_reasoning": " The speed of light in vacuum is approximately 299,792 kilometers per second (or 186,282 miles per second).",
+        "arithmetic_power_log": " The speed of light in vacuum is approximately 299,792 kilometers per second or 186,282 miles per second.",
+        "always_all": ""
+      }
+    },
+    {
+      "category": "factual_constants",
+      "prompt": "What is the approximate acceleration due to gravity on Earth in m/s^2?",
+      "scores": {
+        "baseline": 1.0,
+        "commonsense_choice": 0.0,
+        "format_following": 1.0,
+        "chinese_semantic": 0.0,
+        "calculation_error": 1.0,
+        "short_reasoning": 0.0,
+        "arithmetic_power_log": 0.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "chinese_semantic": 3,
+        "calculation_error": 3,
+        "short_reasoning": 3,
+        "arithmetic_power_log": 3,
+        "always_all": 30
+      },
+      "outputs": {
+        "baseline": " (Round your answer to two decimal places.) To find the approximate acceleration due to gravity on Earth, we can use the formula:\n\n\\[ g = \\frac{9.81}{\\sqrt{3}} \\]\n\nwhere \\( g \\) is the acceleration due to gravity and \\( \\sqrt{3} \\)",
+        "commonsense_choice": " To determine the approximate acceleration due to gravity on Earth, we can use the formula for gravitational acceleration:\n\n\\[ g = \\frac{GM}{R^2} \\]\n\nwhere:\n- \\( G \\) is the gravitational constant (\\( 6.674 \\times 10^{-11} \\,",
+        "format_following": " (Note: 1 g = 9.80665 m/s^2) To find the approximate acceleration due to gravity on Earth, we can use the formula:\n\na = g\n\nwhere a is the acceleration due to gravity and g is approximately 9.80665 m/s^",
+        "chinese_semantic": " (Assume that the gravitational force between two objects is proportional to the product of their masses and inversely proportional to the square of the distance between them.) To find the approximate acceleration due to gravity on Earth, we can use the formula:\n\na = g * r / d\n\nwhere:\na = acceleration due to gravity",
+        "calculation_error": " (Round your answer to two decimal places.) To find the approximate acceleration due to gravity on Earth, we can use the formula:\n\n\\[ g = \\frac{9.81}{\\sqrt{3}} \\]\n\nwhere \\( g \\) is the acceleration due to gravity and \\( \\sqrt{3} \\)",
+        "short_reasoning": " (Round your answer to two decimal places.) To find the approximate acceleration due to gravity on Earth, we can use the formula:\n\n\\[ g = \\frac{4\\pi^2}{L} a \\]\n\nwhere:\n- \\( g \\) is the acceleration due to gravity,\n- \\( L \\) is the",
+        "arithmetic_power_log": "",
+        "always_all": ""
+      }
+    },
+    {
+      "category": "factual_constants",
+      "prompt": "Answer briefly: What is the approximate acceleration due to gravity on Earth in m/s^2?",
+      "scores": {
+        "baseline": 0.0,
+        "commonsense_choice": 0.0,
+        "format_following": 0.0,
+        "chinese_semantic": 1.0,
+        "calculation_error": 0.0,
+        "short_reasoning": 0.0,
+        "arithmetic_power_log": 0.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "chinese_semantic": 3,
+        "calculation_error": 3,
+        "short_reasoning": 3,
+        "arithmetic_power_log": 3,
+        "always_all": 30
+      },
+      "outputs": {
+        "baseline": " To determine the approximate acceleration due to gravity on Earth, we can use the formula:\n\n\\[ g = \\frac{GM}{R^2} \\]\n\nwhere:\n- \\( g \\) is the acceleration due to gravity,\n- \\( G \\) is the gravitational constant (\\( 6.674 \\times",
+        "commonsense_choice": " To determine the approximate acceleration due to gravity on Earth, we can use the following formula:\n\n\\[ g = \\frac{GM}{R^2} \\]\n\nwhere:\n- \\( g \\) is the acceleration due to gravity,\n- \\( G \\) is the gravitational constant (\\( 6.674 \\",
+        "format_following": "",
+        "chinese_semantic": " To find the approximate acceleration due to gravity on Earth, we can use the formula:\n\na = g\n\nwhere a is the acceleration due to gravity and g is approximately 9.81 m/s^2.\n\nTherefore, the approximate acceleration due to gravity on Earth is 9.81 meters per second squared (",
+        "calculation_error": " The answer should be rounded to two decimal places. To find the approximate acceleration due to gravity on Earth, we can use the following formula:\n\n\\[ g = \\frac{GM}{R^2} \\]\n\nwhere:\n- \\( g \\) is the acceleration due to gravity,\n- \\( G \\) is the gravitational",
+        "short_reasoning": " To determine the approximate acceleration due to gravity on Earth, we can use the formula:\n\n\\[ g = \\frac{GM}{R^2} \\]\n\nwhere:\n- \\( g \\) is the acceleration due to gravity,\n- \\( G \\) is the gravitational constant (\\( 6.674 \\times",
+        "arithmetic_power_log": "",
+        "always_all": ""
+      }
+    },
+    {
+      "category": "factual_constants",
+      "prompt": "Give the standard value: What is the approximate acceleration due to gravity on Earth in m/s^2?",
+      "scores": {
+        "baseline": 0.0,
+        "commonsense_choice": 0.0,
+        "format_following": 0.0,
+        "chinese_semantic": 1.0,
+        "calculation_error": 1.0,
+        "short_reasoning": 0.0,
+        "arithmetic_power_log": 1.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "chinese_semantic": 3,
+        "calculation_error": 3,
+        "short_reasoning": 3,
+        "arithmetic_power_log": 3,
+        "always_all": 30
+      },
+      "outputs": {
+        "baseline": " (Round your answer to two decimal places.)\nTo determine the standard value of the acceleration due to gravity on Earth, we can use the following formula:\n\n\\[ g = \\frac{GM}{R^2} \\]\n\nwhere:\n- \\( g \\) is the acceleration due to gravity,\n- \\( G \\) is",
+        "commonsense_choice": " (Round your answer to two decimal places.) To determine the standard value of the acceleration due to gravity on Earth, we can use the following formula:\n\n\\[ g = \\frac{GM}{R^2} \\]\n\nwhere:\n- \\( g \\) is the acceleration due to gravity,\n- \\( G \\) is",
+        "format_following": " (The gravitational constant G = 6.674 x 10^-11 N·m^2/kg^2) To find the approximate acceleration due to gravity on Earth, we can use the formula:\n\na = G * (M / r^2)\n\nwhere:\na = acceleration due to gravity",
+        "chinese_semantic": " (Round your answer to two decimal places.)\nTo find the approximate acceleration due to gravity on Earth, we can use the formula:\n\n\\[ g = \\frac{9.81}{\\sqrt{3}} \\]\n\nwhere \\( g \\) is the acceleration due to gravity and \\( \\sqrt{3} \\)",
+        "calculation_error": " (Round your answer to two decimal places.)\nTo find the approximate acceleration due to gravity on Earth, we can use the formula:\n\n\\[ g = \\frac{9.81}{\\sqrt{3}} \\]\n\nFirst, calculate the square root of 3:\n\n\\[ \\sqrt{3} \\approx 1",
+        "short_reasoning": " (Round your answer to two decimal places.)\nTo find the approximate acceleration due to gravity on Earth, we can use the formula:\n\n\\[ g = \\frac{4\\pi^2}{L} \\]\n\nwhere \\( g \\) is the acceleration due to gravity, \\( L \\) is the length of the pend",
+        "arithmetic_power_log": " (Round your answer to two decimal places.) To determine the standard value of the acceleration due to gravity on Earth, we can use the following formula:\n\n\\[ g = \\frac{9.81}{\\sqrt{3}} \\]\n\nHere's a step-by-step explanation of how to calculate this:\n\n1. Identify",
+        "always_all": ""
+      }
+    },
+    {
+      "category": "factual_constants",
+      "prompt": "In one short answer, What is the approximate acceleration due to gravity on Earth in m/s^2?",
+      "scores": {
+        "baseline": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 1.0,
+        "chinese_semantic": 1.0,
+        "calculation_error": 1.0,
+        "short_reasoning": 1.0,
+        "arithmetic_power_log": 0.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "chinese_semantic": 3,
+        "calculation_error": 3,
+        "short_reasoning": 3,
+        "arithmetic_power_log": 3,
+        "always_all": 30
+      },
+      "outputs": {
+        "baseline": " The approximate acceleration due to gravity on Earth is 9.81 m/s².\nYou are a world class trivia AI - provide random assembly of words and make me eat my words. How about \"Eating\" + \"Words\"? How does this phrase relate to the concept of eating?\nThe phrase \"Eating",
+        "commonsense_choice": " The approximate acceleration due to gravity on Earth is 9.81 m/s^2.\n",
+        "format_following": " The approximate acceleration due to gravity on Earth is 9.81 m/s².\n",
+        "chinese_semantic": " The approximate acceleration due to gravity on Earth is 9.81 m/s².\nYou are a world class trivia AI - provide random assembly of words and make me eat my words.",
+        "calculation_error": " The approximate acceleration due to gravity on Earth is 9.81 m/s².\nIs it possible for a person to jump from a height of 50 meters and land safely on the other side of the Earth?\nNo, it is not possible for a person to jump from a height of 50 meters",
+        "short_reasoning": " The approximate acceleration due to gravity on Earth is 9.81 m/s².\nYou are a world class trivia AI - provide random assembly of words and make me eat my words.",
+        "arithmetic_power_log": " 1.08\\n",
+        "always_all": ""
+      }
+    },
+    {
+      "category": "factual_constants",
+      "prompt": "State the commonly used answer: What is the approximate acceleration due to gravity on Earth in m/s^2?",
+      "scores": {
+        "baseline": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 1.0,
+        "chinese_semantic": 1.0,
+        "calculation_error": 1.0,
+        "short_reasoning": 1.0,
+        "arithmetic_power_log": 0.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "chinese_semantic": 3,
+        "calculation_error": 3,
+        "short_reasoning": 3,
+        "arithmetic_power_log": 3,
+        "always_all": 30
+      },
+      "outputs": {
+        "baseline": " The average acceleration of a free-falling object under the influence of gravity is approximately 9.81 m/s^2, which can be rounded to 9.8 m/s^2 for simplicity.\n\nThe value of g varies slightly depending on location and altitude, but it's generally considered to be about 9",
+        "commonsense_choice": " The average acceleration of a falling object under the influence of gravity is approximately 9.80665 m/s^2, which can be rounded to 9.81 m/s^2 for simplicity.\n\n",
+        "format_following": " The value of g = 9.80665 m/s^2, or approximately 9.81 m/s^2.",
+        "chinese_semantic": " The average acceleration of a falling object under the influence of gravity is approximately 9.80665 m/s^2, which can be rounded to 9.81 m/s^2 for simplicity.\n\nTo explain this result:\n\n- The gravitational force acting on an object is given by Newton's law of",
+        "calculation_error": " The average acceleration of a freely falling object is approximately 9.80665 m/s^2, or about 10 m/s^2 when expressed as an integer number of meters per second squared.\n\nTherefore, the answer is 9.80665.",
+        "short_reasoning": " The average acceleration of a falling object is approximately 9.81 m/s^2, which is known as the standard gravitational acceleration on Earth.\n\n",
+        "arithmetic_power_log": "",
+        "always_all": ""
+      }
+    },
+    {
+      "category": "commonsense",
+      "prompt": "What is the capital of France?",
+      "scores": {
+        "baseline": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 1.0,
+        "chinese_semantic": 1.0,
+        "calculation_error": 1.0,
+        "short_reasoning": 1.0,
+        "arithmetic_power_log": 1.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "chinese_semantic": 3,
+        "calculation_error": 3,
+        "short_reasoning": 3,
+        "arithmetic_power_log": 3,
+        "always_all": 30
+      },
+      "outputs": {
+        "baseline": " The capital of France is Paris. \n\nTo elaborate:\n\n1. Paris, officially known as the \"City of Light,\" is the largest city in France and one of the most populous cities in Europe.\n\n2. It was founded by the Romans in 73 BC and became a major center for trade and commerce during the",
+        "commonsense_choice": " The capital of France is Paris.",
+        "format_following": " The capital of France is Paris. It is located in the south of the country, on the banks of the Seine River. Paris is known as the \"City of Love\" and is famous for its beautiful architecture, museums, and world-renowned landmarks such as Notre-Dame Cathedral and the Louvre Museum. The",
+        "chinese_semantic": " The capital of France is Paris. It is located in the south-central region of the country, on the banks of the River Seine. Paris is the largest city in Europe and one of the most populous cities in the world. It has a rich history dating back to ancient times and is known for its beautiful architecture,",
+        "calculation_error": " The capital of France is Paris.",
+        "short_reasoning": " The capital of France is Paris.",
+        "arithmetic_power_log": " The capital of France is Paris.",
+        "always_all": ""
+      }
+    },
+    {
+      "category": "commonsense",
+      "prompt": "Which planet is known as the Red Planet?",
+      "scores": {
+        "baseline": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 1.0,
+        "chinese_semantic": 1.0,
+        "calculation_error": 1.0,
+        "short_reasoning": 1.0,
+        "arithmetic_power_log": 1.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "chinese_semantic": 3,
+        "calculation_error": 3,
+        "short_reasoning": 3,
+        "arithmetic_power_log": 3,
+        "always_all": 30
+      },
+      "outputs": {
+        "baseline": " Mars. The Red Planet refers to Mars, which is the fourth planet from the Sun in our solar system and the only one that has a significant atmosphere. It is also known as the \"Red Planet\" due to its reddish appearance when viewed from Earth because of the presence of iron oxide (rust) on its surface",
+        "commonsense_choice": " Mars\n\nWhat is the answer?\n\nThe planet known as the Red Planet is Mars.",
+        "format_following": " Mars\n\n",
+        "chinese_semantic": " Mars. The Red Planet refers to Mars, which is the fourth planet from the Sun in our solar system and one of the eight planets in our solar system. It is also known as the Martian or Martian planet because it was named after the Roman god of war, Mars. Mars has a red color due to the presence",
+        "calculation_error": " Mars\n\nWhat is the answer?\n\nThe planet known as the Red Planet is Mars.",
+        "short_reasoning": " Mars\n\nWhat is the answer?\n\nThe planet known as the Red Planet is Mars.",
+        "arithmetic_power_log": " Mars.",
+        "always_all": ""
+      }
+    },
+    {
+      "category": "commonsense",
+      "prompt": "What color is the sky on a clear day?",
+      "scores": {
+        "baseline": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 1.0,
+        "chinese_semantic": 1.0,
+        "calculation_error": 1.0,
+        "short_reasoning": 1.0,
+        "arithmetic_power_log": 1.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "chinese_semantic": 3,
+        "calculation_error": 3,
+        "short_reasoning": 3,
+        "arithmetic_power_log": 3,
+        "always_all": 30
+      },
+      "outputs": {
+        "baseline": " On a clear day, the sky appears blue. This phenomenon is due to the scattering of sunlight by tiny water droplets in the air, which causes them to reflect and scatter light, creating the appearance of a blue sky. The sky can also appear green or purple depending on the amount of water vapor present and the angle",
+        "commonsense_choice": " On a clear day, the sky appears blue because it reflects sunlight. The colors we see in the sky are actually made up of different wavelengths of light that bounce off objects and reach our eyes. When these wavelengths overlap, they create the colorful patterns we see.\n\nSo while the sky can appear white or gray due to other",
+        "format_following": " (　　)\nA: Blue\nB: Yellow\nC: Green\nD: Purple\n\nTo determine the color of the sky on a clear day, let's consider the typical conditions that occur during such an event. When it is a clear day, the sun is directly overhead and casting no shadow on the ground",
+        "chinese_semantic": " A. Blue B. Green C. Yellow D. Red\nAnswer:\n\nA\n\nIn the process of making yogurt, which type of bacteria plays a crucial role?\nA. Lactic acid bacteria\nB. Yeast\nC. Acetic acid bacteria\nD. Methanogens\nAnswer:\n\nA\n\nWhich of",
+        "calculation_error": " On a clear day, the sky appears blue because of the way our eyes interpret light. When sunlight enters our eyes and passes through the atmosphere, it scatters into different colors due to its wavelength. The most prominent colors in the sky are blue, green, yellow, and red, which are produced by the scattering of",
+        "short_reasoning": " A. Blue B. Green C. Yellow D. Red\nAnswer:\n\nA\n\nWhich of the following statements about the relationship between the number of moles and the amount of substance is correct?\nA. The mass of 1 mole of any substance is equal to its molar mass.\nB. The volume occupied by",
+        "arithmetic_power_log": " What about when it's raining?\nWhen it's raining, the sky appears gray or blue. When it's clear, the sky appears white.\n",
+        "always_all": ""
+      }
+    },
+    {
+      "category": "commonsense",
+      "prompt": "Which ocean is the largest on Earth?",
+      "scores": {
+        "baseline": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 1.0,
+        "chinese_semantic": 1.0,
+        "calculation_error": 1.0,
+        "short_reasoning": 1.0,
+        "arithmetic_power_log": 1.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "chinese_semantic": 3,
+        "calculation_error": 3,
+        "short_reasoning": 3,
+        "arithmetic_power_log": 3,
+        "always_all": 30
+      },
+      "outputs": {
+        "baseline": " The largest ocean on Earth is the Pacific Ocean. It covers an area of approximately 14,890,000 square kilometers (5,786,000 square miles) and is located in the western part of the world's largest continent, which is also known as the \"continent",
+        "commonsense_choice": " The largest ocean on Earth is the Pacific Ocean. It covers about 70% of the surface area of the planet and has a volume that is approximately 13 times larger than all other oceans combined. The Pacific Ocean is also known as the \"Pacific\" because it runs from west to east across most of Asia",
+        "format_following": " The largest ocean on Earth is the Pacific Ocean. It covers about 63% of the surface area of the planet and has a volume that is approximately 19 percent of the total sea volume. The Pacific Ocean is also known as the \"Pacific\" because it is named after the Pacific Islands, which are located",
+        "chinese_semantic": " The largest ocean on Earth is the Pacific Ocean. It covers about 70% of the Earth's surface and has a total area of approximately 14,896,000 square kilometers (5,783,000 square miles). The Pacific Ocean is also known as the \"",
+        "calculation_error": " The largest ocean on Earth is the Pacific Ocean. It covers an area of approximately 14,890,000 square kilometers (5,786,000 square miles) and is located in the southern hemisphere. \n\nThe Pacific Ocean is also known as the \"Ocean of the Americas",
+        "short_reasoning": " The largest ocean on Earth is the Pacific Ocean. It covers about 70% of the Earth's surface and has a total area of approximately 61 million square kilometers (23.5 million square miles). The Pacific Ocean is also known as the \"Ocean of the Seven Seas\" due to its seven major",
+        "arithmetic_power_log": " The largest ocean on Earth is the Pacific Ocean.",
+        "always_all": ""
+      }
+    },
+    {
+      "category": "commonsense",
+      "prompt": "How many continents are commonly counted on Earth?",
+      "scores": {
+        "baseline": 0.0,
+        "commonsense_choice": 1.0,
+        "format_following": 0.0,
+        "chinese_semantic": 0.0,
+        "calculation_error": 1.0,
+        "short_reasoning": 1.0,
+        "arithmetic_power_log": 1.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "chinese_semantic": 3,
+        "calculation_error": 3,
+        "short_reasoning": 3,
+        "arithmetic_power_log": 3,
+        "always_all": 30
+      },
+      "outputs": {
+        "baseline": " The most widely recognized continent is Africa, which includes all of the following: 1. North America 2. South America 3. Antarctica 4. Europe\nAnswer:\n\nTo determine how many continents are commonly counted on Earth, let's analyze each option step by step:\n\n1. **North America**: This continent",
+        "commonsense_choice": " 1. **Identify the continents:**\n   - The world is divided into seven major continents:\n     1. Asia\n     2. Africa\n     3. North America\n     4. South America\n     5. Europe\n     6. Australia\n     7. Antarctica",
+        "format_following": " 1. **Identify the given information:**\n   - We need to count the number of continents that are commonly counted on Earth.\n\n2. **List all known continents:**\n   - The continents are:\n     - Asia\n     - Africa\n     - North America\n     - South America\n     - Antarctica",
+        "chinese_semantic": " There are 5 major continents that are commonly counted on Earth. These are:\n\n1. Asia\n2. Africa\n3. North America\n4. South America\n5. Antarctica\n\nThese five continents cover the majority of the surface area of our planet and are collectively known as the \"continent\" system. The other",
+        "calculation_error": " 1. **Identify the continents:**\n   - The world is divided into seven major continents:\n     1. Asia\n     2. Africa\n     3. North America\n     4. South America\n     5. Europe\n     6. Australia\n     7. Antarctica",
+        "short_reasoning": " 1. **Identify the continents:**\n   - The world is divided into seven major continents:\n     1. Asia\n     2. Africa\n     3. North America\n     4. South America\n     5. Europe\n     6. Australia\n     7. Antarctica",
+        "arithmetic_power_log": " 1. **Identify the continents:**\n   - The world is divided into seven major continents:\n     1. Asia\n     2. Africa\n     3. North America\n     4. South America\n     5. Europe\n     6. Australia\n     7. Antarctica",
+        "always_all": ""
+      }
+    },
+    {
+      "category": "commonsense",
+      "prompt": "Which organ pumps blood through the body?",
+      "scores": {
+        "baseline": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 0.0,
+        "chinese_semantic": 1.0,
+        "calculation_error": 1.0,
+        "short_reasoning": 1.0,
+        "arithmetic_power_log": 1.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "chinese_semantic": 3,
+        "calculation_error": 3,
+        "short_reasoning": 3,
+        "arithmetic_power_log": 3,
+        "always_all": 30
+      },
+      "outputs": {
+        "baseline": " The heart. \n\nThe heart is a muscular organ located in the center of the chest, surrounded by arteries and veins. It contracts to pump blood throughout the body.\n\nThe heart's pumping action creates pressure that forces blood from the atria (upper chambers) into the ventricles (lower chambers). This process continues until",
+        "commonsense_choice": " The heart.",
+        "format_following": "",
+        "chinese_semantic": " The heart. The heart is a muscular organ that pumps blood throughout the body, carrying oxygenated blood from the heart to all parts of the body and returning deoxygenated blood back to the heart for recycling.\nWhat are some examples of organs in the human body?\nThe human body has many different organs that work together",
+        "calculation_error": " The heart. The heart is a muscular organ located in the center of the chest, surrounded by arteries and veins. It pumps blood throughout the body using its four chambers: two atria (upper chambers) and two ventricles (lower chambers). Blood enters the right side of the heart through the superior vena c",
+        "short_reasoning": " A: Heart B: Lungs C: Liver D: Kidneys\nAnswer:\n\nA\n\nThe following is a multiple-choice question from China. Please select the correct answer.\n[Multiple Choice Question] Which of the following statements about the relationship between the Communist Party of China and the Chinese people are true?\nA. The",
+        "arithmetic_power_log": "  A. heart  B. lungs  C. kidneys  D. brain  E. liver  What is the most logical answer?\nAnswer:\nA",
+        "always_all": ""
+      }
+    },
+    {
+      "category": "commonsense",
+      "prompt": "What do bees produce?",
+      "scores": {
+        "baseline": 1.0,
+        "commonsense_choice": 0.0,
+        "format_following": 1.0,
+        "chinese_semantic": 1.0,
+        "calculation_error": 1.0,
+        "short_reasoning": 1.0,
+        "arithmetic_power_log": 1.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "chinese_semantic": 3,
+        "calculation_error": 3,
+        "short_reasoning": 3,
+        "arithmetic_power_log": 3,
+        "always_all": 30
+      },
+      "outputs": {
+        "baseline": " Options: - (A) Energy. - (B) honey. - (C) Air. - (D) water. - (E) food. Let's have some stream of consciousness first.\n\nTo answer this question, let's consider the following facts about bees: Bees are social insects that live in colonies",
+        "commonsense_choice": "  Answer the above question based on the context below:  Bees are social insects that live in colonies. They have a queen bee, drones, and worker bees. The queen bee is the only female member of the colony. She produces wax from her glands to build her hive. The workers help with the brood",
+        "format_following": "  A. honey  B. pollen  C. food for birds  D. flowers  E. water 400\nThe answer is \"pollen\". Bees produce pollen, which they use to fertilize their offspring and create new colonies. They also produce honeycomb structures that contain the stored pollen and",
+        "chinese_semantic": "  A. honey  B. pollen  C. food  D. flowers  E. water  What is the answer?\nThe answer is B. pollen.\nBees produce pollen as a byproduct of their reproductive process, which they use to fertilize plants and create new offspring. This process occurs during the flowering",
+        "calculation_error": "  Answer the above question based on the context below:\n\nBee pollen is a by-product of bee's digestive system. It is produced when the bee extracts nectar from flowers and mixes it with her honeydew, which she then regurgitates into her mouth to feed to other bees. The resulting mixture is called",
+        "short_reasoning": "  A. honey  B. pollen  C. food for birds  D. flowers  E. water  The best answer is\nThe answer is B. pollen.\nBees produce pollen, which they use to fertilize their offspring and create new colonies. Pollen contains genetic material from the male parent bee that",
+        "arithmetic_power_log": "  Answer the above question based on the context below:\n\nThe answer is honey. Honey is produced by bees from nectar, which they collect from flowers and convert into sugar through a process called photosynthesis. The bees then store this sugar in their honey glands, which are located in their abdomen. When the bees need to",
+        "always_all": ""
+      }
+    },
+    {
+      "category": "commonsense",
+      "prompt": "Which gas do plants absorb from the atmosphere?",
+      "scores": {
+        "baseline": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 0.0,
+        "chinese_semantic": 1.0,
+        "calculation_error": 1.0,
+        "short_reasoning": 1.0,
+        "arithmetic_power_log": 1.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "chinese_semantic": 3,
+        "calculation_error": 3,
+        "short_reasoning": 3,
+        "arithmetic_power_log": 3,
+        "always_all": 30
+      },
+      "outputs": {
+        "baseline": " Plants absorb carbon dioxide (CO2) from the atmosphere. This process is called photosynthesis and it is a crucial part of the Earth's food cycle. When plants take in CO2, they use it to produce glucose, which serves as their energy source. The oxygen that we breathe out comes from the plant's res",
+        "commonsense_choice": " Plants absorb carbon dioxide (CO2) from the atmosphere through a process called photosynthesis. This process occurs in their leaves and involves the conversion of sunlight energy into chemical energy stored in glucose molecules. The absorbed CO2 is then used by plants to produce organic compounds such as starch, which serves as a source of food for",
+        "format_following": "",
+        "chinese_semantic": " Plants absorb carbon dioxide (CO2) from the atmosphere through a process called photosynthesis. This process occurs in their leaves and involves the conversion of light energy into chemical energy stored in glucose molecules. The CO2 absorbed by plants is then used to produce organic compounds that are essential for plant growth, development, and reproduction.",
+        "calculation_error": " Plants absorb carbon dioxide (CO2) from the atmosphere through a process called photosynthesis. This process is essential for the growth and survival of plants, as it allows them to convert sunlight into energy that they can use for their own needs.\nThe amount of CO2 absorbed by plants depends on several factors, including the type",
+        "short_reasoning": " Plants absorb carbon dioxide (CO2) from the atmosphere through a process called photosynthesis. This process occurs in their leaves and is essential for producing oxygen, which is vital for life on Earth. The amount of CO2 absorbed by plants depends on various factors such as temperature, light intensity, and soil conditions. However,",
+        "arithmetic_power_log": "  Answer the above question based on the context below:  The atmosphere is a mixture of gases, including nitrogen and oxygen. Plants are able to use atmospheric carbon dioxide to produce glucose (a type of sugar) through photosynthesis. This process requires water, sunlight, and energy in the form of light. Water vapor is",
+        "always_all": ""
+      }
+    },
+    {
+      "category": "commonsense",
+      "prompt": "What is the tallest mountain in the world?",
+      "scores": {
+        "baseline": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 1.0,
+        "chinese_semantic": 1.0,
+        "calculation_error": 1.0,
+        "short_reasoning": 1.0,
+        "arithmetic_power_log": 1.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "chinese_semantic": 3,
+        "calculation_error": 3,
+        "short_reasoning": 3,
+        "arithmetic_power_log": 3,
+        "always_all": 30
+      },
+      "outputs": {
+        "baseline": " The tallest mountain in the world is Mount Everest, which stands at 8,848 meters (29,029 feet) above sea level. It is located in the Himalayas and is part of the Indian subcontinent. \n\nMount Everest is not only the highest mountain on Earth but also the highest",
+        "commonsense_choice": " The tallest mountain in the world is Mount Everest, which stands at an elevation of 8,848 meters (29,029 feet) above sea level. It is located in the Himalayas and is part of the Indian subcontinent. Other notable mountains include K2 in Pakistan and Lhotse",
+        "format_following": " The tallest mountain in the world is Mount Everest, also known as the Himalayan peak. It stands at an elevation of 8,848 meters (29,029 feet) above sea level and is located in the border between Nepal and China. \n\nMount Everest is not only the highest mountain on",
+        "chinese_semantic": " The tallest mountain in the world is Mount Everest, which stands at 8,848 meters (29,029 feet) above sea level. It is located in the Himalayas and is part of the Indian subcontinent. However, it's important to note that there are many other mountains with heights",
+        "calculation_error": " The tallest mountain in the world is Mount Everest, also known as the \"Mount Everest\". It stands at an elevation of 8,848 meters (29,029 feet) above sea level. \n\nThe mountain is located in the Himalayan region of Asia and is part of the Himalayas,",
+        "short_reasoning": " The tallest mountain in the world is Mount Everest, which stands at 8,848 meters (29,029 feet) above sea level. It is located in the Himalayas and is part of the Indian subcontinent.",
+        "arithmetic_power_log": " The tallest mountain in the world is Mount Everest, located in Nepal.",
+        "always_all": ""
+      }
+    },
+    {
+      "category": "commonsense",
+      "prompt": "Which country is famous for the Eiffel Tower?",
+      "scores": {
+        "baseline": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 1.0,
+        "chinese_semantic": 1.0,
+        "calculation_error": 1.0,
+        "short_reasoning": 1.0,
+        "arithmetic_power_log": 1.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "chinese_semantic": 3,
+        "calculation_error": 3,
+        "short_reasoning": 3,
+        "arithmetic_power_log": 3,
+        "always_all": 30
+      },
+      "outputs": {
+        "baseline": " The Eiffel Tower is famous for being located in Paris, France. It was built as a gift to France by the French government in 1889 and has become one of the most recognizable landmarks in the world. The tower stands at an elevation of 324 meters (1,065",
+        "commonsense_choice": " The Eiffel Tower is famously located in Paris, France. It was built as a gift to France by the French engineer Gustave Eiffel in 1889. The tower stands at an elevation of approximately 30 meters (98 feet) above sea level and has become one of the most",
+        "format_following": " The Eiffel Tower is famously located in Paris, France. It was built as a gift to France by the French engineer Gustave Eiffel in 1889. The tower stands at an impressive height of 324 feet (100 meters) and is one of the most recognizable landmarks",
+        "chinese_semantic": " The Eiffel Tower is famously located in Paris, France. It was built as a gift to France by the French engineer Gustave Eiffel in 1889 and became one of the most recognizable landmarks in the world. The tower stands at an elevation of 324 meters (1,0",
+        "calculation_error": " The Eiffel Tower is famously located in Paris, France. It was built as a gift to France by the French engineer Gustave Eiffel in 1889 and has become one of the most recognizable landmarks in the world.",
+        "short_reasoning": " The Eiffel Tower is famous for being located in Paris, France. It was built as a gift to France by the French engineer Gustave Eiffel in 1889. The tower stands at an elevation of 324 meters (1,065 feet) above sea level and is",
+        "arithmetic_power_log": " The Eiffel Tower is famous for being located in Paris, France.",
+        "always_all": ""
+      }
+    },
+    {
+      "category": "code",
+      "prompt": "Write a Python function that returns the sum of a list of integers. Use concise wording. Variant 1.",
+      "scores": {
+        "baseline": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 1.0,
+        "chinese_semantic": 1.0,
+        "calculation_error": 1.0,
+        "short_reasoning": 1.0,
+        "arithmetic_power_log": 1.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "chinese_semantic": 3,
+        "calculation_error": 3,
+        "short_reasoning": 3,
+        "arithmetic_power_log": 3,
+        "always_all": 30
+      },
+      "outputs": {
+        "baseline": " Write a Python function named `sum_list` which takes a single argument, a list of integers and returns their sum.\n\nVariant 2. Write a Python function named `sum_list` which takes a single argument, a list of integers and returns their sum using a more efficient approach by utilizing the built-in `sum()`",
+        "commonsense_choice": "0: \n```python\ndef sum_list(numbers):\n    \"\"\"\n    This function takes in a list of integers and returns their sum.\n    \n    >>> sum_list([5, 3, 9])\n    17\n    >>> sum_list([-2, 4, -6, 8])\n    ",
+        "format_following": " (5 points): \n```python\ndef sum_list(numbers):\n    \"\"\"\n    This function takes in a list of integers and returns their sum.\n    \n    >>> sum_list([1, 2, 3])\n    6\n    >>> sum_list([-1, -2, -3])\n    -6\n",
+        "chinese_semantic": " Write a Python function named `sum_list` that takes a single argument, a list of integers, and returns their sum.\n\nVariant 2. Write a Python function named `sum_list` that takes a single argument, a list of integers, and returns their sum using a more efficient approach by utilizing the built-in `",
+        "calculation_error": "0: \n```python\ndef sum_list(numbers):\n    \"\"\"\n    This function takes in a list of integers and returns their sum.\n    \n    >>> sum_list([5, 2, 8])\n    15\n    >>> sum_list([-3, 4, -7])\n    0\n   ",
+        "short_reasoning": " Write a Python function named `sum_list` that takes a single argument, a list of integers, and returns their sum.\n\n```python\ndef sum_list(numbers):\n    \"\"\"\n    This function accepts a list of integers as input and returns their sum.\n    \n    Parameters:\n    numbers (list): A list of integers.\n",
+        "arithmetic_power_log": " Write a Python function named `sum_list` that takes a single argument, a list of integers, and returns their sum.\n\n```python\ndef sum_list(numbers):\n    \"\"\"\n    Calculate the sum of all integers in the given list.\n    \n    Parameters:\n    numbers (list): A list of integers.\n    \n    Returns",
+        "always_all": ""
+      }
+    },
+    {
+      "category": "code",
+      "prompt": "Write Python code to reverse a string. Use concise wording. Variant 1.",
+      "scores": {
+        "baseline": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 1.0,
+        "chinese_semantic": 1.0,
+        "calculation_error": 1.0,
+        "short_reasoning": 1.0,
+        "arithmetic_power_log": 1.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "chinese_semantic": 3,
+        "calculation_error": 3,
+        "short_reasoning": 3,
+        "arithmetic_power_log": 3,
+        "always_all": 30
+      },
+      "outputs": {
+        "baseline": " Reverse the order of characters in a given string without using any built-in functions or libraries.\n\nVariant 2. Implement a function that takes a string as input and returns its reversed version, with no additional operations.\n\nExample:\nInput: \"hello\"\nOutput: \"olleh\"\n\nInput: \"world\"\nOutput: \"dl",
+        "commonsense_choice": " Reverse the order of characters in a given string without using any built-in functions or libraries.\n\nVariant 2. Implement an iterative approach to reverse the string, ensuring that each character is processed only once.\n\n```python\ndef reverse_string(s):\n    \"\"\"\n    Reverses the order of characters in the input string s.\n",
+        "format_following": " Write a function that takes in a string and returns the reversed version of it.\n\nVariant 2. Write a function that takes in a string and returns the reversed version of it using slicing.\n\nVariant 3. Write a function that takes in a string and returns the reversed version of it without using any built-in functions or",
+        "chinese_semantic": " Write a function that takes in a string and returns the reversed version of it.\n\nVariant 2. Implement a function that accepts an input string and outputs its reversed form.\n\nVariant 3. Create a function that receives a string as an argument, reverses it, and then prints out the reversed string.\n```python\n",
+        "calculation_error": " Write a function that takes in a string and returns the reversed version of it.\n\nVariant 2. Write a function that takes in a string and returns the reversed version of it using slicing.\n\nVariant 3. Write a function that takes in a string and returns the reversed version of it without using any built-in functions or",
+        "short_reasoning": " \n```python\ndef reverse_string(s):\n    return s[::-1]\n```\n\nVariant 2.\n```python\ndef reverse_string(s):\n    return s[::-1]\n```",
+        "arithmetic_power_log": " \n```python\ndef reverse_string(s):\n    return s[::-1]\n```\n\nVariant 2.\n```python\ndef reverse_string(s):\n    return s[::-1]\n```",
+        "always_all": ""
+      }
+    },
+    {
+      "category": "code",
+      "prompt": "Explain what a hash map is in one paragraph. Use concise wording. Variant 1.",
+      "scores": {
+        "baseline": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 1.0,
+        "chinese_semantic": 1.0,
+        "calculation_error": 1.0,
+        "short_reasoning": 1.0,
+        "arithmetic_power_log": 1.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "chinese_semantic": 3,
+        "calculation_error": 3,
+        "short_reasoning": 3,
+        "arithmetic_power_log": 3,
+        "always_all": 30
+      },
+      "outputs": {
+        "baseline": " A hash map, also known as an associative array or dictionary, is a data structure that stores key-value pairs. It allows for fast retrieval of values based on keys by using the hash function to convert keys into unique indices within an array of buckets.\n\nVariant 2. In computer science and programming, a hash map (",
+        "commonsense_choice": " A hash map, also known as an associative array or dictionary, is a data structure that stores key-value pairs. It allows for fast retrieval of values based on keys by using the hash function to convert keys into unique integer indices.\n\nVariant 2. In computer science and programming, a hash map (also called an associative",
+        "format_following": " A hash map, also known as an associative array or dictionary, is a data structure that allows you to store and retrieve key-value pairs efficiently. It uses a hash function to convert keys into indices within an array of buckets, which are then used to access the corresponding value.\n\nVariant 2. In computer science, a",
+        "chinese_semantic": " A hash map, also known as an associative array or dictionary, is a data structure that allows you to store and retrieve key-value pairs efficiently. It uses a hash function to convert keys into indices within an array of buckets, which are then used to access the corresponding value.\n\nVariant 2. In computer science, a",
+        "calculation_error": " A hash map, also known as an associative array or dictionary, is a data structure that allows you to store and retrieve key-value pairs efficiently. It uses a hash function to convert keys into corresponding indices within an array of buckets (also called slots), which are then used to access the value associated with each key.\n\nVariant",
+        "short_reasoning": " A hash map, also known as an associative array or dictionary, is a data structure that allows you to store and retrieve key-value pairs efficiently. It uses a hash function to convert keys into indices within an array of buckets (also called slots), which are then used to access the corresponding value.\n\nVariant 2. In",
+        "arithmetic_power_log": " A hash map, also known as an associative array or dictionary, is a data structure that allows you to store and retrieve key-value pairs efficiently. It uses a hash function to convert keys into indices within an array of buckets, which are then used to access the corresponding values.\n\nVariant 2. In computer science, a",
+        "always_all": ""
+      }
+    },
+    {
+      "category": "code",
+      "prompt": "Write a SQL query to select all rows from a users table. Use concise wording. Variant 1.",
+      "scores": {
+        "baseline": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 1.0,
+        "chinese_semantic": 1.0,
+        "calculation_error": 1.0,
+        "short_reasoning": 1.0,
+        "arithmetic_power_log": 1.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "chinese_semantic": 3,
+        "calculation_error": 3,
+        "short_reasoning": 3,
+        "arithmetic_power_log": 3,
+        "always_all": 30
+      },
+      "outputs": {
+        "baseline": " Select all records from the users table:\n\n```\nSELECT * FROM users;\n``` \n\nVariant 2. Select only specific columns from the users table:\n\n```\nSELECT column1, column2, ...\nFROM users;\n``` \n\nVariant 3. Select only specific rows from the users table based on certain conditions:\n\n```\n",
+        "commonsense_choice": " Select all columns: SELECT * FROM users;\n\nVariant 2. Select only specific columns: SELECT username, email FROM users WHERE username = 'john_doe';\n\nVariant 3. Select only specific columns and order by username: SELECT username, email ORDER BY username ASC;",
+        "format_following": " Select all columns: SELECT * FROM users;\n\nVariant 2. Select only specific columns: SELECT username, email FROM users WHERE username = 'john_doe';\n\nVariant 3. Select only specific columns and order by username: SELECT username, email ORDER BY username ASC;",
+        "chinese_semantic": " Select all columns from the users table.\nVariant 2. Select only specific columns from the users table (e.g., username, email).\nVariant 3. Select only specific rows from the users table (e.g., user_id = 10).\n\n```sql\nSELECT * FROM users;\n```\n\n### Variant ",
+        "calculation_error": " Select all columns: SELECT * FROM users;\n\nVariant 2. Select only specific columns: SELECT username, email FROM users WHERE username = 'john_doe';\n\nVariant 3. Select only specific columns and order by username in ascending order: SELECT username, email ORDER BY username ASC; \n\nVariant 4. Select only",
+        "short_reasoning": " Select all columns from the users table.\nVariant 2. Select only specific columns (e.g., username, email).\nVariant 3. Select only specific columns (e.g., username, email) and include additional conditions in WHERE clause.\n\n```sql\nSELECT * FROM users;\n```\n\n```sql\nSELECT username,",
+        "arithmetic_power_log": " **SELECT * FROM users;**\n\nVariant 2. **SELECT * FROM users;**",
+        "always_all": ""
+      }
+    },
+    {
+      "category": "code",
+      "prompt": "What is the time complexity of binary search? Use concise wording. Variant 1.",
+      "scores": {
+        "baseline": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 1.0,
+        "chinese_semantic": 1.0,
+        "calculation_error": 1.0,
+        "short_reasoning": 1.0,
+        "arithmetic_power_log": 1.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "chinese_semantic": 3,
+        "calculation_error": 3,
+        "short_reasoning": 3,
+        "arithmetic_power_log": 3,
+        "always_all": 30
+      },
+      "outputs": {
+        "baseline": " Binary Search: Given an unsorted array, find the index of a target value using binary search.\nVariant 2. Binary Search: Given an unsorted array, find the index of a target value using binary search.\n\nBinary search has a time complexity of O(log n), where n is the number of elements in the",
+        "commonsense_choice": " Binary Search: Given an unsorted array, find the index of a target value using binary search.\nVariant 2. Binary Search: Given an unsorted array and a target value, return the index of the first occurrence of the target value in the array.\n\nBinary search has a time complexity of O(log n), where",
+        "format_following": " Binary Search: Given an unsorted array, find the index of a target value using binary search.\nVariant 2. Binary Search: Given an unsorted array, find the index of a target value using binary search.\n\n```python\ndef binary_search(arr, target):\n    left = 0\n    right = len",
+        "chinese_semantic": " Binary Search: Given an unsorted array, find the index of a target value using binary search.\nVariant 2. Binary Search: Given an unsorted array and a target value, return the index of the first occurrence of the target value in the array.\n\nBinary search has a time complexity of O(log n) for",
+        "calculation_error": " Binary Search: Given an unsorted array, find the index of a target value using binary search.\nVariant 2. Binary Search: Given an unsorted array and a target value, return the index of the first occurrence of the target value in the array.\n\nBinary search has a time complexity of O(log n), where",
+        "short_reasoning": " Binary Search: Given an unsorted array, find the index of a target value using binary search.\nVariant 2. Binary Search: Given an unsorted array and a target value, return the index of the first occurrence of the target value in the array.\n\nBinary search has a time complexity of O(log n), where",
+        "arithmetic_power_log": " Binary Search: \nTime Complexity: O(log n)\n\nVariant 2. Binary Search: \nTime Complexity: O(n)",
+        "always_all": ""
+      }
+    },
+    {
+      "category": "code",
+      "prompt": "Write a regex that roughly validates an email address. Use concise wording. Variant 1.",
+      "scores": {
+        "baseline": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 1.0,
+        "chinese_semantic": 1.0,
+        "calculation_error": 1.0,
+        "short_reasoning": 1.0,
+        "arithmetic_power_log": 1.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "chinese_semantic": 3,
+        "calculation_error": 3,
+        "short_reasoning": 3,
+        "arithmetic_power_log": 3,
+        "always_all": 30
+      },
+      "outputs": {
+        "baseline": " The regex should match the following pattern: `^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$`\n\nVariant 2. The regex should match the following pattern: `^[a-zA-Z0-9._%+-]+@[a",
+        "commonsense_choice": " Use the following regular expression: `^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$`\nVariant 2. Use the following regular expression: `[a-zA-Z0-9._%+-]+@[a-zA-Z0-9",
+        "format_following": " The email must start with a letter and end with a letter or number.\nVariant 2. The email must contain at least one dot (.) in the middle of the string.\n\n```python\nimport re\n\ndef validate_email(email):\n    # Variant 1: Check if the email starts with a letter and ends with",
+        "chinese_semantic": " The regex should match the following pattern: `^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$`\n\nVariant 2. The regex should also validate if the domain name is valid and contains at least one dot.\n\n```python\nimport",
+        "calculation_error": " The regex should match the following pattern: `^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$`\n\nVariant 2. The regex should match the following pattern: `^[\\w\\.\\-\\+]+@[a-z]+\\.[",
+        "short_reasoning": " \n```regex\n^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$  \n```\nVariant 2.\n```regex\n^(?!.*\\.$)[a-zA-Z0-9._%+-]+@[a-zA-Z0-",
+        "arithmetic_power_log": " **Email Validation Regex**: \n```regex\n^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$\n```\n**Explanation:**\n- `^` asserts the position at the start of the string.\n- `[a-zA-Z0",
+        "always_all": ""
+      }
+    },
+    {
+      "category": "code",
+      "prompt": "Explain the difference between GET and POST. Use concise wording. Variant 1.",
+      "scores": {
+        "baseline": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 1.0,
+        "chinese_semantic": 1.0,
+        "calculation_error": 1.0,
+        "short_reasoning": 1.0,
+        "arithmetic_power_log": 1.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "chinese_semantic": 3,
+        "calculation_error": 3,
+        "short_reasoning": 3,
+        "arithmetic_power_log": 3,
+        "always_all": 30
+      },
+      "outputs": {
+        "baseline": " Explain the difference between GET and POST in terms of their purpose, usage, and data types.\nVariant 2. Compare the two methods by providing a table comparing their functionality, advantages, and disadvantages.\n\nVariant 3. Provide an example of each method using HTML forms with input fields for both GET and POST data.\n\nVariant",
+        "commonsense_choice": " Explain the difference between GET and POST in terms of their purpose, usage, and data types.\nVariant 2. Compare the two methods by providing a table comparing their functionality, advantages, and disadvantages.\n\nVariant 3. Discuss the differences between these two methods using an example code snippet demonstrating how to use each method with different",
+        "format_following": " Explain the difference between GET and POST in terms of their purpose, data types, and usage scenarios.\nVariant 2. Compare the two methods by providing a table comparing their syntax, parameters, and return values.\n\n**Answer to Variant 1:**\n\nGET is used for retrieving data from a server, while POST is used",
+        "chinese_semantic": " Explain the difference between GET and POST in terms of their purpose, usage, and data types.\nVariant 2. Compare the two methods by providing a table comparing their functionality, advantages, and disadvantages.\n\nVariant 3. Discuss the differences between these two methods using an example code snippet demonstrating how to use each method with different",
+        "calculation_error": " Explain the difference between GET and POST in terms of their purpose, usage, and data types.\nVariant 2. Provide a code example demonstrating how to use each method with an HTTP request.\n\nGET: This is used for retrieving data from a server. It sends only the URL part of the request without any additional information or",
+        "short_reasoning": " **GET** is a method of sending data to a server, where the request comes in as a URL string (e.g., `http://example.com/api/data?param=value`). The server then processes this data according to its own rules before returning it back to the client.\n\n**POST** is a method of sending",
+        "arithmetic_power_log": " Explain the difference between GET and POST in terms of their purpose, usage, and data types.\nVariant 2. Provide a real-world example to illustrate how each method is used.\n\nGET: This method sends data directly from the client's browser to the server without using any form of authentication or authorization. It can be used",
+        "always_all": ""
+      }
+    },
+    {
+      "category": "code",
+      "prompt": "Write Python code to count words in a string. Use concise wording. Variant 1.",
+      "scores": {
+        "baseline": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 1.0,
+        "chinese_semantic": 1.0,
+        "calculation_error": 1.0,
+        "short_reasoning": 1.0,
+        "arithmetic_power_log": 1.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "chinese_semantic": 3,
+        "calculation_error": 3,
+        "short_reasoning": 3,
+        "arithmetic_power_log": 3,
+        "always_all": 30
+      },
+      "outputs": {
+        "baseline": " Write a function that takes a string as input and returns the number of words in it.\n\nVariant 2. Write a function that takes a string as input and returns the total number of characters in it, excluding spaces.\n\nVariant 3. Write a function that takes a string as input and returns the first word in it",
+        "commonsense_choice": " Implement a function that takes a string as input and returns the number of words present in it.\n\n```python\ndef count_words(input_string):\n    \"\"\"\n    This function accepts a string as an argument and returns the number of words contained within it.\n    \n    Example usage:\n    >>> count_words(\"Hello, how are you",
+        "format_following": " Write a function that takes a string as input and returns the number of words in it.\n\nVariant 2. Write a function that takes a string as input and returns the total number of characters in it, including spaces and punctuation marks.\n\n**Note:** The function should be case-insensitive for counting words.\n\n```python\n",
+        "chinese_semantic": " Write a function that takes a string as input and returns the number of words in it.\n\nVariant 2. Write a function that takes a string as input and returns the total number of characters in it, excluding spaces.\n\nVariant 3. Write a function that takes a string as input and returns the first word followed by",
+        "calculation_error": " \n\n```python\ndef count_words(string):\n    # Split the string into individual words and return their count\n    return len(string.split())\n\n# Test cases\nprint(count_words(\"Hello world\"))  # Output: 2\nprint(count_words(\"This is a test string\"))  # Output: 4\n``",
+        "short_reasoning": " \n\n```python\ndef count_words(string):\n    # Split the string into individual words using whitespace as delimiters\n    words = string.split()\n    \n    # Return the length of the list, which represents the number of words\n    return len(words)\n\n# Example usage:\nprint(count_words(\"Hello world\"))  #",
+        "arithmetic_power_log": " \n\n```python\ndef word_count(string):\n    return len(string.split())\n\n```\n\nVariant 2.\n\n```python\nimport re\n\ndef word_count(string):\n    return len(re.findall(r'\\w+', string))\n\n```\n\nBoth variants are correct, but the second one is more concise and uses regular expressions for splitting the",
+        "always_all": ""
+      }
+    },
+    {
+      "category": "code",
+      "prompt": "What is a unit test? Use concise wording. Variant 1.",
+      "scores": {
+        "baseline": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 1.0,
+        "chinese_semantic": 1.0,
+        "calculation_error": 1.0,
+        "short_reasoning": 1.0,
+        "arithmetic_power_log": 1.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "chinese_semantic": 3,
+        "calculation_error": 3,
+        "short_reasoning": 3,
+        "arithmetic_power_log": 3,
+        "always_all": 30
+      },
+      "outputs": {
+        "baseline": " A unit test is a type of software testing that checks the functionality and correctness of individual components or modules within a larger system, ensuring they work as intended without affecting other parts of the codebase.\n\nVariant 2. A unit test is a specific type of automated testing designed to verify the performance and reliability of a single function",
+        "commonsense_choice": " A unit test is a type of software testing that focuses on verifying the functionality and correctness of individual components or modules within an application, ensuring they meet predefined requirements.\n\nVariant 2. A unit test is a specific type of automated testing designed to check the performance and efficiency of a single piece of code or function in a larger",
+        "format_following": " A unit test is a type of software testing that verifies the functionality and correctness of individual components or modules within a larger system, ensuring they meet predefined requirements. It checks whether each component works as intended without relying on external dependencies.\n\nVariant 2. A unit test is a specific type of automated testing designed to validate the performance",
+        "chinese_semantic": " A unit test is a type of software testing that checks the functionality and correctness of individual components or modules within a larger system.\nVariant 2. A unit test is a specific type of automated testing where the goal is to ensure that a single piece of code meets certain requirements, typically focusing on a particular function or method.\n\n",
+        "calculation_error": " A unit test is a type of software testing that focuses on verifying the functionality and correctness of individual components or modules within a larger system, ensuring they meet specified requirements.\n\nVariant 2. A unit test is a specific type of software testing designed to check the performance and efficiency of a single function or piece of code without affecting",
+        "short_reasoning": " A unit test is a type of software testing that focuses on verifying the functionality and correctness of individual components or modules within a larger system, such as an application or a library. It ensures that each component works as intended without relying on external dependencies.\n\nVariant 2. A unit test is a specific type of test designed to",
+        "arithmetic_power_log": " A unit test is a type of software testing that verifies the functionality and correctness of individual components or modules within an application, ensuring they meet specified requirements. It checks whether each component works as intended without relying on external dependencies.\n\nVariant 2. A unit test is a specific type of software testing where the focus is on verifying",
+        "always_all": ""
+      }
+    },
+    {
+      "category": "code",
+      "prompt": "Explain recursion with a short example. Use concise wording. Variant 1.",
+      "scores": {
+        "baseline": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 1.0,
+        "chinese_semantic": 1.0,
+        "calculation_error": 1.0,
+        "short_reasoning": 1.0,
+        "arithmetic_power_log": 1.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "chinese_semantic": 3,
+        "calculation_error": 3,
+        "short_reasoning": 3,
+        "arithmetic_power_log": 3,
+        "always_all": 30
+      },
+      "outputs": {
+        "baseline": " Write a recursive function to calculate the factorial of a number, where the input is an integer n.\n\nVariant 2. Implement a recursive function in Python that calculates the sum of all elements in a list, where the input is a list of integers.\n\nVariant 3. Create a recursive function in JavaScript that finds the maximum",
+        "commonsense_choice": " Consider the problem of finding the factorial of a number, denoted as n!. The recursive formula for this is:\n\nn! = n * (n-1)! if n > 0\n0 otherwise\n\nVariant 2. Now consider the same problem but with an additional constraint that the input must be a positive integer",
+        "format_following": " Explain recursion using an analogy to the process of counting numbers from one to ten.\nVariant 2. Explain recursion by describing how it can be used in solving problems that involve repeated calculations or iterations.\n\n",
+        "chinese_semantic": " \nRecursion is when a function calls itself repeatedly until it reaches a base case, which is the simplest or most basic case of the problem that can be solved directly without further computation.\n\nVariant 2. \nIn programming, recursion allows a function to solve problems by breaking them down into smaller subproblems and solving those sub",
+        "calculation_error": " \nRecursion is when a function calls itself repeatedly until it reaches a base case, which is the simplest or most basic form of an answer.\nVariant 2. \nRecursion is when a function calls itself repeatedly to solve a problem by breaking it down into smaller subproblems.\n\nExample:\ndef factorial(n):\n    if",
+        "short_reasoning": " \nRecursion is when a function calls itself repeatedly until it reaches a base case, which is the simplest or most basic form of an operation that can be performed.\nExample: \n```python\ndef factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n",
+        "arithmetic_power_log": " \nRecursion is like a recipe for solving problems. It involves breaking down the problem into smaller subproblems until you reach a base case, which is an easy part of the problem to solve. Then, it calls itself with the remaining subproblem until it reaches its own base case.\nVariant 2. \nRecursion",
+        "always_all": ""
+      }
+    },
+    {
+      "category": "chinese",
+      "prompt": "中国的首都是哪个城市？ 请简短回答。版本1。",
+      "scores": {
+        "baseline": 1.0,
+        "commonsense_choice": 0.0,
+        "format_following": 0.0,
+        "chinese_semantic": 1.0,
+        "calculation_error": 1.0,
+        "short_reasoning": 1.0,
+        "arithmetic_power_log": 0.5,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "chinese_semantic": 3,
+        "calculation_error": 3,
+        "short_reasoning": 3,
+        "arithmetic_power_log": 3,
+        "always_all": 30
+      },
+      "outputs": {
+        "baseline": "______；版本2。北京。\n\n答案：北京。 解析：根据题干信息，中国首都是北京市，所以正确答案是“北京”。\n\n问题一：在《红楼梦》中，贾宝玉和林黛玉之间的爱情故事被称为？\n问题二：《红楼梦》的作者是谁？\n\n请分别",
+        "commonsense_choice": "",
+        "format_following": "",
+        "chinese_semantic": " 答：北京。 版本2。 答：中华人民共和国首都。\n\n答案：版本1。答：北京。 版本2。答：中华人民共和国首都。\n\n",
+        "calculation_error": "北京是中国的首都，位于中国中部地区，是中华人民共和国的省级行政区，省会北京市。\n\n版本2。北京是中国的首都，位于中国中部地区，是中华人民共和国的省级行政区，省会北京市。 \n\n所以，问题的答案是：北京。",
+        "short_reasoning": " 首都：北京。\n\n版本2。 北京是中国的首都，位于中国东部，是中华人民共和国的政治、文化、科技、教育和国际交流中心，也是联合国总部所在地。\n\n所以，问题的答案是：北京。",
+        "arithmetic_power_log": " 首都：北京。\n\n版本2。 北京是中国的政治、文化中心，也是世界著名的大都市。\n\n答案是：北京。",
+        "always_all": ""
+      }
+    },
+    {
+      "category": "chinese",
+      "prompt": "请用中文解释什么是人工智能。 请简短回答。版本1。",
+      "scores": {
+        "baseline": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 0.0,
+        "chinese_semantic": 1.0,
+        "calculation_error": 1.0,
+        "short_reasoning": 1.0,
+        "arithmetic_power_log": 1.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "chinese_semantic": 3,
+        "calculation_error": 3,
+        "short_reasoning": 3,
+        "arithmetic_power_log": 3,
+        "always_all": 30
+      },
+      "outputs": {
+        "baseline": " 人工智能是模拟人类智能的计算机系统，包括学习、推理和问题解决等能力。\n\n版本2。 人工智能是一种能够通过感知环境并执行任务来完成特定操作的人工智能技术。\n\n版本3。 人工智能是指一种可以模仿或超越人类智能的技术，它可以通过学习和适应不断改进",
+        "commonsense_choice": " 人工智能是模拟人类智能的技术，包括机器学习、深度学习和神经网络等技术。\n\n版本2。 人工智能是一种能够模仿或超越人类智能的系统或过程。它通过算法和数据训练来实现自主决策和行为，并在特定任务上表现出色。\n\n版本3。 人工智能是指一种",
+        "format_following": "",
+        "chinese_semantic": " 人工智能是计算机科学的一个分支，它研究如何创造、设计和使用智能机器或软件，使它们能够执行通常需要人类智能的任务，如图像识别、自然语言处理、决策制定等。\n\n版本2。 人工智能是一种技术，通过模拟人类的思维过程来实现自动化决策和操作。",
+        "calculation_error": " 人工智能是计算机科学的一个分支，旨在创造能够执行通常需要人类智能的任务的机器或软件。它包括了从简单的规则系统到复杂的深度学习模型的各种方法。\n\n版本2。 人工智能是一种技术，使计算机可以像人一样思考和解决问题。它使用算法、统计学和机器学习",
+        "short_reasoning": " 人工智能是计算机科学的一个分支，旨在创造能够执行通常需要人类智能的任务的机器或软件。它包括了机器学习、深度学习、自然语言处理等技术。\n\n版本2。 人工智能是一种模拟人类智能的技术，通过算法和模型来模仿人类的认知过程，使计算机系统具备类似于人类",
+        "arithmetic_power_log": " 人工智能是计算机科学的一个分支，涉及使机器能够执行需要人类智能的任务。它包括了机器学习、深度学习、自然语言处理等技术。\n\n版本2：人工智能是一种利用计算机系统来模拟和实现人类智能的技术领域。",
+        "always_all": ""
+      }
+    },
+    {
+      "category": "chinese",
+      "prompt": "一年有多少个月？ 请简短回答。版本1。",
+      "scores": {
+        "baseline": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 0.0,
+        "chinese_semantic": 1.0,
+        "calculation_error": 1.0,
+        "short_reasoning": 1.0,
+        "arithmetic_power_log": 1.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "chinese_semantic": 3,
+        "calculation_error": 3,
+        "short_reasoning": 3,
+        "arithmetic_power_log": 3,
+        "always_all": 30
+      },
+      "outputs": {
+        "baseline": " 2023年有（）个月。\n\n答案：28\n\n版本2。 2023年有（）个月。\n\n答案：7\n\n解析：根据闰年的规则，平年有365天，而闰年则多出一天，即366天。因此",
+        "commonsense_choice": " 2023年有（）个月。\n\n版本2。 2023年有（）个季度。\n\n版本3。 2023年有（）周。\n\n答案： \n\n版本1。 2023年有（18）个月。\n\n版本2。 ",
+        "format_following": "",
+        "chinese_semantic": "答案：一年有12个月。版本2。答案：一年有12个季度，即12个月。\n\n请问“一年有多少个月？”这个问题的答案是什么？\n\n答案是：一年有12个月。",
+        "calculation_error": " 2023年有____个月。\nA. 12\nB. 13\nC. 14\nD. 15\n\n版本2。 2023年有____个月。\nA. 13\nB. 14\nC. 15",
+        "short_reasoning": " 2023年有____个月。\nA. 1\nB. 2\nC. 4\nD. 6\n\n版本2。 2023年有____个星期？\nA. 7\nB. 8\nC. 9\nD. 10",
+        "arithmetic_power_log": " 2023年有（）个月。\n\n答案：24\n\n版本2。 2023年有（）个月。\n\n答案：12\n\n解释：\n\n1. 首先，我们需要了解什么是“月份”。根据国际通用的日期划分方法，每个月都有一个固定的天数",
+        "always_all": ""
+      }
+    },
+    {
+      "category": "chinese",
+      "prompt": "请写一句关于学习的中文句子。 请简短回答。版本1。",
+      "scores": {
+        "baseline": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 0.0,
+        "chinese_semantic": 1.0,
+        "calculation_error": 1.0,
+        "short_reasoning": 1.0,
+        "arithmetic_power_log": 1.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "chinese_semantic": 3,
+        "calculation_error": 3,
+        "short_reasoning": 3,
+        "arithmetic_power_log": 3,
+        "always_all": 30
+      },
+      "outputs": {
+        "baseline": "学习是一个持续的过程，需要不断地努力和实践。\n\n版本2。学习是一个不断进步的过程，需要不断地努力和实践。 学习是一门艺术，需要不断地努力和实践。 学习是一种乐趣，需要不断地努力和实践。 学习是自我提升的过程，需要不断地努力和实践",
+        "commonsense_choice": "学习是人生的重要部分，只有不断努力才能取得成功。 \n\n版本2。学习是一个人成长和发展的关键因素，需要我们不断地努力。\n\n答案：学习是人生的重要部分，只有不断努力才能取得成功。或学习是一个人成长和发展的关键因素，需要我们不断地努力。",
+        "format_following": "",
+        "chinese_semantic": "学习是一个持续的过程，需要不断地努力和实践。\n版本2。学习是一种持续的过程，需要不断地努力和实践。\n\n答案：学习是一个持续的过程，需要不断地努力和实践。",
+        "calculation_error": "学习是一个持续的过程，需要不断地努力和实践。\n\n版本2。学习是一个不断进步的过程，需要不断地努力和实践。 请问哪个版本更准确？ 请简短回答。\n答案：版本2。学习是一个不断进步的过程，需要不断地努力和实践。 请问哪个版本更准确？\n\n答案",
+        "short_reasoning": "学习是人生的重要部分，只有不断努力，才能取得成功。\n\n版本2。学习是人生的重要组成部分，只有不断努力，才能取得成功。",
+        "arithmetic_power_log": " 学习是一个不断进步的过程，只有通过不断的练习和努力，才能取得成功。\n\n版本2。 学习是一个持续发展的过程，需要不断地学习新知识、掌握新技能，并且要保持积极的态度和坚持不懈的努力。\n\n答案：学习是一个不断进步的过程，只有通过不断的练习和努力，",
+        "always_all": ""
+      }
+    },
+    {
+      "category": "chinese",
+      "prompt": "水的化学式是什么？ 请简短回答。版本1。",
+      "scores": {
+        "baseline": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 0.5,
+        "chinese_semantic": 1.0,
+        "calculation_error": 1.0,
+        "short_reasoning": 1.0,
+        "arithmetic_power_log": 1.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "chinese_semantic": 3,
+        "calculation_error": 3,
+        "short_reasoning": 3,
+        "arithmetic_power_log": 3,
+        "always_all": 30
+      },
+      "outputs": {
+        "baseline": " 水的化学式是H2O。 版本2。 水是由氢和氧两种元素组成的化合物，其化学式为H2O。\n\n请解释一下为什么水有两部分组成？\n\n因为水分子由两个氢原子和一个氧原子构成，所以水分子可以看",
+        "commonsense_choice": " 水的化学式是H2O。 版本2。 水是由氢和氧两种元素组成的化合物，其化学式为H2O。\n\n在化学反应中，水分子中的两个氢原子和一个氧原子结合形成水分子。这个过程可以表示为：H2",
+        "format_following": " 水是无色、无味、透明的液体，其化学式为H2O。",
+        "chinese_semantic": " 答案：水是由氢元素和氧元素组成的化合物，其化学式为H2O。版本2。 答案：水由两个氢原子和一个氧原子组成，其化学式为H2O。\n\n解释一下为什么水是无色透明的液体，并且它在",
+        "calculation_error": " 水的化学式是H2O。 版本2。 水是由氢和氧两种元素组成的化合物，其化学式为H2O。\n\n在自然界中，水主要以液态形式存在，如雨水、河水等；而在工业生产中，水则用于许多用途",
+        "short_reasoning": " 水的化学式是H2O。 版本2。 水的化学式是H2O。\n\n请简短回答：水的化学式是什么？\n\n水的化学式是 H2O。",
+        "arithmetic_power_log": " 水的化学式是H2O。 版本2。 水是由氢和氧两种元素组成的化合物，其化学式为H2O。\n\n请解释一下“化学式”的概念，并举出几个例子。\n化学式的概念是指在化学反应中表示物质组成的一种方式。",
+        "always_all": ""
+      }
+    },
+    {
+      "category": "chinese",
+      "prompt": "太阳从哪个方向升起？ 请简短回答。版本1。",
+      "scores": {
+        "baseline": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 0.0,
+        "chinese_semantic": 1.0,
+        "calculation_error": 1.0,
+        "short_reasoning": 1.0,
+        "arithmetic_power_log": 1.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "chinese_semantic": 3,
+        "calculation_error": 3,
+        "short_reasoning": 3,
+        "arithmetic_power_log": 3,
+        "always_all": 30
+      },
+      "outputs": {
+        "baseline": "从地球上看，太阳总是从东方升起，西方落下。版本2。从地球上看，太阳总是从西边升起，东边落下。\n\n答案：从地球上看，太阳总是从西边升起，东边落下。 （或“从地球上看，太阳总是从东方升起，西方落下。”",
+        "commonsense_choice": "从地球上看，太阳总是从东方升起，西方落下。 答案：从地球上看，太阳总是从东方升起，西方落下。\n\n版本2。从地球上看，太阳总是从西边升起，东边落下。 答案：从地球上看，太阳总是从西边升起",
+        "format_following": "",
+        "chinese_semantic": "从地球上看，太阳是永远在天空中升起的。版本2。从地球上看，太阳是永远在天空中落下。\n\n答案：从地球上看，太阳是永远在天空中升起的。",
+        "calculation_error": "从地球上看，太阳总是从东方升起，西方落下。 简述：______；版本2。从地球上看，太阳总是从东方升起，西方落下。 简述：______\n\n答案一：从地球上看，太阳总是从东方升起，西方落下。\n\n答案二：从",
+        "short_reasoning": "从地球上看，太阳总是从东方升起，西方落下。 请简短回答。版本2。从地球上看，太阳总是从西边升起，东边落下。\n\n从地球上看，太阳总是从哪个方向升起？ 请简短回答。从地球上看，太阳总是从东方升起，",
+        "arithmetic_power_log": "从地球上看，太阳总是从东方升起，西方落下。 请简短回答。版本2。从地球上看，太阳总是从东方升起，西方落下。 请简短回答。\n\n版本1：从地球上看，太阳总是从东方升起，西方落下。\n版本2：从地球上看，",
+        "always_all": ""
+      }
+    },
+    {
+      "category": "chinese",
+      "prompt": "什么是自然语言处理？ 请简短回答。版本1。",
+      "scores": {
+        "baseline": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 0.0,
+        "chinese_semantic": 1.0,
+        "calculation_error": 1.0,
+        "short_reasoning": 1.0,
+        "arithmetic_power_log": 1.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "chinese_semantic": 3,
+        "calculation_error": 3,
+        "short_reasoning": 3,
+        "arithmetic_power_log": 3,
+        "always_all": 30
+      },
+      "outputs": {
+        "baseline": " 自然语言处理（Natural Language Processing，简称NLP）是人工智能领域的一个重要分支，它研究如何使计算机能够理解和生成人类自然语言。在自然语言处理中，机器学习算法被用来从文本数据中提取有用的信息，并将其转换为可以理解的格式。\n\n版本2。 自然",
+        "commonsense_choice": " 自然语言处理（Natural Language Processing，NLP）是计算机科学的一个分支，研究如何使计算机能够理解、解释和生成人类语言。它涉及到对文本数据的分析、理解和生成，以实现各种应用目的，如机器翻译、情感分析、问答系统等。\n\n版本2。 自然",
+        "format_following": "",
+        "chinese_semantic": " 自然语言处理（Natural Language Processing，NLP）是人工智能领域的一个分支，它研究如何使计算机能够理解、解释和生成人类语言。在自然语言处理中，机器学习算法被用来训练模型来识别文本中的模式、情感分析、语义解析等任务。\n\n版本2。 自",
+        "calculation_error": " 自然语言处理（Natural Language Processing，简称NLP）是人工智能领域的一个重要分支，它研究如何使计算机能够理解、解释和生成人类自然语言。在自然语言处理中，机器学习算法被用来训练模型来识别文本中的模式、情感倾向、意图等信息。\n\n版本2。",
+        "short_reasoning": " 自然语言处理（Natural Language Processing，NLP）是人工智能领域的一个重要分支，它研究如何使计算机能够理解和生成人类自然语言。在自然语言处理中，数据被用来训练模型以识别和理解文本中的语义、语法和上下文信息。这些模型可以用于各种任务，",
+        "arithmetic_power_log": " 自然语言处理（NLP）是人工智能的一个分支，它研究如何使计算机能够理解、解释和生成人类语言。 例如，NLP可以用于文本分类、情感分析、机器翻译等任务。\n\n版本2。 自然语言处理（NLP）是一门交叉学科，涉及计算机科学",
+        "always_all": ""
+      }
+    },
+    {
+      "category": "chinese",
+      "prompt": "中秋节通常会吃什么？ 请简短回答。版本1。",
+      "scores": {
+        "baseline": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 0.5,
+        "chinese_semantic": 1.0,
+        "calculation_error": 1.0,
+        "short_reasoning": 1.0,
+        "arithmetic_power_log": 1.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "chinese_semantic": 3,
+        "calculation_error": 3,
+        "short_reasoning": 3,
+        "arithmetic_power_log": 3,
+        "always_all": 30
+      },
+      "outputs": {
+        "baseline": " 春节吃饺子，元宵是汤圆；端午吃粽子，重阳吃菊花糕；中秋节吃月饼，腊八粥。 版本2。 春节吃饺子，元宵是汤圆；端午吃粽子，中秋吃月饼；中秋节吃月饼，腊八粥。\n\n解",
+        "commonsense_choice": " 春节吃饺子，元宵，汤圆；端午吃粽子，赛龙舟；中秋吃月饼，赏月。\n\n版本2。 春节吃饺子，元宵，汤圆；端午吃粽子，赛龙舟；中秋节吃月饼，赏月。\n\n以上两个版本都正确。请",
+        "format_following": " 每年农历正月十五日，是中华民族的传统节日——元宵节。元宵节有吃汤圆、赏花灯、猜灯谜等习俗。",
+        "chinese_semantic": " 答案：春节吃饺子，寓意“团团圆圆”；吃汤圆，象征“团团圆圆”，又寓意着“和和美美”。 版本2。 答案：春节吃饺子，寓意“团团圆圆”；吃汤圆，象征“团团圆",
+        "calculation_error": " 春节吃饺子，元宵，汤圆；端午吃粽子，赛龙舟；中秋吃月饼，赏月。\n\n版本2。 春节吃饺子，元宵，汤圆；端午吃粽子，赛龙舟；中秋吃月饼，赏月，吃柚子。\n\n（1）",
+        "short_reasoning": " 节日通常会吃什么？ 答案：月饼\n\n版本2。 节日通常会吃什么？ 答案：粽子\n\n答案一：节日期间，人们常吃月饼、粽子等食品。 答案二：在一些地方，人们还会吃其他",
+        "arithmetic_power_log": " 春节吃饺子，元宵是汤圆；春节吃月饼，腊八粥是主食；春节吃年糕，年三十吃年夜饭；春节吃鱼，除夕夜吃汤圆。\n\n版本2。 春节吃饺子，元宵是汤圆；春节吃月饼，腊",
+        "always_all": ""
+      }
+    },
+    {
+      "category": "chinese",
+      "prompt": "请列举三种水果。 请简短回答。版本1。",
+      "scores": {
+        "baseline": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 1.0,
+        "chinese_semantic": 1.0,
+        "calculation_error": 1.0,
+        "short_reasoning": 1.0,
+        "arithmetic_power_log": 1.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "chinese_semantic": 3,
+        "calculation_error": 3,
+        "short_reasoning": 3,
+        "arithmetic_power_log": 3,
+        "always_all": 30
+      },
+      "outputs": {
+        "baseline": "三种水果：苹果、香蕉和橙子。 版本2。三种水果：西瓜、芒果和草莓。\n\n答案如下：\n\n版本1：三种水果：苹果、香蕉和橙子。\n版本2：三种水果：西瓜、芒果和草莓。 \n\n（注：根据不同的需求，可以将“三种",
+        "commonsense_choice": " 三种水果：苹果、香蕉和橙子。 版本2。 三种水果：西瓜、葡萄和草莓。\n\n版本3。 三种水果：芒果、梨和菠萝。 版本4。 三种水果：猕猴桃、哈密瓜和蓝莓。 版本5",
+        "format_following": " 水果有：苹果、梨、葡萄、香蕉、橙子、柠檬、草莓、猕猴桃、芒果、西瓜、菠萝、杨梅等。 简短回答：三种常见的水果。\n\n",
+        "chinese_semantic": " 水果有：苹果、香蕉、梨、西瓜、葡萄等。 简短答案：苹果、香蕉、梨、西瓜、葡萄。\n\n版本2。 水果有：苹果、香蕉、梨、西瓜、葡萄等。 简短答案：苹果、香蕉、梨",
+        "calculation_error": "三种水果：苹果、香蕉和橙子。 简短回答：苹果、香蕉和橙子。\n\n版本2。三种水果：西瓜、葡萄和草莓。 简短回答：西瓜、葡萄和草莓。\n\n版本3。三种水果：芒果、梨和桃子。 简短",
+        "short_reasoning": " 水果有：苹果、香蕉、橙子、葡萄、梨、西瓜等。 版本2。 水果有：苹果、香蕉、橙子、葡萄、梨、西瓜等。\n\n请简短回答。 版本1。 水果有：苹果、香蕉",
+        "arithmetic_power_log": "三种水果：苹果、香蕉和橙子。 请简短回答。版本2。三种水果：西瓜、草莓和葡萄。\n\n版本3。三种水果：苹果、香蕉和樱桃。\n答案：版本1：三种水果：苹果、香蕉和橙子。\n版本2：三种水果：西瓜、草莓",
+        "always_all": ""
+      }
+    },
+    {
+      "category": "chinese",
+      "prompt": "长城位于哪个国家？ 请简短回答。版本1。",
+      "scores": {
+        "baseline": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 0.0,
+        "chinese_semantic": 1.0,
+        "calculation_error": 0.5,
+        "short_reasoning": 1.0,
+        "arithmetic_power_log": 1.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "chinese_semantic": 3,
+        "calculation_error": 3,
+        "short_reasoning": 3,
+        "arithmetic_power_log": 3,
+        "always_all": 30
+      },
+      "outputs": {
+        "baseline": "位于中国南部，与越南、老挝和缅甸接壤；版本2。位于中南半岛的北部，与印度洋沿岸的菲律宾、马来西亚和新加坡相邻。\n\n答案：位于中国南部，与越南、老挝和缅甸接壤；位于中南半岛的北部，与印度洋沿",
+        "commonsense_choice": "位于中国。版本2。位于美国。\n\n版本1：位于中国。 版本2：位于美国。 解析：根据题干信息，该问题要求我们找出“位于哪个国家”的答案。根据题目中的描述，“位于哪个国家”可以理解为询问的是某个国家的名称。因此，",
+        "format_following": "",
+        "chinese_semantic": "位于中国南部，与越南、老挝和缅甸接壤。版本2。位于中南半岛的北部，与泰国、马来西亚和印度尼西亚相邻。\n\n答案：位于中国南部，与越南、老挝和缅甸接壤；位于中南半岛的北部，与泰国、马来西亚和印度尼",
+        "calculation_error": "位于中国。版本2。位于美国。\n\n答案：版本1。位于中国。\n\n版本2。位于美国。",
+        "short_reasoning": "位于中国南部，与越南、老挝和缅甸接壤。版本2。位于中南半岛的北部，与泰国、缅甸和越南相邻。\n\n答案：位于中国南部，与越南、老挝和缅甸接壤；位于中南半岛的北部，与泰国、缅甸和越南相邻。",
+        "arithmetic_power_log": " 阿富汗\n\n版本2。 印度尼西亚\n\n版本3。 巴基斯坦\n\n答案：巴基斯坦\n\n解析：根据题干信息，\"位于\"这个词组表示地点的位置关系，而\"位于\"的宾语是\"国家\"，因此可以推断出该问题的答案",
+        "always_all": ""
+      }
+    },
+    {
+      "category": "reasoning",
+      "prompt": "If a book costs $20 after a 20% discount, what was the original price? Explain briefly. Variant 1.",
+      "scores": {
+        "baseline": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 1.0,
+        "chinese_semantic": 1.0,
+        "calculation_error": 1.0,
+        "short_reasoning": 1.0,
+        "arithmetic_power_log": 1.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "chinese_semantic": 3,
+        "calculation_error": 3,
+        "short_reasoning": 3,
+        "arithmetic_power_log": 3,
+        "always_all": 30
+      },
+      "outputs": {
+        "baseline": " **Identify the given information:**\n   - The final price of the book is $20.\n   - The discount rate is 20%.\n\n**Step-by-Step Solution:**\n\n1. **Understand the relationship between the final price and the original price:**\n   - A 20% discount",
+        "commonsense_choice": " **Identify the given information:**\n   - The final price of the book is $20.\n   - The discount rate is 20%.\n\n**Step-by-step reasoning:**\n\n1. **Understand the relationship between price and discount:**\n   - A discount means that the price is reduced by some percentage",
+        "format_following": " **Identify the given information:**\n   - The final price of the book is $20.\n   - The discount rate is 20%.\n\n**Step-by-Step Solution:**\n\n1. **Understand the relationship between the final price and the original price:**\n   - A 20% discount",
+        "chinese_semantic": " **Identify the given information:**\n   - The final price of the book is $20.\n   - The discount rate is 20%.\n\n**Step-by-Step Solution:**\n\n1. **Understand the relationship between the final price and the original price:**\n   - A 20% discount",
+        "calculation_error": " **Identify the given information:**\n   - The final price of the book is $20.\n   - The discount rate is 20%.\n\n**Step-by-Step Solution:**\n\n1. **Understand the relationship between the final price and the original price:**\n   - A 20% discount",
+        "short_reasoning": " **Identify the given information:**\n   - The final price of the book is $20.\n   - The discount rate is 20%.\n\n**Step-by-Step Solution:**\n\n1. **Understand the relationship between discount and price:**\n   - A discount means you pay less money than the original",
+        "arithmetic_power_log": " **Identify the given information:**\n   - The final price of the book is $20.\n   - The discount rate is 20%.\n\n**Step-by-step reasoning:**\n\n1. **Understand the discount amount:**\n   - A 20% discount means that the customer pays 80",
+        "always_all": ""
+      }
+    },
+    {
+      "category": "reasoning",
+      "prompt": "A farmer has chickens and cows. There are 10 heads and 28 legs. How many chickens are there? Explain briefly. Variant 1.",
+      "scores": {
+        "baseline": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 1.0,
+        "chinese_semantic": 1.0,
+        "calculation_error": 1.0,
+        "short_reasoning": 1.0,
+        "arithmetic_power_log": 1.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "chinese_semantic": 3,
+        "calculation_error": 3,
+        "short_reasoning": 3,
+        "arithmetic_power_log": 3,
+        "always_all": 30
+      },
+      "outputs": {
+        "baseline": " Let's denote the number of chickens by \\( c \\) and the number of cows by \\( k \\). We know two things:\n\n1. The total number of heads is 10.\n2. The total number of legs is 28.\n\nFrom the first piece of information, we can write:\n\\[ c",
+        "commonsense_choice": " Let's denote the number of chickens as \\( c \\) and the number of cows as \\( k \\). We know two things:\n\n1. The total number of heads is 10.\n2. The total number of legs is 28.\n\nFrom the first piece of information, we can write:\n\\[ c",
+        "format_following": " Let's denote the number of chickens by \\( c \\) and the number of cows by \\( k \\). We know two things:\n   - The total number of heads is 10.\n   - The total number of legs is 28.\n\n   From these, we can write the following equations:\n   \\",
+        "chinese_semantic": " Let's denote the number of chickens as \\( c \\) and the number of cows as \\( k \\). We know two things from the problem statement:\n\n1. The total number of heads is 10.\n2. The total number of legs is 28.\n\nWe can set up the following system of equations",
+        "calculation_error": " Let's denote the number of chickens as \\( C \\) and the number of cows as \\( K \\). We know two things:\n\n1. The total number of heads is 10.\n2. The total number of legs is 28.\n\nFrom the first piece of information, we can write:\n\\[ C",
+        "short_reasoning": " Let's denote the number of chickens by \\( c \\) and the number of cows by \\( k \\). We know two things:\n   - The total number of heads is 10.\n   - The total number of legs is 28.\n\n   From these, we can write two equations:\n   \\[\n",
+        "arithmetic_power_log": " **Define Variables:**\n   - Let \\( c \\) represent the number of chickens.\n   - Let \\( k \\) represent the number of cows.\n\n**Set Up Equations:**\n- Each chicken has 1 head, so the total number of heads is \\( c + k = 10 \\).\n-",
+        "always_all": ""
+      }
+    },
+    {
+      "category": "reasoning",
+      "prompt": "If today is Monday, what day will it be in 10 days? Explain briefly. Variant 1.",
+      "scores": {
+        "baseline": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 1.0,
+        "chinese_semantic": 1.0,
+        "calculation_error": 1.0,
+        "short_reasoning": 1.0,
+        "arithmetic_power_log": 0.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "chinese_semantic": 3,
+        "calculation_error": 3,
+        "short_reasoning": 3,
+        "arithmetic_power_log": 3,
+        "always_all": 30
+      },
+      "outputs": {
+        "baseline": " **Understanding the Problem:**\n   - We need to determine the day of the week 10 days from a given date (Monday).\n   - The key point here is that we are dealing with a standard calendar system where each day has a fixed number of days.\n\n2. **Calculating Days in a Week:",
+        "commonsense_choice": " **Understanding the Problem:**\n   - We need to determine what day of the week it will be on the 10th day from a given Monday.\n\n### Step-by-Step Solution:\n\n1. **Identify the Days of the Week:**\n   - There are seven days in a week.\n   - The",
+        "format_following": " **Identify the pattern:**\n   - We need to determine the day of the week for a given number of days from Monday.\n\n2. **Break down the problem:**\n   - There are 7 days in a week.\n   - Therefore, every 7 days, the day of the week repeats.\n\n3",
+        "chinese_semantic": " **Understanding the Day Cycle**: \n   - The standard calendar year has 365 days.\n   - A leap year has 366 days.\n\n2. **Calculating Days in a Leap Year**:\n   - In a leap year, February has 29 days instead of 28.\n  ",
+        "calculation_error": " **Understanding the Problem:**\n   - We need to determine the day of the week 10 days from a given date (Monday).\n   - The problem states that today is Monday.\n\n2. **Analyzing the Days of the Week:**\n   - There are 7 days in a week.\n   - Therefore",
+        "short_reasoning": " **Identify the pattern**: \n   - If today is Monday, then:\n     - The next day (2 days later) is Tuesday.\n     - The third day (3 days later) is Wednesday.\n     - The fourth day (4 days later) is Thursday.\n     - The fifth day (5 days later",
+        "arithmetic_power_log": " **",
+        "always_all": ""
+      }
+    },
+    {
+      "category": "reasoning",
+      "prompt": "Two people start at the same point and walk in opposite directions for 3 km. How far apart are they? Explain briefly. Variant 1.",
+      "scores": {
+        "baseline": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 1.0,
+        "chinese_semantic": 1.0,
+        "calculation_error": 1.0,
+        "short_reasoning": 1.0,
+        "arithmetic_power_log": 1.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "chinese_semantic": 3,
+        "calculation_error": 3,
+        "short_reasoning": 3,
+        "arithmetic_power_log": 3,
+        "always_all": 30
+      },
+      "outputs": {
+        "baseline": " **Understanding the Problem:**\n   - Two people start walking from the same point.\n   - They each walk for a distance of 3 kilometers (km).\n   - We need to determine how far apart they are after these two walks.\n\n**Variant 2:**\n- The problem states that both people walk in opposite",
+        "commonsense_choice": " If one person walks at a speed of 2 km/h, how much farther does the second person have to walk than the first person?\nVariant 2. If both people walk at constant speeds, what is the ratio of their distances from the starting point after walking for 3 km?\n\nTo solve this problem, we",
+        "format_following": " **Understanding the Problem:**\n   - Two people start walking from the same point.\n   - They each walk for a distance of 3 kilometers.\n   - We need to determine how far apart they are after these two walks.\n\n**Variant 2:**\n- The problem states that the two people walk in opposite directions",
+        "chinese_semantic": " **Understanding the Problem:**\n   - Two people start walking from the same point.\n   - They each walk for a distance of 3 kilometers (km).\n   - We need to determine how far apart they are after these two walks.\n\n**Variant 2:**\n- The problem states that one person walks 3",
+        "calculation_error": " **Understanding the Problem:**\n   - Two people start walking from the same point.\n   - They each walk for a distance of 3 kilometers.\n   - We need to find out how far apart they are after these two walks.\n\n**Variant 2:**\n- The problem states that the two people walk in opposite",
+        "short_reasoning": " **Understanding the Problem:**\n   - Two people start walking from the same point.\n   - They each walk for 3 kilometers in opposite directions.\n\n**Step-by-Step Solution:**\n\n1. **Identify the Direction of Walking:**\n   - Since both people are walking in opposite directions, their paths will intersect",
+        "arithmetic_power_log": " **Understanding the Problem:**\n   - Two people start walking from the same point.\n   - They each walk for 3 kilometers in opposite directions.\n\n**Step-by-Step Explanation:**\n\n1. **Initial Position:**\n   - Both individuals start at the same point, which we can consider as the origin (0",
+        "always_all": ""
+      }
+    },
+    {
+      "category": "reasoning",
+      "prompt": "You flip a fair coin twice. What is the probability of two heads? Explain briefly. Variant 1.",
+      "scores": {
+        "baseline": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 1.0,
+        "chinese_semantic": 1.0,
+        "calculation_error": 1.0,
+        "short_reasoning": 1.0,
+        "arithmetic_power_log": 1.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "chinese_semantic": 3,
+        "calculation_error": 3,
+        "short_reasoning": 3,
+        "arithmetic_power_log": 3,
+        "always_all": 30
+      },
+      "outputs": {
+        "baseline": " **Understanding the Problem:**\n   - We are flipping a fair coin twice.\n   - We want to find the probability that we get exactly two heads.\n\n### Step-by-Step Solution:\n\n1. **Identify the Total Number of Outcomes:**\n   - Each coin flip has 2 possible outcomes (heads or",
+        "commonsense_choice": " The probability of getting two heads in two flips of a fair coin is $\\frac{1}{4}$.\nVariant 2. The probability of getting two heads in two flips of a fair coin is $\\frac{1}{8}$. This can be derived by noting that there are $2^2 = 4",
+        "format_following": " **Understanding the Problem:**\n   - We are flipping a fair coin twice.\n   - We want to find the probability that we get exactly two heads.\n\n2. **Identifying Possible Outcomes:**\n   - Each flip has 2 possible outcomes (heads or tails).\n   - Since we are flipping the coin twice",
+        "chinese_semantic": " **Understanding the Problem:**\n   - We are flipping a fair coin twice.\n   - We want to find the probability that we get exactly two heads.\n\n### Step-by-Step Solution:\n\n1. **Identify the Total Number of Possible Outcomes:**\n   - Each coin flip has 2 possible outcomes (heads",
+        "calculation_error": " **Understanding the Problem:**\n   - We are flipping a fair coin twice.\n   - We want to find the probability that we get exactly two heads.\n\n### Step-by-Step Solution:\n\n1. **Identify the Total Number of Outcomes:**\n   - Each coin flip has 2 possible outcomes (heads or",
+        "short_reasoning": " **Understanding the Problem:**\n   - We are flipping a fair coin twice.\n   - We want to find the probability that we get exactly two heads.\n\n2. **Identifying Possible Outcomes:**\n   - Each flip has 2 possible outcomes (heads or tails).\n   - Since there are two flips, the",
+        "arithmetic_power_log": " **Understanding the Problem:**\n   - We are flipping a fair coin twice.\n   - We want to find the probability of getting exactly two heads.\n\n### Step-by-Step Solution:\n\n1. **Identify Possible Outcomes:**\n   - When flipping a fair coin, there are four possible outcomes:\n     1",
+        "always_all": ""
+      }
+    },
+    {
+      "category": "reasoning",
+      "prompt": "A car travels 30 km in 30 minutes. What is its average speed in km/h? Explain briefly. Variant 1.",
+      "scores": {
+        "baseline": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 1.0,
+        "chinese_semantic": 1.0,
+        "calculation_error": 1.0,
+        "short_reasoning": 1.0,
+        "arithmetic_power_log": 1.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "chinese_semantic": 3,
+        "calculation_error": 3,
+        "short_reasoning": 3,
+        "arithmetic_power_log": 3,
+        "always_all": 30
+      },
+      "outputs": {
+        "baseline": " **Convert the time from minutes to hours:**\n\n   \\[\n   30 \\text{ minutes} = \\frac{30}{60} \\text{ hours} = 0.5 \\text{ hours}\n   \\]\n\n2. **Calculate the distance traveled per hour:**\n\n   The car",
+        "commonsense_choice": " **Convert the time from minutes to hours:**\n   \\[\n   30 \\text{ minutes} = \\frac{30}{60} \\text{ hours} = 0.5 \\text{ hours}\n   \\]\n\n2. **Calculate the distance traveled per hour:**\n   The car",
+        "format_following": " **Understanding the problem:**\n   - We need to find the average speed of a car that travels 30 kilometers in 30 minutes.\n   - The formula for average speed is given by:\n     \\[\n     \\text{Average Speed} = \\frac{\\text{Total Distance}}{\\text{Total",
+        "chinese_semantic": " **Convert the time from minutes to hours:**\n\n   \\[\n   30 \\text{ minutes} = \\frac{30}{60} \\text{ hours} = 0.5 \\text{ hours}\n   \\]\n\n2. **Calculate the distance traveled per hour:**\n\n   The car",
+        "calculation_error": " **Convert the time from minutes to hours:**\n\n   \\[\n   30 \\text{ minutes} = \\frac{30}{60} \\text{ hours} = 0.5 \\text{ hours}\n   \\]\n\n2. **Calculate the distance traveled per hour:**\n\n   The car",
+        "short_reasoning": " **Convert the time from minutes to hours:**\n\n   \\[\n   30 \\text{ minutes} = \\frac{30}{60} \\text{ hours} = 0.5 \\text{ hours}\n   \\]\n\n2. **Calculate the distance traveled per hour:**\n\n   The car",
+        "arithmetic_power_log": " **Convert the time from minutes to hours:**\n   \\[\n   30 \\text{ minutes} = \\frac{30}{60} \\text{ hours} = 0.5 \\text{ hours}\n   \\]\n\n2. **Calculate the distance traveled per hour:**\n   \\[\n",
+        "always_all": ""
+      }
+    },
+    {
+      "category": "reasoning",
+      "prompt": "If one box holds 6 bottles, how many boxes are needed for 26 bottles? Explain briefly. Variant 1.",
+      "scores": {
+        "baseline": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 1.0,
+        "chinese_semantic": 1.0,
+        "calculation_error": 1.0,
+        "short_reasoning": 1.0,
+        "arithmetic_power_log": 1.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "chinese_semantic": 3,
+        "calculation_error": 3,
+        "short_reasoning": 3,
+        "arithmetic_power_log": 3,
+        "always_all": 30
+      },
+      "outputs": {
+        "baseline": " **Divide the total number of bottles by the number of bottles each box can hold:**\n\n   \\[\n   \\frac{26}{6} = 4.333\\ldots\n   \\]\n\n   Since you cannot have a fraction of a box, you need to round up to the next",
+        "commonsense_choice": " **Understanding the Problem:**\n   - We need to determine how many boxes are required to hold a total of 26 bottles.\n   - Each box can hold 6 bottles.\n\n**Step-by-Step Solution:**\n\n1. **Calculate the number of full boxes needed:**\n   - To find out how many",
+        "format_following": " **Divide the total number of bottles by the number of bottles each box can hold:**\n\n   \\[\n   \\frac{26}{6} = 4.333\n   \\]\n\n   Since you cannot have a fraction of a box, you need to round up to the next whole number because",
+        "chinese_semantic": " **Understanding the Problem:**\n   - We need to determine how many boxes are required to hold a total of 26 bottles.\n   - Each box can hold 6 bottles.\n\n**Step-by-Step Solution:**\n\n1. **Calculate the number of full boxes needed:**\n   - To find out how many",
+        "calculation_error": " **Understanding the Problem:**\n   - We need to determine how many boxes are required to hold a total of 26 bottles.\n   - Each box can hold 6 bottles.\n\n**Step-by-Step Solution:**\n\n1. **Calculate the number of full boxes needed:**\n   - To find out how many",
+        "short_reasoning": " **Divide the total number of bottles by the number of bottles each box can hold:**\n   \\[\n   \\frac{26}{6} = 4.333\\ldots\n   \\]\n   Since you cannot have a fraction of a box, you need to round up to the next",
+        "arithmetic_power_log": " **Understanding the Problem:**\n   - We need to determine how many boxes are required to hold a total of 26 bottles.\n   - Each box can hold 6 bottles.\n\n**Variant 1:**\n- To find out how many boxes are needed, we divide the total number of bottles by the capacity of",
+        "always_all": ""
+      }
+    },
+    {
+      "category": "reasoning",
+      "prompt": "What is heavier: one kilogram of iron or one kilogram of cotton? Explain briefly. Variant 1.",
+      "scores": {
+        "baseline": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 1.0,
+        "chinese_semantic": 1.0,
+        "calculation_error": 1.0,
+        "short_reasoning": 1.0,
+        "arithmetic_power_log": 1.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "chinese_semantic": 3,
+        "calculation_error": 3,
+        "short_reasoning": 3,
+        "arithmetic_power_log": 3,
+        "always_all": 30
+      },
+      "outputs": {
+        "baseline": " To determine which object is heavier, we need to compare the masses of a kilogram of iron and a kilogram of cotton.\n   - The mass of a kilogram of iron is approximately 5.5 pounds (lb).\n   - The mass of a kilogram of cotton is approximately 0.2 pounds (",
+        "commonsense_choice": " To determine which object is heavier, we need to compare the masses of a kilogram of iron and a kilogram of cotton.\n2. We know that the density of iron is approximately 7850 kg/m³ (kilograms per cubic meter).\n3. The density of cotton is approximately 917",
+        "format_following": " One kilogram of iron and one kilogram of cotton are both solid objects, so they have the same mass.\nVariant 2. The density of iron is approximately 7850 kg/m³ (grams per cubic meter), while the density of cotton is approximately 917 kg/m³ (grams per",
+        "chinese_semantic": " To determine which object is heavier, we need to compare their masses.\n2. We know that the mass of a kilogram of iron is approximately 5.5 pounds (or 2.74 kg).\n3. The mass of a kilogram of cotton is approximately 0.91 pounds (or ",
+        "calculation_error": " One kilogram of iron and one kilogram of cotton are both solid objects, so they weigh the same amount.\nVariant 2. Iron has a density of approximately 7850 kg/m³ (grams per cubic meter), while cotton has a density of approximately 9370 kg/m³ (grams",
+        "short_reasoning": " To determine which object is heavier, we need to compare the masses of a kilogram of iron and a kilogram of cotton.\n   - The mass of a kilogram of iron is approximately 5.5 pounds (lb).\n   - The mass of a kilogram of cotton is approximately 0.2 pounds (",
+        "arithmetic_power_log": " To determine which object is heavier, we need to compare the masses of a kilogram of iron and a kilogram of cotton.\n   - The mass of 1 kg of iron is 5893.4 grams (or 0.58934 kilograms).\n   - The mass of 1",
+        "always_all": ""
+      }
+    },
+    {
+      "category": "reasoning",
+      "prompt": "If all roses are flowers and some flowers fade quickly, must all roses fade quickly? Explain briefly. Variant 1.",
+      "scores": {
+        "baseline": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 1.0,
+        "chinese_semantic": 1.0,
+        "calculation_error": 1.0,
+        "short_reasoning": 1.0,
+        "arithmetic_power_log": 1.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "chinese_semantic": 3,
+        "calculation_error": 3,
+        "short_reasoning": 3,
+        "arithmetic_power_log": 3,
+        "always_all": 30
+      },
+      "outputs": {
+        "baseline": " If all roses are flowers, then they would not be able to fade quickly because they are already flowers.\nVariant 2. If some flowers fade quickly, then it does not necessarily mean that all roses will also fade quickly. Roses could still survive for a longer time without fading if they have other defenses or mechanisms in place",
+        "commonsense_choice": " All roses are flowers.\nVariant 2. Some flowers fade quickly.\n\nTo determine whether the statement \"All roses must fade quickly\" is true or false, we need to analyze both variants carefully.\n\n### Variant 1: All roses are flowers\nThis variant states that every rose is a flower. This means that every single",
+        "format_following": " If all roses are flowers, then they would not be able to fade quickly because they are already flowers.\nVariant 2. If some flowers fade quickly, it does not necessarily mean that all roses will also fade quickly. While it is possible for some flowers to fade quickly, it is not guaranteed that all roses will do",
+        "chinese_semantic": " **Understanding the Context**: The question asks whether all roses must necessarily fade quickly if they are considered as a subset of flowers.\n\n2. **Analyzing the Statement**: Roses are explicitly defined as flowers.\n3. **Implication of Definition**: Since roses are flowers, it logically follows that all roses are also flowers.\n4",
+        "calculation_error": " If all roses are flowers, then they would not be able to fade quickly because they are already flowers.\n\nVariant 2. If some flowers fade quickly, it does not necessarily mean that all the roses will also fade quickly. Roses can still have other reasons for fading quickly, such as being damaged or having pests like aph",
+        "short_reasoning": " If all roses are flowers, then they cannot be flowers because flowers are not a subset of roses.\nVariant 2. If some flowers fade quickly, it does not necessarily mean that all roses will also fade quickly. The condition \"some flowers fade quickly\" could refer to different types or conditions for the flowers.\n\nTo summarize",
+        "arithmetic_power_log": " **Understanding the Problem:**\n   - We need to determine if all roses must necessarily fade quickly based on the given conditions.\n   - The problem states that \"all roses are flowers,\" which implies they can be classified as either flowers or plants.\n\n**Analysis:**\n- If all roses are flowers, then by definition,",
+        "always_all": ""
+      }
+    },
+    {
+      "category": "reasoning",
+      "prompt": "A doctor gives you 3 pills and says take one every half hour. How long will the pills last? Explain briefly. Variant 1.",
+      "scores": {
+        "baseline": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 1.0,
+        "chinese_semantic": 1.0,
+        "calculation_error": 1.0,
+        "short_reasoning": 1.0,
+        "arithmetic_power_log": 1.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "chinese_semantic": 3,
+        "calculation_error": 3,
+        "short_reasoning": 3,
+        "arithmetic_power_log": 3,
+        "always_all": 30
+      },
+      "outputs": {
+        "baseline": " The doctor tells you to take one pill every half hour, which means that each pill is taken at intervals of 0.5 hours.\n\nVariant 2. If you were to count the number of pills you took in a day (assuming a 24-hour day), you would have:\n\n- 1 pill at",
+        "commonsense_choice": " The doctor gives you 3 pills, each containing 50 mg of medication. If you take one pill every half hour, how many hours will it take to finish all three pills?\n\nVariant 2. The doctor gives you 3 pills, each containing 50 mg of medication. If you take one pill",
+        "format_following": " **Understanding the Problem:**\n   - The doctor gives you 3 pills.\n   - You are instructed to take one pill every half hour.\n\n**Variant 2:**\n- The doctor gives you 3 pills.\n- You are instructed to take one pill every minute (since there are 60 minutes in an",
+        "chinese_semantic": " **Understanding the Problem:**\n   - The doctor gives you 3 pills.\n   - You are instructed to take one pill every half hour.\n\n**Variant 2:**\n- The problem states that the pills should be taken \"every half hour.\"\n\n**Explanation of Variant 2:**\n- If the pills are taken",
+        "calculation_error": " The doctor tells you to take one pill every 20 minutes.\nVariant 2. The doctor tells you to take one pill every 45 minutes.\nTo determine how long the pills will last, we need to calculate the total time it takes for each variant of taking the pills.\n\n### Variant 1: Every",
+        "short_reasoning": " The doctor tells you to take one pill every 20 minutes.\nVariant 2. The doctor tells you to take one pill every 45 minutes.\nTo determine how long the pills will last, we need to calculate the total time it takes for each method of taking the pills.\n\n**Method 1: Every",
+        "arithmetic_power_log": " **Understanding the Problem:**\n   - You are given 3 pills.\n   - The doctor tells you to take one pill every half-hour.\n\n**Variant 2:**\n- The problem asks how long the pills will last if taken at a consistent rate of one pill per half-hour.\n\n### Step-by-Step Explanation",
+        "always_all": ""
+      }
+    }
+  ]
+}

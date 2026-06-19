@@ -1,0 +1,90 @@
+[
+  {
+    "block_id": "general_l23_o_proj",
+    "category": "general",
+    "layer_id": 23,
+    "module_name": "o_proj",
+    "rank": 8,
+    "final_loss": 0.24781866371631622,
+    "best_loss": 0.21892544627189636,
+    "epochs": 3,
+    "training_time_s": 53.08225917816162
+  },
+  {
+    "block_id": "general_l23_down_proj",
+    "category": "general",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 8,
+    "final_loss": 0.15367896854877472,
+    "best_loss": 0.12659361958503723,
+    "epochs": 3,
+    "training_time_s": 52.226086139678955
+  },
+  {
+    "block_id": "math_l23_o_proj",
+    "category": "math",
+    "layer_id": 23,
+    "module_name": "o_proj",
+    "rank": 8,
+    "final_loss": 0.32290178537368774,
+    "best_loss": 0.32290178537368774,
+    "epochs": 3,
+    "training_time_s": 34.3372757434845
+  },
+  {
+    "block_id": "math_l23_down_proj",
+    "category": "math",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 8,
+    "final_loss": 0.35365861654281616,
+    "best_loss": 0.1814439743757248,
+    "epochs": 3,
+    "training_time_s": 37.58507585525513
+  },
+  {
+    "block_id": "code_l23_o_proj",
+    "category": "code",
+    "layer_id": 23,
+    "module_name": "o_proj",
+    "rank": 8,
+    "final_loss": 0.7514894008636475,
+    "best_loss": 0.36491110920906067,
+    "epochs": 3,
+    "training_time_s": 46.53502106666565
+  },
+  {
+    "block_id": "code_l23_down_proj",
+    "category": "code",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 8,
+    "final_loss": 0.559141993522644,
+    "best_loss": 0.10355425626039505,
+    "epochs": 3,
+    "training_time_s": 44.43085694313049
+  },
+  {
+    "block_id": "chinese_l23_o_proj",
+    "category": "chinese",
+    "layer_id": 23,
+    "module_name": "o_proj",
+    "rank": 8,
+    "final_loss": 0.3304247260093689,
+    "best_loss": 0.20653210580348969,
+    "epochs": 3,
+    "training_time_s": 53.025148153305054
+  },
+  {
+    "block_id": "chinese_l23_down_proj",
+    "category": "chinese",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 8,
+    "final_loss": 0.18183647096157074,
+    "best_loss": 0.12443137913942337,
+    "epochs": 3,
+    "training_time_s": 52.36345887184143
+  }
+]

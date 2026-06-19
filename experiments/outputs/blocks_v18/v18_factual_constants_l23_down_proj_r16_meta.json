@@ -1,0 +1,22 @@
+{
+  "block_id": "v18_factual_constants_l23_down_proj_r16",
+  "direction": "factual_constants",
+  "train_samples": 40,
+  "rank": 16,
+  "loss_history": [
+    5.020002828538418,
+    0.26696872264146804,
+    0.17989890463650227,
+    0.1432927403599024,
+    0.12273012325167656
+  ],
+  "fix_break": {
+    "fixes": 0,
+    "breaks": 37,
+    "net": -37,
+    "baseline_score": 0.8222222222222222,
+    "block_score": 0.022222222222222223
+  },
+  "admit": false,
+  "damage_rate": 0.8222222222222222
+}

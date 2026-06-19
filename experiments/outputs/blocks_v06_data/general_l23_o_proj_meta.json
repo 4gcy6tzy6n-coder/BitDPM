@@ -1,0 +1,16 @@
+{
+  "block_id": "general_l23_o_proj",
+  "block_type": "general",
+  "category": "general",
+  "layer_id": 23,
+  "module_name": "o_proj",
+  "rank": 8,
+  "scale": 1.0,
+  "final_loss": 0.18421196937561035,
+  "best_loss": 0.05662711337208748,
+  "epochs": 5,
+  "total_steps": 2100,
+  "training_time_s": 563.0912599563599,
+  "in_features": 896,
+  "out_features": 896
+}

@@ -1,0 +1,9 @@
+[
+  "Utility block: chinese_semantic\nQuestion: Who wrote Romeo and Juliet?\nPreferred answer:\nWhat is the name of the play?\nWhat are some other plays by William Shakespeare that you would recommend?\nDo those questions have the same meaning?\nPick from:\n (a). no\n (b). yes\n\n(a).",
+  "Utility block: format_following\nQuestion: Who wrote Romeo and Juliet?\nPreferred answer:\nRomeo and Juliet was written by William Shakespeare. It is a play that was first performed in 1599, but it has been adapted many times since then. The play tells the story of two young lovers who fall in love with each other despite their differences. It also explores themes such as love, revenge,",
+  "Utility block: format_following\nQuestion: What is the square root of 144?\nPreferred answer:\nTo find the square root of \\(144\\), we can follow these steps:\n\n1. **Identify the perfect squares around 144**: \n   - The perfect square closest to 144 is \\(12^2 = 144\\).\n\n2. **Verify the calculation**",
+  "Utility block: format_following\nQuestion: What is 18 + 24?\nPreferred answer:\nTo find the sum of 18 and 24, you simply add them together:\n\n\\[ 18 + 24 = 42 \\]\n\nSo, 18 plus 24 equals 42.",
+  "Utility block: calculation_error\nQuestion: What is 9 times 8?\nPreferred answer:\nTo find the product of 9 and 8, you simply multiply them together:\n\n\\[ 9 \\times 8 = 72 \\]\n\nSo, 9 times 8 equals 72.",
+  "Utility block: commonsense_choice\nQuestion: What is 9 times 8?\nPreferred answer:\nTo find the product of 9 and 8, you simply multiply them together:\n\n\\[ 9 \\times 8 = 72 \\]",
+  "Utility block: short_reasoning\nQuestion: What is 9 times 8?\nPreferred answer:\nTo find the product of 9 and 8, you simply multiply them together:\n\n\\( 9 \\times 8 = 72 \\)\n\nSo, 9 times 8 equals 72."
+]

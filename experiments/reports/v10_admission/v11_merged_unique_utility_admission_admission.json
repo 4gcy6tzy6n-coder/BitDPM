@@ -1,0 +1,585 @@
+{
+  "base": {
+    "label": "v10",
+    "path": "experiments/reports/v10_admitted_powerlog_stable_sampling_20260607_212715.json"
+  },
+  "candidates": [
+    {
+      "label": "v11_merged",
+      "path": "experiments/reports/v11_merged_candidates_stable_sampling_LATEST.json"
+    }
+  ],
+  "rows": [
+    {
+      "candidate_pool": "v11_merged",
+      "block": "v11_stats_number_theory",
+      "fixed_score": 0.785,
+      "fixes": 1,
+      "unique_fixes": 1,
+      "overlap_fixes": 0,
+      "breaks": 8,
+      "net_unique_utility": -7,
+      "breaks_per_unique": 8.0,
+      "admit": true,
+      "unique_fix_samples": [
+        {
+          "category": "math",
+          "prompt": "What is the mean of 4, 8, 12, and 16?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        }
+      ],
+      "overlap_fix_samples": [],
+      "break_samples": [
+        {
+          "category": "commonsense",
+          "prompt": "How many continents are there?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "category": "commonsense",
+          "prompt": "Which animal is known as the king of the jungle?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "category": "chinese",
+          "prompt": "一年有多少个月？",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "category": "chinese",
+          "prompt": "什么是机器学习？请用中文回答。",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "category": "chinese",
+          "prompt": "请列举三种水果。",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "category": "chinese",
+          "prompt": "中国的四大发明是什么？",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "category": "chinese",
+          "prompt": "长城位于哪个国家？",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "category": "chinese",
+          "prompt": "请写一句关于学习的中文句子。",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        }
+      ]
+    },
+    {
+      "candidate_pool": "v11_merged",
+      "block": "v11_linear_equation",
+      "fixed_score": 0.82,
+      "fixes": 1,
+      "unique_fixes": 0,
+      "overlap_fixes": 1,
+      "breaks": 2,
+      "net_unique_utility": -2,
+      "breaks_per_unique": 2.0,
+      "admit": false,
+      "unique_fix_samples": [],
+      "overlap_fix_samples": [
+        {
+          "category": "math",
+          "prompt": "What is the distance from (0,0) to (3,4)?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        }
+      ],
+      "break_samples": [
+        {
+          "category": "commonsense",
+          "prompt": "How many continents are there?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "category": "math",
+          "prompt": "What is 9 times 8?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        }
+      ]
+    },
+    {
+      "candidate_pool": "v11_merged",
+      "block": "v11_percent_time_distance",
+      "fixed_score": 0.71,
+      "fixes": 1,
+      "unique_fixes": 0,
+      "overlap_fixes": 1,
+      "breaks": 14,
+      "net_unique_utility": -14,
+      "breaks_per_unique": 14.0,
+      "admit": false,
+      "unique_fix_samples": [],
+      "overlap_fix_samples": [
+        {
+          "category": "math",
+          "prompt": "What is the distance from (0,0) to (3,4)?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        }
+      ],
+      "break_samples": [
+        {
+          "category": "commonsense",
+          "prompt": "Which animal is known as the king of the jungle?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "category": "math",
+          "prompt": "What is 9 times 8?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "category": "chinese",
+          "prompt": "中国的首都是哪个城市？",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "category": "chinese",
+          "prompt": "一年有多少个月？",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "category": "chinese",
+          "prompt": "什么是机器学习？请用中文回答。",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "category": "chinese",
+          "prompt": "水的化学式是什么？",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "category": "chinese",
+          "prompt": "请列举三种水果。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "category": "chinese",
+          "prompt": "什么是自然语言处理？",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "category": "chinese",
+          "prompt": "中秋节通常会吃什么？",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "category": "chinese",
+          "prompt": "中国的四大发明是什么？",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "category": "chinese",
+          "prompt": "长城位于哪个国家？",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "category": "chinese",
+          "prompt": "什么是高铁？",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "category": "chinese",
+          "prompt": "请用中文解释电子商务。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "category": "chinese",
+          "prompt": "请写一句关于学习的中文句子。",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        }
+      ]
+    },
+    {
+      "candidate_pool": "v11_merged",
+      "block": "v11_circle_area",
+      "fixed_score": 0.67,
+      "fixes": 1,
+      "unique_fixes": 0,
+      "overlap_fixes": 1,
+      "breaks": 18,
+      "net_unique_utility": -18,
+      "breaks_per_unique": 18.0,
+      "admit": false,
+      "unique_fix_samples": [],
+      "overlap_fix_samples": [
+        {
+          "category": "math",
+          "prompt": "What is the square root of 144?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        }
+      ],
+      "break_samples": [
+        {
+          "category": "commonsense",
+          "prompt": "How many continents are there?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "category": "commonsense",
+          "prompt": "Which gas do plants absorb from the atmosphere?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "category": "commonsense",
+          "prompt": "Which animal is known as the king of the jungle?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "category": "commonsense",
+          "prompt": "What do bees produce?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "category": "math",
+          "prompt": "What is 9 times 8?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "category": "chinese",
+          "prompt": "中国的首都是哪个城市？",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "category": "chinese",
+          "prompt": "一年有多少个月？",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "category": "chinese",
+          "prompt": "什么是机器学习？请用中文回答。",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "category": "chinese",
+          "prompt": "水的化学式是什么？",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "category": "chinese",
+          "prompt": "请用中文写一句问候语。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "category": "chinese",
+          "prompt": "什么是自然语言处理？",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "category": "chinese",
+          "prompt": "中国的四大发明是什么？",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "category": "chinese",
+          "prompt": "春节有哪些常见习俗？",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "category": "chinese",
+          "prompt": "长城位于哪个国家？",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "category": "chinese",
+          "prompt": "什么是高铁？",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "category": "chinese",
+          "prompt": "孔子是中国古代的什么人物？",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "category": "chinese",
+          "prompt": "请写一句关于学习的中文句子。",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "category": "reasoning",
+          "prompt": "A plane crashes on the border of two countries. Where do they bury the survivors?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        }
+      ]
+    },
+    {
+      "candidate_pool": "v11_merged",
+      "block": "v11_factorial_derivative",
+      "fixed_score": 0.66,
+      "fixes": 1,
+      "unique_fixes": 0,
+      "overlap_fixes": 1,
+      "breaks": 19,
+      "net_unique_utility": -19,
+      "breaks_per_unique": 19.0,
+      "admit": false,
+      "unique_fix_samples": [],
+      "overlap_fix_samples": [
+        {
+          "category": "math",
+          "prompt": "What is the square root of 144?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        }
+      ],
+      "break_samples": [
+        {
+          "category": "commonsense",
+          "prompt": "How many continents are there?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "category": "commonsense",
+          "prompt": "Which animal is known as the king of the jungle?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "category": "math",
+          "prompt": "Calculate 15 + 27 =",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "category": "math",
+          "prompt": "What is 9 times 8?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "category": "chinese",
+          "prompt": "中国的首都是哪个城市？",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "category": "chinese",
+          "prompt": "一年有多少个月？",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "category": "chinese",
+          "prompt": "什么是机器学习？请用中文回答。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "category": "chinese",
+          "prompt": "水的化学式是什么？",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "category": "chinese",
+          "prompt": "请列举三种水果。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "category": "chinese",
+          "prompt": "太阳从哪个方向升起？",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "category": "chinese",
+          "prompt": "什么是自然语言处理？",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "category": "chinese",
+          "prompt": "中秋节通常会吃什么？",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "category": "chinese",
+          "prompt": "中国的四大发明是什么？",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "category": "chinese",
+          "prompt": "春节有哪些常见习俗？",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "category": "chinese",
+          "prompt": "长城位于哪个国家？",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "category": "chinese",
+          "prompt": "什么是高铁？",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "category": "chinese",
+          "prompt": "请写一句关于学习的中文句子。",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "category": "reasoning",
+          "prompt": "Three light switches control a light bulb in another room. You can flip the switches and then enter the room once. How can you determine which switch controls the bulb?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "category": "reasoning",
+          "prompt": "What comes next in the sequence: 2, 3, 5, 7, 11, ___?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        }
+      ]
+    }
+  ],
+  "remaining_failures": [
+    {
+      "index": 22,
+      "category": "math",
+      "prompt": "If x + 5 = 12, what is x?",
+      "best_config": "baseline",
+      "best_score": 0.0,
+      "baseline_score": 0.0
+    },
+    {
+      "index": 23,
+      "category": "math",
+      "prompt": "What is 25% of 200?",
+      "best_config": "baseline",
+      "best_score": 0.0,
+      "baseline_score": 0.0
+    },
+    {
+      "index": 24,
+      "category": "math",
+      "prompt": "Calculate the area of a circle with radius 3.",
+      "best_config": "baseline",
+      "best_score": 0.0,
+      "baseline_score": 0.0
+    },
+    {
+      "index": 26,
+      "category": "math",
+      "prompt": "How many seconds are in 2 hours?",
+      "best_config": "baseline",
+      "best_score": 0.0,
+      "baseline_score": 0.0
+    },
+    {
+      "index": 28,
+      "category": "math",
+      "prompt": "What is 2^10?",
+      "best_config": "baseline",
+      "best_score": 0.0,
+      "baseline_score": 0.0
+    },
+    {
+      "index": 29,
+      "category": "math",
+      "prompt": "If a train travels at 60 km/h for 2.5 hours, how far does it go?",
+      "best_config": "baseline",
+      "best_score": 0.0,
+      "baseline_score": 0.0
+    },
+    {
+      "index": 33,
+      "category": "math",
+      "prompt": "What is the mean of 4, 8, 12, and 16?",
+      "best_config": "baseline",
+      "best_score": 0.0,
+      "baseline_score": 0.0
+    },
+    {
+      "index": 34,
+      "category": "math",
+      "prompt": "What is the GCD of 24 and 36?",
+      "best_config": "baseline",
+      "best_score": 0.0,
+      "baseline_score": 0.0
+    },
+    {
+      "index": 35,
+      "category": "math",
+      "prompt": "What is the LCM of 12 and 18?",
+      "best_config": "baseline",
+      "best_score": 0.0,
+      "baseline_score": 0.0
+    },
+    {
+      "index": 36,
+      "category": "math",
+      "prompt": "What is 7 factorial?",
+      "best_config": "baseline",
+      "best_score": 0.0,
+      "baseline_score": 0.0
+    },
+    {
+      "index": 37,
+      "category": "math",
+      "prompt": "What is the derivative of x^3?",
+      "best_config": "baseline",
+      "best_score": 0.0,
+      "baseline_score": 0.0
+    }
+  ]
+}

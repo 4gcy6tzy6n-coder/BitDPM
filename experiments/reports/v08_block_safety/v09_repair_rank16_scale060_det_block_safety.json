@@ -1,0 +1,322 @@
+{
+  "report": {
+    "model": "Qwen/Qwen2.5-0.5B-Instruct",
+    "benchmark_set": "v08",
+    "total_prompts": 100,
+    "block_scale": 0.6,
+    "block_scales": {
+      "arithmetic_addition": 0.6,
+      "arithmetic_percent": 0.6,
+      "arithmetic_power_log": 0.6,
+      "arithmetic_sqrt": 0.6,
+      "factual_constants": 0.6
+    }
+  },
+  "rows": [
+    {
+      "block": "arithmetic_power_log",
+      "fixed_score": 0.8,
+      "baseline_score": 0.8,
+      "score_delta": 0.0,
+      "fixes": 2,
+      "breaks": 3,
+      "net_fix_count": -1,
+      "unique_fixes": 0,
+      "damaged_categories": {
+        "chinese": 2,
+        "code": 1
+      },
+      "fix_samples": [
+        {
+          "index": 5,
+          "category": "commonsense",
+          "prompt": "Who wrote Romeo and Juliet?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 31,
+          "category": "math",
+          "prompt": "What is 9 times 8?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        }
+      ],
+      "break_samples": [
+        {
+          "index": 55,
+          "category": "code",
+          "prompt": "Write SQL to select all rows from a users table.",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "index": 62,
+          "category": "chinese",
+          "prompt": "一年有多少个月？",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 66,
+          "category": "chinese",
+          "prompt": "请列举三种水果。",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        }
+      ],
+      "unique_fix_samples": []
+    },
+    {
+      "block": "arithmetic_percent",
+      "fixed_score": 0.79,
+      "baseline_score": 0.8,
+      "score_delta": -0.01,
+      "fixes": 2,
+      "breaks": 3,
+      "net_fix_count": -1,
+      "unique_fixes": 0,
+      "damaged_categories": {
+        "chinese": 1,
+        "commonsense": 1,
+        "reasoning": 1
+      },
+      "fix_samples": [
+        {
+          "index": 5,
+          "category": "commonsense",
+          "prompt": "Who wrote Romeo and Juliet?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 31,
+          "category": "math",
+          "prompt": "What is 9 times 8?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        }
+      ],
+      "break_samples": [
+        {
+          "index": 19,
+          "category": "commonsense",
+          "prompt": "What do bees produce?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 62,
+          "category": "chinese",
+          "prompt": "一年有多少个月？",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 88,
+          "category": "reasoning",
+          "prompt": "What comes next in the sequence: 2, 3, 5, 7, 11, ___?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        }
+      ],
+      "unique_fix_samples": []
+    },
+    {
+      "block": "factual_constants",
+      "fixed_score": 0.79,
+      "baseline_score": 0.8,
+      "score_delta": -0.01,
+      "fixes": 2,
+      "breaks": 4,
+      "net_fix_count": -2,
+      "unique_fixes": 2,
+      "damaged_categories": {
+        "chinese": 3,
+        "commonsense": 1
+      },
+      "fix_samples": [
+        {
+          "index": 8,
+          "category": "commonsense",
+          "prompt": "What is the speed of light in vacuum?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 25,
+          "category": "math",
+          "prompt": "What is the square root of 144?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        }
+      ],
+      "break_samples": [
+        {
+          "index": 12,
+          "category": "commonsense",
+          "prompt": "Which animal is known as the king of the jungle?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 62,
+          "category": "chinese",
+          "prompt": "一年有多少个月？",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 68,
+          "category": "chinese",
+          "prompt": "请用中文写一句问候语。",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "index": 71,
+          "category": "chinese",
+          "prompt": "中国的四大发明是什么？",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        }
+      ],
+      "unique_fix_samples": [
+        {
+          "index": 8,
+          "category": "commonsense",
+          "prompt": "What is the speed of light in vacuum?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 25,
+          "category": "math",
+          "prompt": "What is the square root of 144?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        }
+      ]
+    },
+    {
+      "block": "arithmetic_addition",
+      "fixed_score": 0.78,
+      "baseline_score": 0.8,
+      "score_delta": -0.02,
+      "fixes": 0,
+      "breaks": 3,
+      "net_fix_count": -3,
+      "unique_fixes": 0,
+      "damaged_categories": {
+        "chinese": 3
+      },
+      "fix_samples": [],
+      "break_samples": [
+        {
+          "index": 62,
+          "category": "chinese",
+          "prompt": "一年有多少个月？",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 68,
+          "category": "chinese",
+          "prompt": "请用中文写一句问候语。",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "index": 71,
+          "category": "chinese",
+          "prompt": "中国的四大发明是什么？",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        }
+      ],
+      "unique_fix_samples": []
+    },
+    {
+      "block": "arithmetic_sqrt",
+      "fixed_score": 0.735,
+      "baseline_score": 0.8,
+      "score_delta": -0.065,
+      "fixes": 1,
+      "breaks": 8,
+      "net_fix_count": -7,
+      "unique_fixes": 0,
+      "damaged_categories": {
+        "chinese": 7,
+        "commonsense": 1
+      },
+      "fix_samples": [
+        {
+          "index": 5,
+          "category": "commonsense",
+          "prompt": "Who wrote Romeo and Juliet?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        }
+      ],
+      "break_samples": [
+        {
+          "index": 12,
+          "category": "commonsense",
+          "prompt": "Which animal is known as the king of the jungle?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 60,
+          "category": "chinese",
+          "prompt": "中国的首都是哪个城市？",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 62,
+          "category": "chinese",
+          "prompt": "一年有多少个月？",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 64,
+          "category": "chinese",
+          "prompt": "什么是机器学习？请用中文回答。",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "index": 67,
+          "category": "chinese",
+          "prompt": "太阳从哪个方向升起？",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 71,
+          "category": "chinese",
+          "prompt": "中国的四大发明是什么？",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 74,
+          "category": "chinese",
+          "prompt": "长城位于哪个国家？",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 76,
+          "category": "chinese",
+          "prompt": "什么是高铁？",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        }
+      ],
+      "unique_fix_samples": []
+    }
+  ]
+}

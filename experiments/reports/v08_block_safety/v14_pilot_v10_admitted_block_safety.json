@@ -1,0 +1,529 @@
+{
+  "report": {
+    "model": "Qwen/Qwen2.5-0.5B-Instruct",
+    "benchmark_set": "v14",
+    "total_prompts": 60,
+    "block_scale": 0.75,
+    "block_scales": {
+      "commonsense_choice": 0.6,
+      "format_following": 0.75,
+      "chinese_semantic": 0.75,
+      "calculation_error": 0.3,
+      "short_reasoning": 0.45,
+      "arithmetic_power_log": 0.75
+    }
+  },
+  "rows": [
+    {
+      "block": "calculation_error",
+      "fixed_score": 0.8916666666666667,
+      "baseline_score": 0.8666666666666667,
+      "score_delta": 0.025,
+      "fixes": 3,
+      "breaks": 2,
+      "net_fix_count": 1,
+      "unique_fixes": 0,
+      "damaged_categories": {
+        "arithmetic": 1,
+        "chinese": 1
+      },
+      "fix_samples": [
+        {
+          "index": 7,
+          "category": "arithmetic",
+          "prompt": "What is 145 + 255?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 17,
+          "category": "factual_constants",
+          "prompt": "Give the standard value: What is the approximate acceleration due to gravity on Earth in m/s^2?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 24,
+          "category": "commonsense",
+          "prompt": "How many continents are commonly counted on Earth?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        }
+      ],
+      "break_samples": [
+        {
+          "index": 2,
+          "category": "arithmetic",
+          "prompt": "What is 56 + 29?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 49,
+          "category": "chinese",
+          "prompt": "长城位于哪个国家？ 请简短回答。版本1。",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        }
+      ],
+      "unique_fix_samples": []
+    },
+    {
+      "block": "chinese_semantic",
+      "fixed_score": 0.8833333333333333,
+      "baseline_score": 0.8666666666666667,
+      "score_delta": 0.016666666666666666,
+      "fixes": 4,
+      "breaks": 3,
+      "net_fix_count": 1,
+      "unique_fixes": 1,
+      "damaged_categories": {
+        "arithmetic": 2,
+        "factual_constants": 1
+      },
+      "fix_samples": [
+        {
+          "index": 5,
+          "category": "arithmetic",
+          "prompt": "What is 91 + 64?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 7,
+          "category": "arithmetic",
+          "prompt": "What is 145 + 255?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 16,
+          "category": "factual_constants",
+          "prompt": "Answer briefly: What is the approximate acceleration due to gravity on Earth in m/s^2?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 17,
+          "category": "factual_constants",
+          "prompt": "Give the standard value: What is the approximate acceleration due to gravity on Earth in m/s^2?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        }
+      ],
+      "break_samples": [
+        {
+          "index": 2,
+          "category": "arithmetic",
+          "prompt": "What is 56 + 29?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 3,
+          "category": "arithmetic",
+          "prompt": "What is 123 + 77?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 15,
+          "category": "factual_constants",
+          "prompt": "What is the approximate acceleration due to gravity on Earth in m/s^2?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        }
+      ],
+      "unique_fix_samples": [
+        {
+          "index": 16,
+          "category": "factual_constants",
+          "prompt": "Answer briefly: What is the approximate acceleration due to gravity on Earth in m/s^2?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        }
+      ]
+    },
+    {
+      "block": "short_reasoning",
+      "fixed_score": 0.8166666666666667,
+      "baseline_score": 0.8666666666666667,
+      "score_delta": -0.05,
+      "fixes": 2,
+      "breaks": 5,
+      "net_fix_count": -3,
+      "unique_fixes": 0,
+      "damaged_categories": {
+        "arithmetic": 3,
+        "factual_constants": 2
+      },
+      "fix_samples": [
+        {
+          "index": 5,
+          "category": "arithmetic",
+          "prompt": "What is 91 + 64?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 24,
+          "category": "commonsense",
+          "prompt": "How many continents are commonly counted on Earth?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        }
+      ],
+      "break_samples": [
+        {
+          "index": 1,
+          "category": "arithmetic",
+          "prompt": "What is 37 + 45?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 2,
+          "category": "arithmetic",
+          "prompt": "What is 56 + 29?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 3,
+          "category": "arithmetic",
+          "prompt": "What is 123 + 77?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 12,
+          "category": "factual_constants",
+          "prompt": "Give the standard value: What is the speed of light in vacuum in meters per second?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 15,
+          "category": "factual_constants",
+          "prompt": "What is the approximate acceleration due to gravity on Earth in m/s^2?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        }
+      ],
+      "unique_fix_samples": []
+    },
+    {
+      "block": "commonsense_choice",
+      "fixed_score": 0.7666666666666667,
+      "baseline_score": 0.8666666666666667,
+      "score_delta": -0.1,
+      "fixes": 1,
+      "breaks": 7,
+      "net_fix_count": -6,
+      "unique_fixes": 0,
+      "damaged_categories": {
+        "arithmetic": 3,
+        "chinese": 1,
+        "commonsense": 1,
+        "factual_constants": 2
+      },
+      "fix_samples": [
+        {
+          "index": 24,
+          "category": "commonsense",
+          "prompt": "How many continents are commonly counted on Earth?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        }
+      ],
+      "break_samples": [
+        {
+          "index": 2,
+          "category": "arithmetic",
+          "prompt": "What is 56 + 29?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 3,
+          "category": "arithmetic",
+          "prompt": "What is 123 + 77?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 4,
+          "category": "arithmetic",
+          "prompt": "What is 208 + 315?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 10,
+          "category": "factual_constants",
+          "prompt": "What is the speed of light in vacuum in meters per second?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 15,
+          "category": "factual_constants",
+          "prompt": "What is the approximate acceleration due to gravity on Earth in m/s^2?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 26,
+          "category": "commonsense",
+          "prompt": "What do bees produce?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 40,
+          "category": "chinese",
+          "prompt": "中国的首都是哪个城市？ 请简短回答。版本1。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        }
+      ],
+      "unique_fix_samples": []
+    },
+    {
+      "block": "arithmetic_power_log",
+      "fixed_score": 0.6916666666666667,
+      "baseline_score": 0.8666666666666667,
+      "score_delta": -0.175,
+      "fixes": 2,
+      "breaks": 13,
+      "net_fix_count": -11,
+      "unique_fixes": 0,
+      "damaged_categories": {
+        "arithmetic": 5,
+        "chinese": 1,
+        "factual_constants": 6,
+        "reasoning": 1
+      },
+      "fix_samples": [
+        {
+          "index": 17,
+          "category": "factual_constants",
+          "prompt": "Give the standard value: What is the approximate acceleration due to gravity on Earth in m/s^2?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 24,
+          "category": "commonsense",
+          "prompt": "How many continents are commonly counted on Earth?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        }
+      ],
+      "break_samples": [
+        {
+          "index": 1,
+          "category": "arithmetic",
+          "prompt": "What is 37 + 45?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 2,
+          "category": "arithmetic",
+          "prompt": "What is 56 + 29?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 3,
+          "category": "arithmetic",
+          "prompt": "What is 123 + 77?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 4,
+          "category": "arithmetic",
+          "prompt": "What is 208 + 315?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 6,
+          "category": "arithmetic",
+          "prompt": "What is 72 + 38?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 10,
+          "category": "factual_constants",
+          "prompt": "What is the speed of light in vacuum in meters per second?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 11,
+          "category": "factual_constants",
+          "prompt": "Answer briefly: What is the speed of light in vacuum in meters per second?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 12,
+          "category": "factual_constants",
+          "prompt": "Give the standard value: What is the speed of light in vacuum in meters per second?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 15,
+          "category": "factual_constants",
+          "prompt": "What is the approximate acceleration due to gravity on Earth in m/s^2?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 18,
+          "category": "factual_constants",
+          "prompt": "In one short answer, What is the approximate acceleration due to gravity on Earth in m/s^2?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 19,
+          "category": "factual_constants",
+          "prompt": "State the commonly used answer: What is the approximate acceleration due to gravity on Earth in m/s^2?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 40,
+          "category": "chinese",
+          "prompt": "中国的首都是哪个城市？ 请简短回答。版本1。",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "index": 52,
+          "category": "reasoning",
+          "prompt": "If today is Monday, what day will it be in 10 days? Explain briefly. Variant 1.",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        }
+      ],
+      "unique_fix_samples": []
+    },
+    {
+      "block": "format_following",
+      "fixed_score": 0.6666666666666666,
+      "baseline_score": 0.8666666666666667,
+      "score_delta": -0.2,
+      "fixes": 0,
+      "breaks": 13,
+      "net_fix_count": -13,
+      "unique_fixes": 0,
+      "damaged_categories": {
+        "arithmetic": 2,
+        "chinese": 9,
+        "commonsense": 2
+      },
+      "fix_samples": [],
+      "break_samples": [
+        {
+          "index": 3,
+          "category": "arithmetic",
+          "prompt": "What is 123 + 77?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 4,
+          "category": "arithmetic",
+          "prompt": "What is 208 + 315?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 25,
+          "category": "commonsense",
+          "prompt": "Which organ pumps blood through the body?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 27,
+          "category": "commonsense",
+          "prompt": "Which gas do plants absorb from the atmosphere?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 40,
+          "category": "chinese",
+          "prompt": "中国的首都是哪个城市？ 请简短回答。版本1。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 41,
+          "category": "chinese",
+          "prompt": "请用中文解释什么是人工智能。 请简短回答。版本1。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 42,
+          "category": "chinese",
+          "prompt": "一年有多少个月？ 请简短回答。版本1。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 43,
+          "category": "chinese",
+          "prompt": "请写一句关于学习的中文句子。 请简短回答。版本1。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 44,
+          "category": "chinese",
+          "prompt": "水的化学式是什么？ 请简短回答。版本1。",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "index": 45,
+          "category": "chinese",
+          "prompt": "太阳从哪个方向升起？ 请简短回答。版本1。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 46,
+          "category": "chinese",
+          "prompt": "什么是自然语言处理？ 请简短回答。版本1。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 47,
+          "category": "chinese",
+          "prompt": "中秋节通常会吃什么？ 请简短回答。版本1。",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "index": 49,
+          "category": "chinese",
+          "prompt": "长城位于哪个国家？ 请简短回答。版本1。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        }
+      ],
+      "unique_fix_samples": []
+    }
+  ]
+}

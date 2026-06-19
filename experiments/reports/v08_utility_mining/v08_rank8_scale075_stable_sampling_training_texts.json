@@ -1,0 +1,6 @@
+[
+  "Utility block: commonsense_choice\nQuestion: What is the square root of 144?\nPreferred answer:\nTo find the square root of 144, we can follow these steps:\n\n1. **Identify the perfect squares around 144**: \n   - The perfect square closest to 144 is \\(12^2\\), because \\(12 \\times 12 = 14",
+  "Utility block: format_following\nQuestion: What is the square root of 144?\nPreferred answer:\nTo find the square root of \\(144\\), we can follow these steps:\n\n1. **Identify the perfect squares around 144**: \n   - The perfect square closest to \\(144\\) is \\(12^2 = 144\\).\n\n2. **Verify the calculation",
+  "Utility block: format_following\nQuestion: What is 18 + 24?\nPreferred answer:\nTo find the sum of 18 and 24, you add them together:\n\n18 + 24 = 42\n\nSo, 18 + 24 equals 42.",
+  "Utility block: short_reasoning\nQuestion: What is 15% of 80?\nPreferred answer:\nTo find 15% of 80, you can multiply 80 by 0.15 (since 15% is the same as 15/100 or 0.1).\n\n\\( 80 \\times 0.15 = 12 \\)\n\nSo"
+]

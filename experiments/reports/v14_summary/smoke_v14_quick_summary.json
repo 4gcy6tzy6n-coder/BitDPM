@@ -1,0 +1,33 @@
+{
+  "report": "experiments/reports/smoke_v14_quick_20260607_224958.json",
+  "benchmark_set": "v14",
+  "total_prompts": 6,
+  "baseline": 0.8333333333333334,
+  "oracle": 0.8333333333333334,
+  "oracle_gain": 0.0,
+  "coverage": 0,
+  "coverage_rate": 0.0,
+  "always_all": 0.0,
+  "selection_frequency": {
+    "baseline": 6,
+    "commonsense_choice": 0,
+    "arithmetic_power_log": 0,
+    "always_all": 0
+  },
+  "coverage_by_category": {},
+  "fixed_rows": [
+    {
+      "config": "arithmetic_power_log",
+      "overall": 0.6666666666666666,
+      "delta": -0.16666666666666674,
+      "active": 3.0
+    },
+    {
+      "config": "commonsense_choice",
+      "overall": 0.5,
+      "delta": -0.33333333333333337,
+      "active": 3.0
+    }
+  ],
+  "non_baseline_samples": []
+}

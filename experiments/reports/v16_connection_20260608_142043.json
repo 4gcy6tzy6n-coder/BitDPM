@@ -1,0 +1,692 @@
+{
+  "hard_add": {
+    "connection": "hard_add",
+    "norm_clip_ratio": 0.5,
+    "configs": {
+      "baseline": {
+        "overall": 0.82,
+        "category_scores": {
+          "commonsense": 0.8,
+          "math": 0.3,
+          "code": 1.0,
+          "chinese": 1.0,
+          "reasoning": 1.0
+        }
+      },
+      "commonsense_choice": {
+        "overall": 0.78,
+        "category_scores": {
+          "commonsense": 0.7,
+          "math": 0.2,
+          "code": 1.0,
+          "chinese": 1.0,
+          "reasoning": 1.0
+        }
+      },
+      "format_following": {
+        "overall": 0.7,
+        "category_scores": {
+          "commonsense": 0.7,
+          "math": 0.3,
+          "code": 1.0,
+          "chinese": 0.9,
+          "reasoning": 0.6
+        }
+      },
+      "chinese_semantic": {
+        "overall": 0.8300000000000001,
+        "category_scores": {
+          "commonsense": 0.9,
+          "math": 0.3,
+          "code": 1.0,
+          "chinese": 0.95,
+          "reasoning": 1.0
+        }
+      },
+      "calculation_error": {
+        "overall": 0.8300000000000001,
+        "category_scores": {
+          "commonsense": 0.8,
+          "math": 0.4,
+          "code": 1.0,
+          "chinese": 0.95,
+          "reasoning": 1.0
+        }
+      },
+      "short_reasoning": {
+        "overall": 0.8,
+        "category_scores": {
+          "commonsense": 0.7,
+          "math": 0.3,
+          "code": 1.0,
+          "chinese": 1.0,
+          "reasoning": 1.0
+        }
+      },
+      "arithmetic_power_log": {
+        "overall": 0.78,
+        "category_scores": {
+          "commonsense": 0.8,
+          "math": 0.1,
+          "code": 1.0,
+          "chinese": 1.0,
+          "reasoning": 1.0
+        }
+      },
+      "v11_stats_number_theory": {
+        "overall": 0.8400000000000001,
+        "category_scores": {
+          "commonsense": 0.8,
+          "math": 0.4,
+          "code": 1.0,
+          "chinese": 1.0,
+          "reasoning": 1.0
+        }
+      },
+      "always_all": {
+        "overall": 0.0,
+        "category_scores": {
+          "commonsense": 0.0,
+          "math": 0.0,
+          "code": 0.0,
+          "chinese": 0.0,
+          "reasoning": 0.0
+        }
+      }
+    },
+    "oracle": {
+      "overall": 0.8888888888888888,
+      "coverage": 4,
+      "total_samples": 45
+    },
+    "break_counts": {
+      "commonsense_choice": {
+        "fixes": 0,
+        "breaks": 2,
+        "neutral": 43
+      },
+      "format_following": {
+        "fixes": 1,
+        "breaks": 6,
+        "neutral": 38
+      },
+      "chinese_semantic": {
+        "fixes": 1,
+        "breaks": 1,
+        "neutral": 43
+      },
+      "calculation_error": {
+        "fixes": 2,
+        "breaks": 2,
+        "neutral": 41
+      },
+      "short_reasoning": {
+        "fixes": 0,
+        "breaks": 1,
+        "neutral": 44
+      },
+      "arithmetic_power_log": {
+        "fixes": 0,
+        "breaks": 2,
+        "neutral": 43
+      },
+      "v11_stats_number_theory": {
+        "fixes": 2,
+        "breaks": 1,
+        "neutral": 42
+      }
+    }
+  },
+  "norm_clip_0.3": {
+    "connection": "norm_clip",
+    "norm_clip_ratio": 0.3,
+    "configs": {
+      "baseline": {
+        "overall": 0.82,
+        "category_scores": {
+          "commonsense": 0.8,
+          "math": 0.3,
+          "code": 1.0,
+          "chinese": 1.0,
+          "reasoning": 1.0
+        }
+      },
+      "commonsense_choice": {
+        "overall": 0.8,
+        "category_scores": {
+          "commonsense": 0.7,
+          "math": 0.3,
+          "code": 1.0,
+          "chinese": 1.0,
+          "reasoning": 1.0
+        }
+      },
+      "format_following": {
+        "overall": 0.71,
+        "category_scores": {
+          "commonsense": 0.7,
+          "math": 0.3,
+          "code": 1.0,
+          "chinese": 0.95,
+          "reasoning": 0.6
+        }
+      },
+      "chinese_semantic": {
+        "overall": 0.8,
+        "category_scores": {
+          "commonsense": 0.7,
+          "math": 0.3,
+          "code": 1.0,
+          "chinese": 1.0,
+          "reasoning": 1.0
+        }
+      },
+      "calculation_error": {
+        "overall": 0.82,
+        "category_scores": {
+          "commonsense": 0.8,
+          "math": 0.3,
+          "code": 1.0,
+          "chinese": 1.0,
+          "reasoning": 1.0
+        }
+      },
+      "short_reasoning": {
+        "overall": 0.8400000000000001,
+        "category_scores": {
+          "commonsense": 0.9,
+          "math": 0.3,
+          "code": 1.0,
+          "chinese": 1.0,
+          "reasoning": 1.0
+        }
+      },
+      "arithmetic_power_log": {
+        "overall": 0.8400000000000001,
+        "category_scores": {
+          "commonsense": 0.8,
+          "math": 0.4,
+          "code": 1.0,
+          "chinese": 1.0,
+          "reasoning": 1.0
+        }
+      },
+      "v11_stats_number_theory": {
+        "overall": 0.82,
+        "category_scores": {
+          "commonsense": 0.8,
+          "math": 0.3,
+          "code": 1.0,
+          "chinese": 1.0,
+          "reasoning": 1.0
+        }
+      },
+      "always_all": {
+        "overall": 0.0,
+        "category_scores": {
+          "commonsense": 0.0,
+          "math": 0.0,
+          "code": 0.0,
+          "chinese": 0.0,
+          "reasoning": 0.0
+        }
+      }
+    },
+    "oracle": {
+      "overall": 0.8888888888888888,
+      "coverage": 4,
+      "total_samples": 45
+    },
+    "break_counts": {
+      "commonsense_choice": {
+        "fixes": 2,
+        "breaks": 3,
+        "neutral": 40
+      },
+      "format_following": {
+        "fixes": 2,
+        "breaks": 6,
+        "neutral": 37
+      },
+      "chinese_semantic": {
+        "fixes": 0,
+        "breaks": 1,
+        "neutral": 44
+      },
+      "calculation_error": {
+        "fixes": 2,
+        "breaks": 2,
+        "neutral": 41
+      },
+      "short_reasoning": {
+        "fixes": 1,
+        "breaks": 0,
+        "neutral": 44
+      },
+      "arithmetic_power_log": {
+        "fixes": 2,
+        "breaks": 1,
+        "neutral": 42
+      },
+      "v11_stats_number_theory": {
+        "fixes": 1,
+        "breaks": 1,
+        "neutral": 43
+      }
+    }
+  },
+  "norm_clip_0.5": {
+    "connection": "norm_clip",
+    "norm_clip_ratio": 0.5,
+    "configs": {
+      "baseline": {
+        "overall": 0.82,
+        "category_scores": {
+          "commonsense": 0.8,
+          "math": 0.3,
+          "code": 1.0,
+          "chinese": 1.0,
+          "reasoning": 1.0
+        }
+      },
+      "commonsense_choice": {
+        "overall": 0.78,
+        "category_scores": {
+          "commonsense": 0.6,
+          "math": 0.3,
+          "code": 1.0,
+          "chinese": 1.0,
+          "reasoning": 1.0
+        }
+      },
+      "format_following": {
+        "overall": 0.73,
+        "category_scores": {
+          "commonsense": 0.8,
+          "math": 0.3,
+          "code": 1.0,
+          "chinese": 0.95,
+          "reasoning": 0.6
+        }
+      },
+      "chinese_semantic": {
+        "overall": 0.79,
+        "category_scores": {
+          "commonsense": 0.8,
+          "math": 0.3,
+          "code": 1.0,
+          "chinese": 0.85,
+          "reasoning": 1.0
+        }
+      },
+      "calculation_error": {
+        "overall": 0.8,
+        "category_scores": {
+          "commonsense": 0.8,
+          "math": 0.2,
+          "code": 1.0,
+          "chinese": 1.0,
+          "reasoning": 1.0
+        }
+      },
+      "short_reasoning": {
+        "overall": 0.8400000000000001,
+        "category_scores": {
+          "commonsense": 0.9,
+          "math": 0.3,
+          "code": 1.0,
+          "chinese": 1.0,
+          "reasoning": 1.0
+        }
+      },
+      "arithmetic_power_log": {
+        "overall": 0.8099999999999999,
+        "category_scores": {
+          "commonsense": 0.7,
+          "math": 0.4,
+          "code": 1.0,
+          "chinese": 0.95,
+          "reasoning": 1.0
+        }
+      },
+      "v11_stats_number_theory": {
+        "overall": 0.82,
+        "category_scores": {
+          "commonsense": 0.8,
+          "math": 0.3,
+          "code": 1.0,
+          "chinese": 1.0,
+          "reasoning": 1.0
+        }
+      },
+      "always_all": {
+        "overall": 0.0,
+        "category_scores": {
+          "commonsense": 0.0,
+          "math": 0.0,
+          "code": 0.0,
+          "chinese": 0.0,
+          "reasoning": 0.0
+        }
+      }
+    },
+    "oracle": {
+      "overall": 0.8666666666666667,
+      "coverage": 3,
+      "total_samples": 45
+    },
+    "break_counts": {
+      "commonsense_choice": {
+        "fixes": 0,
+        "breaks": 2,
+        "neutral": 43
+      },
+      "format_following": {
+        "fixes": 2,
+        "breaks": 5,
+        "neutral": 38
+      },
+      "chinese_semantic": {
+        "fixes": 0,
+        "breaks": 2,
+        "neutral": 43
+      },
+      "calculation_error": {
+        "fixes": 1,
+        "breaks": 2,
+        "neutral": 42
+      },
+      "short_reasoning": {
+        "fixes": 1,
+        "breaks": 0,
+        "neutral": 44
+      },
+      "arithmetic_power_log": {
+        "fixes": 2,
+        "breaks": 3,
+        "neutral": 40
+      },
+      "v11_stats_number_theory": {
+        "fixes": 1,
+        "breaks": 1,
+        "neutral": 43
+      }
+    }
+  },
+  "norm_clip_0.7": {
+    "connection": "norm_clip",
+    "norm_clip_ratio": 0.7,
+    "configs": {
+      "baseline": {
+        "overall": 0.82,
+        "category_scores": {
+          "commonsense": 0.8,
+          "math": 0.3,
+          "code": 1.0,
+          "chinese": 1.0,
+          "reasoning": 1.0
+        }
+      },
+      "commonsense_choice": {
+        "overall": 0.78,
+        "category_scores": {
+          "commonsense": 0.6,
+          "math": 0.3,
+          "code": 1.0,
+          "chinese": 1.0,
+          "reasoning": 1.0
+        }
+      },
+      "format_following": {
+        "overall": 0.73,
+        "category_scores": {
+          "commonsense": 0.8,
+          "math": 0.3,
+          "code": 1.0,
+          "chinese": 0.95,
+          "reasoning": 0.6
+        }
+      },
+      "chinese_semantic": {
+        "overall": 0.8,
+        "category_scores": {
+          "commonsense": 0.8,
+          "math": 0.3,
+          "code": 1.0,
+          "chinese": 0.9,
+          "reasoning": 1.0
+        }
+      },
+      "calculation_error": {
+        "overall": 0.7899999999999999,
+        "category_scores": {
+          "commonsense": 0.7,
+          "math": 0.3,
+          "code": 1.0,
+          "chinese": 0.95,
+          "reasoning": 1.0
+        }
+      },
+      "short_reasoning": {
+        "overall": 0.8,
+        "category_scores": {
+          "commonsense": 0.7,
+          "math": 0.3,
+          "code": 1.0,
+          "chinese": 1.0,
+          "reasoning": 1.0
+        }
+      },
+      "arithmetic_power_log": {
+        "overall": 0.8,
+        "category_scores": {
+          "commonsense": 0.8,
+          "math": 0.2,
+          "code": 1.0,
+          "chinese": 1.0,
+          "reasoning": 1.0
+        }
+      },
+      "v11_stats_number_theory": {
+        "overall": 0.8400000000000001,
+        "category_scores": {
+          "commonsense": 0.8,
+          "math": 0.4,
+          "code": 1.0,
+          "chinese": 1.0,
+          "reasoning": 1.0
+        }
+      },
+      "always_all": {
+        "overall": 0.0,
+        "category_scores": {
+          "commonsense": 0.0,
+          "math": 0.0,
+          "code": 0.0,
+          "chinese": 0.0,
+          "reasoning": 0.0
+        }
+      }
+    },
+    "oracle": {
+      "overall": 0.8888888888888888,
+      "coverage": 4,
+      "total_samples": 45
+    },
+    "break_counts": {
+      "commonsense_choice": {
+        "fixes": 1,
+        "breaks": 3,
+        "neutral": 41
+      },
+      "format_following": {
+        "fixes": 2,
+        "breaks": 5,
+        "neutral": 38
+      },
+      "chinese_semantic": {
+        "fixes": 0,
+        "breaks": 1,
+        "neutral": 44
+      },
+      "calculation_error": {
+        "fixes": 1,
+        "breaks": 3,
+        "neutral": 41
+      },
+      "short_reasoning": {
+        "fixes": 0,
+        "breaks": 1,
+        "neutral": 44
+      },
+      "arithmetic_power_log": {
+        "fixes": 2,
+        "breaks": 3,
+        "neutral": 40
+      },
+      "v11_stats_number_theory": {
+        "fixes": 1,
+        "breaks": 0,
+        "neutral": 44
+      }
+    }
+  },
+  "token_gate_num": {
+    "connection": "token_gate",
+    "norm_clip_ratio": 0.5,
+    "configs": {
+      "baseline": {
+        "overall": 0.8,
+        "category_scores": {
+          "commonsense": 0.7,
+          "math": 0.3,
+          "code": 1.0,
+          "chinese": 1.0,
+          "reasoning": 1.0
+        }
+      },
+      "commonsense_choice": {
+        "overall": 0.77,
+        "category_scores": {
+          "commonsense": 0.6,
+          "math": 0.3,
+          "code": 1.0,
+          "chinese": 0.95,
+          "reasoning": 1.0
+        }
+      },
+      "format_following": {
+        "overall": 0.73,
+        "category_scores": {
+          "commonsense": 0.7,
+          "math": 0.4,
+          "code": 1.0,
+          "chinese": 0.95,
+          "reasoning": 0.6
+        }
+      },
+      "chinese_semantic": {
+        "overall": 0.8300000000000001,
+        "category_scores": {
+          "commonsense": 0.9,
+          "math": 0.3,
+          "code": 1.0,
+          "chinese": 0.95,
+          "reasoning": 1.0
+        }
+      },
+      "calculation_error": {
+        "overall": 0.8099999999999999,
+        "category_scores": {
+          "commonsense": 0.8,
+          "math": 0.3,
+          "code": 1.0,
+          "chinese": 0.95,
+          "reasoning": 1.0
+        }
+      },
+      "short_reasoning": {
+        "overall": 0.8400000000000001,
+        "category_scores": {
+          "commonsense": 0.9,
+          "math": 0.3,
+          "code": 1.0,
+          "chinese": 1.0,
+          "reasoning": 1.0
+        }
+      },
+      "arithmetic_power_log": {
+        "overall": 0.8400000000000001,
+        "category_scores": {
+          "commonsense": 0.9,
+          "math": 0.3,
+          "code": 1.0,
+          "chinese": 1.0,
+          "reasoning": 1.0
+        }
+      },
+      "v11_stats_number_theory": {
+        "overall": 0.82,
+        "category_scores": {
+          "commonsense": 0.8,
+          "math": 0.3,
+          "code": 1.0,
+          "chinese": 1.0,
+          "reasoning": 1.0
+        }
+      },
+      "always_all": {
+        "overall": 0.0,
+        "category_scores": {
+          "commonsense": 0.0,
+          "math": 0.0,
+          "code": 0.0,
+          "chinese": 0.0,
+          "reasoning": 0.0
+        }
+      }
+    },
+    "oracle": {
+      "overall": 0.8888888888888888,
+      "coverage": 5,
+      "total_samples": 45
+    },
+    "break_counts": {
+      "commonsense_choice": {
+        "fixes": 1,
+        "breaks": 3,
+        "neutral": 41
+      },
+      "format_following": {
+        "fixes": 3,
+        "breaks": 5,
+        "neutral": 37
+      },
+      "chinese_semantic": {
+        "fixes": 2,
+        "breaks": 1,
+        "neutral": 42
+      },
+      "calculation_error": {
+        "fixes": 2,
+        "breaks": 2,
+        "neutral": 41
+      },
+      "short_reasoning": {
+        "fixes": 2,
+        "breaks": 0,
+        "neutral": 43
+      },
+      "arithmetic_power_log": {
+        "fixes": 3,
+        "breaks": 1,
+        "neutral": 41
+      },
+      "v11_stats_number_theory": {
+        "fixes": 1,
+        "breaks": 0,
+        "neutral": 44
+      }
+    }
+  }
+}

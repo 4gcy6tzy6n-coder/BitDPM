@@ -1,0 +1,22 @@
+{
+  "block_id": "v18_power_log_l23_down_proj_r16",
+  "direction": "power_log",
+  "train_samples": 65,
+  "rank": 16,
+  "loss_history": [
+    3.8961057631355343,
+    0.17235973138700833,
+    0.10523905876007947,
+    0.08711414671305454,
+    0.08139582068631143
+  ],
+  "fix_break": {
+    "fixes": 0,
+    "breaks": 32,
+    "net": -32,
+    "baseline_score": 0.7777777777777778,
+    "block_score": 0.1111111111111111
+  },
+  "admit": false,
+  "damage_rate": 0.7111111111111111
+}

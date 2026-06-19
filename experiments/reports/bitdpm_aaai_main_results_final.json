@@ -1,0 +1,48 @@
+{
+  "date": "2026-06-18",
+  "project": "BitDPM",
+  "phase": "AAAI main experiments complete",
+  "results": {
+    "v14": {
+      "n": 300,
+      "baseline": 0.84,
+      "oracle": 0.903,
+      "router_cv": 0.857,
+      "router_delta": 0.017,
+      "router_breaks": 0,
+      "always_all": 0.0
+    },
+    "v15": {
+      "n": 120,
+      "baseline": 0.442,
+      "oracle": 0.742,
+      "router_cv": 0.5,
+      "router_delta": 0.058,
+      "router_breaks": 0,
+      "always_all": 0.0
+    },
+    "v1k_clean": {
+      "n": 1000,
+      "baseline": 0.812,
+      "oracle": 0.926,
+      "router_cv": 0.811,
+      "router_delta": -0.001,
+      "router_breaks": 2,
+      "always_all": 0.0
+    }
+  },
+  "pipeline": {
+    "main_experiments": "done",
+    "prompt_baselines": "done",
+    "lora_baselines": "done",
+    "strict_cv_router": "done",
+    "bootstrap_ci": "done",
+    "ablation_table": "done",
+    "block_manifest": "done",
+    "benchmark_manifest": "done",
+    "crash_analysis": "done"
+  },
+  "remaining": [
+    "1.5B block retraining for v31 recovery"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "model": "/Users/yyl/Desktop/workshop/Evidence-to-Answer Trace/internal_cot_index/models/Qwen--Qwen2.5-0.5B-Instruct",
+  "categories": [
+    "general",
+    "math",
+    "code",
+    "chinese"
+  ],
+  "target_layers": [
+    23
+  ],
+  "target_modules": [
+    "o_proj",
+    "down_proj"
+  ],
+  "rank": 8,
+  "epochs": 5,
+  "num_blocks": 8,
+  "device": "cpu"
+}

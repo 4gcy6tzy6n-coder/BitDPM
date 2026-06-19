@@ -1,0 +1,207 @@
+{
+  "report": {
+    "model": "Qwen/Qwen2.5-0.5B-Instruct",
+    "benchmark_set": "v08",
+    "total_prompts": 100,
+    "block_scale": 0.6,
+    "block_scales": {
+      "commonsense_choice": 0.6,
+      "calculation_error": 0.6,
+      "format_following": 0.3,
+      "chinese_semantic": 0.45,
+      "short_reasoning": 0.45
+    }
+  },
+  "rows": [
+    {
+      "block": "commonsense_choice",
+      "fixed_score": 0.83,
+      "baseline_score": 0.8,
+      "score_delta": 0.03,
+      "fixes": 3,
+      "breaks": 0,
+      "net_fix_count": 3,
+      "unique_fixes": 3,
+      "damaged_categories": {},
+      "fix_samples": [
+        {
+          "index": 5,
+          "category": "commonsense",
+          "prompt": "Who wrote Romeo and Juliet?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 25,
+          "category": "math",
+          "prompt": "What is the square root of 144?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 38,
+          "category": "math",
+          "prompt": "What is log base 10 of 1000?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        }
+      ],
+      "break_samples": [],
+      "unique_fix_samples": [
+        {
+          "index": 5,
+          "category": "commonsense",
+          "prompt": "Who wrote Romeo and Juliet?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 25,
+          "category": "math",
+          "prompt": "What is the square root of 144?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 38,
+          "category": "math",
+          "prompt": "What is log base 10 of 1000?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        }
+      ]
+    },
+    {
+      "block": "chinese_semantic",
+      "fixed_score": 0.8,
+      "baseline_score": 0.8,
+      "score_delta": 0.0,
+      "fixes": 0,
+      "breaks": 0,
+      "net_fix_count": 0,
+      "unique_fixes": 0,
+      "damaged_categories": {},
+      "fix_samples": [],
+      "break_samples": [],
+      "unique_fix_samples": []
+    },
+    {
+      "block": "calculation_error",
+      "fixed_score": 0.79,
+      "baseline_score": 0.8,
+      "score_delta": -0.01,
+      "fixes": 1,
+      "breaks": 3,
+      "net_fix_count": -2,
+      "unique_fixes": 1,
+      "damaged_categories": {
+        "chinese": 2,
+        "math": 1
+      },
+      "fix_samples": [
+        {
+          "index": 28,
+          "category": "math",
+          "prompt": "What is 2^10?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        }
+      ],
+      "break_samples": [
+        {
+          "index": 20,
+          "category": "math",
+          "prompt": "Calculate 15 + 27 =",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 68,
+          "category": "chinese",
+          "prompt": "请用中文写一句问候语。",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "index": 74,
+          "category": "chinese",
+          "prompt": "长城位于哪个国家？",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        }
+      ],
+      "unique_fix_samples": [
+        {
+          "index": 28,
+          "category": "math",
+          "prompt": "What is 2^10?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        }
+      ]
+    },
+    {
+      "block": "format_following",
+      "fixed_score": 0.785,
+      "baseline_score": 0.8,
+      "score_delta": -0.015,
+      "fixes": 0,
+      "breaks": 2,
+      "net_fix_count": -2,
+      "unique_fixes": 0,
+      "damaged_categories": {
+        "chinese": 2
+      },
+      "fix_samples": [],
+      "break_samples": [
+        {
+          "index": 62,
+          "category": "chinese",
+          "prompt": "一年有多少个月？",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 65,
+          "category": "chinese",
+          "prompt": "水的化学式是什么？",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        }
+      ],
+      "unique_fix_samples": []
+    },
+    {
+      "block": "short_reasoning",
+      "fixed_score": 0.785,
+      "baseline_score": 0.8,
+      "score_delta": -0.015,
+      "fixes": 0,
+      "breaks": 2,
+      "net_fix_count": -2,
+      "unique_fixes": 0,
+      "damaged_categories": {
+        "chinese": 1,
+        "commonsense": 1
+      },
+      "fix_samples": [],
+      "break_samples": [
+        {
+          "index": 12,
+          "category": "commonsense",
+          "prompt": "Which animal is known as the king of the jungle?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 65,
+          "category": "chinese",
+          "prompt": "水的化学式是什么？",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        }
+      ],
+      "unique_fix_samples": []
+    }
+  ]
+}

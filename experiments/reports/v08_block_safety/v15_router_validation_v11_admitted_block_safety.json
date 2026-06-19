@@ -1,0 +1,1523 @@
+{
+  "report": {
+    "model": "Qwen/Qwen2.5-0.5B-Instruct",
+    "benchmark_set": "v15",
+    "total_prompts": 120,
+    "block_scale": 0.75,
+    "block_scales": {
+      "commonsense_choice": 0.6,
+      "format_following": 0.75,
+      "chinese_semantic": 0.75,
+      "calculation_error": 0.3,
+      "short_reasoning": 0.45,
+      "arithmetic_power_log": 0.75,
+      "v11_stats_number_theory": 0.75
+    }
+  },
+  "rows": [
+    {
+      "block": "chinese_semantic",
+      "fixed_score": 0.5083333333333333,
+      "baseline_score": 0.44166666666666665,
+      "score_delta": 0.06666666666666667,
+      "fixes": 14,
+      "breaks": 6,
+      "net_fix_count": 8,
+      "unique_fixes": 4,
+      "damaged_categories": {
+        "router_commonsense_repairs": 3,
+        "router_core_mixed": 1,
+        "router_factual_constants": 1,
+        "router_risky_arithmetic": 1
+      },
+      "fix_samples": [
+        {
+          "index": 5,
+          "category": "router_multiplication",
+          "prompt": "Compute 21 times 6.",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 7,
+          "category": "router_multiplication",
+          "prompt": "Compute 25 times 4.",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 13,
+          "category": "router_multiplication",
+          "prompt": "Compute 18 times 7.",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 14,
+          "category": "router_multiplication",
+          "prompt": "What is 22 times 5?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 17,
+          "category": "router_multiplication",
+          "prompt": "Compute 17 times 9.",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 37,
+          "category": "router_core_mixed",
+          "prompt": "What is the mean of 1, 3, 5, and 7?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 40,
+          "category": "router_risky_arithmetic",
+          "prompt": "What is 37 + 45?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 44,
+          "category": "router_risky_arithmetic",
+          "prompt": "What is 91 + 64?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 48,
+          "category": "router_risky_arithmetic",
+          "prompt": "What is 88 + 67?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 62,
+          "category": "router_factual_constants",
+          "prompt": "Give the standard value: What is the approximate acceleration due to gravity on Earth in m/s^2?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 85,
+          "category": "router_commonsense_repairs",
+          "prompt": "Answer briefly: Which animal is often called the king of the jungle?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 88,
+          "category": "router_commonsense_repairs",
+          "prompt": "What do you call money borrowed that must be repaid?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 99,
+          "category": "router_commonsense_repairs",
+          "prompt": "In one short answer, What fruit is typically yellow and curved?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 115,
+          "category": "router_commonsense_controls",
+          "prompt": "Answer briefly: What is the opposite of hot?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        }
+      ],
+      "break_samples": [
+        {
+          "index": 30,
+          "category": "router_core_mixed",
+          "prompt": "What is log base 10 of 100?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 42,
+          "category": "router_risky_arithmetic",
+          "prompt": "What is 123 + 77?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 74,
+          "category": "router_factual_constants",
+          "prompt": "Give the standard value: What is the boiling point of water in Celsius?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 81,
+          "category": "router_commonsense_repairs",
+          "prompt": "Answer briefly: How many continents are commonly counted on Earth?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 84,
+          "category": "router_commonsense_repairs",
+          "prompt": "Which animal is often called the king of the jungle?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 92,
+          "category": "router_commonsense_repairs",
+          "prompt": "Which star is closest to Earth?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        }
+      ],
+      "unique_fix_samples": [
+        {
+          "index": 5,
+          "category": "router_multiplication",
+          "prompt": "Compute 21 times 6.",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 7,
+          "category": "router_multiplication",
+          "prompt": "Compute 25 times 4.",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 13,
+          "category": "router_multiplication",
+          "prompt": "Compute 18 times 7.",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 17,
+          "category": "router_multiplication",
+          "prompt": "Compute 17 times 9.",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        }
+      ]
+    },
+    {
+      "block": "short_reasoning",
+      "fixed_score": 0.475,
+      "baseline_score": 0.44166666666666665,
+      "score_delta": 0.03333333333333333,
+      "fixes": 13,
+      "breaks": 9,
+      "net_fix_count": 4,
+      "unique_fixes": 1,
+      "damaged_categories": {
+        "router_commonsense_repairs": 5,
+        "router_factual_constants": 3,
+        "router_multiplication": 1
+      },
+      "fix_samples": [
+        {
+          "index": 0,
+          "category": "router_multiplication",
+          "prompt": "What is 9 times 8?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 14,
+          "category": "router_multiplication",
+          "prompt": "What is 22 times 5?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 37,
+          "category": "router_core_mixed",
+          "prompt": "What is the mean of 1, 3, 5, and 7?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 44,
+          "category": "router_risky_arithmetic",
+          "prompt": "What is 91 + 64?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 47,
+          "category": "router_risky_arithmetic",
+          "prompt": "What is 333 + 444?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 49,
+          "category": "router_risky_arithmetic",
+          "prompt": "What is 19 + 27?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 52,
+          "category": "router_risky_arithmetic",
+          "prompt": "What is the square root of 196?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 61,
+          "category": "router_factual_constants",
+          "prompt": "Answer briefly: What is the approximate acceleration due to gravity on Earth in m/s^2?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 62,
+          "category": "router_factual_constants",
+          "prompt": "Give the standard value: What is the approximate acceleration due to gravity on Earth in m/s^2?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 80,
+          "category": "router_commonsense_repairs",
+          "prompt": "How many continents are commonly counted on Earth?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 86,
+          "category": "router_commonsense_repairs",
+          "prompt": "Give the common answer: Which animal is often called the king of the jungle?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 98,
+          "category": "router_commonsense_repairs",
+          "prompt": "Give the common answer: What fruit is typically yellow and curved?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 99,
+          "category": "router_commonsense_repairs",
+          "prompt": "In one short answer, What fruit is typically yellow and curved?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        }
+      ],
+      "break_samples": [
+        {
+          "index": 11,
+          "category": "router_multiplication",
+          "prompt": "Compute 16 times 15.",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 66,
+          "category": "router_factual_constants",
+          "prompt": "Give the standard value: What is the speed of light in vacuum in meters per second?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 71,
+          "category": "router_factual_constants",
+          "prompt": "In one short answer, What is Avogadro's number approximately?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 74,
+          "category": "router_factual_constants",
+          "prompt": "Give the standard value: What is the boiling point of water in Celsius?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 81,
+          "category": "router_commonsense_repairs",
+          "prompt": "Answer briefly: How many continents are commonly counted on Earth?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 84,
+          "category": "router_commonsense_repairs",
+          "prompt": "Which animal is often called the king of the jungle?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 87,
+          "category": "router_commonsense_repairs",
+          "prompt": "In one short answer, Which animal is often called the king of the jungle?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 89,
+          "category": "router_commonsense_repairs",
+          "prompt": "Answer briefly: What do you call money borrowed that must be repaid?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 96,
+          "category": "router_commonsense_repairs",
+          "prompt": "What fruit is typically yellow and curved?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        }
+      ],
+      "unique_fix_samples": [
+        {
+          "index": 61,
+          "category": "router_factual_constants",
+          "prompt": "Answer briefly: What is the approximate acceleration due to gravity on Earth in m/s^2?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        }
+      ]
+    },
+    {
+      "block": "commonsense_choice",
+      "fixed_score": 0.43333333333333335,
+      "baseline_score": 0.44166666666666665,
+      "score_delta": -0.008333333333333333,
+      "fixes": 14,
+      "breaks": 15,
+      "net_fix_count": -1,
+      "unique_fixes": 3,
+      "damaged_categories": {
+        "router_commonsense_controls": 1,
+        "router_commonsense_repairs": 5,
+        "router_factual_constants": 4,
+        "router_multiplication": 1,
+        "router_risky_arithmetic": 4
+      },
+      "fix_samples": [
+        {
+          "index": 15,
+          "category": "router_multiplication",
+          "prompt": "Compute 22 times 5.",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 28,
+          "category": "router_core_mixed",
+          "prompt": "What is log base 10 of 1000?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 37,
+          "category": "router_core_mixed",
+          "prompt": "What is the mean of 1, 3, 5, and 7?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 40,
+          "category": "router_risky_arithmetic",
+          "prompt": "What is 37 + 45?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 48,
+          "category": "router_risky_arithmetic",
+          "prompt": "What is 88 + 67?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 49,
+          "category": "router_risky_arithmetic",
+          "prompt": "What is 19 + 27?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 50,
+          "category": "router_risky_arithmetic",
+          "prompt": "What is the square root of 144?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 62,
+          "category": "router_factual_constants",
+          "prompt": "Give the standard value: What is the approximate acceleration due to gravity on Earth in m/s^2?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 68,
+          "category": "router_factual_constants",
+          "prompt": "What is Avogadro's number approximately?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 80,
+          "category": "router_commonsense_repairs",
+          "prompt": "How many continents are commonly counted on Earth?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 88,
+          "category": "router_commonsense_repairs",
+          "prompt": "What do you call money borrowed that must be repaid?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 98,
+          "category": "router_commonsense_repairs",
+          "prompt": "Give the common answer: What fruit is typically yellow and curved?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 99,
+          "category": "router_commonsense_repairs",
+          "prompt": "In one short answer, What fruit is typically yellow and curved?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 115,
+          "category": "router_commonsense_controls",
+          "prompt": "Answer briefly: What is the opposite of hot?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        }
+      ],
+      "break_samples": [
+        {
+          "index": 11,
+          "category": "router_multiplication",
+          "prompt": "Compute 16 times 15.",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 42,
+          "category": "router_risky_arithmetic",
+          "prompt": "What is 123 + 77?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 43,
+          "category": "router_risky_arithmetic",
+          "prompt": "What is 208 + 315?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 45,
+          "category": "router_risky_arithmetic",
+          "prompt": "What is 72 + 38?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 46,
+          "category": "router_risky_arithmetic",
+          "prompt": "What is 145 + 255?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 60,
+          "category": "router_factual_constants",
+          "prompt": "What is the approximate acceleration due to gravity on Earth in m/s^2?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 64,
+          "category": "router_factual_constants",
+          "prompt": "What is the speed of light in vacuum in meters per second?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 71,
+          "category": "router_factual_constants",
+          "prompt": "In one short answer, What is Avogadro's number approximately?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 78,
+          "category": "router_factual_constants",
+          "prompt": "Give the standard value: What is the freezing point of water in Celsius?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 81,
+          "category": "router_commonsense_repairs",
+          "prompt": "Answer briefly: How many continents are commonly counted on Earth?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 84,
+          "category": "router_commonsense_repairs",
+          "prompt": "Which animal is often called the king of the jungle?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 90,
+          "category": "router_commonsense_repairs",
+          "prompt": "Give the common answer: What do you call money borrowed that must be repaid?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 92,
+          "category": "router_commonsense_repairs",
+          "prompt": "Which star is closest to Earth?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 93,
+          "category": "router_commonsense_repairs",
+          "prompt": "Answer briefly: Which star is closest to Earth?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 117,
+          "category": "router_commonsense_controls",
+          "prompt": "Answer briefly: What vehicle runs on rails?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        }
+      ],
+      "unique_fix_samples": [
+        {
+          "index": 15,
+          "category": "router_multiplication",
+          "prompt": "Compute 22 times 5.",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 28,
+          "category": "router_core_mixed",
+          "prompt": "What is log base 10 of 1000?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 68,
+          "category": "router_factual_constants",
+          "prompt": "What is Avogadro's number approximately?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        }
+      ]
+    },
+    {
+      "block": "calculation_error",
+      "fixed_score": 0.425,
+      "baseline_score": 0.44166666666666665,
+      "score_delta": -0.016666666666666666,
+      "fixes": 8,
+      "breaks": 10,
+      "net_fix_count": -2,
+      "unique_fixes": 1,
+      "damaged_categories": {
+        "router_commonsense_repairs": 5,
+        "router_factual_constants": 3,
+        "router_multiplication": 1,
+        "router_risky_arithmetic": 1
+      },
+      "fix_samples": [
+        {
+          "index": 35,
+          "category": "router_core_mixed",
+          "prompt": "What is the mean of 2, 4, 6, and 8?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 40,
+          "category": "router_risky_arithmetic",
+          "prompt": "What is 37 + 45?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 49,
+          "category": "router_risky_arithmetic",
+          "prompt": "What is 19 + 27?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 56,
+          "category": "router_risky_arithmetic",
+          "prompt": "What is the square root of 121?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 82,
+          "category": "router_commonsense_repairs",
+          "prompt": "Give the common answer: How many continents are commonly counted on Earth?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 86,
+          "category": "router_commonsense_repairs",
+          "prompt": "Give the common answer: Which animal is often called the king of the jungle?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 88,
+          "category": "router_commonsense_repairs",
+          "prompt": "What do you call money borrowed that must be repaid?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 115,
+          "category": "router_commonsense_controls",
+          "prompt": "Answer briefly: What is the opposite of hot?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        }
+      ],
+      "break_samples": [
+        {
+          "index": 11,
+          "category": "router_multiplication",
+          "prompt": "Compute 16 times 15.",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 46,
+          "category": "router_risky_arithmetic",
+          "prompt": "What is 145 + 255?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 60,
+          "category": "router_factual_constants",
+          "prompt": "What is the approximate acceleration due to gravity on Earth in m/s^2?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 64,
+          "category": "router_factual_constants",
+          "prompt": "What is the speed of light in vacuum in meters per second?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 78,
+          "category": "router_factual_constants",
+          "prompt": "Give the standard value: What is the freezing point of water in Celsius?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 84,
+          "category": "router_commonsense_repairs",
+          "prompt": "Which animal is often called the king of the jungle?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 87,
+          "category": "router_commonsense_repairs",
+          "prompt": "In one short answer, Which animal is often called the king of the jungle?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 89,
+          "category": "router_commonsense_repairs",
+          "prompt": "Answer briefly: What do you call money borrowed that must be repaid?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 90,
+          "category": "router_commonsense_repairs",
+          "prompt": "Give the common answer: What do you call money borrowed that must be repaid?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 96,
+          "category": "router_commonsense_repairs",
+          "prompt": "What fruit is typically yellow and curved?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        }
+      ],
+      "unique_fix_samples": [
+        {
+          "index": 82,
+          "category": "router_commonsense_repairs",
+          "prompt": "Give the common answer: How many continents are commonly counted on Earth?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        }
+      ]
+    },
+    {
+      "block": "v11_stats_number_theory",
+      "fixed_score": 0.4166666666666667,
+      "baseline_score": 0.44166666666666665,
+      "score_delta": -0.025,
+      "fixes": 12,
+      "breaks": 15,
+      "net_fix_count": -3,
+      "unique_fixes": 3,
+      "damaged_categories": {
+        "router_commonsense_controls": 1,
+        "router_commonsense_repairs": 7,
+        "router_core_mixed": 1,
+        "router_factual_constants": 4,
+        "router_multiplication": 1,
+        "router_risky_arithmetic": 1
+      },
+      "fix_samples": [
+        {
+          "index": 0,
+          "category": "router_multiplication",
+          "prompt": "What is 9 times 8?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 4,
+          "category": "router_multiplication",
+          "prompt": "What is 21 times 6?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 6,
+          "category": "router_multiplication",
+          "prompt": "What is 25 times 4?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 14,
+          "category": "router_multiplication",
+          "prompt": "What is 22 times 5?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 32,
+          "category": "router_core_mixed",
+          "prompt": "What is the mean of 4, 8, 12, and 16?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 35,
+          "category": "router_core_mixed",
+          "prompt": "What is the mean of 2, 4, 6, and 8?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 37,
+          "category": "router_core_mixed",
+          "prompt": "What is the mean of 1, 3, 5, and 7?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 41,
+          "category": "router_risky_arithmetic",
+          "prompt": "What is 56 + 29?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 47,
+          "category": "router_risky_arithmetic",
+          "prompt": "What is 333 + 444?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 48,
+          "category": "router_risky_arithmetic",
+          "prompt": "What is 88 + 67?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 62,
+          "category": "router_factual_constants",
+          "prompt": "Give the standard value: What is the approximate acceleration due to gravity on Earth in m/s^2?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 98,
+          "category": "router_commonsense_repairs",
+          "prompt": "Give the common answer: What fruit is typically yellow and curved?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        }
+      ],
+      "break_samples": [
+        {
+          "index": 11,
+          "category": "router_multiplication",
+          "prompt": "Compute 16 times 15.",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 30,
+          "category": "router_core_mixed",
+          "prompt": "What is log base 10 of 100?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 42,
+          "category": "router_risky_arithmetic",
+          "prompt": "What is 123 + 77?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 63,
+          "category": "router_factual_constants",
+          "prompt": "In one short answer, What is the approximate acceleration due to gravity on Earth in m/s^2?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 66,
+          "category": "router_factual_constants",
+          "prompt": "Give the standard value: What is the speed of light in vacuum in meters per second?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 71,
+          "category": "router_factual_constants",
+          "prompt": "In one short answer, What is Avogadro's number approximately?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 74,
+          "category": "router_factual_constants",
+          "prompt": "Give the standard value: What is the boiling point of water in Celsius?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 81,
+          "category": "router_commonsense_repairs",
+          "prompt": "Answer briefly: How many continents are commonly counted on Earth?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 84,
+          "category": "router_commonsense_repairs",
+          "prompt": "Which animal is often called the king of the jungle?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 90,
+          "category": "router_commonsense_repairs",
+          "prompt": "Give the common answer: What do you call money borrowed that must be repaid?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 91,
+          "category": "router_commonsense_repairs",
+          "prompt": "In one short answer, What do you call money borrowed that must be repaid?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 93,
+          "category": "router_commonsense_repairs",
+          "prompt": "Answer briefly: Which star is closest to Earth?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 95,
+          "category": "router_commonsense_repairs",
+          "prompt": "In one short answer, Which star is closest to Earth?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 96,
+          "category": "router_commonsense_repairs",
+          "prompt": "What fruit is typically yellow and curved?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 112,
+          "category": "router_commonsense_controls",
+          "prompt": "Answer briefly: Which organ pumps blood through the body?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        }
+      ],
+      "unique_fix_samples": [
+        {
+          "index": 4,
+          "category": "router_multiplication",
+          "prompt": "What is 21 times 6?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 32,
+          "category": "router_core_mixed",
+          "prompt": "What is the mean of 4, 8, 12, and 16?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 41,
+          "category": "router_risky_arithmetic",
+          "prompt": "What is 56 + 29?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        }
+      ]
+    },
+    {
+      "block": "arithmetic_power_log",
+      "fixed_score": 0.38333333333333336,
+      "baseline_score": 0.44166666666666665,
+      "score_delta": -0.058333333333333334,
+      "fixes": 13,
+      "breaks": 20,
+      "net_fix_count": -7,
+      "unique_fixes": 2,
+      "damaged_categories": {
+        "router_commonsense_controls": 1,
+        "router_commonsense_repairs": 6,
+        "router_core_mixed": 1,
+        "router_factual_constants": 7,
+        "router_multiplication": 1,
+        "router_risky_arithmetic": 4
+      },
+      "fix_samples": [
+        {
+          "index": 6,
+          "category": "router_multiplication",
+          "prompt": "What is 25 times 4?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 20,
+          "category": "router_core_mixed",
+          "prompt": "What is the distance from (0,0) to (3,4)?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 35,
+          "category": "router_core_mixed",
+          "prompt": "What is the mean of 2, 4, 6, and 8?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 37,
+          "category": "router_core_mixed",
+          "prompt": "What is the mean of 1, 3, 5, and 7?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 52,
+          "category": "router_risky_arithmetic",
+          "prompt": "What is the square root of 196?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 53,
+          "category": "router_risky_arithmetic",
+          "prompt": "What is the square root of 225?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 56,
+          "category": "router_risky_arithmetic",
+          "prompt": "What is the square root of 121?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 62,
+          "category": "router_factual_constants",
+          "prompt": "Give the standard value: What is the approximate acceleration due to gravity on Earth in m/s^2?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 80,
+          "category": "router_commonsense_repairs",
+          "prompt": "How many continents are commonly counted on Earth?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 85,
+          "category": "router_commonsense_repairs",
+          "prompt": "Answer briefly: Which animal is often called the king of the jungle?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 98,
+          "category": "router_commonsense_repairs",
+          "prompt": "Give the common answer: What fruit is typically yellow and curved?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 99,
+          "category": "router_commonsense_repairs",
+          "prompt": "In one short answer, What fruit is typically yellow and curved?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 115,
+          "category": "router_commonsense_controls",
+          "prompt": "Answer briefly: What is the opposite of hot?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        }
+      ],
+      "break_samples": [
+        {
+          "index": 11,
+          "category": "router_multiplication",
+          "prompt": "Compute 16 times 15.",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 30,
+          "category": "router_core_mixed",
+          "prompt": "What is log base 10 of 100?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 42,
+          "category": "router_risky_arithmetic",
+          "prompt": "What is 123 + 77?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 43,
+          "category": "router_risky_arithmetic",
+          "prompt": "What is 208 + 315?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 45,
+          "category": "router_risky_arithmetic",
+          "prompt": "What is 72 + 38?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 46,
+          "category": "router_risky_arithmetic",
+          "prompt": "What is 145 + 255?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 60,
+          "category": "router_factual_constants",
+          "prompt": "What is the approximate acceleration due to gravity on Earth in m/s^2?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 64,
+          "category": "router_factual_constants",
+          "prompt": "What is the speed of light in vacuum in meters per second?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 66,
+          "category": "router_factual_constants",
+          "prompt": "Give the standard value: What is the speed of light in vacuum in meters per second?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 69,
+          "category": "router_factual_constants",
+          "prompt": "Answer briefly: What is Avogadro's number approximately?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 71,
+          "category": "router_factual_constants",
+          "prompt": "In one short answer, What is Avogadro's number approximately?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 72,
+          "category": "router_factual_constants",
+          "prompt": "What is the boiling point of water in Celsius?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 73,
+          "category": "router_factual_constants",
+          "prompt": "Answer briefly: What is the boiling point of water in Celsius?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 81,
+          "category": "router_commonsense_repairs",
+          "prompt": "Answer briefly: How many continents are commonly counted on Earth?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 84,
+          "category": "router_commonsense_repairs",
+          "prompt": "Which animal is often called the king of the jungle?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 87,
+          "category": "router_commonsense_repairs",
+          "prompt": "In one short answer, Which animal is often called the king of the jungle?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 90,
+          "category": "router_commonsense_repairs",
+          "prompt": "Give the common answer: What do you call money borrowed that must be repaid?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 91,
+          "category": "router_commonsense_repairs",
+          "prompt": "In one short answer, What do you call money borrowed that must be repaid?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 96,
+          "category": "router_commonsense_repairs",
+          "prompt": "What fruit is typically yellow and curved?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 117,
+          "category": "router_commonsense_controls",
+          "prompt": "Answer briefly: What vehicle runs on rails?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        }
+      ],
+      "unique_fix_samples": [
+        {
+          "index": 20,
+          "category": "router_core_mixed",
+          "prompt": "What is the distance from (0,0) to (3,4)?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 53,
+          "category": "router_risky_arithmetic",
+          "prompt": "What is the square root of 225?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        }
+      ]
+    },
+    {
+      "block": "format_following",
+      "fixed_score": 0.35833333333333334,
+      "baseline_score": 0.44166666666666665,
+      "score_delta": -0.08333333333333333,
+      "fixes": 9,
+      "breaks": 19,
+      "net_fix_count": -10,
+      "unique_fixes": 1,
+      "damaged_categories": {
+        "router_commonsense_controls": 5,
+        "router_commonsense_repairs": 6,
+        "router_core_mixed": 1,
+        "router_factual_constants": 3,
+        "router_multiplication": 1,
+        "router_risky_arithmetic": 3
+      },
+      "fix_samples": [
+        {
+          "index": 31,
+          "category": "router_core_mixed",
+          "prompt": "What is log base 10 of 1000000?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 35,
+          "category": "router_core_mixed",
+          "prompt": "What is the mean of 2, 4, 6, and 8?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 37,
+          "category": "router_core_mixed",
+          "prompt": "What is the mean of 1, 3, 5, and 7?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 40,
+          "category": "router_risky_arithmetic",
+          "prompt": "What is 37 + 45?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 44,
+          "category": "router_risky_arithmetic",
+          "prompt": "What is 91 + 64?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 47,
+          "category": "router_risky_arithmetic",
+          "prompt": "What is 333 + 444?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 48,
+          "category": "router_risky_arithmetic",
+          "prompt": "What is 88 + 67?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 50,
+          "category": "router_risky_arithmetic",
+          "prompt": "What is the square root of 144?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 115,
+          "category": "router_commonsense_controls",
+          "prompt": "Answer briefly: What is the opposite of hot?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        }
+      ],
+      "break_samples": [
+        {
+          "index": 11,
+          "category": "router_multiplication",
+          "prompt": "Compute 16 times 15.",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 30,
+          "category": "router_core_mixed",
+          "prompt": "What is log base 10 of 100?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 42,
+          "category": "router_risky_arithmetic",
+          "prompt": "What is 123 + 77?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 43,
+          "category": "router_risky_arithmetic",
+          "prompt": "What is 208 + 315?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 46,
+          "category": "router_risky_arithmetic",
+          "prompt": "What is 145 + 255?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 66,
+          "category": "router_factual_constants",
+          "prompt": "Give the standard value: What is the speed of light in vacuum in meters per second?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 69,
+          "category": "router_factual_constants",
+          "prompt": "Answer briefly: What is Avogadro's number approximately?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 71,
+          "category": "router_factual_constants",
+          "prompt": "In one short answer, What is Avogadro's number approximately?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 81,
+          "category": "router_commonsense_repairs",
+          "prompt": "Answer briefly: How many continents are commonly counted on Earth?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 89,
+          "category": "router_commonsense_repairs",
+          "prompt": "Answer briefly: What do you call money borrowed that must be repaid?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 90,
+          "category": "router_commonsense_repairs",
+          "prompt": "Give the common answer: What do you call money borrowed that must be repaid?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 91,
+          "category": "router_commonsense_repairs",
+          "prompt": "In one short answer, What do you call money borrowed that must be repaid?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 93,
+          "category": "router_commonsense_repairs",
+          "prompt": "Answer briefly: Which star is closest to Earth?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 96,
+          "category": "router_commonsense_repairs",
+          "prompt": "What fruit is typically yellow and curved?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 102,
+          "category": "router_commonsense_controls",
+          "prompt": "Which organ pumps blood through the body?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 107,
+          "category": "router_commonsense_controls",
+          "prompt": "What vehicle runs on rails?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 112,
+          "category": "router_commonsense_controls",
+          "prompt": "Answer briefly: Which organ pumps blood through the body?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 116,
+          "category": "router_commonsense_controls",
+          "prompt": "Answer briefly: What do we call frozen water?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 117,
+          "category": "router_commonsense_controls",
+          "prompt": "Answer briefly: What vehicle runs on rails?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        }
+      ],
+      "unique_fix_samples": [
+        {
+          "index": 31,
+          "category": "router_core_mixed",
+          "prompt": "What is log base 10 of 1000000?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        }
+      ]
+    }
+  ]
+}

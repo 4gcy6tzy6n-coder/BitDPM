@@ -1,0 +1,2246 @@
+{
+  "report": {
+    "model": "Qwen/Qwen2.5-0.5B-Instruct",
+    "benchmark_set": "v14",
+    "total_prompts": 300,
+    "block_scale": 0.75,
+    "block_scales": {
+      "commonsense_choice": 0.6,
+      "format_following": 0.75,
+      "chinese_semantic": 0.75,
+      "calculation_error": 0.3,
+      "short_reasoning": 0.45,
+      "arithmetic_power_log": 0.75,
+      "v11_stats_number_theory": 0.75
+    }
+  },
+  "rows": [
+    {
+      "block": "calculation_error",
+      "fixed_score": 0.8333333333333334,
+      "baseline_score": 0.84,
+      "score_delta": -0.006666666666666667,
+      "fixes": 5,
+      "breaks": 7,
+      "net_fix_count": -2,
+      "unique_fixes": 1,
+      "damaged_categories": {
+        "arithmetic": 1,
+        "commonsense": 3,
+        "factual_constants": 3
+      },
+      "fix_samples": [
+        {
+          "index": 7,
+          "category": "arithmetic",
+          "prompt": "What is 145 + 255?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 57,
+          "category": "factual_constants",
+          "prompt": "Give the standard value: What is the approximate acceleration due to gravity on Earth in m/s^2?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 104,
+          "category": "commonsense",
+          "prompt": "How many continents are commonly counted on Earth?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 111,
+          "category": "commonsense",
+          "prompt": "Which animal is often called the king of the jungle?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 145,
+          "category": "commonsense",
+          "prompt": "What do you call money borrowed that must be repaid?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        }
+      ],
+      "break_samples": [
+        {
+          "index": 2,
+          "category": "arithmetic",
+          "prompt": "What is 56 + 29?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 60,
+          "category": "factual_constants",
+          "prompt": "What is Avogadro's number approximately?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 87,
+          "category": "factual_constants",
+          "prompt": "Give the standard value: How many bytes are in one kilobyte in binary computing?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 93,
+          "category": "factual_constants",
+          "prompt": "In one short answer, How many centimeters are in one meter?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 114,
+          "category": "commonsense",
+          "prompt": "Who wrote Romeo and Juliet?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 132,
+          "category": "commonsense",
+          "prompt": "What fruit is typically yellow and curved?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 144,
+          "category": "commonsense",
+          "prompt": "What is the opposite of left?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        }
+      ],
+      "unique_fix_samples": [
+        {
+          "index": 111,
+          "category": "commonsense",
+          "prompt": "Which animal is often called the king of the jungle?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        }
+      ]
+    },
+    {
+      "block": "short_reasoning",
+      "fixed_score": 0.805,
+      "baseline_score": 0.84,
+      "score_delta": -0.035,
+      "fixes": 4,
+      "breaks": 18,
+      "net_fix_count": -14,
+      "unique_fixes": 0,
+      "damaged_categories": {
+        "arithmetic": 3,
+        "chinese": 7,
+        "commonsense": 1,
+        "factual_constants": 5,
+        "reasoning": 2
+      },
+      "fix_samples": [
+        {
+          "index": 5,
+          "category": "arithmetic",
+          "prompt": "What is 91 + 64?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 13,
+          "category": "arithmetic",
+          "prompt": "What is 25 times 4?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 38,
+          "category": "arithmetic",
+          "prompt": "What is 7^2?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 104,
+          "category": "commonsense",
+          "prompt": "How many continents are commonly counted on Earth?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        }
+      ],
+      "break_samples": [
+        {
+          "index": 1,
+          "category": "arithmetic",
+          "prompt": "What is 37 + 45?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 2,
+          "category": "arithmetic",
+          "prompt": "What is 56 + 29?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 3,
+          "category": "arithmetic",
+          "prompt": "What is 123 + 77?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 52,
+          "category": "factual_constants",
+          "prompt": "Give the standard value: What is the speed of light in vacuum in meters per second?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 60,
+          "category": "factual_constants",
+          "prompt": "What is Avogadro's number approximately?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 63,
+          "category": "factual_constants",
+          "prompt": "In one short answer, What is Avogadro's number approximately?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 64,
+          "category": "factual_constants",
+          "prompt": "State the commonly used answer: What is Avogadro's number approximately?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 77,
+          "category": "factual_constants",
+          "prompt": "Give the standard value: What is the boiling point of water in Celsius?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 132,
+          "category": "commonsense",
+          "prompt": "What fruit is typically yellow and curved?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 214,
+          "category": "chinese",
+          "prompt": "水的化学式是什么？ 请简短回答。版本2。",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "index": 224,
+          "category": "chinese",
+          "prompt": "水的化学式是什么？ 请简短回答。版本3。",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "index": 233,
+          "category": "chinese",
+          "prompt": "请写一句关于学习的中文句子。 请简短回答。版本4。",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "index": 234,
+          "category": "chinese",
+          "prompt": "水的化学式是什么？ 请简短回答。版本4。",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "index": 235,
+          "category": "chinese",
+          "prompt": "太阳从哪个方向升起？ 请简短回答。版本4。",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "index": 244,
+          "category": "chinese",
+          "prompt": "水的化学式是什么？ 请简短回答。版本5。",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "index": 248,
+          "category": "chinese",
+          "prompt": "请列举三种水果。 请简短回答。版本5。",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "index": 276,
+          "category": "reasoning",
+          "prompt": "If one box holds 6 bottles, how many boxes are needed for 26 bottles? Explain briefly. Variant 3.",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 286,
+          "category": "reasoning",
+          "prompt": "If one box holds 6 bottles, how many boxes are needed for 26 bottles? Explain briefly. Variant 4.",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        }
+      ],
+      "unique_fix_samples": []
+    },
+    {
+      "block": "chinese_semantic",
+      "fixed_score": 0.7933333333333333,
+      "baseline_score": 0.84,
+      "score_delta": -0.04666666666666667,
+      "fixes": 4,
+      "breaks": 22,
+      "net_fix_count": -18,
+      "unique_fixes": 0,
+      "damaged_categories": {
+        "arithmetic": 3,
+        "chinese": 12,
+        "commonsense": 2,
+        "factual_constants": 5
+      },
+      "fix_samples": [
+        {
+          "index": 5,
+          "category": "arithmetic",
+          "prompt": "What is 91 + 64?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 7,
+          "category": "arithmetic",
+          "prompt": "What is 145 + 255?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 57,
+          "category": "factual_constants",
+          "prompt": "Give the standard value: What is the approximate acceleration due to gravity on Earth in m/s^2?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 145,
+          "category": "commonsense",
+          "prompt": "What do you call money borrowed that must be repaid?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        }
+      ],
+      "break_samples": [
+        {
+          "index": 2,
+          "category": "arithmetic",
+          "prompt": "What is 56 + 29?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 3,
+          "category": "arithmetic",
+          "prompt": "What is 123 + 77?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 26,
+          "category": "arithmetic",
+          "prompt": "What is the square root of 196?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 60,
+          "category": "factual_constants",
+          "prompt": "What is Avogadro's number approximately?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 63,
+          "category": "factual_constants",
+          "prompt": "In one short answer, What is Avogadro's number approximately?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 82,
+          "category": "factual_constants",
+          "prompt": "Give the standard value: What is the freezing point of water in Celsius?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 91,
+          "category": "factual_constants",
+          "prompt": "Answer briefly: How many centimeters are in one meter?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 93,
+          "category": "factual_constants",
+          "prompt": "In one short answer, How many centimeters are in one meter?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 114,
+          "category": "commonsense",
+          "prompt": "Who wrote Romeo and Juliet?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 117,
+          "category": "commonsense",
+          "prompt": "Which star is closest to Earth?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 202,
+          "category": "chinese",
+          "prompt": "一年有多少个月？ 请简短回答。版本1。",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "index": 212,
+          "category": "chinese",
+          "prompt": "一年有多少个月？ 请简短回答。版本2。",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "index": 213,
+          "category": "chinese",
+          "prompt": "请写一句关于学习的中文句子。 请简短回答。版本2。",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "index": 214,
+          "category": "chinese",
+          "prompt": "水的化学式是什么？ 请简短回答。版本2。",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "index": 222,
+          "category": "chinese",
+          "prompt": "一年有多少个月？ 请简短回答。版本3。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 223,
+          "category": "chinese",
+          "prompt": "请写一句关于学习的中文句子。 请简短回答。版本3。",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "index": 225,
+          "category": "chinese",
+          "prompt": "太阳从哪个方向升起？ 请简短回答。版本3。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 229,
+          "category": "chinese",
+          "prompt": "长城位于哪个国家？ 请简短回答。版本3。",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "index": 232,
+          "category": "chinese",
+          "prompt": "一年有多少个月？ 请简短回答。版本4。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 242,
+          "category": "chinese",
+          "prompt": "一年有多少个月？ 请简短回答。版本5。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 243,
+          "category": "chinese",
+          "prompt": "请写一句关于学习的中文句子。 请简短回答。版本5。",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "index": 248,
+          "category": "chinese",
+          "prompt": "请列举三种水果。 请简短回答。版本5。",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        }
+      ],
+      "unique_fix_samples": []
+    },
+    {
+      "block": "v11_stats_number_theory",
+      "fixed_score": 0.7883333333333333,
+      "baseline_score": 0.84,
+      "score_delta": -0.051666666666666666,
+      "fixes": 10,
+      "breaks": 31,
+      "net_fix_count": -21,
+      "unique_fixes": 5,
+      "damaged_categories": {
+        "arithmetic": 3,
+        "chinese": 20,
+        "commonsense": 3,
+        "factual_constants": 3,
+        "reasoning": 2
+      },
+      "fix_samples": [
+        {
+          "index": 7,
+          "category": "arithmetic",
+          "prompt": "What is 145 + 255?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 8,
+          "category": "arithmetic",
+          "prompt": "What is 9 times 8?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 9,
+          "category": "arithmetic",
+          "prompt": "What is 12 times 11?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 12,
+          "category": "arithmetic",
+          "prompt": "What is 21 times 6?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 13,
+          "category": "arithmetic",
+          "prompt": "What is 25 times 4?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 40,
+          "category": "arithmetic",
+          "prompt": "What is the distance from (0,0) to (3,4)?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 42,
+          "category": "arithmetic",
+          "prompt": "What is the distance from (0,0) to (8,15)?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 47,
+          "category": "arithmetic",
+          "prompt": "What is the mean of 4, 8, 12, and 16?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 55,
+          "category": "factual_constants",
+          "prompt": "What is the approximate acceleration due to gravity on Earth in m/s^2?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 56,
+          "category": "factual_constants",
+          "prompt": "Answer briefly: What is the approximate acceleration due to gravity on Earth in m/s^2?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        }
+      ],
+      "break_samples": [
+        {
+          "index": 2,
+          "category": "arithmetic",
+          "prompt": "What is 56 + 29?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 3,
+          "category": "arithmetic",
+          "prompt": "What is 123 + 77?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 26,
+          "category": "arithmetic",
+          "prompt": "What is the square root of 196?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 52,
+          "category": "factual_constants",
+          "prompt": "Give the standard value: What is the speed of light in vacuum in meters per second?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 60,
+          "category": "factual_constants",
+          "prompt": "What is Avogadro's number approximately?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 63,
+          "category": "factual_constants",
+          "prompt": "In one short answer, What is Avogadro's number approximately?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 117,
+          "category": "commonsense",
+          "prompt": "Which star is closest to Earth?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 132,
+          "category": "commonsense",
+          "prompt": "What fruit is typically yellow and curved?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 133,
+          "category": "commonsense",
+          "prompt": "What do you call the place where books are kept for borrowing?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 202,
+          "category": "chinese",
+          "prompt": "一年有多少个月？ 请简短回答。版本1。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 207,
+          "category": "chinese",
+          "prompt": "中秋节通常会吃什么？ 请简短回答。版本1。",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "index": 210,
+          "category": "chinese",
+          "prompt": "中国的首都是哪个城市？ 请简短回答。版本2。",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "index": 212,
+          "category": "chinese",
+          "prompt": "一年有多少个月？ 请简短回答。版本2。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 213,
+          "category": "chinese",
+          "prompt": "请写一句关于学习的中文句子。 请简短回答。版本2。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 214,
+          "category": "chinese",
+          "prompt": "水的化学式是什么？ 请简短回答。版本2。",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "index": 220,
+          "category": "chinese",
+          "prompt": "中国的首都是哪个城市？ 请简短回答。版本3。",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "index": 222,
+          "category": "chinese",
+          "prompt": "一年有多少个月？ 请简短回答。版本3。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 223,
+          "category": "chinese",
+          "prompt": "请写一句关于学习的中文句子。 请简短回答。版本3。",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "index": 225,
+          "category": "chinese",
+          "prompt": "太阳从哪个方向升起？ 请简短回答。版本3。",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "index": 230,
+          "category": "chinese",
+          "prompt": "中国的首都是哪个城市？ 请简短回答。版本4。",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "index": 232,
+          "category": "chinese",
+          "prompt": "一年有多少个月？ 请简短回答。版本4。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 233,
+          "category": "chinese",
+          "prompt": "请写一句关于学习的中文句子。 请简短回答。版本4。",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "index": 234,
+          "category": "chinese",
+          "prompt": "水的化学式是什么？ 请简短回答。版本4。",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "index": 235,
+          "category": "chinese",
+          "prompt": "太阳从哪个方向升起？ 请简短回答。版本4。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 240,
+          "category": "chinese",
+          "prompt": "中国的首都是哪个城市？ 请简短回答。版本5。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 242,
+          "category": "chinese",
+          "prompt": "一年有多少个月？ 请简短回答。版本5。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 243,
+          "category": "chinese",
+          "prompt": "请写一句关于学习的中文句子。 请简短回答。版本5。",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "index": 244,
+          "category": "chinese",
+          "prompt": "水的化学式是什么？ 请简短回答。版本5。",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "index": 249,
+          "category": "chinese",
+          "prompt": "长城位于哪个国家？ 请简短回答。版本5。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 283,
+          "category": "reasoning",
+          "prompt": "Two people start at the same point and walk in opposite directions for 3 km. How far apart are they? Explain briefly. Variant 4.",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 293,
+          "category": "reasoning",
+          "prompt": "Two people start at the same point and walk in opposite directions for 3 km. How far apart are they? Explain briefly. Variant 5.",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        }
+      ],
+      "unique_fix_samples": [
+        {
+          "index": 8,
+          "category": "arithmetic",
+          "prompt": "What is 9 times 8?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 9,
+          "category": "arithmetic",
+          "prompt": "What is 12 times 11?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 42,
+          "category": "arithmetic",
+          "prompt": "What is the distance from (0,0) to (8,15)?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 47,
+          "category": "arithmetic",
+          "prompt": "What is the mean of 4, 8, 12, and 16?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 56,
+          "category": "factual_constants",
+          "prompt": "Answer briefly: What is the approximate acceleration due to gravity on Earth in m/s^2?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        }
+      ]
+    },
+    {
+      "block": "commonsense_choice",
+      "fixed_score": 0.735,
+      "baseline_score": 0.84,
+      "score_delta": -0.105,
+      "fixes": 2,
+      "breaks": 34,
+      "net_fix_count": -32,
+      "unique_fixes": 0,
+      "damaged_categories": {
+        "arithmetic": 5,
+        "chinese": 11,
+        "commonsense": 3,
+        "factual_constants": 7,
+        "reasoning": 8
+      },
+      "fix_samples": [
+        {
+          "index": 24,
+          "category": "arithmetic",
+          "prompt": "What is the square root of 144?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 38,
+          "category": "arithmetic",
+          "prompt": "What is 7^2?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        }
+      ],
+      "break_samples": [
+        {
+          "index": 2,
+          "category": "arithmetic",
+          "prompt": "What is 56 + 29?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 3,
+          "category": "arithmetic",
+          "prompt": "What is 123 + 77?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 4,
+          "category": "arithmetic",
+          "prompt": "What is 208 + 315?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 26,
+          "category": "arithmetic",
+          "prompt": "What is the square root of 196?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 29,
+          "category": "arithmetic",
+          "prompt": "What is the square root of 81?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 50,
+          "category": "factual_constants",
+          "prompt": "What is the speed of light in vacuum in meters per second?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 52,
+          "category": "factual_constants",
+          "prompt": "Give the standard value: What is the speed of light in vacuum in meters per second?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 63,
+          "category": "factual_constants",
+          "prompt": "In one short answer, What is Avogadro's number approximately?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 64,
+          "category": "factual_constants",
+          "prompt": "State the commonly used answer: What is Avogadro's number approximately?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 82,
+          "category": "factual_constants",
+          "prompt": "Give the standard value: What is the freezing point of water in Celsius?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 96,
+          "category": "factual_constants",
+          "prompt": "Answer briefly: How many millimeters are in one centimeter?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 99,
+          "category": "factual_constants",
+          "prompt": "State the commonly used answer: How many millimeters are in one centimeter?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 130,
+          "category": "commonsense",
+          "prompt": "Which sense uses the ears?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 142,
+          "category": "commonsense",
+          "prompt": "What machine is used to take photographs?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 144,
+          "category": "commonsense",
+          "prompt": "What is the opposite of left?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 200,
+          "category": "chinese",
+          "prompt": "中国的首都是哪个城市？ 请简短回答。版本1。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 210,
+          "category": "chinese",
+          "prompt": "中国的首都是哪个城市？ 请简短回答。版本2。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 216,
+          "category": "chinese",
+          "prompt": "什么是自然语言处理？ 请简短回答。版本2。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 219,
+          "category": "chinese",
+          "prompt": "长城位于哪个国家？ 请简短回答。版本2。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 220,
+          "category": "chinese",
+          "prompt": "中国的首都是哪个城市？ 请简短回答。版本3。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 230,
+          "category": "chinese",
+          "prompt": "中国的首都是哪个城市？ 请简短回答。版本4。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 236,
+          "category": "chinese",
+          "prompt": "什么是自然语言处理？ 请简短回答。版本4。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 239,
+          "category": "chinese",
+          "prompt": "长城位于哪个国家？ 请简短回答。版本4。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 240,
+          "category": "chinese",
+          "prompt": "中国的首都是哪个城市？ 请简短回答。版本5。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 245,
+          "category": "chinese",
+          "prompt": "太阳从哪个方向升起？ 请简短回答。版本5。",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "index": 249,
+          "category": "chinese",
+          "prompt": "长城位于哪个国家？ 请简短回答。版本5。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 268,
+          "category": "reasoning",
+          "prompt": "If all roses are flowers and some flowers fade quickly, must all roses fade quickly? Explain briefly. Variant 2.",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 270,
+          "category": "reasoning",
+          "prompt": "If a book costs $20 after a 20% discount, what was the original price? Explain briefly. Variant 3.",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 272,
+          "category": "reasoning",
+          "prompt": "If today is Monday, what day will it be in 10 days? Explain briefly. Variant 3.",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 273,
+          "category": "reasoning",
+          "prompt": "Two people start at the same point and walk in opposite directions for 3 km. How far apart are they? Explain briefly. Variant 3.",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 276,
+          "category": "reasoning",
+          "prompt": "If one box holds 6 bottles, how many boxes are needed for 26 bottles? Explain briefly. Variant 3.",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 282,
+          "category": "reasoning",
+          "prompt": "If today is Monday, what day will it be in 10 days? Explain briefly. Variant 4.",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 283,
+          "category": "reasoning",
+          "prompt": "Two people start at the same point and walk in opposite directions for 3 km. How far apart are they? Explain briefly. Variant 4.",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 286,
+          "category": "reasoning",
+          "prompt": "If one box holds 6 bottles, how many boxes are needed for 26 bottles? Explain briefly. Variant 4.",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        }
+      ],
+      "unique_fix_samples": []
+    },
+    {
+      "block": "format_following",
+      "fixed_score": 0.6416666666666667,
+      "baseline_score": 0.84,
+      "score_delta": -0.19833333333333333,
+      "fixes": 4,
+      "breaks": 67,
+      "net_fix_count": -63,
+      "unique_fixes": 1,
+      "damaged_categories": {
+        "arithmetic": 4,
+        "chinese": 41,
+        "commonsense": 9,
+        "factual_constants": 11,
+        "reasoning": 2
+      },
+      "fix_samples": [
+        {
+          "index": 24,
+          "category": "arithmetic",
+          "prompt": "What is the square root of 144?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 27,
+          "category": "arithmetic",
+          "prompt": "What is the square root of 225?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 45,
+          "category": "arithmetic",
+          "prompt": "What is log base 10 of 1000?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 55,
+          "category": "factual_constants",
+          "prompt": "What is the approximate acceleration due to gravity on Earth in m/s^2?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        }
+      ],
+      "break_samples": [
+        {
+          "index": 3,
+          "category": "arithmetic",
+          "prompt": "What is 123 + 77?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 4,
+          "category": "arithmetic",
+          "prompt": "What is 208 + 315?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 14,
+          "category": "arithmetic",
+          "prompt": "What is 32 times 3?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 26,
+          "category": "arithmetic",
+          "prompt": "What is the square root of 196?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 52,
+          "category": "factual_constants",
+          "prompt": "Give the standard value: What is the speed of light in vacuum in meters per second?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 60,
+          "category": "factual_constants",
+          "prompt": "What is Avogadro's number approximately?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 61,
+          "category": "factual_constants",
+          "prompt": "Answer briefly: What is Avogadro's number approximately?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 63,
+          "category": "factual_constants",
+          "prompt": "In one short answer, What is Avogadro's number approximately?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 64,
+          "category": "factual_constants",
+          "prompt": "State the commonly used answer: What is Avogadro's number approximately?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 87,
+          "category": "factual_constants",
+          "prompt": "Give the standard value: How many bytes are in one kilobyte in binary computing?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 91,
+          "category": "factual_constants",
+          "prompt": "Answer briefly: How many centimeters are in one meter?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 93,
+          "category": "factual_constants",
+          "prompt": "In one short answer, How many centimeters are in one meter?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 94,
+          "category": "factual_constants",
+          "prompt": "State the commonly used answer: How many centimeters are in one meter?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 96,
+          "category": "factual_constants",
+          "prompt": "Answer briefly: How many millimeters are in one centimeter?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 98,
+          "category": "factual_constants",
+          "prompt": "In one short answer, How many millimeters are in one centimeter?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 105,
+          "category": "commonsense",
+          "prompt": "Which organ pumps blood through the body?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 106,
+          "category": "commonsense",
+          "prompt": "What do bees produce?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 107,
+          "category": "commonsense",
+          "prompt": "Which gas do plants absorb from the atmosphere?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 119,
+          "category": "commonsense",
+          "prompt": "Which direction does the sun rise from?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 122,
+          "category": "commonsense",
+          "prompt": "What vehicle runs on rails?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 130,
+          "category": "commonsense",
+          "prompt": "Which sense uses the ears?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 132,
+          "category": "commonsense",
+          "prompt": "What fruit is typically yellow and curved?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 144,
+          "category": "commonsense",
+          "prompt": "What is the opposite of left?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 147,
+          "category": "commonsense",
+          "prompt": "What is the common name for a young cat?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 200,
+          "category": "chinese",
+          "prompt": "中国的首都是哪个城市？ 请简短回答。版本1。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 202,
+          "category": "chinese",
+          "prompt": "一年有多少个月？ 请简短回答。版本1。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 203,
+          "category": "chinese",
+          "prompt": "请写一句关于学习的中文句子。 请简短回答。版本1。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 205,
+          "category": "chinese",
+          "prompt": "太阳从哪个方向升起？ 请简短回答。版本1。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 206,
+          "category": "chinese",
+          "prompt": "什么是自然语言处理？ 请简短回答。版本1。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 209,
+          "category": "chinese",
+          "prompt": "长城位于哪个国家？ 请简短回答。版本1。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 210,
+          "category": "chinese",
+          "prompt": "中国的首都是哪个城市？ 请简短回答。版本2。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 212,
+          "category": "chinese",
+          "prompt": "一年有多少个月？ 请简短回答。版本2。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 213,
+          "category": "chinese",
+          "prompt": "请写一句关于学习的中文句子。 请简短回答。版本2。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 214,
+          "category": "chinese",
+          "prompt": "水的化学式是什么？ 请简短回答。版本2。",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "index": 215,
+          "category": "chinese",
+          "prompt": "太阳从哪个方向升起？ 请简短回答。版本2。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 216,
+          "category": "chinese",
+          "prompt": "什么是自然语言处理？ 请简短回答。版本2。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 217,
+          "category": "chinese",
+          "prompt": "中秋节通常会吃什么？ 请简短回答。版本2。",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "index": 218,
+          "category": "chinese",
+          "prompt": "请列举三种水果。 请简短回答。版本2。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 219,
+          "category": "chinese",
+          "prompt": "长城位于哪个国家？ 请简短回答。版本2。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 220,
+          "category": "chinese",
+          "prompt": "中国的首都是哪个城市？ 请简短回答。版本3。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 222,
+          "category": "chinese",
+          "prompt": "一年有多少个月？ 请简短回答。版本3。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 223,
+          "category": "chinese",
+          "prompt": "请写一句关于学习的中文句子。 请简短回答。版本3。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 224,
+          "category": "chinese",
+          "prompt": "水的化学式是什么？ 请简短回答。版本3。",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "index": 225,
+          "category": "chinese",
+          "prompt": "太阳从哪个方向升起？ 请简短回答。版本3。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 226,
+          "category": "chinese",
+          "prompt": "什么是自然语言处理？ 请简短回答。版本3。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 227,
+          "category": "chinese",
+          "prompt": "中秋节通常会吃什么？ 请简短回答。版本3。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 229,
+          "category": "chinese",
+          "prompt": "长城位于哪个国家？ 请简短回答。版本3。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 230,
+          "category": "chinese",
+          "prompt": "中国的首都是哪个城市？ 请简短回答。版本4。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 231,
+          "category": "chinese",
+          "prompt": "请用中文解释什么是人工智能。 请简短回答。版本4。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 232,
+          "category": "chinese",
+          "prompt": "一年有多少个月？ 请简短回答。版本4。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 233,
+          "category": "chinese",
+          "prompt": "请写一句关于学习的中文句子。 请简短回答。版本4。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 234,
+          "category": "chinese",
+          "prompt": "水的化学式是什么？ 请简短回答。版本4。",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "index": 235,
+          "category": "chinese",
+          "prompt": "太阳从哪个方向升起？ 请简短回答。版本4。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 236,
+          "category": "chinese",
+          "prompt": "什么是自然语言处理？ 请简短回答。版本4。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 237,
+          "category": "chinese",
+          "prompt": "中秋节通常会吃什么？ 请简短回答。版本4。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 239,
+          "category": "chinese",
+          "prompt": "长城位于哪个国家？ 请简短回答。版本4。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 240,
+          "category": "chinese",
+          "prompt": "中国的首都是哪个城市？ 请简短回答。版本5。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 241,
+          "category": "chinese",
+          "prompt": "请用中文解释什么是人工智能。 请简短回答。版本5。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 242,
+          "category": "chinese",
+          "prompt": "一年有多少个月？ 请简短回答。版本5。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 243,
+          "category": "chinese",
+          "prompt": "请写一句关于学习的中文句子。 请简短回答。版本5。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 244,
+          "category": "chinese",
+          "prompt": "水的化学式是什么？ 请简短回答。版本5。",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "index": 245,
+          "category": "chinese",
+          "prompt": "太阳从哪个方向升起？ 请简短回答。版本5。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 246,
+          "category": "chinese",
+          "prompt": "什么是自然语言处理？ 请简短回答。版本5。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 247,
+          "category": "chinese",
+          "prompt": "中秋节通常会吃什么？ 请简短回答。版本5。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 249,
+          "category": "chinese",
+          "prompt": "长城位于哪个国家？ 请简短回答。版本5。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 284,
+          "category": "reasoning",
+          "prompt": "You flip a fair coin twice. What is the probability of two heads? Explain briefly. Variant 4.",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "index": 294,
+          "category": "reasoning",
+          "prompt": "You flip a fair coin twice. What is the probability of two heads? Explain briefly. Variant 5.",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        }
+      ],
+      "unique_fix_samples": [
+        {
+          "index": 45,
+          "category": "arithmetic",
+          "prompt": "What is log base 10 of 1000?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        }
+      ]
+    },
+    {
+      "block": "arithmetic_power_log",
+      "fixed_score": 0.6133333333333333,
+      "baseline_score": 0.84,
+      "score_delta": -0.22666666666666666,
+      "fixes": 5,
+      "breaks": 76,
+      "net_fix_count": -71,
+      "unique_fixes": 0,
+      "damaged_categories": {
+        "arithmetic": 8,
+        "chinese": 12,
+        "code": 11,
+        "commonsense": 1,
+        "factual_constants": 11,
+        "reasoning": 33
+      },
+      "fix_samples": [
+        {
+          "index": 12,
+          "category": "arithmetic",
+          "prompt": "What is 21 times 6?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 27,
+          "category": "arithmetic",
+          "prompt": "What is the square root of 225?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 40,
+          "category": "arithmetic",
+          "prompt": "What is the distance from (0,0) to (3,4)?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 57,
+          "category": "factual_constants",
+          "prompt": "Give the standard value: What is the approximate acceleration due to gravity on Earth in m/s^2?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 104,
+          "category": "commonsense",
+          "prompt": "How many continents are commonly counted on Earth?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        }
+      ],
+      "break_samples": [
+        {
+          "index": 1,
+          "category": "arithmetic",
+          "prompt": "What is 37 + 45?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 2,
+          "category": "arithmetic",
+          "prompt": "What is 56 + 29?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 3,
+          "category": "arithmetic",
+          "prompt": "What is 123 + 77?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 4,
+          "category": "arithmetic",
+          "prompt": "What is 208 + 315?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 6,
+          "category": "arithmetic",
+          "prompt": "What is 72 + 38?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 14,
+          "category": "arithmetic",
+          "prompt": "What is 32 times 3?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 26,
+          "category": "arithmetic",
+          "prompt": "What is the square root of 196?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 37,
+          "category": "arithmetic",
+          "prompt": "What is 6^2?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 50,
+          "category": "factual_constants",
+          "prompt": "What is the speed of light in vacuum in meters per second?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 52,
+          "category": "factual_constants",
+          "prompt": "Give the standard value: What is the speed of light in vacuum in meters per second?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 58,
+          "category": "factual_constants",
+          "prompt": "In one short answer, What is the approximate acceleration due to gravity on Earth in m/s^2?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 59,
+          "category": "factual_constants",
+          "prompt": "State the commonly used answer: What is the approximate acceleration due to gravity on Earth in m/s^2?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 60,
+          "category": "factual_constants",
+          "prompt": "What is Avogadro's number approximately?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 61,
+          "category": "factual_constants",
+          "prompt": "Answer briefly: What is Avogadro's number approximately?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 63,
+          "category": "factual_constants",
+          "prompt": "In one short answer, What is Avogadro's number approximately?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 64,
+          "category": "factual_constants",
+          "prompt": "State the commonly used answer: What is Avogadro's number approximately?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 75,
+          "category": "factual_constants",
+          "prompt": "What is the boiling point of water in Celsius?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 80,
+          "category": "factual_constants",
+          "prompt": "What is the freezing point of water in Celsius?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 82,
+          "category": "factual_constants",
+          "prompt": "Give the standard value: What is the freezing point of water in Celsius?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 132,
+          "category": "commonsense",
+          "prompt": "What fruit is typically yellow and curved?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 159,
+          "category": "code",
+          "prompt": "Explain recursion with a short example. Use concise wording. Variant 1.",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 162,
+          "category": "code",
+          "prompt": "Explain what a hash map is in one paragraph. Use concise wording. Variant 2.",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 164,
+          "category": "code",
+          "prompt": "What is the time complexity of binary search? Use concise wording. Variant 2.",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 169,
+          "category": "code",
+          "prompt": "Explain recursion with a short example. Use concise wording. Variant 2.",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 172,
+          "category": "code",
+          "prompt": "Explain what a hash map is in one paragraph. Use concise wording. Variant 3.",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 174,
+          "category": "code",
+          "prompt": "What is the time complexity of binary search? Use concise wording. Variant 3.",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 179,
+          "category": "code",
+          "prompt": "Explain recursion with a short example. Use concise wording. Variant 3.",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 184,
+          "category": "code",
+          "prompt": "What is the time complexity of binary search? Use concise wording. Variant 4.",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 189,
+          "category": "code",
+          "prompt": "Explain recursion with a short example. Use concise wording. Variant 4.",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 194,
+          "category": "code",
+          "prompt": "What is the time complexity of binary search? Use concise wording. Variant 5.",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 199,
+          "category": "code",
+          "prompt": "Explain recursion with a short example. Use concise wording. Variant 5.",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 213,
+          "category": "chinese",
+          "prompt": "请写一句关于学习的中文句子。 请简短回答。版本2。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 214,
+          "category": "chinese",
+          "prompt": "水的化学式是什么？ 请简短回答。版本2。",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "index": 215,
+          "category": "chinese",
+          "prompt": "太阳从哪个方向升起？ 请简短回答。版本2。",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "index": 216,
+          "category": "chinese",
+          "prompt": "什么是自然语言处理？ 请简短回答。版本2。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 223,
+          "category": "chinese",
+          "prompt": "请写一句关于学习的中文句子。 请简短回答。版本3。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 224,
+          "category": "chinese",
+          "prompt": "水的化学式是什么？ 请简短回答。版本3。",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "index": 226,
+          "category": "chinese",
+          "prompt": "什么是自然语言处理？ 请简短回答。版本3。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 232,
+          "category": "chinese",
+          "prompt": "一年有多少个月？ 请简短回答。版本4。",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "index": 234,
+          "category": "chinese",
+          "prompt": "水的化学式是什么？ 请简短回答。版本4。",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "index": 236,
+          "category": "chinese",
+          "prompt": "什么是自然语言处理？ 请简短回答。版本4。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 244,
+          "category": "chinese",
+          "prompt": "水的化学式是什么？ 请简短回答。版本5。",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "index": 246,
+          "category": "chinese",
+          "prompt": "什么是自然语言处理？ 请简短回答。版本5。",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 252,
+          "category": "reasoning",
+          "prompt": "If today is Monday, what day will it be in 10 days? Explain briefly. Variant 1.",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 260,
+          "category": "reasoning",
+          "prompt": "If a book costs $20 after a 20% discount, what was the original price? Explain briefly. Variant 2.",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 262,
+          "category": "reasoning",
+          "prompt": "If today is Monday, what day will it be in 10 days? Explain briefly. Variant 2.",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 263,
+          "category": "reasoning",
+          "prompt": "Two people start at the same point and walk in opposite directions for 3 km. How far apart are they? Explain briefly. Variant 2.",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 264,
+          "category": "reasoning",
+          "prompt": "You flip a fair coin twice. What is the probability of two heads? Explain briefly. Variant 2.",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 265,
+          "category": "reasoning",
+          "prompt": "A car travels 30 km in 30 minutes. What is its average speed in km/h? Explain briefly. Variant 2.",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 266,
+          "category": "reasoning",
+          "prompt": "If one box holds 6 bottles, how many boxes are needed for 26 bottles? Explain briefly. Variant 2.",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 267,
+          "category": "reasoning",
+          "prompt": "What is heavier: one kilogram of iron or one kilogram of cotton? Explain briefly. Variant 2.",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 268,
+          "category": "reasoning",
+          "prompt": "If all roses are flowers and some flowers fade quickly, must all roses fade quickly? Explain briefly. Variant 2.",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 270,
+          "category": "reasoning",
+          "prompt": "If a book costs $20 after a 20% discount, what was the original price? Explain briefly. Variant 3.",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 272,
+          "category": "reasoning",
+          "prompt": "If today is Monday, what day will it be in 10 days? Explain briefly. Variant 3.",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 273,
+          "category": "reasoning",
+          "prompt": "Two people start at the same point and walk in opposite directions for 3 km. How far apart are they? Explain briefly. Variant 3.",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 274,
+          "category": "reasoning",
+          "prompt": "You flip a fair coin twice. What is the probability of two heads? Explain briefly. Variant 3.",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 275,
+          "category": "reasoning",
+          "prompt": "A car travels 30 km in 30 minutes. What is its average speed in km/h? Explain briefly. Variant 3.",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 276,
+          "category": "reasoning",
+          "prompt": "If one box holds 6 bottles, how many boxes are needed for 26 bottles? Explain briefly. Variant 3.",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 277,
+          "category": "reasoning",
+          "prompt": "What is heavier: one kilogram of iron or one kilogram of cotton? Explain briefly. Variant 3.",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 278,
+          "category": "reasoning",
+          "prompt": "If all roses are flowers and some flowers fade quickly, must all roses fade quickly? Explain briefly. Variant 3.",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 279,
+          "category": "reasoning",
+          "prompt": "A doctor gives you 3 pills and says take one every half hour. How long will the pills last? Explain briefly. Variant 3.",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 280,
+          "category": "reasoning",
+          "prompt": "If a book costs $20 after a 20% discount, what was the original price? Explain briefly. Variant 4.",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 281,
+          "category": "reasoning",
+          "prompt": "A farmer has chickens and cows. There are 10 heads and 28 legs. How many chickens are there? Explain briefly. Variant 4.",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 282,
+          "category": "reasoning",
+          "prompt": "If today is Monday, what day will it be in 10 days? Explain briefly. Variant 4.",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 283,
+          "category": "reasoning",
+          "prompt": "Two people start at the same point and walk in opposite directions for 3 km. How far apart are they? Explain briefly. Variant 4.",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 284,
+          "category": "reasoning",
+          "prompt": "You flip a fair coin twice. What is the probability of two heads? Explain briefly. Variant 4.",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 285,
+          "category": "reasoning",
+          "prompt": "A car travels 30 km in 30 minutes. What is its average speed in km/h? Explain briefly. Variant 4.",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 286,
+          "category": "reasoning",
+          "prompt": "If one box holds 6 bottles, how many boxes are needed for 26 bottles? Explain briefly. Variant 4.",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 288,
+          "category": "reasoning",
+          "prompt": "If all roses are flowers and some flowers fade quickly, must all roses fade quickly? Explain briefly. Variant 4.",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 289,
+          "category": "reasoning",
+          "prompt": "A doctor gives you 3 pills and says take one every half hour. How long will the pills last? Explain briefly. Variant 4.",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 290,
+          "category": "reasoning",
+          "prompt": "If a book costs $20 after a 20% discount, what was the original price? Explain briefly. Variant 5.",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 291,
+          "category": "reasoning",
+          "prompt": "A farmer has chickens and cows. There are 10 heads and 28 legs. How many chickens are there? Explain briefly. Variant 5.",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 292,
+          "category": "reasoning",
+          "prompt": "If today is Monday, what day will it be in 10 days? Explain briefly. Variant 5.",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 293,
+          "category": "reasoning",
+          "prompt": "Two people start at the same point and walk in opposite directions for 3 km. How far apart are they? Explain briefly. Variant 5.",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 295,
+          "category": "reasoning",
+          "prompt": "A car travels 30 km in 30 minutes. What is its average speed in km/h? Explain briefly. Variant 5.",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 296,
+          "category": "reasoning",
+          "prompt": "If one box holds 6 bottles, how many boxes are needed for 26 bottles? Explain briefly. Variant 5.",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        }
+      ],
+      "unique_fix_samples": []
+    }
+  ]
+}

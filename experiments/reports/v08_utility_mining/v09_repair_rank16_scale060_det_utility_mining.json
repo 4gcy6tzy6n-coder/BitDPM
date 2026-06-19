@@ -1,0 +1,1687 @@
+{
+  "summary": {
+    "report_model": "Qwen/Qwen2.5-0.5B-Instruct",
+    "benchmark_set": "v08",
+    "total_prompts": 100,
+    "block_scale": 0.6,
+    "configs": [
+      "baseline",
+      "arithmetic_addition",
+      "arithmetic_percent",
+      "arithmetic_power_log",
+      "arithmetic_sqrt",
+      "factual_constants",
+      "always_all"
+    ],
+    "oracle": {
+      "overall": 0.84,
+      "category_scores": {
+        "commonsense": 0.95,
+        "math": 0.25,
+        "code": 1.0,
+        "chinese": 1.0,
+        "reasoning": 1.0
+      },
+      "active_blocks": 0.12
+    },
+    "selection_frequency": {
+      "baseline": 96,
+      "arithmetic_addition": 0,
+      "arithmetic_percent": 2,
+      "arithmetic_power_log": 0,
+      "arithmetic_sqrt": 0,
+      "factual_constants": 2,
+      "always_all": 0
+    },
+    "bucket_counts": {
+      "baseline_correct_block_wrong": 21,
+      "baseline_wrong_block_correct": 7,
+      "baseline_wrong_all_wrong": 16,
+      "near_miss": 0
+    },
+    "unique_utility_counts": {
+      "factual_constants": 2
+    },
+    "positive_delta_samples": [
+      {
+        "index": 5,
+        "category": "commonsense",
+        "prompt": "Who wrote Romeo and Juliet?",
+        "best_config": "arithmetic_percent",
+        "best_score": 1.0,
+        "baseline_score": 0.0,
+        "delta": 1.0
+      },
+      {
+        "index": 8,
+        "category": "commonsense",
+        "prompt": "What is the speed of light in vacuum?",
+        "best_config": "factual_constants",
+        "best_score": 1.0,
+        "baseline_score": 0.0,
+        "delta": 1.0
+      },
+      {
+        "index": 25,
+        "category": "math",
+        "prompt": "What is the square root of 144?",
+        "best_config": "factual_constants",
+        "best_score": 1.0,
+        "baseline_score": 0.0,
+        "delta": 1.0
+      },
+      {
+        "index": 31,
+        "category": "math",
+        "prompt": "What is 9 times 8?",
+        "best_config": "arithmetic_percent",
+        "best_score": 1.0,
+        "baseline_score": 0.0,
+        "delta": 1.0
+      }
+    ]
+  },
+  "buckets": {
+    "baseline_correct_block_wrong": [
+      {
+        "category": "commonsense",
+        "prompt": "Which animal is known as the king of the jungle?",
+        "scores": {
+          "baseline": 1.0,
+          "arithmetic_addition": 1.0,
+          "arithmetic_percent": 1.0,
+          "arithmetic_power_log": 1.0,
+          "arithmetic_sqrt": 0.0,
+          "factual_constants": 0.0,
+          "always_all": 0.0
+        },
+        "config": "arithmetic_sqrt",
+        "output": " The answer to this question is elephants. Elephants are known for their large size, powerful bodies, and impressive tusks. They are also known for their intelligence, social behavior, and ability to communicate through vocalizations. Elephants play a crucial role in maintaining ecological balance by helping to control plant growth and pollinating flowers",
+        "baseline_output": " The lion is known as the king of the jungle. Lions are apex predators in many ecosystems, and they play a crucial role in maintaining balance within their respective habitats. They hunt other animals for food and help control populations of prey species. Additionally, lions are important members of their ecosystem, serving as pollinators and seed"
+      },
+      {
+        "category": "commonsense",
+        "prompt": "Which animal is known as the king of the jungle?",
+        "scores": {
+          "baseline": 1.0,
+          "arithmetic_addition": 1.0,
+          "arithmetic_percent": 1.0,
+          "arithmetic_power_log": 1.0,
+          "arithmetic_sqrt": 0.0,
+          "factual_constants": 0.0,
+          "always_all": 0.0
+        },
+        "config": "factual_constants",
+        "output": " The answer to this question is elephants. Elephants are known for their large size, powerful bodies, and impressive tusks. They are also known for their intelligence, social behavior, and ability to communicate through vocalizations. Elephants play a crucial role in maintaining ecological balance by helping to control plant growth and pollinating flowers",
+        "baseline_output": " The lion is known as the king of the jungle. Lions are apex predators in many ecosystems, and they play a crucial role in maintaining balance within their respective habitats. They hunt other animals for food and help control populations of prey species. Additionally, lions are important members of their ecosystem, serving as pollinators and seed"
+      },
+      {
+        "category": "commonsense",
+        "prompt": "What do bees produce?",
+        "scores": {
+          "baseline": 1.0,
+          "arithmetic_addition": 1.0,
+          "arithmetic_percent": 0.0,
+          "arithmetic_power_log": 1.0,
+          "arithmetic_sqrt": 1.0,
+          "factual_constants": 1.0,
+          "always_all": 0.0
+        },
+        "config": "arithmetic_percent",
+        "output": "  Answer the above question based on the context below:  The first known bee species was discovered in 1758 by Carl Linnaeus. It is a small, black and yellow bee with a long slender body and large eyes. The queen bee has a very long, thin abdomen that is covered in hairs",
+        "baseline_output": " Options: - (A) Energy. - (B) honey. - (C) water. - (D) air. - (E) food. Let's have some stream of consciousness first.\n\nTo answer this question, let's consider the following facts about bees and their production:\n\n1. Bees are insects"
+      },
+      {
+        "category": "code",
+        "prompt": "Write SQL to select all rows from a users table.",
+        "scores": {
+          "baseline": 1.0,
+          "arithmetic_addition": 1.0,
+          "arithmetic_percent": 1.0,
+          "arithmetic_power_log": 0.5,
+          "arithmetic_sqrt": 1.0,
+          "factual_constants": 1.0,
+          "always_all": 0.0
+        },
+        "config": "arithmetic_power_log",
+        "output": " \nSELECT * FROM users;",
+        "baseline_output": " The user should be able to choose their own username and password, but the database should not store these passwords in plain text.\n\nTo achieve this, you can use the following SQL query:\n\n```sql\nSELECT *\nFROM users\nWHERE username = 'your_username'\nAND password = 'your_password';\n```\n\nReplace `'your"
+      },
+      {
+        "category": "chinese",
+        "prompt": "中国的首都是哪个城市？",
+        "scores": {
+          "baseline": 1.0,
+          "arithmetic_addition": 1.0,
+          "arithmetic_percent": 1.0,
+          "arithmetic_power_log": 1.0,
+          "arithmetic_sqrt": 0.0,
+          "factual_constants": 1.0,
+          "always_all": 0.0
+        },
+        "config": "arithmetic_sqrt",
+        "output": "",
+        "baseline_output": "____\nA. 北京市\nB. 上海市\nC. 天津市\nD. 重庆市\n答案:\nA\n\n在进行高处作业时，为了确保安全，应采取哪些措施？\nA. 系好安全带并正确使用个人防护装备\nB. 使用"
+      },
+      {
+        "category": "chinese",
+        "prompt": "一年有多少个月？",
+        "scores": {
+          "baseline": 1.0,
+          "arithmetic_addition": 0.0,
+          "arithmetic_percent": 0.0,
+          "arithmetic_power_log": 0.0,
+          "arithmetic_sqrt": 0.0,
+          "factual_constants": 0.0,
+          "always_all": 0.0
+        },
+        "config": "arithmetic_addition",
+        "output": " 28\n\n",
+        "baseline_output": "____\nA. 12\nB. 13\nC. 14\nD. 15\n答案:\n D\n\n在Excel中，如果要将单元格中的内容复制到其他位置，可以使用“剪切”和“粘贴”功能。____\nA. �"
+      },
+      {
+        "category": "chinese",
+        "prompt": "一年有多少个月？",
+        "scores": {
+          "baseline": 1.0,
+          "arithmetic_addition": 0.0,
+          "arithmetic_percent": 0.0,
+          "arithmetic_power_log": 0.0,
+          "arithmetic_sqrt": 0.0,
+          "factual_constants": 0.0,
+          "always_all": 0.0
+        },
+        "config": "arithmetic_percent",
+        "output": " 28\n\n",
+        "baseline_output": "____\nA. 12\nB. 13\nC. 14\nD. 15\n答案:\n D\n\n在Excel中，如果要将单元格中的内容复制到其他位置，可以使用“剪切”和“粘贴”功能。____\nA. �"
+      },
+      {
+        "category": "chinese",
+        "prompt": "一年有多少个月？",
+        "scores": {
+          "baseline": 1.0,
+          "arithmetic_addition": 0.0,
+          "arithmetic_percent": 0.0,
+          "arithmetic_power_log": 0.0,
+          "arithmetic_sqrt": 0.0,
+          "factual_constants": 0.0,
+          "always_all": 0.0
+        },
+        "config": "arithmetic_power_log",
+        "output": " 28\n\n",
+        "baseline_output": "____\nA. 12\nB. 13\nC. 14\nD. 15\n答案:\n D\n\n在Excel中，如果要将单元格中的内容复制到其他位置，可以使用“剪切”和“粘贴”功能。____\nA. �"
+      },
+      {
+        "category": "chinese",
+        "prompt": "一年有多少个月？",
+        "scores": {
+          "baseline": 1.0,
+          "arithmetic_addition": 0.0,
+          "arithmetic_percent": 0.0,
+          "arithmetic_power_log": 0.0,
+          "arithmetic_sqrt": 0.0,
+          "factual_constants": 0.0,
+          "always_all": 0.0
+        },
+        "config": "arithmetic_sqrt",
+        "output": "",
+        "baseline_output": "____\nA. 12\nB. 13\nC. 14\nD. 15\n答案:\n D\n\n在Excel中，如果要将单元格中的内容复制到其他位置，可以使用“剪切”和“粘贴”功能。____\nA. �"
+      },
+      {
+        "category": "chinese",
+        "prompt": "一年有多少个月？",
+        "scores": {
+          "baseline": 1.0,
+          "arithmetic_addition": 0.0,
+          "arithmetic_percent": 0.0,
+          "arithmetic_power_log": 0.0,
+          "arithmetic_sqrt": 0.0,
+          "factual_constants": 0.0,
+          "always_all": 0.0
+        },
+        "config": "factual_constants",
+        "output": "",
+        "baseline_output": "____\nA. 12\nB. 13\nC. 14\nD. 15\n答案:\n D\n\n在Excel中，如果要将单元格中的内容复制到其他位置，可以使用“剪切”和“粘贴”功能。____\nA. �"
+      },
+      {
+        "category": "chinese",
+        "prompt": "什么是机器学习？请用中文回答。",
+        "scores": {
+          "baseline": 1.0,
+          "arithmetic_addition": 1.0,
+          "arithmetic_percent": 1.0,
+          "arithmetic_power_log": 1.0,
+          "arithmetic_sqrt": 0.5,
+          "factual_constants": 1.0,
+          "always_all": 0.0
+        },
+        "config": "arithmetic_sqrt",
+        "output": " 机器学习是一种人工智能技术，它使计算机能够通过数据自动改进和优化其性能。",
+        "baseline_output": " 机器学习是一种人工智能技术，它使计算机能够通过数据自动改进其性能和准确性。这种技术允许算法从大量数据中学习模式，并根据这些模式进行预测或决策。机器学习可以应用于各种领域，包括自然语言处理、图像识别、推荐系统等。\n\n在机器学习的背景下，"
+      },
+      {
+        "category": "chinese",
+        "prompt": "请列举三种水果。",
+        "scores": {
+          "baseline": 1.0,
+          "arithmetic_addition": 1.0,
+          "arithmetic_percent": 1.0,
+          "arithmetic_power_log": 0.5,
+          "arithmetic_sqrt": 1.0,
+          "factual_constants": 1.0,
+          "always_all": 0.0
+        },
+        "config": "arithmetic_power_log",
+        "output": " 1. 苹果\n2. 梨\n3. 草莓\n\n好的，我明白了。请问你有什么问题或需要帮助吗？",
+        "baseline_output": " 1. 苹果\n2. 梨\n3. 草莓\n\n好的，我明白了。请问你有什么问题或需要帮助吗？请告诉我！（如果需要的话）好的，我明白了。请问你有什么问题或需要帮助吗？请告诉我！（如果需要的话）\n\n"
+      },
+      {
+        "category": "chinese",
+        "prompt": "太阳从哪个方向升起？",
+        "scores": {
+          "baseline": 1.0,
+          "arithmetic_addition": 1.0,
+          "arithmetic_percent": 1.0,
+          "arithmetic_power_log": 1.0,
+          "arithmetic_sqrt": 0.0,
+          "factual_constants": 1.0,
+          "always_all": 0.0
+        },
+        "config": "arithmetic_sqrt",
+        "output": "",
+        "baseline_output": "从哪个方向落下？\n回答上面的问题，给出具体的推理逻辑。 要解答这个问题，我们需要考虑地球自转和地球公转的原理。\n\n1. **地球自转**：地球绕着自己的轴线旋转，这个轴线是通过地球中心点（地心）而形成的。因此"
+      },
+      {
+        "category": "chinese",
+        "prompt": "请用中文写一句问候语。",
+        "scores": {
+          "baseline": 1.0,
+          "arithmetic_addition": 0.5,
+          "arithmetic_percent": 1.0,
+          "arithmetic_power_log": 1.0,
+          "arithmetic_sqrt": 1.0,
+          "factual_constants": 0.5,
+          "always_all": 0.0
+        },
+        "config": "arithmetic_addition",
+        "output": " 你有什么好主意吗？ 你可以告诉我，我就可以帮你实现它。",
+        "baseline_output": " 好的，这里是一句常用的中文问候语：“你好！”（Wǒ hǎo!）。\n\n如果你需要更具体的问候语，请告诉我你想要表达的具体含义或场合。例如：\n\n- 对朋友的问候：你好！\n- 对家人的问候：您好！\n- 对同事的"
+      },
+      {
+        "category": "chinese",
+        "prompt": "请用中文写一句问候语。",
+        "scores": {
+          "baseline": 1.0,
+          "arithmetic_addition": 0.5,
+          "arithmetic_percent": 1.0,
+          "arithmetic_power_log": 1.0,
+          "arithmetic_sqrt": 1.0,
+          "factual_constants": 0.5,
+          "always_all": 0.0
+        },
+        "config": "factual_constants",
+        "output": " 好的, \"你好，很高兴见到你！\"。\n\n好的, 请问有什么我可以帮助你的吗?",
+        "baseline_output": " 好的，这里是一句常用的中文问候语：“你好！”（Wǒ hǎo!）。\n\n如果你需要更具体的问候语，请告诉我你想要表达的具体含义或场合。例如：\n\n- 对朋友的问候：你好！\n- 对家人的问候：您好！\n- 对同事的"
+      },
+      {
+        "category": "chinese",
+        "prompt": "中国的四大发明是什么？",
+        "scores": {
+          "baseline": 1.0,
+          "arithmetic_addition": 0.5,
+          "arithmetic_percent": 1.0,
+          "arithmetic_power_log": 1.0,
+          "arithmetic_sqrt": 0.0,
+          "factual_constants": 0.5,
+          "always_all": 0.0
+        },
+        "config": "arithmetic_addition",
+        "output": " 1.造纸术 2.印刷术 3.指南针 4.火药\n\n造纸术、印刷术和指南针是四大发明。",
+        "baseline_output": "它们对世界产生了什么影响？\n\n中国四大发明是指中国古代的四大发明，即造纸术、印刷术、火药和指南针。这些发明对中国历史的发展产生了深远的影响。\n\n1. 造纸术：东汉时期蔡伦改进了造纸技术，使纸张的质量大大提高，成为广泛使用的书写"
+      },
+      {
+        "category": "chinese",
+        "prompt": "中国的四大发明是什么？",
+        "scores": {
+          "baseline": 1.0,
+          "arithmetic_addition": 0.5,
+          "arithmetic_percent": 1.0,
+          "arithmetic_power_log": 1.0,
+          "arithmetic_sqrt": 0.0,
+          "factual_constants": 0.5,
+          "always_all": 0.0
+        },
+        "config": "arithmetic_sqrt",
+        "output": "",
+        "baseline_output": "它们对世界产生了什么影响？\n\n中国四大发明是指中国古代的四大发明，即造纸术、印刷术、火药和指南针。这些发明对中国历史的发展产生了深远的影响。\n\n1. 造纸术：东汉时期蔡伦改进了造纸技术，使纸张的质量大大提高，成为广泛使用的书写"
+      },
+      {
+        "category": "chinese",
+        "prompt": "中国的四大发明是什么？",
+        "scores": {
+          "baseline": 1.0,
+          "arithmetic_addition": 0.5,
+          "arithmetic_percent": 1.0,
+          "arithmetic_power_log": 1.0,
+          "arithmetic_sqrt": 0.0,
+          "factual_constants": 0.5,
+          "always_all": 0.0
+        },
+        "config": "factual_constants",
+        "output": " 1.造纸术 2.印刷术 3.指南针 4.火药\n\n答:造纸术、印刷术、指南针、火药。",
+        "baseline_output": "它们对世界产生了什么影响？\n\n中国四大发明是指中国古代的四大发明，即造纸术、印刷术、火药和指南针。这些发明对中国历史的发展产生了深远的影响。\n\n1. 造纸术：东汉时期蔡伦改进了造纸技术，使纸张的质量大大提高，成为广泛使用的书写"
+      },
+      {
+        "category": "chinese",
+        "prompt": "长城位于哪个国家？",
+        "scores": {
+          "baseline": 1.0,
+          "arithmetic_addition": 1.0,
+          "arithmetic_percent": 1.0,
+          "arithmetic_power_log": 1.0,
+          "arithmetic_sqrt": 0.0,
+          "factual_constants": 1.0,
+          "always_all": 0.0
+        },
+        "config": "arithmetic_sqrt",
+        "output": "",
+        "baseline_output": "____\nA. 俄罗斯\nB. 巴西\nC. 印度尼西亚\nD. 澳大利亚\n答案:\n A\n\n在Windows中，要将一个文件从硬盘移动到软盘上，应选择的菜单是____。\nA. “编辑”菜单中的“"
+      },
+      {
+        "category": "chinese",
+        "prompt": "什么是高铁？",
+        "scores": {
+          "baseline": 1.0,
+          "arithmetic_addition": 1.0,
+          "arithmetic_percent": 1.0,
+          "arithmetic_power_log": 1.0,
+          "arithmetic_sqrt": 0.0,
+          "factual_constants": 1.0,
+          "always_all": 0.0
+        },
+        "config": "arithmetic_sqrt",
+        "output": "",
+        "baseline_output": "高铁的定义是什么？\n\n高铁（High-speed Railway）是指在一定速度下，列车运行时速达到或超过300公里/小时的铁路运输系统。它是一种高速度、高密度和高质量的交通方式。\n\n高铁的定义是：在一定速度下，列车运行时速达到或"
+      },
+      {
+        "category": "reasoning",
+        "prompt": "What comes next in the sequence: 2, 3, 5, 7, 11, ___?",
+        "scores": {
+          "baseline": 1.0,
+          "arithmetic_addition": 1.0,
+          "arithmetic_percent": 0.0,
+          "arithmetic_power_log": 1.0,
+          "arithmetic_sqrt": 1.0,
+          "factual_constants": 1.0,
+          "always_all": 0.0
+        },
+        "config": "arithmetic_percent",
+        "output": "",
+        "baseline_output": " The given sequence is a series of prime numbers. Prime numbers are natural numbers greater than 1 that have no positive divisors other than 1 and themselves.\n\nLet's examine each number in the sequence to identify if it is a prime number:\n\n- \\(2\\) (prime)\n- \\(3\\) (prime)\n-"
+      }
+    ],
+    "baseline_wrong_block_correct": [
+      {
+        "category": "commonsense",
+        "prompt": "Who wrote Romeo and Juliet?",
+        "scores": {
+          "baseline": 0.0,
+          "arithmetic_addition": 0.0,
+          "arithmetic_percent": 1.0,
+          "arithmetic_power_log": 1.0,
+          "arithmetic_sqrt": 1.0,
+          "factual_constants": 0.0,
+          "always_all": 0.0
+        },
+        "config": "arithmetic_percent",
+        "output": " What is the name of the play?\nWhat is the answer?\n\nThe answer is William Shakespeare. \"Romeo and Juliet\" is a famous play written by William Shakespeare, an English playwright and poet who lived from 1564 to 1616. The play was first performed in 15",
+        "baseline_output": " What is the name of the play?\nWhat are some interesting facts about Romeo and Juliet?\nDo those questions have the same meaning?\nPick from:\n (a). no\n (b). yes\n\n(a). no\n\nThe two questions do not have the same meaning. The first question asks who wrote Romeo and Juliet, while"
+      },
+      {
+        "category": "commonsense",
+        "prompt": "Who wrote Romeo and Juliet?",
+        "scores": {
+          "baseline": 0.0,
+          "arithmetic_addition": 0.0,
+          "arithmetic_percent": 1.0,
+          "arithmetic_power_log": 1.0,
+          "arithmetic_sqrt": 1.0,
+          "factual_constants": 0.0,
+          "always_all": 0.0
+        },
+        "config": "arithmetic_power_log",
+        "output": " What is the name of the play?\nWhat is the answer?\n\nAnswer: The play \"Romeo and Juliet\" was written by William Shakespeare. It is a tragic love story set in Renaissance Italy.\n\nWilliam Shakespeare, born in 1564 in Stratford-upon-Avon, England, is widely regarded",
+        "baseline_output": " What is the name of the play?\nWhat are some interesting facts about Romeo and Juliet?\nDo those questions have the same meaning?\nPick from:\n (a). no\n (b). yes\n\n(a). no\n\nThe two questions do not have the same meaning. The first question asks who wrote Romeo and Juliet, while"
+      },
+      {
+        "category": "commonsense",
+        "prompt": "Who wrote Romeo and Juliet?",
+        "scores": {
+          "baseline": 0.0,
+          "arithmetic_addition": 0.0,
+          "arithmetic_percent": 1.0,
+          "arithmetic_power_log": 1.0,
+          "arithmetic_sqrt": 1.0,
+          "factual_constants": 0.0,
+          "always_all": 0.0
+        },
+        "config": "arithmetic_sqrt",
+        "output": " What is the name of the play?\nWhat is the answer?\n\nAnswer: The play \"Romeo and Juliet\" was written by William Shakespeare. It is a tragic love story set in Renaissance Italy.\n\nWilliam Shakespeare, also known as William Cory or William Polonius, was an English playwright, poet, and actor",
+        "baseline_output": " What is the name of the play?\nWhat are some interesting facts about Romeo and Juliet?\nDo those questions have the same meaning?\nPick from:\n (a). no\n (b). yes\n\n(a). no\n\nThe two questions do not have the same meaning. The first question asks who wrote Romeo and Juliet, while"
+      },
+      {
+        "category": "commonsense",
+        "prompt": "What is the speed of light in vacuum?",
+        "scores": {
+          "baseline": 0.0,
+          "arithmetic_addition": 0.0,
+          "arithmetic_percent": 0.0,
+          "arithmetic_power_log": 0.0,
+          "arithmetic_sqrt": 0.0,
+          "factual_constants": 1.0,
+          "always_all": 0.0
+        },
+        "config": "factual_constants",
+        "output": " The speed of light in a vacuum is approximately 299,792,458 meters per second. This value has been determined through experiments involving the interaction of light with various materials and by measuring its propagation time across different distances.\n",
+        "baseline_output": " The speed of light in a vacuum is approximately 299,792 kilometers per second. This value has been determined through experiments and observations over many years.\n\nTo provide more context:\n\n1. **Definition**: The speed of light in a vacuum refers to the maximum velocity at which electromagnetic waves can travel without being"
+      },
+      {
+        "category": "math",
+        "prompt": "What is the square root of 144?",
+        "scores": {
+          "baseline": 0.0,
+          "arithmetic_addition": 0.0,
+          "arithmetic_percent": 0.0,
+          "arithmetic_power_log": 0.0,
+          "arithmetic_sqrt": 0.0,
+          "factual_constants": 1.0,
+          "always_all": 0.0
+        },
+        "config": "factual_constants",
+        "output": " To find the square root of \\(144\\), we can follow these steps:\n\n1. **Identify the perfect squares around 144**: \n   - The perfect square closest to 144 is \\(12^2 = 144\\).\n   - Therefore, \\(\\sqrt",
+        "baseline_output": " To find the square root of 144, we can follow these steps:\n\n1. **Identify the perfect squares around 144**: \n   - \\(9^2 = 81\\)\n   - \\(10^2 = 100\\)\n\n2. **Determine which"
+      },
+      {
+        "category": "math",
+        "prompt": "What is 9 times 8?",
+        "scores": {
+          "baseline": 0.0,
+          "arithmetic_addition": 0.0,
+          "arithmetic_percent": 1.0,
+          "arithmetic_power_log": 1.0,
+          "arithmetic_sqrt": 0.0,
+          "factual_constants": 0.0,
+          "always_all": 0.0
+        },
+        "config": "arithmetic_percent",
+        "output": " To find the product of 9 and 8, you simply multiply them together:\n\n\\[ 9 \\times 8 = 72 \\]\n\nSo, 9 times 8 equals 72.",
+        "baseline_output": " To find the product of \\(9\\) and \\(8\\), we can use the standard multiplication method. Here are the steps:\n\n1. Write down the numbers one below the other, aligning them by their place values:\n   \\[\n   \\begin{array}{c@{}c}\n     & 9 \\\\\n"
+      },
+      {
+        "category": "math",
+        "prompt": "What is 9 times 8?",
+        "scores": {
+          "baseline": 0.0,
+          "arithmetic_addition": 0.0,
+          "arithmetic_percent": 1.0,
+          "arithmetic_power_log": 1.0,
+          "arithmetic_sqrt": 0.0,
+          "factual_constants": 0.0,
+          "always_all": 0.0
+        },
+        "config": "arithmetic_power_log",
+        "output": " To find the product of 9 and 8, you simply multiply them together:\n\n\\[ 9 \\times 8 = 72 \\]\n\nSo, 9 times 8 equals 72.",
+        "baseline_output": " To find the product of \\(9\\) and \\(8\\), we can use the standard multiplication method. Here are the steps:\n\n1. Write down the numbers one below the other, aligning them by their place values:\n   \\[\n   \\begin{array}{c@{}c}\n     & 9 \\\\\n"
+      }
+    ],
+    "baseline_wrong_all_wrong": [
+      {
+        "category": "commonsense",
+        "prompt": "How many continents are there?",
+        "scores": {
+          "baseline": 0.0,
+          "arithmetic_addition": 0.0,
+          "arithmetic_percent": 0.0,
+          "arithmetic_power_log": 0.0,
+          "arithmetic_sqrt": 0.0,
+          "factual_constants": 0.0,
+          "always_all": 0.0
+        }
+      },
+      {
+        "category": "math",
+        "prompt": "If x + 5 = 12, what is x?",
+        "scores": {
+          "baseline": 0.0,
+          "arithmetic_addition": 0.0,
+          "arithmetic_percent": 0.0,
+          "arithmetic_power_log": 0.0,
+          "arithmetic_sqrt": 0.0,
+          "factual_constants": 0.0,
+          "always_all": 0.0
+        }
+      },
+      {
+        "category": "math",
+        "prompt": "What is 25% of 200?",
+        "scores": {
+          "baseline": 0.0,
+          "arithmetic_addition": 0.0,
+          "arithmetic_percent": 0.0,
+          "arithmetic_power_log": 0.0,
+          "arithmetic_sqrt": 0.0,
+          "factual_constants": 0.0,
+          "always_all": 0.0
+        }
+      },
+      {
+        "category": "math",
+        "prompt": "Calculate the area of a circle with radius 3.",
+        "scores": {
+          "baseline": 0.0,
+          "arithmetic_addition": 0.0,
+          "arithmetic_percent": 0.0,
+          "arithmetic_power_log": 0.0,
+          "arithmetic_sqrt": 0.0,
+          "factual_constants": 0.0,
+          "always_all": 0.0
+        }
+      },
+      {
+        "category": "math",
+        "prompt": "How many seconds are in 2 hours?",
+        "scores": {
+          "baseline": 0.0,
+          "arithmetic_addition": 0.0,
+          "arithmetic_percent": 0.0,
+          "arithmetic_power_log": 0.0,
+          "arithmetic_sqrt": 0.0,
+          "factual_constants": 0.0,
+          "always_all": 0.0
+        }
+      },
+      {
+        "category": "math",
+        "prompt": "What is 2^10?",
+        "scores": {
+          "baseline": 0.0,
+          "arithmetic_addition": 0.0,
+          "arithmetic_percent": 0.0,
+          "arithmetic_power_log": 0.0,
+          "arithmetic_sqrt": 0.0,
+          "factual_constants": 0.0,
+          "always_all": 0.0
+        }
+      },
+      {
+        "category": "math",
+        "prompt": "If a train travels at 60 km/h for 2.5 hours, how far does it go?",
+        "scores": {
+          "baseline": 0.0,
+          "arithmetic_addition": 0.0,
+          "arithmetic_percent": 0.0,
+          "arithmetic_power_log": 0.0,
+          "arithmetic_sqrt": 0.0,
+          "factual_constants": 0.0,
+          "always_all": 0.0
+        }
+      },
+      {
+        "category": "math",
+        "prompt": "What is 18 + 24?",
+        "scores": {
+          "baseline": 0.0,
+          "arithmetic_addition": 0.0,
+          "arithmetic_percent": 0.0,
+          "arithmetic_power_log": 0.0,
+          "arithmetic_sqrt": 0.0,
+          "factual_constants": 0.0,
+          "always_all": 0.0
+        }
+      },
+      {
+        "category": "math",
+        "prompt": "What is 15% of 80?",
+        "scores": {
+          "baseline": 0.0,
+          "arithmetic_addition": 0.0,
+          "arithmetic_percent": 0.0,
+          "arithmetic_power_log": 0.0,
+          "arithmetic_sqrt": 0.0,
+          "factual_constants": 0.0,
+          "always_all": 0.0
+        }
+      },
+      {
+        "category": "math",
+        "prompt": "What is the mean of 4, 8, 12, and 16?",
+        "scores": {
+          "baseline": 0.0,
+          "arithmetic_addition": 0.0,
+          "arithmetic_percent": 0.0,
+          "arithmetic_power_log": 0.0,
+          "arithmetic_sqrt": 0.0,
+          "factual_constants": 0.0,
+          "always_all": 0.0
+        }
+      },
+      {
+        "category": "math",
+        "prompt": "What is the GCD of 24 and 36?",
+        "scores": {
+          "baseline": 0.0,
+          "arithmetic_addition": 0.0,
+          "arithmetic_percent": 0.0,
+          "arithmetic_power_log": 0.0,
+          "arithmetic_sqrt": 0.0,
+          "factual_constants": 0.0,
+          "always_all": 0.0
+        }
+      },
+      {
+        "category": "math",
+        "prompt": "What is the LCM of 12 and 18?",
+        "scores": {
+          "baseline": 0.0,
+          "arithmetic_addition": 0.0,
+          "arithmetic_percent": 0.0,
+          "arithmetic_power_log": 0.0,
+          "arithmetic_sqrt": 0.0,
+          "factual_constants": 0.0,
+          "always_all": 0.0
+        }
+      },
+      {
+        "category": "math",
+        "prompt": "What is 7 factorial?",
+        "scores": {
+          "baseline": 0.0,
+          "arithmetic_addition": 0.0,
+          "arithmetic_percent": 0.0,
+          "arithmetic_power_log": 0.0,
+          "arithmetic_sqrt": 0.0,
+          "factual_constants": 0.0,
+          "always_all": 0.0
+        }
+      },
+      {
+        "category": "math",
+        "prompt": "What is the derivative of x^3?",
+        "scores": {
+          "baseline": 0.0,
+          "arithmetic_addition": 0.0,
+          "arithmetic_percent": 0.0,
+          "arithmetic_power_log": 0.0,
+          "arithmetic_sqrt": 0.0,
+          "factual_constants": 0.0,
+          "always_all": 0.0
+        }
+      },
+      {
+        "category": "math",
+        "prompt": "What is log base 10 of 1000?",
+        "scores": {
+          "baseline": 0.0,
+          "arithmetic_addition": 0.0,
+          "arithmetic_percent": 0.0,
+          "arithmetic_power_log": 0.0,
+          "arithmetic_sqrt": 0.0,
+          "factual_constants": 0.0,
+          "always_all": 0.0
+        }
+      },
+      {
+        "category": "math",
+        "prompt": "What is the distance from (0,0) to (3,4)?",
+        "scores": {
+          "baseline": 0.0,
+          "arithmetic_addition": 0.0,
+          "arithmetic_percent": 0.0,
+          "arithmetic_power_log": 0.0,
+          "arithmetic_sqrt": 0.0,
+          "factual_constants": 0.0,
+          "always_all": 0.0
+        }
+      }
+    ],
+    "near_miss": []
+  },
+  "unique_by_block": {
+    "factual_constants": [
+      {
+        "category": "commonsense",
+        "prompt": "What is the speed of light in vacuum?",
+        "scores": {
+          "baseline": 0.0,
+          "arithmetic_addition": 0.0,
+          "arithmetic_percent": 0.0,
+          "arithmetic_power_log": 0.0,
+          "arithmetic_sqrt": 0.0,
+          "factual_constants": 1.0,
+          "always_all": 0.0
+        },
+        "config": "factual_constants",
+        "output": " The speed of light in a vacuum is approximately 299,792,458 meters per second. This value has been determined through experiments involving the interaction of light with various materials and by measuring its propagation time across different distances.\n",
+        "baseline_output": " The speed of light in a vacuum is approximately 299,792 kilometers per second. This value has been determined through experiments and observations over many years.\n\nTo provide more context:\n\n1. **Definition**: The speed of light in a vacuum refers to the maximum velocity at which electromagnetic waves can travel without being"
+      },
+      {
+        "category": "math",
+        "prompt": "What is the square root of 144?",
+        "scores": {
+          "baseline": 0.0,
+          "arithmetic_addition": 0.0,
+          "arithmetic_percent": 0.0,
+          "arithmetic_power_log": 0.0,
+          "arithmetic_sqrt": 0.0,
+          "factual_constants": 1.0,
+          "always_all": 0.0
+        },
+        "config": "factual_constants",
+        "output": " To find the square root of \\(144\\), we can follow these steps:\n\n1. **Identify the perfect squares around 144**: \n   - The perfect square closest to 144 is \\(12^2 = 144\\).\n   - Therefore, \\(\\sqrt",
+        "baseline_output": " To find the square root of 144, we can follow these steps:\n\n1. **Identify the perfect squares around 144**: \n   - \\(9^2 = 81\\)\n   - \\(10^2 = 100\\)\n\n2. **Determine which"
+      }
+    ]
+  },
+  "best_by_sample": [
+    {
+      "index": 0,
+      "category": "commonsense",
+      "prompt": "What is the capital of France?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 1,
+      "category": "commonsense",
+      "prompt": "How many days are in a leap year?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 2,
+      "category": "commonsense",
+      "prompt": "What color is the sky on a clear day?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 3,
+      "category": "commonsense",
+      "prompt": "Which planet is known as the Red Planet?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 4,
+      "category": "commonsense",
+      "prompt": "What is the boiling point of water in Celsius?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 5,
+      "category": "commonsense",
+      "prompt": "Who wrote Romeo and Juliet?",
+      "best_config": "arithmetic_percent",
+      "best_score": 1.0,
+      "baseline_score": 0.0,
+      "delta": 1.0
+    },
+    {
+      "index": 6,
+      "category": "commonsense",
+      "prompt": "What is the largest ocean on Earth?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 7,
+      "category": "commonsense",
+      "prompt": "How many continents are there?",
+      "best_config": "baseline",
+      "best_score": 0.0,
+      "baseline_score": 0.0,
+      "delta": 0.0
+    },
+    {
+      "index": 8,
+      "category": "commonsense",
+      "prompt": "What is the speed of light in vacuum?",
+      "best_config": "factual_constants",
+      "best_score": 1.0,
+      "baseline_score": 0.0,
+      "delta": 1.0
+    },
+    {
+      "index": 9,
+      "category": "commonsense",
+      "prompt": "Which gas do plants absorb from the atmosphere?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 10,
+      "category": "commonsense",
+      "prompt": "What is the tallest mountain in the world?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 11,
+      "category": "commonsense",
+      "prompt": "What is the chemical symbol for gold?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 12,
+      "category": "commonsense",
+      "prompt": "Which animal is known as the king of the jungle?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 13,
+      "category": "commonsense",
+      "prompt": "How many teeth does an adult human have?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 14,
+      "category": "commonsense",
+      "prompt": "Which country is famous for the Eiffel Tower?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 15,
+      "category": "commonsense",
+      "prompt": "What is the main language spoken in Spain?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 16,
+      "category": "commonsense",
+      "prompt": "What is the freezing point of water in Celsius?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 17,
+      "category": "commonsense",
+      "prompt": "Which organ pumps blood through the body?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 18,
+      "category": "commonsense",
+      "prompt": "What is the largest mammal?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 19,
+      "category": "commonsense",
+      "prompt": "What do bees produce?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 20,
+      "category": "math",
+      "prompt": "Calculate 15 + 27 =",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 21,
+      "category": "math",
+      "prompt": "What is 144 divided by 12?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 22,
+      "category": "math",
+      "prompt": "If x + 5 = 12, what is x?",
+      "best_config": "baseline",
+      "best_score": 0.0,
+      "baseline_score": 0.0,
+      "delta": 0.0
+    },
+    {
+      "index": 23,
+      "category": "math",
+      "prompt": "What is 25% of 200?",
+      "best_config": "baseline",
+      "best_score": 0.0,
+      "baseline_score": 0.0,
+      "delta": 0.0
+    },
+    {
+      "index": 24,
+      "category": "math",
+      "prompt": "Calculate the area of a circle with radius 3.",
+      "best_config": "baseline",
+      "best_score": 0.0,
+      "baseline_score": 0.0,
+      "delta": 0.0
+    },
+    {
+      "index": 25,
+      "category": "math",
+      "prompt": "What is the square root of 144?",
+      "best_config": "factual_constants",
+      "best_score": 1.0,
+      "baseline_score": 0.0,
+      "delta": 1.0
+    },
+    {
+      "index": 26,
+      "category": "math",
+      "prompt": "How many seconds are in 2 hours?",
+      "best_config": "baseline",
+      "best_score": 0.0,
+      "baseline_score": 0.0,
+      "delta": 0.0
+    },
+    {
+      "index": 27,
+      "category": "math",
+      "prompt": "Solve: 3x - 7 = 14",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 28,
+      "category": "math",
+      "prompt": "What is 2^10?",
+      "best_config": "baseline",
+      "best_score": 0.0,
+      "baseline_score": 0.0,
+      "delta": 0.0
+    },
+    {
+      "index": 29,
+      "category": "math",
+      "prompt": "If a train travels at 60 km/h for 2.5 hours, how far does it go?",
+      "best_config": "baseline",
+      "best_score": 0.0,
+      "baseline_score": 0.0,
+      "delta": 0.0
+    },
+    {
+      "index": 30,
+      "category": "math",
+      "prompt": "What is 18 + 24?",
+      "best_config": "baseline",
+      "best_score": 0.0,
+      "baseline_score": 0.0,
+      "delta": 0.0
+    },
+    {
+      "index": 31,
+      "category": "math",
+      "prompt": "What is 9 times 8?",
+      "best_config": "arithmetic_percent",
+      "best_score": 1.0,
+      "baseline_score": 0.0,
+      "delta": 1.0
+    },
+    {
+      "index": 32,
+      "category": "math",
+      "prompt": "What is 15% of 80?",
+      "best_config": "baseline",
+      "best_score": 0.0,
+      "baseline_score": 0.0,
+      "delta": 0.0
+    },
+    {
+      "index": 33,
+      "category": "math",
+      "prompt": "What is the mean of 4, 8, 12, and 16?",
+      "best_config": "baseline",
+      "best_score": 0.0,
+      "baseline_score": 0.0,
+      "delta": 0.0
+    },
+    {
+      "index": 34,
+      "category": "math",
+      "prompt": "What is the GCD of 24 and 36?",
+      "best_config": "baseline",
+      "best_score": 0.0,
+      "baseline_score": 0.0,
+      "delta": 0.0
+    },
+    {
+      "index": 35,
+      "category": "math",
+      "prompt": "What is the LCM of 12 and 18?",
+      "best_config": "baseline",
+      "best_score": 0.0,
+      "baseline_score": 0.0,
+      "delta": 0.0
+    },
+    {
+      "index": 36,
+      "category": "math",
+      "prompt": "What is 7 factorial?",
+      "best_config": "baseline",
+      "best_score": 0.0,
+      "baseline_score": 0.0,
+      "delta": 0.0
+    },
+    {
+      "index": 37,
+      "category": "math",
+      "prompt": "What is the derivative of x^3?",
+      "best_config": "baseline",
+      "best_score": 0.0,
+      "baseline_score": 0.0,
+      "delta": 0.0
+    },
+    {
+      "index": 38,
+      "category": "math",
+      "prompt": "What is log base 10 of 1000?",
+      "best_config": "baseline",
+      "best_score": 0.0,
+      "baseline_score": 0.0,
+      "delta": 0.0
+    },
+    {
+      "index": 39,
+      "category": "math",
+      "prompt": "What is the distance from (0,0) to (3,4)?",
+      "best_config": "baseline",
+      "best_score": 0.0,
+      "baseline_score": 0.0,
+      "delta": 0.0
+    },
+    {
+      "index": 40,
+      "category": "code",
+      "prompt": "Write a Python function to check if a string is a palindrome.",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 41,
+      "category": "code",
+      "prompt": "Create a JSON object representing a person with name, age, and city.",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 42,
+      "category": "code",
+      "prompt": "Explain what a hash map is in one paragraph.",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 43,
+      "category": "code",
+      "prompt": "Write a simple function to sort a list of integers.",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 44,
+      "category": "code",
+      "prompt": "What is the difference between a list and a tuple in Python?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 45,
+      "category": "code",
+      "prompt": "Write a regex to validate an email address.",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 46,
+      "category": "code",
+      "prompt": "What is an API endpoint?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 47,
+      "category": "code",
+      "prompt": "Write a SQL query to find duplicate entries in a table.",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 48,
+      "category": "code",
+      "prompt": "Explain recursion with an example.",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 49,
+      "category": "code",
+      "prompt": "What is the time complexity of binary search?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 50,
+      "category": "code",
+      "prompt": "Write Python code to count words in a string.",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 51,
+      "category": "code",
+      "prompt": "Explain what an HTTP 404 status code means.",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 52,
+      "category": "code",
+      "prompt": "Write a Python function that returns the nth Fibonacci number.",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 53,
+      "category": "code",
+      "prompt": "What is a unit test?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 54,
+      "category": "code",
+      "prompt": "Explain the difference between GET and POST.",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 55,
+      "category": "code",
+      "prompt": "Write SQL to select all rows from a users table.",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 56,
+      "category": "code",
+      "prompt": "What is JSON used for?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 57,
+      "category": "code",
+      "prompt": "Explain what a stack data structure is.",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 58,
+      "category": "code",
+      "prompt": "Write Python code to reverse a list.",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 59,
+      "category": "code",
+      "prompt": "What is the purpose of git commit?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 60,
+      "category": "chinese",
+      "prompt": "中国的首都是哪个城市？",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 61,
+      "category": "chinese",
+      "prompt": "请用中文解释什么是人工智能。",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 62,
+      "category": "chinese",
+      "prompt": "一年有多少个月？",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 63,
+      "category": "chinese",
+      "prompt": "请写一段关于春天的短文。",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 64,
+      "category": "chinese",
+      "prompt": "什么是机器学习？请用中文回答。",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 65,
+      "category": "chinese",
+      "prompt": "水的化学式是什么？",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 66,
+      "category": "chinese",
+      "prompt": "请列举三种水果。",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 67,
+      "category": "chinese",
+      "prompt": "太阳从哪个方向升起？",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 68,
+      "category": "chinese",
+      "prompt": "请用中文写一句问候语。",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 69,
+      "category": "chinese",
+      "prompt": "什么是自然语言处理？",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 70,
+      "category": "chinese",
+      "prompt": "中秋节通常会吃什么？",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 71,
+      "category": "chinese",
+      "prompt": "中国的四大发明是什么？",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 72,
+      "category": "chinese",
+      "prompt": "请用中文解释什么是云计算。",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 73,
+      "category": "chinese",
+      "prompt": "春节有哪些常见习俗？",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 74,
+      "category": "chinese",
+      "prompt": "长城位于哪个国家？",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 75,
+      "category": "chinese",
+      "prompt": "请用中文说明垃圾分类的意义。",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 76,
+      "category": "chinese",
+      "prompt": "什么是高铁？",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 77,
+      "category": "chinese",
+      "prompt": "请用中文解释电子商务。",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 78,
+      "category": "chinese",
+      "prompt": "孔子是中国古代的什么人物？",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 79,
+      "category": "chinese",
+      "prompt": "请写一句关于学习的中文句子。",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 80,
+      "category": "reasoning",
+      "prompt": "If all squares are rectangles, and some rectangles are not squares, can a shape be a rectangle but not a square? Explain.",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 81,
+      "category": "reasoning",
+      "prompt": "Alice is twice as old as Bob. In 5 years, Alice will be 1.5 times as old as Bob. How old is Alice now?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 82,
+      "category": "reasoning",
+      "prompt": "Three light switches control a light bulb in another room. You can flip the switches and then enter the room once. How can you determine which switch controls the bulb?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 83,
+      "category": "reasoning",
+      "prompt": "If it takes 5 machines 5 minutes to make 5 widgets, how long would it take 100 machines to make 100 widgets?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 84,
+      "category": "reasoning",
+      "prompt": "A bat and a ball cost $1.10 in total. The bat costs $1.00 more than the ball. How much does the ball cost?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 85,
+      "category": "reasoning",
+      "prompt": "A doctor gives you 3 pills and says take one every half hour. How long will the pills last?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 86,
+      "category": "reasoning",
+      "prompt": "How many months have 28 days?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 87,
+      "category": "reasoning",
+      "prompt": "A plane crashes on the border of two countries. Where do they bury the survivors?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 88,
+      "category": "reasoning",
+      "prompt": "What comes next in the sequence: 2, 3, 5, 7, 11, ___?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 89,
+      "category": "reasoning",
+      "prompt": "If you have a 3-gallon jug and a 5-gallon jug, how can you measure exactly 4 gallons?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 90,
+      "category": "reasoning",
+      "prompt": "There are 10 birds on a fence. A loud noise scares them. How many remain on the fence?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 91,
+      "category": "reasoning",
+      "prompt": "If a book costs $20 after a 20% discount, what was the original price?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 92,
+      "category": "reasoning",
+      "prompt": "A farmer has chickens and cows. There are 10 heads and 28 legs. How many chickens are there?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 93,
+      "category": "reasoning",
+      "prompt": "If today is Monday, what day will it be in 10 days?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 94,
+      "category": "reasoning",
+      "prompt": "Two people start at the same point and walk in opposite directions for 3 km. How far apart are they?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 95,
+      "category": "reasoning",
+      "prompt": "If all roses are flowers and some flowers fade quickly, must all roses fade quickly?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 96,
+      "category": "reasoning",
+      "prompt": "You flip a fair coin twice. What is the probability of two heads?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 97,
+      "category": "reasoning",
+      "prompt": "A car travels 30 km in 30 minutes. What is its average speed in km/h?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 98,
+      "category": "reasoning",
+      "prompt": "If one box holds 6 bottles, how many boxes are needed for 26 bottles?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 99,
+      "category": "reasoning",
+      "prompt": "What is heavier: one kilogram of iron or one kilogram of cotton?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    }
+  ]
+}

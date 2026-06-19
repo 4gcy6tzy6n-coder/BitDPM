@@ -1,0 +1,16 @@
+{
+  "block_id": "v11_linear_equation_l23_down_proj",
+  "block_type": "v11_linear_equation",
+  "category": "v11_linear_equation",
+  "layer_id": 23,
+  "module_name": "down_proj",
+  "rank": 16,
+  "scale": 1.0,
+  "final_loss": 0.5827571749687195,
+  "best_loss": 0.3605307340621948,
+  "epochs": 5,
+  "total_steps": 60,
+  "training_time_s": 6.648597955703735,
+  "in_features": 4864,
+  "out_features": 896
+}

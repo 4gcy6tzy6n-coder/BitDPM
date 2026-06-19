@@ -1,0 +1,620 @@
+[
+  {
+    "scale": 0.8,
+    "fixes": 6,
+    "breaks": 2,
+    "net": 4,
+    "baseline": 0.8222222222222222,
+    "block": 0.9222222222222223,
+    "fix_details": [
+      {
+        "prompt": "How many continents are there?",
+        "from": 0,
+        "to": 1,
+        "exp": "7"
+      },
+      {
+        "prompt": "If x + 5 = 12, what is x?",
+        "from": 0,
+        "to": 1,
+        "exp": "7"
+      },
+      {
+        "prompt": "What is 25% of 200?",
+        "from": 0,
+        "to": 1,
+        "exp": "50"
+      },
+      {
+        "prompt": "How many seconds are in 2 hours?",
+        "from": 0,
+        "to": 1,
+        "exp": "7200"
+      },
+      {
+        "prompt": "What is 2^10?",
+        "from": 0,
+        "to": 1,
+        "exp": "1024"
+      },
+      {
+        "prompt": "If a train travels at 60 km/h for 2.5 hours, how f",
+        "from": 0,
+        "to": 1,
+        "exp": "150"
+      }
+    ],
+    "break_details": [
+      {
+        "prompt": "Which gas do plants absorb from the atmosphere?",
+        "from": 1,
+        "to": 0,
+        "exp": "carbon dioxide"
+      },
+      {
+        "prompt": "请用中文写一句问候语。",
+        "from": 1,
+        "to": 0,
+        "exp": "?"
+      }
+    ]
+  },
+  {
+    "scale": 0.85,
+    "fixes": 6,
+    "breaks": 2,
+    "net": 4,
+    "baseline": 0.8222222222222222,
+    "block": 0.9222222222222223,
+    "fix_details": [
+      {
+        "prompt": "How many continents are there?",
+        "from": 0,
+        "to": 1,
+        "exp": "7"
+      },
+      {
+        "prompt": "If x + 5 = 12, what is x?",
+        "from": 0,
+        "to": 1,
+        "exp": "7"
+      },
+      {
+        "prompt": "What is 25% of 200?",
+        "from": 0,
+        "to": 1,
+        "exp": "50"
+      },
+      {
+        "prompt": "How many seconds are in 2 hours?",
+        "from": 0,
+        "to": 1,
+        "exp": "7200"
+      },
+      {
+        "prompt": "What is 2^10?",
+        "from": 0,
+        "to": 1,
+        "exp": "1024"
+      },
+      {
+        "prompt": "If a train travels at 60 km/h for 2.5 hours, how f",
+        "from": 0,
+        "to": 1,
+        "exp": "150"
+      }
+    ],
+    "break_details": [
+      {
+        "prompt": "Which gas do plants absorb from the atmosphere?",
+        "from": 1,
+        "to": 0,
+        "exp": "carbon dioxide"
+      },
+      {
+        "prompt": "请用中文写一句问候语。",
+        "from": 1,
+        "to": 0,
+        "exp": "?"
+      }
+    ]
+  },
+  {
+    "scale": 0.9,
+    "fixes": 6,
+    "breaks": 3,
+    "net": 3,
+    "baseline": 0.8222222222222222,
+    "block": 0.9,
+    "fix_details": [
+      {
+        "prompt": "How many continents are there?",
+        "from": 0,
+        "to": 1,
+        "exp": "7"
+      },
+      {
+        "prompt": "If x + 5 = 12, what is x?",
+        "from": 0,
+        "to": 1,
+        "exp": "7"
+      },
+      {
+        "prompt": "What is 25% of 200?",
+        "from": 0,
+        "to": 1,
+        "exp": "50"
+      },
+      {
+        "prompt": "How many seconds are in 2 hours?",
+        "from": 0,
+        "to": 1,
+        "exp": "7200"
+      },
+      {
+        "prompt": "What is 2^10?",
+        "from": 0,
+        "to": 1,
+        "exp": "1024"
+      },
+      {
+        "prompt": "If a train travels at 60 km/h for 2.5 hours, how f",
+        "from": 0,
+        "to": 1,
+        "exp": "150"
+      }
+    ],
+    "break_details": [
+      {
+        "prompt": "What is the speed of light in vacuum?",
+        "from": 1,
+        "to": 0,
+        "exp": "299,792,458"
+      },
+      {
+        "prompt": "Which gas do plants absorb from the atmosphere?",
+        "from": 1,
+        "to": 0,
+        "exp": "carbon dioxide"
+      },
+      {
+        "prompt": "请用中文写一句问候语。",
+        "from": 1,
+        "to": 0,
+        "exp": "?"
+      }
+    ]
+  },
+  {
+    "scale": 0.95,
+    "fixes": 7,
+    "breaks": 3,
+    "net": 4,
+    "baseline": 0.8222222222222222,
+    "block": 0.9222222222222223,
+    "fix_details": [
+      {
+        "prompt": "How many continents are there?",
+        "from": 0,
+        "to": 1,
+        "exp": "7"
+      },
+      {
+        "prompt": "Calculate 15 + 27 =",
+        "from": 0,
+        "to": 1,
+        "exp": "42"
+      },
+      {
+        "prompt": "If x + 5 = 12, what is x?",
+        "from": 0,
+        "to": 1,
+        "exp": "7"
+      },
+      {
+        "prompt": "What is 25% of 200?",
+        "from": 0,
+        "to": 1,
+        "exp": "50"
+      },
+      {
+        "prompt": "How many seconds are in 2 hours?",
+        "from": 0,
+        "to": 1,
+        "exp": "7200"
+      },
+      {
+        "prompt": "What is 2^10?",
+        "from": 0,
+        "to": 1,
+        "exp": "1024"
+      },
+      {
+        "prompt": "If a train travels at 60 km/h for 2.5 hours, how f",
+        "from": 0,
+        "to": 1,
+        "exp": "150"
+      }
+    ],
+    "break_details": [
+      {
+        "prompt": "What is the speed of light in vacuum?",
+        "from": 1,
+        "to": 0,
+        "exp": "299,792,458"
+      },
+      {
+        "prompt": "Which gas do plants absorb from the atmosphere?",
+        "from": 1,
+        "to": 0,
+        "exp": "carbon dioxide"
+      },
+      {
+        "prompt": "请用中文写一句问候语。",
+        "from": 1,
+        "to": 0,
+        "exp": "?"
+      }
+    ]
+  },
+  {
+    "scale": 1.0,
+    "fixes": 7,
+    "breaks": 3,
+    "net": 4,
+    "baseline": 0.8222222222222222,
+    "block": 0.9222222222222223,
+    "fix_details": [
+      {
+        "prompt": "How many continents are there?",
+        "from": 0,
+        "to": 1,
+        "exp": "7"
+      },
+      {
+        "prompt": "Calculate 15 + 27 =",
+        "from": 0,
+        "to": 1,
+        "exp": "42"
+      },
+      {
+        "prompt": "If x + 5 = 12, what is x?",
+        "from": 0,
+        "to": 1,
+        "exp": "7"
+      },
+      {
+        "prompt": "What is 25% of 200?",
+        "from": 0,
+        "to": 1,
+        "exp": "50"
+      },
+      {
+        "prompt": "How many seconds are in 2 hours?",
+        "from": 0,
+        "to": 1,
+        "exp": "7200"
+      },
+      {
+        "prompt": "What is 2^10?",
+        "from": 0,
+        "to": 1,
+        "exp": "1024"
+      },
+      {
+        "prompt": "If a train travels at 60 km/h for 2.5 hours, how f",
+        "from": 0,
+        "to": 1,
+        "exp": "150"
+      }
+    ],
+    "break_details": [
+      {
+        "prompt": "What is the speed of light in vacuum?",
+        "from": 1,
+        "to": 0,
+        "exp": "299,792,458"
+      },
+      {
+        "prompt": "Which gas do plants absorb from the atmosphere?",
+        "from": 1,
+        "to": 0,
+        "exp": "carbon dioxide"
+      },
+      {
+        "prompt": "请用中文写一句问候语。",
+        "from": 1,
+        "to": 0,
+        "exp": "?"
+      }
+    ]
+  },
+  {
+    "scale": 1.05,
+    "fixes": 7,
+    "breaks": 3,
+    "net": 4,
+    "baseline": 0.8222222222222222,
+    "block": 0.9222222222222223,
+    "fix_details": [
+      {
+        "prompt": "How many continents are there?",
+        "from": 0,
+        "to": 1,
+        "exp": "7"
+      },
+      {
+        "prompt": "Calculate 15 + 27 =",
+        "from": 0,
+        "to": 1,
+        "exp": "42"
+      },
+      {
+        "prompt": "If x + 5 = 12, what is x?",
+        "from": 0,
+        "to": 1,
+        "exp": "7"
+      },
+      {
+        "prompt": "What is 25% of 200?",
+        "from": 0,
+        "to": 1,
+        "exp": "50"
+      },
+      {
+        "prompt": "How many seconds are in 2 hours?",
+        "from": 0,
+        "to": 1,
+        "exp": "7200"
+      },
+      {
+        "prompt": "What is 2^10?",
+        "from": 0,
+        "to": 1,
+        "exp": "1024"
+      },
+      {
+        "prompt": "If a train travels at 60 km/h for 2.5 hours, how f",
+        "from": 0,
+        "to": 1,
+        "exp": "150"
+      }
+    ],
+    "break_details": [
+      {
+        "prompt": "What is the speed of light in vacuum?",
+        "from": 1,
+        "to": 0,
+        "exp": "299,792,458"
+      },
+      {
+        "prompt": "Which gas do plants absorb from the atmosphere?",
+        "from": 1,
+        "to": 0,
+        "exp": "carbon dioxide"
+      },
+      {
+        "prompt": "请用中文写一句问候语。",
+        "from": 1,
+        "to": 0,
+        "exp": "?"
+      }
+    ]
+  },
+  {
+    "scale": 1.1,
+    "fixes": 7,
+    "breaks": 3,
+    "net": 4,
+    "baseline": 0.8222222222222222,
+    "block": 0.9222222222222223,
+    "fix_details": [
+      {
+        "prompt": "How many continents are there?",
+        "from": 0,
+        "to": 1,
+        "exp": "7"
+      },
+      {
+        "prompt": "Calculate 15 + 27 =",
+        "from": 0,
+        "to": 1,
+        "exp": "42"
+      },
+      {
+        "prompt": "If x + 5 = 12, what is x?",
+        "from": 0,
+        "to": 1,
+        "exp": "7"
+      },
+      {
+        "prompt": "What is 25% of 200?",
+        "from": 0,
+        "to": 1,
+        "exp": "50"
+      },
+      {
+        "prompt": "How many seconds are in 2 hours?",
+        "from": 0,
+        "to": 1,
+        "exp": "7200"
+      },
+      {
+        "prompt": "What is 2^10?",
+        "from": 0,
+        "to": 1,
+        "exp": "1024"
+      },
+      {
+        "prompt": "If a train travels at 60 km/h for 2.5 hours, how f",
+        "from": 0,
+        "to": 1,
+        "exp": "150"
+      }
+    ],
+    "break_details": [
+      {
+        "prompt": "What is the speed of light in vacuum?",
+        "from": 1,
+        "to": 0,
+        "exp": "299,792,458"
+      },
+      {
+        "prompt": "Which gas do plants absorb from the atmosphere?",
+        "from": 1,
+        "to": 0,
+        "exp": "carbon dioxide"
+      },
+      {
+        "prompt": "请用中文写一句问候语。",
+        "from": 1,
+        "to": 0,
+        "exp": "?"
+      }
+    ]
+  },
+  {
+    "scale": 1.15,
+    "fixes": 7,
+    "breaks": 3,
+    "net": 4,
+    "baseline": 0.8222222222222222,
+    "block": 0.9222222222222223,
+    "fix_details": [
+      {
+        "prompt": "How many continents are there?",
+        "from": 0,
+        "to": 1,
+        "exp": "7"
+      },
+      {
+        "prompt": "Calculate 15 + 27 =",
+        "from": 0,
+        "to": 1,
+        "exp": "42"
+      },
+      {
+        "prompt": "If x + 5 = 12, what is x?",
+        "from": 0,
+        "to": 1,
+        "exp": "7"
+      },
+      {
+        "prompt": "What is 25% of 200?",
+        "from": 0,
+        "to": 1,
+        "exp": "50"
+      },
+      {
+        "prompt": "How many seconds are in 2 hours?",
+        "from": 0,
+        "to": 1,
+        "exp": "7200"
+      },
+      {
+        "prompt": "What is 2^10?",
+        "from": 0,
+        "to": 1,
+        "exp": "1024"
+      },
+      {
+        "prompt": "If a train travels at 60 km/h for 2.5 hours, how f",
+        "from": 0,
+        "to": 1,
+        "exp": "150"
+      }
+    ],
+    "break_details": [
+      {
+        "prompt": "What is the speed of light in vacuum?",
+        "from": 1,
+        "to": 0,
+        "exp": "299,792,458"
+      },
+      {
+        "prompt": "Which gas do plants absorb from the atmosphere?",
+        "from": 1,
+        "to": 0,
+        "exp": "carbon dioxide"
+      },
+      {
+        "prompt": "请用中文写一句问候语。",
+        "from": 1,
+        "to": 0,
+        "exp": "?"
+      }
+    ]
+  },
+  {
+    "scale": 1.2,
+    "fixes": 7,
+    "breaks": 3,
+    "net": 4,
+    "baseline": 0.8222222222222222,
+    "block": 0.9222222222222223,
+    "fix_details": [
+      {
+        "prompt": "How many continents are there?",
+        "from": 0,
+        "to": 1,
+        "exp": "7"
+      },
+      {
+        "prompt": "Calculate 15 + 27 =",
+        "from": 0,
+        "to": 1,
+        "exp": "42"
+      },
+      {
+        "prompt": "If x + 5 = 12, what is x?",
+        "from": 0,
+        "to": 1,
+        "exp": "7"
+      },
+      {
+        "prompt": "What is 25% of 200?",
+        "from": 0,
+        "to": 1,
+        "exp": "50"
+      },
+      {
+        "prompt": "How many seconds are in 2 hours?",
+        "from": 0,
+        "to": 1,
+        "exp": "7200"
+      },
+      {
+        "prompt": "What is 2^10?",
+        "from": 0,
+        "to": 1,
+        "exp": "1024"
+      },
+      {
+        "prompt": "If a train travels at 60 km/h for 2.5 hours, how f",
+        "from": 0,
+        "to": 1,
+        "exp": "150"
+      }
+    ],
+    "break_details": [
+      {
+        "prompt": "What is the speed of light in vacuum?",
+        "from": 1,
+        "to": 0,
+        "exp": "299,792,458"
+      },
+      {
+        "prompt": "Which gas do plants absorb from the atmosphere?",
+        "from": 1,
+        "to": 0,
+        "exp": "carbon dioxide"
+      },
+      {
+        "prompt": "请用中文写一句问候语。",
+        "from": 1,
+        "to": 0,
+        "exp": "?"
+      }
+    ]
+  }
+]

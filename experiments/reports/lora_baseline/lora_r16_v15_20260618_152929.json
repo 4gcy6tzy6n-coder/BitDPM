@@ -1,0 +1,1137 @@
+{
+  "summary": {
+    "model": "Qwen/Qwen2.5-0.5B-Instruct",
+    "benchmark_set": "v15",
+    "train_samples": 120,
+    "rank": 16,
+    "alpha": 32,
+    "epochs": 1,
+    "lr": 0.0002,
+    "total_prompts": 120,
+    "baseline": 0.4666666666666667,
+    "lora": 0.8666666666666667,
+    "delta": 0.4,
+    "fixes": 55,
+    "breaks": 7,
+    "net": 48,
+    "max_tokens": 64,
+    "deterministic": true
+  },
+  "category_scores": {
+    "router_multiplication": {
+      "baseline": 0.0,
+      "lora": 0.95,
+      "delta": 0.95
+    },
+    "router_core_mixed": {
+      "baseline": 0.05,
+      "lora": 0.75,
+      "delta": 0.7
+    },
+    "router_risky_arithmetic": {
+      "baseline": 0.5,
+      "lora": 1.0,
+      "delta": 0.5
+    },
+    "router_factual_constants": {
+      "baseline": 0.75,
+      "lora": 1.0,
+      "delta": 0.25
+    },
+    "router_commonsense_repairs": {
+      "baseline": 0.6,
+      "lora": 0.55,
+      "delta": -0.05
+    },
+    "router_commonsense_controls": {
+      "baseline": 0.9,
+      "lora": 0.95,
+      "delta": 0.05
+    }
+  },
+  "rows": [
+    {
+      "index": 0,
+      "category": "router_multiplication",
+      "prompt": "What is 9 times 8?",
+      "baseline_score": 0.0,
+      "lora_score": 1.0,
+      "baseline_output": " To find the product of \\(9\\) and \\(8\\), we can use the standard multiplication method. Here are the steps:\n\n1. Write down the numbers one below the other, aligning them by their place values:\n   \\[\n   \\begin{array}{c@{}c}\n     & 9 \\\\\n",
+      "lora_output": " 72. What is 10 times 5? 50. What is 3 times 4? 12. What is 6 times 2? 12. What is 10 times 5? 50. What is 3 times 4? 1"
+    },
+    {
+      "index": 1,
+      "category": "router_multiplication",
+      "prompt": "Compute 9 times 8.",
+      "baseline_score": 0.0,
+      "lora_score": 1.0,
+      "baseline_output": "5, then add the result to 12.\nTo solve the problem step by step:\n\n1. First, calculate \\(9 \\times 8.5\\).\n   - We can perform this multiplication as follows:\n     \\[\n     9 \\times 8.5 = 76.5\n    ",
+      "lora_output": " The answer is 72. What's the problem? You forgot to multiply by 10. 72/10 = 7.2. 7.2 is not an integer. 7.2 is a decimal. 7.2 is not a whole number. 7.2"
+    },
+    {
+      "index": 2,
+      "category": "router_multiplication",
+      "prompt": "What is 12 times 11?",
+      "baseline_score": 0.0,
+      "lora_score": 1.0,
+      "baseline_output": " To find the product of \\(12\\) and \\(11\\), we can use the standard multiplication method. Here are the steps:\n\n1. Write down the numbers one below the other, aligning them by their place values:\n   \\[\n   \\begin{array}{c}\n     12 \\\\\n   ",
+      "lora_output": " 132\n\n12 x 11 = 132\n\n12 x 10 = 120\n\n12 x 15 = 180\n\n12 x 14 = 168\n\n12 x 17 = 204"
+    },
+    {
+      "index": 3,
+      "category": "router_multiplication",
+      "prompt": "Compute 12 times 11.",
+      "baseline_score": 0.0,
+      "lora_score": 1.0,
+      "baseline_output": " What is the result? To find the product of \\(12\\) and \\(11\\), we can use the standard multiplication method or the distributive property. Here, I'll demonstrate using the distributive property:\n\n\\[12 \\times 11 = 12 \\times (10 + 1",
+      "lora_output": " The answer is 132. What's the problem? You forgot to add the zero at the end of one number. 120 x 11 = 1320. 120 + 11 = 131. 131 x 11 ="
+    },
+    {
+      "index": 4,
+      "category": "router_multiplication",
+      "prompt": "What is 21 times 6?",
+      "baseline_score": 0.0,
+      "lora_score": 1.0,
+      "baseline_output": " To find the product of \\(21\\) and \\(6\\), we can use the standard multiplication method. Here are the steps:\n\n1. **Write down the numbers**: We have \\(21\\) on top and \\(6\\) on the bottom.\n2. **Multiply from right to left**:\n   - Start",
+      "lora_output": " 126. Answer: 126. Explanation: 21 x 6 = 126. 21 x 6 = 126. 21 x 6 = 126. 21 x 6 = 126. 2"
+    },
+    {
+      "index": 5,
+      "category": "router_multiplication",
+      "prompt": "Compute 21 times 6.",
+      "baseline_score": 0.0,
+      "lora_score": 1.0,
+      "baseline_output": "5, then add the result to 30.\nTo solve the problem step by step:\n\n1. First, calculate \\(21 \\times 6.5\\).\n   - We can perform this multiplication as follows:\n     \\[\n     21 \\times 6.5 = 21 \\times",
+      "lora_output": " 126 390 126 540 126 780 126 900 126 126 126 126 126 126 126 126"
+    },
+    {
+      "index": 6,
+      "category": "router_multiplication",
+      "prompt": "What is 25 times 4?",
+      "baseline_score": 0.0,
+      "lora_score": 1.0,
+      "baseline_output": " To find the product of \\(25\\) and \\(4\\), we can use the standard multiplication method. Here are the steps:\n\n1. **Write down the numbers**: We have \\(25\\) on top and \\(4\\) on the bottom.\n2. **Multiply from right to left**:\n   - Start",
+      "lora_output": " 100. 100. 1000. 10000. 100000. 1000000. 10000000. 100000000. 10"
+    },
+    {
+      "index": 7,
+      "category": "router_multiplication",
+      "prompt": "Compute 25 times 4.",
+      "baseline_score": 0.0,
+      "lora_score": 0.0,
+      "baseline_output": "6, then add the result to 10.\n\nTo solve the problem step by step:\n\n1. First, calculate \\(25 \\times 4.6\\).\n   \\[\n   25 \\times 4.6 = 25 \\times (4 + 0.6) = (",
+      "lora_output": "8 and round to the nearest tenth. 130.0 (correct answer) 130.0 (correct answer) 130.0 (correct answer) 130.0 (correct answer) 130.0 (correct answer) 130.0"
+    },
+    {
+      "index": 8,
+      "category": "router_multiplication",
+      "prompt": "What is 14 times 13?",
+      "baseline_score": 0.0,
+      "lora_score": 1.0,
+      "baseline_output": " To find the product of \\(14\\) and \\(13\\), we can use the standard multiplication method. Here are the steps:\n\n1. **Write down the numbers**: We have \\(14\\) on top and \\(13\\) on the bottom.\n2. **Multiply from right to left**:\n  ",
+      "lora_output": " 182. What is 50% of 60? 30. What is 75% of 150? 112. What is 25% of 100? 25. What is 10% of 200"
+    },
+    {
+      "index": 9,
+      "category": "router_multiplication",
+      "prompt": "Compute 14 times 13.",
+      "baseline_score": 0.0,
+      "lora_score": 1.0,
+      "baseline_output": " What is the result? To find the product of \\(14\\) and \\(13\\), we can use the standard multiplication method or the distributive property. Here, I'll demonstrate using the distributive property:\n\n\\[14 \\times 13 = 14 \\times (10 + 3",
+      "lora_output": " The answer is 182. What's the problem? You forgot to add the units. 14 x 10 = 140, not 130. Correct! 14 x 13 = 182. Remember to multiply by 10 for the correct"
+    },
+    {
+      "index": 10,
+      "category": "router_multiplication",
+      "prompt": "What is 16 times 15?",
+      "baseline_score": 0.0,
+      "lora_score": 1.0,
+      "baseline_output": " To find the product of \\(16\\) and \\(15\\), we can use the standard multiplication method. Here are the steps:\n\n1. **Write down the numbers with a space between them:**\n   \\[\n   16 \\times 15\n   \\]\n\n2. **Multiply the ones",
+      "lora_output": " 240\n2400\n3200\n8000\n12000\nAnswer: 2400\nExplanation:\n16 x 15 = 240. (16 x 10 = 160; 15"
+    },
+    {
+      "index": 11,
+      "category": "router_multiplication",
+      "prompt": "Compute 16 times 15.",
+      "baseline_score": 0.0,
+      "lora_score": 1.0,
+      "baseline_output": "02, then subtract the result from 34.78.\nTo solve the problem step by step:\n\n1. Calculate \\( 16 \\times 15.02 \\):\n   \\[\n   16 \\times 15.02 = 16 \\times (15",
+      "lora_output": " 240 300 2400 9000\n$18000000000000000000000000000000000000000000"
+    },
+    {
+      "index": 12,
+      "category": "router_multiplication",
+      "prompt": "What is 18 times 7?",
+      "baseline_score": 0.0,
+      "lora_score": 1.0,
+      "baseline_output": " To find the product of \\(18\\) and \\(7\\), we can use the standard multiplication method. Here are the steps:\n\n1. **Write down the numbers**: We have \\(18\\) on top and \\(7\\) on the bottom.\n2. **Multiply from right to left**:\n   - Start",
+      "lora_output": " 126. Answer: 126. Explanation: 18 x 7 = 126. 18 x 7 = 126. 18 x 7 = 126. 18 x 7 = 126. 1"
+    },
+    {
+      "index": 13,
+      "category": "router_multiplication",
+      "prompt": "Compute 18 times 7.",
+      "baseline_score": 0.0,
+      "lora_score": 1.0,
+      "baseline_output": "5, then add the result to 20.\nTo solve the problem step by step:\n\n1. First, calculate \\( 18 \\times 7.5 \\).\n   - We can break this down as follows:\n     \\[\n     18 \\times 7.5 = (18 \\",
+      "lora_output": " 126 134 96 156 102 108 114 120 126 134 156 162 178 194 210 226 "
+    },
+    {
+      "index": 14,
+      "category": "router_multiplication",
+      "prompt": "What is 22 times 5?",
+      "baseline_score": 0.0,
+      "lora_score": 1.0,
+      "baseline_output": " To find the product of \\(22\\) and \\(5\\), we can use the standard multiplication method. Here are the steps:\n\n1. Write down the numbers one below the other:\n   \\[\n   \\begin{array}{r}\n     22 \\\\\n    \\times 5 \\\\\n   \\end{",
+      "lora_output": " 110. Answer: 110. Explanation: 22 x 5 = 110. 22 x 5 = 110. 22 x 5 = 110. 22 x 5 = 110. 2"
+    },
+    {
+      "index": 15,
+      "category": "router_multiplication",
+      "prompt": "Compute 22 times 5.",
+      "baseline_score": 0.0,
+      "lora_score": 1.0,
+      "baseline_output": "4, then add the result to 10.\n\nTo solve the problem step by step:\n\n1. First, calculate \\(22 \\times 5.4\\).\n   - We can break this down into simpler steps:\n     \\[\n     22 \\times 5.4 = (20 +",
+      "lora_output": " 110 110 110 110 110 110 110 110 110 110 110 110 110 110 110 110"
+    },
+    {
+      "index": 16,
+      "category": "router_multiplication",
+      "prompt": "What is 17 times 9?",
+      "baseline_score": 0.0,
+      "lora_score": 1.0,
+      "baseline_output": " To find the product of \\(17\\) and \\(9\\), we can use the standard multiplication method. Here are the steps:\n\n1. **Write down the numbers**: We have \\(17\\) on top and \\(9\\) on the bottom.\n2. **Multiply from right to left**:\n   - Start",
+      "lora_output": " 153. 630. 243. 810. 360. 480. 630. 243. 810. 360. 480. 630. 243"
+    },
+    {
+      "index": 17,
+      "category": "router_multiplication",
+      "prompt": "Compute 17 times 9.",
+      "baseline_score": 0.0,
+      "lora_score": 1.0,
+      "baseline_output": "5, then add the result to 20.\nTo solve the problem step by step:\n\n1. First, calculate \\( 17 \\times 9.5 \\).\n   - We can break this down as follows:\n     \\[\n     17 \\times 9.5 = 17 \\",
+      "lora_output": " The answer is 153. What's the problem? You forgot a zero in multiplication. 17 x 9 = 153. 10 x 9 = 90. 17 x 9 = 153. 17 x 9 = 1"
+    },
+    {
+      "index": 18,
+      "category": "router_multiplication",
+      "prompt": "What is 13 times 12?",
+      "baseline_score": 0.0,
+      "lora_score": 1.0,
+      "baseline_output": " To find the product of \\(13\\) and \\(12\\), we can use the standard multiplication method. Here are the steps:\n\n1. **Write down the numbers**: We have \\(13\\) on top and \\(12\\) on the bottom.\n2. **Multiply**:\n   - Start with \\(",
+      "lora_output": " 156. What is 40% of 80? 32. What is 75% of 150? 112. What is 25% of 100? 25. What is 10% of 200"
+    },
+    {
+      "index": 19,
+      "category": "router_multiplication",
+      "prompt": "Compute 13 times 12.",
+      "baseline_score": 0.0,
+      "lora_score": 1.0,
+      "baseline_output": "5, then add the result to 70.\nTo solve the problem step by step:\n\n1. First, calculate \\( 13 \\times 12.5 \\).\n   - We can break this down as follows:\n     \\[\n     13 \\times 12.5 = (1",
+      "lora_output": " 156 156 156 156 156 156 156 156 156 156 156 156 156 156 156 156"
+    },
+    {
+      "index": 20,
+      "category": "router_core_mixed",
+      "prompt": "What is the distance from (0,0) to (3,4)?",
+      "baseline_score": 0.0,
+      "lora_score": 1.0,
+      "baseline_output": " To find the distance between two points \\((x_1, y_1)\\) and \\((x_2, y_2)\\) in a Cartesian plane, we use the distance formula:\n\n\\[\nd = \\sqrt{(x_2 - x_1)^2 + (y_2 - y",
+      "lora_output": " 5 units. 6 units. 7 units. 8 units. 9 units. 10 units. 12 units. 13 units. 14 units. 15 units. 16 units. 17 units. 18 units. 19 units"
+    },
+    {
+      "index": 21,
+      "category": "router_core_mixed",
+      "prompt": "What is the distance from (0,0) to (5,12)?",
+      "baseline_score": 0.0,
+      "lora_score": 1.0,
+      "baseline_output": " Express your answer as a common fraction.\nTo find the distance between two points \\((x_1, y_1)\\) and \\((x_2, y_2)\\) in a Cartesian plane, we use the distance formula:\n\n\\[\nd = \\sqrt{(x_2 - x_1)^",
+      "lora_output": " 13 units. 13√2 units. 13√3 units. 13√4 units. 13√6 units. 13√8 units. 13√10 units. 13√12 units. 13√15 units."
+    },
+    {
+      "index": 22,
+      "category": "router_core_mixed",
+      "prompt": "What is the distance from (0,0) to (8,15)?",
+      "baseline_score": 0.0,
+      "lora_score": 0.0,
+      "baseline_output": " To find the distance between two points \\((x_1, y_1)\\) and \\((x_2, y_2)\\) in a Cartesian plane, we use the distance formula:\n\n\\[\nd = \\sqrt{(x_2 - x_1)^2 + (y_2 - y",
+      "lora_output": " 8.33 units. Approximately 8.34 units. 8.32 units. 8.36 units. 8.37 units. 8.39 units. 8.35 units. 8.38 units. 8.36 units."
+    },
+    {
+      "index": 23,
+      "category": "router_core_mixed",
+      "prompt": "What is the distance from (0,0) to (7,24)?",
+      "baseline_score": 0.0,
+      "lora_score": 0.0,
+      "baseline_output": " Express your answer in simplest radical form.\nTo find the distance between two points \\((x_1, y_1)\\) and \\((x_2, y_2)\\) in a Cartesian plane, we use the distance formula:\n\n\\[\nd = \\sqrt{(x_2 - x_1)^",
+      "lora_output": " 7√5 units. Approximately 13.8 units. 16 units. 19.6 units. 15.8 units. 12.5 units. 14.5 units. 13.5 units. 14.8 units. 13"
+    },
+    {
+      "index": 24,
+      "category": "router_core_mixed",
+      "prompt": "What is the distance from (0,0) to (9,12)?",
+      "baseline_score": 0.0,
+      "lora_score": 1.0,
+      "baseline_output": " To find the distance between two points \\((x_1, y_1)\\) and \\((x_2, y_2)\\) in a Cartesian plane, we use the distance formula:\n\n\\[\nd = \\sqrt{(x_2 - x_1)^2 + (y_2 - y",
+      "lora_output": " 9 units. 3 units. 6 units. 8 units. 7 units. 5 units. 4 units. 10 units. 12 units. 11 units. 13 units. 14 units. 15 units. 16 units. "
+    },
+    {
+      "index": 25,
+      "category": "router_core_mixed",
+      "prompt": "What is the distance from (0,0) to (20,21)?",
+      "baseline_score": 0.0,
+      "lora_score": 0.0,
+      "baseline_output": " To find the distance between two points \\((x_1, y_1)\\) and \\((x_2, y_2)\\), we use the distance formula:\n\n\\[\nd = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}\n",
+      "lora_output": " 21 units. 20 units. 21√2 units. 21√3 units. 45 units. 21/√2 units. 21/√3 units. 21/√6 units. 21/√7 units. 21"
+    },
+    {
+      "index": 26,
+      "category": "router_core_mixed",
+      "prompt": "What is the distance from (0,0) to (12,16)?",
+      "baseline_score": 0.0,
+      "lora_score": 1.0,
+      "baseline_output": " To find the distance between two points \\((x_1, y_1)\\) and \\((x_2, y_2)\\), we use the distance formula:\n\n\\[\nd = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}\n",
+      "lora_output": " 14 units. 13 units. 15 units. 16 units. 17 units. 18 units. 19 units. 20 units. 21 units. 22 units. 23 units. 24 units. 25 units"
+    },
+    {
+      "index": 27,
+      "category": "router_core_mixed",
+      "prompt": "What is the distance from (0,0) to (15,20)?",
+      "baseline_score": 0.0,
+      "lora_score": 0.0,
+      "baseline_output": " To find the distance between two points \\((x_1, y_1)\\) and \\((x_2, y_2)\\) in a Cartesian plane, we use the distance formula:\n\n\\[\nd = \\sqrt{(x_2 - x_1)^2 + (y_2 - y",
+      "lora_output": " 15 units. 35 units. 45 units. 60 units. 75 units. 85 units. 90 units. 105 units. 120 units. 135 units. 150 units. 165 units"
+    },
+    {
+      "index": 28,
+      "category": "router_core_mixed",
+      "prompt": "What is log base 10 of 1000?",
+      "baseline_score": 0.0,
+      "lora_score": 1.0,
+      "baseline_output": " To find the logarithm (base 10) of 1000, we use the formula:\n\n\\[\n\\log_{10}(1000)\n\\]\n\nUsing a calculator or logarithm table, we can determine that:\n\n\\[\n\\log_{10}(1000)",
+      "lora_output": " 3. What is the value of 2^5? 32. What is the value of 4^2? 16. What is the value of 8^3? 512. What is the value of 2^7? 128. What is the"
+    },
+    {
+      "index": 29,
+      "category": "router_core_mixed",
+      "prompt": "What is log base 10 of 100000?",
+      "baseline_score": 0.0,
+      "lora_score": 1.0,
+      "baseline_output": " To find the logarithm (base 10) of 100000, we use the formula:\n\n\\[\n\\log_{10}(100000)\n\\]\n\nUsing a calculator or logarithm table, we can determine that:\n\n\\[\n\\log_{10}(1",
+      "lora_output": " 4.605257... (rounded to four decimal places) What does this mean in terms of powers? 10^4 = 100000 (base 10) 10^5 = 1000000 (base 10"
+    },
+    {
+      "index": 30,
+      "category": "router_core_mixed",
+      "prompt": "What is log base 10 of 100?",
+      "baseline_score": 1.0,
+      "lora_score": 1.0,
+      "baseline_output": " To find the logarithm (base 10) of 100, we use the formula:\n\n\\[\n\\log_{10}(100)\n\\]\n\nUsing a calculator to find the value:\n\n\\[\n\\log_{10}(100) \\approx 2.000",
+      "lora_output": " 2. What is the value of log base 3 of 27? 3. What is the value of log base 5 of 625? 4. What is the value of log base 8 of 64? 5. What is the value of log base 9"
+    },
+    {
+      "index": 31,
+      "category": "router_core_mixed",
+      "prompt": "What is log base 10 of 1000000?",
+      "baseline_score": 0.0,
+      "lora_score": 1.0,
+      "baseline_output": " To find the logarithm (base 10) of 1000000, we use the formula:\n\n\\[\n\\log_{10}(1000000)\n\\]\n\nWe can break this down into simpler steps. First, recognize that \\(100000",
+      "lora_output": " 100. What is the answer? 100. Logarithms are the inverse operation to exponentiation. If you take a number and raise it to a power, you get its logarithm. In this case, 1000000 = 10^6. So"
+    },
+    {
+      "index": 32,
+      "category": "router_core_mixed",
+      "prompt": "What is the mean of 4, 8, 12, and 16?",
+      "baseline_score": 0.0,
+      "lora_score": 1.0,
+      "baseline_output": " To find the mean of a set of numbers, you add up all the numbers and then divide by the count of numbers. Here are the steps:\n\n1. Add up the numbers: \\(4 + 8 + 12 + 16\\)\n2. Divide the sum by the number of values (which",
+      "lora_output": " 10.5\nMean = (4+8+12+16)/4 = 30/4 = 7.5\nThe mean is 7.5. The median is 12.\nMedian = 12\nMode = 12\nRange = 16"
+    },
+    {
+      "index": 33,
+      "category": "router_core_mixed",
+      "prompt": "What is the mean of 5, 10, 15, and 20?",
+      "baseline_score": 0.0,
+      "lora_score": 0.0,
+      "baseline_output": " To find the mean of a set of numbers, you add up all the numbers and then divide by the count of numbers. Here are the steps:\n\n1. Add up the numbers: \\(5 + 10 + 15 + 20\\)\n2. Divide the sum by the number of values (",
+      "lora_output": " 13.5\n16.5\n18\n17.5\n14.5\n15.5\n16\n15.5\n15.5\n15.5\n15.5\n15.5\n15.5\n15"
+    },
+    {
+      "index": 34,
+      "category": "router_core_mixed",
+      "prompt": "What is the mean of 3, 6, 9, and 12?",
+      "baseline_score": 0.0,
+      "lora_score": 1.0,
+      "baseline_output": " To find the mean of a set of numbers, you add up all the numbers and then divide by the count of numbers. Here are the steps:\n\n1. Add up the numbers: \\(3 + 6 + 9 + 12\\).\n2. Divide the sum by the number of values in the set",
+      "lora_output": " 8.5\nMean = (3 + 6 + 9 + 12) / 4 = 20/4 = 5\nCorrect answer: 5.5. Explanation: The sum is 30, so the mean is 30/4 = 7.5"
+    },
+    {
+      "index": 35,
+      "category": "router_core_mixed",
+      "prompt": "What is the mean of 2, 4, 6, and 8?",
+      "baseline_score": 0.0,
+      "lora_score": 1.0,
+      "baseline_output": " To find the mean of a set of numbers, you add up all the numbers and then divide by how many numbers there are. Here's how we do it step-by-step:\n\n1. Add up the numbers: \\(2 + 4 + 6 + 8 = 20\\).\n2. Count the",
+      "lora_output": " 5.0\n13.0\n7.0\n9.0\n10.0\nAnswer: 7.0\n\nExplanation:\nThe mean (average) is calculated by summing all numbers and dividing by count. Here's how it works for this set: (2+4+6"
+    },
+    {
+      "index": 36,
+      "category": "router_core_mixed",
+      "prompt": "What is the mean of 10, 20, 30, and 40?",
+      "baseline_score": 0.0,
+      "lora_score": 1.0,
+      "baseline_output": " To find the mean of a set of numbers, you add up all the numbers and then divide by the count of numbers. Here are the steps:\n\n1. Add up the numbers: \\(10 + 20 + 30 + 40\\)\n   \\(10 + 20 = ",
+      "lora_output": " 25. What percentage does this represent? Approximately 25%. 80% (8/10 * 100) 25% (25/100 * 100) 25% (25/100 * 100)"
+    },
+    {
+      "index": 37,
+      "category": "router_core_mixed",
+      "prompt": "What is the mean of 1, 3, 5, and 7?",
+      "baseline_score": 0.0,
+      "lora_score": 1.0,
+      "baseline_output": " To find the mean of a set of numbers, you add up all the numbers and then divide by the count of numbers. Here are the steps:\n\n1. Add up the numbers: \\(1 + 3 + 5 + 7\\).\n2. Divide the sum by the number of values in the set (",
+      "lora_output": " 4.25\nMean = (1+3+5+7)/4 = 16/4 = 4.25\nCorrect! The mean of 1, 3, 5, and 7 is 4.25. Each number adds up to 16,"
+    },
+    {
+      "index": 38,
+      "category": "router_core_mixed",
+      "prompt": "What is the mean of 6, 12, 18, and 24?",
+      "baseline_score": 0.0,
+      "lora_score": 1.0,
+      "baseline_output": " To find the mean of a set of numbers, you add up all the numbers and then divide by the count of numbers. Here are the steps:\n\n1. Add up the numbers: \\(6 + 12 + 18 + 24\\)\n2. Divide the sum by the number of values (",
+      "lora_output": " 15.0\n13.0\n17.0\n19.0\n16.0\nAnswer: 15.0\nExplanation: (6+12+18+24)/4 = 15.0\nMean = sum/number of values ="
+    },
+    {
+      "index": 39,
+      "category": "router_core_mixed",
+      "prompt": "What is the mean of 8, 16, 24, and 32?",
+      "baseline_score": 0.0,
+      "lora_score": 1.0,
+      "baseline_output": " To find the mean of a set of numbers, you add up all the numbers and then divide by the count of numbers. Here are the steps:\n\n1. Add up the numbers: \\(8 + 16 + 24 + 32\\)\n2. Divide the sum by the number of values (",
+      "lora_output": " 20.5\n20.5\n20.5\n20.5\n20.5\n20.5\n20.5\n20.5\n20.5\n20.5\n20.5\n20.5\n20."
+    },
+    {
+      "index": 40,
+      "category": "router_risky_arithmetic",
+      "prompt": "What is 37 + 45?",
+      "baseline_score": 1.0,
+      "lora_score": 1.0,
+      "baseline_output": " To solve the problem of adding 37 and 45, we can follow these steps:\n\n1. Start with the number 37.\n2. Add the next whole number, which is 45.\n\nSo, \\(37 + 45 = 82\\).\n\nTherefore, the answer is",
+      "lora_output": " 82\n\n102\n\n122\n\n92\n\n62\n\n102\n\nExplanation: 37 + 45 = 82. The answer is 82. 37 + 45 = 82. Explanation: 37 + 45"
+    },
+    {
+      "index": 41,
+      "category": "router_risky_arithmetic",
+      "prompt": "What is 56 + 29?",
+      "baseline_score": 0.0,
+      "lora_score": 1.0,
+      "baseline_output": " To solve the problem of adding 56 and 29, we can break it down into simpler steps.\n\n1. **Start with the numbers:**\n   \\[\n   56\n   \\]\n   \\[\n   29\n   \\]\n\n2. **Add the units digits:**\n  ",
+      "lora_output": " 85\n\n105\n\n34 + 7 = 41\n\n42\n\n12 x 3 = 36\n\n39\n\n12 ÷ 3 = 4\n\n18\n\n12 + 3 = 15\n\n18\n\n12 - "
+    },
+    {
+      "index": 42,
+      "category": "router_risky_arithmetic",
+      "prompt": "What is 123 + 77?",
+      "baseline_score": 1.0,
+      "lora_score": 1.0,
+      "baseline_output": " To solve the problem of adding 123 and 77, you simply add the two numbers together:\n\n\\[ 123 + 77 = 200 \\]\n\nSo, \\( 123 + 77 = 200 \\).",
+      "lora_output": " 200\n\n190\n\n150\n\n200\n\n240\n\n260\n\n280\n\n200\n\n220\n\n240\n\n260\n\n280\n\n200\n\n220\n\n240\n\n260"
+    },
+    {
+      "index": 43,
+      "category": "router_risky_arithmetic",
+      "prompt": "What is 208 + 315?",
+      "baseline_score": 1.0,
+      "lora_score": 1.0,
+      "baseline_output": " To solve the problem of adding 208 and 315, you simply add the two numbers together:\n\n\\[ 208 + 315 = 523 \\]\n\nSo, \\( 208 + 315 = 523 \\).",
+      "lora_output": " 523. What is 496 - 173? 323. What is 120 x 15? 1800. What is 120 / 15? 8. What is 120 + 15?"
+    },
+    {
+      "index": 44,
+      "category": "router_risky_arithmetic",
+      "prompt": "What is 91 + 64?",
+      "baseline_score": 0.0,
+      "lora_score": 1.0,
+      "baseline_output": " To solve the problem of adding 91 and 64, we can break it down into simpler steps.\n\nFirst, let's add the numbers in each decimal place:\n\n1. Add the units place: \\(1 + 4 = 5\\)\n2. Add the tens place: \\(9 + 6",
+      "lora_output": " 155\n\n203\n\n87\n\n155\n\n155\n\n155\n\n155\n\n155\n\n155\n\n155\n\n155\n\n155\n\n155\n\n155\n\n155\n\n155\n\n"
+    },
+    {
+      "index": 45,
+      "category": "router_risky_arithmetic",
+      "prompt": "What is 72 + 38?",
+      "baseline_score": 1.0,
+      "lora_score": 1.0,
+      "baseline_output": " To solve the problem of adding 72 and 38, you simply add the two numbers together:\n\n\\[ 72 + 38 = 110 \\]\n\nSo, \\( 72 + 38 = 110 \\).",
+      "lora_output": " 110. What is 56 - 49? 7. What is 12 x 3? 36. What is 15 ÷ 3? 5. What is 100 + 20? 120. What is 1"
+    },
+    {
+      "index": 46,
+      "category": "router_risky_arithmetic",
+      "prompt": "What is 145 + 255?",
+      "baseline_score": 1.0,
+      "lora_score": 1.0,
+      "baseline_output": " To solve the problem of adding 145 and 255, you simply add the two numbers together:\n\n\\[ 145 + 255 = 400 \\]\n\nSo, \\( 145 + 255 = 400 \\).",
+      "lora_output": " 400\n\n170\n\n300\n\n600\n\n800\n\nAnswer: 300\n\nExplanation: 145 + 255 = 400. (145+255=400)"
+    },
+    {
+      "index": 47,
+      "category": "router_risky_arithmetic",
+      "prompt": "What is 333 + 444?",
+      "baseline_score": 1.0,
+      "lora_score": 1.0,
+      "baseline_output": " To solve the problem of adding 333 and 444, you simply add the two numbers together:\n\n\\[ 333 + 444 = 777 \\]\n\nSo, \\( 333 + 444 = 777 \\).",
+      "lora_output": " 777\n\n1000\n\n2000\n\n5000\n\n6666\n\n8333\n\n9999\n\n10000\n\n11111\n\n12345\n\n13567\n\n14678"
+    },
+    {
+      "index": 48,
+      "category": "router_risky_arithmetic",
+      "prompt": "What is 88 + 67?",
+      "baseline_score": 0.0,
+      "lora_score": 1.0,
+      "baseline_output": " To solve the problem \\(88 + 67\\), we can follow these steps:\n\n1. Start with the number 88.\n2. Add the next whole number, which is 67.\n\nSo, we write down 88 and then add 67 to it:\n\\[ 88",
+      "lora_output": " 155\n\n234 + 9 = 243\n\n100 - 25 = 75\n\n12 x 3 = 36\n\n15 ÷ 3 = 5\n\n12 + 15 = 27\n\n12 × "
+    },
+    {
+      "index": 49,
+      "category": "router_risky_arithmetic",
+      "prompt": "What is 19 + 27?",
+      "baseline_score": 1.0,
+      "lora_score": 1.0,
+      "baseline_output": " To solve the problem of adding 19 and 27, we can follow these steps:\n\n1. Start with the number 19.\n2. Add the next whole number, which is 27.\n\nSo, \\(19 + 27 = 46\\).\n\nTherefore, the answer is",
+      "lora_output": " 46\n\n19 + 27 = 46\n\nYou can also add them by adding the ones and tens separately. 10 + 20 = 30, then 9 + 7 = 16, so 30 + 16 = 46.\n\n"
+    },
+    {
+      "index": 50,
+      "category": "router_risky_arithmetic",
+      "prompt": "What is the square root of 144?",
+      "baseline_score": 0.0,
+      "lora_score": 1.0,
+      "baseline_output": " To find the square root of 144, we can follow these steps:\n\n1. **Identify the perfect squares around 144**: \n   - \\(9^2 = 81\\)\n   - \\(10^2 = 100\\)\n\n2. **Determine which",
+      "lora_output": " 12.000000000000001 (rounded to 6 decimal places) 12.000000 12.000000000000001 (exact value) 12."
+    },
+    {
+      "index": 51,
+      "category": "router_risky_arithmetic",
+      "prompt": "What is the square root of 169?",
+      "baseline_score": 0.0,
+      "lora_score": 1.0,
+      "baseline_output": " To find the square root of 169, we can follow these steps:\n\n1. **Identify the number to be squared**: The number given is 169.\n2. **Understand what a square root represents**: The square root of a number \\( x \\) is a value that, when",
+      "lora_output": " 13. What is the cube root of 27? 3.58. What is the square root of 400? 20. What is the cube root of 64? 4. What is the square root of 121? 11. What"
+    },
+    {
+      "index": 52,
+      "category": "router_risky_arithmetic",
+      "prompt": "What is the square root of 196?",
+      "baseline_score": 1.0,
+      "lora_score": 1.0,
+      "baseline_output": " To find the square root of 196, we can follow these steps:\n\n1. **Identify the perfect squares around 196**: \n   - \\(14^2 = 196\\)\n   - \\(15^2 = 225\\) (which is greater than",
+      "lora_output": " 14. What is the square root of 250? 15. What is the square root of 36? 6. What is the square root of 81? 9. What is the square root of 72? 8. What is the square root of"
+    },
+    {
+      "index": 53,
+      "category": "router_risky_arithmetic",
+      "prompt": "What is the square root of 225?",
+      "baseline_score": 0.0,
+      "lora_score": 1.0,
+      "baseline_output": " To find the square root of 225, we can follow these steps:\n\n1. Identify the perfect squares around 225.\n   - The perfect square closest to 225 is \\(16^2 = 256\\).\n   - Since \\(256 < 22",
+      "lora_output": " 15.0 (rounded to two decimal places) To find the square root of 225, you can use a calculator or estimate it by recognizing perfect squares around 225. The closest perfect squares are 225 and 400. Since 225 is closer to"
+    },
+    {
+      "index": 54,
+      "category": "router_risky_arithmetic",
+      "prompt": "What is the square root of 256?",
+      "baseline_score": 0.0,
+      "lora_score": 1.0,
+      "baseline_output": " To find the square root of 256, we can follow these steps:\n\n1. **Understand the problem**: We need to determine what number, when multiplied by itself, gives us 256.\n\n2. **Set up the equation**: Let \\( x \\) be the number whose square root we",
+      "lora_output": " 16. What is the cube root of 27? 3. What is the square root of 49? 7? What is the cube root of 81? 3. What is the square root of 100? 10? What is the cube root of"
+    },
+    {
+      "index": 55,
+      "category": "router_risky_arithmetic",
+      "prompt": "What is the square root of 81?",
+      "baseline_score": 1.0,
+      "lora_score": 1.0,
+      "baseline_output": " To find the square root of 81, we need to determine a number that, when multiplied by itself, gives us 81. Let's go through the steps:\n\n1. Identify the perfect squares around 81.\n   - \\(9 \\times 9 = 81\\)\n   - Therefore",
+      "lora_output": " 9.54... (rounded to two decimal places) The square root of 81 is 9.54. When rounded to two decimal places, it's approximately 9.54. However, if you're looking for a whole number, it's 9.54. If you"
+    },
+    {
+      "index": 56,
+      "category": "router_risky_arithmetic",
+      "prompt": "What is the square root of 121?",
+      "baseline_score": 0.0,
+      "lora_score": 1.0,
+      "baseline_output": " To find the square root of 121, we can follow these steps:\n\n1. Identify the number whose square root we need to find. In this case, it is 121.\n2. Write down the number under a bar: \\(\\sqrt{121}\\).\n3. Recognize",
+      "lora_output": " 11.000000000000003 (rounded to 6 decimal places) 11.000000 11.000000000000003 (exact value) 11."
+    },
+    {
+      "index": 57,
+      "category": "router_risky_arithmetic",
+      "prompt": "What is the square root of 400?",
+      "baseline_score": 0.0,
+      "lora_score": 1.0,
+      "baseline_output": " To find the square root of 400, we can follow these steps:\n\n1. **Understand the problem**: We need to determine what number, when multiplied by itself, gives us 400.\n\n2. **Set up the equation**: Let \\( x \\) be the number whose square root we",
+      "lora_output": " 20. What is the square root of 16? 4. What is the square root of 36? 6. What is the square root of 81? 9. What is the square root of 50? 7. What is the square root of 2"
+    },
+    {
+      "index": 58,
+      "category": "router_risky_arithmetic",
+      "prompt": "What is the square root of 625?",
+      "baseline_score": 1.0,
+      "lora_score": 1.0,
+      "baseline_output": " To find the square root of 625, we can follow these steps:\n\n1. **Understand the problem**: We need to determine a number that, when multiplied by itself, gives us 625.\n\n2. **List the perfect squares close to 625**:\n   - \\(8",
+      "lora_output": " 25. What is the cube root of 1000? 10. What is the fourth root of 81? 3. What is the fifth root of 27? 1. What is the sixth root of 243? 3. What is the seventh"
+    },
+    {
+      "index": 59,
+      "category": "router_risky_arithmetic",
+      "prompt": "What is the square root of 900?",
+      "baseline_score": 0.0,
+      "lora_score": 1.0,
+      "baseline_output": " To find the square root of 900, we can follow these steps:\n\n1. **Identify the perfect squares around 900**: \n   - \\( 81^2 = 6561 \\)\n   - \\( 84^2 = 7056 \\)\n\n",
+      "lora_output": " 30. The answer is 30.5 (rounded to two decimal places). 30.5 is approximately 30.51. 30.5 is closer than 30.6. 30.5 is closer than 30.7. 30"
+    },
+    {
+      "index": 60,
+      "category": "router_factual_constants",
+      "prompt": "What is the approximate acceleration due to gravity on Earth in m/s^2?",
+      "baseline_score": 0.0,
+      "lora_score": 1.0,
+      "baseline_output": " (Round your answer to two decimal places.) To find the approximate acceleration due to gravity on Earth, we can use the formula:\n\n\\[ g = \\frac{4\\pi^2}{L} a \\]\n\nwhere:\n- \\( g \\) is the acceleration due to gravity,\n- \\( L \\) is the",
+      "lora_output": " 9.81 m/s^2\n0.35 m/s^2\n-9.81 m/s^2\n4.9 m/s^2\n6.5 m/s^2\nAnswer: 9.81 m/s^2\nExplanation: Acceleration due to gravity"
+    },
+    {
+      "index": 61,
+      "category": "router_factual_constants",
+      "prompt": "Answer briefly: What is the approximate acceleration due to gravity on Earth in m/s^2?",
+      "baseline_score": 0.0,
+      "lora_score": 1.0,
+      "baseline_output": " To determine the approximate acceleration due to gravity on Earth, we can use the following formula:\n\n\\[ g = \\frac{GM}{R^2} \\]\n\nwhere:\n- \\( g \\) is the acceleration due to gravity,\n- \\( G \\) is the gravitational constant (\\( 6.674 \\",
+      "lora_output": " 9.81 m/s^2. This value varies slightly depending on altitude and latitude. On the equator, it's about 9.78 m/s^2; at 30 degrees north or south, it's around 9.65 m/s^2. The gravitational force decreases"
+    },
+    {
+      "index": 62,
+      "category": "router_factual_constants",
+      "prompt": "Give the standard value: What is the approximate acceleration due to gravity on Earth in m/s^2?",
+      "baseline_score": 1.0,
+      "lora_score": 1.0,
+      "baseline_output": " (Round your answer to two decimal places.)\nTo find the approximate acceleration due to gravity on Earth, we can use the formula:\n\n\\[ g = \\frac{9.81}{\\sqrt{3}} \\]\n\nwhere \\( g \\) is the acceleration due to gravity and \\( \\sqrt{3} \\)",
+      "lora_output": " 9.81 m/s^2. 3.75 m/s^2. 4.90 m/s^2. 6.50 m/s^2. 8.80 m/s^2. 10.20 m/s^2. 12"
+    },
+    {
+      "index": 63,
+      "category": "router_factual_constants",
+      "prompt": "In one short answer, What is the approximate acceleration due to gravity on Earth in m/s^2?",
+      "baseline_score": 1.0,
+      "lora_score": 1.0,
+      "baseline_output": " The approximate acceleration due to gravity on Earth is 9.81 m/s^2.\nIs it possible for a person to jump from a height of 50 meters and land safely on the ground?\nNo, it is not possible for a person to jump from a height of 50 meters and land safely",
+      "lora_output": " 9.81 m/s^2. 3.75 m/s^2. 10.25 m/s^2. 4.95 m/s^2. 6.50 m/s^2. 8.85 m/s^2. 11"
+    },
+    {
+      "index": 64,
+      "category": "router_factual_constants",
+      "prompt": "What is the speed of light in vacuum in meters per second?",
+      "baseline_score": 1.0,
+      "lora_score": 1.0,
+      "baseline_output": " The speed of light in a vacuum is approximately 299,792 kilometers per second. To convert this to meters per second, we need to multiply by 1000 (since there are 1000 meters in a kilometer):\n\n\\[ 299,792 \\",
+      "lora_output": " Approximately 299,792 kilometers per second. Approximately 300,000 km/s. Approximately 300 m/s. Approximately 186,282 miles per hour. Approximately 186,282 km/h. Approximately 185,"
+    },
+    {
+      "index": 65,
+      "category": "router_factual_constants",
+      "prompt": "Answer briefly: What is the speed of light in vacuum in meters per second?",
+      "baseline_score": 1.0,
+      "lora_score": 1.0,
+      "baseline_output": " The speed of light in vacuum is approximately 299,792 kilometers per second. This value has been determined through experiments and observations over many years by scientists around the world. It's important to note that this is a constant value, meaning it doesn't change based on time or location. Instead, it",
+      "lora_output": " Approximately 299,792 kilometers per second. This is about 670,616 miles per hour. It travels at a constant velocity of approximately 300,000 km/s. Light takes about 8 minutes and 54 seconds to travel from Earth to the"
+    },
+    {
+      "index": 66,
+      "category": "router_factual_constants",
+      "prompt": "Give the standard value: What is the speed of light in vacuum in meters per second?",
+      "baseline_score": 1.0,
+      "lora_score": 1.0,
+      "baseline_output": " The speed of light in a vacuum is approximately 299,792 kilometers per second. To convert this to meters per second, we need to multiply by 1000 (since there are 1000 meters in a kilometer):\n\n\\[ 299,792 \\",
+      "lora_output": " 299,792,458 m/s. Approximately 300,000 km/h. 186,282 miles/second. 300,000 km/h. 299,792,458 m/s"
+    },
+    {
+      "index": 67,
+      "category": "router_factual_constants",
+      "prompt": "In one short answer, What is the speed of light in vacuum in meters per second?",
+      "baseline_score": 1.0,
+      "lora_score": 1.0,
+      "baseline_output": " The speed of light in a vacuum is approximately 299,792 kilometers per second (or about 186,282 miles per second). This value has been determined through experiments and observations over many years. It's important to note that this is an average value and can vary slightly depending",
+      "lora_output": " 299,792 kilometers per second. Approximately 300,000 miles per second. Approximately 670,616 miles per second. Approximately 300,000 km/s. Approximately 670,616 km/s. Approximately "
+    },
+    {
+      "index": 68,
+      "category": "router_factual_constants",
+      "prompt": "What is Avogadro's number approximately?",
+      "baseline_score": 0.0,
+      "lora_score": 1.0,
+      "baseline_output": " A. 10^-23 B. 10^23 C. 10^-24 D. 10^24\nAnswer:\n\nC\n\nWhich of the following statements about the relationship between the size of a substance and its density is correct?\nA. The larger the volume,",
+      "lora_output": " 6.022 x 10^23 molecules per mole. How many atoms are in 5 moles of carbon dioxide? Approximately 7.89 x 10^24 atoms. What mass does 1 mole of water weigh? 18 g. How much energy do"
+    },
+    {
+      "index": 69,
+      "category": "router_factual_constants",
+      "prompt": "Answer briefly: What is Avogadro's number approximately?",
+      "baseline_score": 1.0,
+      "lora_score": 1.0,
+      "baseline_output": " Avogadro's number, also known as the molar volume of a substance, is approximately 6.022 × 10^23 molecules per mole. This means that one mole of any given substance contains an average of 6.022 × 10^23 particles or",
+      "lora_output": " 6.022 x 10^23 molecules per mole. Approximately 6.022x10^23 molecules per mole. 6.022 x 10^23 molecules/mol. 6.022 x 10^23 mol"
+    },
+    {
+      "index": 70,
+      "category": "router_factual_constants",
+      "prompt": "Give the standard value: What is Avogadro's number approximately?",
+      "baseline_score": 0.0,
+      "lora_score": 1.0,
+      "baseline_output": " ( )\nA. 10\nB. 10^2\nC. 10^3\nD. 10^4\n\nTo determine the standard value of Avogadro's number, we need to understand what it represents and its approximate value.\n\nAvogadro's number is a fundamental",
+      "lora_output": " 6.022 x 10^23 mol^-1. How many atoms are in a mole of water (H2O)? Approximately 4.58 x 10^23. How many molecules are in 1 liter of H2O? Approximately 6.02"
+    },
+    {
+      "index": 71,
+      "category": "router_factual_constants",
+      "prompt": "In one short answer, What is Avogadro's number approximately?",
+      "baseline_score": 1.0,
+      "lora_score": 1.0,
+      "baseline_output": " Avogadro's number is approximately 6.022 x 10^23 molecules per mole. This means that there are about 6.022 times as many molecules in a mole of any substance as there are atoms or electrons in the same amount of matter.\nIs Avogadro's",
+      "lora_output": " 6.022 x 10^23 molecules per mole. Approximately 6.022x10^23. 6.022*10^23. 6.022*10^23 molecules/mol. 6.02"
+    },
+    {
+      "index": 72,
+      "category": "router_factual_constants",
+      "prompt": "What is the boiling point of water in Celsius?",
+      "baseline_score": 1.0,
+      "lora_score": 1.0,
+      "baseline_output": " The boiling point of water at standard atmospheric pressure (1 atmosphere) is 100 degrees Celsius. However, this can vary slightly depending on the temperature scale used and the specific conditions of the experiment. In some cases, the boiling point may be slightly lower or higher than 100 degrees Celsius. For example",
+      "lora_output": " 100°C. In Fahrenheit, it's 212°F. Water boils at 100°C (373 K) and freezes at 0°C (-273 K). The temperature changes with pressure. At sea level, 1 atmosphere, it's about 15°C"
+    },
+    {
+      "index": 73,
+      "category": "router_factual_constants",
+      "prompt": "Answer briefly: What is the boiling point of water in Celsius?",
+      "baseline_score": 1.0,
+      "lora_score": 1.0,
+      "baseline_output": " The boiling point of water at standard atmospheric pressure (1 atmosphere) is 100 degrees Celsius. This means that water boils at 100 degrees Celsius when it reaches its maximum temperature, which occurs when it is heated to a temperature where all the molecules are moving as fast as they can and no more heat",
+      "lora_output": " 100°C. Water boils at 100°C at sea level and atmospheric pressure. Ice melts below 0°C. Water freezes above 0°C. Water boils at 100°C. Water freezes at 0°C. Water boils at 212°F. Water freezes at "
+    },
+    {
+      "index": 74,
+      "category": "router_factual_constants",
+      "prompt": "Give the standard value: What is the boiling point of water in Celsius?",
+      "baseline_score": 1.0,
+      "lora_score": 1.0,
+      "baseline_output": " To determine the boiling point of water in Celsius, we need to follow these steps:\n\n1. Identify the standard temperature at which water boils.\n2. Convert this temperature from Fahrenheit to Celsius.\n\nThe standard temperature at which water boils under normal conditions (at sea level and 15 degrees Celsius) is 100",
+      "lora_output": " 100°C. 212°F. 373K. 965°F. 400°C. 100°C. 212°F. 373K. 965°F. 400°C. 100"
+    },
+    {
+      "index": 75,
+      "category": "router_factual_constants",
+      "prompt": "In one short answer, What is the boiling point of water in Celsius?",
+      "baseline_score": 1.0,
+      "lora_score": 1.0,
+      "baseline_output": " The boiling point of water at standard atmospheric pressure (1 atmosphere) is 100 degrees Celsius. This means that water boils at 100 degrees Celsius when it reaches its maximum temperature and turns into steam. At sea level, the boiling point of water is approximately 100 degrees Celsius. However,",
+      "lora_output": " 100°C. 373.15 K. 212°F. 96.8°F. 400°F. 100°C. 373.15 K. 212°F. 96.8°F. 4"
+    },
+    {
+      "index": 76,
+      "category": "router_factual_constants",
+      "prompt": "What is the freezing point of water in Celsius?",
+      "baseline_score": 1.0,
+      "lora_score": 1.0,
+      "baseline_output": " The freezing point of water is 0 degrees Celsius. This can be determined by looking up the melting and boiling points of water on a standard temperature scale, which are typically 0 degrees Celsius for the melting point and 100 degrees Celsius for the boiling point. The freezing point is the temperature at which the liquid",
+      "lora_output": " 0°C. In Fahrenheit, it's 32°F. Water freezes at 0°C and boils at 100°C. Ice melts at 0°C and steam rises above 100°C. The temperature remains constant throughout the day. Temperatures drop below 0°C and rise above "
+    },
+    {
+      "index": 77,
+      "category": "router_factual_constants",
+      "prompt": "Answer briefly: What is the freezing point of water in Celsius?",
+      "baseline_score": 1.0,
+      "lora_score": 1.0,
+      "baseline_output": " The freezing point of water is 0 degrees Celsius. This can be determined by looking up the melting and boiling points of water on a standard temperature scale, which is typically Celsius. The freezing point of water is the temperature at which water turns into ice, and it's commonly used as a reference point for measuring temperatures.",
+      "lora_output": " 0°C. In Fahrenheit, it's 32°F. Water freezes at 0°C and boils at 100°C. Ice floats on top. Water expands when it freezes. It expands by about 9% for every degree increase in temperature. This makes ice cubes look smaller than they are."
+    },
+    {
+      "index": 78,
+      "category": "router_factual_constants",
+      "prompt": "Give the standard value: What is the freezing point of water in Celsius?",
+      "baseline_score": 0.0,
+      "lora_score": 1.0,
+      "baseline_output": " To determine the freezing point of water, we need to use the formula for the freezing point depression of a solution. The freezing point depression (\\(\\Delta T_f\\)) is given by:\n\n\\[\n\\Delta T_f = i \\cdot K_f \\cdot m\n\\]\n\nwhere:\n- \\(i\\) is the",
+      "lora_output": " 0°C. The freezing point of water is -100°C. This temperature is below zero degrees on a scale where zero is absolute zero (-273.15°C). On Earth, it's about -40°F. In Fahrenheit, it's around 0°F. Water freezes at "
+    },
+    {
+      "index": 79,
+      "category": "router_factual_constants",
+      "prompt": "In one short answer, What is the freezing point of water in Celsius?",
+      "baseline_score": 1.0,
+      "lora_score": 1.0,
+      "baseline_output": " The freezing point of water is 0 degrees Celsius. This means that at 0 degrees Celsius, all water molecules are frozen into ice crystals and form a solid state. At this temperature, water does not have any kinetic energy to move around freely, so it forms a rigid structure with no gaps or voids between its",
+      "lora_output": " 0°C. -273.15°F. -40°F. 0°F. 0°C. 0°F. 0°C. 0°F. 0°C. 0°F. 0°C. 0°F. 0°C. 0°F. 0"
+    },
+    {
+      "index": 80,
+      "category": "router_commonsense_repairs",
+      "prompt": "How many continents are commonly counted on Earth?",
+      "baseline_score": 0.0,
+      "lora_score": 0.0,
+      "baseline_output": " There are 5 major continents that are commonly counted on Earth. These are:\n\n1. Asia\n2. Africa\n3. North America\n4. South America\n5. Antarctica\n\nThese five continents cover the majority of the surface area of our planet and are collectively known as the \"continent\" or \"continental group",
+      "lora_output": " 5 (Africa, Asia, North America, South America, and Australia). Each continent has a unique name. Antarctica is not included in the count. The Americas include North and South America. Africa includes East, Central, and West. Asia includes East, Southeast, Central, and West. Europe includes Western Europe."
+    },
+    {
+      "index": 81,
+      "category": "router_commonsense_repairs",
+      "prompt": "Answer briefly: How many continents are commonly counted on Earth?",
+      "baseline_score": 0.0,
+      "lora_score": 0.0,
+      "baseline_output": " There are 5 major continents that are commonly counted on Earth. These are:\n\n1. North America\n2. South America\n3. Africa\n4. Asia\n5. Australia\n\nThe other three continents (Europe, Antarctica, and Oceania) are not typically considered part of the \"commonly counted\"",
+      "lora_output": " 5. What is the largest continent by area? Antarctica. How many countries have borders with Antarctica? 14. Which country has the most land? Russia. How many islands in the world? 3,000+ (including those in the Arctic). How many oceans do we have? 1"
+    },
+    {
+      "index": 82,
+      "category": "router_commonsense_repairs",
+      "prompt": "Give the common answer: How many continents are commonly counted on Earth?",
+      "baseline_score": 0.0,
+      "lora_score": 1.0,
+      "baseline_output": " There are 5 major continents that are generally considered to be part of the world's landmass. These are:\n\n1. Asia\n2. Africa\n3. North America\n4. South America\n5. Australia\n\nThe other three continents (Europe, Antarctica, and Oceania) are not typically included in",
+      "lora_output": " 5. However, some countries have their own territories and borders. For example, Australia has 7 continents (Australia, Antarctica, New Zealand, Tasmania, Vanuatu, Norfolk Island, and Wallis and Futuna). The United States also counts 7 continents (Atlantic, Pacific, North American, South America"
+    },
+    {
+      "index": 83,
+      "category": "router_commonsense_repairs",
+      "prompt": "In one short answer, How many continents are commonly counted on Earth?",
+      "baseline_score": 0.0,
+      "lora_score": 1.0,
+      "baseline_output": " 12\nYou are a generation of people who love to learn and share knowledge. We're here to help you find the information you need.\nWhat is your question?\nWe'll do our best to help you!\nThe United Nations has been in existence since 1945. It was founded by the United",
+      "lora_output": " 5.03 billion (2019). 4.87 billion (2016). 5.03 billion (2015). 4.87 billion (2014). 5.03 billion (2013). 4.8"
+    },
+    {
+      "index": 84,
+      "category": "router_commonsense_repairs",
+      "prompt": "Which animal is often called the king of the jungle?",
+      "baseline_score": 1.0,
+      "lora_score": 1.0,
+      "baseline_output": " The answer to this question depends on one's perspective and cultural background. However, some people might consider the elephant as the king of the jungle due to its size, strength, and ability to survive in various environments.\n\nOthers may prefer the lion or the tiger for their status as the kings of the jungle. Both lions and",
+      "lora_output": " Lion. They are apex predators and play a crucial role in maintaining balance. Lions protect their habitats, control populations, and help with pollination. They also have a reputation for being gentle and affectionate. However, they can be dangerous if provoked or injured. Conservation efforts aim to protect them from poaching and habitat loss"
+    },
+    {
+      "index": 85,
+      "category": "router_commonsense_repairs",
+      "prompt": "Answer briefly: Which animal is often called the king of the jungle?",
+      "baseline_score": 0.0,
+      "lora_score": 1.0,
+      "baseline_output": " The answer to this question depends on one's perspective and cultural background. However, some people might call the elephant the king of the jungle due to its size, strength, and ability to navigate through dense forests and jungles.\n\nWhile elephants are indeed considered kings in many cultures, their status as a symbol of power and maj",
+      "lora_output": " Lion. Lions are apex predators and play a crucial role in maintaining balance in the ecosystem. They help control populations of smaller animals, prevent disease, and spread seeds. However, they also pose threats to human livelihoods through poaching and habitat loss. Conservation efforts have helped lion populations recover. 10% of all"
+    },
+    {
+      "index": 86,
+      "category": "router_commonsense_repairs",
+      "prompt": "Give the common answer: Which animal is often called the king of the jungle?",
+      "baseline_score": 1.0,
+      "lora_score": 1.0,
+      "baseline_output": " The answer to this question is **the lion**. Lions are indeed considered the kings of the jungle due to their powerful and intimidating presence, which they use for hunting and defending their territories. They are known for their impressive strength, agility, and ability to communicate through vocalizations. Additionally, lions play a crucial role in",
+      "lora_output": " Lion. Lions are apex predators and play a crucial role in maintaining balance in the ecosystem. They also have a reputation for being fierce and dominant. Elephants, tigers, and gorillas are more commonly associated with leadership roles. However, lions are still revered as kings by many people. Their strength and courage make them"
+    },
+    {
+      "index": 87,
+      "category": "router_commonsense_repairs",
+      "prompt": "In one short answer, Which animal is often called the king of the jungle?",
+      "baseline_score": 0.0,
+      "lora_score": 1.0,
+      "baseline_output": " The answer to this question would depend on your perspective and cultural background. However, some people might call the elephant the king of the jungle due to its size, strength, and ability to navigate through dense forests and jungles.\n\nHowever, it's important to note that elephants are not considered kings in the same way as other",
+      "lora_output": " Lion. Elephants are also important in many cultures. Giraffes have long necks for browsing leaves. Sloths live on trees and sleep during day. Monkeys use tools to catch termites. Ants build nests. Birds migrate. Fish swim. Reptiles lay eggs. Amphibians breathe air."
+    },
+    {
+      "index": 88,
+      "category": "router_commonsense_repairs",
+      "prompt": "What do you call money borrowed that must be repaid?",
+      "baseline_score": 0.0,
+      "lora_score": 1.0,
+      "baseline_output": " Interest. What is the difference between interest and interest rate? Interest is the cost of borrowing money, while an interest rate is the amount charged by a lender for using someone else's money.\n\nIs it possible to have a negative interest rate? Yes, it is possible to have a negative interest rate. In fact, many",
+      "lora_output": " A loan. What is the interest rate on a loan? Interest. How much does it cost to borrow $10,000 at 5% per year? $50. What happens if you pay off the loan early? You owe less. What happens if you don't pay off the loan?"
+    },
+    {
+      "index": 89,
+      "category": "router_commonsense_repairs",
+      "prompt": "Answer briefly: What do you call money borrowed that must be repaid?",
+      "baseline_score": 1.0,
+      "lora_score": 1.0,
+      "baseline_output": " Interest. Interest is the cost of borrowing money, and it's typically calculated as a percentage of the loan amount. When someone borrows money from you or another lender, they are essentially lending their money to you with an interest rate attached. The amount of interest charged depends on several factors, including the length of time the",
+      "lora_output": " Loans. Loans are a form of debt. They're usually short-term and require interest payments. Borrowing money is risky, so lenders want to make sure the borrower can repay. If you borrow too much, it could lead to financial troubles. Loans come in different forms like credit cards, loans from banks, and student"
+    },
+    {
+      "index": 90,
+      "category": "router_commonsense_repairs",
+      "prompt": "Give the common answer: What do you call money borrowed that must be repaid?",
+      "baseline_score": 1.0,
+      "lora_score": 1.0,
+      "baseline_output": " Interest. The term \"interest\" is used to describe the cost of borrowing money, which is typically calculated as a percentage of the loan amount. This interest is then added to the principal (the original amount borrowed) to determine the total amount owed on the loan.\n\nTo break it down further:\n\n1. **Principal**:",
+      "lora_output": " A loan. Borrowing $10,000 from a bank is a loan. You pay interest on it. If you don't repay it, you owe the bank. The bank charges interest. Interest rates vary. Some are low, some high. Loans can be short-term (one year) or long"
+    },
+    {
+      "index": 91,
+      "category": "router_commonsense_repairs",
+      "prompt": "In one short answer, What do you call money borrowed that must be repaid?",
+      "baseline_score": 1.0,
+      "lora_score": 1.0,
+      "baseline_output": " The loan. The interest is the cost of borrowing.\nThe amount of interest paid on a loan depends on several factors including:\n- The length of time for which the loan was taken out\n- The rate at which the lender charges interest\n- The borrower's creditworthiness and ability to repay the loan\n- Any",
+      "lora_output": " Loans. Loans are loans of money. They can be bank loans or personal loans. Banks charge interest on them. Personal loans are usually for cars, homes, etc. You pay back the loan plus interest. If you don't pay it back, you have to pay extra fees. Loans are a big part of our"
+    },
+    {
+      "index": 92,
+      "category": "router_commonsense_repairs",
+      "prompt": "Which star is closest to Earth?",
+      "baseline_score": 1.0,
+      "lora_score": 0.0,
+      "baseline_output": " To determine which star is closest to Earth, we need to consider the distance of each star from Earth. The distance between a star and Earth can be measured in astronomical units (AU), where 1 AU is the average distance from the Sun to Earth.\n\nThe distances of the stars are as follows:\n- Proxima Cent",
+      "lora_output": " Proxima Centauri, located 4.25 light-years away. It's a red dwarf star in the constellation Centaurus. Proxima was named after the Roman god of stars. The distance is so close that it would be visible from Earth if you were standing on its surface. It's also one of"
+    },
+    {
+      "index": 93,
+      "category": "router_commonsense_repairs",
+      "prompt": "Answer briefly: Which star is closest to Earth?",
+      "baseline_score": 1.0,
+      "lora_score": 0.0,
+      "baseline_output": " Mercury, the planet in our solar system that orbits the Sun at a distance of about 57 million miles (90 million kilometers) from the Sun. It takes Mercury 88 days to orbit the Sun once, which makes it one of the fastest-moving planets in our solar system. The planet's proximity to",
+      "lora_output": " Proxima Centauri. It's 4.2 light-years away from us. This star is a red giant and will be dimmer in the future. It's also one of the brightest stars in our night sky. Proxima Centauri is part of the constellation Centaurus. It's named after the"
+    },
+    {
+      "index": 94,
+      "category": "router_commonsense_repairs",
+      "prompt": "Give the common answer: Which star is closest to Earth?",
+      "baseline_score": 1.0,
+      "lora_score": 1.0,
+      "baseline_output": " The Sun. It is approximately 150 million kilometers (93 million miles) away from Earth.\nThe answer is: sun.",
+      "lora_output": " Proxima Centauri. It's 4.25 light-years away from us. This is a very close binary system, with one star about 10% brighter than our Sun. The other star is dimmer and much farther away. Proxima Centauri is also known as Alpha Centauri"
+    },
+    {
+      "index": 95,
+      "category": "router_commonsense_repairs",
+      "prompt": "In one short answer, Which star is closest to Earth?",
+      "baseline_score": 1.0,
+      "lora_score": 0.0,
+      "baseline_output": " The answer is Mercury. It orbits the Sun at a distance of about 57 million miles (90 million kilometers) from the Sun.\nIs there any other planets in our solar system that are closer than Mercury?\nYes, there are several other planets in our solar system that are closer than Mercury:\n1. Venus",
+      "lora_output": " Proxima Centauri. It's 4.2 light-years away from us. Proxima Centauri is a red dwarf star in the constellation Centaurus. It's so bright that it can be seen with the naked eye. Its surface temperature is about 1000°C (1800"
+    },
+    {
+      "index": 96,
+      "category": "router_commonsense_repairs",
+      "prompt": "What fruit is typically yellow and curved?",
+      "baseline_score": 1.0,
+      "lora_score": 0.0,
+      "baseline_output": " The answer to this question is ____\nA. Apple\nB. Pear\nC. Orange\nD. Banana\nAnswer:\n\nSolution: A. Apples are round, not curved; B. Pears are pear-shaped, not yellow; C. Oranges are orange-shaped, not yellow; D. Bananas",
+      "lora_output": " Kiwi. It's a tropical fruit with a long stem. The curved shape makes it easy to pick. Kiwis are native to New Zealand. They're also popular in other parts of the world. Kiwis are known for their tangy flavor, which is why they're often used as a snack or ingredient."
+    },
+    {
+      "index": 97,
+      "category": "router_commonsense_repairs",
+      "prompt": "Answer briefly: What fruit is typically yellow and curved?",
+      "baseline_score": 0.0,
+      "lora_score": 0.0,
+      "baseline_output": " The answer to this question is an apple. Apples are a type of fruit that can be yellow and curved, with their shape often resembling the letter \"C\" or \"V\". They are commonly consumed as a snack or part of a dessert, and are known for their sweet, juicy flesh and crisp texture. Some",
+      "lora_output": " Apples. They have a smooth skin with a curved stem. Apples are delicious for pies, cider, and cooking. Apples are also good for digestion. They contain fiber and antioxidants. Apples are low in calories but high in vitamins C and K. Apples are a great source of vitamin A. App"
+    },
+    {
+      "index": 98,
+      "category": "router_commonsense_repairs",
+      "prompt": "Give the common answer: What fruit is typically yellow and curved?",
+      "baseline_score": 1.0,
+      "lora_score": 0.0,
+      "baseline_output": " The answer to this question is an apple. Apples are known for their bright yellow color, which can vary in hue from light yellow to deep orange or even red depending on the variety. They also have a distinctive curved shape that gives them their name. Other fruits with similar characteristics include bananas, peaches, and p",
+      "lora_output": " Apples. They are round, juicy fruits that ripen in autumn. Apples have a sweet taste and are often eaten fresh or used in pies."
+    },
+    {
+      "index": 99,
+      "category": "router_commonsense_repairs",
+      "prompt": "In one short answer, What fruit is typically yellow and curved?",
+      "baseline_score": 1.0,
+      "lora_score": 0.0,
+      "baseline_output": " The answer to this question would be the banana. Bananas are known for their bright yellow color and curved shape due to their thick skin that allows them to absorb sunlight and produce energy. They also have a sweet, juicy flesh that is often used in many different dishes around the world. While bananas can come in other colors",
+      "lora_output": " Apples. They have a curved shape with a red skin. Apples are delicious and popular in many cuisines around the world. They're also good for digestion! 🍎🍎🍎\n\nWhat's the difference between apples and pears? Pears are rounder and sweeter than apples. They're often"
+    },
+    {
+      "index": 100,
+      "category": "router_commonsense_controls",
+      "prompt": "What is the capital of France?",
+      "baseline_score": 1.0,
+      "lora_score": 1.0,
+      "baseline_output": " The capital of France is Paris. \n\nTo verify this, I will use a simple Python code snippet to confirm that Paris is indeed the capital city of France.\n\n```python\n# Define the capital city of France\ncapital_city = \"Paris\"\n\n# Print the capital city\nprint(capital_city)\n```\n\nWhen I",
+      "lora_output": " Paris\n\nParis, France's capital, is located in the Île de la Cité. It has a population of over 1 million people and is known for its iconic Eiffel Tower. The city is also home to many museums, theaters, and landmarks. Paris is a vibrant cultural hub with a rich history"
+    },
+    {
+      "index": 101,
+      "category": "router_commonsense_controls",
+      "prompt": "Which planet is known as the Red Planet?",
+      "baseline_score": 1.0,
+      "lora_score": 1.0,
+      "baseline_output": " Mars. The Red Planet refers to Mars, which is the fourth planet from the Sun in our solar system and the only one that has a significant atmosphere. It is also known as the \"Red Planet\" because of its reddish appearance due to dust and small rocks on its surface.\n\nMars was once considered a desert",
+      "lora_output": " Mars. It has a reddish color due to iron oxide (rust) on its surface. Mars was once habitable for life, but it's now dry and cold. Its atmosphere is thin and volatile. The climate is harsh with extreme temperatures and dust storms. Exploration missions have shown evidence of ancient water and potential for"
+    },
+    {
+      "index": 102,
+      "category": "router_commonsense_controls",
+      "prompt": "Which organ pumps blood through the body?",
+      "baseline_score": 1.0,
+      "lora_score": 1.0,
+      "baseline_output": " The heart. \n\nThe heart is a muscular organ that pumps blood throughout the body, carrying oxygenated blood from the heart to all parts of the body.\n\nThe heart has four chambers: two atria (upper chambers) and two ventricles (lower chambers). Each chamber is filled with blood, which is then pumped",
+      "lora_output": " Heart. The heart's pumping action moves blood from the right ventricle to the lungs and then back to the left atrium. It also pumps blood throughout the body, delivering oxygen and nutrients. The heart is a muscular organ that contracts 24/7. Blood pressure in arteries increases during exercise. This causes"
+    },
+    {
+      "index": 103,
+      "category": "router_commonsense_controls",
+      "prompt": "What do bees produce?",
+      "baseline_score": 1.0,
+      "lora_score": 1.0,
+      "baseline_output": " Options: - (A) Energy. - (B) honey. - (C) water. - (D) air. - (E) food. Let's have some stream of consciousness first.\n\nTo answer this question, let's consider the following facts about bees and their production:\n\n1. Bees are insects",
+      "lora_output": " Honey. Bees also make wax, pollen, and nectar. They store honey in their hives to eat later. Bees are important pollinators that help plants reproduce. They also provide food for humans. Honey is a sweet treat. It's used in baking, cooking, and as a medicine. Be"
+    },
+    {
+      "index": 104,
+      "category": "router_commonsense_controls",
+      "prompt": "What is the natural satellite of Earth?",
+      "baseline_score": 1.0,
+      "lora_score": 1.0,
+      "baseline_output": " The natural satellite of Earth is called a moon. There are many moons orbiting our planet, including:\n\n1. The Moon (the largest and most familiar)\n2. Mars\n3. Jupiter's moon Europa\n4. Saturn's moon Enceladus\n5. Uranus' moon Triton\n\nEach of",
+      "lora_output": " Moon. It orbits around 384,400 km above the equator. The moon has a diameter of about 1275 km and takes approximately 27 days to orbit Earth once. Its surface temperature can drop below -160°C at night. Despite its small size, it"
+    },
+    {
+      "index": 105,
+      "category": "router_commonsense_controls",
+      "prompt": "What is the opposite of hot?",
+      "baseline_score": 1.0,
+      "lora_score": 1.0,
+      "baseline_output": " The opposite of \"hot\" is \"cold\". \n\nTo explain this in more detail:\n\n1. **Definition**: Hot refers to a temperature or condition that is high and warm, typically above 90°F (32°C) or 4°C.\n\n2. **Opposite Condition**: The opposite of being hot",
+      "lora_output": " Cold. The opposite of cold is warm. Hot and cold are temperature scales. Warm is 20°C, cool is 15°C, and freezing point is -18°C. Temperature scales help us understand weather patterns. They range from -40°C to 60°C. Temperatures below freezing"
+    },
+    {
+      "index": 106,
+      "category": "router_commonsense_controls",
+      "prompt": "What do we call frozen water?",
+      "baseline_score": 1.0,
+      "lora_score": 1.0,
+      "baseline_output": " - liquid water  - ice water  - vapor water  - solid water  - super cold water\nThe answer is \"solid water\"",
+      "lora_output": " Ice. Water that is solid at room temperature (0°C). Freezing point of water is 0°C. Ice melts into liquid when it reaches 0°C. Water freezes at -10°C. Ice turns to water as the temperature drops below freezing. Water boils at 100°C. Water evapor"
+    },
+    {
+      "index": 107,
+      "category": "router_commonsense_controls",
+      "prompt": "What vehicle runs on rails?",
+      "baseline_score": 1.0,
+      "lora_score": 0.0,
+      "baseline_output": " Options: - train carriages - electric car - bus - subway - airplane A subway is a type of vehicle that runs on rails. Subways are underground transportation systems in cities around the world. Therefore, the answer is subways.",
+      "lora_output": " Electric cars. They use electricity from batteries to charge and run. Batteries store energy, then release it when needed. Charging is done by plugging into an electrical outlet. Cars can be electric or hybrid. Hybrid cars have both internal combustion engines and electric motors. Hybrid cars are more fuel-efficient than pure electric ones."
+    },
+    {
+      "index": 108,
+      "category": "router_commonsense_controls",
+      "prompt": "What is used to unlock a door?",
+      "baseline_score": 1.0,
+      "lora_score": 1.0,
+      "baseline_output": " Options: - keychain - keys - lock - keychain keychain\n\nTo unlock a door, you use a keychain. A keychain has a key that can be inserted into the lock of a door. The keychain is used to open the door. Therefore, the answer is keychain.",
+      "lora_output": " A key. Keys open locks. Keys are usually made of metal and have a lock on the handle. You can find keys in drawers, cabinets, or on shelves. Some locks require special tools like a combination lock. If you don't know how to use a key, ask someone else for help. Keychain keys"
+    },
+    {
+      "index": 109,
+      "category": "router_commonsense_controls",
+      "prompt": "What is the opposite of empty?",
+      "baseline_score": 0.0,
+      "lora_score": 1.0,
+      "baseline_output": " The opposite of an empty set is a non-empty set. \n\nTo explain this in more detail:\n\n1. An empty set, denoted by ∅ or {}, is a set that contains no elements.\n2. The complement of an empty set, denoted by ∅', is also an empty set because it contains",
+      "lora_output": " Full. Empty means lacking or not present. Full means having something. A full cup of water fills a container. An empty cup does not fill anything. The opposite of \"full\" would be \"empty.\" Water in a cup empties out. In this case, an empty cup has no contents. It's like"
+    },
+    {
+      "index": 110,
+      "category": "router_commonsense_controls",
+      "prompt": "Answer briefly: What is the capital of France?",
+      "baseline_score": 1.0,
+      "lora_score": 1.0,
+      "baseline_output": " The capital of France is Paris. It is located in the south-central region of the country and is the largest city in Europe by population. Paris is known for its rich history, beautiful architecture, and vibrant culture, making it a popular tourist destination. Other important cities in France include Lyon, Marseille, and Toulouse.",
+      "lora_output": " Paris. It's a big city with many landmarks and attractions. Paris has been a major center for culture, politics, and business since ancient times. Today, it's known as one of the world's most famous cities. The Eiffel Tower stands as a symbol of French history and culture. Paris also hosts numerous"
+    },
+    {
+      "index": 111,
+      "category": "router_commonsense_controls",
+      "prompt": "Answer briefly: Which planet is known as the Red Planet?",
+      "baseline_score": 1.0,
+      "lora_score": 1.0,
+      "baseline_output": " Mars. The Red Planet refers to Mars, which is the fourth planet from the Sun in our solar system and is known for its reddish appearance due to the presence of iron oxide (rust) on its surface. It was named after the Roman god of war, Mars, who was often depicted with a red shield or",
+      "lora_output": " Mars. It has a reddish color due to iron oxide (rust) on its surface. Mars was once habitable for life, but it's now dry and cold. Its atmosphere is thin and volatile. The climate is harsh with extreme temperatures and dust storms. Exploration missions have shown evidence of ancient water and potential for"
+    },
+    {
+      "index": 112,
+      "category": "router_commonsense_controls",
+      "prompt": "Answer briefly: Which organ pumps blood through the body?",
+      "baseline_score": 0.0,
+      "lora_score": 1.0,
+      "baseline_output": " The liver. The liver is a large, bean-shaped organ located in the upper right part of the abdomen. It's an important organ that plays a crucial role in many bodily functions, including digestion, metabolism, and detoxification. The liver produces bile, which helps to break down fats; it also releases enzymes that aid",
+      "lora_output": " Heart. The heart's pumping action moves blood throughout the circulatory system, delivering oxygen and nutrients to tissues. It also removes waste products. Blood pressure in arteries is regulated by the heart. Blood pressure increases during exercise or stress. Blood pressure decreases after rest. Blood pressure varies from person to person. High blood pressure can"
+    },
+    {
+      "index": 113,
+      "category": "router_commonsense_controls",
+      "prompt": "Answer briefly: What do bees produce?",
+      "baseline_score": 1.0,
+      "lora_score": 1.0,
+      "baseline_output": " Bees produce honey, which is a sweet liquid that is used as a food source for many animals. Honey is also used in the production of other products such as candles and cosmetics. Bees also produce wax, which is a sticky substance that is used to build their hives and to make their own tools. Additionally",
+      "lora_output": " Honey. They store it in honeycomb and sell it to humans. It's a sweet treat! Honey is also used as a medicine. Bees collect nectar from flowers, which they convert into honey through fermentation. This process releases beneficial enzymes that help the plant grow stronger. Honey also contains antioxidants and vitamins. It"
+    },
+    {
+      "index": 114,
+      "category": "router_commonsense_controls",
+      "prompt": "Answer briefly: What is the natural satellite of Earth?",
+      "baseline_score": 1.0,
+      "lora_score": 1.0,
+      "baseline_output": " The Moon. It is a natural satellite of the planet Earth, located approximately 384,400 kilometers (238,855 miles) above its surface. The Moon was discovered by Galileo Galilei in 1610 and has been observed since ancient times by many civilizations",
+      "lora_output": " Moon. It orbits around Earth at an average distance of about 384,400 km (238,855 mi). The Moon has a surface area of approximately 14.6 million sq km (5.7 million sq mi), and its gravity is about 1/6"
+    },
+    {
+      "index": 115,
+      "category": "router_commonsense_controls",
+      "prompt": "Answer briefly: What is the opposite of hot?",
+      "baseline_score": 1.0,
+      "lora_score": 1.0,
+      "baseline_output": " The opposite of hot is cold. This can be determined by understanding that heat is a measure of temperature, and it increases as temperature rises. Conversely, cooling or lowering temperature results in cooler temperatures. Therefore, when we say something is \"hot,\" it means it has a high temperature, while \"cold\" indicates a lower",
+      "lora_output": " Cold. Ice melts into water when it cools. Water freezes into ice when it warms. Snow falls from above when temperatures drop below freezing. Frost forms on surfaces when temperatures fall below 0°C. Dew forms on leaves and plants when temperatures drop below 5°C. Fog rises from lakes or rivers when temperatures"
+    },
+    {
+      "index": 116,
+      "category": "router_commonsense_controls",
+      "prompt": "Answer briefly: What do we call frozen water?",
+      "baseline_score": 1.0,
+      "lora_score": 1.0,
+      "baseline_output": " The answer is ice. Ice is a solid form of water that forms when the temperature of a liquid decreases below its freezing point, which is 0 degrees Celsius or 32 degrees Fahrenheit. When this happens, the molecules in the liquid start to move more rapidly and collide with each other more frequently, causing them to",
+      "lora_output": " Ice. Water that is solid at room temperature. Freezing point of 0°C (32°F). Ice absorbs heat and melts when it warms to 0°C. Ice turns into water as temperature drops below freezing. Ice turns back into water when temperature rises above freezing. Ice forms on roads, sidewalks,"
+    },
+    {
+      "index": 117,
+      "category": "router_commonsense_controls",
+      "prompt": "Answer briefly: What vehicle runs on rails?",
+      "baseline_score": 1.0,
+      "lora_score": 1.0,
+      "baseline_output": " The answer is a train. A train is an automated vehicle that uses track as its primary mode of transportation, allowing it to travel on rails without the need for wheels or other moving parts. Trains are designed to operate on tracks laid out in a straight line and are typically powered by diesel engines or electric motors. They",
+      "lora_output": " A train. Railroads connect cities and towns. Cars run on roads. Cars are faster. Trains are slower. Trains have more seats. Trains can carry people. Trains use less fuel. Trains are safer. Trains are cheaper to operate. Trains are better for the environment. Trains"
+    },
+    {
+      "index": 118,
+      "category": "router_commonsense_controls",
+      "prompt": "Answer briefly: What is used to unlock a door?",
+      "baseline_score": 1.0,
+      "lora_score": 1.0,
+      "baseline_output": " A key. Keys are used to open locks and doors, and they can be found in many places around the house or office.\n\nIs the following statement true?\n\"Keys are used to unlock a door.\" The answer is yes.\nYes, that statement is true. Keys are indeed used to unlock doors and other locks.",
+      "lora_output": " A key. Keys open locks, and keys are usually made of metal. Common types include thumbtacks, screwdrivers, and keys from other vehicles. Keychains can also be used for unlocking doors. They often have a small hole in the middle that fits into a lock's keyhole. Some cars use a combination"
+    },
+    {
+      "index": 119,
+      "category": "router_commonsense_controls",
+      "prompt": "Answer briefly: What is the opposite of empty?",
+      "baseline_score": 1.0,
+      "lora_score": 1.0,
+      "baseline_output": " The opposite of \"empty\" is \"full.\" When something is full, it means that there are no more items or resources available to be used. It's like having a bowl of soup and not being able to take any more because you've already filled it up. In other words, when something is full, it",
+      "lora_output": " Full. Empty means lacking or not present. Full means having something. A full cup of water has more than half its capacity. A full room has more space than a half-empty one. A full house has more people than a half-full one. A full budget allows for more spending than a half-budget. A"
+    }
+  ],
+  "train_loss": [
+    1.4592855125665665
+  ]
+}

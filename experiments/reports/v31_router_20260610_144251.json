@@ -1,0 +1,131 @@
+[
+  {
+    "router": "unrestricted",
+    "scale": 0.85,
+    "fixes": 6,
+    "breaks": 2,
+    "net": 4,
+    "baseline": 0.8222222222222222,
+    "block": 0.9222222222222223,
+    "active": 45,
+    "disabled": 0,
+    "fixes_list": [
+      "How many continents are there? 0->1",
+      "If x + 5 = 12, what is x? 0->1",
+      "What is 25% of 200? 0->1",
+      "How many seconds are in 2 hours? 0->1",
+      "What is 2^10? 0->1",
+      "If a train travels at 60 km/h for 2.5 ho 0->1"
+    ],
+    "breaks_list": [
+      "Which gas do plants absorb from the atmo 1->0",
+      "请用中文写一句问候语。 1->0"
+    ]
+  },
+  {
+    "router": "unrestricted",
+    "scale": 1.0,
+    "fixes": 6,
+    "breaks": 3,
+    "net": 3,
+    "baseline": 0.8222222222222222,
+    "block": 0.9,
+    "active": 45,
+    "disabled": 0,
+    "fixes_list": [
+      "How many continents are there? 0->1",
+      "If x + 5 = 12, what is x? 0->1",
+      "What is 25% of 200? 0->1",
+      "How many seconds are in 2 hours? 0->1",
+      "What is 2^10? 0->1",
+      "If a train travels at 60 km/h for 2.5 ho 0->1"
+    ],
+    "breaks_list": [
+      "What is the speed of light in vacuum? 1->0",
+      "Which gas do plants absorb from the atmo 1->0",
+      "请用中文写一句问候语。 1->0"
+    ]
+  },
+  {
+    "router": "blacklist_only",
+    "scale": 0.85,
+    "fixes": 6,
+    "breaks": 0,
+    "net": 6,
+    "baseline": 0.8222222222222222,
+    "block": 0.9555555555555556,
+    "active": 33,
+    "disabled": 12,
+    "fixes_list": [
+      "How many continents are there? 0->1",
+      "If x + 5 = 12, what is x? 0->1",
+      "What is 25% of 200? 0->1",
+      "How many seconds are in 2 hours? 0->1",
+      "What is 2^10? 0->1",
+      "If a train travels at 60 km/h for 2.5 ho 0->1"
+    ],
+    "breaks_list": []
+  },
+  {
+    "router": "blacklist_only",
+    "scale": 1.0,
+    "fixes": 6,
+    "breaks": 0,
+    "net": 6,
+    "baseline": 0.8222222222222222,
+    "block": 0.9555555555555556,
+    "active": 33,
+    "disabled": 12,
+    "fixes_list": [
+      "How many continents are there? 0->1",
+      "If x + 5 = 12, what is x? 0->1",
+      "What is 25% of 200? 0->1",
+      "How many seconds are in 2 hours? 0->1",
+      "What is 2^10? 0->1",
+      "If a train travels at 60 km/h for 2.5 ho 0->1"
+    ],
+    "breaks_list": []
+  },
+  {
+    "router": "allow_math",
+    "scale": 0.85,
+    "fixes": 6,
+    "breaks": 0,
+    "net": 6,
+    "baseline": 0.8222222222222222,
+    "block": 0.9555555555555556,
+    "active": 20,
+    "disabled": 25,
+    "fixes_list": [
+      "How many continents are there? 0->1",
+      "If x + 5 = 12, what is x? 0->1",
+      "What is 25% of 200? 0->1",
+      "How many seconds are in 2 hours? 0->1",
+      "What is 2^10? 0->1",
+      "If a train travels at 60 km/h for 2.5 ho 0->1"
+    ],
+    "breaks_list": []
+  },
+  {
+    "router": "allow_math",
+    "scale": 1.0,
+    "fixes": 6,
+    "breaks": 1,
+    "net": 5,
+    "baseline": 0.8222222222222222,
+    "block": 0.9333333333333333,
+    "active": 20,
+    "disabled": 25,
+    "fixes_list": [
+      "How many continents are there? 0->1",
+      "If x + 5 = 12, what is x? 0->1",
+      "What is 25% of 200? 0->1",
+      "How many seconds are in 2 hours? 0->1",
+      "What is 2^10? 0->1",
+      "If a train travels at 60 km/h for 2.5 ho 0->1"
+    ],
+    "breaks_list": [
+      "What is the speed of light in vacuum? 1->0"
+    ]
+  }
+]

@@ -1,0 +1,260 @@
+{
+  "model": "/Users/yyl/Desktop/workshop/Evidence-to-Answer Trace/internal_cot_index/models/Qwen--Qwen2.5-0.5B-Instruct",
+  "device": "mps",
+  "block_scale": 0.15,
+  "max_tokens": 24,
+  "config_results": {
+    "baseline": {
+      "overall": 0.7,
+      "category_scores": {
+        "commonsense": 1.0,
+        "math": 0.0,
+        "code": 1.0,
+        "chinese": 0.5,
+        "reasoning": 1.0
+      },
+      "active_blocks": 0.0
+    },
+    "general": {
+      "overall": 0.7,
+      "category_scores": {
+        "commonsense": 1.0,
+        "math": 0.0,
+        "code": 1.0,
+        "chinese": 0.5,
+        "reasoning": 1.0
+      },
+      "active_blocks": 2.0
+    },
+    "math": {
+      "overall": 0.7,
+      "category_scores": {
+        "commonsense": 1.0,
+        "math": 0.0,
+        "code": 1.0,
+        "chinese": 0.5,
+        "reasoning": 1.0
+      },
+      "active_blocks": 2.0
+    },
+    "code": {
+      "overall": 0.7,
+      "category_scores": {
+        "commonsense": 1.0,
+        "math": 0.0,
+        "code": 1.0,
+        "chinese": 0.5,
+        "reasoning": 1.0
+      },
+      "active_blocks": 2.0
+    },
+    "chinese": {
+      "overall": 0.7,
+      "category_scores": {
+        "commonsense": 1.0,
+        "math": 0.0,
+        "code": 1.0,
+        "chinese": 0.5,
+        "reasoning": 1.0
+      },
+      "active_blocks": 2.0
+    },
+    "always_all": {
+      "overall": 0.7,
+      "category_scores": {
+        "commonsense": 1.0,
+        "math": 0.0,
+        "code": 1.0,
+        "chinese": 0.5,
+        "reasoning": 1.0
+      },
+      "active_blocks": 8.0
+    }
+  },
+  "oracle": {
+    "overall": 0.7,
+    "category_scores": {
+      "commonsense": 1.0,
+      "math": 0.0,
+      "code": 1.0,
+      "chinese": 0.5,
+      "reasoning": 1.0
+    },
+    "active_blocks": 0.0
+  },
+  "validation_calibrated": {
+    "overall": 0.7,
+    "category_scores": {
+      "commonsense": 1.0,
+      "math": 0.0,
+      "code": 1.0,
+      "chinese": 0.5,
+      "reasoning": 1.0
+    },
+    "active_blocks": 0.0
+  },
+  "category_policy": {
+    "commonsense": "baseline",
+    "math": "baseline",
+    "code": "baseline",
+    "chinese": "baseline",
+    "reasoning": "baseline"
+  },
+  "utility_matrix": {
+    "commonsense": {
+      "baseline": 1.0,
+      "general": 1.0,
+      "math": 1.0,
+      "code": 1.0,
+      "chinese": 1.0,
+      "always_all": 1.0
+    },
+    "math": {
+      "baseline": 0.0,
+      "general": 0.0,
+      "math": 0.0,
+      "code": 0.0,
+      "chinese": 0.0,
+      "always_all": 0.0
+    },
+    "code": {
+      "baseline": 1.0,
+      "general": 1.0,
+      "math": 1.0,
+      "code": 1.0,
+      "chinese": 1.0,
+      "always_all": 1.0
+    },
+    "chinese": {
+      "baseline": 0.5,
+      "general": 0.5,
+      "math": 0.5,
+      "code": 0.5,
+      "chinese": 0.5,
+      "always_all": 0.5
+    },
+    "reasoning": {
+      "baseline": 1.0,
+      "general": 1.0,
+      "math": 1.0,
+      "code": 1.0,
+      "chinese": 1.0,
+      "always_all": 1.0
+    }
+  },
+  "selection_frequency": {
+    "baseline": 5,
+    "general": 0,
+    "math": 0,
+    "code": 0,
+    "chinese": 0,
+    "always_all": 0
+  },
+  "per_sample": [
+    {
+      "category": "commonsense",
+      "prompt": "What is the capital of France?",
+      "scores": {
+        "baseline": 1.0,
+        "general": 1.0,
+        "math": 1.0,
+        "code": 1.0,
+        "chinese": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "general": 2,
+        "math": 2,
+        "code": 2,
+        "chinese": 2,
+        "always_all": 8
+      },
+      "outputs": null
+    },
+    {
+      "category": "math",
+      "prompt": "Calculate 15 + 27 =",
+      "scores": {
+        "baseline": 0.0,
+        "general": 0.0,
+        "math": 0.0,
+        "code": 0.0,
+        "chinese": 0.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "general": 2,
+        "math": 2,
+        "code": 2,
+        "chinese": 2,
+        "always_all": 8
+      },
+      "outputs": null
+    },
+    {
+      "category": "code",
+      "prompt": "Write a Python function to check if a string is a palindrome.",
+      "scores": {
+        "baseline": 1.0,
+        "general": 1.0,
+        "math": 1.0,
+        "code": 1.0,
+        "chinese": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "general": 2,
+        "math": 2,
+        "code": 2,
+        "chinese": 2,
+        "always_all": 8
+      },
+      "outputs": null
+    },
+    {
+      "category": "chinese",
+      "prompt": "中国的首都是哪个城市？",
+      "scores": {
+        "baseline": 0.5,
+        "general": 0.5,
+        "math": 0.5,
+        "code": 0.5,
+        "chinese": 0.5,
+        "always_all": 0.5
+      },
+      "active_counts": {
+        "baseline": 0,
+        "general": 2,
+        "math": 2,
+        "code": 2,
+        "chinese": 2,
+        "always_all": 8
+      },
+      "outputs": null
+    },
+    {
+      "category": "reasoning",
+      "prompt": "If all squares are rectangles, and some rectangles are not squares, can a shape be a rectangle but not a square? Explain.",
+      "scores": {
+        "baseline": 1.0,
+        "general": 1.0,
+        "math": 1.0,
+        "code": 1.0,
+        "chinese": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "general": 2,
+        "math": 2,
+        "code": 2,
+        "chinese": 2,
+        "always_all": 8
+      },
+      "outputs": null
+    }
+  ]
+}

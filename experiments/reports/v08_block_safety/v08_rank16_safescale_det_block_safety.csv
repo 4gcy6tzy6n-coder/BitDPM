@@ -1,0 +1,6 @@
+block,fixed_score,baseline_score,score_delta,fixes,breaks,net_fix_count,unique_fixes,damaged_categories
+commonsense_choice,0.83,0.8,0.03,3,0,3,3,{}
+chinese_semantic,0.8,0.8,0.0,0,0,0,0,{}
+calculation_error,0.79,0.8,-0.01,0,1,-1,0,{'commonsense': 1}
+format_following,0.785,0.8,-0.015,0,2,-2,0,{'chinese': 2}
+short_reasoning,0.785,0.8,-0.015,0,2,-2,0,"{'chinese': 1, 'commonsense': 1}"

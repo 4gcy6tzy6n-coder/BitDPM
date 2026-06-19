@@ -1,0 +1,171 @@
+{
+  "project": "BitDPM: Bit-level Dynamic Parameter Mixing",
+  "date": "2026-06-19",
+  "version": "v31+ (AAAI submission)",
+  "codebase": {
+    "python_files": 96,
+    "lines_of_code": 21198,
+    "block_pools": 14,
+    "total_blocks": 145,
+    "backbones": ["Qwen2.5-0.5B", "Qwen2.5-1.5B"]
+  },
+
+  "main_experiments": {
+    "v14_300": {
+      "benchmark": "v14",
+      "n": 300,
+      "baseline": 0.840,
+      "oracle": 0.903,
+      "oracle_gain": 0.063,
+      "oracle_coverage": "19/300",
+      "always_all": 0.000,
+      "best_fixed_block": "calculation_error",
+      "best_fixed_score": 0.833,
+      "strict_CV_router": {
+        "score": 0.857,
+        "gain": 0.017,
+        "fixes": 5,
+        "breaks": 0,
+        "router_type": "allow_core_nolog"
+      },
+      "file": "aaai_v14_current_pool_20260618_175336.json"
+    },
+    "v15_120": {
+      "benchmark": "v15",
+      "n": 120,
+      "baseline": 0.442,
+      "oracle": 0.742,
+      "oracle_gain": 0.300,
+      "oracle_coverage": "36/120",
+      "always_all": 0.000,
+      "best_fixed_block": "chinese_semantic",
+      "best_fixed_score": 0.508,
+      "strict_CV_router": {
+        "score": 0.500,
+        "gain": 0.058,
+        "fixes": 7,
+        "breaks": 0,
+        "router_type": "allow_core_nolog"
+      },
+      "file": "aaai_v15_current_pool_20260618_181302.json"
+    },
+    "v1k_clean_1000": {
+      "benchmark": "v1k_clean",
+      "n": 1000,
+      "baseline": 0.812,
+      "oracle": 0.926,
+      "oracle_gain": 0.114,
+      "oracle_coverage": "114/1000",
+      "always_all": 0.000,
+      "strict_CV_router": {
+        "score": 0.811,
+        "gain": -0.001,
+        "fixes": 1,
+        "breaks": 2,
+        "router_type": "allow_core_nolog"
+      },
+      "file": "aaai_v1k_clean_current_pool_20260618_233819.json"
+    }
+  },
+
+  "backbone_scaling_case_study": {
+    "backbone": "Qwen2.5-1.5B",
+    "hidden_size": 1536,
+    "intermediate_size": 8960,
+    "num_layers": 28,
+    "block": {
+      "name": "1p5b_percent_l26_r16",
+      "layer": 26,
+      "module": "down_proj",
+      "rank": 16,
+      "params": 167936,
+      "A_shape": [8960, 16],
+      "B_shape": [16, 1536],
+      "training_epochs": 10
+    },
+    "scale_scan": [
+      {"scale": 0.50, "fixes": 2, "breaks": 0, "net": 2, "score": 0.867},
+      {"scale": 0.75, "fixes": 2, "breaks": 1, "net": 1, "score": 0.844},
+      {"scale": 0.85, "fixes": 5, "breaks": 1, "net": 4, "score": 0.911},
+      {"scale": 1.00, "fixes": 6, "breaks": 1, "net": 5, "score": 0.933},
+      {"scale": 1.25, "fixes": 6, "breaks": 1, "net": 5, "score": 0.933},
+      {"scale": 1.50, "fixes": 6, "breaks": 1, "net": 5, "score": 0.933}
+    ],
+    "allow_math_router": {
+      "scale": 1.00,
+      "fixes": 6,
+      "breaks": 0,
+      "net": 6,
+      "baseline": 0.822,
+      "routed_score": 0.956,
+      "active": "19/45",
+      "breakdown": {
+        "fixes": [
+          "How many continents are there? 0->1",
+          "If x + 5 = 12, what is x? 0->1",
+          "What is 25% of 200? 0->1",
+          "How many seconds are in 2 hours? 0->1",
+          "What is 2^10? 0->1",
+          "If a train travels at 60 km/h for 2.5 hours, how far does it go? 0->1"
+        ],
+        "breaks_unrestricted": [
+          "Which gas do plants absorb from the atmosphere? 1->0",
+          "请用中文写一句问候语。 1->0"
+        ],
+        "breaks_filtered_by_router": 0
+      }
+    },
+    "file": "1p5b_core45_scan_20260619_013304.json",
+    "v31_provenance": "RECOVERED"
+  },
+
+  "ablation_history": {
+    "v16_connection_function": {"result": "NOT_BOTTLENECK", "detail": "norm_clip = hard_add, no oracle gain"},
+    "v17_preservation_loss": {"result": "FAILED", "detail": "breaks=34, net=-34"},
+    "v21_multi_layer": {"result": "COLLAPSED", "detail": "4-layer net=-35"},
+    "v23_rank64": {"result": "OVERFIT", "detail": "net=-3 to -35"},
+    "v24_real_data": {"result": "MISMATCHED", "detail": "distribution mismatch, net=0"},
+    "v26_dual_module": {"result": "NO_SYNERGY", "detail": "o_proj=0, down+o no improvement"},
+    "v27_rank32": {"result": "DIVERGED", "detail": "training instability, net=0"},
+    "v28_margin_objective": {"result": "NOT_BREAKTHROUGH", "detail": "net still +1, margin loss didn't converge"}
+  },
+
+  "paper_positioning": {
+    "core_claim": "BitDPM demonstrates runtime-selective sparse parameter correction in frozen LLMs. Oracle results show substantial repair opportunity across 300/1000-sample benchmarks, conservative routing achieves zero-break held-out gains, and the mechanism transfers to a larger 1.5B backbone through dimension-compatible retraining.",
+    "main_results_table": {
+      "columns": ["Benchmark", "N", "Baseline", "Oracle", "Router(CV)", "Breaks", "Always-All"],
+      "rows": [
+        ["v14", 300, 0.840, 0.903, 0.857, 0, 0.000],
+        ["v15", 120, 0.442, 0.742, 0.500, 0, 0.000],
+        ["v1k_clean", 1000, 0.812, 0.926, 0.811, 2, 0.000]
+      ]
+    },
+    "scaling_table": {
+      "columns": ["Scale", "Fixes", "Breaks", "Net", "Score", "Interpretation"],
+      "rows": [
+        [0.50, 2, 0, 2, 0.867, "zero-break deployment"],
+        [0.85, 5, 1, 4, 0.911, "balanced"],
+        [1.00, 6, 1, 5, 0.933, "strongest repair"]
+      ]
+    },
+    "router_effectiveness": {
+      "unrestricted_net": 4,
+      "unrestricted_breaks": 2,
+      "routed_net": 6,
+      "routed_breaks": 0,
+      "improvement": "router removes breaks while preserving all fixes"
+    },
+    "what_can_claim": [
+      "Sparse deterministic correction is achievable with rank-16 parameter blocks",
+      "Safety comes from mixed-data training + low-scale calibration + break-aware routing",
+      "Always-All activation collapses (0.000) proving selective activation is necessary",
+      "The mechanism transfers to Qwen2.5-1.5B through dimension-compatible retraining"
+    ],
+    "what_cannot_claim_yet": [
+      "Broad model improvement (utility is sparse, not comprehensive)",
+      "Reliable multi-block composition (cross-layer activation collapses)",
+      "Deployable router at 1000-sample scale (v1k_clean CV router neutral)"
+    ],
+    "remaining_gap": "v1k_clean strict-CV router needs stronger features to achieve positive gain at 1000-sample scale"
+  }
+}

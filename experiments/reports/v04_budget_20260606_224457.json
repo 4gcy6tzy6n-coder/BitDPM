@@ -1,0 +1,122 @@
+[
+  {
+    "model_name": "Budget no_blocks",
+    "quant": "FP16",
+    "num_params": "0.5B",
+    "device": "mps",
+    "category_scores": {
+      "commonsense": 0.7,
+      "math": 0.3,
+      "code": 1.0,
+      "chinese": 1.0,
+      "reasoning": 1.0
+    },
+    "overall_score": 0.7777777777777778,
+    "avg_tokens_per_sec": 15.362248348183607,
+    "avg_latency_ms": 2382.463762495253,
+    "peak_memory_mb": 942.29296875,
+    "total_prompts": 45,
+    "metadata": {
+      "budget_mode": "none",
+      "max_blocks": 0,
+      "avg_active_blocks": 0.0,
+      "avg_routing_ms": 0.0
+    }
+  },
+  {
+    "model_name": "Budget max1",
+    "quant": "FP16+budget",
+    "num_params": "0.5B",
+    "device": "mps",
+    "category_scores": {
+      "commonsense": 0.7,
+      "math": 0.3,
+      "code": 1.0,
+      "chinese": 1.0,
+      "reasoning": 1.0
+    },
+    "overall_score": 0.7777777777777778,
+    "avg_tokens_per_sec": 14.063138185236374,
+    "avg_latency_ms": 2561.464002397325,
+    "peak_memory_mb": 942.29296875,
+    "total_prompts": 45,
+    "metadata": {
+      "budget_mode": "entropy",
+      "max_blocks": 1,
+      "avg_active_blocks": 1.0,
+      "avg_routing_ms": 51.61959330240885
+    }
+  },
+  {
+    "model_name": "Budget max2",
+    "quant": "FP16+budget",
+    "num_params": "0.5B",
+    "device": "mps",
+    "category_scores": {
+      "commonsense": 0.7,
+      "math": 0.3,
+      "code": 1.0,
+      "chinese": 1.0,
+      "reasoning": 1.0
+    },
+    "overall_score": 0.7777777777777778,
+    "avg_tokens_per_sec": 14.23325272189846,
+    "avg_latency_ms": 2577.688291337755,
+    "peak_memory_mb": 942.29296875,
+    "total_prompts": 45,
+    "metadata": {
+      "budget_mode": "entropy",
+      "max_blocks": 2,
+      "avg_active_blocks": 1.0,
+      "avg_routing_ms": 49.35581949022081
+    }
+  },
+  {
+    "model_name": "Budget max3",
+    "quant": "FP16+budget",
+    "num_params": "0.5B",
+    "device": "mps",
+    "category_scores": {
+      "commonsense": 0.7,
+      "math": 0.3,
+      "code": 1.0,
+      "chinese": 1.0,
+      "reasoning": 1.0
+    },
+    "overall_score": 0.7777777777777778,
+    "avg_tokens_per_sec": 15.010454340210876,
+    "avg_latency_ms": 2445.7028600904678,
+    "peak_memory_mb": 942.29296875,
+    "total_prompts": 45,
+    "metadata": {
+      "budget_mode": "entropy",
+      "max_blocks": 3,
+      "avg_active_blocks": 1.0,
+      "avg_routing_ms": 46.643431981404625
+    }
+  },
+  {
+    "model_name": "Budget max8",
+    "quant": "FP16+budget",
+    "num_params": "0.5B",
+    "device": "mps",
+    "category_scores": {
+      "commonsense": 0.7,
+      "math": 0.3,
+      "code": 1.0,
+      "chinese": 1.0,
+      "reasoning": 1.0
+    },
+    "overall_score": 0.7777777777777778,
+    "avg_tokens_per_sec": 15.512372276098876,
+    "avg_latency_ms": 2316.4305686950684,
+    "peak_memory_mb": 942.29296875,
+    "total_prompts": 45,
+    "metadata": {
+      "budget_mode": "all",
+      "max_blocks": 8,
+      "avg_active_blocks": 8.0,
+      "avg_routing_ms": 0.0
+    }
+  }
+]

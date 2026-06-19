@@ -1,0 +1,1415 @@
+{
+  "summary": {
+    "report": "experiments/reports/v14_pilot_v10_admitted_20260608_064051.json",
+    "folds": 5,
+    "total_eval_count": 60,
+    "overall": 0.8333333333333334,
+    "baseline": 0.8666666666666667,
+    "delta": -0.033333333333333326,
+    "fixes": 0,
+    "breaks": 2,
+    "precision_proxy": 0.0
+  },
+  "folds": [
+    {
+      "fold": 0,
+      "train_count": 48,
+      "eval_count": 12,
+      "rules": [
+        {
+          "feature": "has_power",
+          "block": "calculation_error",
+          "fixes": 1,
+          "breaks": 0,
+          "precision_proxy": 1.0,
+          "support": 5
+        },
+        {
+          "feature": "has_division",
+          "block": "calculation_error",
+          "fixes": 1,
+          "breaks": 0,
+          "precision_proxy": 1.0,
+          "support": 6
+        },
+        {
+          "feature": "has_physical_constant",
+          "block": "calculation_error",
+          "fixes": 1,
+          "breaks": 0,
+          "precision_proxy": 1.0,
+          "support": 9
+        },
+        {
+          "feature": "asks_brief",
+          "block": "chinese_semantic",
+          "fixes": 1,
+          "breaks": 0,
+          "precision_proxy": 1.0,
+          "support": 26
+        }
+      ],
+      "result": {
+        "overall": 0.8333333333333334,
+        "baseline": 0.8333333333333334,
+        "delta": 0.0,
+        "fixes": 0,
+        "breaks": 0,
+        "precision_proxy": 0.0,
+        "choices": {
+          "baseline": 4,
+          "calculation_error": 1,
+          "chinese_semantic": 7
+        },
+        "rule_hits": {
+          "baseline_default": 4,
+          "has_physical_constant": 1,
+          "asks_brief": 7
+        },
+        "rows": [
+          {
+            "index": 0,
+            "category": "arithmetic",
+            "prompt": "What is 18 + 24?",
+            "choice": "baseline",
+            "feature": "baseline_default",
+            "score": 0.0,
+            "baseline_score": 0.0
+          },
+          {
+            "index": 9,
+            "category": "arithmetic",
+            "prompt": "What is 12 times 11?",
+            "choice": "baseline",
+            "feature": "baseline_default",
+            "score": 0.0,
+            "baseline_score": 0.0
+          },
+          {
+            "index": 13,
+            "category": "factual_constants",
+            "prompt": "In one short answer, What is the speed of light in vacuum in meters per second?",
+            "choice": "calculation_error",
+            "feature": "has_physical_constant",
+            "score": 1.0,
+            "baseline_score": 1.0
+          },
+          {
+            "index": 23,
+            "category": "commonsense",
+            "prompt": "Which ocean is the largest on Earth?",
+            "choice": "baseline",
+            "feature": "baseline_default",
+            "score": 1.0,
+            "baseline_score": 1.0
+          },
+          {
+            "index": 28,
+            "category": "commonsense",
+            "prompt": "What is the tallest mountain in the world?",
+            "choice": "baseline",
+            "feature": "baseline_default",
+            "score": 1.0,
+            "baseline_score": 1.0
+          },
+          {
+            "index": 31,
+            "category": "code",
+            "prompt": "Write Python code to reverse a string. Use concise wording. Variant 1.",
+            "choice": "chinese_semantic",
+            "feature": "asks_brief",
+            "score": 1.0,
+            "baseline_score": 1.0
+          },
+          {
+            "index": 39,
+            "category": "code",
+            "prompt": "Explain recursion with a short example. Use concise wording. Variant 1.",
+            "choice": "chinese_semantic",
+            "feature": "asks_brief",
+            "score": 1.0,
+            "baseline_score": 1.0
+          },
+          {
+            "index": 40,
+            "category": "chinese",
+            "prompt": "中国的首都是哪个城市？ 请简短回答。版本1。",
+            "choice": "chinese_semantic",
+            "feature": "asks_brief",
+            "score": 1.0,
+            "baseline_score": 1.0
+          },
+          {
+            "index": 43,
+            "category": "chinese",
+            "prompt": "请写一句关于学习的中文句子。 请简短回答。版本1。",
+            "choice": "chinese_semantic",
+            "feature": "asks_brief",
+            "score": 1.0,
+            "baseline_score": 1.0
+          },
+          {
+            "index": 47,
+            "category": "chinese",
+            "prompt": "中秋节通常会吃什么？ 请简短回答。版本1。",
+            "choice": "chinese_semantic",
+            "feature": "asks_brief",
+            "score": 1.0,
+            "baseline_score": 1.0
+          },
+          {
+            "index": 54,
+            "category": "reasoning",
+            "prompt": "You flip a fair coin twice. What is the probability of two heads? Explain briefly. Variant 1.",
+            "choice": "chinese_semantic",
+            "feature": "asks_brief",
+            "score": 1.0,
+            "baseline_score": 1.0
+          },
+          {
+            "index": 56,
+            "category": "reasoning",
+            "prompt": "If one box holds 6 bottles, how many boxes are needed for 26 bottles? Explain briefly. Variant 1.",
+            "choice": "chinese_semantic",
+            "feature": "asks_brief",
+            "score": 1.0,
+            "baseline_score": 1.0
+          }
+        ],
+        "fix_samples": [],
+        "break_samples": []
+      }
+    },
+    {
+      "fold": 1,
+      "train_count": 43,
+      "eval_count": 17,
+      "rules": [],
+      "result": {
+        "overall": 0.8823529411764706,
+        "baseline": 0.8823529411764706,
+        "delta": 0.0,
+        "fixes": 0,
+        "breaks": 0,
+        "precision_proxy": 0.0,
+        "choices": {
+          "baseline": 17
+        },
+        "rule_hits": {
+          "baseline_default": 17
+        },
+        "rows": [
+          {
+            "index": 3,
+            "category": "arithmetic",
+            "prompt": "What is 123 + 77?",
+            "choice": "baseline",
+            "feature": "baseline_default",
+            "score": 1.0,
+            "baseline_score": 1.0
+          },
+          {
+            "index": 6,
+            "category": "arithmetic",
+            "prompt": "What is 72 + 38?",
+            "choice": "baseline",
+            "feature": "baseline_default",
+            "score": 1.0,
+            "baseline_score": 1.0
+          },
+          {
+            "index": 11,
+            "category": "factual_constants",
+            "prompt": "Answer briefly: What is the speed of light in vacuum in meters per second?",
+            "choice": "baseline",
+            "feature": "baseline_default",
+            "score": 1.0,
+            "baseline_score": 1.0
+          },
+          {
+            "index": 14,
+            "category": "factual_constants",
+            "prompt": "State the commonly used answer: What is the speed of light in vacuum in meters per second?",
+            "choice": "baseline",
+            "feature": "baseline_default",
+            "score": 1.0,
+            "baseline_score": 1.0
+          },
+          {
+            "index": 16,
+            "category": "factual_constants",
+            "prompt": "Answer briefly: What is the approximate acceleration due to gravity on Earth in m/s^2?",
+            "choice": "baseline",
+            "feature": "baseline_default",
+            "score": 0.0,
+            "baseline_score": 0.0
+          },
+          {
+            "index": 17,
+            "category": "factual_constants",
+            "prompt": "Give the standard value: What is the approximate acceleration due to gravity on Earth in m/s^2?",
+            "choice": "baseline",
+            "feature": "baseline_default",
+            "score": 0.0,
+            "baseline_score": 0.0
+          },
+          {
+            "index": 18,
+            "category": "factual_constants",
+            "prompt": "In one short answer, What is the approximate acceleration due to gravity on Earth in m/s^2?",
+            "choice": "baseline",
+            "feature": "baseline_default",
+            "score": 1.0,
+            "baseline_score": 1.0
+          },
+          {
+            "index": 20,
+            "category": "commonsense",
+            "prompt": "What is the capital of France?",
+            "choice": "baseline",
+            "feature": "baseline_default",
+            "score": 1.0,
+            "baseline_score": 1.0
+          },
+          {
+            "index": 25,
+            "category": "commonsense",
+            "prompt": "Which organ pumps blood through the body?",
+            "choice": "baseline",
+            "feature": "baseline_default",
+            "score": 1.0,
+            "baseline_score": 1.0
+          },
+          {
+            "index": 29,
+            "category": "commonsense",
+            "prompt": "Which country is famous for the Eiffel Tower?",
+            "choice": "baseline",
+            "feature": "baseline_default",
+            "score": 1.0,
+            "baseline_score": 1.0
+          },
+          {
+            "index": 32,
+            "category": "code",
+            "prompt": "Explain what a hash map is in one paragraph. Use concise wording. Variant 1.",
+            "choice": "baseline",
+            "feature": "baseline_default",
+            "score": 1.0,
+            "baseline_score": 1.0
+          },
+          {
+            "index": 33,
+            "category": "code",
+            "prompt": "Write a SQL query to select all rows from a users table. Use concise wording. Variant 1.",
+            "choice": "baseline",
+            "feature": "baseline_default",
+            "score": 1.0,
+            "baseline_score": 1.0
+          },
+          {
+            "index": 42,
+            "category": "chinese",
+            "prompt": "一年有多少个月？ 请简短回答。版本1。",
+            "choice": "baseline",
+            "feature": "baseline_default",
+            "score": 1.0,
+            "baseline_score": 1.0
+          },
+          {
+            "index": 46,
+            "category": "chinese",
+            "prompt": "什么是自然语言处理？ 请简短回答。版本1。",
+            "choice": "baseline",
+            "feature": "baseline_default",
+            "score": 1.0,
+            "baseline_score": 1.0
+          },
+          {
+            "index": 52,
+            "category": "reasoning",
+            "prompt": "If today is Monday, what day will it be in 10 days? Explain briefly. Variant 1.",
+            "choice": "baseline",
+            "feature": "baseline_default",
+            "score": 1.0,
+            "baseline_score": 1.0
+          },
+          {
+            "index": 58,
+            "category": "reasoning",
+            "prompt": "If all roses are flowers and some flowers fade quickly, must all roses fade quickly? Explain briefly. Variant 1.",
+            "choice": "baseline",
+            "feature": "baseline_default",
+            "score": 1.0,
+            "baseline_score": 1.0
+          },
+          {
+            "index": 59,
+            "category": "reasoning",
+            "prompt": "A doctor gives you 3 pills and says take one every half hour. How long will the pills last? Explain briefly. Variant 1.",
+            "choice": "baseline",
+            "feature": "baseline_default",
+            "score": 1.0,
+            "baseline_score": 1.0
+          }
+        ],
+        "fix_samples": [],
+        "break_samples": []
+      }
+    },
+    {
+      "fold": 2,
+      "train_count": 50,
+      "eval_count": 10,
+      "rules": [
+        {
+          "feature": "has_power",
+          "block": "calculation_error",
+          "fixes": 1,
+          "breaks": 0,
+          "precision_proxy": 1.0,
+          "support": 5
+        },
+        {
+          "feature": "has_division",
+          "block": "calculation_error",
+          "fixes": 1,
+          "breaks": 0,
+          "precision_proxy": 1.0,
+          "support": 6
+        },
+        {
+          "feature": "has_physical_constant",
+          "block": "calculation_error",
+          "fixes": 1,
+          "breaks": 0,
+          "precision_proxy": 1.0,
+          "support": 10
+        },
+        {
+          "feature": "asks_brief",
+          "block": "chinese_semantic",
+          "fixes": 1,
+          "breaks": 0,
+          "precision_proxy": 1.0,
+          "support": 29
+        }
+      ],
+      "result": {
+        "overall": 0.9,
+        "baseline": 0.9,
+        "delta": 0.0,
+        "fixes": 0,
+        "breaks": 0,
+        "precision_proxy": 0.0,
+        "choices": {
+          "baseline": 5,
+          "chinese_semantic": 5
+        },
+        "rule_hits": {
+          "baseline_default": 5,
+          "asks_brief": 5
+        },
+        "rows": [
+          {
+            "index": 4,
+            "category": "arithmetic",
+            "prompt": "What is 208 + 315?",
+            "choice": "baseline",
+            "feature": "baseline_default",
+            "score": 1.0,
+            "baseline_score": 1.0
+          },
+          {
+            "index": 8,
+            "category": "arithmetic",
+            "prompt": "What is 9 times 8?",
+            "choice": "baseline",
+            "feature": "baseline_default",
+            "score": 0.0,
+            "baseline_score": 0.0
+          },
+          {
+            "index": 22,
+            "category": "commonsense",
+            "prompt": "What color is the sky on a clear day?",
+            "choice": "baseline",
+            "feature": "baseline_default",
+            "score": 1.0,
+            "baseline_score": 1.0
+          },
+          {
+            "index": 26,
+            "category": "commonsense",
+            "prompt": "What do bees produce?",
+            "choice": "baseline",
+            "feature": "baseline_default",
+            "score": 1.0,
+            "baseline_score": 1.0
+          },
+          {
+            "index": 27,
+            "category": "commonsense",
+            "prompt": "Which gas do plants absorb from the atmosphere?",
+            "choice": "baseline",
+            "feature": "baseline_default",
+            "score": 1.0,
+            "baseline_score": 1.0
+          },
+          {
+            "index": 38,
+            "category": "code",
+            "prompt": "What is a unit test? Use concise wording. Variant 1.",
+            "choice": "chinese_semantic",
+            "feature": "asks_brief",
+            "score": 1.0,
+            "baseline_score": 1.0
+          },
+          {
+            "index": 41,
+            "category": "chinese",
+            "prompt": "请用中文解释什么是人工智能。 请简短回答。版本1。",
+            "choice": "chinese_semantic",
+            "feature": "asks_brief",
+            "score": 1.0,
+            "baseline_score": 1.0
+          },
+          {
+            "index": 44,
+            "category": "chinese",
+            "prompt": "水的化学式是什么？ 请简短回答。版本1。",
+            "choice": "chinese_semantic",
+            "feature": "asks_brief",
+            "score": 1.0,
+            "baseline_score": 1.0
+          },
+          {
+            "index": 49,
+            "category": "chinese",
+            "prompt": "长城位于哪个国家？ 请简短回答。版本1。",
+            "choice": "chinese_semantic",
+            "feature": "asks_brief",
+            "score": 1.0,
+            "baseline_score": 1.0
+          },
+          {
+            "index": 50,
+            "category": "reasoning",
+            "prompt": "If a book costs $20 after a 20% discount, what was the original price? Explain briefly. Variant 1.",
+            "choice": "chinese_semantic",
+            "feature": "asks_brief",
+            "score": 1.0,
+            "baseline_score": 1.0
+          }
+        ],
+        "fix_samples": [],
+        "break_samples": []
+      }
+    },
+    {
+      "fold": 3,
+      "train_count": 49,
+      "eval_count": 11,
+      "rules": [
+        {
+          "feature": "has_power",
+          "block": "chinese_semantic",
+          "fixes": 2,
+          "breaks": 0,
+          "precision_proxy": 1.0,
+          "support": 4
+        },
+        {
+          "feature": "has_division",
+          "block": "chinese_semantic",
+          "fixes": 2,
+          "breaks": 0,
+          "precision_proxy": 1.0,
+          "support": 5
+        },
+        {
+          "feature": "has_physical_constant",
+          "block": "chinese_semantic",
+          "fixes": 2,
+          "breaks": 0,
+          "precision_proxy": 1.0,
+          "support": 8
+        },
+        {
+          "feature": "has_power",
+          "block": "calculation_error",
+          "fixes": 1,
+          "breaks": 0,
+          "precision_proxy": 1.0,
+          "support": 4
+        },
+        {
+          "feature": "has_division",
+          "block": "calculation_error",
+          "fixes": 1,
+          "breaks": 0,
+          "precision_proxy": 1.0,
+          "support": 5
+        },
+        {
+          "feature": "has_physical_constant",
+          "block": "calculation_error",
+          "fixes": 1,
+          "breaks": 0,
+          "precision_proxy": 1.0,
+          "support": 8
+        },
+        {
+          "feature": "asks_brief",
+          "block": "chinese_semantic",
+          "fixes": 1,
+          "breaks": 0,
+          "precision_proxy": 1.0,
+          "support": 30
+        }
+      ],
+      "result": {
+        "overall": 0.6363636363636364,
+        "baseline": 0.7272727272727273,
+        "delta": -0.09090909090909091,
+        "fixes": 0,
+        "breaks": 1,
+        "precision_proxy": 0.0,
+        "choices": {
+          "baseline": 5,
+          "chinese_semantic": 6
+        },
+        "rule_hits": {
+          "baseline_default": 5,
+          "has_physical_constant": 1,
+          "has_power": 1,
+          "asks_brief": 4
+        },
+        "rows": [
+          {
+            "index": 1,
+            "category": "arithmetic",
+            "prompt": "What is 37 + 45?",
+            "choice": "baseline",
+            "feature": "baseline_default",
+            "score": 1.0,
+            "baseline_score": 1.0
+          },
+          {
+            "index": 5,
+            "category": "arithmetic",
+            "prompt": "What is 91 + 64?",
+            "choice": "baseline",
+            "feature": "baseline_default",
+            "score": 0.0,
+            "baseline_score": 0.0
+          },
+          {
+            "index": 7,
+            "category": "arithmetic",
+            "prompt": "What is 145 + 255?",
+            "choice": "baseline",
+            "feature": "baseline_default",
+            "score": 0.0,
+            "baseline_score": 0.0
+          },
+          {
+            "index": 12,
+            "category": "factual_constants",
+            "prompt": "Give the standard value: What is the speed of light in vacuum in meters per second?",
+            "choice": "chinese_semantic",
+            "feature": "has_physical_constant",
+            "score": 1.0,
+            "baseline_score": 1.0
+          },
+          {
+            "index": 15,
+            "category": "factual_constants",
+            "prompt": "What is the approximate acceleration due to gravity on Earth in m/s^2?",
+            "choice": "chinese_semantic",
+            "feature": "has_power",
+            "score": 0.0,
+            "baseline_score": 1.0
+          },
+          {
+            "index": 21,
+            "category": "commonsense",
+            "prompt": "Which planet is known as the Red Planet?",
+            "choice": "baseline",
+            "feature": "baseline_default",
+            "score": 1.0,
+            "baseline_score": 1.0
+          },
+          {
+            "index": 24,
+            "category": "commonsense",
+            "prompt": "How many continents are commonly counted on Earth?",
+            "choice": "baseline",
+            "feature": "baseline_default",
+            "score": 0.0,
+            "baseline_score": 0.0
+          },
+          {
+            "index": 34,
+            "category": "code",
+            "prompt": "What is the time complexity of binary search? Use concise wording. Variant 1.",
+            "choice": "chinese_semantic",
+            "feature": "asks_brief",
+            "score": 1.0,
+            "baseline_score": 1.0
+          },
+          {
+            "index": 36,
+            "category": "code",
+            "prompt": "Explain the difference between GET and POST. Use concise wording. Variant 1.",
+            "choice": "chinese_semantic",
+            "feature": "asks_brief",
+            "score": 1.0,
+            "baseline_score": 1.0
+          },
+          {
+            "index": 37,
+            "category": "code",
+            "prompt": "Write Python code to count words in a string. Use concise wording. Variant 1.",
+            "choice": "chinese_semantic",
+            "feature": "asks_brief",
+            "score": 1.0,
+            "baseline_score": 1.0
+          },
+          {
+            "index": 45,
+            "category": "chinese",
+            "prompt": "太阳从哪个方向升起？ 请简短回答。版本1。",
+            "choice": "chinese_semantic",
+            "feature": "asks_brief",
+            "score": 1.0,
+            "baseline_score": 1.0
+          }
+        ],
+        "fix_samples": [],
+        "break_samples": [
+          {
+            "index": 15,
+            "category": "factual_constants",
+            "prompt": "What is the approximate acceleration due to gravity on Earth in m/s^2?",
+            "choice": "chinese_semantic",
+            "feature": "has_power",
+            "score": 0.0,
+            "baseline_score": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "fold": 4,
+      "train_count": 50,
+      "eval_count": 10,
+      "rules": [
+        {
+          "feature": "has_division",
+          "block": "calculation_error",
+          "fixes": 1,
+          "breaks": 0,
+          "precision_proxy": 1.0,
+          "support": 4
+        },
+        {
+          "feature": "has_power",
+          "block": "calculation_error",
+          "fixes": 1,
+          "breaks": 0,
+          "precision_proxy": 1.0,
+          "support": 4
+        },
+        {
+          "feature": "has_addition",
+          "block": "calculation_error",
+          "fixes": 1,
+          "breaks": 0,
+          "precision_proxy": 1.0,
+          "support": 7
+        },
+        {
+          "feature": "has_physical_constant",
+          "block": "calculation_error",
+          "fixes": 1,
+          "breaks": 0,
+          "precision_proxy": 1.0,
+          "support": 8
+        },
+        {
+          "feature": "asks_brief",
+          "block": "chinese_semantic",
+          "fixes": 1,
+          "breaks": 0,
+          "precision_proxy": 1.0,
+          "support": 27
+        }
+      ],
+      "result": {
+        "overall": 0.9,
+        "baseline": 1.0,
+        "delta": -0.1,
+        "fixes": 0,
+        "breaks": 1,
+        "precision_proxy": 0.0,
+        "choices": {
+          "calculation_error": 4,
+          "chinese_semantic": 6
+        },
+        "rule_hits": {
+          "has_addition": 1,
+          "has_physical_constant": 1,
+          "has_division": 2,
+          "asks_brief": 6
+        },
+        "rows": [
+          {
+            "index": 2,
+            "category": "arithmetic",
+            "prompt": "What is 56 + 29?",
+            "choice": "calculation_error",
+            "feature": "has_addition",
+            "score": 0.0,
+            "baseline_score": 1.0
+          },
+          {
+            "index": 10,
+            "category": "factual_constants",
+            "prompt": "What is the speed of light in vacuum in meters per second?",
+            "choice": "calculation_error",
+            "feature": "has_physical_constant",
+            "score": 1.0,
+            "baseline_score": 1.0
+          },
+          {
+            "index": 19,
+            "category": "factual_constants",
+            "prompt": "State the commonly used answer: What is the approximate acceleration due to gravity on Earth in m/s^2?",
+            "choice": "calculation_error",
+            "feature": "has_division",
+            "score": 1.0,
+            "baseline_score": 1.0
+          },
+          {
+            "index": 30,
+            "category": "code",
+            "prompt": "Write a Python function that returns the sum of a list of integers. Use concise wording. Variant 1.",
+            "choice": "chinese_semantic",
+            "feature": "asks_brief",
+            "score": 1.0,
+            "baseline_score": 1.0
+          },
+          {
+            "index": 35,
+            "category": "code",
+            "prompt": "Write a regex that roughly validates an email address. Use concise wording. Variant 1.",
+            "choice": "chinese_semantic",
+            "feature": "asks_brief",
+            "score": 1.0,
+            "baseline_score": 1.0
+          },
+          {
+            "index": 48,
+            "category": "chinese",
+            "prompt": "请列举三种水果。 请简短回答。版本1。",
+            "choice": "chinese_semantic",
+            "feature": "asks_brief",
+            "score": 1.0,
+            "baseline_score": 1.0
+          },
+          {
+            "index": 51,
+            "category": "reasoning",
+            "prompt": "A farmer has chickens and cows. There are 10 heads and 28 legs. How many chickens are there? Explain briefly. Variant 1.",
+            "choice": "chinese_semantic",
+            "feature": "asks_brief",
+            "score": 1.0,
+            "baseline_score": 1.0
+          },
+          {
+            "index": 53,
+            "category": "reasoning",
+            "prompt": "Two people start at the same point and walk in opposite directions for 3 km. How far apart are they? Explain briefly. Variant 1.",
+            "choice": "chinese_semantic",
+            "feature": "asks_brief",
+            "score": 1.0,
+            "baseline_score": 1.0
+          },
+          {
+            "index": 55,
+            "category": "reasoning",
+            "prompt": "A car travels 30 km in 30 minutes. What is its average speed in km/h? Explain briefly. Variant 1.",
+            "choice": "calculation_error",
+            "feature": "has_division",
+            "score": 1.0,
+            "baseline_score": 1.0
+          },
+          {
+            "index": 57,
+            "category": "reasoning",
+            "prompt": "What is heavier: one kilogram of iron or one kilogram of cotton? Explain briefly. Variant 1.",
+            "choice": "chinese_semantic",
+            "feature": "asks_brief",
+            "score": 1.0,
+            "baseline_score": 1.0
+          }
+        ],
+        "fix_samples": [],
+        "break_samples": [
+          {
+            "index": 2,
+            "category": "arithmetic",
+            "prompt": "What is 56 + 29?",
+            "choice": "calculation_error",
+            "feature": "has_addition",
+            "score": 0.0,
+            "baseline_score": 1.0
+          }
+        ]
+      }
+    }
+  ],
+  "eval_rows": [
+    {
+      "index": 0,
+      "category": "arithmetic",
+      "prompt": "What is 18 + 24?",
+      "choice": "baseline",
+      "feature": "baseline_default",
+      "score": 0.0,
+      "baseline_score": 0.0
+    },
+    {
+      "index": 9,
+      "category": "arithmetic",
+      "prompt": "What is 12 times 11?",
+      "choice": "baseline",
+      "feature": "baseline_default",
+      "score": 0.0,
+      "baseline_score": 0.0
+    },
+    {
+      "index": 13,
+      "category": "factual_constants",
+      "prompt": "In one short answer, What is the speed of light in vacuum in meters per second?",
+      "choice": "calculation_error",
+      "feature": "has_physical_constant",
+      "score": 1.0,
+      "baseline_score": 1.0
+    },
+    {
+      "index": 23,
+      "category": "commonsense",
+      "prompt": "Which ocean is the largest on Earth?",
+      "choice": "baseline",
+      "feature": "baseline_default",
+      "score": 1.0,
+      "baseline_score": 1.0
+    },
+    {
+      "index": 28,
+      "category": "commonsense",
+      "prompt": "What is the tallest mountain in the world?",
+      "choice": "baseline",
+      "feature": "baseline_default",
+      "score": 1.0,
+      "baseline_score": 1.0
+    },
+    {
+      "index": 31,
+      "category": "code",
+      "prompt": "Write Python code to reverse a string. Use concise wording. Variant 1.",
+      "choice": "chinese_semantic",
+      "feature": "asks_brief",
+      "score": 1.0,
+      "baseline_score": 1.0
+    },
+    {
+      "index": 39,
+      "category": "code",
+      "prompt": "Explain recursion with a short example. Use concise wording. Variant 1.",
+      "choice": "chinese_semantic",
+      "feature": "asks_brief",
+      "score": 1.0,
+      "baseline_score": 1.0
+    },
+    {
+      "index": 40,
+      "category": "chinese",
+      "prompt": "中国的首都是哪个城市？ 请简短回答。版本1。",
+      "choice": "chinese_semantic",
+      "feature": "asks_brief",
+      "score": 1.0,
+      "baseline_score": 1.0
+    },
+    {
+      "index": 43,
+      "category": "chinese",
+      "prompt": "请写一句关于学习的中文句子。 请简短回答。版本1。",
+      "choice": "chinese_semantic",
+      "feature": "asks_brief",
+      "score": 1.0,
+      "baseline_score": 1.0
+    },
+    {
+      "index": 47,
+      "category": "chinese",
+      "prompt": "中秋节通常会吃什么？ 请简短回答。版本1。",
+      "choice": "chinese_semantic",
+      "feature": "asks_brief",
+      "score": 1.0,
+      "baseline_score": 1.0
+    },
+    {
+      "index": 54,
+      "category": "reasoning",
+      "prompt": "You flip a fair coin twice. What is the probability of two heads? Explain briefly. Variant 1.",
+      "choice": "chinese_semantic",
+      "feature": "asks_brief",
+      "score": 1.0,
+      "baseline_score": 1.0
+    },
+    {
+      "index": 56,
+      "category": "reasoning",
+      "prompt": "If one box holds 6 bottles, how many boxes are needed for 26 bottles? Explain briefly. Variant 1.",
+      "choice": "chinese_semantic",
+      "feature": "asks_brief",
+      "score": 1.0,
+      "baseline_score": 1.0
+    },
+    {
+      "index": 3,
+      "category": "arithmetic",
+      "prompt": "What is 123 + 77?",
+      "choice": "baseline",
+      "feature": "baseline_default",
+      "score": 1.0,
+      "baseline_score": 1.0
+    },
+    {
+      "index": 6,
+      "category": "arithmetic",
+      "prompt": "What is 72 + 38?",
+      "choice": "baseline",
+      "feature": "baseline_default",
+      "score": 1.0,
+      "baseline_score": 1.0
+    },
+    {
+      "index": 11,
+      "category": "factual_constants",
+      "prompt": "Answer briefly: What is the speed of light in vacuum in meters per second?",
+      "choice": "baseline",
+      "feature": "baseline_default",
+      "score": 1.0,
+      "baseline_score": 1.0
+    },
+    {
+      "index": 14,
+      "category": "factual_constants",
+      "prompt": "State the commonly used answer: What is the speed of light in vacuum in meters per second?",
+      "choice": "baseline",
+      "feature": "baseline_default",
+      "score": 1.0,
+      "baseline_score": 1.0
+    },
+    {
+      "index": 16,
+      "category": "factual_constants",
+      "prompt": "Answer briefly: What is the approximate acceleration due to gravity on Earth in m/s^2?",
+      "choice": "baseline",
+      "feature": "baseline_default",
+      "score": 0.0,
+      "baseline_score": 0.0
+    },
+    {
+      "index": 17,
+      "category": "factual_constants",
+      "prompt": "Give the standard value: What is the approximate acceleration due to gravity on Earth in m/s^2?",
+      "choice": "baseline",
+      "feature": "baseline_default",
+      "score": 0.0,
+      "baseline_score": 0.0
+    },
+    {
+      "index": 18,
+      "category": "factual_constants",
+      "prompt": "In one short answer, What is the approximate acceleration due to gravity on Earth in m/s^2?",
+      "choice": "baseline",
+      "feature": "baseline_default",
+      "score": 1.0,
+      "baseline_score": 1.0
+    },
+    {
+      "index": 20,
+      "category": "commonsense",
+      "prompt": "What is the capital of France?",
+      "choice": "baseline",
+      "feature": "baseline_default",
+      "score": 1.0,
+      "baseline_score": 1.0
+    },
+    {
+      "index": 25,
+      "category": "commonsense",
+      "prompt": "Which organ pumps blood through the body?",
+      "choice": "baseline",
+      "feature": "baseline_default",
+      "score": 1.0,
+      "baseline_score": 1.0
+    },
+    {
+      "index": 29,
+      "category": "commonsense",
+      "prompt": "Which country is famous for the Eiffel Tower?",
+      "choice": "baseline",
+      "feature": "baseline_default",
+      "score": 1.0,
+      "baseline_score": 1.0
+    },
+    {
+      "index": 32,
+      "category": "code",
+      "prompt": "Explain what a hash map is in one paragraph. Use concise wording. Variant 1.",
+      "choice": "baseline",
+      "feature": "baseline_default",
+      "score": 1.0,
+      "baseline_score": 1.0
+    },
+    {
+      "index": 33,
+      "category": "code",
+      "prompt": "Write a SQL query to select all rows from a users table. Use concise wording. Variant 1.",
+      "choice": "baseline",
+      "feature": "baseline_default",
+      "score": 1.0,
+      "baseline_score": 1.0
+    },
+    {
+      "index": 42,
+      "category": "chinese",
+      "prompt": "一年有多少个月？ 请简短回答。版本1。",
+      "choice": "baseline",
+      "feature": "baseline_default",
+      "score": 1.0,
+      "baseline_score": 1.0
+    },
+    {
+      "index": 46,
+      "category": "chinese",
+      "prompt": "什么是自然语言处理？ 请简短回答。版本1。",
+      "choice": "baseline",
+      "feature": "baseline_default",
+      "score": 1.0,
+      "baseline_score": 1.0
+    },
+    {
+      "index": 52,
+      "category": "reasoning",
+      "prompt": "If today is Monday, what day will it be in 10 days? Explain briefly. Variant 1.",
+      "choice": "baseline",
+      "feature": "baseline_default",
+      "score": 1.0,
+      "baseline_score": 1.0
+    },
+    {
+      "index": 58,
+      "category": "reasoning",
+      "prompt": "If all roses are flowers and some flowers fade quickly, must all roses fade quickly? Explain briefly. Variant 1.",
+      "choice": "baseline",
+      "feature": "baseline_default",
+      "score": 1.0,
+      "baseline_score": 1.0
+    },
+    {
+      "index": 59,
+      "category": "reasoning",
+      "prompt": "A doctor gives you 3 pills and says take one every half hour. How long will the pills last? Explain briefly. Variant 1.",
+      "choice": "baseline",
+      "feature": "baseline_default",
+      "score": 1.0,
+      "baseline_score": 1.0
+    },
+    {
+      "index": 4,
+      "category": "arithmetic",
+      "prompt": "What is 208 + 315?",
+      "choice": "baseline",
+      "feature": "baseline_default",
+      "score": 1.0,
+      "baseline_score": 1.0
+    },
+    {
+      "index": 8,
+      "category": "arithmetic",
+      "prompt": "What is 9 times 8?",
+      "choice": "baseline",
+      "feature": "baseline_default",
+      "score": 0.0,
+      "baseline_score": 0.0
+    },
+    {
+      "index": 22,
+      "category": "commonsense",
+      "prompt": "What color is the sky on a clear day?",
+      "choice": "baseline",
+      "feature": "baseline_default",
+      "score": 1.0,
+      "baseline_score": 1.0
+    },
+    {
+      "index": 26,
+      "category": "commonsense",
+      "prompt": "What do bees produce?",
+      "choice": "baseline",
+      "feature": "baseline_default",
+      "score": 1.0,
+      "baseline_score": 1.0
+    },
+    {
+      "index": 27,
+      "category": "commonsense",
+      "prompt": "Which gas do plants absorb from the atmosphere?",
+      "choice": "baseline",
+      "feature": "baseline_default",
+      "score": 1.0,
+      "baseline_score": 1.0
+    },
+    {
+      "index": 38,
+      "category": "code",
+      "prompt": "What is a unit test? Use concise wording. Variant 1.",
+      "choice": "chinese_semantic",
+      "feature": "asks_brief",
+      "score": 1.0,
+      "baseline_score": 1.0
+    },
+    {
+      "index": 41,
+      "category": "chinese",
+      "prompt": "请用中文解释什么是人工智能。 请简短回答。版本1。",
+      "choice": "chinese_semantic",
+      "feature": "asks_brief",
+      "score": 1.0,
+      "baseline_score": 1.0
+    },
+    {
+      "index": 44,
+      "category": "chinese",
+      "prompt": "水的化学式是什么？ 请简短回答。版本1。",
+      "choice": "chinese_semantic",
+      "feature": "asks_brief",
+      "score": 1.0,
+      "baseline_score": 1.0
+    },
+    {
+      "index": 49,
+      "category": "chinese",
+      "prompt": "长城位于哪个国家？ 请简短回答。版本1。",
+      "choice": "chinese_semantic",
+      "feature": "asks_brief",
+      "score": 1.0,
+      "baseline_score": 1.0
+    },
+    {
+      "index": 50,
+      "category": "reasoning",
+      "prompt": "If a book costs $20 after a 20% discount, what was the original price? Explain briefly. Variant 1.",
+      "choice": "chinese_semantic",
+      "feature": "asks_brief",
+      "score": 1.0,
+      "baseline_score": 1.0
+    },
+    {
+      "index": 1,
+      "category": "arithmetic",
+      "prompt": "What is 37 + 45?",
+      "choice": "baseline",
+      "feature": "baseline_default",
+      "score": 1.0,
+      "baseline_score": 1.0
+    },
+    {
+      "index": 5,
+      "category": "arithmetic",
+      "prompt": "What is 91 + 64?",
+      "choice": "baseline",
+      "feature": "baseline_default",
+      "score": 0.0,
+      "baseline_score": 0.0
+    },
+    {
+      "index": 7,
+      "category": "arithmetic",
+      "prompt": "What is 145 + 255?",
+      "choice": "baseline",
+      "feature": "baseline_default",
+      "score": 0.0,
+      "baseline_score": 0.0
+    },
+    {
+      "index": 12,
+      "category": "factual_constants",
+      "prompt": "Give the standard value: What is the speed of light in vacuum in meters per second?",
+      "choice": "chinese_semantic",
+      "feature": "has_physical_constant",
+      "score": 1.0,
+      "baseline_score": 1.0
+    },
+    {
+      "index": 15,
+      "category": "factual_constants",
+      "prompt": "What is the approximate acceleration due to gravity on Earth in m/s^2?",
+      "choice": "chinese_semantic",
+      "feature": "has_power",
+      "score": 0.0,
+      "baseline_score": 1.0
+    },
+    {
+      "index": 21,
+      "category": "commonsense",
+      "prompt": "Which planet is known as the Red Planet?",
+      "choice": "baseline",
+      "feature": "baseline_default",
+      "score": 1.0,
+      "baseline_score": 1.0
+    },
+    {
+      "index": 24,
+      "category": "commonsense",
+      "prompt": "How many continents are commonly counted on Earth?",
+      "choice": "baseline",
+      "feature": "baseline_default",
+      "score": 0.0,
+      "baseline_score": 0.0
+    },
+    {
+      "index": 34,
+      "category": "code",
+      "prompt": "What is the time complexity of binary search? Use concise wording. Variant 1.",
+      "choice": "chinese_semantic",
+      "feature": "asks_brief",
+      "score": 1.0,
+      "baseline_score": 1.0
+    },
+    {
+      "index": 36,
+      "category": "code",
+      "prompt": "Explain the difference between GET and POST. Use concise wording. Variant 1.",
+      "choice": "chinese_semantic",
+      "feature": "asks_brief",
+      "score": 1.0,
+      "baseline_score": 1.0
+    },
+    {
+      "index": 37,
+      "category": "code",
+      "prompt": "Write Python code to count words in a string. Use concise wording. Variant 1.",
+      "choice": "chinese_semantic",
+      "feature": "asks_brief",
+      "score": 1.0,
+      "baseline_score": 1.0
+    },
+    {
+      "index": 45,
+      "category": "chinese",
+      "prompt": "太阳从哪个方向升起？ 请简短回答。版本1。",
+      "choice": "chinese_semantic",
+      "feature": "asks_brief",
+      "score": 1.0,
+      "baseline_score": 1.0
+    },
+    {
+      "index": 2,
+      "category": "arithmetic",
+      "prompt": "What is 56 + 29?",
+      "choice": "calculation_error",
+      "feature": "has_addition",
+      "score": 0.0,
+      "baseline_score": 1.0
+    },
+    {
+      "index": 10,
+      "category": "factual_constants",
+      "prompt": "What is the speed of light in vacuum in meters per second?",
+      "choice": "calculation_error",
+      "feature": "has_physical_constant",
+      "score": 1.0,
+      "baseline_score": 1.0
+    },
+    {
+      "index": 19,
+      "category": "factual_constants",
+      "prompt": "State the commonly used answer: What is the approximate acceleration due to gravity on Earth in m/s^2?",
+      "choice": "calculation_error",
+      "feature": "has_division",
+      "score": 1.0,
+      "baseline_score": 1.0
+    },
+    {
+      "index": 30,
+      "category": "code",
+      "prompt": "Write a Python function that returns the sum of a list of integers. Use concise wording. Variant 1.",
+      "choice": "chinese_semantic",
+      "feature": "asks_brief",
+      "score": 1.0,
+      "baseline_score": 1.0
+    },
+    {
+      "index": 35,
+      "category": "code",
+      "prompt": "Write a regex that roughly validates an email address. Use concise wording. Variant 1.",
+      "choice": "chinese_semantic",
+      "feature": "asks_brief",
+      "score": 1.0,
+      "baseline_score": 1.0
+    },
+    {
+      "index": 48,
+      "category": "chinese",
+      "prompt": "请列举三种水果。 请简短回答。版本1。",
+      "choice": "chinese_semantic",
+      "feature": "asks_brief",
+      "score": 1.0,
+      "baseline_score": 1.0
+    },
+    {
+      "index": 51,
+      "category": "reasoning",
+      "prompt": "A farmer has chickens and cows. There are 10 heads and 28 legs. How many chickens are there? Explain briefly. Variant 1.",
+      "choice": "chinese_semantic",
+      "feature": "asks_brief",
+      "score": 1.0,
+      "baseline_score": 1.0
+    },
+    {
+      "index": 53,
+      "category": "reasoning",
+      "prompt": "Two people start at the same point and walk in opposite directions for 3 km. How far apart are they? Explain briefly. Variant 1.",
+      "choice": "chinese_semantic",
+      "feature": "asks_brief",
+      "score": 1.0,
+      "baseline_score": 1.0
+    },
+    {
+      "index": 55,
+      "category": "reasoning",
+      "prompt": "A car travels 30 km in 30 minutes. What is its average speed in km/h? Explain briefly. Variant 1.",
+      "choice": "calculation_error",
+      "feature": "has_division",
+      "score": 1.0,
+      "baseline_score": 1.0
+    },
+    {
+      "index": 57,
+      "category": "reasoning",
+      "prompt": "What is heavier: one kilogram of iron or one kilogram of cotton? Explain briefly. Variant 1.",
+      "choice": "chinese_semantic",
+      "feature": "asks_brief",
+      "score": 1.0,
+      "baseline_score": 1.0
+    }
+  ]
+}

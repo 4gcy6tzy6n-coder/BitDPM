@@ -1,0 +1,1567 @@
+{
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "device": "mps",
+  "block_scale": 0.15,
+  "max_tokens": 64,
+  "config_results": {
+    "baseline": {
+      "overall": 0.8,
+      "category_scores": {
+        "commonsense": 0.8,
+        "math": 0.3,
+        "code": 1.0,
+        "chinese": 1.0,
+        "reasoning": 1.0
+      },
+      "active_blocks": 0.0
+    },
+    "calculation_error": {
+      "overall": 0.7777777777777778,
+      "category_scores": {
+        "commonsense": 0.7,
+        "math": 0.3,
+        "code": 1.0,
+        "chinese": 1.0,
+        "reasoning": 1.0
+      },
+      "active_blocks": 3.0
+    },
+    "chinese_semantic": {
+      "overall": 0.8222222222222222,
+      "category_scores": {
+        "commonsense": 0.8,
+        "math": 0.4,
+        "code": 1.0,
+        "chinese": 1.0,
+        "reasoning": 1.0
+      },
+      "active_blocks": 3.0
+    },
+    "commonsense_choice": {
+      "overall": 0.7777777777777778,
+      "category_scores": {
+        "commonsense": 0.7,
+        "math": 0.3,
+        "code": 1.0,
+        "chinese": 1.0,
+        "reasoning": 1.0
+      },
+      "active_blocks": 3.0
+    },
+    "format_following": {
+      "overall": 0.8,
+      "category_scores": {
+        "commonsense": 0.8,
+        "math": 0.3,
+        "code": 1.0,
+        "chinese": 1.0,
+        "reasoning": 1.0
+      },
+      "active_blocks": 3.0
+    },
+    "short_reasoning": {
+      "overall": 0.7777777777777778,
+      "category_scores": {
+        "commonsense": 0.7,
+        "math": 0.3,
+        "code": 1.0,
+        "chinese": 1.0,
+        "reasoning": 1.0
+      },
+      "active_blocks": 3.0
+    },
+    "always_all": {
+      "overall": 0.8,
+      "category_scores": {
+        "commonsense": 0.8,
+        "math": 0.3,
+        "code": 1.0,
+        "chinese": 1.0,
+        "reasoning": 1.0
+      },
+      "active_blocks": 15.0
+    }
+  },
+  "oracle": {
+    "overall": 0.8444444444444444,
+    "category_scores": {
+      "commonsense": 0.9,
+      "math": 0.4,
+      "code": 1.0,
+      "chinese": 1.0,
+      "reasoning": 1.0
+    },
+    "active_blocks": 0.13333333333333333
+  },
+  "validation_calibrated": {
+    "overall": 0.7391304347826086,
+    "category_scores": {
+      "commonsense": 0.6,
+      "math": 0.2,
+      "code": 1.0,
+      "chinese": 1.0,
+      "reasoning": 1.0
+    },
+    "active_blocks": 0.0
+  },
+  "category_policy": {
+    "commonsense": "baseline",
+    "math": "baseline",
+    "code": "baseline",
+    "chinese": "baseline",
+    "reasoning": "baseline"
+  },
+  "utility_matrix": {
+    "commonsense": {
+      "baseline": 0.8,
+      "calculation_error": 0.7,
+      "chinese_semantic": 0.8,
+      "commonsense_choice": 0.7,
+      "format_following": 0.8,
+      "short_reasoning": 0.7,
+      "always_all": 0.8
+    },
+    "math": {
+      "baseline": 0.3,
+      "calculation_error": 0.3,
+      "chinese_semantic": 0.4,
+      "commonsense_choice": 0.3,
+      "format_following": 0.3,
+      "short_reasoning": 0.3,
+      "always_all": 0.3
+    },
+    "code": {
+      "baseline": 1.0,
+      "calculation_error": 1.0,
+      "chinese_semantic": 1.0,
+      "commonsense_choice": 1.0,
+      "format_following": 1.0,
+      "short_reasoning": 1.0,
+      "always_all": 1.0
+    },
+    "chinese": {
+      "baseline": 1.0,
+      "calculation_error": 1.0,
+      "chinese_semantic": 1.0,
+      "commonsense_choice": 1.0,
+      "format_following": 1.0,
+      "short_reasoning": 1.0,
+      "always_all": 1.0
+    },
+    "reasoning": {
+      "baseline": 1.0,
+      "calculation_error": 1.0,
+      "chinese_semantic": 1.0,
+      "commonsense_choice": 1.0,
+      "format_following": 1.0,
+      "short_reasoning": 1.0,
+      "always_all": 1.0
+    }
+  },
+  "selection_frequency": {
+    "baseline": 43,
+    "calculation_error": 0,
+    "chinese_semantic": 2,
+    "commonsense_choice": 0,
+    "format_following": 0,
+    "short_reasoning": 0,
+    "always_all": 0
+  },
+  "per_sample": [
+    {
+      "category": "commonsense",
+      "prompt": "What is the capital of France?",
+      "scores": {
+        "baseline": 1.0,
+        "calculation_error": 1.0,
+        "chinese_semantic": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 1.0,
+        "short_reasoning": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "calculation_error": 3,
+        "chinese_semantic": 3,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "short_reasoning": 3,
+        "always_all": 15
+      },
+      "outputs": {
+        "baseline": " The capital of France is Paris. \n\nTo verify this, I will use a simple search engine to confirm that Paris is indeed the official capital of France.\n\nHere's the step-by-step process:\n\n1. Open a web browser and navigate to a search engine website.\n2. Type \"capital of France\" into the search",
+        "calculation_error": " The capital of France is Paris. \n\nTo elaborate:\n\n1. Paris, officially known as the \"City of Light,\" is the largest city in France and one of the most populous cities in Europe.\n\n2. It serves as the seat of government for the French Republic and is the capital of France.\n\n3. The term",
+        "chinese_semantic": " The capital of France is Paris. \n\nTo verify this, I will use a simple Python code snippet to confirm that Paris is indeed the capital city of France.\n\n```python\n# Define the capital city of France\ncapital_city = \"Paris\"\n\n# Print the capital city\nprint(capital_city)\n```\n\nWhen I",
+        "commonsense_choice": " The capital of France is Paris. \n\nTo elaborate:\n\n1. Paris, officially known as the \"City of Light,\" is the largest city in France and one of the most populous cities in Europe.\n\n2. It serves as the seat of government for the French Republic and is the capital of France.\n\n3. The term",
+        "format_following": " The capital of France is Paris. \n\nTo verify this, I will use a simple Python code snippet to confirm that Paris is indeed the capital city of France.\n\n```python\n# Define the capital city of France\ncapital_city = \"Paris\"\n\n# Print the capital city\nprint(capital_city)\n```\n\nWhen I",
+        "short_reasoning": " The capital of France is Paris. \n\nTo elaborate:\n\n1. Paris, officially known as the \"City of Light,\" is the largest city in France and one of the most populous cities in Europe.\n\n2. It serves as the seat of government for the French Republic and is located on the Île de la Cité",
+        "always_all": " The capital of France is Paris. \n\nTo elaborate:\n\n1. Paris, officially known as the \"City of Light,\" is the largest city in France and one of the most populous cities in Europe.\n\n2. It serves as the seat of government for the French Republic and is located on the Île de la Cité"
+      }
+    },
+    {
+      "category": "commonsense",
+      "prompt": "How many days are in a leap year?",
+      "scores": {
+        "baseline": 1.0,
+        "calculation_error": 1.0,
+        "chinese_semantic": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 1.0,
+        "short_reasoning": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "calculation_error": 3,
+        "chinese_semantic": 3,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "short_reasoning": 3,
+        "always_all": 15
+      },
+      "outputs": {
+        "baseline": " A. 365 B. 366 C. 367 D. 368\nAnswer:\n\nB\n\nWhich of the following statements about the characteristics of the Chinese language is incorrect?\nA. The Chinese language has a long history and rich content.\nB. The Chinese language is widely",
+        "calculation_error": " A. 365 B. 366 C. 367 D. 368\nAnswer:\n\nB\n\nIn the process of making a decision, which of the following is NOT an appropriate method for evaluating and selecting options?\nA. Analyzing the pros and cons of each option\n",
+        "chinese_semantic": " A. 365 B. 366 C. 367 D. 368\nAnswer:\nB\n\nIn the process of making a dough, which ingredient is typically used to make it soft and elastic?\nA. Eggs\nB. Sugar\nC. Yeast\nD.",
+        "commonsense_choice": " A. 365 B. 366 C. 367 D. 368\nAnswer:\nB\n\nIn the process of making a dough, which of the following is NOT a correct method for kneading?\nA. Using a wooden spoon to stir continuously\nB. Kne",
+        "format_following": " A. 365 B. 366 C. 367 D. 368\nAnswer:\n\nB\n\nIn the process of making a decision, which of the following is NOT an appropriate method for evaluating and selecting options?\nA. Analyzing the pros and cons of each option\n",
+        "short_reasoning": " A. 365 B. 366 C. 367 D. 368\nAnswer:\n\nB\n\nWhich of the following statements about the characteristics of the Chinese language is incorrect?\nA. The Chinese language has a long history and rich content.\nB. The Chinese language uses characters",
+        "always_all": " A. 365 B. 366 C. 367 D. 368\nAnswer:\n\nB\n\nIn the process of making a decision, which of the following is NOT an appropriate method for evaluating and selecting options?\nA. Analyzing the pros and cons of each option\n"
+      }
+    },
+    {
+      "category": "commonsense",
+      "prompt": "What color is the sky on a clear day?",
+      "scores": {
+        "baseline": 1.0,
+        "calculation_error": 1.0,
+        "chinese_semantic": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 1.0,
+        "short_reasoning": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "calculation_error": 3,
+        "chinese_semantic": 3,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "short_reasoning": 3,
+        "always_all": 15
+      },
+      "outputs": {
+        "baseline": " The sky appears blue because it reflects sunlight. When light enters the eye, it passes through the cornea and pupil, then travels through the lens to focus on the retina at the back of the eye. The retina contains photoreceptor cells that convert light into electrical signals, which are sent to the brain via the optic",
+        "calculation_error": " The sky appears blue because it reflects sunlight. When light enters the eye, it passes through the cornea and pupil, then travels through the lens to focus on the retina at the back of the eye. The retina contains photoreceptor cells that convert light into electrical signals, which are sent to the brain via the optic",
+        "chinese_semantic": " A. Blue B. Green C. Yellow D. Red\nAnswer:\nA\n\nWhich of the following statements about the relationship between the number of moles and the amount of substance is correct?\nA. The mass of 1 mole of any substance is equal to its molar mass.\nB. The volume occupied by",
+        "commonsense_choice": " On a clear day, the sky appears blue because it reflects sunlight. The colors we see in the sky are actually the result of light scattering and absorption by various objects in the atmosphere. When sunlight enters the Earth's atmosphere, it passes through different layers of air and encounters different surfaces, causing the colors to be scattered and",
+        "format_following": " On a clear day, the sky appears blue because it reflects sunlight. The colors of the sky depend on the angle at which light enters and exits the atmosphere. When light from the sun passes through the Earth's atmosphere, it is scattered in all directions by tiny particles like dust and water droplets. These particles scatter the",
+        "short_reasoning": " The sky appears blue because it reflects sunlight. When light enters our eyes, it passes through the atmosphere and bounces off objects in front of us. This causes the colors to be scattered and refracted, creating the appearance of different colors.\n\nThe specific wavelengths of light that make up the visible spectrum are:\n\n1. Red",
+        "always_all": " The sky appears blue because it reflects sunlight. When light enters the eye, it passes through the cornea and lens of the eye, then reaches the retina at the back of the eye. Here, the retina contains photoreceptor cells that are sensitive to light. These cells convert the incoming light into electrical signals that can"
+      }
+    },
+    {
+      "category": "commonsense",
+      "prompt": "Which planet is known as the Red Planet?",
+      "scores": {
+        "baseline": 1.0,
+        "calculation_error": 1.0,
+        "chinese_semantic": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 1.0,
+        "short_reasoning": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "calculation_error": 3,
+        "chinese_semantic": 3,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "short_reasoning": 3,
+        "always_all": 15
+      },
+      "outputs": {
+        "baseline": " Mars. The Red Planet refers to Mars, which is the fourth planet from the Sun in our solar system and one of the eight planets in the Solar System. It is also known as the \"Red Planet\" due to its reddish appearance when viewed from Earth because of the presence of iron oxide (rust) on its",
+        "calculation_error": " Mars. The Red Planet refers to Mars, which is the fourth planet from the Sun in our solar system and the only one that has a significant atmosphere. It is also known as the \"Red Planet\" due to its reddish appearance when viewed from Earth.\n\nMars was once considered a habitable world for life,",
+        "chinese_semantic": " Mars. It's a red planet, and it was named after the Roman god of war.\nWhat are some interesting facts about Mars?\nMars has two moons: Phobos and Deimos. The largest crater on Mars is called Valles Marineris, which is 10 times larger than the Moon.",
+        "commonsense_choice": " Mars. It's a rocky, dry planet with no atmosphere and no liquid water on its surface.\n\nIs it possible to have a Martian rover that can travel through the Martian soil?\n\nYes, it is possible to have a rover that can travel through the Martian soil. The concept of a rover capable of traversing through solid",
+        "format_following": " Mars. The Red Planet refers to Mars, which is the fourth planet from the Sun in our solar system and one of the eight planets in the Solar System. It is also known as the \"Red Planet\" due to its reddish appearance when viewed from Earth. Mars has a surface made up of sand dunes,",
+        "short_reasoning": " Mars. The Red Planet refers to Mars, which is the fourth planet from the Sun in our solar system and one of the eight planets in the Solar System. It is also known as the \"Red Planet\" due to its reddish appearance when viewed from Earth due to the presence of iron oxide (rust) on its",
+        "always_all": " Mars. The Red Planet refers to Mars, which is the fourth planet from the Sun in our solar system and one of the eight planets in the Solar System. It is also known as the \"Red Planet\" due to its reddish appearance when viewed from Earth due to the presence of iron oxide (rust) on its"
+      }
+    },
+    {
+      "category": "commonsense",
+      "prompt": "What is the boiling point of water in Celsius?",
+      "scores": {
+        "baseline": 1.0,
+        "calculation_error": 1.0,
+        "chinese_semantic": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 1.0,
+        "short_reasoning": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "calculation_error": 3,
+        "chinese_semantic": 3,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "short_reasoning": 3,
+        "always_all": 15
+      },
+      "outputs": {
+        "baseline": " The boiling point of water at standard atmospheric pressure (1 atmosphere) is 100 degrees Celsius. However, this can vary slightly depending on the temperature scale used and the specific conditions under which it is measured. In some cases, the boiling point may be slightly lower or higher than 100 degrees Celsius.",
+        "calculation_error": " The boiling point of water at standard atmospheric pressure (1 atmosphere) is 100 degrees Celsius. This value can vary slightly depending on temperature and altitude, but it remains approximately 100 degrees Celsius. \n\nTo provide a more precise answer, we would need to know the exact location or altitude where you are",
+        "chinese_semantic": " The boiling point of water at standard atmospheric pressure (1 atmosphere) is 100 degrees Celsius. This value can vary slightly depending on temperature and altitude, but it remains approximately 100 degrees Celsius. \n\nTo provide a more precise answer, we would need to know the specific location or condition where you are",
+        "commonsense_choice": " The boiling point of water at standard atmospheric pressure (1 atmosphere) is 100 degrees Celsius. However, this can vary slightly depending on the temperature scale used and the specific conditions under which it is measured. In some cases, the boiling point may be slightly lower or higher than 100 degrees Celsius.",
+        "format_following": " The boiling point of water at standard atmospheric pressure (1 atmosphere) is 100 degrees Celsius. However, this can vary slightly depending on the temperature scale being used and the specific conditions of the experiment. In general, the boiling point of water increases with increasing temperature. For example, at room temperature (25",
+        "short_reasoning": " The boiling point of water at standard atmospheric pressure (1 atmosphere) is 100 degrees Celsius. However, this temperature can vary slightly depending on the specific conditions and location. In general, the boiling point of water increases with increasing pressure. So, if you were to increase the pressure by a factor of 1",
+        "always_all": " The boiling point of water at standard atmospheric pressure (1 atmosphere) is 100 degrees Celsius. However, this can vary slightly depending on temperature and altitude. At higher altitudes or lower temperatures, the boiling point of water may be lower. Additionally, some substances have a specific boiling point that is different from the"
+      }
+    },
+    {
+      "category": "commonsense",
+      "prompt": "Who wrote Romeo and Juliet?",
+      "scores": {
+        "baseline": 1.0,
+        "calculation_error": 0.0,
+        "chinese_semantic": 0.0,
+        "commonsense_choice": 0.0,
+        "format_following": 0.0,
+        "short_reasoning": 0.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "calculation_error": 3,
+        "chinese_semantic": 3,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "short_reasoning": 3,
+        "always_all": 15
+      },
+      "outputs": {
+        "baseline": " What is the name of the play?\nWhat is the answer?\n\nThe answer to this question is:\n\nWilliam Shakespeare\n\nRomeo and Juliet was written by William Shakespeare, an English playwright who lived from 1564 to 1616. The play is a tragic love story set in the early ",
+        "calculation_error": " What is the name of the play?\nWhat are some interesting facts about Romeo and Juliet?\nDo those questions have the same meaning?\nPick your answer from:\na). no\nb). yes\n\na).",
+        "chinese_semantic": " What is the name of the play?\nWhat are some interesting facts about Romeo and Juliet?\nDo those questions have the same meaning?\nPick from:\n (a). no\n (b). yes\n\n(a).",
+        "commonsense_choice": " What is the name of the play?\nWhat are some interesting facts about Romeo and Juliet?\nDo those questions have the same meaning?\nPick from:\n (a). no\n (b). yes\n\n(a).",
+        "format_following": " What is the name of the play?\nWhat are some interesting facts about Romeo and Juliet?\nDo those questions have the same meaning?\nPick from:\na). no\nb). yes\n\na).",
+        "short_reasoning": " What is the name of the play?\nWhat are some interesting facts about Romeo and Juliet?\nDo those questions have the same meaning?\nPick your answer from:\n (A). no\n (B). yes\n\n(A). No\nThe two questions do not have the same meaning. The first question asks who wrote Romeo and Juliet",
+        "always_all": " What is the name of the play?\nWhat are some of the most famous plays in Shakespeare's works?\nDo those questions have the same meaning?\nPick your answer from:\n (a). no\n (b). yes\n\n(a). no\n\nThe two questions you've asked are asking about different aspects of Shakespeare's work."
+      }
+    },
+    {
+      "category": "commonsense",
+      "prompt": "What is the largest ocean on Earth?",
+      "scores": {
+        "baseline": 1.0,
+        "calculation_error": 1.0,
+        "chinese_semantic": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 1.0,
+        "short_reasoning": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "calculation_error": 3,
+        "chinese_semantic": 3,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "short_reasoning": 3,
+        "always_all": 15
+      },
+      "outputs": {
+        "baseline": " The largest ocean on Earth is the Pacific Ocean. It covers about 70% of the Earth's surface and has a total area of approximately 14,896,000 square kilometers (5,783,000 square miles). The Pacific Ocean is also known as the \"",
+        "calculation_error": " The largest ocean on Earth is the Pacific Ocean. It covers about 70% of the Earth's surface and has a total area of approximately 14,896,000 square kilometers (5,783,000 square miles). The Pacific Ocean is also known as the \"",
+        "chinese_semantic": " The largest ocean on Earth is the Pacific Ocean. It covers an area of approximately 14,890,000 square kilometers (5,796,000 square miles) and is located between North America and South America. The Pacific Ocean is also known as the \"Ocean of the",
+        "commonsense_choice": " The largest ocean on Earth is the Pacific Ocean. It covers an area of approximately 14,890,000 square kilometers (5,786,000 square miles) and is located between North America and Asia. The Pacific Ocean is also known as the \"Ocean of the Seven",
+        "format_following": " The largest ocean on Earth is the Pacific Ocean. It covers about 70% of the Earth's surface and is the second-largest in terms of area after the Atlantic Ocean. The Pacific Ocean extends from the Arctic Ocean to the Antarctic, covering an area of approximately 41 million square kilometers (16 million square",
+        "short_reasoning": " The largest ocean on Earth is the Pacific Ocean. It covers about 70% of the Earth's surface and has a total area of approximately 14,896,000 square kilometers (5,783,000 square miles). The Pacific Ocean is also known as the \"",
+        "always_all": " The largest ocean on Earth is the Pacific Ocean. It covers an area of approximately 14,890,000 square kilometers (5,786,000 square miles) and is located between North America and South America. The Pacific Ocean is also known as the \"Ocean of the"
+      }
+    },
+    {
+      "category": "commonsense",
+      "prompt": "How many continents are there?",
+      "scores": {
+        "baseline": 0.0,
+        "calculation_error": 0.0,
+        "chinese_semantic": 1.0,
+        "commonsense_choice": 0.0,
+        "format_following": 1.0,
+        "short_reasoning": 0.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "calculation_error": 3,
+        "chinese_semantic": 3,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "short_reasoning": 3,
+        "always_all": 15
+      },
+      "outputs": {
+        "baseline": " A. 1 B. 2 C. 3 D. 4\nAnswer:\nD\n\nWhich of the following statements about the characteristics of China's terrain is incorrect?\nA. The terrain is complex and diverse, with a wide variety of landforms.\nB. The terrain has significant differences at different levels.\n",
+        "calculation_error": " A. 1 B. 2 C. 3 D. 4\nAnswer:\n\nD\n\nWhich of the following statements about the relationship between the number of chromosomes and genetic traits is correct?\nA. The number of chromosomes in a cell equals the number of genes.\nB. The number of chromosomes in a cell",
+        "chinese_semantic": " A. 5 B. 6 C. 7 D. 8\nAnswer:\n\nC\n\nWhich of the following statements about the relationship between the number of chromosomes and genetic traits is correct?\nA. The more chromosomes, the higher the genetic diversity.\nB. The fewer chromosomes, the lower the genetic diversity.\n",
+        "commonsense_choice": " A. 1 B. 2 C. 3 D. 4\nAnswer:\n\nD\n\nWhich of the following statements about the relationship between the number of chromosomes and genetic traits is correct?\nA. The number of chromosomes in a cell equals the number of genes.\nB. The number of chromosomes in a cell",
+        "format_following": " A. 5 B. 6 C. 7 D. 8\nAnswer:\n\nC\n\nWhich of the following statements about the characteristics of China's terrain is incorrect?\nA. The terrain is complex and diverse, with a wide variety of landforms.\nB. The terrain has significant differences at different levels.\n",
+        "short_reasoning": " A. 1 B. 2 C. 3 D. 4\nAnswer:\n\nD\n\nWhich of the following statements about the relationship between the number of chromosomes in somatic cells and gametes is correct?\nA. The number of chromosomes in somatic cells equals the number of chromosomes in gametes.\nB",
+        "always_all": " A. 1 B. 2 C. 3 D. 4\nAnswer:\n\nD\n\nWhich of the following statements about the relationship between the number of chromosomes and genetic traits is correct?\nA. The number of chromosomes in a cell equals the number of genes.\nB. The number of chromosomes in a cell"
+      }
+    },
+    {
+      "category": "commonsense",
+      "prompt": "What is the speed of light in vacuum?",
+      "scores": {
+        "baseline": 0.0,
+        "calculation_error": 0.0,
+        "chinese_semantic": 0.0,
+        "commonsense_choice": 0.0,
+        "format_following": 0.0,
+        "short_reasoning": 0.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "calculation_error": 3,
+        "chinese_semantic": 3,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "short_reasoning": 3,
+        "always_all": 15
+      },
+      "outputs": {
+        "baseline": " The speed of light in a vacuum is approximately 299,792 kilometers per second. This value has been determined through experiments and observations over many years.\n\nTo provide more context:\n\n1. **Definition**: The speed of light in a vacuum refers to the maximum speed at which electromagnetic waves can travel without being",
+        "calculation_error": " The speed of light in a vacuum is approximately 299,792 kilometers per second. This value has been determined through experiments and observations over many years.\n\nTo provide more context:\n\n1. **Definition**: The speed of light in a vacuum refers to the constant velocity at which light travels through a vacuum (",
+        "chinese_semantic": " The speed of light in a vacuum is approximately 299,792 kilometers per second. This value has been determined through experiments and observations by scientists over many years.\n\nTo provide more context:\n\n1. **Definition**: The speed of light in a vacuum refers to the maximum velocity at which electromagnetic waves can travel",
+        "commonsense_choice": " The speed of light in a vacuum is approximately 299,792 kilometers per second. This value has been determined through experiments and observations over many years.\n\nTo understand this concept better, let's break it down into simpler terms:\n\n1. **Speed of Light**: The speed of light is a fundamental physical",
+        "format_following": " The speed of light in a vacuum is approximately 299,792 kilometers per second. This value has been determined through experiments and observations over many years.\n\nTo provide more context:\n\n1. **Definition**: The speed of light in a vacuum refers to the maximum velocity at which electromagnetic waves can travel without being",
+        "short_reasoning": " The speed of light in a vacuum is approximately 299,792 kilometers per second. This value has been determined through experiments with various materials and conditions.\n\nTo provide more context:\n\n1. **Speed of Light in Vacuum**: The speed of light in a vacuum is a fundamental constant in physics that describes how",
+        "always_all": " The speed of light in a vacuum is approximately 299,792 kilometers per second. This value has been determined through experiments and observations by scientists over many years.\n\nTo provide more context:\n\n1. **Speed of Light in Vacuum**: The speed of light in a vacuum is a fundamental constant in physics that"
+      }
+    },
+    {
+      "category": "commonsense",
+      "prompt": "Which gas do plants absorb from the atmosphere?",
+      "scores": {
+        "baseline": 1.0,
+        "calculation_error": 1.0,
+        "chinese_semantic": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 1.0,
+        "short_reasoning": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "calculation_error": 3,
+        "chinese_semantic": 3,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "short_reasoning": 3,
+        "always_all": 15
+      },
+      "outputs": {
+        "baseline": " Plants absorb carbon dioxide (CO2) from the atmosphere. This process is called photosynthesis and it is a crucial part of the Earth's food cycle. When plants use CO2 to produce glucose, they also release oxygen as a byproduct. This process helps to maintain the balance of gases in the atmosphere and supports life",
+        "calculation_error": " Plants absorb carbon dioxide (CO2) from the atmosphere. This process is called photosynthesis and it is a crucial part of the Earth's food cycle. When plants use CO2 to produce glucose, they also release oxygen as a byproduct. This process helps to maintain the balance of gases in the atmosphere and supports life",
+        "chinese_semantic": " Plants absorb carbon dioxide (CO2) from the atmosphere. This process is called photosynthesis and it is a crucial part of the Earth's food cycle. When plants use CO2 to produce glucose, they also release oxygen as a byproduct. This oxygen is essential for life on Earth because it is needed for respiration",
+        "commonsense_choice": " Plants absorb carbon dioxide (CO2) from the atmosphere. This process is called photosynthesis and it is a crucial part of the Earth's food cycle. When plants use CO2 to produce glucose, they also release oxygen as a byproduct. This oxygen is essential for life on Earth because it helps us breathe. So",
+        "format_following": " Plants absorb carbon dioxide (CO2) from the atmosphere through a process called photosynthesis. This process is essential for the growth and survival of plants, as it helps them produce their own food using sunlight energy.\nDuring photosynthesis, plants use light energy to convert carbon dioxide and water into glucose and oxygen. The glucose produced",
+        "short_reasoning": " Plants absorb carbon dioxide (CO2) from the atmosphere through a process called photosynthesis. This process is essential for the growth and survival of plants, as it allows them to convert sunlight into energy that they can use for their own needs.\nDuring photosynthesis, plants take in CO2 from the air using their leaves and",
+        "always_all": " Plants absorb carbon dioxide (CO2) from the atmosphere through a process called photosynthesis. This process is essential for the growth and survival of plants, as it helps them produce their own food using sunlight energy.\nWhen plants take in CO2 from the air, they use this gas to produce glucose, which serves as an"
+      }
+    },
+    {
+      "category": "math",
+      "prompt": "Calculate 15 + 27 =",
+      "scores": {
+        "baseline": 1.0,
+        "calculation_error": 1.0,
+        "chinese_semantic": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 1.0,
+        "short_reasoning": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "calculation_error": 3,
+        "chinese_semantic": 3,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "short_reasoning": 3,
+        "always_all": 15
+      },
+      "outputs": {
+        "baseline": " ?\nTo calculate \\(15 + 27\\), you add the two numbers together:\n\n\\[15 + 27 = 42\\]",
+        "calculation_error": " ?\nTo calculate \\( 15 + 27 \\), you add the two numbers together:\n\n\\[\n15 + 27 = 42\n\\]",
+        "chinese_semantic": " ?\nTo calculate \\(15 + 27\\), you add the two numbers together:\n\n\\[15 + 27 = 42\\]",
+        "commonsense_choice": " ?\nTo calculate \\(15 + 27\\), you add the two numbers together:\n\n\\[15 + 27 = 42\\]",
+        "format_following": " ?\nTo find the sum of 15 and 27, you simply add them together:\n\n15 + 27 = 42\n\nSo, 15 + 27 = 42.",
+        "short_reasoning": " ?\nTo calculate \\(15 + 27\\), you add the two numbers together:\n\n\\[15 + 27 = 42\\]",
+        "always_all": " ?\nTo calculate \\(15 + 27\\), you add the two numbers together:\n\n\\[15 + 27 = 42\\]"
+      }
+    },
+    {
+      "category": "math",
+      "prompt": "What is 144 divided by 12?",
+      "scores": {
+        "baseline": 1.0,
+        "calculation_error": 1.0,
+        "chinese_semantic": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 1.0,
+        "short_reasoning": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "calculation_error": 3,
+        "chinese_semantic": 3,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "short_reasoning": 3,
+        "always_all": 15
+      },
+      "outputs": {
+        "baseline": " To solve the problem of dividing 144 by 12, we can follow these steps:\n\n1. **Understand the division**: Dividing means sharing a number into equal parts.\n2. **Set up the equation**: We need to express 144 as a multiple of 12.\n3",
+        "calculation_error": " To solve the problem of dividing 144 by 12, we can follow these steps:\n\n1. **Understand the division**: We need to divide 144 by 12.\n2. **Set up the division**: Write 144 as a whole number and 12 as",
+        "chinese_semantic": " To solve the problem of dividing 144 by 12, we can follow these steps:\n\n1. **Set up the division**: We need to divide 144 by 12.\n   \\[\n   144 \\div 12\n   \\]\n\n2. **Perform the",
+        "commonsense_choice": " To solve the problem of dividing 144 by 12, we can follow these steps:\n\n1. **Understand the division**: Dividing means sharing a number into equal parts.\n2. **Set up the equation**: We need to express 144 as a multiple of 12.\n3",
+        "format_following": " To solve the problem of dividing 144 by 12, we can follow these steps:\n\n1. **Understand the division**: Dividing means sharing a number into equal parts.\n2. **Set up the equation**: We need to express 144 as a multiple of 12.\n3",
+        "short_reasoning": " To solve the problem of dividing 144 by 12, we can follow these steps:\n\n1. **Understand the division**: We need to divide 144 by 12.\n2. **Set up the division**: Write 144 as a whole number and place the decimal point",
+        "always_all": " To solve the problem of dividing 144 by 12, we can follow these steps:\n\n1. **Set up the division**: We need to divide 144 by 12.\n   \\[\n   144 \\div 12\n   \\]\n\n2. **Perform the"
+      }
+    },
+    {
+      "category": "math",
+      "prompt": "If x + 5 = 12, what is x?",
+      "scores": {
+        "baseline": 0.0,
+        "calculation_error": 0.0,
+        "chinese_semantic": 0.0,
+        "commonsense_choice": 0.0,
+        "format_following": 0.0,
+        "short_reasoning": 0.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "calculation_error": 3,
+        "chinese_semantic": 3,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "short_reasoning": 3,
+        "always_all": 15
+      },
+      "outputs": {
+        "baseline": " To solve the equation \\( x + 5 = 12 \\) for \\( x \\), you need to isolate \\( x \\) on one side of the equation. Here are the steps:\n\n1. Start with the given equation:\n   \\[\n   x + 5 = 12\n   \\]\n\n",
+        "calculation_error": " To solve the equation \\( x + 5 = 12 \\) for \\( x \\), you need to isolate \\( x \\) on one side of the equation. Here are the steps:\n\n1. Start with the given equation:\n   \\[\n   x + 5 = 12\n   \\]\n\n",
+        "chinese_semantic": " To solve the equation \\( x + 5 = 12 \\) for \\( x \\), you need to isolate \\( x \\) on one side of the equation. Here are the steps:\n\n1. Start with the given equation:\n   \\[\n   x + 5 = 12\n   \\]\n\n",
+        "commonsense_choice": " To solve the equation \\( x + 5 = 12 \\) for \\( x \\), you need to isolate \\( x \\) on one side of the equation. Here are the steps:\n\n1. Start with the given equation:\n   \\[\n   x + 5 = 12\n   \\]\n\n",
+        "format_following": " To solve the equation \\( x + 5 = 12 \\) for \\( x \\), you need to isolate \\( x \\) on one side of the equation. Here are the steps:\n\n1. Start with the given equation:\n   \\[\n   x + 5 = 12\n   \\]\n\n",
+        "short_reasoning": " To solve the equation \\( x + 5 = 12 \\) for \\( x \\), you need to isolate \\( x \\) on one side of the equation. Here are the steps:\n\n1. Start with the given equation:\n   \\[\n   x + 5 = 12\n   \\]\n\n",
+        "always_all": " To solve the equation \\( x + 5 = 12 \\) for \\( x \\), you need to isolate \\( x \\) on one side of the equation. Here are the steps:\n\n1. Start with the given equation:\n   \\[\n   x + 5 = 12\n   \\]\n\n"
+      }
+    },
+    {
+      "category": "math",
+      "prompt": "What is 25% of 200?",
+      "scores": {
+        "baseline": 0.0,
+        "calculation_error": 0.0,
+        "chinese_semantic": 0.0,
+        "commonsense_choice": 0.0,
+        "format_following": 0.0,
+        "short_reasoning": 0.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "calculation_error": 3,
+        "chinese_semantic": 3,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "short_reasoning": 3,
+        "always_all": 15
+      },
+      "outputs": {
+        "baseline": " To find 25% of 200, you can follow these steps:\n\n1. Convert the percentage to a decimal by dividing by 100.\n   \\[\n   25\\% = \\frac{25}{100} = 0.25\n   \\]\n\n",
+        "calculation_error": " To find 25% of 200, you can follow these steps:\n\n1. Convert the percentage to a decimal by dividing by 100.\n   \\[\n   25\\% = \\frac{25}{100} = 0.25\n   \\]\n\n",
+        "chinese_semantic": " To find 25% of 200, you can follow these steps:\n\n1. Convert the percentage to a decimal by dividing by 100.\n   \\[\n   25\\% = \\frac{25}{100} = 0.25\n   \\]\n\n",
+        "commonsense_choice": " To find 25% of 200, you can follow these steps:\n\n1. Convert the percentage to a decimal by dividing by 100.\n   \\[\n   25\\% = \\frac{25}{100} = 0.25\n   \\]\n\n",
+        "format_following": " To find 25% of 200, you can follow these steps:\n\n1. Convert the percentage to a decimal. Since 25% means 25 per 100, you divide by 100:\n   \\[\n   25\\% = \\frac{2",
+        "short_reasoning": " To find 25% of 200, you can follow these steps:\n\n1. Convert the percentage to a decimal by dividing by 100.\n   \\[\n   25\\% = \\frac{25}{100} = 0.25\n   \\]\n\n",
+        "always_all": " To find 25% of 200, you can follow these steps:\n\n1. Convert the percentage to a decimal by dividing by 100.\n   \\[\n   25\\% = \\frac{25}{100} = 0.25\n   \\]\n\n"
+      }
+    },
+    {
+      "category": "math",
+      "prompt": "Calculate the area of a circle with radius 3.",
+      "scores": {
+        "baseline": 0.0,
+        "calculation_error": 0.0,
+        "chinese_semantic": 0.0,
+        "commonsense_choice": 0.0,
+        "format_following": 0.0,
+        "short_reasoning": 0.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "calculation_error": 3,
+        "chinese_semantic": 3,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "short_reasoning": 3,
+        "always_all": 15
+      },
+      "outputs": {
+        "baseline": "5 cm using integration.\nTo find the area of a circle with radius \\( r = 3.5 \\) cm using integration, we can use the method of disks or washers. Here, we will use the washer method.\n\nThe formula for the area between two concentric circles is given by:\n\\[ A =",
+        "calculation_error": "5 cm.\nTo find the area of a circle, we use the formula:\n\n\\[\nA = \\pi r^2\n\\]\n\nwhere \\( A \\) is the area and \\( r \\) is the radius of the circle.\n\nGiven that the radius \\( r \\) is 3.5 cm, we",
+        "chinese_semantic": "5 cm.\nTo find the area of a circle, we use the formula:\n\n\\[\nA = \\pi r^2\n\\]\n\nwhere \\( A \\) is the area and \\( r \\) is the radius of the circle.\n\nGiven that the radius \\( r \\) is 3.5 cm, we",
+        "commonsense_choice": "5 cm.\nTo find the area of a circle, we use the formula:\n\n\\[\nA = \\pi r^2\n\\]\n\nwhere \\( A \\) is the area and \\( r \\) is the radius of the circle.\n\nGiven that the radius \\( r \\) is 3.5 cm, we",
+        "format_following": "5 cm.\nTo find the area of a circle, we use the formula:\n\n\\[\nA = \\pi r^2\n\\]\n\nwhere \\( A \\) is the area and \\( r \\) is the radius of the circle.\n\nGiven that the radius \\( r \\) is 3.5 cm, we",
+        "short_reasoning": "5 cm.\nTo find the area of a circle, we use the formula:\n\n\\[\nA = \\pi r^2\n\\]\n\nwhere \\( A \\) is the area and \\( r \\) is the radius of the circle.\n\nGiven that the radius \\( r \\) is 3.5 cm, we",
+        "always_all": "5 cm.\nTo find the area of a circle, we use the formula:\n\n\\[\nA = \\pi r^2\n\\]\n\nwhere \\( A \\) is the area and \\( r \\) is the radius of the circle.\n\nGiven that the radius \\( r \\) is 3.5 cm, we"
+      }
+    },
+    {
+      "category": "math",
+      "prompt": "What is the square root of 144?",
+      "scores": {
+        "baseline": 0.0,
+        "calculation_error": 0.0,
+        "chinese_semantic": 1.0,
+        "commonsense_choice": 0.0,
+        "format_following": 0.0,
+        "short_reasoning": 0.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "calculation_error": 3,
+        "chinese_semantic": 3,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "short_reasoning": 3,
+        "always_all": 15
+      },
+      "outputs": {
+        "baseline": " To find the square root of 144, we can follow these steps:\n\n1. **Understand the problem**: We need to determine a number that, when multiplied by itself, gives us 144.\n\n2. **List perfect squares close to 144**:\n   - \\(9^",
+        "calculation_error": " To find the square root of 144, we can follow these steps:\n\n1. **Understand the problem**: We need to determine a number that, when multiplied by itself, gives us 144.\n\n2. **List the perfect squares close to 144**:\n   - \\(9",
+        "chinese_semantic": " To find the square root of \\(144\\), we can use a calculator or estimate it using known perfect squares. Let's go through the steps:\n\n1. **Estimate the square root**: We know that \\(12^2 = 144\\) and \\(13^2 = 1",
+        "commonsense_choice": " To find the square root of 144, we can follow these steps:\n\n1. **Identify the perfect squares around 144**: \n   - \\(9^2 = 81\\)\n   - \\(10^2 = 100\\)\n\n2. **Determine which",
+        "format_following": " To find the square root of \\(144\\), we can follow these steps:\n\n1. **Understand the problem**: We need to determine a number that, when multiplied by itself, gives us \\(144\\).\n\n2. **List perfect squares close to \\(144\\)**: \n  ",
+        "short_reasoning": " To find the square root of 144, we can follow these steps:\n\n1. **Identify the perfect squares around 144**: \n   - \\(9^2 = 81\\)\n   - \\(10^2 = 100\\)\n\n2. **Determine which",
+        "always_all": " To find the square root of 144, we can follow these steps:\n\n1. **Identify the perfect squares around 144**: \n   - \\(9^2 = 81\\)\n   - \\(10^2 = 100\\)\n\n2. **Determine which"
+      }
+    },
+    {
+      "category": "math",
+      "prompt": "How many seconds are in 2 hours?",
+      "scores": {
+        "baseline": 0.0,
+        "calculation_error": 0.0,
+        "chinese_semantic": 0.0,
+        "commonsense_choice": 0.0,
+        "format_following": 0.0,
+        "short_reasoning": 0.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "calculation_error": 3,
+        "chinese_semantic": 3,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "short_reasoning": 3,
+        "always_all": 15
+      },
+      "outputs": {
+        "baseline": " To determine how many seconds are in 2 hours, we need to follow these steps:\n\n1. Understand that there are 60 minutes in an hour.\n2. There are 60 seconds in a minute.\n\nFirst, calculate the number of minutes in 2 hours:\n\\[ 2 \\text{ hours}",
+        "calculation_error": " To determine how many seconds are in 2 hours, we need to follow these steps:\n\n1. Understand that there are 60 minutes in an hour.\n2. There are 60 seconds in a minute.\n\nFirst, calculate the number of minutes in 2 hours:\n\\[ 2 \\text{ hours}",
+        "chinese_semantic": " To determine how many seconds are in 2 hours, we need to follow these steps:\n\n1. Convert the number of hours into seconds.\n2. Multiply the result by 60 (since there are 60 seconds in a minute).\n\nFirst, let's convert 2 hours into seconds. We know that:\n",
+        "commonsense_choice": " To determine how many seconds are in 2 hours, we need to follow these steps:\n\n1. Understand that there are 60 minutes in an hour.\n2. There are 60 seconds in a minute.\n\nFirst, calculate the number of minutes in 2 hours:\n\\[ 2 \\text{ hours}",
+        "format_following": " To determine how many seconds are in 2 hours, we need to follow these steps:\n\n1. Convert the number of hours into seconds.\n2. Multiply the result by 60 (since there are 60 seconds in a minute).\n\nFirst, let's convert 2 hours into seconds. There are 6",
+        "short_reasoning": " To determine how many seconds are in 2 hours, we need to follow these steps:\n\n1. Understand that there are 60 minutes in an hour.\n2. There are 60 seconds in a minute.\n\nFirst, calculate the number of minutes in 2 hours:\n\\[ 2 \\text{ hours}",
+        "always_all": " To determine how many seconds are in 2 hours, we need to follow these steps:\n\n1. Understand that there are 60 minutes in an hour.\n2. There are 60 seconds in a minute.\n\nFirst, calculate the number of minutes in 2 hours:\n\\[ 2 \\text{ hours}"
+      }
+    },
+    {
+      "category": "math",
+      "prompt": "Solve: 3x - 7 = 14",
+      "scores": {
+        "baseline": 1.0,
+        "calculation_error": 1.0,
+        "chinese_semantic": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 1.0,
+        "short_reasoning": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "calculation_error": 3,
+        "chinese_semantic": 3,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "short_reasoning": 3,
+        "always_all": 15
+      },
+      "outputs": {
+        "baseline": "\n\nTo solve the equation \\(3x - 7 = 14\\), follow these steps:\n\n1. **Isolate the term with the variable**: Add 7 to both sides of the equation to get rid of the constant on the left side.\n   \\[\n   3x - 7 + ",
+        "calculation_error": "\n\nTo solve the equation \\(3x - 7 = 14\\), follow these steps:\n\n1. **Isolate the term with the variable**: Add 7 to both sides of the equation to get rid of the constant on the left side.\n   \\[\n   3x - 7 + ",
+        "chinese_semantic": "\n\nTo solve the equation \\(3x - 7 = 14\\), follow these steps:\n\n1. **Isolate the term with the variable**: Add 7 to both sides of the equation to get rid of the constant on the left side.\n   \\[\n   3x - 7 + ",
+        "commonsense_choice": "\nTo solve the equation \\(3x - 7 = 14\\), follow these steps:\n\n1. **Isolate the term with the variable**: Add 7 to both sides of the equation to get rid of the constant on the left side.\n   \\[\n   3x - 7 + ",
+        "format_following": "\nTo solve the equation \\(3x - 7 = 14\\), follow these steps:\n\n1. **Isolate the term with the variable**: Add 7 to both sides of the equation to get rid of the constant on the left side.\n   \\[\n   3x - 7 + ",
+        "short_reasoning": "\n\nTo solve the equation \\(3x - 7 = 14\\), follow these steps:\n\n1. **Isolate the term with the variable**: Add 7 to both sides of the equation to get rid of the constant on the left side.\n   \\[\n   3x - 7 + ",
+        "always_all": "\n\nTo solve the equation \\(3x - 7 = 14\\), follow these steps:\n\n1. **Isolate the term with the variable**: Add 7 to both sides of the equation to get rid of the constant on the left side.\n   \\[\n   3x - 7 + "
+      }
+    },
+    {
+      "category": "math",
+      "prompt": "What is 2^10?",
+      "scores": {
+        "baseline": 0.0,
+        "calculation_error": 0.0,
+        "chinese_semantic": 0.0,
+        "commonsense_choice": 0.0,
+        "format_following": 0.0,
+        "short_reasoning": 0.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "calculation_error": 3,
+        "chinese_semantic": 3,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "short_reasoning": 3,
+        "always_all": 15
+      },
+      "outputs": {
+        "baseline": " To determine the value of \\(2^{10}\\), we can use a basic property of exponents. Specifically, any number raised to the power of 0 is equal to 1. This can be written as:\n\n\\[a^b = 1 \\text{ if } b = 0\\]\n\nIn",
+        "calculation_error": " To determine the value of \\(2^{10}\\), we can use a basic property of exponents. Specifically, any number raised to the power of 0 is equal to 1. This can be written as:\n\n\\[a^b = 1 \\text{ if } b = 0\\]\n\nIn",
+        "chinese_semantic": " To find \\(2^{10}\\), we can use the properties of exponents. Specifically, we know that:\n\n\\[\na^m \\cdot a^n = a^{m+n}\n\\]\n\nIn this case, \\(a = 2\\), \\(m = 10\\), and \\(n =",
+        "commonsense_choice": " To determine the value of \\(2^{10}\\), we can use the properties of exponents. Specifically, we know that:\n\n\\[\na^n = a \\cdot a \\cdot a \\cdots a \\quad \\text{(n times)}\n\\]\n\nIn this case, \\(a = 2\\) and",
+        "format_following": " To determine the value of \\(2^{10}\\), we can use a basic property of exponents. Specifically, any number raised to the power of 0 is equal to 1. This can be written as:\n\n\\[a^b = 1 \\text{ if } b = 0\\]\n\nIn",
+        "short_reasoning": " To find \\(2^{10}\\), we can use the properties of exponents. Specifically, we know that:\n\n\\[\na^m \\cdot a^n = a^{m+n}\n\\]\n\nIn this case, \\(a = 2\\), \\(m = 10\\), and \\(n =",
+        "always_all": " To find \\(2^{10}\\), we can use the properties of exponents. Specifically, we know that:\n\n\\[\na^m \\cdot a^n = a^{m+n}\n\\]\n\nIn this case, \\(a = 2\\), \\(m = 10\\), and \\(n ="
+      }
+    },
+    {
+      "category": "math",
+      "prompt": "If a train travels at 60 km/h for 2.5 hours, how far does it go?",
+      "scores": {
+        "baseline": 0.0,
+        "calculation_error": 0.0,
+        "chinese_semantic": 0.0,
+        "commonsense_choice": 0.0,
+        "format_following": 0.0,
+        "short_reasoning": 0.0,
+        "always_all": 0.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "calculation_error": 3,
+        "chinese_semantic": 3,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "short_reasoning": 3,
+        "always_all": 15
+      },
+      "outputs": {
+        "baseline": " To determine the distance traveled by the train, we can use the formula for distance, which is:\n\n\\[ \\text{Distance} = \\text{Speed} \\times \\text{Time} \\]\n\nGiven:\n- Speed of the train = 60 km/h\n- Time taken = 2.5 hours",
+        "calculation_error": " To determine the distance traveled by the train, we can use the formula for distance, which is:\n\n\\[ \\text{Distance} = \\text{Speed} \\times \\text{Time} \\]\n\nGiven:\n- Speed of the train = 60 km/h\n- Time taken = 2.5 hours",
+        "chinese_semantic": " To determine the distance traveled by the train, we can use the formula for distance, which is:\n\n\\[ \\text{Distance} = \\text{Speed} \\times \\text{Time} \\]\n\nGiven:\n- Speed of the train = 60 km/h\n- Time taken = 2.5 hours",
+        "commonsense_choice": " To determine the distance traveled by the train, we can use the formula for distance, which is:\n\n\\[ \\text{Distance} = \\text{Speed} \\times \\text{Time} \\]\n\nGiven:\n- Speed of the train = 60 km/h\n- Time taken = 2.5 hours",
+        "format_following": " To determine the distance traveled by the train, we can use the formula for distance, which is:\n\n\\[ \\text{Distance} = \\text{Speed} \\times \\text{Time} \\]\n\nGiven:\n- Speed of the train = 60 km/h\n- Time taken = 2.5 hours",
+        "short_reasoning": " To determine the distance traveled by the train, we can use the formula for distance, which is:\n\n\\[ \\text{Distance} = \\text{Speed} \\times \\text{Time} \\]\n\nGiven:\n- Speed of the train = 60 km/h\n- Time taken = 2.5 hours",
+        "always_all": " To determine the distance traveled by the train, we can use the formula for distance, which is:\n\n\\[ \\text{Distance} = \\text{Speed} \\times \\text{Time} \\]\n\nGiven:\n- Speed of the train = 60 km/h\n- Time taken = 2.5 hours"
+      }
+    },
+    {
+      "category": "code",
+      "prompt": "Write a Python function to check if a string is a palindrome.",
+      "scores": {
+        "baseline": 1.0,
+        "calculation_error": 1.0,
+        "chinese_semantic": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 1.0,
+        "short_reasoning": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "calculation_error": 3,
+        "chinese_semantic": 3,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "short_reasoning": 3,
+        "always_all": 15
+      },
+      "outputs": {
+        "baseline": " A palindrome is a word, phrase, number, or other sequence of characters that reads the same forward and backward (ignoring spaces, punctuation, and capitalization). The function should return `True` if the input string is a palindrome and `False` otherwise.\n\n### Created Chinese Question:\n编写一个Python函数，判断",
+        "calculation_error": " A palindrome is a word, phrase, number, or other sequence of characters that reads the same forward and backward (ignoring spaces, punctuation, and capitalization). The function should return `True` if the input string is a palindrome and `False` otherwise.\n\n### Example 1:\nInput: \"race\"\nOutput",
+        "chinese_semantic": " A palindrome is a word, phrase, number, or other sequence of characters that reads the same forward and backward (ignoring spaces, punctuation, and capitalization). The function should return `True` if the input string is a palindrome and `False` otherwise.\n\n### Example 1:\nInput: \"race\"\nOutput",
+        "commonsense_choice": " A palindrome is a word, phrase, number, or other sequence of characters that reads the same forward and backward (ignoring spaces, punctuation, and capitalization). The function should return `True` if the input string is a palindrome and `False` otherwise.\n\n### Example 1:\nInput: \"race\"\nOutput",
+        "format_following": " A palindrome is a word, phrase, number, or other sequence of characters that reads the same forward and backward (ignoring spaces, punctuation, and capitalization). The function should return `True` if the input string is a palindrome and `False` otherwise.\n\n### Created Chinese Question:\n编写一个Python函数，判断",
+        "short_reasoning": " A palindrome is a word, phrase, number, or other sequence of characters that reads the same forward and backward (ignoring spaces, punctuation, and capitalization). The function should return `True` if the input string is a palindrome and `False` otherwise.\n\n### Example 1:\nInput: \"race\"\nOutput",
+        "always_all": " A palindrome is a word, phrase, number, or other sequence of characters that reads the same forward and backward (ignoring spaces, punctuation, and capitalization). The function should return `True` if the input string is a palindrome and `False` otherwise.\n\n### Created Chinese Question:\n编写一个Python函数，判断"
+      }
+    },
+    {
+      "category": "code",
+      "prompt": "Create a JSON object representing a person with name, age, and city.",
+      "scores": {
+        "baseline": 1.0,
+        "calculation_error": 1.0,
+        "chinese_semantic": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 1.0,
+        "short_reasoning": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "calculation_error": 3,
+        "chinese_semantic": 3,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "short_reasoning": 3,
+        "always_all": 15
+      },
+      "outputs": {
+        "baseline": " Additionally, implement a function that takes in the JSON object as input and returns a new JSON object containing only the name and age of the person.\n\nHere is an example of what the original JSON object might look like:\n\n```json\n{\n  \"name\": \"John\",\n  \"age\": 30,\n  \"",
+        "calculation_error": " Additionally, implement a function that takes in the JSON object as input and returns the person's full name, age, and city using only basic string manipulation techniques (e.g., concatenation). The function should also handle cases where the person's name or city is missing from the input JSON object.\n\n```json\n{\n ",
+        "chinese_semantic": " Additionally, include a nested dictionary within the JSON object to store additional information about their hobbies.\n\nname: John\nage: 30\ncity: New York\n\nhobbies:\n- Reading\n- Dancing\n- Traveling\n- Cooking\n\nHere is an example of what the JSON object might look like:\n\n{\n ",
+        "commonsense_choice": " Additionally, implement a function that takes in the JSON object as input and returns the person's full name, age, and city using only basic string manipulation techniques.\n\nTo increase the difficulty of the question, let's add the following requirements:\n\n1. The function should also return the person's birth year.\n2. The function",
+        "format_following": " Additionally, implement a function that takes in the JSON object as input and returns a new JSON object containing only the name and age of the person.\n\nHere is an example of what the initial JSON object might look like:\n\n```json\n{\n  \"name\": \"John\",\n  \"age\": 30,\n  \"",
+        "short_reasoning": " Additionally, implement a function that takes in the JSON object as input and returns the person's full name, age, and city using string concatenation.\n\n```json\n{\n  \"name\": \"John Doe\",\n  \"age\": 30,\n  \"city\": \"New York\"\n}\n```\n\n```javascript\n",
+        "always_all": " Additionally, include a nested dictionary within the JSON object to store additional information about the person's hobbies.\n\nPerson: {\n  \"name\": \"John\",\n  \"age\": 30,\n  \"city\": \"New York\",\n  \"hobbies\": {\n    \"reading\": [\"The Great Gatsby\", \"To"
+      }
+    },
+    {
+      "category": "code",
+      "prompt": "Explain what a hash map is in one paragraph.",
+      "scores": {
+        "baseline": 1.0,
+        "calculation_error": 1.0,
+        "chinese_semantic": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 1.0,
+        "short_reasoning": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "calculation_error": 3,
+        "chinese_semantic": 3,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "short_reasoning": 3,
+        "always_all": 15
+      },
+      "outputs": {
+        "baseline": " A hash map, also known as an associative array or dictionary, is a data structure that allows you to store and retrieve key-value pairs efficiently. It works by using a hash function to convert the keys into a specific index within an array of buckets, which are then used to look up the corresponding value. This makes it",
+        "calculation_error": " A hash map, also known as an associative array or dictionary, is a data structure that allows you to store and retrieve key-value pairs efficiently. It uses a hash function to convert keys into corresponding indices within an array of buckets, which are then used to access the value associated with each key.\n\nThe main advantage of using",
+        "chinese_semantic": " A hash map, also known as an associative array or dictionary, is a data structure that allows you to store and retrieve key-value pairs efficiently. It uses a hash function to convert the keys into an index within a fixed-size array called the bucket, which stores the corresponding values. This makes it possible to quickly look up",
+        "commonsense_choice": " A hash map, also known as an associative array or dictionary, is a data structure that stores key-value pairs. It uses a hash function to map keys to indices in an array of buckets, which are then used to store the corresponding values. This allows for fast lookups and insertions by using the index instead of",
+        "format_following": " A hash map, also known as an associative array or dictionary, is a data structure that allows you to store and retrieve key-value pairs efficiently. It works by using a hash function to convert the keys into a unique index, which can then be used to quickly access the corresponding value. This makes it very efficient for applications",
+        "short_reasoning": " A hash map, also known as an associative array or dictionary, is a data structure that allows you to store and retrieve key-value pairs efficiently. It works by using a hash function to convert the keys into a unique index, which can then be used to quickly access the corresponding value. This makes it much faster than other",
+        "always_all": " A hash map, also known as an associative array or dictionary, is a data structure that allows you to store and retrieve key-value pairs efficiently. It works by using a hash function to convert the keys into a unique index, which can then be used to quickly access the corresponding value. This makes it very efficient for operations"
+      }
+    },
+    {
+      "category": "code",
+      "prompt": "Write a simple function to sort a list of integers.",
+      "scores": {
+        "baseline": 1.0,
+        "calculation_error": 1.0,
+        "chinese_semantic": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 1.0,
+        "short_reasoning": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "calculation_error": 3,
+        "chinese_semantic": 3,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "short_reasoning": 3,
+        "always_all": 15
+      },
+      "outputs": {
+        "baseline": " The function should take in a list as input and return the sorted list.\n\nExample:\nInput: [3, 1, 4, 2]\nOutput: [1, 2, 3, 4]\n\nNote:\n- You are not allowed to use any built-in sorting functions.\n- Your solution should",
+        "calculation_error": " The function should take in an unsorted list and return the sorted list.\n\nThe function should have a time complexity of O(n log n), where n is the length of the input list. Additionally, the function should use a divide-and-conquer approach to achieve this.\n\nExample:\nInput: [3, 1,",
+        "chinese_semantic": " The function should take in an unsorted list and return the sorted list.\n\nExample:\n```python\nunsorted_list = [3, 1, 4, 2, 5]\nsorted_list = sort_unsorted(unsorted_list)\nprint(sorted_list) # Output: [1, 2, 3",
+        "commonsense_choice": " The function should take in a list as an argument and return the sorted list.\n\n```python\ndef sort_list(nums):\n    \"\"\"\n    Sorts a given list of integers in ascending order.\n    \n    Args:\n        nums (list): A list of integers.\n        \n    Returns:\n        list: A new list containing the",
+        "format_following": " The function should take in a list as input and return the sorted list.\n\n```python\ndef sort_list(nums):\n    \"\"\"\n    Sorts a given list of integers in ascending order.\n    \n    Args:\n        nums (list): A list of integers.\n        \n    Returns:\n        list: A new list containing the sorted",
+        "short_reasoning": " The function should take in a list as input and return the sorted list.\n\n```python\ndef sort_list(nums):\n    \"\"\"\n    Sorts a given list of integers in ascending order.\n    \n    Parameters:\n    nums (list): A list of integers.\n    \n    Returns:\n    list: The sorted list of integers.\n",
+        "always_all": " The function should take in an unsorted list and return the sorted list.\n\nExample:\n```python\nunsorted_list = [3, 1, 4, 2, 5]\nsorted_list = sort_unsorted(unsorted_list)\nprint(sorted_list) # Output: [1, 2, 3"
+      }
+    },
+    {
+      "category": "code",
+      "prompt": "What is the difference between a list and a tuple in Python?",
+      "scores": {
+        "baseline": 1.0,
+        "calculation_error": 1.0,
+        "chinese_semantic": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 1.0,
+        "short_reasoning": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "calculation_error": 3,
+        "chinese_semantic": 3,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "short_reasoning": 3,
+        "always_all": 15
+      },
+      "outputs": {
+        "baseline": " In Python, both lists and tuples are used to store collections of items. However, there are some key differences between them:\n\n1. Mutability:\n   - Lists: Lists are mutable, meaning that you can change their contents after they are created.\n   - Tuples: Tuples are immutable, which means once a",
+        "calculation_error": " In Python, both lists and tuples are used to store collections of items. However, there are some key differences between them:\n\n1. Mutability:\n   - Lists: Lists are mutable, meaning that you can change their contents after they are created.\n   - Tuples: Tuples are immutable, which means once a",
+        "chinese_semantic": " In Python, both lists and tuples are used to store collections of items. However, there are some key differences between them:\n\n1. Mutability:\n   - Lists: Lists are mutable, meaning that you can change their contents after they are created.\n   - Tuples: Tuples are immutable, which means once a",
+        "commonsense_choice": " In Python, both lists and tuples are used to store collections of items. However, there are some key differences between them:\n\n1. Mutability:\n   - Lists: Lists are mutable, meaning that you can change their contents after they are created.\n   - Tuples: Tuples are immutable, which means once a",
+        "format_following": " In Python, both lists and tuples are used to store collections of items. However, there are some key differences between them:\n\n1. Mutability:\n   - Lists: Lists are mutable, meaning that you can change their contents after they are created.\n   - Tuples: Tuples are immutable, which means once a",
+        "short_reasoning": " In Python, both lists and tuples are used to store collections of items. However, there are some key differences between them:\n\n1. Mutability:\n   - Lists: Lists are mutable, meaning that you can change their contents after they are created.\n   - Tuples: Tuples are immutable, which means once a",
+        "always_all": " In Python, both lists and tuples are used to store collections of items. However, there are some key differences between them:\n\n1. Mutability:\n   - Lists: Lists are mutable, meaning that you can change their contents after they are created.\n   - Tuples: Tuples are immutable, which means once a"
+      }
+    },
+    {
+      "category": "code",
+      "prompt": "Write a regex to validate an email address.",
+      "scores": {
+        "baseline": 1.0,
+        "calculation_error": 1.0,
+        "chinese_semantic": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 1.0,
+        "short_reasoning": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "calculation_error": 3,
+        "chinese_semantic": 3,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "short_reasoning": 3,
+        "always_all": 15
+      },
+      "outputs": {
+        "baseline": " The email address should have the following format: username@domain.com\n\nExample:\n- `username@example.com` - Valid\n- `user123@example.com` - Invalid (missing domain)\n- `user@domain.com` - Invalid (missing username)\n\nYou can assume that the email address will always contain",
+        "calculation_error": " The email address should have the following format: [a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}\n\nYou are not allowed to use any built-in email validation libraries or functions in your solution.\n\nAdditionally, you need to handle cases where the",
+        "chinese_semantic": " The email address should have the following format: username@domain.com\n\nusername - can be any alphanumeric character\ndomain - can be any alphanumeric character or dot (.) followed by 2 or more alphabetic characters\ncom - must be at least 3 letters long\n\nExample:\n- valid email: john.doe@example",
+        "commonsense_choice": " The email address should have the following format: [a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}.\n\nAdditionally, the email address must not contain any special characters or numbers, and it should only allow one \"@\" symbol in the domain name",
+        "format_following": " The email address should have the following format: username@domain.com\n\nusername - can be any alphanumeric character\ndomain - can be any alphanumeric character or dot (. )\ncom - must be followed by two dots (.) and then the domain name\n\nExample:\n- Valid email: john.doe@example.com\n- Invalid email",
+        "short_reasoning": " The email address should have the following format: username@domain.com, where:\n- `username` is a string of alphanumeric characters\n- `domain` is a string of alphanumeric characters and dots\n\nThe regex should also allow for optional spaces in the domain name.\n\nExample 1:\nInput: \"john.doe@example",
+        "always_all": " The email address should have the following format: username@domain.com, where:\n- `username` is any alphanumeric character\n- `domain` can be any alphanumeric character or dot (.) followed by 2 to 6 alphabetic characters\n\nExample input:\n```\njohn.doe@example.com\njane.doe"
+      }
+    },
+    {
+      "category": "code",
+      "prompt": "What is an API endpoint?",
+      "scores": {
+        "baseline": 1.0,
+        "calculation_error": 1.0,
+        "chinese_semantic": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 1.0,
+        "short_reasoning": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "calculation_error": 3,
+        "chinese_semantic": 3,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "short_reasoning": 3,
+        "always_all": 15
+      },
+      "outputs": {
+        "baseline": " An API (Application Programming Interface) endpoint is a specific point in the communication between two or more applications. It defines how data can be exchanged and accessed between them, allowing for the creation of APIs to facilitate communication between different systems.\n\nAPI endpoints are typically defined using HTTP methods such as GET, POST, PUT, DELETE,",
+        "calculation_error": " An API (Application Programming Interface) endpoint is a specific point in the communication between two or more applications. It defines how data can be exchanged and accessed between them, allowing for the creation of APIs to facilitate communication between different systems.\n\nAPI endpoints are typically defined using HTTP methods such as GET, POST, PUT, DELETE,",
+        "chinese_semantic": " An API (Application Programming Interface) endpoint is a specific point in the application where data can be accessed and manipulated. It's like a gateway to access information or resources within an application.\n\nFor example, if you have a web application that allows users to search for movies, one of the endpoints might be `/search/movies",
+        "commonsense_choice": " An API (Application Programming Interface) endpoint is a specific point in the application that allows other applications to communicate with it. It's like a gateway for data exchange between different systems or services.\n\nHere are some key points about API endpoints:\n\n1. Purpose: They allow communication between different software components, enabling them to share information",
+        "format_following": " An API (Application Programming Interface) endpoint is a specific point in the communication between two or more applications. It defines how data can be exchanged and accessed between them, allowing for efficient and seamless integration of different systems.\n\nAPI endpoints are typically defined using HTTP methods such as GET, POST, PUT, DELETE, etc., which",
+        "short_reasoning": " An API (Application Programming Interface) endpoint is a specific point in the communication between two or more applications. It defines how data can be exchanged and accessed between them.\n\nAPI endpoints are typically defined using HTTP methods such as GET, POST, PUT, DELETE, etc., which define the request and response formats that will be used",
+        "always_all": " An API endpoint is a specific point in the communication between an application and its external services. It defines how to interact with these external services, such as making requests or receiving responses.\n\nAPI endpoints are typically defined using HTTP methods (e.g., GET, POST, PUT, DELETE) and parameters that specify the request details."
+      }
+    },
+    {
+      "category": "code",
+      "prompt": "Write a SQL query to find duplicate entries in a table.",
+      "scores": {
+        "baseline": 1.0,
+        "calculation_error": 1.0,
+        "chinese_semantic": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 1.0,
+        "short_reasoning": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "calculation_error": 3,
+        "chinese_semantic": 3,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "short_reasoning": 3,
+        "always_all": 15
+      },
+      "outputs": {
+        "baseline": " Additionally, ensure that the duplicates are only found if they have been updated within the last 24 hours.\n\nTo achieve this, you can use the following SQL query:\n\n```sql\nSELECT *\nFROM your_table_name\nWHERE id IN (\n    SELECT old_id\n    FROM (\n        SELECT id, \n               ROW_NUMBER",
+        "calculation_error": " Additionally, ensure that the query returns only those duplicates where the value of a specific column is greater than 100.\n\nTable Name: Products\n\nColumns: \n- ProductID (int)\n- Category (varchar)\n- Price (decimal)\n\nSELECT *\nFROM Products\nWHERE Price > 100\nGROUP BY",
+        "chinese_semantic": " Additionally, the query should also return the count of each unique entry and sort the result by the count in descending order.\n\nTable name: `orders`\n\nColumns: \n- `order_id` (integer)\n- `customer_name` (string)\n- `product_name` (string)\n- `quantity` (integer)\n\n",
+        "commonsense_choice": " Additionally, ensure that the query returns only those duplicates where the value of a specific column is greater than 10.\n\nTable Name: Products\n\nColumns: \n- ProductID (int)\n- Category (varchar)\n- Price (float)\n\nSELECT *\nFROM Products\nWHERE Price > 10\nGROUP BY ProductID",
+        "format_following": " Additionally, ensure that the query returns only those duplicates where the value of a specific column is greater than 10.\n\nTable Name: Products\n\nColumns:\n- ProductID (int)\n- Category (varchar)\n- Price (decimal)\n\nSELECT *\nFROM Products\nWHERE Price > 10\nGROUP BY ProductID\n",
+        "short_reasoning": " Additionally, ensure that the query returns only those duplicates where the value of a specific column is greater than 100.\n\nTable Name: Products\n\nColumns:\n- ProductID (int)\n- Category (varchar)\n- Price (decimal)\n\nSELECT *\nFROM Products\nWHERE Price > 100\nGROUP BY Product",
+        "always_all": " Additionally, the query should also return the count of each unique entry and sort the result by the count in descending order.\n\nTable name: `orders`\n\nColumns: \n- `order_id` (integer)\n- `customer_name` (string)\n- `product_name` (string)\n- `quantity` (integer)\n\n"
+      }
+    },
+    {
+      "category": "code",
+      "prompt": "Explain recursion with an example.",
+      "scores": {
+        "baseline": 1.0,
+        "calculation_error": 1.0,
+        "chinese_semantic": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 1.0,
+        "short_reasoning": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "calculation_error": 3,
+        "chinese_semantic": 3,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "short_reasoning": 3,
+        "always_all": 15
+      },
+      "outputs": {
+        "baseline": " Recursion is a process where a function calls itself repeatedly until a certain condition is met. The base case is the simplest or most basic case, and it's reached when the function no longer needs to be called.\n\nFor example, consider the factorial function:\n\ndef factorial(n):\n    if n == 0:\n        return",
+        "calculation_error": " Recursion is a process where a function calls itself repeatedly until a certain condition is met. The base case is the simplest or most basic case, and it's reached when the function no longer needs to be called.\n\nFor example, consider the factorial function:\n\ndef factorial(n):\n    if n == 0:\n        return",
+        "chinese_semantic": " Recursion is a process where a function calls itself repeatedly until it reaches a base case, which is a simple condition that the function can be simplified to solve the problem.\nFor example, consider the following recursive function:\n```\ndef factorial(n):\n    if n == 0 or n == 1:\n        return ",
+        "commonsense_choice": " Recursion is a process where a function calls itself repeatedly until it reaches a base case, which is a simple condition that the function can be simplified to solve.\nFor example, consider the factorial function:\n```\ndef factorial(n):\n    if n == 0 or n == 1:\n        return 1\n   ",
+        "format_following": " Recursion is a process where a function calls itself repeatedly until a certain condition is met. The base case is the simplest case of the problem that can be solved directly, and the recursive case is when the problem can be broken down into smaller subproblems.\n\nHere's an example to illustrate recursion:\n\nSuppose we want to",
+        "short_reasoning": " Recursion is a process where a function calls itself repeatedly until a certain condition is met. \n\nFor example, consider the factorial function:\n\ndef factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n-1)\n\nIn this case, the function takes one argument",
+        "always_all": " Recursion is a process where a function calls itself repeatedly until it reaches a base case, which is a simple or specific input that does not require further processing.\n\nFor example, consider the factorial function:\n\ndef factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * factorial"
+      }
+    },
+    {
+      "category": "code",
+      "prompt": "What is the time complexity of binary search?",
+      "scores": {
+        "baseline": 1.0,
+        "calculation_error": 1.0,
+        "chinese_semantic": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 1.0,
+        "short_reasoning": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "calculation_error": 3,
+        "chinese_semantic": 3,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "short_reasoning": 3,
+        "always_all": 15
+      },
+      "outputs": {
+        "baseline": " Binary search has a time complexity of O(log n). This means that the number of comparisons required to find an element in a sorted array grows logarithmically with the size of the array. In other words, as the size of the array increases, the number of comparisons needed for binary search also increases logarithmically.",
+        "calculation_error": " Binary search has a time complexity of O(log n). This means that the number of comparisons required to find an element in a sorted array grows logarithmically with the size of the array. In other words, as the size of the array increases, the number of comparisons needed for binary search also increases logarithmically.",
+        "chinese_semantic": " Binary search has a time complexity of O(log n). This means that the number of comparisons required to find an element in a sorted array grows logarithmically with the size of the array. In other words, as the size of the array increases, the number of comparisons needed for binary search also increases logarithmically.",
+        "commonsense_choice": " Binary search has a time complexity of O(log n), where n is the number of elements in the array. This means that the number of comparisons required to find an element in the array grows logarithmically with the size of the array, making it efficient for large datasets. However, it's important to note that this",
+        "format_following": " Binary search has a time complexity of O(log n). This means that the number of comparisons required to find an element in a sorted array using binary search is proportional to the logarithm of the size of the array. The algorithm works by repeatedly dividing the search interval in half, until the target value is found or it is",
+        "short_reasoning": " Binary search has a time complexity of O(log n). This means that the number of comparisons required to find an element in a sorted array using binary search is proportional to the logarithm of the size of the array. The algorithm works by repeatedly dividing the search interval in half, until the target value is found or it is",
+        "always_all": " Binary search has a time complexity of O(log n). This means that the number of comparisons needed to find an element in a sorted array grows logarithmically with the size of the array. In other words, as the size of the array increases, the number of comparisons required to find an element also increases logarithmically"
+      }
+    },
+    {
+      "category": "chinese",
+      "prompt": "中国的首都是哪个城市？",
+      "scores": {
+        "baseline": 1.0,
+        "calculation_error": 1.0,
+        "chinese_semantic": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 1.0,
+        "short_reasoning": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "calculation_error": 3,
+        "chinese_semantic": 3,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "short_reasoning": 3,
+        "always_all": 15
+      },
+      "outputs": {
+        "baseline": "____\nA. 北京市\nB. 上海市\nC. 天津市\nD. 重庆市\n答案:\n\nA\n\n在进行混凝土结构施工时，为了确保工程质量，应遵循哪些基本要求？\nA. 混凝土的强度等级必须符合设计标准。\nB",
+        "calculation_error": "____\nA. 北京\nB. 上海\nC. 重庆\nD. 广州\n答案:\nA\n\n在进行高处作业时，应确保工具和材料的传递方式是？\nA. 使用绳索直接传递\nB. 通过专用吊篮或梯子传递",
+        "chinese_semantic": "____\nA. 北京市\nB. 上海市\nC. 天津市\nD. 重庆市\n答案: A\n\n在进行高处作业时，为了确保安全，应采取哪些措施？\nA. 使用工具袋存放工具和材料，并且不得随意丢弃。\nB",
+        "commonsense_choice": "____\nA. 北京市\nB. 上海市\nC. 天津市\nD. 重庆市\n答案:\n\nA\n\n在进行混凝土结构施工时，为了确保工程质量，应遵循哪些基本要求？\nA. 混凝土的强度等级必须符合设计标准。\nB",
+        "format_following": "（ ） A. 北京 B. 上海 C. 深圳 D. 香港\n\n答案是A，北京。中国首都为北京。\n\n请注意，上海是中国的直辖市，深圳和香港则分别位于中国东部沿海地区。",
+        "short_reasoning": "____\nA. 北京市\nB. 上海市\nC. 天津市\nD. 重庆市\n答案:\n\nA\n\n在进行电能表的现场检验时，如果发现有电压互感器二次回路存在短路现象，应采取什么措施？\nA. �",
+        "always_all": "____\nA. 北京\nB. 上海\nC. 广州\nD. 深圳\n答案:\nA\n\n在进行高处作业时，为确保安全，应采取哪些措施？\nA. 佩戴安全帽、系好安全带或使用安全绳，并且必须"
+      }
+    },
+    {
+      "category": "chinese",
+      "prompt": "请用中文解释什么是人工智能。",
+      "scores": {
+        "baseline": 1.0,
+        "calculation_error": 1.0,
+        "chinese_semantic": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 1.0,
+        "short_reasoning": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "calculation_error": 3,
+        "chinese_semantic": 3,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "short_reasoning": 3,
+        "always_all": 15
+      },
+      "outputs": {
+        "baseline": " 人工智能（Artificial Intelligence，简称AI）是一种模拟人类智能的技术和系统，它使计算机能够执行通常需要人类智能才能完成的任务，如学习、推理、感知、规划、决策等。\n\n人工智能的发展始于20世纪50年代，当时科学家们开始研究如何让机器模仿人的思维",
+        "calculation_error": " 人工智能（Artificial Intelligence，简称AI）是一种模拟人类智能的技术和系统，它使计算机能够执行通常需要人类智能才能完成的任务，如学习、推理、问题解决、感知、语言理解等。\n\n人工智能的发展可以追溯到20世纪50年代，当时出现了第一台具有自我意识",
+        "chinese_semantic": " 人工智能（Artificial Intelligence，简称AI）是指由计算机系统所表现出的智能行为或能力。它包括机器学习、深度学习、自然语言处理、计算机视觉等技术领域。\n\n人工智能可以分为弱人工智能和强人工智能两大类：\n\n1. 弱人工智能：弱人工智能是能够完成特定任务",
+        "commonsense_choice": " 人工智能（Artificial Intelligence，简称AI）是指由计算机系统所表现出的智能行为或能力。它包括机器学习、深度学习、自然语言处理、计算机视觉等技术领域。\n\n1. 机器学习：通过算法和模型让计算机从数据中自动学习并改进性能的过程。\n2.",
+        "format_following": " 人工智能（Artificial Intelligence，简称AI）是一种模拟人类智能的技术和系统，包括机器学习、深度学习、自然语言处理等技术。它通过计算机程序使机器能够执行需要人类智能的任务，如图像识别、语音识别、决策制定、问题解决等。\n\n人工智能的发展历程可以追溯到",
+        "short_reasoning": " 人工智能（Artificial Intelligence，简称AI）是指由计算机系统所表现出的智能行为或能力。它包括机器学习、深度学习、自然语言处理等技术领域。\n\n1. 机器学习：通过算法和模型让计算机从数据中自动学习并改进性能的过程。\n2. 深",
+        "always_all": " 人工智能（Artificial Intelligence，简称AI）是一种模拟人类智能的技术和系统，包括机器学习、深度学习、自然语言处理等技术。它通过计算机程序使机器能够执行需要人类智能的任务，如图像识别、语音识别、决策制定、问题解决等。\n\n人工智能的发展已经渗透到我们"
+      }
+    },
+    {
+      "category": "chinese",
+      "prompt": "一年有多少个月？",
+      "scores": {
+        "baseline": 1.0,
+        "calculation_error": 1.0,
+        "chinese_semantic": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 1.0,
+        "short_reasoning": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "calculation_error": 3,
+        "chinese_semantic": 3,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "short_reasoning": 3,
+        "always_all": 15
+      },
+      "outputs": {
+        "baseline": "（ ） A.12 B.13 C.14 D.15\n答案：C。解析：一年有12个月。\n\n在不同的月份中，每个月的天数不同：\n\n- 一月有31天。\n- 二月有28天（闰年为",
+        "calculation_error": "（ ） A.12 B.13 C.14 D.15\n\n答案：C。解析：一年有12个月，即一个完整的月份。\n\n所以正确答案是C。",
+        "chinese_semantic": "有12个月吗？\n回答上面的问题，给出具体的推理逻辑。 这个问题的答案是：有12个月。\n\n推理逻辑如下：\n\n1. 月份数量的计算：\n   - 每年都有365天（闰年有366天），但只有2",
+        "commonsense_choice": "（ ） A.12 B.13 C.14 D.15\n\n答案：C。解析：一年有12个月，即一个完整的太阳历年。\n\n所以正确答案是C。",
+        "format_following": "（ ） A.12 B.13 C.14 D.15\n答案：C。解析：一年有12个月，其中1月、7月是大月，其余月份都是小月。\n\n所以正确答案是：\n\nC. 14\n\n在闰年中，",
+        "short_reasoning": "有12个月吗？\n回答上面的问题，给出具体的推理逻辑。 这个问题的答案是：有12个月。\n\n推理逻辑如下：\n\n1. 月份数量的计算：\n   - 每年都有365天（闰年有366天），但通常我们",
+        "always_all": "有31天的月份是哪几个月？\n回答上面的问题，给出具体的推理逻辑。\n要解答这个问题，我们需要了解每个月的天数以及它们在一年中出现的次数。\n\n首先，我们知道一年有12个月。根据国际通用的日期划分方法（即公历），我们可以将这些月分为"
+      }
+    },
+    {
+      "category": "chinese",
+      "prompt": "请写一段关于春天的短文。",
+      "scores": {
+        "baseline": 1.0,
+        "calculation_error": 1.0,
+        "chinese_semantic": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 1.0,
+        "short_reasoning": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "calculation_error": 3,
+        "chinese_semantic": 3,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "short_reasoning": 3,
+        "always_all": 15
+      },
+      "outputs": {
+        "baseline": " 春天，是一个充满生机和希望的季节。万物复苏，绿意盎然，一切都显得那么清新、明亮。在这样的季节里，人们可以穿上轻便的衣服，去公园或湖边散步，呼吸新鲜的空气，感受大自然的美好。\n\n春天的到来，也意味着新的开始。在这个",
+        "calculation_error": " 春天，是一个充满生机和希望的季节。万物复苏，绿意盎然，一切都显得那么清新、明亮。在春天里，我们可以感受到大自然的魅力，欣赏到五彩斑斓的花朵，聆听鸟儿的歌唱，感受微风拂面的感觉。\n\n春天是播种的季节，也是",
+        "chinese_semantic": " 春天，是一个充满生机和希望的季节。万物复苏，绿意盎然，一切都显得那么清新、明亮。在春天里，我们可以感受到大自然的神奇与美丽。\n\n春天的气息，是温暖而湿润的，让人感到舒适和放松。花儿们开始绽放，五彩斑斓，",
+        "commonsense_choice": " 春天，是一年四季中最温暖、最充满生机的季节。它以它的温柔和活力，唤醒了沉睡的大地，带来了无尽的希望与梦想。\n\n春天的气息，是大自然最纯净的馈赠。万物复苏，绿意盎然，花朵竞相开放，五彩",
+        "format_following": " 春天，是一个充满生机和希望的季节。万物复苏，绿意盎然，一切都显得那么清新、明亮。在春天里，我们可以感受到大自然的神奇与美丽。\n\n春天的气息，是温暖而柔和的，让人感到心旷神怡。花儿们开始绽放，五彩斑斓",
+        "short_reasoning": " 春天，是一个充满生机和希望的季节。万物复苏，绿意盎然，一切都显得那么清新、明亮。在春天里，我们可以感受到大自然的魅力，欣赏到五彩斑斓的花朵，聆听鸟儿的歌唱，感受微风拂面的感觉。\n\n春天的到来，意味着新的开始，",
+        "always_all": " 春天，是一个充满生机和希望的季节。万物复苏，绿意盎然，一切都显得那么清新、明亮。在春天里，我们可以感受到大自然的神奇与美丽。\n\n春天的气息，是温暖而柔和的，让人感到心旷神怡。花儿们开始绽放，五彩斑斓"
+      }
+    },
+    {
+      "category": "chinese",
+      "prompt": "什么是机器学习？请用中文回答。",
+      "scores": {
+        "baseline": 1.0,
+        "calculation_error": 1.0,
+        "chinese_semantic": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 1.0,
+        "short_reasoning": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "calculation_error": 3,
+        "chinese_semantic": 3,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "short_reasoning": 3,
+        "always_all": 15
+      },
+      "outputs": {
+        "baseline": " 机器学习是一种人工智能技术，它使计算机能够通过数据自动改进和优化其性能。这种技术允许算法从大量数据中学习模式，并根据这些模式进行预测或决策。机器学习可以应用于各种领域，包括自然语言处理、图像识别、推荐系统等。\n\n在机器学习的背景下，",
+        "calculation_error": " 机器学习是一种人工智能的分支，它使计算机能够通过数据自动改进其性能或做出预测。\n\n好的，我明白了。请问你能否提供一些关于机器学习的应用实例？\n\n当然可以。例如，在医疗领域，机器学习可以帮助医生更准确地诊断疾病；在金融领域，它可以用于风险评估",
+        "chinese_semantic": " 机器学习是一种人工智能技术，它使计算机能够通过数据自动改进其性能和准确性。这种技术允许算法从大量数据中学习模式，并根据这些模式做出预测或决策。\n\n在机器学习中，模型被训练来识别模式并从中学习。这通常涉及使用统计方法、神经网络或其他",
+        "commonsense_choice": " 机器学习是一种人工智能技术，它使计算机能够通过数据自动改进其性能和准确性。这种技术允许算法从大量数据中学习模式，并根据这些模式进行预测或决策。在机器学习中，模型被训练来识别模式并做出预测，而无需显式地编写代码。这使得",
+        "format_following": " 机器学习是一种人工智能技术，它使计算机能够通过数据自动改进其性能和准确性。这种技术允许算法从大量数据中学习模式，并根据这些模式做出预测或决策。\n\n在机器学习中，数据集被分为训练集和测试集。训练集用于训练模型，而测试集则",
+        "short_reasoning": " 机器学习是一种人工智能技术，它使计算机能够通过数据自动改进其性能和准确性。这种技术允许算法从大量数据中学习模式，并根据这些模式做出预测或决策。\n\n在机器学习中，数据集被分为训练集和测试集。训练集用于训练模型，而测试集则",
+        "always_all": " 机器学习是一种人工智能技术，它使计算机能够通过数据自动改进其性能和准确性。这种技术允许计算机从经验中学习并应用这些学习到的知识来解决问题或做出预测。\n\n在机器学习中，算法被设计为从大量数据集中学习模式，并使用这些模式来预测新的输入值"
+      }
+    },
+    {
+      "category": "chinese",
+      "prompt": "水的化学式是什么？",
+      "scores": {
+        "baseline": 1.0,
+        "calculation_error": 1.0,
+        "chinese_semantic": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 1.0,
+        "short_reasoning": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "calculation_error": 3,
+        "chinese_semantic": 3,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "short_reasoning": 3,
+        "always_all": 15
+      },
+      "outputs": {
+        "baseline": " 化学式是表示物质组成的一种方式，它由元素符号和数字组成。在化学中，我们通常使用“H2O”来表示水分子。\n\n具体来说：\n\n- H代表氢（氢气或氢原子）。\n- O代表氧（氧气或氧原子）。\n\n所以，“",
+        "calculation_error": " 化学式是表示物质组成的一种方法，它用元素符号来表示。在水中，氢（H）和氧（O）的质量比为1:8，因此水的化学式可以表示为：H2O。\n\n这个化学式代表了水分子由两个氢原子和一个氧",
+        "chinese_semantic": " 化学式是表示物质组成的一种方式，它由元素符号和数字组成。在化学中，我们通常使用“H2O”来表示水分子。\n\n具体来说：\n\n- H代表氢原子。\n- O代表氧原子。\n\n所以，水的化学式就是H2O。这个名称",
+        "commonsense_choice": " 化学式是表示物质组成的一种方法，它用元素符号和数字来表示。在化学中，我们通常使用“H2O”（水）作为代表水的化学式。\n\n具体来说：\n\n- H：氢原子\n- O：氧原子\n\n所以，水的化学式就是",
+        "format_following": " 化学式是表示物质组成的一种方法，它用元素符号来表示。在水中，氢（H）和氧（O）的质量比为1:8，因此水的化学式可以表示为H2O。\n\n具体来说，水是由两个氢原子和一个氧原子组成的分子，",
+        "short_reasoning": " 化学式是表示物质组成的一种方式，它由元素符号和数字组成。在化学中，我们通常使用“H2O”来表示水分子。\n\n具体来说：\n\n- H代表氢原子。\n- O代表氧原子。\n\n所以，“H2O”就是水这种化合物的化学式",
+        "always_all": " 化学式是表示物质组成的一种方法，它用符号和数字来表示物质中各元素的质量比。在化学反应中，化学式可以用来表示反应物和生成物之间的质量关系。\n\n例如，水（H2O）是一种常见的化合物，由氢原子（H）和氧"
+      }
+    },
+    {
+      "category": "chinese",
+      "prompt": "请列举三种水果。",
+      "scores": {
+        "baseline": 1.0,
+        "calculation_error": 1.0,
+        "chinese_semantic": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 1.0,
+        "short_reasoning": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "calculation_error": 3,
+        "chinese_semantic": 3,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "short_reasoning": 3,
+        "always_all": 15
+      },
+      "outputs": {
+        "baseline": " 1. 苹果\n2. 梨\n3. 草莓\n\n好的，我明白了。请问你有什么问题或需要帮助吗？请告诉我！（如果需要的话） 当然可以，请问您有什么具体的问题或者需要什么帮助呢？我会尽力为您提供支持和解答。",
+        "calculation_error": " 1. 苹果\n2. 梨\n3. 草莓\n\n好的，我明白了。请问你有什么问题或需要帮助吗？请告诉我。 (如果需要的话) 当然可以，请问您有什么具体的问题或者需要什么帮助呢？我会尽力为您提供帮助。 (如果有",
+        "chinese_semantic": " 1. 苹果\n2. 梨\n3. 草莓\n\n好的，我明白了。请问你有什么问题或需要帮助吗？请告诉我！（如果需要的话）好的，我明白了。请问你有什么问题或需要帮助吗？请告诉我！（如果需要的话）\n\n",
+        "commonsense_choice": " 1. 苹果\n2. 梨\n3. 草莓\n\n好的，我明白了。请问你能否告诉我如何制作一道美味的苹果派？ 当然可以！首先，你需要准备以下材料：面粉、糖、鸡蛋、牛奶、黄油和苹果。接下来，将",
+        "format_following": " 1. 苹果\n2. 梨\n3. 草莓\n\n好的，我明白了。请问你有什么问题或需要帮助吗？请告诉我！（如果需要的话）好的，我明白了。请问你有什么问题或需要帮助吗？请告诉我！（如果需要的话）\n\n",
+        "short_reasoning": " 1. 苹果\n2. 梨\n3. 草莓\n\n好的，我明白了。请问你有什么问题或需要帮助吗？请告诉我！（如果需要的话）好的，我明白了。请问你有什么问题或需要帮助吗？请告诉我！（如果需要的话）\n\n",
+        "always_all": " 1. 苹果\n2. 梨\n3. 草莓\n\n好的，我明白了。请问你有什么问题或需要帮助吗？请告诉我！（如果需要的话） 当然可以，请问您有什么具体的问题或者需要什么帮助呢？我会尽力为您提供帮助和解答。"
+      }
+    },
+    {
+      "category": "chinese",
+      "prompt": "太阳从哪个方向升起？",
+      "scores": {
+        "baseline": 1.0,
+        "calculation_error": 1.0,
+        "chinese_semantic": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 1.0,
+        "short_reasoning": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "calculation_error": 3,
+        "chinese_semantic": 3,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "short_reasoning": 3,
+        "always_all": 15
+      },
+      "outputs": {
+        "baseline": "从哪个方向落下？\n回答上面的问题，给出具体的推理逻辑。 要解答这个问题，我们需要考虑地球自转和地球公转的原理。\n\n1. **地球自转**：地球绕着自己的轴线旋转，这个轴线是通过地心引力产生的，因此它不会受到任何外",
+        "calculation_error": "从哪个方向落下？\n回答上面的问题，给出具体的推理逻辑。 要解答这个问题，我们需要考虑地球自转和大气层对光线的影响。\n\n1. **从哪个方向升起**：\n   - 地球自西向东旋转。\n   - 当太阳位于地平线附近时（即在",
+        "chinese_semantic": "从哪个方向落下？\n回答上面的问题，给出具体的推理逻辑。 要解答这个问题，我们需要考虑地球自转和地球公转的原理。\n\n1. **地球自转**：地球绕着自己的轴线旋转，这个轴线是通过地球中心点（地心）而形成的。由于",
+        "commonsense_choice": "从哪个方向落下？\n回答上面的问题，给出具体的推理逻辑。 要解答这个问题，我们需要考虑地球自转和地球公转的原理。\n\n1. **地球自转**：地球绕着自己的轴线旋转，这个轴线是通过地心引力产生的，因此它不会对物体产生",
+        "format_following": "从哪个方向落下？\n回答上面的问题，给出具体的理由。 答案是：太阳从东方升起，从西方落下。\n\n理由：\n1. 太阳的位置在天空中的位置是由地球自转和公转决定的。\n2. 地球绕着太阳旋转，而太阳则围绕",
+        "short_reasoning": "从哪个方向落下？\n回答上面的问题，给出具体的推理逻辑。 要解答这个问题，我们需要考虑地球自转和地球公转的原理。\n\n1. **地球自转**：地球绕着自己的轴线旋转，这个轴线是通过地球中心点（地心）而形成的。因此",
+        "always_all": "从哪个方向落下？\n回答上面的问题，给出具体的推理逻辑。 要解答这个问题，我们需要考虑地球自转和地球公转的原理。\n\n1. **地球自转**：地球绕着自己的轴线旋转，这个轴线是通过地球中心点（地心）而形成的。由于"
+      }
+    },
+    {
+      "category": "chinese",
+      "prompt": "请用中文写一句问候语。",
+      "scores": {
+        "baseline": 1.0,
+        "calculation_error": 1.0,
+        "chinese_semantic": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 1.0,
+        "short_reasoning": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "calculation_error": 3,
+        "chinese_semantic": 3,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "short_reasoning": 3,
+        "always_all": 15
+      },
+      "outputs": {
+        "baseline": " 好的，这里是一句常用的中文问候语：“你好！”（Wǒ hǎo!）。\n\n好的，请告诉我，如果需要其他类型的问候语或有特定的需求，请随时告知！\n好的，很高兴能帮助到您。请问有什么我可以为您服务的吗？例如，关于工作、",
+        "calculation_error": " 你好，世界！\n你好，世界！（翻译成英文）Hello, world! (翻译成英文) \n\n这是一句非常亲切和友好的问候语，适用于各种场合。希望您会喜欢！如果您有任何其他问题或需要进一步的帮助，请随时告诉我。祝您好运！😊✨\n\n",
+        "chinese_semantic": " 好的，这里是一句常用的中文问候语：“你好！”（Wǒ hǎo！）。\n\n如果你需要更具体的问候语，请告诉我你想要表达的具体含义或场合。例如：\n\n- 对朋友的问候：你好，很高兴见到你。\n- 对同事的问候：你好，最近过得",
+        "commonsense_choice": " 好的，这里是一句常用的中文问候语：\n\n\"你好！很高兴见到你。\"\n\n这个问候语简单明了，适用于多种场合和人群。如果你需要更具体的问候语，请告诉我！",
+        "format_following": " 好的，这里是一句常用的中文问候语：“你好！”（Wǒ hǎo!）。\n\n如果你需要更具体的问候语，请告诉我你想要表达的具体含义或场合。例如：\n\n1. 对朋友的问候：“你好，很高兴见到你。”\n2. 对家人的问候：",
+        "short_reasoning": " 好的，这里是一句常用的中文问候语：“你好！”（Wǒ hǎo！）。\n\n如果你需要更具体的问候语，请告诉我你想要表达的具体含义或文化背景。例如：\n\n- 对于朋友：你好！\n- 对于家人：您好！\n- 对于同事：",
+        "always_all": " 好的，这里是一句常见的中文问候语：“你好！”（Wǒ hǎo！）。\n\n如果你需要更具体的问候语，请告诉我你想要表达的具体含义或文化背景。例如：\n\n- 对于朋友：你好！\n- 对于家人：您好！\n- 对于同事："
+      }
+    },
+    {
+      "category": "chinese",
+      "prompt": "什么是自然语言处理？",
+      "scores": {
+        "baseline": 1.0,
+        "calculation_error": 1.0,
+        "chinese_semantic": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 1.0,
+        "short_reasoning": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "calculation_error": 3,
+        "chinese_semantic": 3,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "short_reasoning": 3,
+        "always_all": 15
+      },
+      "outputs": {
+        "baseline": "它有哪些应用领域？\n\n自然语言处理（Natural Language Processing，简称NLP）是人工智能的一个重要分支，主要研究如何使计算机能够理解、解释和生成人类语言。简而言之，就是让机器“听懂”人类的语言，并根据这些信息进行理解和处理。\n\n### 应用领域\n\n",
+        "calculation_error": "它有哪些应用领域？\n\n自然语言处理（Natural Language Processing，简称NLP）是人工智能的一个重要分支，主要研究如何使计算机能够理解和生成人类语言。简而言之，就是让机器“理解”和“交流”，并能像人一样进行对话、写作、阅读等。\n\n### 应",
+        "chinese_semantic": "它有哪些应用领域？\n\n自然语言处理（Natural Language Processing，简称NLP）是人工智能的一个重要分支，主要研究如何使计算机能够理解和生成人类自然语言。简单来说，就是让机器“理解”和“交流”，并能像人一样进行对话、写作、翻译等任务。\n\n### �",
+        "commonsense_choice": "它有哪些应用领域？\n\n自然语言处理（Natural Language Processing，简称NLP）是人工智能的一个重要分支，主要研究如何使计算机能够理解和生成人类自然语言。简而言之，就是让机器“理解”和“交流”，并能像人一样进行对话、写作、阅读等。\n\n### �",
+        "format_following": "它有哪些应用领域？\n\n自然语言处理（Natural Language Processing，简称NLP）是人工智能的一个重要分支，主要研究如何使计算机能够理解、解释和生成人类语言。简单来说，就是让机器“听懂”人类的语言，并根据这些信息进行理解和处理。\n\n### 应用领域\n\n1",
+        "short_reasoning": "它有哪些应用领域？\n\n自然语言处理（Natural Language Processing，简称NLP）是人工智能的一个重要分支，主要研究如何使计算机能够理解和生成人类自然语言。简单来说，就是让机器“理解”和“交流”，并能像人一样进行对话、写作、阅读等。\n\n### 应",
+        "always_all": "它有哪些应用领域？\n\n自然语言处理（Natural Language Processing，简称NLP）是人工智能的一个重要分支，主要研究如何使计算机能够理解和生成人类自然语言。简而言之，就是让机器“理解”和“交流”，并能像人一样进行对话、写作等。\n\n### 应用"
+      }
+    },
+    {
+      "category": "reasoning",
+      "prompt": "If all squares are rectangles, and some rectangles are not squares, can a shape be a rectangle but not a square? Explain.",
+      "scores": {
+        "baseline": 1.0,
+        "calculation_error": 1.0,
+        "chinese_semantic": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 1.0,
+        "short_reasoning": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "calculation_error": 3,
+        "chinese_semantic": 3,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "short_reasoning": 3,
+        "always_all": 15
+      },
+      "outputs": {
+        "baseline": " To determine if a shape can be both a rectangle and not a square, we need to understand the definitions of these shapes.\n\n1. **Rectangle**: A rectangle is a quadrilateral with four right angles (90 degrees each).\n2. **Square**: A square is a special type of rectangle where all sides are equal",
+        "calculation_error": " To determine whether a shape can be both a rectangle and not a square, we need to understand the definitions of these shapes.\n\n1. **Rectangle**: A rectangle is a quadrilateral with four right angles (90 degrees each).\n2. **Square**: A square is a special type of rectangle where all sides are equal",
+        "chinese_semantic": " To determine whether a shape can be both a rectangle and not a square, we need to understand the definitions of these shapes.\n\n1. **Rectangle**: A rectangle is a quadrilateral with four right angles (90 degrees each).\n2. **Square**: A square is a special type of rectangle where all sides are equal",
+        "commonsense_choice": " To determine if a shape can be both a rectangle and not a square, we need to understand the definitions of these shapes.\n\n1. **Rectangle**: A rectangle is a quadrilateral with four right angles (90 degrees each).\n2. **Square**: A square is a special type of rectangle where all sides are equal",
+        "format_following": " To determine if a shape can be both a rectangle and not a square, let's analyze the properties of these shapes step by step.\n\n1. **Definition of a Rectangle**: A rectangle is defined as a quadrilateral with four right angles (90 degrees each).\n\n2. **Definition of a Square**: A square is",
+        "short_reasoning": " To determine whether a shape can be both a rectangle and not a square, let's analyze the properties of these shapes step by step.\n\n1. **Definition of a Rectangle**: A rectangle is defined as a quadrilateral with four right angles (90 degrees each).\n\n2. **Definition of a Square**: A square is",
+        "always_all": " To determine whether a shape can be both a rectangle and not a square, we need to understand the definitions of these shapes.\n\n1. **Rectangle**: A rectangle is a quadrilateral with four right angles (90 degrees each).\n2. **Square**: A square is a special type of rectangle where all sides are equal"
+      }
+    },
+    {
+      "category": "reasoning",
+      "prompt": "Alice is twice as old as Bob. In 5 years, Alice will be 1.5 times as old as Bob. How old is Alice now?",
+      "scores": {
+        "baseline": 1.0,
+        "calculation_error": 1.0,
+        "chinese_semantic": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 1.0,
+        "short_reasoning": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "calculation_error": 3,
+        "chinese_semantic": 3,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "short_reasoning": 3,
+        "always_all": 15
+      },
+      "outputs": {
+        "baseline": " Let's denote the current age of Bob by \\( B \\) and the current age of Alice by \\( A \\).\n\nFrom the problem, we know two things:\n1. Alice is twice as old as Bob.\n2. In 5 years, Alice will be 1.5 times as old as Bob.\n\nWe",
+        "calculation_error": " Let's denote the current age of Bob by \\( B \\). According to the problem, Alice is twice as old as Bob, so we can express Alice's current age as \\( 2B \\).\n\nIn 5 years, Alice's age will be \\( 2B + 5 \\) and Bob's age",
+        "chinese_semantic": " Let's denote the current age of Bob by \\( B \\) and the current age of Alice by \\( A \\). According to the problem, we have two pieces of information that can be translated into equations.\n\nFirst, we know that Alice is twice as old as Bob:\n\\[ A = 2B \\]\n\nNext",
+        "commonsense_choice": " Let's denote the current age of Bob by \\( B \\) and the current age of Alice by \\( A \\). According to the problem, we have two pieces of information that can be translated into equations.\n\nFirst, we know that Alice is twice as old as Bob:\n\\[ A = 2B \\]\n\nNext",
+        "format_following": " Let's denote the current age of Bob by \\( B \\) and the current age of Alice by \\( A \\). According to the problem, we have two key pieces of information:\n\n1. Alice is twice as old as Bob.\n2. In 5 years, Alice will be 1.5 times as old",
+        "short_reasoning": " Let's denote the current age of Bob by \\( B \\). According to the problem, Alice is twice as old as Bob, so we can express Alice's current age as \\( 2B \\).\n\nIn 5 years, Alice's age will be \\( 2B + 5 \\) and Bob's age",
+        "always_all": " Let's denote the current age of Bob by \\( B \\). According to the problem, Alice is twice as old as Bob, so we can express Alice's current age as \\( 2B \\).\n\nIn 5 years, Alice's age will be \\( 2B + 5 \\) and Bob's age"
+      }
+    },
+    {
+      "category": "reasoning",
+      "prompt": "Three light switches control a light bulb in another room. You can flip the switches and then enter the room once. How can you determine which switch controls the bulb?",
+      "scores": {
+        "baseline": 1.0,
+        "calculation_error": 1.0,
+        "chinese_semantic": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 1.0,
+        "short_reasoning": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "calculation_error": 3,
+        "chinese_semantic": 3,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "short_reasoning": 3,
+        "always_all": 15
+      },
+      "outputs": {
+        "baseline": " To determine which switch controls the light bulb, you can follow these steps:\n\n1. **Flip all three switches**: When you flip all three switches, they will turn off the light bulb.\n2. **Enter the room**: Once the light bulb is turned off, you can enter the room.\n\nSince flipping all three switches",
+        "calculation_error": " To determine which light switch controls the light bulb, you can follow these steps:\n\n1. **Flip all three switches**: When you flip all three switches, they will turn off the light bulb. This means that the switch that was originally on (the one you flipped) is now off.\n\n2. **Enter the room",
+        "chinese_semantic": " To determine which light switch controls the light bulb, you can follow these steps:\n\n1. **Flip all three switches**: When you flip all three switches, they will turn off the light bulb. This means that the light bulb is not controlled by any of the switches.\n\n2. **Enter the room**: Now, you",
+        "commonsense_choice": " To determine which switch controls the light bulb, you can follow these steps:\n\n1. **Flip all three switches**: When you flip all three switches, they will turn off the light bulb. This means that the switch that was originally on (the one that turned it off) is now off.\n\n2. **Enter the",
+        "format_following": " To determine which switch controls the light bulb, you can follow these steps:\n\n1. **Flip all three switches**: When you flip all three switches, they will turn off the light bulb because it is connected to both the left and right lights through the same switch.\n\n2. **Enter the room**: Once the light bulb",
+        "short_reasoning": " To determine which switch controls the light bulb, you can follow these steps:\n\n1. **Flip all three switches**: When you flip all three switches, they will turn off the light bulb. This means that the switch that was originally on (the one you flipped) is now off.\n\n2. **Enter the room**:",
+        "always_all": " To determine which switch controls the light bulb, you can follow these steps:\n\n1. **Flip each switch individually**: Start by flipping all three switches. This will cause the light bulb to be controlled by one of the switches.\n\n2. **Identify the switch that was flipped**: After flipping all three switches, you will"
+      }
+    },
+    {
+      "category": "reasoning",
+      "prompt": "If it takes 5 machines 5 minutes to make 5 widgets, how long would it take 100 machines to make 100 widgets?",
+      "scores": {
+        "baseline": 1.0,
+        "calculation_error": 1.0,
+        "chinese_semantic": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 1.0,
+        "short_reasoning": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "calculation_error": 3,
+        "chinese_semantic": 3,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "short_reasoning": 3,
+        "always_all": 15
+      },
+      "outputs": {
+        "baseline": " To solve this problem, we need to understand the relationship between the number of machines and the time it takes to produce a certain number of widgets. The key insight is that the amount of work done (in terms of widgets) is directly proportional to the number of machines.\n\nGiven:\n- It takes 5 machines 5",
+        "calculation_error": " To determine how long it would take 100 machines to make 100 widgets, we need to first understand the relationship between the number of machines and the time it takes to produce a certain number of widgets.\n\nWe know that 5 machines can produce 5 widgets in 5 minutes. This means that",
+        "chinese_semantic": " To solve this problem, we need to understand the relationship between the number of machines and the time it takes to produce a certain number of widgets. The key insight is that the amount of work done (in terms of widgets) is directly proportional to the number of machines.\n\nFirst, let's determine the rate at which the",
+        "commonsense_choice": " To determine how long it would take 100 machines to make 100 widgets, we need to first understand the relationship between the number of machines and the time it takes to produce a certain number of widgets.\n\nWe know that 5 machines can produce 5 widgets in 5 minutes. This means that",
+        "format_following": " To determine how long it would take 100 machines to make 100 widgets, we need to first find the rate at which the machines work. We know that 5 machines can make 5 widgets in 5 minutes. Therefore, the combined rate of the 5 machines is:\n\n\\[ \\text",
+        "short_reasoning": " To determine how long it would take 100 machines to make 100 widgets, we need to first understand the relationship between the number of machines and the time it takes to produce a certain number of widgets.\n\nWe know that 5 machines can produce 5 widgets in 5 minutes. This means that",
+        "always_all": " To determine how long it would take 100 machines to make 100 widgets, we need to first understand the relationship between the number of machines and the time it takes to produce a certain number of widgets.\n\nWe know that 5 machines can produce 5 widgets in 5 minutes. This means that"
+      }
+    },
+    {
+      "category": "reasoning",
+      "prompt": "A bat and a ball cost $1.10 in total. The bat costs $1.00 more than the ball. How much does the ball cost?",
+      "scores": {
+        "baseline": 1.0,
+        "calculation_error": 1.0,
+        "chinese_semantic": 1.0,
+        "commonsense_choice": 1.0,
+        "format_following": 1.0,
+        "short_reasoning": 1.0,
+        "always_all": 1.0
+      },
+      "active_counts": {
+        "baseline": 0,
+        "calculation_error": 3,
+        "chinese_semantic": 3,
+        "commonsense_choice": 3,
+        "format_following": 3,
+        "short_reasoning": 3,
+        "always_all": 15
+      },
+      "outputs": {
+        "baseline": " Let's denote the cost of the ball as \\( B \\) dollars.\n\nAccording to the problem, the bat costs $1.00 more than the ball. Therefore, the cost of the bat is \\( B + 1 \\) dollars.\n\nThe total cost of both items is given as $1.10",
+        "calculation_error": " Let's denote the cost of the ball as \\( B \\) dollars.\n\nAccording to the problem, the bat costs $1.00 more than the ball. Therefore, the cost of the bat can be expressed as:\n\\[ B + 1 = 1.10 \\]\n\nTo find the cost of the",
+        "chinese_semantic": " Let's denote the cost of the ball as \\( B \\) dollars.\n\nAccording to the problem, the bat costs $1.00 more than the ball. Therefore, the cost of the bat can be expressed as:\n\\[ B + 1 = 1.10 \\]\n\nTo find the cost of the",
+        "commonsense_choice": " Let's denote the cost of the ball as \\( B \\) dollars.\n\nAccording to the problem, the bat costs $1.00 more than the ball. Therefore, the cost of the bat can be expressed as:\n\\[ B + 1 = 1.10 \\]\n\nTo find the cost of the",
+        "format_following": " Let's denote the cost of the ball as \\( B \\) dollars.\n\nAccording to the problem, the bat costs $1.00 more than the ball. Therefore, the cost of the bat can be expressed as:\n\n\\[ B + 1 = 1.10 \\]\n\nTo find the cost of the",
+        "short_reasoning": " Let's denote the cost of the ball as \\( B \\) dollars.\n\nAccording to the problem, the bat costs $1.00 more than the ball. Therefore, the cost of the bat can be expressed as:\n\\[ B + 1 = 1.10 \\]\n\nTo find the cost of the",
+        "always_all": " Let's denote the cost of the ball as \\( B \\) dollars.\n\nAccording to the problem, the bat costs $1.00 more than the ball, so we can write this relationship as:\n\\[ B = B + 1.00 \\]\n\nTo find the cost of the ball, we need to"
+      }
+    }
+  ]
+}

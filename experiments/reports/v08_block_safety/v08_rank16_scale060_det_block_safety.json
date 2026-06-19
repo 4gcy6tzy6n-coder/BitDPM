@@ -1,0 +1,296 @@
+{
+  "report": {
+    "model": "Qwen/Qwen2.5-0.5B-Instruct",
+    "benchmark_set": "v08",
+    "total_prompts": 100,
+    "block_scale": 0.6,
+    "block_scales": {}
+  },
+  "rows": [
+    {
+      "block": "commonsense_choice",
+      "fixed_score": 0.83,
+      "baseline_score": 0.8,
+      "score_delta": 0.03,
+      "fixes": 3,
+      "breaks": 0,
+      "net_fix_count": 3,
+      "unique_fixes": 2,
+      "damaged_categories": {},
+      "fix_samples": [
+        {
+          "index": 5,
+          "category": "commonsense",
+          "prompt": "Who wrote Romeo and Juliet?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 25,
+          "category": "math",
+          "prompt": "What is the square root of 144?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 38,
+          "category": "math",
+          "prompt": "What is log base 10 of 1000?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        }
+      ],
+      "break_samples": [],
+      "unique_fix_samples": [
+        {
+          "index": 25,
+          "category": "math",
+          "prompt": "What is the square root of 144?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        },
+        {
+          "index": 38,
+          "category": "math",
+          "prompt": "What is log base 10 of 1000?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        }
+      ]
+    },
+    {
+      "block": "calculation_error",
+      "fixed_score": 0.79,
+      "baseline_score": 0.8,
+      "score_delta": -0.01,
+      "fixes": 1,
+      "breaks": 3,
+      "net_fix_count": -2,
+      "unique_fixes": 1,
+      "damaged_categories": {
+        "chinese": 2,
+        "math": 1
+      },
+      "fix_samples": [
+        {
+          "index": 28,
+          "category": "math",
+          "prompt": "What is 2^10?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        }
+      ],
+      "break_samples": [
+        {
+          "index": 20,
+          "category": "math",
+          "prompt": "Calculate 15 + 27 =",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 68,
+          "category": "chinese",
+          "prompt": "请用中文写一句问候语。",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "index": 74,
+          "category": "chinese",
+          "prompt": "长城位于哪个国家？",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        }
+      ],
+      "unique_fix_samples": [
+        {
+          "index": 28,
+          "category": "math",
+          "prompt": "What is 2^10?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        }
+      ]
+    },
+    {
+      "block": "chinese_semantic",
+      "fixed_score": 0.79,
+      "baseline_score": 0.8,
+      "score_delta": -0.01,
+      "fixes": 0,
+      "breaks": 2,
+      "net_fix_count": -2,
+      "unique_fixes": 0,
+      "damaged_categories": {
+        "chinese": 2
+      },
+      "fix_samples": [],
+      "break_samples": [
+        {
+          "index": 65,
+          "category": "chinese",
+          "prompt": "水的化学式是什么？",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "index": 68,
+          "category": "chinese",
+          "prompt": "请用中文写一句问候语。",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        }
+      ],
+      "unique_fix_samples": []
+    },
+    {
+      "block": "short_reasoning",
+      "fixed_score": 0.79,
+      "baseline_score": 0.8,
+      "score_delta": -0.01,
+      "fixes": 0,
+      "breaks": 2,
+      "net_fix_count": -2,
+      "unique_fixes": 0,
+      "damaged_categories": {
+        "chinese": 2
+      },
+      "fix_samples": [],
+      "break_samples": [
+        {
+          "index": 65,
+          "category": "chinese",
+          "prompt": "水的化学式是什么？",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "index": 71,
+          "category": "chinese",
+          "prompt": "中国的四大发明是什么？",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        }
+      ],
+      "unique_fix_samples": []
+    },
+    {
+      "block": "format_following",
+      "fixed_score": 0.705,
+      "baseline_score": 0.8,
+      "score_delta": -0.095,
+      "fixes": 1,
+      "breaks": 13,
+      "net_fix_count": -12,
+      "unique_fixes": 0,
+      "damaged_categories": {
+        "chinese": 12,
+        "commonsense": 1
+      },
+      "fix_samples": [
+        {
+          "index": 5,
+          "category": "commonsense",
+          "prompt": "Who wrote Romeo and Juliet?",
+          "baseline_score": 0.0,
+          "block_score": 1.0
+        }
+      ],
+      "break_samples": [
+        {
+          "index": 12,
+          "category": "commonsense",
+          "prompt": "Which animal is known as the king of the jungle?",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 60,
+          "category": "chinese",
+          "prompt": "中国的首都是哪个城市？",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 62,
+          "category": "chinese",
+          "prompt": "一年有多少个月？",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 64,
+          "category": "chinese",
+          "prompt": "什么是机器学习？请用中文回答。",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "index": 65,
+          "category": "chinese",
+          "prompt": "水的化学式是什么？",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "index": 67,
+          "category": "chinese",
+          "prompt": "太阳从哪个方向升起？",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 68,
+          "category": "chinese",
+          "prompt": "请用中文写一句问候语。",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "index": 69,
+          "category": "chinese",
+          "prompt": "什么是自然语言处理？",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 71,
+          "category": "chinese",
+          "prompt": "中国的四大发明是什么？",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 74,
+          "category": "chinese",
+          "prompt": "长城位于哪个国家？",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        },
+        {
+          "index": 76,
+          "category": "chinese",
+          "prompt": "什么是高铁？",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 78,
+          "category": "chinese",
+          "prompt": "孔子是中国古代的什么人物？",
+          "baseline_score": 1.0,
+          "block_score": 0.0
+        },
+        {
+          "index": 79,
+          "category": "chinese",
+          "prompt": "请写一句关于学习的中文句子。",
+          "baseline_score": 1.0,
+          "block_score": 0.5
+        }
+      ],
+      "unique_fix_samples": []
+    }
+  ]
+}

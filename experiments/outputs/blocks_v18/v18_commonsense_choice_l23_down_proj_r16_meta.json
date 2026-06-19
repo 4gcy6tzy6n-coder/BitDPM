@@ -1,0 +1,22 @@
+{
+  "block_id": "v18_commonsense_choice_l23_down_proj_r16",
+  "direction": "commonsense_choice",
+  "train_samples": 36,
+  "rank": 16,
+  "loss_history": [
+    7.394008745749791,
+    0.2765757011042701,
+    0.21442678198218346,
+    0.17875512834224436,
+    0.15365072339773178
+  ],
+  "fix_break": {
+    "fixes": 0,
+    "breaks": 36,
+    "net": -36,
+    "baseline_score": 0.8222222222222222,
+    "block_score": 0.022222222222222223
+  },
+  "admit": false,
+  "damage_rate": 0.8
+}

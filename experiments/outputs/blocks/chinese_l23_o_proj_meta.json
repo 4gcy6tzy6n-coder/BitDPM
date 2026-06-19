@@ -1,0 +1,16 @@
+{
+  "block_id": "chinese_l23_o_proj",
+  "block_type": "chinese",
+  "category": "chinese",
+  "layer_id": 23,
+  "module_name": "o_proj",
+  "rank": 8,
+  "scale": 1.0,
+  "final_loss": 0.3304247260093689,
+  "best_loss": 0.20653210580348969,
+  "epochs": 3,
+  "total_steps": 354,
+  "training_time_s": 53.025148153305054,
+  "in_features": 896,
+  "out_features": 896
+}

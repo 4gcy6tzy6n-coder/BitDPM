@@ -1,0 +1,148 @@
+# Utility Mining: aaai_v1k_clean_current_pool
+
+- Report: `experiments/reports/aaai_v1k_clean_current_pool_20260618_233819.json`
+- Benchmark: `v1k_clean`
+- Total prompts: `1000`
+- Block scale: `0.75`
+- Oracle overall: `0.926`
+- Selection frequency: `{'baseline': 885, 'commonsense_choice': 67, 'format_following': 20, 'chinese_semantic': 14, 'calculation_error': 4, 'short_reasoning': 2, 'arithmetic_power_log': 6, 'v11_stats_number_theory': 2, 'always_all': 0}`
+
+## Bucket Counts
+
+- `baseline_correct_block_wrong`: 1108
+- `baseline_wrong_block_correct`: 362
+- `baseline_wrong_all_wrong`: 74
+- `near_miss`: 0
+
+## Unique Utility Counts
+
+- `arithmetic_power_log`: 5
+- `format_following`: 5
+- `commonsense_choice`: 7
+- `calculation_error`: 1
+- `v11_stats_number_theory`: 2
+- `chinese_semantic`: 6
+- `short_reasoning`: 2
+
+## Positive Delta Samples
+
+- #0 `arithmetic` `arithmetic_power_log` 0.0 -> 1.0: Clean arithmetic check: compute the sum of 131 and 67.
+- #10 `arithmetic` `format_following` 0.0 -> 1.0: Clean arithmetic check: compute the sum of 221 and 177.
+- #15 `arithmetic` `arithmetic_power_log` 0.0 -> 1.0: Clean arithmetic check: compute the sum of 266 and 232.
+- #16 `arithmetic` `commonsense_choice` 0.0 -> 1.0: Clean arithmetic check: compute the sum of 275 and 243.
+- #17 `arithmetic` `commonsense_choice` 0.0 -> 1.0: Clean arithmetic check: compute the sum of 284 and 254.
+- #27 `arithmetic` `commonsense_choice` 0.0 -> 1.0: Clean arithmetic check: compute the sum of 374 and 364.
+- #35 `arithmetic` `format_following` 0.0 -> 1.0: Clean arithmetic check: compute the sum of 446 and 452.
+- #36 `arithmetic` `commonsense_choice` 0.0 -> 1.0: Clean arithmetic check: compute the sum of 455 and 463.
+- #45 `arithmetic` `commonsense_choice` 0.0 -> 1.0: Clean arithmetic check: compute the sum of 536 and 562.
+- #47 `arithmetic` `commonsense_choice` 0.0 -> 1.0: Clean arithmetic check: compute the sum of 554 and 584.
+- #51 `arithmetic` `commonsense_choice` 0.0 -> 1.0: Clean arithmetic check: compute the product of 13 and 14.
+- #54 `arithmetic` `commonsense_choice` 0.0 -> 1.0: Clean arithmetic check: compute the product of 16 and 29.
+- #55 `arithmetic` `commonsense_choice` 0.0 -> 1.0: Clean arithmetic check: compute the product of 17 and 11.
+- #57 `arithmetic` `calculation_error` 0.0 -> 1.0: Clean arithmetic check: compute the product of 19 and 21.
+- #59 `arithmetic` `commonsense_choice` 0.0 -> 1.0: Clean arithmetic check: compute the product of 21 and 31.
+- #61 `arithmetic` `commonsense_choice` 0.0 -> 1.0: Clean arithmetic check: compute the product of 23 and 18.
+- #63 `arithmetic` `format_following` 0.0 -> 1.0: Clean arithmetic check: compute the product of 25 and 28.
+- #64 `arithmetic` `commonsense_choice` 0.0 -> 1.0: Clean arithmetic check: compute the product of 26 and 10.
+- #74 `arithmetic` `commonsense_choice` 0.0 -> 1.0: Clean arithmetic check: compute the product of 36 and 14.
+- #78 `arithmetic` `commonsense_choice` 0.0 -> 1.0: Clean arithmetic check: compute the product of 15 and 11.
+- #79 `arithmetic` `commonsense_choice` 0.0 -> 1.0: Clean arithmetic check: compute the product of 16 and 16.
+- #80 `arithmetic` `calculation_error` 0.0 -> 1.0: Clean arithmetic check: compute the product of 17 and 21.
+- #81 `arithmetic` `commonsense_choice` 0.0 -> 1.0: Clean arithmetic check: compute the product of 18 and 26.
+- #82 `arithmetic` `commonsense_choice` 0.0 -> 1.0: Clean arithmetic check: compute the product of 19 and 31.
+- #84 `arithmetic` `commonsense_choice` 0.0 -> 1.0: Clean arithmetic check: compute the product of 21 and 18.
+- #86 `arithmetic` `commonsense_choice` 0.0 -> 1.0: Clean arithmetic check: compute the product of 23 and 28.
+- #88 `arithmetic` `commonsense_choice` 0.0 -> 1.0: Clean arithmetic check: compute the product of 25 and 15.
+- #97 `arithmetic` `chinese_semantic` 0.0 -> 1.0: Clean arithmetic check: find 45 percent of 600.
+- #118 `arithmetic` `chinese_semantic` 0.0 -> 1.0: Clean arithmetic check: find 18 percent of 300.
+- #123 `arithmetic` `format_following` 0.0 -> 1.0: Clean arithmetic check: find 8 percent of 75.
+- #130 `arithmetic` `arithmetic_power_log` 0.0 -> 1.0: Clean arithmetic check: evaluate sqrt(1681).
+- #132 `arithmetic` `commonsense_choice` 0.0 -> 1.0: Clean arithmetic check: evaluate sqrt(1849).
+- #133 `arithmetic` `commonsense_choice` 0.0 -> 1.0: Clean arithmetic check: evaluate sqrt(1936).
+- #134 `arithmetic` `commonsense_choice` 0.0 -> 1.0: Clean arithmetic check: evaluate sqrt(2025).
+- #136 `arithmetic` `format_following` 0.0 -> 1.0: Clean arithmetic check: evaluate sqrt(2209).
+- #138 `arithmetic` `commonsense_choice` 0.0 -> 1.0: Clean arithmetic check: evaluate sqrt(2401).
+- #141 `arithmetic` `v11_stats_number_theory` 0.0 -> 1.0: Clean arithmetic check: evaluate sqrt(2704).
+- #142 `arithmetic` `commonsense_choice` 0.0 -> 1.0: Clean arithmetic check: evaluate sqrt(2809).
+- #144 `arithmetic` `commonsense_choice` 0.0 -> 1.0: Clean arithmetic check: evaluate sqrt(3025).
+- #145 `arithmetic` `format_following` 0.0 -> 1.0: Clean arithmetic check: evaluate sqrt(3136).
+- #147 `arithmetic` `commonsense_choice` 0.0 -> 1.0: Clean arithmetic check: evaluate sqrt(3364).
+- #148 `arithmetic` `commonsense_choice` 0.0 -> 1.0: Clean arithmetic check: evaluate sqrt(3481).
+- #151 `arithmetic` `chinese_semantic` 0.0 -> 1.0: Clean arithmetic check: evaluate sqrt(3844).
+- #152 `arithmetic` `commonsense_choice` 0.0 -> 1.0: Clean arithmetic check: evaluate sqrt(3969).
+- #153 `arithmetic` `calculation_error` 0.0 -> 1.0: Clean arithmetic check: evaluate sqrt(4096).
+- #154 `arithmetic` `commonsense_choice` 0.0 -> 1.0: Clean arithmetic check: evaluate sqrt(4225).
+- #155 `arithmetic` `chinese_semantic` 0.0 -> 1.0: Clean arithmetic check: evaluate sqrt(4356).
+- #156 `arithmetic` `commonsense_choice` 0.0 -> 1.0: Clean arithmetic check: evaluate sqrt(4489).
+- #157 `arithmetic` `commonsense_choice` 0.0 -> 1.0: Clean arithmetic check: evaluate sqrt(4624).
+- #158 `arithmetic` `format_following` 0.0 -> 1.0: Clean arithmetic check: evaluate sqrt(4761).
+- #161 `arithmetic` `commonsense_choice` 0.0 -> 1.0: Clean arithmetic check: evaluate sqrt(5184).
+- #163 `arithmetic` `commonsense_choice` 0.0 -> 1.0: Clean arithmetic check: evaluate sqrt(5476).
+- #164 `arithmetic` `commonsense_choice` 0.0 -> 1.0: Clean arithmetic check: evaluate sqrt(5625).
+- #165 `arithmetic` `commonsense_choice` 0.0 -> 1.0: Clean arithmetic check: evaluate 2 raised to power 13.
+- #166 `arithmetic` `format_following` 0.0 -> 1.0: Clean arithmetic check: evaluate 2 raised to power 14.
+- #171 `arithmetic` `chinese_semantic` 0.0 -> 1.0: Clean arithmetic check: evaluate 2 raised to power 19.
+- #176 `arithmetic` `commonsense_choice` 0.0 -> 1.0: Clean arithmetic check: evaluate 3 raised to power 9.
+- #177 `arithmetic` `format_following` 0.0 -> 1.0: Clean arithmetic check: evaluate 3 raised to power 10.
+- #179 `arithmetic` `commonsense_choice` 0.0 -> 1.0: Clean arithmetic check: evaluate 3 raised to power 12.
+- #180 `arithmetic` `chinese_semantic` 0.0 -> 1.0: Clean arithmetic check: evaluate 3 raised to power 13.
+- #182 `arithmetic` `commonsense_choice` 0.0 -> 1.0: Clean arithmetic check: evaluate 4 raised to power 7.
+- #224 `arithmetic` `commonsense_choice` 0.0 -> 1.0: Clean arithmetic check: compute the average of these four values: 39; 45; 49; 59.
+- #227 `arithmetic` `arithmetic_power_log` 0.0 -> 1.0: Clean arithmetic check: compute the average of these four values: 45; 51; 55; 65.
+- #232 `arithmetic` `arithmetic_power_log` 0.0 -> 1.0: Clean arithmetic check: compute the average of these four values: 55; 61; 65; 75.
+- #239 `arithmetic` `short_reasoning` 0.0 -> 1.0: Clean arithmetic check: compute the average of these four values: 69; 75; 79; 89.
+- #240 `arithmetic` `chinese_semantic` 0.0 -> 1.0: Clean number theory check: report gcd(42, 56).
+- #241 `arithmetic` `commonsense_choice` 0.0 -> 1.0: Clean number theory check: report lcm(42, 56).
+- #242 `arithmetic` `short_reasoning` 0.0 -> 1.0: Clean number theory check: report gcd(48, 72).
+- #244 `arithmetic` `chinese_semantic` 0.0 -> 1.0: Clean number theory check: report gcd(54, 81).
+- #259 `factual_constants` `chinese_semantic` 0.0 -> 1.0: Clean factual check: respond with the conventional answer for standard atmospheric pressure at sea level in pascals.
+- #270 `factual_constants` `commonsense_choice` 0.0 -> 1.0: Clean factual check: give the short answer for the number of grams in one kilogram.
+- #289 `factual_constants` `arithmetic_power_log` 0.0 -> 1.0: Clean factual check: respond with the conventional answer for the number of meters in one kilometer.
+- #295 `factual_constants` `commonsense_choice` 0.0 -> 1.0: Clean factual check: return the canonical value for the number of degrees in a right angle.
+- #404 `commonsense` `calculation_error` 0.0 -> 1.0: Clean commonsense check: provide the usual answer for the animal known for a long trunk.
+- #411 `commonsense` `commonsense_choice` 0.0 -> 1.0: Clean commonsense check: give the common word for the object used to tell time on a wall.
+- #415 `commonsense` `chinese_semantic` 0.0 -> 1.0: Clean commonsense check: name the season that usually comes after spring.
+- #416 `commonsense` `commonsense_choice` 0.0 -> 1.0: Clean commonsense check: give the common word for the season that usually comes after spring.
+- #420 `commonsense` `format_following` 0.0 -> 1.0: Clean commonsense check: name the direction opposite north.
+- #421 `commonsense` `chinese_semantic` 0.0 -> 1.0: Clean commonsense check: give the common word for the direction opposite north.
+- #422 `commonsense` `commonsense_choice` 0.0 -> 1.0: Clean commonsense check: answer briefly, the direction opposite north.
+- #425 `commonsense` `format_following` 0.0 -> 1.0: Clean commonsense check: name the tool commonly used to write on a blackboard.
+- #426 `commonsense` `chinese_semantic` 0.0 -> 1.0: Clean commonsense check: give the common word for the tool commonly used to write on a blackboard.
+- #428 `commonsense` `commonsense_choice` 0.0 -> 1.0: Clean commonsense check: what is the tool commonly used to write on a blackboard?
+- #429 `commonsense` `format_following` 0.0 -> 1.0: Clean commonsense check: provide the usual answer for the tool commonly used to write on a blackboard.
+- #441 `commonsense` `commonsense_choice` 0.0 -> 1.0: Clean commonsense check: give the common word for the place where doctors treat patients.
+- #442 `commonsense` `chinese_semantic` 0.0 -> 1.0: Clean commonsense check: answer briefly, the place where doctors treat patients.
+- #460 `commonsense` `format_following` 0.0 -> 1.0: Clean commonsense check: name the day after Friday.
+- #461 `commonsense` `commonsense_choice` 0.0 -> 1.0: Clean commonsense check: give the common word for the day after Friday.
+- #463 `commonsense` `format_following` 0.0 -> 1.0: Clean commonsense check: what is the day after Friday?
+- #467 `commonsense` `commonsense_choice` 0.0 -> 1.0: Clean commonsense check: answer briefly, the month after January.
+- #476 `commonsense` `commonsense_choice` 0.0 -> 1.0: Clean commonsense check: give the common word for the animal that meows.
+- #477 `commonsense` `commonsense_choice` 0.0 -> 1.0: Clean commonsense check: answer briefly, the animal that meows.
+- #481 `commonsense` `commonsense_choice` 0.0 -> 1.0: Clean commonsense check: give the common word for the kitchen tool used to boil water.
+- #482 `commonsense` `commonsense_choice` 0.0 -> 1.0: Clean commonsense check: answer briefly, the kitchen tool used to boil water.
+- #491 `commonsense` `commonsense_choice` 0.0 -> 1.0: Clean commonsense check: give the common word for the natural light source during daytime.
+- #504 `commonsense` `commonsense_choice` 0.0 -> 1.0: Clean commonsense check: provide the usual answer for the writing instrument filled with ink.
+- #507 `commonsense` `commonsense_choice` 0.0 -> 1.0: Clean commonsense check: answer briefly, the container often used to carry school books.
+- #512 `commonsense` `commonsense_choice` 0.0 -> 1.0: Clean commonsense check: answer briefly, the vehicle with two wheels and pedals.
+- #514 `commonsense` `commonsense_choice` 0.0 -> 1.0: Clean commonsense check: provide the usual answer for the vehicle with two wheels and pedals.
+- #534 `commonsense` `commonsense_choice` 0.0 -> 1.0: Clean commonsense check: provide the usual answer for the object opened to enter a room.
+- #542 `commonsense` `format_following` 0.0 -> 1.0: Clean commonsense check: answer briefly, the tool used to hit nails.
+- #553 `commonsense` `format_following` 0.0 -> 1.0: Clean commonsense check: what is the object used to cover a bed while sleeping?
+- #554 `commonsense` `chinese_semantic` 0.0 -> 1.0: Clean commonsense check: provide the usual answer for the object used to cover a bed while sleeping.
+- #565 `commonsense` `commonsense_choice` 0.0 -> 1.0: Clean commonsense check: name the meal commonly eaten at midday.
+- #567 `commonsense` `format_following` 0.0 -> 1.0: Clean commonsense check: answer briefly, the meal commonly eaten at midday.
+- #568 `commonsense` `commonsense_choice` 0.0 -> 1.0: Clean commonsense check: what is the meal commonly eaten at midday?
+- #570 `commonsense` `v11_stats_number_theory` 0.0 -> 1.0: Clean commonsense check: name the shape of a typical wheel.
+- #572 `commonsense` `commonsense_choice` 0.0 -> 1.0: Clean commonsense check: answer briefly, the shape of a typical wheel.
+- #575 `commonsense` `format_following` 0.0 -> 1.0: Clean commonsense check: name the opposite of early.
+- #576 `commonsense` `commonsense_choice` 0.0 -> 1.0: Clean commonsense check: give the common word for the opposite of early.
+- #585 `commonsense` `format_following` 0.0 -> 1.0: Clean commonsense check: name the opposite of fast.
+- #595 `commonsense` `format_following` 0.0 -> 1.0: Clean commonsense check: name the person who cuts hair professionally.
+- #599 `commonsense` `commonsense_choice` 0.0 -> 1.0: Clean commonsense check: provide the usual answer for the person who cuts hair professionally.
+- #872 `chinese` `commonsense_choice` 0.5 -> 1.0: Clean Chinese check: 一周通常有多少天？ 请简洁回答。清洁版本13。
+- #892 `chinese` `commonsense_choice` 0.5 -> 1.0: Clean Chinese check: 一周通常有多少天？ 请简洁回答。清洁版本15。
+
+## Outputs
+
+- JSON: `experiments/reports/v08_utility_mining/aaai_v1k_clean_current_pool_utility_mining.json`
+- Training texts: `experiments/reports/v08_utility_mining/aaai_v1k_clean_current_pool_training_texts.json`

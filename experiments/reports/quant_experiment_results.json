@@ -1,0 +1,56 @@
+[
+  {
+    "model_name": "FP16 baseline",
+    "quant": "FP16",
+    "num_params": "0.5B",
+    "device": "cpu",
+    "category_scores": {
+      "commonsense": 0.7,
+      "math": 0.3,
+      "code": 1.0,
+      "chinese": 1.0,
+      "reasoning": 1.0
+    },
+    "overall_score": 0.7777777777777778,
+    "avg_tokens_per_sec": 20.15112096822914,
+    "avg_latency_ms": 1819.5844650268555,
+    "peak_memory_mb": 942.29296875,
+    "total_prompts": 45
+  },
+  {
+    "model_name": "INT8 simulated",
+    "quant": "INT8",
+    "num_params": "0.5B",
+    "device": "cpu",
+    "category_scores": {
+      "commonsense": 0.8,
+      "math": 0.3,
+      "code": 1.0,
+      "chinese": 1.0,
+      "reasoning": 1.0
+    },
+    "overall_score": 0.8,
+    "avg_tokens_per_sec": 12.426954730152067,
+    "avg_latency_ms": 2986.3399293687607,
+    "peak_memory_mb": 942.29296875,
+    "total_prompts": 45
+  },
+  {
+    "model_name": "INT4 simulated",
+    "quant": "INT4",
+    "num_params": "0.5B",
+    "device": "cpu",
+    "category_scores": {
+      "commonsense": 0.0,
+      "math": 0.0,
+      "code": 1.0,
+      "chinese": 1.0,
+      "reasoning": 1.0
+    },
+    "overall_score": 0.5555555555555556,
+    "avg_tokens_per_sec": 6.1702713287934925,
+    "avg_latency_ms": 2765.9507592519126,
+    "peak_memory_mb": 942.29296875,
+    "total_prompts": 45
+  }
+]

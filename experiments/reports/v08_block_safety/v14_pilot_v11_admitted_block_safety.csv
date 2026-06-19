@@ -1,0 +1,8 @@
+block,fixed_score,baseline_score,score_delta,fixes,breaks,net_fix_count,unique_fixes,damaged_categories
+calculation_error,0.8916666666666667,0.8666666666666667,0.025,3,2,1,0,"{'arithmetic': 1, 'chinese': 1}"
+chinese_semantic,0.8833333333333333,0.8666666666666667,0.016666666666666666,4,3,1,0,"{'arithmetic': 2, 'factual_constants': 1}"
+v11_stats_number_theory,0.875,0.8666666666666667,0.008333333333333333,5,5,0,2,"{'arithmetic': 2, 'chinese': 2, 'factual_constants': 1}"
+short_reasoning,0.8166666666666667,0.8666666666666667,-0.05,2,5,-3,0,"{'arithmetic': 3, 'factual_constants': 2}"
+commonsense_choice,0.7666666666666667,0.8666666666666667,-0.1,1,7,-6,0,"{'arithmetic': 3, 'chinese': 1, 'commonsense': 1, 'factual_constants': 2}"
+arithmetic_power_log,0.6916666666666667,0.8666666666666667,-0.175,2,13,-11,0,"{'arithmetic': 5, 'chinese': 1, 'factual_constants': 6, 'reasoning': 1}"
+format_following,0.6666666666666666,0.8666666666666667,-0.2,0,13,-13,0,"{'arithmetic': 2, 'chinese': 9, 'commonsense': 2}"

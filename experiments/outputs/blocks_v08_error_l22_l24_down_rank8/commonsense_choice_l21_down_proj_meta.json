@@ -1,0 +1,16 @@
+{
+  "block_id": "commonsense_choice_l21_down_proj",
+  "block_type": "commonsense_choice",
+  "category": "commonsense_choice",
+  "layer_id": 21,
+  "module_name": "down_proj",
+  "rank": 8,
+  "scale": 1.0,
+  "final_loss": 0.3482416570186615,
+  "best_loss": 0.3482416570186615,
+  "epochs": 5,
+  "total_steps": 50,
+  "training_time_s": 5.258228063583374,
+  "in_features": 4864,
+  "out_features": 896
+}

@@ -1,0 +1,4062 @@
+[
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks/chinese_l23_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks/chinese_l23_down_proj.pt",
+    "file_size": 186645,
+    "sha256": "1e132b6df612c2fc375e60492e6ef1f70bbf8a6d9e9f53454eeca822dbec5e2a",
+    "load_ok": true,
+    "block_id": "chinese_l23_down_proj",
+    "block_type": "chinese",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 8,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      8
+    ],
+    "B_shape": [
+      8,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 46080
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks/chinese_l23_o_proj.pt",
+    "rel_path": "experiments/outputs/blocks/chinese_l23_o_proj.pt",
+    "file_size": 59645,
+    "sha256": "985c850b97e124e7c23f68341e512d5d893a17e4568d19f172d4b4492af3adf8",
+    "load_ok": true,
+    "block_id": "chinese_l23_o_proj",
+    "block_type": "chinese",
+    "layer_id": 23,
+    "module_name": "o_proj",
+    "rank": 8,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 896,
+    "out_features": 896,
+    "A_shape": [
+      896,
+      8
+    ],
+    "B_shape": [
+      8,
+      896
+    ],
+    "in_dim": 896,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B attention",
+    "num_params": 14336
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks/code_l23_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks/code_l23_down_proj.pt",
+    "file_size": 186621,
+    "sha256": "01daf52be25076b2d257fbe6628c98a16f403a585f8612d7ca0d0de696ef0828",
+    "load_ok": true,
+    "block_id": "code_l23_down_proj",
+    "block_type": "code",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 8,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      8
+    ],
+    "B_shape": [
+      8,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 46080
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks/code_l23_o_proj.pt",
+    "rel_path": "experiments/outputs/blocks/code_l23_o_proj.pt",
+    "file_size": 59621,
+    "sha256": "9e5416ea16a33a00917345128be16e45fd8fcbdb6651971061fbc3431ae6ca58",
+    "load_ok": true,
+    "block_id": "code_l23_o_proj",
+    "block_type": "code",
+    "layer_id": 23,
+    "module_name": "o_proj",
+    "rank": 8,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 896,
+    "out_features": 896,
+    "A_shape": [
+      896,
+      8
+    ],
+    "B_shape": [
+      8,
+      896
+    ],
+    "in_dim": 896,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B attention",
+    "num_params": 14336
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks/general_l23_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks/general_l23_down_proj.pt",
+    "file_size": 186645,
+    "sha256": "92ba506c920301528524ce1d2f4f88b7fe6b90794eb17b5dd0881169b73190cb",
+    "load_ok": true,
+    "block_id": "general_l23_down_proj",
+    "block_type": "general",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 8,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      8
+    ],
+    "B_shape": [
+      8,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 46080
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks/general_l23_o_proj.pt",
+    "rel_path": "experiments/outputs/blocks/general_l23_o_proj.pt",
+    "file_size": 59645,
+    "sha256": "a89de252990147862d516af9bf92a64126862932cec96497b4b0da80216b4eed",
+    "load_ok": true,
+    "block_id": "general_l23_o_proj",
+    "block_type": "general",
+    "layer_id": 23,
+    "module_name": "o_proj",
+    "rank": 8,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 896,
+    "out_features": 896,
+    "A_shape": [
+      896,
+      8
+    ],
+    "B_shape": [
+      8,
+      896
+    ],
+    "in_dim": 896,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B attention",
+    "num_params": 14336
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks/math_l23_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks/math_l23_down_proj.pt",
+    "file_size": 186621,
+    "sha256": "4b6b593677fd54f908d1acc4f5fcb00aef46d8b9f63d9aa08f2196b95b3655e0",
+    "load_ok": true,
+    "block_id": "math_l23_down_proj",
+    "block_type": "math",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 8,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      8
+    ],
+    "B_shape": [
+      8,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 46080
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks/math_l23_o_proj.pt",
+    "rel_path": "experiments/outputs/blocks/math_l23_o_proj.pt",
+    "file_size": 59621,
+    "sha256": "22ab755c199d1144b159ad7dbd4e5ad265d4675f1e81cfd968d64fcab7d16d12",
+    "load_ok": true,
+    "block_id": "math_l23_o_proj",
+    "block_type": "math",
+    "layer_id": 23,
+    "module_name": "o_proj",
+    "rank": 8,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 896,
+    "out_features": 896,
+    "A_shape": [
+      896,
+      8
+    ],
+    "B_shape": [
+      8,
+      896
+    ],
+    "in_dim": 896,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B attention",
+    "num_params": 14336
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v06_data/chinese_l23_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v06_data/chinese_l23_down_proj.pt",
+    "file_size": 186645,
+    "sha256": "3911ca36756950e6b6bbba10859cde94eca97f0734ae725bb986d184074940d2",
+    "load_ok": true,
+    "block_id": "chinese_l23_down_proj",
+    "block_type": "chinese",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 8,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      8
+    ],
+    "B_shape": [
+      8,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 46080
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v06_data/chinese_l23_o_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v06_data/chinese_l23_o_proj.pt",
+    "file_size": 59645,
+    "sha256": "6f6cf36843334930757ff4203ae722e12ca84f79dcb529db4ec07b05deb00054",
+    "load_ok": true,
+    "block_id": "chinese_l23_o_proj",
+    "block_type": "chinese",
+    "layer_id": 23,
+    "module_name": "o_proj",
+    "rank": 8,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 896,
+    "out_features": 896,
+    "A_shape": [
+      896,
+      8
+    ],
+    "B_shape": [
+      8,
+      896
+    ],
+    "in_dim": 896,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B attention",
+    "num_params": 14336
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v06_data/code_l23_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v06_data/code_l23_down_proj.pt",
+    "file_size": 186621,
+    "sha256": "8562561385a8c90edc8b7acc79d7fe1d3d841c3cb317b6a2cc4dab6dd1528bc7",
+    "load_ok": true,
+    "block_id": "code_l23_down_proj",
+    "block_type": "code",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 8,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      8
+    ],
+    "B_shape": [
+      8,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 46080
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v06_data/code_l23_o_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v06_data/code_l23_o_proj.pt",
+    "file_size": 59621,
+    "sha256": "67847dda99847b83dba4cdfaadc06f7d9718351f55275db32ed8b3160b86dc39",
+    "load_ok": true,
+    "block_id": "code_l23_o_proj",
+    "block_type": "code",
+    "layer_id": 23,
+    "module_name": "o_proj",
+    "rank": 8,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 896,
+    "out_features": 896,
+    "A_shape": [
+      896,
+      8
+    ],
+    "B_shape": [
+      8,
+      896
+    ],
+    "in_dim": 896,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B attention",
+    "num_params": 14336
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v06_data/general_l23_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v06_data/general_l23_down_proj.pt",
+    "file_size": 186645,
+    "sha256": "f075b6f23e19a7d468a7ba4e0f36780aa9bd1ce47a3701d57096e264992b3ab6",
+    "load_ok": true,
+    "block_id": "general_l23_down_proj",
+    "block_type": "general",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 8,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      8
+    ],
+    "B_shape": [
+      8,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 46080
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v06_data/general_l23_o_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v06_data/general_l23_o_proj.pt",
+    "file_size": 59645,
+    "sha256": "4a023af7a596932fb5bc03cae5b5888842c77e7f261eb8c566ae6e9da732fe0c",
+    "load_ok": true,
+    "block_id": "general_l23_o_proj",
+    "block_type": "general",
+    "layer_id": 23,
+    "module_name": "o_proj",
+    "rank": 8,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 896,
+    "out_features": 896,
+    "A_shape": [
+      896,
+      8
+    ],
+    "B_shape": [
+      8,
+      896
+    ],
+    "in_dim": 896,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B attention",
+    "num_params": 14336
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v06_data/math_l23_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v06_data/math_l23_down_proj.pt",
+    "file_size": 186621,
+    "sha256": "254259fac1fa85880773cce52475b9308c4bdd090966d486cf76f5b11c8a2c3d",
+    "load_ok": true,
+    "block_id": "math_l23_down_proj",
+    "block_type": "math",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 8,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      8
+    ],
+    "B_shape": [
+      8,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 46080
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v06_data/math_l23_o_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v06_data/math_l23_o_proj.pt",
+    "file_size": 59621,
+    "sha256": "0f8b73506b31c4f8ca86a58e8fdde3677f1fa3d0e2ff053e64411f39289ccb5f",
+    "load_ok": true,
+    "block_id": "math_l23_o_proj",
+    "block_type": "math",
+    "layer_id": 23,
+    "module_name": "o_proj",
+    "rank": 8,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 896,
+    "out_features": 896,
+    "A_shape": [
+      896,
+      8
+    ],
+    "B_shape": [
+      8,
+      896
+    ],
+    "in_dim": 896,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B attention",
+    "num_params": 14336
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v07_error_l22_l24_down/calculation_error_l21_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v07_error_l22_l24_down/calculation_error_l21_down_proj.pt",
+    "file_size": 186853,
+    "sha256": "b4497deb71cfdd02a4bbda343b98e31787e06770b0c47c07cfdd53afb2fa517c",
+    "load_ok": true,
+    "block_id": "calculation_error_l21_down_proj",
+    "block_type": "calculation_error",
+    "layer_id": 21,
+    "module_name": "down_proj",
+    "rank": 8,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      8
+    ],
+    "B_shape": [
+      8,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 46080
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v07_error_l22_l24_down/calculation_error_l22_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v07_error_l22_l24_down/calculation_error_l22_down_proj.pt",
+    "file_size": 186853,
+    "sha256": "c049d2249cc3ac1f8536f9cb5cc7e1b3ce2df7ed6de8f38e10064b597f2dd21c",
+    "load_ok": true,
+    "block_id": "calculation_error_l22_down_proj",
+    "block_type": "calculation_error",
+    "layer_id": 22,
+    "module_name": "down_proj",
+    "rank": 8,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      8
+    ],
+    "B_shape": [
+      8,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 46080
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v07_error_l22_l24_down/calculation_error_l23_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v07_error_l22_l24_down/calculation_error_l23_down_proj.pt",
+    "file_size": 186853,
+    "sha256": "794cf1a4b2bd6131f68facc2d1f23479dfc5c88b520302ebe712bead069badeb",
+    "load_ok": true,
+    "block_id": "calculation_error_l23_down_proj",
+    "block_type": "calculation_error",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 8,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      8
+    ],
+    "B_shape": [
+      8,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 46080
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v07_error_l22_l24_down/chinese_semantic_l21_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v07_error_l22_l24_down/chinese_semantic_l21_down_proj.pt",
+    "file_size": 186845,
+    "sha256": "8a2c2aeef072292fb8820c3471abb7bee530c649b4d096ac04baf4b842bfb2c4",
+    "load_ok": true,
+    "block_id": "chinese_semantic_l21_down_proj",
+    "block_type": "chinese_semantic",
+    "layer_id": 21,
+    "module_name": "down_proj",
+    "rank": 8,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      8
+    ],
+    "B_shape": [
+      8,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 46080
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v07_error_l22_l24_down/chinese_semantic_l22_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v07_error_l22_l24_down/chinese_semantic_l22_down_proj.pt",
+    "file_size": 186845,
+    "sha256": "50b2fa98b5779109855753a8e955b210bf100ad2b53438f69460848a13a6f983",
+    "load_ok": true,
+    "block_id": "chinese_semantic_l22_down_proj",
+    "block_type": "chinese_semantic",
+    "layer_id": 22,
+    "module_name": "down_proj",
+    "rank": 8,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      8
+    ],
+    "B_shape": [
+      8,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 46080
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v07_error_l22_l24_down/chinese_semantic_l23_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v07_error_l22_l24_down/chinese_semantic_l23_down_proj.pt",
+    "file_size": 186845,
+    "sha256": "13ad8cbcbd44a09de064c06c7d84ffdd180d54201877040725b4b72ee9651a97",
+    "load_ok": true,
+    "block_id": "chinese_semantic_l23_down_proj",
+    "block_type": "chinese_semantic",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 8,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      8
+    ],
+    "B_shape": [
+      8,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 46080
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v07_error_l22_l24_down/commonsense_choice_l21_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v07_error_l22_l24_down/commonsense_choice_l21_down_proj.pt",
+    "file_size": 186861,
+    "sha256": "94f8860932dfef31659141205da2d21984864f74c334b7f6317fcce182eecea6",
+    "load_ok": true,
+    "block_id": "commonsense_choice_l21_down_proj",
+    "block_type": "commonsense_choice",
+    "layer_id": 21,
+    "module_name": "down_proj",
+    "rank": 8,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      8
+    ],
+    "B_shape": [
+      8,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 46080
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v07_error_l22_l24_down/commonsense_choice_l22_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v07_error_l22_l24_down/commonsense_choice_l22_down_proj.pt",
+    "file_size": 186861,
+    "sha256": "ec296279fb88dd7c895e821ba0639d8fc4e4f9e75a04502df3b5a21f5d9081a7",
+    "load_ok": true,
+    "block_id": "commonsense_choice_l22_down_proj",
+    "block_type": "commonsense_choice",
+    "layer_id": 22,
+    "module_name": "down_proj",
+    "rank": 8,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      8
+    ],
+    "B_shape": [
+      8,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 46080
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v07_error_l22_l24_down/commonsense_choice_l23_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v07_error_l22_l24_down/commonsense_choice_l23_down_proj.pt",
+    "file_size": 186861,
+    "sha256": "39de66224b5575fc5fba87cc39f65ed43149a8e7213a254da25dc9e54600bbc8",
+    "load_ok": true,
+    "block_id": "commonsense_choice_l23_down_proj",
+    "block_type": "commonsense_choice",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 8,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      8
+    ],
+    "B_shape": [
+      8,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 46080
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v07_error_l22_l24_down/format_following_l21_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v07_error_l22_l24_down/format_following_l21_down_proj.pt",
+    "file_size": 186845,
+    "sha256": "b181789f4a4d669af27ea9abe8cb57546839e6b17139d63bac01721fcb1dcc31",
+    "load_ok": true,
+    "block_id": "format_following_l21_down_proj",
+    "block_type": "format_following",
+    "layer_id": 21,
+    "module_name": "down_proj",
+    "rank": 8,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      8
+    ],
+    "B_shape": [
+      8,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 46080
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v07_error_l22_l24_down/format_following_l22_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v07_error_l22_l24_down/format_following_l22_down_proj.pt",
+    "file_size": 186845,
+    "sha256": "4576edec088f1ad823546c3272ef76fc9d3d3c4026f0e4d5e934cf51d379c9c2",
+    "load_ok": true,
+    "block_id": "format_following_l22_down_proj",
+    "block_type": "format_following",
+    "layer_id": 22,
+    "module_name": "down_proj",
+    "rank": 8,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      8
+    ],
+    "B_shape": [
+      8,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 46080
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v07_error_l22_l24_down/format_following_l23_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v07_error_l22_l24_down/format_following_l23_down_proj.pt",
+    "file_size": 186845,
+    "sha256": "592a055995feba6b9426bbb661283227cd8dad5fc5f2fdc822d072256bd68ee5",
+    "load_ok": true,
+    "block_id": "format_following_l23_down_proj",
+    "block_type": "format_following",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 8,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      8
+    ],
+    "B_shape": [
+      8,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 46080
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v07_error_l22_l24_down/short_reasoning_l21_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v07_error_l22_l24_down/short_reasoning_l21_down_proj.pt",
+    "file_size": 186837,
+    "sha256": "8d945c940580d209d7f30d3315024d4d1d330ce5329e2b74ac2c8f428277eac5",
+    "load_ok": true,
+    "block_id": "short_reasoning_l21_down_proj",
+    "block_type": "short_reasoning",
+    "layer_id": 21,
+    "module_name": "down_proj",
+    "rank": 8,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      8
+    ],
+    "B_shape": [
+      8,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 46080
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v07_error_l22_l24_down/short_reasoning_l22_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v07_error_l22_l24_down/short_reasoning_l22_down_proj.pt",
+    "file_size": 186837,
+    "sha256": "bcf9af9805b3fd76f2b1322edaac6da700f8e3cf3aed9f4c285ecaa1020754da",
+    "load_ok": true,
+    "block_id": "short_reasoning_l22_down_proj",
+    "block_type": "short_reasoning",
+    "layer_id": 22,
+    "module_name": "down_proj",
+    "rank": 8,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      8
+    ],
+    "B_shape": [
+      8,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 46080
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v07_error_l22_l24_down/short_reasoning_l23_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v07_error_l22_l24_down/short_reasoning_l23_down_proj.pt",
+    "file_size": 186837,
+    "sha256": "11644eef485ac96060253b5678014d196c17c0befdd056f0cb9788d919f877fe",
+    "load_ok": true,
+    "block_id": "short_reasoning_l23_down_proj",
+    "block_type": "short_reasoning",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 8,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      8
+    ],
+    "B_shape": [
+      8,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 46080
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v07_error_l23_down/calculation_error_l23_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v07_error_l23_down/calculation_error_l23_down_proj.pt",
+    "file_size": 186853,
+    "sha256": "3e7c1ab1a792afc0cde4314b58b33880ff77acdc4f11f7b1a39e83ded294d3d3",
+    "load_ok": true,
+    "block_id": "calculation_error_l23_down_proj",
+    "block_type": "calculation_error",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 8,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      8
+    ],
+    "B_shape": [
+      8,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 46080
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v07_error_l23_down/chinese_semantic_l23_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v07_error_l23_down/chinese_semantic_l23_down_proj.pt",
+    "file_size": 186845,
+    "sha256": "321508cfec12f6727f828b09879c0cde45c618c7e92ab87d2a848d6a39f736a3",
+    "load_ok": true,
+    "block_id": "chinese_semantic_l23_down_proj",
+    "block_type": "chinese_semantic",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 8,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      8
+    ],
+    "B_shape": [
+      8,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 46080
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v07_error_l23_down/commonsense_choice_l23_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v07_error_l23_down/commonsense_choice_l23_down_proj.pt",
+    "file_size": 186861,
+    "sha256": "c27c9c77c503b2fc4b5747578816401925b65a55ffc58051b244c707b3dd2d60",
+    "load_ok": true,
+    "block_id": "commonsense_choice_l23_down_proj",
+    "block_type": "commonsense_choice",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 8,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      8
+    ],
+    "B_shape": [
+      8,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 46080
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v07_error_l23_down/format_following_l23_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v07_error_l23_down/format_following_l23_down_proj.pt",
+    "file_size": 186845,
+    "sha256": "780d67e75566d0991261d5631b95447fce0dee58a28dc3b235589577c47e32ac",
+    "load_ok": true,
+    "block_id": "format_following_l23_down_proj",
+    "block_type": "format_following",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 8,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      8
+    ],
+    "B_shape": [
+      8,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 46080
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v07_error_l23_down/short_reasoning_l23_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v07_error_l23_down/short_reasoning_l23_down_proj.pt",
+    "file_size": 186837,
+    "sha256": "dcdbd2d17a8605a4b1d58f6adff54540d8d131c9c69489c983aba5efd0edc466",
+    "load_ok": true,
+    "block_id": "short_reasoning_l23_down_proj",
+    "block_type": "short_reasoning",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 8,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      8
+    ],
+    "B_shape": [
+      8,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 46080
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v07_error_l23_ffn/calculation_error_l23_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v07_error_l23_ffn/calculation_error_l23_down_proj.pt",
+    "file_size": 186853,
+    "sha256": "eb1ef9baa25b6b7521ddb56672da3ab8c8cee1d48287cf1f38b6b8e445f78951",
+    "load_ok": true,
+    "block_id": "calculation_error_l23_down_proj",
+    "block_type": "calculation_error",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 8,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      8
+    ],
+    "B_shape": [
+      8,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 46080
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v07_error_l23_ffn/calculation_error_l23_up_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v07_error_l23_ffn/calculation_error_l23_up_proj.pt",
+    "file_size": 186837,
+    "sha256": "a05308dc35315c40a6a6b290566f8b1add0af65fc717c742d61ef51cef5d22a4",
+    "load_ok": true,
+    "block_id": "calculation_error_l23_up_proj",
+    "block_type": "calculation_error",
+    "layer_id": 23,
+    "module_name": "up_proj",
+    "rank": 8,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 896,
+    "out_features": 4864,
+    "A_shape": [
+      896,
+      8
+    ],
+    "B_shape": [
+      8,
+      4864
+    ],
+    "in_dim": 896,
+    "out_dim": 4864,
+    "matched_backbone": "Qwen2.5-0.5B up/gate",
+    "num_params": 46080
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v07_error_l23_ffn/chinese_semantic_l23_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v07_error_l23_ffn/chinese_semantic_l23_down_proj.pt",
+    "file_size": 186845,
+    "sha256": "0fa77395d3f1d4e84330200b6c12e1fdc3e434d2038a63885928679643fa3391",
+    "load_ok": true,
+    "block_id": "chinese_semantic_l23_down_proj",
+    "block_type": "chinese_semantic",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 8,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      8
+    ],
+    "B_shape": [
+      8,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 46080
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v07_error_l23_ffn/chinese_semantic_l23_up_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v07_error_l23_ffn/chinese_semantic_l23_up_proj.pt",
+    "file_size": 186829,
+    "sha256": "6587cde83a4160e60b05312aca47ea072af9d8205e5a50187fcefc27012ab130",
+    "load_ok": true,
+    "block_id": "chinese_semantic_l23_up_proj",
+    "block_type": "chinese_semantic",
+    "layer_id": 23,
+    "module_name": "up_proj",
+    "rank": 8,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 896,
+    "out_features": 4864,
+    "A_shape": [
+      896,
+      8
+    ],
+    "B_shape": [
+      8,
+      4864
+    ],
+    "in_dim": 896,
+    "out_dim": 4864,
+    "matched_backbone": "Qwen2.5-0.5B up/gate",
+    "num_params": 46080
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v07_error_l23_ffn/commonsense_choice_l23_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v07_error_l23_ffn/commonsense_choice_l23_down_proj.pt",
+    "file_size": 186861,
+    "sha256": "49cb5806f9a23b343dd25e097f2b351f20c0536e58671295a683a7119d38e0a0",
+    "load_ok": true,
+    "block_id": "commonsense_choice_l23_down_proj",
+    "block_type": "commonsense_choice",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 8,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      8
+    ],
+    "B_shape": [
+      8,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 46080
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v07_error_l23_ffn/commonsense_choice_l23_up_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v07_error_l23_ffn/commonsense_choice_l23_up_proj.pt",
+    "file_size": 186845,
+    "sha256": "eececa2b8ed9ca2c1b05001ecf259b13c45882fdf770f8be4b4c3da715bb6659",
+    "load_ok": true,
+    "block_id": "commonsense_choice_l23_up_proj",
+    "block_type": "commonsense_choice",
+    "layer_id": 23,
+    "module_name": "up_proj",
+    "rank": 8,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 896,
+    "out_features": 4864,
+    "A_shape": [
+      896,
+      8
+    ],
+    "B_shape": [
+      8,
+      4864
+    ],
+    "in_dim": 896,
+    "out_dim": 4864,
+    "matched_backbone": "Qwen2.5-0.5B up/gate",
+    "num_params": 46080
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v07_error_l23_ffn/format_following_l23_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v07_error_l23_ffn/format_following_l23_down_proj.pt",
+    "file_size": 186845,
+    "sha256": "d02e548af538a42953161cc3524323ea69a920559b38fcf1cb8ed28e4cbcd05b",
+    "load_ok": true,
+    "block_id": "format_following_l23_down_proj",
+    "block_type": "format_following",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 8,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      8
+    ],
+    "B_shape": [
+      8,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 46080
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v07_error_l23_ffn/format_following_l23_up_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v07_error_l23_ffn/format_following_l23_up_proj.pt",
+    "file_size": 186829,
+    "sha256": "06de4b4d9f9b98543a253acf298ca973761e17f373d690c6218c07632b5e59b5",
+    "load_ok": true,
+    "block_id": "format_following_l23_up_proj",
+    "block_type": "format_following",
+    "layer_id": 23,
+    "module_name": "up_proj",
+    "rank": 8,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 896,
+    "out_features": 4864,
+    "A_shape": [
+      896,
+      8
+    ],
+    "B_shape": [
+      8,
+      4864
+    ],
+    "in_dim": 896,
+    "out_dim": 4864,
+    "matched_backbone": "Qwen2.5-0.5B up/gate",
+    "num_params": 46080
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v07_error_l23_ffn/short_reasoning_l23_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v07_error_l23_ffn/short_reasoning_l23_down_proj.pt",
+    "file_size": 186837,
+    "sha256": "be0aa5707a0949e0783dbe9ac20b9fc04b3cb76fb9bd7a425371efc4e4bd37b2",
+    "load_ok": true,
+    "block_id": "short_reasoning_l23_down_proj",
+    "block_type": "short_reasoning",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 8,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      8
+    ],
+    "B_shape": [
+      8,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 46080
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v07_error_l23_ffn/short_reasoning_l23_up_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v07_error_l23_ffn/short_reasoning_l23_up_proj.pt",
+    "file_size": 186821,
+    "sha256": "aa218b9f623d30f0255b7c3c8560d1effe99189e3b60109cddec66f2664fe6c7",
+    "load_ok": true,
+    "block_id": "short_reasoning_l23_up_proj",
+    "block_type": "short_reasoning",
+    "layer_id": 23,
+    "module_name": "up_proj",
+    "rank": 8,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 896,
+    "out_features": 4864,
+    "A_shape": [
+      896,
+      8
+    ],
+    "B_shape": [
+      8,
+      4864
+    ],
+    "in_dim": 896,
+    "out_dim": 4864,
+    "matched_backbone": "Qwen2.5-0.5B up/gate",
+    "num_params": 46080
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v07_hard_l23_down/hard_commonsense_l23_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v07_hard_l23_down/hard_commonsense_l23_down_proj.pt",
+    "file_size": 186845,
+    "sha256": "734a7dc373e679fd8c2e886c9a81e2eec3e88dd0721dc1cb630a6026185d2d71",
+    "load_ok": true,
+    "block_id": "hard_commonsense_l23_down_proj",
+    "block_type": "hard_commonsense",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 8,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      8
+    ],
+    "B_shape": [
+      8,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 46080
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v07_hard_l23_down/hard_math_l23_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v07_hard_l23_down/hard_math_l23_down_proj.pt",
+    "file_size": 186789,
+    "sha256": "6025b25e23e84369b46635132a57ddb0ca623b6f4bbbb5d9e9734e4e279018d8",
+    "load_ok": true,
+    "block_id": "hard_math_l23_down_proj",
+    "block_type": "hard_math",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 8,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      8
+    ],
+    "B_shape": [
+      8,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 46080
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v08_error_l22_l24_down_rank16/calculation_error_l21_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v08_error_l22_l24_down_rank16/calculation_error_l21_down_proj.pt",
+    "file_size": 371173,
+    "sha256": "a1ecefe5ec595a788f5609b59ab048eef6bbd5a2ce799c2a7f28989404cd2f40",
+    "load_ok": true,
+    "block_id": "calculation_error_l21_down_proj",
+    "block_type": "calculation_error",
+    "layer_id": 21,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v08_error_l22_l24_down_rank16/calculation_error_l22_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v08_error_l22_l24_down_rank16/calculation_error_l22_down_proj.pt",
+    "file_size": 371173,
+    "sha256": "db63d3d917700650afda0cfee8a032148c99a1f87576b25c13fc7592a6f5c589",
+    "load_ok": true,
+    "block_id": "calculation_error_l22_down_proj",
+    "block_type": "calculation_error",
+    "layer_id": 22,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v08_error_l22_l24_down_rank16/calculation_error_l23_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v08_error_l22_l24_down_rank16/calculation_error_l23_down_proj.pt",
+    "file_size": 371173,
+    "sha256": "7d9910e3c6d5eb789fbf428454deec68e8e111503fc059229a191fdb60134e3a",
+    "load_ok": true,
+    "block_id": "calculation_error_l23_down_proj",
+    "block_type": "calculation_error",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v08_error_l22_l24_down_rank16/chinese_semantic_l21_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v08_error_l22_l24_down_rank16/chinese_semantic_l21_down_proj.pt",
+    "file_size": 371165,
+    "sha256": "34786d23389158fe29a9da9dd12222dce77117856b5cca40ac4066346c8e52fd",
+    "load_ok": true,
+    "block_id": "chinese_semantic_l21_down_proj",
+    "block_type": "chinese_semantic",
+    "layer_id": 21,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v08_error_l22_l24_down_rank16/chinese_semantic_l22_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v08_error_l22_l24_down_rank16/chinese_semantic_l22_down_proj.pt",
+    "file_size": 371165,
+    "sha256": "d72b5f0de4b192dd302a25bc9092e45e51babd8bc325803683201752f3376297",
+    "load_ok": true,
+    "block_id": "chinese_semantic_l22_down_proj",
+    "block_type": "chinese_semantic",
+    "layer_id": 22,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v08_error_l22_l24_down_rank16/chinese_semantic_l23_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v08_error_l22_l24_down_rank16/chinese_semantic_l23_down_proj.pt",
+    "file_size": 371165,
+    "sha256": "8f605c3c7c00967619f9bb38c7f6adbcdeca300e86e16d32342c9394b0bbb62c",
+    "load_ok": true,
+    "block_id": "chinese_semantic_l23_down_proj",
+    "block_type": "chinese_semantic",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v08_error_l22_l24_down_rank16/commonsense_choice_l21_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v08_error_l22_l24_down_rank16/commonsense_choice_l21_down_proj.pt",
+    "file_size": 371181,
+    "sha256": "d36d822ab047ea1c64f0851971dbe09745dd89d42a9266bbb380fd43e24d93b4",
+    "load_ok": true,
+    "block_id": "commonsense_choice_l21_down_proj",
+    "block_type": "commonsense_choice",
+    "layer_id": 21,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v08_error_l22_l24_down_rank16/commonsense_choice_l22_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v08_error_l22_l24_down_rank16/commonsense_choice_l22_down_proj.pt",
+    "file_size": 371181,
+    "sha256": "ac545c9ccc31a70c6330c1f466cbd124d577270cccf24db6238fc6a0c4d5d192",
+    "load_ok": true,
+    "block_id": "commonsense_choice_l22_down_proj",
+    "block_type": "commonsense_choice",
+    "layer_id": 22,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v08_error_l22_l24_down_rank16/commonsense_choice_l23_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v08_error_l22_l24_down_rank16/commonsense_choice_l23_down_proj.pt",
+    "file_size": 371181,
+    "sha256": "c9d533df8bf790a136fe85045179e589e221b3e3c4445f10bc7fd979326c8d86",
+    "load_ok": true,
+    "block_id": "commonsense_choice_l23_down_proj",
+    "block_type": "commonsense_choice",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v08_error_l22_l24_down_rank16/format_following_l21_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v08_error_l22_l24_down_rank16/format_following_l21_down_proj.pt",
+    "file_size": 371165,
+    "sha256": "15e914b44ed7e708fe8e5a2b02753e7852b37c1e3faed2476946a9537b2ddc4f",
+    "load_ok": true,
+    "block_id": "format_following_l21_down_proj",
+    "block_type": "format_following",
+    "layer_id": 21,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v08_error_l22_l24_down_rank16/format_following_l22_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v08_error_l22_l24_down_rank16/format_following_l22_down_proj.pt",
+    "file_size": 371165,
+    "sha256": "e6769f8502a1d9b06bcf3abad1a68cd384d36ccefe80f4991e1c9597faeeec63",
+    "load_ok": true,
+    "block_id": "format_following_l22_down_proj",
+    "block_type": "format_following",
+    "layer_id": 22,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v08_error_l22_l24_down_rank16/format_following_l23_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v08_error_l22_l24_down_rank16/format_following_l23_down_proj.pt",
+    "file_size": 371165,
+    "sha256": "16bb983c1bd0c863036afce41bf516bc9843a3b0f94bd5613d2cc91ec0f2469e",
+    "load_ok": true,
+    "block_id": "format_following_l23_down_proj",
+    "block_type": "format_following",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v08_error_l22_l24_down_rank16/short_reasoning_l21_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v08_error_l22_l24_down_rank16/short_reasoning_l21_down_proj.pt",
+    "file_size": 371157,
+    "sha256": "bbd3a1d48662e675b6fc57ffb10f77e4116124d28f5fb3410a956752de688953",
+    "load_ok": true,
+    "block_id": "short_reasoning_l21_down_proj",
+    "block_type": "short_reasoning",
+    "layer_id": 21,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v08_error_l22_l24_down_rank16/short_reasoning_l22_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v08_error_l22_l24_down_rank16/short_reasoning_l22_down_proj.pt",
+    "file_size": 371157,
+    "sha256": "7f0c2f78c370387fbbec2d3ae4e6c0e943a8fa0b1f3defcfbb7b2184bc08ab5b",
+    "load_ok": true,
+    "block_id": "short_reasoning_l22_down_proj",
+    "block_type": "short_reasoning",
+    "layer_id": 22,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v08_error_l22_l24_down_rank16/short_reasoning_l23_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v08_error_l22_l24_down_rank16/short_reasoning_l23_down_proj.pt",
+    "file_size": 371157,
+    "sha256": "aad312ae5fc1cd959133ea378a4b29b474fe90eefa2c787742c488613e274569",
+    "load_ok": true,
+    "block_id": "short_reasoning_l23_down_proj",
+    "block_type": "short_reasoning",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v08_error_l22_l24_down_rank8/calculation_error_l21_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v08_error_l22_l24_down_rank8/calculation_error_l21_down_proj.pt",
+    "file_size": 186853,
+    "sha256": "28178088c5ddcf28894720cb5c2332ca2d1309c5d5555c2afe1411663e355a22",
+    "load_ok": true,
+    "block_id": "calculation_error_l21_down_proj",
+    "block_type": "calculation_error",
+    "layer_id": 21,
+    "module_name": "down_proj",
+    "rank": 8,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      8
+    ],
+    "B_shape": [
+      8,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 46080
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v08_error_l22_l24_down_rank8/calculation_error_l22_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v08_error_l22_l24_down_rank8/calculation_error_l22_down_proj.pt",
+    "file_size": 186853,
+    "sha256": "c061543d722177402dd85855f0be6b975e1ecf7c1e00257fe4b2e4350acea5c7",
+    "load_ok": true,
+    "block_id": "calculation_error_l22_down_proj",
+    "block_type": "calculation_error",
+    "layer_id": 22,
+    "module_name": "down_proj",
+    "rank": 8,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      8
+    ],
+    "B_shape": [
+      8,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 46080
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v08_error_l22_l24_down_rank8/calculation_error_l23_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v08_error_l22_l24_down_rank8/calculation_error_l23_down_proj.pt",
+    "file_size": 186853,
+    "sha256": "817b49d5f1cc54e98417c6b52d86a935de0fd208ed646b1cd663e034b5b0094b",
+    "load_ok": true,
+    "block_id": "calculation_error_l23_down_proj",
+    "block_type": "calculation_error",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 8,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      8
+    ],
+    "B_shape": [
+      8,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 46080
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v08_error_l22_l24_down_rank8/chinese_semantic_l21_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v08_error_l22_l24_down_rank8/chinese_semantic_l21_down_proj.pt",
+    "file_size": 186845,
+    "sha256": "f9ce8213da58546eb72f2e02d5a8c4439fd94a02417cffe9fde6054200e054ed",
+    "load_ok": true,
+    "block_id": "chinese_semantic_l21_down_proj",
+    "block_type": "chinese_semantic",
+    "layer_id": 21,
+    "module_name": "down_proj",
+    "rank": 8,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      8
+    ],
+    "B_shape": [
+      8,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 46080
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v08_error_l22_l24_down_rank8/chinese_semantic_l22_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v08_error_l22_l24_down_rank8/chinese_semantic_l22_down_proj.pt",
+    "file_size": 186845,
+    "sha256": "440b6c686c16cf05c6388f70aaa6e60100817b129ed31537cd61d7581c7b2555",
+    "load_ok": true,
+    "block_id": "chinese_semantic_l22_down_proj",
+    "block_type": "chinese_semantic",
+    "layer_id": 22,
+    "module_name": "down_proj",
+    "rank": 8,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      8
+    ],
+    "B_shape": [
+      8,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 46080
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v08_error_l22_l24_down_rank8/chinese_semantic_l23_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v08_error_l22_l24_down_rank8/chinese_semantic_l23_down_proj.pt",
+    "file_size": 186845,
+    "sha256": "ac5a62c2acb80456670a1afb967516ebaf6bcee3e3dc60df669a51f8968c32ad",
+    "load_ok": true,
+    "block_id": "chinese_semantic_l23_down_proj",
+    "block_type": "chinese_semantic",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 8,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      8
+    ],
+    "B_shape": [
+      8,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 46080
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v08_error_l22_l24_down_rank8/commonsense_choice_l21_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v08_error_l22_l24_down_rank8/commonsense_choice_l21_down_proj.pt",
+    "file_size": 186861,
+    "sha256": "51d15aec35e606390f1d9e341b2f5e4b25186fdc430349b46d0a9c9c5bc2be20",
+    "load_ok": true,
+    "block_id": "commonsense_choice_l21_down_proj",
+    "block_type": "commonsense_choice",
+    "layer_id": 21,
+    "module_name": "down_proj",
+    "rank": 8,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      8
+    ],
+    "B_shape": [
+      8,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 46080
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v08_error_l22_l24_down_rank8/commonsense_choice_l22_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v08_error_l22_l24_down_rank8/commonsense_choice_l22_down_proj.pt",
+    "file_size": 186861,
+    "sha256": "f43c8639bf31c5063d98ec2d278cf7083bc771d9479c4586693bd8a7006c3a72",
+    "load_ok": true,
+    "block_id": "commonsense_choice_l22_down_proj",
+    "block_type": "commonsense_choice",
+    "layer_id": 22,
+    "module_name": "down_proj",
+    "rank": 8,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      8
+    ],
+    "B_shape": [
+      8,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 46080
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v08_error_l22_l24_down_rank8/commonsense_choice_l23_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v08_error_l22_l24_down_rank8/commonsense_choice_l23_down_proj.pt",
+    "file_size": 186861,
+    "sha256": "c1a5fefed297b89c94af100db8b7c101d67dbbacd79d5868c29a9bab83d1747c",
+    "load_ok": true,
+    "block_id": "commonsense_choice_l23_down_proj",
+    "block_type": "commonsense_choice",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 8,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      8
+    ],
+    "B_shape": [
+      8,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 46080
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v08_error_l22_l24_down_rank8/format_following_l21_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v08_error_l22_l24_down_rank8/format_following_l21_down_proj.pt",
+    "file_size": 186845,
+    "sha256": "6506d2c912c9872c7cbdd333205894168e56a41004bc7eb268ba9c38078c8205",
+    "load_ok": true,
+    "block_id": "format_following_l21_down_proj",
+    "block_type": "format_following",
+    "layer_id": 21,
+    "module_name": "down_proj",
+    "rank": 8,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      8
+    ],
+    "B_shape": [
+      8,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 46080
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v08_error_l22_l24_down_rank8/format_following_l22_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v08_error_l22_l24_down_rank8/format_following_l22_down_proj.pt",
+    "file_size": 186845,
+    "sha256": "e59f9413923f02b7b9610dea5b801386be3d76556e4d305099c636f7af3ebdf3",
+    "load_ok": true,
+    "block_id": "format_following_l22_down_proj",
+    "block_type": "format_following",
+    "layer_id": 22,
+    "module_name": "down_proj",
+    "rank": 8,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      8
+    ],
+    "B_shape": [
+      8,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 46080
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v08_error_l22_l24_down_rank8/format_following_l23_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v08_error_l22_l24_down_rank8/format_following_l23_down_proj.pt",
+    "file_size": 186845,
+    "sha256": "7773a571e62105a49398f8e211392bfbae9cf2913029b0eca837a85d137feb8d",
+    "load_ok": true,
+    "block_id": "format_following_l23_down_proj",
+    "block_type": "format_following",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 8,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      8
+    ],
+    "B_shape": [
+      8,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 46080
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v08_error_l22_l24_down_rank8/short_reasoning_l21_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v08_error_l22_l24_down_rank8/short_reasoning_l21_down_proj.pt",
+    "file_size": 186837,
+    "sha256": "dd3a411f005cbf0ede921d827809a884e44b00a802838f09009f20e54b8b9dad",
+    "load_ok": true,
+    "block_id": "short_reasoning_l21_down_proj",
+    "block_type": "short_reasoning",
+    "layer_id": 21,
+    "module_name": "down_proj",
+    "rank": 8,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      8
+    ],
+    "B_shape": [
+      8,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 46080
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v08_error_l22_l24_down_rank8/short_reasoning_l22_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v08_error_l22_l24_down_rank8/short_reasoning_l22_down_proj.pt",
+    "file_size": 186837,
+    "sha256": "daa04e140ab40eb27bcb53986f8c2ad8ed8227bc144d1e010f09f34bcdeea449",
+    "load_ok": true,
+    "block_id": "short_reasoning_l22_down_proj",
+    "block_type": "short_reasoning",
+    "layer_id": 22,
+    "module_name": "down_proj",
+    "rank": 8,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      8
+    ],
+    "B_shape": [
+      8,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 46080
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v08_error_l22_l24_down_rank8/short_reasoning_l23_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v08_error_l22_l24_down_rank8/short_reasoning_l23_down_proj.pt",
+    "file_size": 186837,
+    "sha256": "7685222935ab116214d19227d326dd47092b48710e4581115d60869d34ee647f",
+    "load_ok": true,
+    "block_id": "short_reasoning_l23_down_proj",
+    "block_type": "short_reasoning",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 8,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      8
+    ],
+    "B_shape": [
+      8,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 46080
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v09_repair_l22_l24_down_rank16/arithmetic_addition_l21_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v09_repair_l22_l24_down_rank16/arithmetic_addition_l21_down_proj.pt",
+    "file_size": 371189,
+    "sha256": "0271392d009da531cf11f097908b78b1be28332cd624212efc893d341e761df6",
+    "load_ok": true,
+    "block_id": "arithmetic_addition_l21_down_proj",
+    "block_type": "arithmetic_addition",
+    "layer_id": 21,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v09_repair_l22_l24_down_rank16/arithmetic_addition_l22_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v09_repair_l22_l24_down_rank16/arithmetic_addition_l22_down_proj.pt",
+    "file_size": 371189,
+    "sha256": "e90637714ed4845b69df7766b0c746959efbc87535f8417febd3ddbb17092d62",
+    "load_ok": true,
+    "block_id": "arithmetic_addition_l22_down_proj",
+    "block_type": "arithmetic_addition",
+    "layer_id": 22,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v09_repair_l22_l24_down_rank16/arithmetic_addition_l23_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v09_repair_l22_l24_down_rank16/arithmetic_addition_l23_down_proj.pt",
+    "file_size": 371189,
+    "sha256": "bc1146d2f8038062594c3ccb206c0168d7f076434ede36816e3f92af3d43b35d",
+    "load_ok": true,
+    "block_id": "arithmetic_addition_l23_down_proj",
+    "block_type": "arithmetic_addition",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v09_repair_l22_l24_down_rank16/arithmetic_percent_l21_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v09_repair_l22_l24_down_rank16/arithmetic_percent_l21_down_proj.pt",
+    "file_size": 371181,
+    "sha256": "b4e60e55b620b4df32f4e68d313f45d1210c3f6a68cd76c39833400b6dbfac0e",
+    "load_ok": true,
+    "block_id": "arithmetic_percent_l21_down_proj",
+    "block_type": "arithmetic_percent",
+    "layer_id": 21,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v09_repair_l22_l24_down_rank16/arithmetic_percent_l22_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v09_repair_l22_l24_down_rank16/arithmetic_percent_l22_down_proj.pt",
+    "file_size": 371181,
+    "sha256": "5a3764435b3f25b350dbd8881783bfba57df6c33d6c3b3de44fda7afcf1efd56",
+    "load_ok": true,
+    "block_id": "arithmetic_percent_l22_down_proj",
+    "block_type": "arithmetic_percent",
+    "layer_id": 22,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v09_repair_l22_l24_down_rank16/arithmetic_percent_l23_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v09_repair_l22_l24_down_rank16/arithmetic_percent_l23_down_proj.pt",
+    "file_size": 371181,
+    "sha256": "317425c97c1e30cd4923f1d36836d64e5ce96f2d50d449989557a5609f2871b1",
+    "load_ok": true,
+    "block_id": "arithmetic_percent_l23_down_proj",
+    "block_type": "arithmetic_percent",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v09_repair_l22_l24_down_rank16/arithmetic_power_log_l21_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v09_repair_l22_l24_down_rank16/arithmetic_power_log_l21_down_proj.pt",
+    "file_size": 371197,
+    "sha256": "26ec65b67aad95cee8b2b81eefb38ed09c6fe153c8c9b9535d3fc6e63a9ebc98",
+    "load_ok": true,
+    "block_id": "arithmetic_power_log_l21_down_proj",
+    "block_type": "arithmetic_power_log",
+    "layer_id": 21,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v09_repair_l22_l24_down_rank16/arithmetic_power_log_l22_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v09_repair_l22_l24_down_rank16/arithmetic_power_log_l22_down_proj.pt",
+    "file_size": 371197,
+    "sha256": "6f908eefc53da867316c0a2c1d0832461962ebdf20db955efd64ba46b26cd39c",
+    "load_ok": true,
+    "block_id": "arithmetic_power_log_l22_down_proj",
+    "block_type": "arithmetic_power_log",
+    "layer_id": 22,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v09_repair_l22_l24_down_rank16/arithmetic_power_log_l23_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v09_repair_l22_l24_down_rank16/arithmetic_power_log_l23_down_proj.pt",
+    "file_size": 371197,
+    "sha256": "d8ff2cfc6d82191309b24d4858ef0df3bd2fed5b1532904c6ac6d9aa7f4e488a",
+    "load_ok": true,
+    "block_id": "arithmetic_power_log_l23_down_proj",
+    "block_type": "arithmetic_power_log",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v09_repair_l22_l24_down_rank16/arithmetic_sqrt_l21_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v09_repair_l22_l24_down_rank16/arithmetic_sqrt_l21_down_proj.pt",
+    "file_size": 371157,
+    "sha256": "95cde5fe75566dfd05b45c5d7323ed2ae67f727798ced9053973d2451a47b885",
+    "load_ok": true,
+    "block_id": "arithmetic_sqrt_l21_down_proj",
+    "block_type": "arithmetic_sqrt",
+    "layer_id": 21,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v09_repair_l22_l24_down_rank16/arithmetic_sqrt_l22_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v09_repair_l22_l24_down_rank16/arithmetic_sqrt_l22_down_proj.pt",
+    "file_size": 371157,
+    "sha256": "892f0abef3cc9f8df68731503bf03ae38050871516752314db35f5d954d410c5",
+    "load_ok": true,
+    "block_id": "arithmetic_sqrt_l22_down_proj",
+    "block_type": "arithmetic_sqrt",
+    "layer_id": 22,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v09_repair_l22_l24_down_rank16/arithmetic_sqrt_l23_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v09_repair_l22_l24_down_rank16/arithmetic_sqrt_l23_down_proj.pt",
+    "file_size": 371157,
+    "sha256": "4a0c7a79dc936125ae6cc3bd482b0f62418e8b68032e41ed18f82a1582fd6fef",
+    "load_ok": true,
+    "block_id": "arithmetic_sqrt_l23_down_proj",
+    "block_type": "arithmetic_sqrt",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v09_repair_l22_l24_down_rank16/factual_constants_l21_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v09_repair_l22_l24_down_rank16/factual_constants_l21_down_proj.pt",
+    "file_size": 371173,
+    "sha256": "5bc0a4e7888e7fabb5d4c20d21b1bbed990b4294678f7fd45c5c7b3b380e5d06",
+    "load_ok": true,
+    "block_id": "factual_constants_l21_down_proj",
+    "block_type": "factual_constants",
+    "layer_id": 21,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v09_repair_l22_l24_down_rank16/factual_constants_l22_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v09_repair_l22_l24_down_rank16/factual_constants_l22_down_proj.pt",
+    "file_size": 371173,
+    "sha256": "d9a7cf8154c94383b2478486c69aaf72c78a03652be415db78ad73ca9cdb13c6",
+    "load_ok": true,
+    "block_id": "factual_constants_l22_down_proj",
+    "block_type": "factual_constants",
+    "layer_id": 22,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v09_repair_l22_l24_down_rank16/factual_constants_l23_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v09_repair_l22_l24_down_rank16/factual_constants_l23_down_proj.pt",
+    "file_size": 371173,
+    "sha256": "c9b209379dc40053ea8e26b266ca7b29b796033edb7dba2e612638bbf794aa62",
+    "load_ok": true,
+    "block_id": "factual_constants_l23_down_proj",
+    "block_type": "factual_constants",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v11_unique_repair_l22_l24_down_rank16/v11_circle_area_l21_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v11_unique_repair_l22_l24_down_rank16/v11_circle_area_l21_down_proj.pt",
+    "file_size": 371157,
+    "sha256": "2f6e8e6cf6cbca244b3e548ff2c5b82d8322a354be1d88381612eb0c6d7da1a7",
+    "load_ok": true,
+    "block_id": "v11_circle_area_l21_down_proj",
+    "block_type": "v11_circle_area",
+    "layer_id": 21,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v11_unique_repair_l22_l24_down_rank16/v11_circle_area_l22_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v11_unique_repair_l22_l24_down_rank16/v11_circle_area_l22_down_proj.pt",
+    "file_size": 371157,
+    "sha256": "97dd8076196a43277cbb58ca53d94c838a8b0973a5f690619c88da3d8d9fa3b2",
+    "load_ok": true,
+    "block_id": "v11_circle_area_l22_down_proj",
+    "block_type": "v11_circle_area",
+    "layer_id": 22,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v11_unique_repair_l22_l24_down_rank16/v11_circle_area_l23_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v11_unique_repair_l22_l24_down_rank16/v11_circle_area_l23_down_proj.pt",
+    "file_size": 371157,
+    "sha256": "a8c1b836e19aa95a147f9c449887ad679a7453a20fc53698af690a0160703489",
+    "load_ok": true,
+    "block_id": "v11_circle_area_l23_down_proj",
+    "block_type": "v11_circle_area",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v11_unique_repair_l22_l24_down_rank16/v11_factorial_derivative_l21_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v11_unique_repair_l22_l24_down_rank16/v11_factorial_derivative_l21_down_proj.pt",
+    "file_size": 371229,
+    "sha256": "90f7cac4cf2fc478d2925998089e1f96b3fcacfc72b4c4506172a5262874f807",
+    "load_ok": true,
+    "block_id": "v11_factorial_derivative_l21_down_proj",
+    "block_type": "v11_factorial_derivative",
+    "layer_id": 21,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v11_unique_repair_l22_l24_down_rank16/v11_factorial_derivative_l22_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v11_unique_repair_l22_l24_down_rank16/v11_factorial_derivative_l22_down_proj.pt",
+    "file_size": 371229,
+    "sha256": "77287b07552c0e9a497bc578b9945b9a0c5d293a8005f4d42a984fe4b817c2ec",
+    "load_ok": true,
+    "block_id": "v11_factorial_derivative_l22_down_proj",
+    "block_type": "v11_factorial_derivative",
+    "layer_id": 22,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v11_unique_repair_l22_l24_down_rank16/v11_factorial_derivative_l23_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v11_unique_repair_l22_l24_down_rank16/v11_factorial_derivative_l23_down_proj.pt",
+    "file_size": 371229,
+    "sha256": "0165008f8e7460bb96c7eb81ef0563e586743b249b97e93f65ed353da010fef4",
+    "load_ok": true,
+    "block_id": "v11_factorial_derivative_l23_down_proj",
+    "block_type": "v11_factorial_derivative",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v11_unique_repair_l22_l24_down_rank16/v11_linear_equation_l21_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v11_unique_repair_l22_l24_down_rank16/v11_linear_equation_l21_down_proj.pt",
+    "file_size": 371189,
+    "sha256": "ed3af1036fd87d9d09ed3278873c11192eb047a8b33f4dcf49008c8609e1383b",
+    "load_ok": true,
+    "block_id": "v11_linear_equation_l21_down_proj",
+    "block_type": "v11_linear_equation",
+    "layer_id": 21,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v11_unique_repair_l22_l24_down_rank16/v11_linear_equation_l22_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v11_unique_repair_l22_l24_down_rank16/v11_linear_equation_l22_down_proj.pt",
+    "file_size": 371189,
+    "sha256": "6ccd50229f0fe53b0bc90d1e3ea429c3fd0a141c7bcef2494f0426bd1653fdd3",
+    "load_ok": true,
+    "block_id": "v11_linear_equation_l22_down_proj",
+    "block_type": "v11_linear_equation",
+    "layer_id": 22,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v11_unique_repair_l22_l24_down_rank16/v11_linear_equation_l23_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v11_unique_repair_l22_l24_down_rank16/v11_linear_equation_l23_down_proj.pt",
+    "file_size": 371189,
+    "sha256": "dd00ab18d22e970e014c1a523d187f0763cdca27826b4d2369ffadce23153713",
+    "load_ok": true,
+    "block_id": "v11_linear_equation_l23_down_proj",
+    "block_type": "v11_linear_equation",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v11_unique_repair_l22_l24_down_rank16/v11_percent_time_distance_l21_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v11_unique_repair_l22_l24_down_rank16/v11_percent_time_distance_l21_down_proj.pt",
+    "file_size": 371237,
+    "sha256": "26fbacd82423bd134108e5e0da27a3ee820c493de9865dc81d41fe8607651fbb",
+    "load_ok": true,
+    "block_id": "v11_percent_time_distance_l21_down_proj",
+    "block_type": "v11_percent_time_distance",
+    "layer_id": 21,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v11_unique_repair_l22_l24_down_rank16/v11_percent_time_distance_l22_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v11_unique_repair_l22_l24_down_rank16/v11_percent_time_distance_l22_down_proj.pt",
+    "file_size": 371237,
+    "sha256": "94a93bd98c9a5eea5e8fea1bae6227de05fade749d8a24aac0f91fc0838e9237",
+    "load_ok": true,
+    "block_id": "v11_percent_time_distance_l22_down_proj",
+    "block_type": "v11_percent_time_distance",
+    "layer_id": 22,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v11_unique_repair_l22_l24_down_rank16/v11_percent_time_distance_l23_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v11_unique_repair_l22_l24_down_rank16/v11_percent_time_distance_l23_down_proj.pt",
+    "file_size": 371237,
+    "sha256": "619baaf6b43f05e43b998d72240c1df2d47436e819a7e25d7e22ba5df409391c",
+    "load_ok": true,
+    "block_id": "v11_percent_time_distance_l23_down_proj",
+    "block_type": "v11_percent_time_distance",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v11_unique_repair_l22_l24_down_rank16/v11_stats_number_theory_l21_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v11_unique_repair_l22_l24_down_rank16/v11_stats_number_theory_l21_down_proj.pt",
+    "file_size": 371221,
+    "sha256": "d14ad0f39910ebf289c19ed06c635079671fbb2a9c1e79329b5688ed94d035f1",
+    "load_ok": true,
+    "block_id": "v11_stats_number_theory_l21_down_proj",
+    "block_type": "v11_stats_number_theory",
+    "layer_id": 21,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v11_unique_repair_l22_l24_down_rank16/v11_stats_number_theory_l22_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v11_unique_repair_l22_l24_down_rank16/v11_stats_number_theory_l22_down_proj.pt",
+    "file_size": 371221,
+    "sha256": "2305d2294f0683fe2d9588cf9174578ed6e6beecfbc7707c47357e4b2a54e075",
+    "load_ok": true,
+    "block_id": "v11_stats_number_theory_l22_down_proj",
+    "block_type": "v11_stats_number_theory",
+    "layer_id": 22,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v11_unique_repair_l22_l24_down_rank16/v11_stats_number_theory_l23_down_proj.pt",
+    "rel_path": "experiments/outputs/blocks_v11_unique_repair_l22_l24_down_rank16/v11_stats_number_theory_l23_down_proj.pt",
+    "file_size": 371221,
+    "sha256": "be047b77a6254c88b2d03299c25f97472eb8dfc45ae86598f9f79c334f271ea9",
+    "load_ok": true,
+    "block_id": "v11_stats_number_theory_l23_down_proj",
+    "block_type": "v11_stats_number_theory",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v17/v17_down_proj_l23_r16.pt",
+    "rel_path": "experiments/outputs/blocks_v17/v17_down_proj_l23_r16.pt",
+    "file_size": 371029,
+    "sha256": "6540d084787cb3cd85c41a6ff470b1c2a5d74cae6d69e14184b729287ac1c63c",
+    "load_ok": true,
+    "block_id": "v17_down_proj_l23_r16",
+    "block_type": "preservation_aware",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v18/v18_commonsense_choice_l23_down_proj_r16.pt",
+    "rel_path": "experiments/outputs/blocks_v18/v18_commonsense_choice_l23_down_proj_r16.pt",
+    "file_size": 371245,
+    "sha256": "4f31ac1514c38f935e3de4573057540bb6b0e2db574a91e85911a19e44d00940",
+    "load_ok": true,
+    "block_id": "v18_commonsense_choice_l23_down_proj_r16",
+    "block_type": "commonsense_choice",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v18/v18_commonsense_choice_l23_down_proj_r8.pt",
+    "rel_path": "experiments/outputs/blocks_v18/v18_commonsense_choice_l23_down_proj_r8.pt",
+    "file_size": 186917,
+    "sha256": "78c6972c847be29e90c4c913c936ad2155800c79db007d9dda3f255fca448e27",
+    "load_ok": true,
+    "block_id": "v18_commonsense_choice_l23_down_proj_r8",
+    "block_type": "commonsense_choice",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 8,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      8
+    ],
+    "B_shape": [
+      8,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 46080
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v18/v18_distance_geometry_l23_down_proj_r16.pt",
+    "rel_path": "experiments/outputs/blocks_v18/v18_distance_geometry_l23_down_proj_r16.pt",
+    "file_size": 371237,
+    "sha256": "8e953d2578f0a2db1d69a07bbbe68cdef811f091a737ffec5ba1632c4538f79d",
+    "load_ok": true,
+    "block_id": "v18_distance_geometry_l23_down_proj_r16",
+    "block_type": "distance_geometry",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v18/v18_distance_geometry_l23_down_proj_r8.pt",
+    "rel_path": "experiments/outputs/blocks_v18/v18_distance_geometry_l23_down_proj_r8.pt",
+    "file_size": 186909,
+    "sha256": "d5307a9fef8ff23f1dad3201ba2bafd86c21cad06d420de61b4b6607e9f265bc",
+    "load_ok": true,
+    "block_id": "v18_distance_geometry_l23_down_proj_r8",
+    "block_type": "distance_geometry",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 8,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      8
+    ],
+    "B_shape": [
+      8,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 46080
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v18/v18_factual_constants_l23_down_proj_r16.pt",
+    "rel_path": "experiments/outputs/blocks_v18/v18_factual_constants_l23_down_proj_r16.pt",
+    "file_size": 371237,
+    "sha256": "6678ca2a45fb9fd38d925a53318713908eb75dc733b17a2cbf3462bb7e5cf134",
+    "load_ok": true,
+    "block_id": "v18_factual_constants_l23_down_proj_r16",
+    "block_type": "factual_constants",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v18/v18_factual_constants_l23_down_proj_r8.pt",
+    "rel_path": "experiments/outputs/blocks_v18/v18_factual_constants_l23_down_proj_r8.pt",
+    "file_size": 186909,
+    "sha256": "98290f71fb9bfa4cba513b09ef0d4ca6ba388101c22e3a44ba66dda14e97feeb",
+    "load_ok": true,
+    "block_id": "v18_factual_constants_l23_down_proj_r8",
+    "block_type": "factual_constants",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 8,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      8
+    ],
+    "B_shape": [
+      8,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 46080
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v18/v18_integer_ops_l23_down_proj_r16.pt",
+    "rel_path": "experiments/outputs/blocks_v18/v18_integer_ops_l23_down_proj_r16.pt",
+    "file_size": 371189,
+    "sha256": "9378c582513fc6f79cd12648122db8c8a0ba5ead1c2084a1ab72c6681d2669a6",
+    "load_ok": true,
+    "block_id": "v18_integer_ops_l23_down_proj_r16",
+    "block_type": "integer_ops",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v18/v18_integer_ops_l23_down_proj_r8.pt",
+    "rel_path": "experiments/outputs/blocks_v18/v18_integer_ops_l23_down_proj_r8.pt",
+    "file_size": 186861,
+    "sha256": "f39571e9f7f835bafcec00c30f6f9a8548f9125f0d759c62da9c1272c195c48d",
+    "load_ok": true,
+    "block_id": "v18_integer_ops_l23_down_proj_r8",
+    "block_type": "integer_ops",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 8,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      8
+    ],
+    "B_shape": [
+      8,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 46080
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v18/v18_percent_l23_down_proj_r16.pt",
+    "rel_path": "experiments/outputs/blocks_v18/v18_percent_l23_down_proj_r16.pt",
+    "file_size": 371157,
+    "sha256": "4a1ac8937bcd432e9af8370629b62a2a06464c15de496a56835a11055e65e513",
+    "load_ok": true,
+    "block_id": "v18_percent_l23_down_proj_r16",
+    "block_type": "percent",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v18/v18_percent_l23_down_proj_r8.pt",
+    "rel_path": "experiments/outputs/blocks_v18/v18_percent_l23_down_proj_r8.pt",
+    "file_size": 186829,
+    "sha256": "6f2e2ef8e137901ef4bf947ba6b450109234d0676b9bf4db1b79eca7de89b345",
+    "load_ok": true,
+    "block_id": "v18_percent_l23_down_proj_r8",
+    "block_type": "percent",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 8,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      8
+    ],
+    "B_shape": [
+      8,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 46080
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v18/v18_power_log_l23_down_proj_r16.pt",
+    "rel_path": "experiments/outputs/blocks_v18/v18_power_log_l23_down_proj_r16.pt",
+    "file_size": 371173,
+    "sha256": "d2d93f3f576a8e2e72051cc91bb4d15ed4c7e5155bf08429f459c3fca338483c",
+    "load_ok": true,
+    "block_id": "v18_power_log_l23_down_proj_r16",
+    "block_type": "power_log",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v18/v18_power_log_l23_down_proj_r8.pt",
+    "rel_path": "experiments/outputs/blocks_v18/v18_power_log_l23_down_proj_r8.pt",
+    "file_size": 186845,
+    "sha256": "164bbc085ceaf6a636c82b5ab3362cf5aac81dc4f1aa51335a14857989b6af5f",
+    "load_ok": true,
+    "block_id": "v18_power_log_l23_down_proj_r8",
+    "block_type": "power_log",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 8,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      8
+    ],
+    "B_shape": [
+      8,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 46080
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v21/v21_percent_l23_down_proj_r16_ep1.pt",
+    "rel_path": "experiments/outputs/blocks_v21/v21_percent_l23_down_proj_r16_ep1.pt",
+    "file_size": 371189,
+    "sha256": "65793c29ae0d81ce1c5ea271a19b3278ebf15c9fd7c521cef1511ac55f534a96",
+    "load_ok": true,
+    "block_id": "v21_percent_l23_down_proj_r16",
+    "block_type": "percent",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v21/v21_percent_l23_down_proj_r16_ep10.pt",
+    "rel_path": "experiments/outputs/blocks_v21/v21_percent_l23_down_proj_r16_ep10.pt",
+    "file_size": 371197,
+    "sha256": "1e6a023f2cf1e556ce1d816ac7a17e6cb8b1770d28faabdf6f9dc4160752ab84",
+    "load_ok": true,
+    "block_id": "v21_percent_l23_down_proj_r16",
+    "block_type": "percent",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v21/v21_percent_l23_down_proj_r16_ep11.pt",
+    "rel_path": "experiments/outputs/blocks_v21/v21_percent_l23_down_proj_r16_ep11.pt",
+    "file_size": 371197,
+    "sha256": "e08b538751830fe8979370378c30063f83fac6b0602e677cde8a1d9d051c9dd6",
+    "load_ok": true,
+    "block_id": "v21_percent_l23_down_proj_r16",
+    "block_type": "percent",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v21/v21_percent_l23_down_proj_r16_ep12.pt",
+    "rel_path": "experiments/outputs/blocks_v21/v21_percent_l23_down_proj_r16_ep12.pt",
+    "file_size": 371197,
+    "sha256": "d1c7691cd1d76fcee87720819f64a701f4e7b25ccb1a3110461fe0468a4bf7d9",
+    "load_ok": true,
+    "block_id": "v21_percent_l23_down_proj_r16",
+    "block_type": "percent",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v21/v21_percent_l23_down_proj_r16_ep2.pt",
+    "rel_path": "experiments/outputs/blocks_v21/v21_percent_l23_down_proj_r16_ep2.pt",
+    "file_size": 371189,
+    "sha256": "0d6fab9391be113e040911177f8d7569827c42f3fd4ce087aacb48b37ff3bb2e",
+    "load_ok": true,
+    "block_id": "v21_percent_l23_down_proj_r16",
+    "block_type": "percent",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v21/v21_percent_l23_down_proj_r16_ep3.pt",
+    "rel_path": "experiments/outputs/blocks_v21/v21_percent_l23_down_proj_r16_ep3.pt",
+    "file_size": 371189,
+    "sha256": "1b3e6980af9a62a34915bad8b6b46e75f948e01b4838885ded8831ab20bb7d35",
+    "load_ok": true,
+    "block_id": "v21_percent_l23_down_proj_r16",
+    "block_type": "percent",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v21/v21_percent_l23_down_proj_r16_ep4.pt",
+    "rel_path": "experiments/outputs/blocks_v21/v21_percent_l23_down_proj_r16_ep4.pt",
+    "file_size": 371189,
+    "sha256": "7b72ba2f747918679fa4143b037e88cda089ca4c22079dc2f1278e5eae6a88d1",
+    "load_ok": true,
+    "block_id": "v21_percent_l23_down_proj_r16",
+    "block_type": "percent",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v21/v21_percent_l23_down_proj_r16_ep5.pt",
+    "rel_path": "experiments/outputs/blocks_v21/v21_percent_l23_down_proj_r16_ep5.pt",
+    "file_size": 371189,
+    "sha256": "c754f7a3501ff065fe227f8473b73956a0f293c8e06d3364a187ba9e2a02fe68",
+    "load_ok": true,
+    "block_id": "v21_percent_l23_down_proj_r16",
+    "block_type": "percent",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v21/v21_percent_l23_down_proj_r16_ep6.pt",
+    "rel_path": "experiments/outputs/blocks_v21/v21_percent_l23_down_proj_r16_ep6.pt",
+    "file_size": 371189,
+    "sha256": "1af67285bb5954d08262d2518abcb475343115a6a53169b3c80e656a7b5fb743",
+    "load_ok": true,
+    "block_id": "v21_percent_l23_down_proj_r16",
+    "block_type": "percent",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v21/v21_percent_l23_down_proj_r16_ep7.pt",
+    "rel_path": "experiments/outputs/blocks_v21/v21_percent_l23_down_proj_r16_ep7.pt",
+    "file_size": 371189,
+    "sha256": "4741bc5208e42ee1220aaafa8d231c4b9f4ad884d97a1a39abd347a75cb1d677",
+    "load_ok": true,
+    "block_id": "v21_percent_l23_down_proj_r16",
+    "block_type": "percent",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v21/v21_percent_l23_down_proj_r16_ep8.pt",
+    "rel_path": "experiments/outputs/blocks_v21/v21_percent_l23_down_proj_r16_ep8.pt",
+    "file_size": 371189,
+    "sha256": "eea912206cd404e79f9ec846efc9a5ff3459c5a5419c4da3f4715de7fefa76fa",
+    "load_ok": true,
+    "block_id": "v21_percent_l23_down_proj_r16",
+    "block_type": "percent",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v21/v21_percent_l23_down_proj_r16_ep9.pt",
+    "rel_path": "experiments/outputs/blocks_v21/v21_percent_l23_down_proj_r16_ep9.pt",
+    "file_size": 371189,
+    "sha256": "35249832e70fe993a6be932222d48869c9ec193032e4bdfdd6457d15590cda3f",
+    "load_ok": true,
+    "block_id": "v21_percent_l23_down_proj_r16",
+    "block_type": "percent",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v21/v21_percent_l23_down_proj_r16_final.pt",
+    "rel_path": "experiments/outputs/blocks_v21/v21_percent_l23_down_proj_r16_final.pt",
+    "file_size": 371205,
+    "sha256": "c33e5a065d7201c260cd86d04b80c14097757c0ea9ec78ddd8e181ff06d8f8a9",
+    "load_ok": true,
+    "block_id": "v21_percent_l23_down_proj_r16",
+    "block_type": "percent",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v24/v24_percent_l23_down_proj_r16_ep1.pt",
+    "rel_path": "experiments/outputs/blocks_v24/v24_percent_l23_down_proj_r16_ep1.pt",
+    "file_size": 371189,
+    "sha256": "4de29fd0ef6f0b37e4a82922c90b61e3d26b4af5a6e2d8d0f7772c77fea23e6e",
+    "load_ok": true,
+    "block_id": "v24_percent_l23_down_proj_r16",
+    "block_type": "percent",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v24/v24_percent_l23_down_proj_r16_ep10.pt",
+    "rel_path": "experiments/outputs/blocks_v24/v24_percent_l23_down_proj_r16_ep10.pt",
+    "file_size": 371197,
+    "sha256": "74bd93c3271e6d157c4aa96196d47d52b77e1837a5bac80f0142dae9f0c10067",
+    "load_ok": true,
+    "block_id": "v24_percent_l23_down_proj_r16",
+    "block_type": "percent",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v24/v24_percent_l23_down_proj_r16_ep2.pt",
+    "rel_path": "experiments/outputs/blocks_v24/v24_percent_l23_down_proj_r16_ep2.pt",
+    "file_size": 371189,
+    "sha256": "3eb0ecd6ef601142bb0845a50112ddd4848bda3ed444f7117e17dddbf1eddeb1",
+    "load_ok": true,
+    "block_id": "v24_percent_l23_down_proj_r16",
+    "block_type": "percent",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v24/v24_percent_l23_down_proj_r16_ep3.pt",
+    "rel_path": "experiments/outputs/blocks_v24/v24_percent_l23_down_proj_r16_ep3.pt",
+    "file_size": 371189,
+    "sha256": "0c55990a61047e34d94b3c80b2edeb6d448495950c08b83c4278161f03120be3",
+    "load_ok": true,
+    "block_id": "v24_percent_l23_down_proj_r16",
+    "block_type": "percent",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v24/v24_percent_l23_down_proj_r16_ep4.pt",
+    "rel_path": "experiments/outputs/blocks_v24/v24_percent_l23_down_proj_r16_ep4.pt",
+    "file_size": 371189,
+    "sha256": "42de752fad52a912f5474ab92370151e5f02be1bcc348f094b968f5af69d9036",
+    "load_ok": true,
+    "block_id": "v24_percent_l23_down_proj_r16",
+    "block_type": "percent",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v24/v24_percent_l23_down_proj_r16_ep5.pt",
+    "rel_path": "experiments/outputs/blocks_v24/v24_percent_l23_down_proj_r16_ep5.pt",
+    "file_size": 371189,
+    "sha256": "77610374e3a8cd560b793f003439b15af91cf08479639fc980604e63ba6bd24f",
+    "load_ok": true,
+    "block_id": "v24_percent_l23_down_proj_r16",
+    "block_type": "percent",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v24/v24_percent_l23_down_proj_r16_ep6.pt",
+    "rel_path": "experiments/outputs/blocks_v24/v24_percent_l23_down_proj_r16_ep6.pt",
+    "file_size": 371189,
+    "sha256": "54df7716d6d5d8d6d9334db606f63ded6130616a4af9e2fe6c1e69053c737e0c",
+    "load_ok": true,
+    "block_id": "v24_percent_l23_down_proj_r16",
+    "block_type": "percent",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v24/v24_percent_l23_down_proj_r16_ep7.pt",
+    "rel_path": "experiments/outputs/blocks_v24/v24_percent_l23_down_proj_r16_ep7.pt",
+    "file_size": 371189,
+    "sha256": "7f7f846f81befceca70ca5529cb37c85fa61901827fd911d633f81c20f9b4c5d",
+    "load_ok": true,
+    "block_id": "v24_percent_l23_down_proj_r16",
+    "block_type": "percent",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v24/v24_percent_l23_down_proj_r16_ep8.pt",
+    "rel_path": "experiments/outputs/blocks_v24/v24_percent_l23_down_proj_r16_ep8.pt",
+    "file_size": 371189,
+    "sha256": "7b46de405a52030212e239dbf9d219ba66bbb4cf7ee95cefc2e5b715e6458823",
+    "load_ok": true,
+    "block_id": "v24_percent_l23_down_proj_r16",
+    "block_type": "percent",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v24/v24_percent_l23_down_proj_r16_ep9.pt",
+    "rel_path": "experiments/outputs/blocks_v24/v24_percent_l23_down_proj_r16_ep9.pt",
+    "file_size": 371189,
+    "sha256": "ee681971937126e3ce8622ae387153c7a8a36c9e54c58a71bab200bce625642c",
+    "load_ok": true,
+    "block_id": "v24_percent_l23_down_proj_r16",
+    "block_type": "percent",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  },
+  {
+    "path": "/Users/yyl/Desktop/workshop/BitDPM/experiments/outputs/blocks_v24/v24_percent_l23_down_proj_r16_final.pt",
+    "rel_path": "experiments/outputs/blocks_v24/v24_percent_l23_down_proj_r16_final.pt",
+    "file_size": 371205,
+    "sha256": "1bcd46dde1e821d1e7bafd7596d0fd797c7c65ddb7b32a151205922e387a3915",
+    "load_ok": true,
+    "block_id": "v24_percent_l23_down_proj_r16",
+    "block_type": "percent",
+    "layer_id": 23,
+    "module_name": "down_proj",
+    "rank": 16,
+    "scale": 1.0,
+    "hidden_size": 896,
+    "in_features": 4864,
+    "out_features": 896,
+    "A_shape": [
+      4864,
+      16
+    ],
+    "B_shape": [
+      16,
+      896
+    ],
+    "in_dim": 4864,
+    "out_dim": 896,
+    "matched_backbone": "Qwen2.5-0.5B down_proj",
+    "num_params": 92160
+  }
+]

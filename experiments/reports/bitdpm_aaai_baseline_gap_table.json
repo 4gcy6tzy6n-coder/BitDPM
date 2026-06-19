@@ -1,0 +1,138 @@
+[
+  {
+    "label": "v14 full current pool",
+    "path": "experiments/reports/v14_full_v11_admitted_20260608_093845.json",
+    "benchmark": "v14",
+    "n": 300,
+    "baseline": 0.84,
+    "best_fixed": 0.84,
+    "best_fixed_config": "baseline",
+    "oracle": 0.9033333333333333,
+    "coverage": 19,
+    "always_all": 0.0,
+    "random_router": {
+      "mean": 0.7451833333333333,
+      "std": 0.016007628389822982,
+      "fixes_mean": 5.08,
+      "breaks_mean": 36.415,
+      "net_mean": -31.335,
+      "choices": [
+        "commonsense_choice",
+        "format_following",
+        "chinese_semantic",
+        "calculation_error",
+        "short_reasoning",
+        "arithmetic_power_log",
+        "v11_stats_number_theory"
+      ]
+    },
+    "prompt_only": {
+      "path": "experiments/reports/prompt_only/prompt_only_category_aware_v14_20260618_142141.json",
+      "policy": "category_aware",
+      "score": 0.8716666666666667,
+      "baseline": 0.8333333333333334,
+      "delta": 0.03833333333333333,
+      "fixes": 21,
+      "breaks": 11,
+      "net": 10,
+      "n": 300
+    },
+    "lora": {
+      "path": "experiments/reports/lora_baseline/lora_r16_v14_20260618_152312.json",
+      "score": 0.9633333333333334,
+      "baseline": 0.8333333333333334,
+      "delta": 0.13,
+      "fixes": 45,
+      "breaks": 6,
+      "net": 39,
+      "n": 300,
+      "rank": 16,
+      "epochs": 1
+    }
+  },
+  {
+    "label": "v15 targeted current pool",
+    "path": "experiments/reports/v15_router_validation_v11_admitted_20260608_113945.json",
+    "benchmark": "v15",
+    "n": 120,
+    "baseline": 0.44166666666666665,
+    "best_fixed": 0.5083333333333333,
+    "best_fixed_config": "chinese_semantic",
+    "oracle": 0.7416666666666667,
+    "coverage": 36,
+    "always_all": 0.0,
+    "random_router": {
+      "mean": 0.429375,
+      "std": 0.02869786940407481,
+      "fixes_mean": 12.015,
+      "breaks_mean": 13.49,
+      "net_mean": -1.475,
+      "choices": [
+        "commonsense_choice",
+        "format_following",
+        "chinese_semantic",
+        "calculation_error",
+        "short_reasoning",
+        "arithmetic_power_log",
+        "v11_stats_number_theory"
+      ]
+    },
+    "prompt_only": {
+      "path": "experiments/reports/prompt_only/prompt_only_category_aware_v15_20260618_142603.json",
+      "policy": "category_aware",
+      "score": 0.575,
+      "baseline": 0.4666666666666667,
+      "delta": 0.10833333333333334,
+      "fixes": 22,
+      "breaks": 9,
+      "net": 13,
+      "n": 120
+    },
+    "lora": {
+      "path": "experiments/reports/lora_baseline/lora_r16_v15_20260618_152929.json",
+      "score": 0.8666666666666667,
+      "baseline": 0.4666666666666667,
+      "delta": 0.4,
+      "fixes": 55,
+      "breaks": 7,
+      "net": 48,
+      "n": 120,
+      "rank": 16,
+      "epochs": 1
+    }
+  },
+  {
+    "label": "v08 current pool",
+    "path": "experiments/reports/v11_merged_candidates_stable_sampling_LATEST.json",
+    "benchmark": "v08",
+    "n": 100,
+    "baseline": 0.83,
+    "best_fixed": 0.83,
+    "best_fixed_config": "baseline",
+    "oracle": 0.9,
+    "coverage": 7,
+    "always_all": 0.0,
+    "random_router": {
+      "mean": 0.7532,
+      "std": 0.023989789494699636,
+      "fixes_mean": 1.37,
+      "breaks_mean": 9.915,
+      "net_mean": -8.545,
+      "choices": [
+        "commonsense_choice",
+        "format_following",
+        "chinese_semantic",
+        "calculation_error",
+        "short_reasoning",
+        "arithmetic_power_log",
+        "v11_linear_equation",
+        "v11_percent_time_distance",
+        "v11_circle_area",
+        "v11_stats_number_theory",
+        "v11_factorial_derivative"
+      ]
+    },
+    "prompt_only": null,
+    "lora": null
+  }
+]

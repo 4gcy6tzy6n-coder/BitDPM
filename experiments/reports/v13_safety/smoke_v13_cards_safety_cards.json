@@ -1,0 +1,128 @@
+{
+  "cards": [
+    {
+      "block": "arithmetic_power_log",
+      "structure": "l22_l24_down",
+      "rank": 16,
+      "scale": 0.75,
+      "fixed_score": 0.755,
+      "score_delta": -0.075,
+      "fixes": 2,
+      "unique_fixes": 1,
+      "overlap_fixes": 1,
+      "breaks": 11,
+      "net_unique_utility": -10,
+      "damage_rate": 0.13253012048192772,
+      "admitted": true,
+      "activation_mode": "single-only",
+      "damaged_categories": {
+        "chinese": 3,
+        "code": 2,
+        "commonsense": 4,
+        "math": 1,
+        "reasoning": 1
+      }
+    },
+    {
+      "block": "short_reasoning",
+      "structure": "l22_l24_down",
+      "rank": 16,
+      "scale": 0.45,
+      "fixed_score": 0.82,
+      "score_delta": -0.01,
+      "fixes": 0,
+      "unique_fixes": 0,
+      "overlap_fixes": 0,
+      "breaks": 1,
+      "net_unique_utility": -1,
+      "damage_rate": 0.012048192771084338,
+      "admitted": true,
+      "activation_mode": "single-only",
+      "damaged_categories": {
+        "math": 1
+      }
+    },
+    {
+      "block": "commonsense_choice",
+      "structure": "l22_l24_down",
+      "rank": 16,
+      "scale": 0.6,
+      "fixed_score": 0.82,
+      "score_delta": -0.01,
+      "fixes": 2,
+      "unique_fixes": 0,
+      "overlap_fixes": 2,
+      "breaks": 3,
+      "net_unique_utility": -3,
+      "damage_rate": 0.03614457831325301,
+      "admitted": true,
+      "activation_mode": "single-only",
+      "damaged_categories": {
+        "commonsense": 2,
+        "math": 1
+      }
+    },
+    {
+      "block": "calculation_error",
+      "structure": "l22_l24_down",
+      "rank": 16,
+      "scale": 0.3,
+      "fixed_score": 0.81,
+      "score_delta": -0.02,
+      "fixes": 1,
+      "unique_fixes": 0,
+      "overlap_fixes": 1,
+      "breaks": 3,
+      "net_unique_utility": -3,
+      "damage_rate": 0.03614457831325301,
+      "admitted": true,
+      "activation_mode": "single-only",
+      "damaged_categories": {
+        "commonsense": 3
+      }
+    },
+    {
+      "block": "chinese_semantic",
+      "structure": "l22_l24_down",
+      "rank": 16,
+      "scale": 0.75,
+      "fixed_score": 0.8,
+      "score_delta": -0.03,
+      "fixes": 1,
+      "unique_fixes": 0,
+      "overlap_fixes": 1,
+      "breaks": 6,
+      "net_unique_utility": -6,
+      "damage_rate": 0.07228915662650602,
+      "admitted": true,
+      "activation_mode": "single-only",
+      "damaged_categories": {
+        "chinese": 4,
+        "commonsense": 1,
+        "math": 1
+      }
+    },
+    {
+      "block": "format_following",
+      "structure": "l22_l24_down",
+      "rank": 16,
+      "scale": 0.75,
+      "fixed_score": 0.64,
+      "score_delta": -0.19,
+      "fixes": 3,
+      "unique_fixes": 0,
+      "overlap_fixes": 3,
+      "breaks": 23,
+      "net_unique_utility": -23,
+      "damage_rate": 0.27710843373493976,
+      "admitted": true,
+      "activation_mode": "single-only",
+      "damaged_categories": {
+        "chinese": 15,
+        "commonsense": 4,
+        "math": 1,
+        "reasoning": 3
+      }
+    }
+  ]
+}

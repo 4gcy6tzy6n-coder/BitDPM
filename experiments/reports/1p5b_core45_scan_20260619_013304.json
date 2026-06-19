@@ -1,0 +1,62 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B",
+  "block": "1p5b_percent_l26_r16",
+  "results": [
+    {
+      "scale": 0.5,
+      "fixes": 2,
+      "breaks": 0,
+      "net": 2,
+      "baseline": 0.8222222222222222,
+      "block": 0.8666666666666667
+    },
+    {
+      "scale": 0.75,
+      "fixes": 2,
+      "breaks": 1,
+      "net": 1,
+      "baseline": 0.8222222222222222,
+      "block": 0.8444444444444444
+    },
+    {
+      "scale": 0.85,
+      "fixes": 5,
+      "breaks": 1,
+      "net": 4,
+      "baseline": 0.8222222222222222,
+      "block": 0.9111111111111111
+    },
+    {
+      "scale": 1.0,
+      "fixes": 6,
+      "breaks": 1,
+      "net": 5,
+      "baseline": 0.8222222222222222,
+      "block": 0.9333333333333333
+    },
+    {
+      "scale": 1.25,
+      "fixes": 6,
+      "breaks": 1,
+      "net": 5,
+      "baseline": 0.8222222222222222,
+      "block": 0.9333333333333333
+    },
+    {
+      "scale": 1.5,
+      "fixes": 6,
+      "breaks": 1,
+      "net": 5,
+      "baseline": 0.8222222222222222,
+      "block": 0.9333333333333333
+    }
+  ],
+  "best": {
+    "scale": 1.0,
+    "fixes": 6,
+    "breaks": 1,
+    "net": 5,
+    "baseline": 0.8222222222222222,
+    "block": 0.9333333333333333
+  }
+}

@@ -1,0 +1,8 @@
+block,fixed_score,baseline_score,score_delta,fixes,breaks,net_fix_count,unique_fixes,damaged_categories
+calculation_error,0.817,0.812,0.005,40,41,-1,1,"{'arithmetic': 14, 'chinese': 4, 'code': 8, 'commonsense': 13, 'factual_constants': 2}"
+chinese_semantic,0.782,0.812,-0.03,64,122,-58,6,"{'arithmetic': 16, 'chinese': 83, 'code': 4, 'commonsense': 13, 'factual_constants': 6}"
+short_reasoning,0.777,0.812,-0.035,50,93,-43,2,"{'arithmetic': 49, 'chinese': 18, 'code': 4, 'commonsense': 16, 'factual_constants': 6}"
+commonsense_choice,0.777,0.812,-0.035,67,115,-48,7,"{'arithmetic': 21, 'chinese': 48, 'code': 8, 'commonsense': 20, 'factual_constants': 4, 'reasoning': 14}"
+arithmetic_power_log,0.6565,0.812,-0.1555,50,220,-170,5,"{'arithmetic': 59, 'chinese': 59, 'code': 4, 'commonsense': 31, 'factual_constants': 22, 'reasoning': 45}"
+v11_stats_number_theory,0.6225,0.812,-0.1895,34,245,-211,2,"{'arithmetic': 64, 'chinese': 105, 'code': 3, 'commonsense': 21, 'factual_constants': 17, 'reasoning': 35}"
+format_following,0.614,0.812,-0.198,57,272,-215,5,"{'arithmetic': 75, 'chinese': 146, 'code': 13, 'commonsense': 29, 'factual_constants': 9}"

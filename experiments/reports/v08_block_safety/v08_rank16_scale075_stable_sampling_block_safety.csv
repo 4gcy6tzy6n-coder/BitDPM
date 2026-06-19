@@ -1,0 +1,6 @@
+block,fixed_score,baseline_score,score_delta,fixes,breaks,net_fix_count,unique_fixes,damaged_categories
+chinese_semantic,0.8,0.83,-0.03,1,6,-5,0,"{'chinese': 4, 'commonsense': 1, 'math': 1}"
+commonsense_choice,0.785,0.83,-0.045,1,6,-5,0,"{'chinese': 3, 'commonsense': 2, 'math': 1}"
+short_reasoning,0.695,0.83,-0.135,0,16,-16,0,"{'chinese': 5, 'commonsense': 3, 'math': 1, 'reasoning': 7}"
+calculation_error,0.675,0.83,-0.155,0,18,-18,0,"{'chinese': 6, 'commonsense': 3, 'math': 2, 'reasoning': 7}"
+format_following,0.64,0.83,-0.19,3,23,-20,3,"{'chinese': 15, 'commonsense': 4, 'math': 1, 'reasoning': 3}"

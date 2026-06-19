@@ -1,0 +1,1645 @@
+{
+  "summary": {
+    "report_model": "Qwen/Qwen2.5-0.5B-Instruct",
+    "benchmark_set": "v14",
+    "total_prompts": 60,
+    "block_scale": 0.75,
+    "configs": [
+      "baseline",
+      "commonsense_choice",
+      "format_following",
+      "chinese_semantic",
+      "calculation_error",
+      "short_reasoning",
+      "arithmetic_power_log",
+      "always_all"
+    ],
+    "oracle": {
+      "overall": 0.95,
+      "category_scores": {
+        "arithmetic": 0.7,
+        "factual_constants": 1.0,
+        "commonsense": 1.0,
+        "code": 1.0,
+        "chinese": 1.0,
+        "reasoning": 1.0
+      },
+      "active_blocks": 0.25
+    },
+    "selection_frequency": {
+      "baseline": 55,
+      "commonsense_choice": 1,
+      "format_following": 0,
+      "chinese_semantic": 4,
+      "calculation_error": 0,
+      "short_reasoning": 0,
+      "arithmetic_power_log": 0,
+      "always_all": 0
+    },
+    "bucket_counts": {
+      "baseline_correct_block_wrong": 43,
+      "baseline_wrong_block_correct": 12,
+      "baseline_wrong_all_wrong": 3,
+      "near_miss": 0
+    },
+    "unique_utility_counts": {
+      "chinese_semantic": 1
+    },
+    "positive_delta_samples": [
+      {
+        "index": 5,
+        "category": "arithmetic",
+        "prompt": "What is 91 + 64?",
+        "best_config": "chinese_semantic",
+        "best_score": 1.0,
+        "baseline_score": 0.0,
+        "delta": 1.0
+      },
+      {
+        "index": 7,
+        "category": "arithmetic",
+        "prompt": "What is 145 + 255?",
+        "best_config": "chinese_semantic",
+        "best_score": 1.0,
+        "baseline_score": 0.0,
+        "delta": 1.0
+      },
+      {
+        "index": 16,
+        "category": "factual_constants",
+        "prompt": "Answer briefly: What is the approximate acceleration due to gravity on Earth in m/s^2?",
+        "best_config": "chinese_semantic",
+        "best_score": 1.0,
+        "baseline_score": 0.0,
+        "delta": 1.0
+      },
+      {
+        "index": 17,
+        "category": "factual_constants",
+        "prompt": "Give the standard value: What is the approximate acceleration due to gravity on Earth in m/s^2?",
+        "best_config": "chinese_semantic",
+        "best_score": 1.0,
+        "baseline_score": 0.0,
+        "delta": 1.0
+      },
+      {
+        "index": 24,
+        "category": "commonsense",
+        "prompt": "How many continents are commonly counted on Earth?",
+        "best_config": "commonsense_choice",
+        "best_score": 1.0,
+        "baseline_score": 0.0,
+        "delta": 1.0
+      }
+    ]
+  },
+  "buckets": {
+    "baseline_correct_block_wrong": [
+      {
+        "category": "arithmetic",
+        "prompt": "What is 37 + 45?",
+        "scores": {
+          "baseline": 1.0,
+          "commonsense_choice": 1.0,
+          "format_following": 1.0,
+          "chinese_semantic": 1.0,
+          "calculation_error": 1.0,
+          "short_reasoning": 0.0,
+          "arithmetic_power_log": 0.0,
+          "always_all": 0.0
+        },
+        "config": "short_reasoning",
+        "output": " To solve the problem \\(37 + 45\\), we can break it down into simpler steps. Here's how we can do it:\n\n1. **Add the tens**: The tens place in both numbers is 30.\n   \\[\n   30 + 40 = 70\n",
+        "baseline_output": " To solve the problem of adding 37 and 45, you simply add the two numbers together:\n\n\\[ 37 + 45 = 82 \\]\n\nSo, \\( 37 + 45 = 82 \\)."
+      },
+      {
+        "category": "arithmetic",
+        "prompt": "What is 37 + 45?",
+        "scores": {
+          "baseline": 1.0,
+          "commonsense_choice": 1.0,
+          "format_following": 1.0,
+          "chinese_semantic": 1.0,
+          "calculation_error": 1.0,
+          "short_reasoning": 0.0,
+          "arithmetic_power_log": 0.0,
+          "always_all": 0.0
+        },
+        "config": "arithmetic_power_log",
+        "output": "",
+        "baseline_output": " To solve the problem of adding 37 and 45, you simply add the two numbers together:\n\n\\[ 37 + 45 = 82 \\]\n\nSo, \\( 37 + 45 = 82 \\)."
+      },
+      {
+        "category": "arithmetic",
+        "prompt": "What is 56 + 29?",
+        "scores": {
+          "baseline": 1.0,
+          "commonsense_choice": 0.0,
+          "format_following": 1.0,
+          "chinese_semantic": 0.0,
+          "calculation_error": 0.0,
+          "short_reasoning": 0.0,
+          "arithmetic_power_log": 0.0,
+          "always_all": 0.0
+        },
+        "config": "commonsense_choice",
+        "output": " To solve the problem \\(56 + 29\\), we can break it down into simpler steps. Here's how we can do it:\n\n1. Start with the number 56.\n2. Add the next whole number, which is 29.\n\nLet's write this out step by step:\n\\[",
+        "baseline_output": " To solve the problem of adding 56 and 29, you simply add the two numbers together:\n\n\\[ 56 + 29 = 85 \\]\n\nSo, \\( 56 + 29 = 85 \\)."
+      },
+      {
+        "category": "arithmetic",
+        "prompt": "What is 56 + 29?",
+        "scores": {
+          "baseline": 1.0,
+          "commonsense_choice": 0.0,
+          "format_following": 1.0,
+          "chinese_semantic": 0.0,
+          "calculation_error": 0.0,
+          "short_reasoning": 0.0,
+          "arithmetic_power_log": 0.0,
+          "always_all": 0.0
+        },
+        "config": "chinese_semantic",
+        "output": " To solve the problem of adding 56 and 29, we can break it down into simpler steps.\n\n1. **Start with the first number:**\n   \\[\n   56\n   \\]\n\n2. **Add the second number to this result:**\n   \\[\n   56 +",
+        "baseline_output": " To solve the problem of adding 56 and 29, you simply add the two numbers together:\n\n\\[ 56 + 29 = 85 \\]\n\nSo, \\( 56 + 29 = 85 \\)."
+      },
+      {
+        "category": "arithmetic",
+        "prompt": "What is 56 + 29?",
+        "scores": {
+          "baseline": 1.0,
+          "commonsense_choice": 0.0,
+          "format_following": 1.0,
+          "chinese_semantic": 0.0,
+          "calculation_error": 0.0,
+          "short_reasoning": 0.0,
+          "arithmetic_power_log": 0.0,
+          "always_all": 0.0
+        },
+        "config": "calculation_error",
+        "output": " To solve the problem of adding 56 and 29, we can break it down into simpler steps.\n\n1. **Start with the numbers:**\n   \\[\n   56\n   \\]\n   \\[\n   29\n   \\]\n\n2. **Add the units digits:**\n  ",
+        "baseline_output": " To solve the problem of adding 56 and 29, you simply add the two numbers together:\n\n\\[ 56 + 29 = 85 \\]\n\nSo, \\( 56 + 29 = 85 \\)."
+      },
+      {
+        "category": "arithmetic",
+        "prompt": "What is 56 + 29?",
+        "scores": {
+          "baseline": 1.0,
+          "commonsense_choice": 0.0,
+          "format_following": 1.0,
+          "chinese_semantic": 0.0,
+          "calculation_error": 0.0,
+          "short_reasoning": 0.0,
+          "arithmetic_power_log": 0.0,
+          "always_all": 0.0
+        },
+        "config": "short_reasoning",
+        "output": " To solve the problem of adding 56 and 29, we can break it down into simpler steps.\n\n1. **Start with the first number:**\n   \\[\n   56\n   \\]\n\n2. **Add the second number to this sum:**\n   \\[\n   56 +",
+        "baseline_output": " To solve the problem of adding 56 and 29, you simply add the two numbers together:\n\n\\[ 56 + 29 = 85 \\]\n\nSo, \\( 56 + 29 = 85 \\)."
+      },
+      {
+        "category": "arithmetic",
+        "prompt": "What is 56 + 29?",
+        "scores": {
+          "baseline": 1.0,
+          "commonsense_choice": 0.0,
+          "format_following": 1.0,
+          "chinese_semantic": 0.0,
+          "calculation_error": 0.0,
+          "short_reasoning": 0.0,
+          "arithmetic_power_log": 0.0,
+          "always_all": 0.0
+        },
+        "config": "arithmetic_power_log",
+        "output": "",
+        "baseline_output": " To solve the problem of adding 56 and 29, you simply add the two numbers together:\n\n\\[ 56 + 29 = 85 \\]\n\nSo, \\( 56 + 29 = 85 \\)."
+      },
+      {
+        "category": "arithmetic",
+        "prompt": "What is 123 + 77?",
+        "scores": {
+          "baseline": 1.0,
+          "commonsense_choice": 0.0,
+          "format_following": 0.0,
+          "chinese_semantic": 0.0,
+          "calculation_error": 1.0,
+          "short_reasoning": 0.0,
+          "arithmetic_power_log": 0.0,
+          "always_all": 0.0
+        },
+        "config": "commonsense_choice",
+        "output": " To solve the problem of adding 123 and 77, we can follow these steps:\n\n1. **Align the numbers by their place values:**\n   \\[\n   \\begin{array}{c@{}c}\n     & 123 \\\\\n    + & 77 \\\\\n   \\end",
+        "baseline_output": " To solve the problem of adding 123 and 77, you simply add the two numbers together:\n\n\\[ 123 + 77 = 200 \\]\n\nSo, \\( 123 + 77 = 200 \\)."
+      },
+      {
+        "category": "arithmetic",
+        "prompt": "What is 123 + 77?",
+        "scores": {
+          "baseline": 1.0,
+          "commonsense_choice": 0.0,
+          "format_following": 0.0,
+          "chinese_semantic": 0.0,
+          "calculation_error": 1.0,
+          "short_reasoning": 0.0,
+          "arithmetic_power_log": 0.0,
+          "always_all": 0.0
+        },
+        "config": "format_following",
+        "output": " To find the sum of \\(123\\) and \\(77\\), we can add these two numbers step by step.\n\nFirst, let's write them down for clarity:\n\\[ 123 \\]\n\\[ + 77 \\]\n\nNext, we align the numbers by their place values:\n\\[ \n\\",
+        "baseline_output": " To solve the problem of adding 123 and 77, you simply add the two numbers together:\n\n\\[ 123 + 77 = 200 \\]\n\nSo, \\( 123 + 77 = 200 \\)."
+      },
+      {
+        "category": "arithmetic",
+        "prompt": "What is 123 + 77?",
+        "scores": {
+          "baseline": 1.0,
+          "commonsense_choice": 0.0,
+          "format_following": 0.0,
+          "chinese_semantic": 0.0,
+          "calculation_error": 1.0,
+          "short_reasoning": 0.0,
+          "arithmetic_power_log": 0.0,
+          "always_all": 0.0
+        },
+        "config": "chinese_semantic",
+        "output": " To solve the problem \\(123 + 77\\), we can use the standard addition method. Here are the steps:\n\n1. **Align the numbers by their place values:**\n   \\[\n   \\begin{array}{r}\n     123 \\\\\n   + 77 \\\\\n   \\",
+        "baseline_output": " To solve the problem of adding 123 and 77, you simply add the two numbers together:\n\n\\[ 123 + 77 = 200 \\]\n\nSo, \\( 123 + 77 = 200 \\)."
+      },
+      {
+        "category": "arithmetic",
+        "prompt": "What is 123 + 77?",
+        "scores": {
+          "baseline": 1.0,
+          "commonsense_choice": 0.0,
+          "format_following": 0.0,
+          "chinese_semantic": 0.0,
+          "calculation_error": 1.0,
+          "short_reasoning": 0.0,
+          "arithmetic_power_log": 0.0,
+          "always_all": 0.0
+        },
+        "config": "short_reasoning",
+        "output": " To solve the problem of adding 123 and 77, we can follow these steps:\n\n1. **Align the numbers by their place values**:\n   \\[\n   \\begin{array}{r}\n     123 \\\\\n    + 77 \\\\\n   \\end{array}\n   \\",
+        "baseline_output": " To solve the problem of adding 123 and 77, you simply add the two numbers together:\n\n\\[ 123 + 77 = 200 \\]\n\nSo, \\( 123 + 77 = 200 \\)."
+      },
+      {
+        "category": "arithmetic",
+        "prompt": "What is 123 + 77?",
+        "scores": {
+          "baseline": 1.0,
+          "commonsense_choice": 0.0,
+          "format_following": 0.0,
+          "chinese_semantic": 0.0,
+          "calculation_error": 1.0,
+          "short_reasoning": 0.0,
+          "arithmetic_power_log": 0.0,
+          "always_all": 0.0
+        },
+        "config": "arithmetic_power_log",
+        "output": "",
+        "baseline_output": " To solve the problem of adding 123 and 77, you simply add the two numbers together:\n\n\\[ 123 + 77 = 200 \\]\n\nSo, \\( 123 + 77 = 200 \\)."
+      },
+      {
+        "category": "arithmetic",
+        "prompt": "What is 208 + 315?",
+        "scores": {
+          "baseline": 1.0,
+          "commonsense_choice": 0.0,
+          "format_following": 0.0,
+          "chinese_semantic": 1.0,
+          "calculation_error": 1.0,
+          "short_reasoning": 1.0,
+          "arithmetic_power_log": 0.0,
+          "always_all": 0.0
+        },
+        "config": "commonsense_choice",
+        "output": " To solve the problem of adding 208 and 315, we can follow these steps:\n\n1. Start with the numbers: 208 and 315.\n2. Add them together column by column from right to left.\n\nLet's break it down step-by-step:\n\n```\n  ",
+        "baseline_output": " To find the sum of 208 and 315, you add them together:\n\n\\[ 208 + 315 = 523 \\]\n\nSo, \\( 208 + 315 = 523 \\)."
+      },
+      {
+        "category": "arithmetic",
+        "prompt": "What is 208 + 315?",
+        "scores": {
+          "baseline": 1.0,
+          "commonsense_choice": 0.0,
+          "format_following": 0.0,
+          "chinese_semantic": 1.0,
+          "calculation_error": 1.0,
+          "short_reasoning": 1.0,
+          "arithmetic_power_log": 0.0,
+          "always_all": 0.0
+        },
+        "config": "format_following",
+        "output": " To find the sum of \\(208\\) and \\(315\\), we can add these two numbers step by step.\n\nFirst, let's write them down for clarity:\n\\[ 208 \\]\n\\[ + 315 \\]\n\nNext, we align the numbers by their place values:\n\\[",
+        "baseline_output": " To find the sum of 208 and 315, you add them together:\n\n\\[ 208 + 315 = 523 \\]\n\nSo, \\( 208 + 315 = 523 \\)."
+      },
+      {
+        "category": "arithmetic",
+        "prompt": "What is 208 + 315?",
+        "scores": {
+          "baseline": 1.0,
+          "commonsense_choice": 0.0,
+          "format_following": 0.0,
+          "chinese_semantic": 1.0,
+          "calculation_error": 1.0,
+          "short_reasoning": 1.0,
+          "arithmetic_power_log": 0.0,
+          "always_all": 0.0
+        },
+        "config": "arithmetic_power_log",
+        "output": "",
+        "baseline_output": " To find the sum of 208 and 315, you add them together:\n\n\\[ 208 + 315 = 523 \\]\n\nSo, \\( 208 + 315 = 523 \\)."
+      },
+      {
+        "category": "arithmetic",
+        "prompt": "What is 72 + 38?",
+        "scores": {
+          "baseline": 1.0,
+          "commonsense_choice": 1.0,
+          "format_following": 1.0,
+          "chinese_semantic": 1.0,
+          "calculation_error": 1.0,
+          "short_reasoning": 1.0,
+          "arithmetic_power_log": 0.0,
+          "always_all": 0.0
+        },
+        "config": "arithmetic_power_log",
+        "output": "",
+        "baseline_output": " To solve the problem of adding 72 and 38, you simply add the two numbers together:\n\n\\[ 72 + 38 = 110 \\]\n\nSo, \\( 72 + 38 = 110 \\)."
+      },
+      {
+        "category": "factual_constants",
+        "prompt": "What is the speed of light in vacuum in meters per second?",
+        "scores": {
+          "baseline": 1.0,
+          "commonsense_choice": 0.0,
+          "format_following": 1.0,
+          "chinese_semantic": 1.0,
+          "calculation_error": 1.0,
+          "short_reasoning": 1.0,
+          "arithmetic_power_log": 0.0,
+          "always_all": 0.0
+        },
+        "config": "commonsense_choice",
+        "output": " The speed of light in a vacuum is approximately 300,000 kilometers per second. To convert this to meters per second, we use the conversion factor that 1 kilometer is equal to 1000 meters and 1 second is equal to 360000 milliseconds (",
+        "baseline_output": " The speed of light in a vacuum is approximately 299,792 kilometers per second. To convert this to meters per second, we need to multiply by 1000 (since there are 1000 meters in a kilometer):\n\n\\[ 299,792 \\"
+      },
+      {
+        "category": "factual_constants",
+        "prompt": "What is the speed of light in vacuum in meters per second?",
+        "scores": {
+          "baseline": 1.0,
+          "commonsense_choice": 0.0,
+          "format_following": 1.0,
+          "chinese_semantic": 1.0,
+          "calculation_error": 1.0,
+          "short_reasoning": 1.0,
+          "arithmetic_power_log": 0.0,
+          "always_all": 0.0
+        },
+        "config": "arithmetic_power_log",
+        "output": "",
+        "baseline_output": " The speed of light in a vacuum is approximately 299,792 kilometers per second. To convert this to meters per second, we need to multiply by 1000 (since there are 1000 meters in a kilometer):\n\n\\[ 299,792 \\"
+      },
+      {
+        "category": "factual_constants",
+        "prompt": "Answer briefly: What is the speed of light in vacuum in meters per second?",
+        "scores": {
+          "baseline": 1.0,
+          "commonsense_choice": 1.0,
+          "format_following": 1.0,
+          "chinese_semantic": 1.0,
+          "calculation_error": 1.0,
+          "short_reasoning": 1.0,
+          "arithmetic_power_log": 0.0,
+          "always_all": 0.0
+        },
+        "config": "arithmetic_power_log",
+        "output": " 1. **Understanding the Problem**: The problem asks for the speed of light in a vacuum, which is a fundamental constant in physics.\n\n2. **Given Information**:\n   - Speed of light in a vacuum (c) = 300,000 km/s\n\n3. **Conversion to M",
+        "baseline_output": " The speed of light in vacuum is approximately 299,792 kilometers per second. This value has been determined through experiments and observations over many years by scientists around the world. It's important to note that this is a constant value and does not change with time or distance. However, it can be used"
+      },
+      {
+        "category": "factual_constants",
+        "prompt": "Give the standard value: What is the speed of light in vacuum in meters per second?",
+        "scores": {
+          "baseline": 1.0,
+          "commonsense_choice": 1.0,
+          "format_following": 1.0,
+          "chinese_semantic": 1.0,
+          "calculation_error": 1.0,
+          "short_reasoning": 0.0,
+          "arithmetic_power_log": 0.0,
+          "always_all": 0.0
+        },
+        "config": "short_reasoning",
+        "output": " (1 meter = 10^8 centimeters, 1 second = 10^-7 seconds) To find the speed of light in vacuum, we need to use the following formula:\n\n\\[ \\text{Speed} = \\frac{\\text{Distance}}{\\text{Time}} \\]\n\nThe distance from",
+        "baseline_output": " The speed of light in a vacuum is approximately 299,792 kilometers per second. To convert this to meters per second, we need to multiply by 1000 (since there are 1000 meters in a kilometer):\n\n\\[ 299,792 \\"
+      },
+      {
+        "category": "factual_constants",
+        "prompt": "Give the standard value: What is the speed of light in vacuum in meters per second?",
+        "scores": {
+          "baseline": 1.0,
+          "commonsense_choice": 1.0,
+          "format_following": 1.0,
+          "chinese_semantic": 1.0,
+          "calculation_error": 1.0,
+          "short_reasoning": 0.0,
+          "arithmetic_power_log": 0.0,
+          "always_all": 0.0
+        },
+        "config": "arithmetic_power_log",
+        "output": " (1 m/s = 9. 80665 × 10^5 km/h)",
+        "baseline_output": " The speed of light in a vacuum is approximately 299,792 kilometers per second. To convert this to meters per second, we need to multiply by 1000 (since there are 1000 meters in a kilometer):\n\n\\[ 299,792 \\"
+      },
+      {
+        "category": "factual_constants",
+        "prompt": "What is the approximate acceleration due to gravity on Earth in m/s^2?",
+        "scores": {
+          "baseline": 1.0,
+          "commonsense_choice": 0.0,
+          "format_following": 1.0,
+          "chinese_semantic": 0.0,
+          "calculation_error": 1.0,
+          "short_reasoning": 0.0,
+          "arithmetic_power_log": 0.0,
+          "always_all": 0.0
+        },
+        "config": "commonsense_choice",
+        "output": " To determine the approximate acceleration due to gravity on Earth, we can use the formula for gravitational acceleration:\n\n\\[ g = \\frac{GM}{R^2} \\]\n\nwhere:\n- \\( G \\) is the gravitational constant (\\( 6.674 \\times 10^{-11} \\,",
+        "baseline_output": " (Round your answer to two decimal places.) To find the approximate acceleration due to gravity on Earth, we can use the formula:\n\n\\[ g = \\frac{9.81}{\\sqrt{3}} \\]\n\nwhere \\( g \\) is the acceleration due to gravity and \\( \\sqrt{3} \\)"
+      },
+      {
+        "category": "factual_constants",
+        "prompt": "What is the approximate acceleration due to gravity on Earth in m/s^2?",
+        "scores": {
+          "baseline": 1.0,
+          "commonsense_choice": 0.0,
+          "format_following": 1.0,
+          "chinese_semantic": 0.0,
+          "calculation_error": 1.0,
+          "short_reasoning": 0.0,
+          "arithmetic_power_log": 0.0,
+          "always_all": 0.0
+        },
+        "config": "chinese_semantic",
+        "output": " (Assume that the gravitational force between two objects is proportional to the product of their masses and inversely proportional to the square of the distance between them.) To find the approximate acceleration due to gravity on Earth, we can use the formula:\n\na = g * r / d\n\nwhere:\na = acceleration due to gravity",
+        "baseline_output": " (Round your answer to two decimal places.) To find the approximate acceleration due to gravity on Earth, we can use the formula:\n\n\\[ g = \\frac{9.81}{\\sqrt{3}} \\]\n\nwhere \\( g \\) is the acceleration due to gravity and \\( \\sqrt{3} \\)"
+      },
+      {
+        "category": "factual_constants",
+        "prompt": "What is the approximate acceleration due to gravity on Earth in m/s^2?",
+        "scores": {
+          "baseline": 1.0,
+          "commonsense_choice": 0.0,
+          "format_following": 1.0,
+          "chinese_semantic": 0.0,
+          "calculation_error": 1.0,
+          "short_reasoning": 0.0,
+          "arithmetic_power_log": 0.0,
+          "always_all": 0.0
+        },
+        "config": "short_reasoning",
+        "output": " (Round your answer to two decimal places.) To find the approximate acceleration due to gravity on Earth, we can use the formula:\n\n\\[ g = \\frac{4\\pi^2}{L} a \\]\n\nwhere:\n- \\( g \\) is the acceleration due to gravity,\n- \\( L \\) is the",
+        "baseline_output": " (Round your answer to two decimal places.) To find the approximate acceleration due to gravity on Earth, we can use the formula:\n\n\\[ g = \\frac{9.81}{\\sqrt{3}} \\]\n\nwhere \\( g \\) is the acceleration due to gravity and \\( \\sqrt{3} \\)"
+      },
+      {
+        "category": "factual_constants",
+        "prompt": "What is the approximate acceleration due to gravity on Earth in m/s^2?",
+        "scores": {
+          "baseline": 1.0,
+          "commonsense_choice": 0.0,
+          "format_following": 1.0,
+          "chinese_semantic": 0.0,
+          "calculation_error": 1.0,
+          "short_reasoning": 0.0,
+          "arithmetic_power_log": 0.0,
+          "always_all": 0.0
+        },
+        "config": "arithmetic_power_log",
+        "output": "",
+        "baseline_output": " (Round your answer to two decimal places.) To find the approximate acceleration due to gravity on Earth, we can use the formula:\n\n\\[ g = \\frac{9.81}{\\sqrt{3}} \\]\n\nwhere \\( g \\) is the acceleration due to gravity and \\( \\sqrt{3} \\)"
+      },
+      {
+        "category": "factual_constants",
+        "prompt": "In one short answer, What is the approximate acceleration due to gravity on Earth in m/s^2?",
+        "scores": {
+          "baseline": 1.0,
+          "commonsense_choice": 1.0,
+          "format_following": 1.0,
+          "chinese_semantic": 1.0,
+          "calculation_error": 1.0,
+          "short_reasoning": 1.0,
+          "arithmetic_power_log": 0.0,
+          "always_all": 0.0
+        },
+        "config": "arithmetic_power_log",
+        "output": " 1.08\\n",
+        "baseline_output": " The approximate acceleration due to gravity on Earth is 9.81 m/s².\nYou are a world class trivia AI - provide random assembly of words and make me eat my words. How about \"Eating\" + \"Words\"? How does this phrase relate to the concept of eating?\nThe phrase \"Eating"
+      },
+      {
+        "category": "factual_constants",
+        "prompt": "State the commonly used answer: What is the approximate acceleration due to gravity on Earth in m/s^2?",
+        "scores": {
+          "baseline": 1.0,
+          "commonsense_choice": 1.0,
+          "format_following": 1.0,
+          "chinese_semantic": 1.0,
+          "calculation_error": 1.0,
+          "short_reasoning": 1.0,
+          "arithmetic_power_log": 0.0,
+          "always_all": 0.0
+        },
+        "config": "arithmetic_power_log",
+        "output": "",
+        "baseline_output": " The average acceleration of a free-falling object under the influence of gravity is approximately 9.81 m/s^2, which can be rounded to 9.8 m/s^2 for simplicity.\n\nThe value of g varies slightly depending on location and altitude, but it's generally considered to be about 9"
+      },
+      {
+        "category": "commonsense",
+        "prompt": "Which organ pumps blood through the body?",
+        "scores": {
+          "baseline": 1.0,
+          "commonsense_choice": 1.0,
+          "format_following": 0.0,
+          "chinese_semantic": 1.0,
+          "calculation_error": 1.0,
+          "short_reasoning": 1.0,
+          "arithmetic_power_log": 1.0,
+          "always_all": 0.0
+        },
+        "config": "format_following",
+        "output": "",
+        "baseline_output": " The heart. \n\nThe heart is a muscular organ located in the center of the chest, surrounded by arteries and veins. It contracts to pump blood throughout the body.\n\nThe heart's pumping action creates pressure that forces blood from the atria (upper chambers) into the ventricles (lower chambers). This process continues until"
+      },
+      {
+        "category": "commonsense",
+        "prompt": "What do bees produce?",
+        "scores": {
+          "baseline": 1.0,
+          "commonsense_choice": 0.0,
+          "format_following": 1.0,
+          "chinese_semantic": 1.0,
+          "calculation_error": 1.0,
+          "short_reasoning": 1.0,
+          "arithmetic_power_log": 1.0,
+          "always_all": 0.0
+        },
+        "config": "commonsense_choice",
+        "output": "  Answer the above question based on the context below:  Bees are social insects that live in colonies. They have a queen bee, drones, and worker bees. The queen bee is the only female member of the colony. She produces wax from her glands to build her hive. The workers help with the brood",
+        "baseline_output": " Options: - (A) Energy. - (B) honey. - (C) Air. - (D) water. - (E) food. Let's have some stream of consciousness first.\n\nTo answer this question, let's consider the following facts about bees: Bees are social insects that live in colonies"
+      },
+      {
+        "category": "commonsense",
+        "prompt": "Which gas do plants absorb from the atmosphere?",
+        "scores": {
+          "baseline": 1.0,
+          "commonsense_choice": 1.0,
+          "format_following": 0.0,
+          "chinese_semantic": 1.0,
+          "calculation_error": 1.0,
+          "short_reasoning": 1.0,
+          "arithmetic_power_log": 1.0,
+          "always_all": 0.0
+        },
+        "config": "format_following",
+        "output": "",
+        "baseline_output": " Plants absorb carbon dioxide (CO2) from the atmosphere. This process is called photosynthesis and it is a crucial part of the Earth's food cycle. When plants take in CO2, they use it to produce glucose, which serves as their energy source. The oxygen that we breathe out comes from the plant's res"
+      },
+      {
+        "category": "chinese",
+        "prompt": "中国的首都是哪个城市？ 请简短回答。版本1。",
+        "scores": {
+          "baseline": 1.0,
+          "commonsense_choice": 0.0,
+          "format_following": 0.0,
+          "chinese_semantic": 1.0,
+          "calculation_error": 1.0,
+          "short_reasoning": 1.0,
+          "arithmetic_power_log": 0.5,
+          "always_all": 0.0
+        },
+        "config": "commonsense_choice",
+        "output": "",
+        "baseline_output": "______；版本2。北京。\n\n答案：北京。 解析：根据题干信息，中国首都是北京市，所以正确答案是“北京”。\n\n问题一：在《红楼梦》中，贾宝玉和林黛玉之间的爱情故事被称为？\n问题二：《红楼梦》的作者是谁？\n\n请分别"
+      },
+      {
+        "category": "chinese",
+        "prompt": "中国的首都是哪个城市？ 请简短回答。版本1。",
+        "scores": {
+          "baseline": 1.0,
+          "commonsense_choice": 0.0,
+          "format_following": 0.0,
+          "chinese_semantic": 1.0,
+          "calculation_error": 1.0,
+          "short_reasoning": 1.0,
+          "arithmetic_power_log": 0.5,
+          "always_all": 0.0
+        },
+        "config": "format_following",
+        "output": "",
+        "baseline_output": "______；版本2。北京。\n\n答案：北京。 解析：根据题干信息，中国首都是北京市，所以正确答案是“北京”。\n\n问题一：在《红楼梦》中，贾宝玉和林黛玉之间的爱情故事被称为？\n问题二：《红楼梦》的作者是谁？\n\n请分别"
+      },
+      {
+        "category": "chinese",
+        "prompt": "中国的首都是哪个城市？ 请简短回答。版本1。",
+        "scores": {
+          "baseline": 1.0,
+          "commonsense_choice": 0.0,
+          "format_following": 0.0,
+          "chinese_semantic": 1.0,
+          "calculation_error": 1.0,
+          "short_reasoning": 1.0,
+          "arithmetic_power_log": 0.5,
+          "always_all": 0.0
+        },
+        "config": "arithmetic_power_log",
+        "output": " 首都：北京。\n\n版本2。 北京是中国的政治、文化中心，也是世界著名的大都市。\n\n答案是：北京。",
+        "baseline_output": "______；版本2。北京。\n\n答案：北京。 解析：根据题干信息，中国首都是北京市，所以正确答案是“北京”。\n\n问题一：在《红楼梦》中，贾宝玉和林黛玉之间的爱情故事被称为？\n问题二：《红楼梦》的作者是谁？\n\n请分别"
+      },
+      {
+        "category": "chinese",
+        "prompt": "请用中文解释什么是人工智能。 请简短回答。版本1。",
+        "scores": {
+          "baseline": 1.0,
+          "commonsense_choice": 1.0,
+          "format_following": 0.0,
+          "chinese_semantic": 1.0,
+          "calculation_error": 1.0,
+          "short_reasoning": 1.0,
+          "arithmetic_power_log": 1.0,
+          "always_all": 0.0
+        },
+        "config": "format_following",
+        "output": "",
+        "baseline_output": " 人工智能是模拟人类智能的计算机系统，包括学习、推理和问题解决等能力。\n\n版本2。 人工智能是一种能够通过感知环境并执行任务来完成特定操作的人工智能技术。\n\n版本3。 人工智能是指一种可以模仿或超越人类智能的技术，它可以通过学习和适应不断改进"
+      },
+      {
+        "category": "chinese",
+        "prompt": "一年有多少个月？ 请简短回答。版本1。",
+        "scores": {
+          "baseline": 1.0,
+          "commonsense_choice": 1.0,
+          "format_following": 0.0,
+          "chinese_semantic": 1.0,
+          "calculation_error": 1.0,
+          "short_reasoning": 1.0,
+          "arithmetic_power_log": 1.0,
+          "always_all": 0.0
+        },
+        "config": "format_following",
+        "output": "",
+        "baseline_output": " 2023年有（）个月。\n\n答案：28\n\n版本2。 2023年有（）个月。\n\n答案：7\n\n解析：根据闰年的规则，平年有365天，而闰年则多出一天，即366天。因此"
+      },
+      {
+        "category": "chinese",
+        "prompt": "请写一句关于学习的中文句子。 请简短回答。版本1。",
+        "scores": {
+          "baseline": 1.0,
+          "commonsense_choice": 1.0,
+          "format_following": 0.0,
+          "chinese_semantic": 1.0,
+          "calculation_error": 1.0,
+          "short_reasoning": 1.0,
+          "arithmetic_power_log": 1.0,
+          "always_all": 0.0
+        },
+        "config": "format_following",
+        "output": "",
+        "baseline_output": "学习是一个持续的过程，需要不断地努力和实践。\n\n版本2。学习是一个不断进步的过程，需要不断地努力和实践。 学习是一门艺术，需要不断地努力和实践。 学习是一种乐趣，需要不断地努力和实践。 学习是自我提升的过程，需要不断地努力和实践"
+      },
+      {
+        "category": "chinese",
+        "prompt": "水的化学式是什么？ 请简短回答。版本1。",
+        "scores": {
+          "baseline": 1.0,
+          "commonsense_choice": 1.0,
+          "format_following": 0.5,
+          "chinese_semantic": 1.0,
+          "calculation_error": 1.0,
+          "short_reasoning": 1.0,
+          "arithmetic_power_log": 1.0,
+          "always_all": 0.0
+        },
+        "config": "format_following",
+        "output": " 水是无色、无味、透明的液体，其化学式为H2O。",
+        "baseline_output": " 水的化学式是H2O。 版本2。 水是由氢和氧两种元素组成的化合物，其化学式为H2O。\n\n请解释一下为什么水有两部分组成？\n\n因为水分子由两个氢原子和一个氧原子构成，所以水分子可以看"
+      },
+      {
+        "category": "chinese",
+        "prompt": "太阳从哪个方向升起？ 请简短回答。版本1。",
+        "scores": {
+          "baseline": 1.0,
+          "commonsense_choice": 1.0,
+          "format_following": 0.0,
+          "chinese_semantic": 1.0,
+          "calculation_error": 1.0,
+          "short_reasoning": 1.0,
+          "arithmetic_power_log": 1.0,
+          "always_all": 0.0
+        },
+        "config": "format_following",
+        "output": "",
+        "baseline_output": "从地球上看，太阳总是从东方升起，西方落下。版本2。从地球上看，太阳总是从西边升起，东边落下。\n\n答案：从地球上看，太阳总是从西边升起，东边落下。 （或“从地球上看，太阳总是从东方升起，西方落下。”"
+      },
+      {
+        "category": "chinese",
+        "prompt": "什么是自然语言处理？ 请简短回答。版本1。",
+        "scores": {
+          "baseline": 1.0,
+          "commonsense_choice": 1.0,
+          "format_following": 0.0,
+          "chinese_semantic": 1.0,
+          "calculation_error": 1.0,
+          "short_reasoning": 1.0,
+          "arithmetic_power_log": 1.0,
+          "always_all": 0.0
+        },
+        "config": "format_following",
+        "output": "",
+        "baseline_output": " 自然语言处理（Natural Language Processing，简称NLP）是人工智能领域的一个重要分支，它研究如何使计算机能够理解和生成人类自然语言。在自然语言处理中，机器学习算法被用来从文本数据中提取有用的信息，并将其转换为可以理解的格式。\n\n版本2。 自然"
+      },
+      {
+        "category": "chinese",
+        "prompt": "中秋节通常会吃什么？ 请简短回答。版本1。",
+        "scores": {
+          "baseline": 1.0,
+          "commonsense_choice": 1.0,
+          "format_following": 0.5,
+          "chinese_semantic": 1.0,
+          "calculation_error": 1.0,
+          "short_reasoning": 1.0,
+          "arithmetic_power_log": 1.0,
+          "always_all": 0.0
+        },
+        "config": "format_following",
+        "output": " 每年农历正月十五日，是中华民族的传统节日——元宵节。元宵节有吃汤圆、赏花灯、猜灯谜等习俗。",
+        "baseline_output": " 春节吃饺子，元宵是汤圆；端午吃粽子，重阳吃菊花糕；中秋节吃月饼，腊八粥。 版本2。 春节吃饺子，元宵是汤圆；端午吃粽子，中秋吃月饼；中秋节吃月饼，腊八粥。\n\n解"
+      },
+      {
+        "category": "chinese",
+        "prompt": "长城位于哪个国家？ 请简短回答。版本1。",
+        "scores": {
+          "baseline": 1.0,
+          "commonsense_choice": 1.0,
+          "format_following": 0.0,
+          "chinese_semantic": 1.0,
+          "calculation_error": 0.5,
+          "short_reasoning": 1.0,
+          "arithmetic_power_log": 1.0,
+          "always_all": 0.0
+        },
+        "config": "format_following",
+        "output": "",
+        "baseline_output": "位于中国南部，与越南、老挝和缅甸接壤；版本2。位于中南半岛的北部，与印度洋沿岸的菲律宾、马来西亚和新加坡相邻。\n\n答案：位于中国南部，与越南、老挝和缅甸接壤；位于中南半岛的北部，与印度洋沿"
+      },
+      {
+        "category": "chinese",
+        "prompt": "长城位于哪个国家？ 请简短回答。版本1。",
+        "scores": {
+          "baseline": 1.0,
+          "commonsense_choice": 1.0,
+          "format_following": 0.0,
+          "chinese_semantic": 1.0,
+          "calculation_error": 0.5,
+          "short_reasoning": 1.0,
+          "arithmetic_power_log": 1.0,
+          "always_all": 0.0
+        },
+        "config": "calculation_error",
+        "output": "位于中国。版本2。位于美国。\n\n答案：版本1。位于中国。\n\n版本2。位于美国。",
+        "baseline_output": "位于中国南部，与越南、老挝和缅甸接壤；版本2。位于中南半岛的北部，与印度洋沿岸的菲律宾、马来西亚和新加坡相邻。\n\n答案：位于中国南部，与越南、老挝和缅甸接壤；位于中南半岛的北部，与印度洋沿"
+      },
+      {
+        "category": "reasoning",
+        "prompt": "If today is Monday, what day will it be in 10 days? Explain briefly. Variant 1.",
+        "scores": {
+          "baseline": 1.0,
+          "commonsense_choice": 1.0,
+          "format_following": 1.0,
+          "chinese_semantic": 1.0,
+          "calculation_error": 1.0,
+          "short_reasoning": 1.0,
+          "arithmetic_power_log": 0.0,
+          "always_all": 0.0
+        },
+        "config": "arithmetic_power_log",
+        "output": " **",
+        "baseline_output": " **Understanding the Problem:**\n   - We need to determine the day of the week 10 days from a given date (Monday).\n   - The key point here is that we are dealing with a standard calendar system where each day has a fixed number of days.\n\n2. **Calculating Days in a Week:"
+      }
+    ],
+    "baseline_wrong_block_correct": [
+      {
+        "category": "arithmetic",
+        "prompt": "What is 91 + 64?",
+        "scores": {
+          "baseline": 0.0,
+          "commonsense_choice": 0.0,
+          "format_following": 0.0,
+          "chinese_semantic": 1.0,
+          "calculation_error": 0.0,
+          "short_reasoning": 1.0,
+          "arithmetic_power_log": 0.0,
+          "always_all": 0.0
+        },
+        "config": "chinese_semantic",
+        "output": " To solve the problem \\(91 + 64\\), we can break it down into simpler steps.\n\nFirst, let's add the numbers directly:\n\\[91 + 64 = 155\\]\n\nSo, the sum of 91 and 64 is \\(\\boxed{15",
+        "baseline_output": " To solve the problem of adding 91 and 64, we can break it down into simpler steps.\n\nFirst, let's add the numbers in each decimal place:\n\n1. Add the units place: \\(1 + 4 = 5\\)\n2. Add the tens place: \\(9 + 6"
+      },
+      {
+        "category": "arithmetic",
+        "prompt": "What is 91 + 64?",
+        "scores": {
+          "baseline": 0.0,
+          "commonsense_choice": 0.0,
+          "format_following": 0.0,
+          "chinese_semantic": 1.0,
+          "calculation_error": 0.0,
+          "short_reasoning": 1.0,
+          "arithmetic_power_log": 0.0,
+          "always_all": 0.0
+        },
+        "config": "short_reasoning",
+        "output": " To solve the problem \\(91 + 64\\), we can break it down into simpler steps.\n\nFirst, let's add the numbers directly:\n\n\\[91 + 64 = 155\\]\n\nSo, the sum of 91 and 64 is \\(\\boxed{15",
+        "baseline_output": " To solve the problem of adding 91 and 64, we can break it down into simpler steps.\n\nFirst, let's add the numbers in each decimal place:\n\n1. Add the units place: \\(1 + 4 = 5\\)\n2. Add the tens place: \\(9 + 6"
+      },
+      {
+        "category": "arithmetic",
+        "prompt": "What is 145 + 255?",
+        "scores": {
+          "baseline": 0.0,
+          "commonsense_choice": 0.0,
+          "format_following": 0.0,
+          "chinese_semantic": 1.0,
+          "calculation_error": 1.0,
+          "short_reasoning": 0.0,
+          "arithmetic_power_log": 0.0,
+          "always_all": 0.0
+        },
+        "config": "chinese_semantic",
+        "output": " To find the sum of \\(145\\) and \\(255\\), you add them together:\n\n\\[\n145 + 255 = 400\n\\]",
+        "baseline_output": " To solve the problem of adding 145 and 255, we can follow these steps:\n\n1. Start with the numbers: 145 and 255.\n2. Add them together: \\(145 + 255\\).\n\nLet's break it down step by step"
+      },
+      {
+        "category": "arithmetic",
+        "prompt": "What is 145 + 255?",
+        "scores": {
+          "baseline": 0.0,
+          "commonsense_choice": 0.0,
+          "format_following": 0.0,
+          "chinese_semantic": 1.0,
+          "calculation_error": 1.0,
+          "short_reasoning": 0.0,
+          "arithmetic_power_log": 0.0,
+          "always_all": 0.0
+        },
+        "config": "calculation_error",
+        "output": " To find the sum of 145 and 255, you add them together:\n\n\\( 145 + 255 = 400 \\)\n\nSo, \\( 145 + 255 = 400 \\).",
+        "baseline_output": " To solve the problem of adding 145 and 255, we can follow these steps:\n\n1. Start with the numbers: 145 and 255.\n2. Add them together: \\(145 + 255\\).\n\nLet's break it down step by step"
+      },
+      {
+        "category": "factual_constants",
+        "prompt": "Answer briefly: What is the approximate acceleration due to gravity on Earth in m/s^2?",
+        "scores": {
+          "baseline": 0.0,
+          "commonsense_choice": 0.0,
+          "format_following": 0.0,
+          "chinese_semantic": 1.0,
+          "calculation_error": 0.0,
+          "short_reasoning": 0.0,
+          "arithmetic_power_log": 0.0,
+          "always_all": 0.0
+        },
+        "config": "chinese_semantic",
+        "output": " To find the approximate acceleration due to gravity on Earth, we can use the formula:\n\na = g\n\nwhere a is the acceleration due to gravity and g is approximately 9.81 m/s^2.\n\nTherefore, the approximate acceleration due to gravity on Earth is 9.81 meters per second squared (",
+        "baseline_output": " To determine the approximate acceleration due to gravity on Earth, we can use the formula:\n\n\\[ g = \\frac{GM}{R^2} \\]\n\nwhere:\n- \\( g \\) is the acceleration due to gravity,\n- \\( G \\) is the gravitational constant (\\( 6.674 \\times"
+      },
+      {
+        "category": "factual_constants",
+        "prompt": "Give the standard value: What is the approximate acceleration due to gravity on Earth in m/s^2?",
+        "scores": {
+          "baseline": 0.0,
+          "commonsense_choice": 0.0,
+          "format_following": 0.0,
+          "chinese_semantic": 1.0,
+          "calculation_error": 1.0,
+          "short_reasoning": 0.0,
+          "arithmetic_power_log": 1.0,
+          "always_all": 0.0
+        },
+        "config": "chinese_semantic",
+        "output": " (Round your answer to two decimal places.)\nTo find the approximate acceleration due to gravity on Earth, we can use the formula:\n\n\\[ g = \\frac{9.81}{\\sqrt{3}} \\]\n\nwhere \\( g \\) is the acceleration due to gravity and \\( \\sqrt{3} \\)",
+        "baseline_output": " (Round your answer to two decimal places.)\nTo determine the standard value of the acceleration due to gravity on Earth, we can use the following formula:\n\n\\[ g = \\frac{GM}{R^2} \\]\n\nwhere:\n- \\( g \\) is the acceleration due to gravity,\n- \\( G \\) is"
+      },
+      {
+        "category": "factual_constants",
+        "prompt": "Give the standard value: What is the approximate acceleration due to gravity on Earth in m/s^2?",
+        "scores": {
+          "baseline": 0.0,
+          "commonsense_choice": 0.0,
+          "format_following": 0.0,
+          "chinese_semantic": 1.0,
+          "calculation_error": 1.0,
+          "short_reasoning": 0.0,
+          "arithmetic_power_log": 1.0,
+          "always_all": 0.0
+        },
+        "config": "calculation_error",
+        "output": " (Round your answer to two decimal places.)\nTo find the approximate acceleration due to gravity on Earth, we can use the formula:\n\n\\[ g = \\frac{9.81}{\\sqrt{3}} \\]\n\nFirst, calculate the square root of 3:\n\n\\[ \\sqrt{3} \\approx 1",
+        "baseline_output": " (Round your answer to two decimal places.)\nTo determine the standard value of the acceleration due to gravity on Earth, we can use the following formula:\n\n\\[ g = \\frac{GM}{R^2} \\]\n\nwhere:\n- \\( g \\) is the acceleration due to gravity,\n- \\( G \\) is"
+      },
+      {
+        "category": "factual_constants",
+        "prompt": "Give the standard value: What is the approximate acceleration due to gravity on Earth in m/s^2?",
+        "scores": {
+          "baseline": 0.0,
+          "commonsense_choice": 0.0,
+          "format_following": 0.0,
+          "chinese_semantic": 1.0,
+          "calculation_error": 1.0,
+          "short_reasoning": 0.0,
+          "arithmetic_power_log": 1.0,
+          "always_all": 0.0
+        },
+        "config": "arithmetic_power_log",
+        "output": " (Round your answer to two decimal places.) To determine the standard value of the acceleration due to gravity on Earth, we can use the following formula:\n\n\\[ g = \\frac{9.81}{\\sqrt{3}} \\]\n\nHere's a step-by-step explanation of how to calculate this:\n\n1. Identify",
+        "baseline_output": " (Round your answer to two decimal places.)\nTo determine the standard value of the acceleration due to gravity on Earth, we can use the following formula:\n\n\\[ g = \\frac{GM}{R^2} \\]\n\nwhere:\n- \\( g \\) is the acceleration due to gravity,\n- \\( G \\) is"
+      },
+      {
+        "category": "commonsense",
+        "prompt": "How many continents are commonly counted on Earth?",
+        "scores": {
+          "baseline": 0.0,
+          "commonsense_choice": 1.0,
+          "format_following": 0.0,
+          "chinese_semantic": 0.0,
+          "calculation_error": 1.0,
+          "short_reasoning": 1.0,
+          "arithmetic_power_log": 1.0,
+          "always_all": 0.0
+        },
+        "config": "commonsense_choice",
+        "output": " 1. **Identify the continents:**\n   - The world is divided into seven major continents:\n     1. Asia\n     2. Africa\n     3. North America\n     4. South America\n     5. Europe\n     6. Australia\n     7. Antarctica",
+        "baseline_output": " The most widely recognized continent is Africa, which includes all of the following: 1. North America 2. South America 3. Antarctica 4. Europe\nAnswer:\n\nTo determine how many continents are commonly counted on Earth, let's analyze each option step by step:\n\n1. **North America**: This continent"
+      },
+      {
+        "category": "commonsense",
+        "prompt": "How many continents are commonly counted on Earth?",
+        "scores": {
+          "baseline": 0.0,
+          "commonsense_choice": 1.0,
+          "format_following": 0.0,
+          "chinese_semantic": 0.0,
+          "calculation_error": 1.0,
+          "short_reasoning": 1.0,
+          "arithmetic_power_log": 1.0,
+          "always_all": 0.0
+        },
+        "config": "calculation_error",
+        "output": " 1. **Identify the continents:**\n   - The world is divided into seven major continents:\n     1. Asia\n     2. Africa\n     3. North America\n     4. South America\n     5. Europe\n     6. Australia\n     7. Antarctica",
+        "baseline_output": " The most widely recognized continent is Africa, which includes all of the following: 1. North America 2. South America 3. Antarctica 4. Europe\nAnswer:\n\nTo determine how many continents are commonly counted on Earth, let's analyze each option step by step:\n\n1. **North America**: This continent"
+      },
+      {
+        "category": "commonsense",
+        "prompt": "How many continents are commonly counted on Earth?",
+        "scores": {
+          "baseline": 0.0,
+          "commonsense_choice": 1.0,
+          "format_following": 0.0,
+          "chinese_semantic": 0.0,
+          "calculation_error": 1.0,
+          "short_reasoning": 1.0,
+          "arithmetic_power_log": 1.0,
+          "always_all": 0.0
+        },
+        "config": "short_reasoning",
+        "output": " 1. **Identify the continents:**\n   - The world is divided into seven major continents:\n     1. Asia\n     2. Africa\n     3. North America\n     4. South America\n     5. Europe\n     6. Australia\n     7. Antarctica",
+        "baseline_output": " The most widely recognized continent is Africa, which includes all of the following: 1. North America 2. South America 3. Antarctica 4. Europe\nAnswer:\n\nTo determine how many continents are commonly counted on Earth, let's analyze each option step by step:\n\n1. **North America**: This continent"
+      },
+      {
+        "category": "commonsense",
+        "prompt": "How many continents are commonly counted on Earth?",
+        "scores": {
+          "baseline": 0.0,
+          "commonsense_choice": 1.0,
+          "format_following": 0.0,
+          "chinese_semantic": 0.0,
+          "calculation_error": 1.0,
+          "short_reasoning": 1.0,
+          "arithmetic_power_log": 1.0,
+          "always_all": 0.0
+        },
+        "config": "arithmetic_power_log",
+        "output": " 1. **Identify the continents:**\n   - The world is divided into seven major continents:\n     1. Asia\n     2. Africa\n     3. North America\n     4. South America\n     5. Europe\n     6. Australia\n     7. Antarctica",
+        "baseline_output": " The most widely recognized continent is Africa, which includes all of the following: 1. North America 2. South America 3. Antarctica 4. Europe\nAnswer:\n\nTo determine how many continents are commonly counted on Earth, let's analyze each option step by step:\n\n1. **North America**: This continent"
+      }
+    ],
+    "baseline_wrong_all_wrong": [
+      {
+        "category": "arithmetic",
+        "prompt": "What is 18 + 24?",
+        "scores": {
+          "baseline": 0.0,
+          "commonsense_choice": 0.0,
+          "format_following": 0.0,
+          "chinese_semantic": 0.0,
+          "calculation_error": 0.0,
+          "short_reasoning": 0.0,
+          "arithmetic_power_log": 0.0,
+          "always_all": 0.0
+        }
+      },
+      {
+        "category": "arithmetic",
+        "prompt": "What is 9 times 8?",
+        "scores": {
+          "baseline": 0.0,
+          "commonsense_choice": 0.0,
+          "format_following": 0.0,
+          "chinese_semantic": 0.0,
+          "calculation_error": 0.0,
+          "short_reasoning": 0.0,
+          "arithmetic_power_log": 0.0,
+          "always_all": 0.0
+        }
+      },
+      {
+        "category": "arithmetic",
+        "prompt": "What is 12 times 11?",
+        "scores": {
+          "baseline": 0.0,
+          "commonsense_choice": 0.0,
+          "format_following": 0.0,
+          "chinese_semantic": 0.0,
+          "calculation_error": 0.0,
+          "short_reasoning": 0.0,
+          "arithmetic_power_log": 0.0,
+          "always_all": 0.0
+        }
+      }
+    ],
+    "near_miss": []
+  },
+  "unique_by_block": {
+    "chinese_semantic": [
+      {
+        "category": "factual_constants",
+        "prompt": "Answer briefly: What is the approximate acceleration due to gravity on Earth in m/s^2?",
+        "scores": {
+          "baseline": 0.0,
+          "commonsense_choice": 0.0,
+          "format_following": 0.0,
+          "chinese_semantic": 1.0,
+          "calculation_error": 0.0,
+          "short_reasoning": 0.0,
+          "arithmetic_power_log": 0.0,
+          "always_all": 0.0
+        },
+        "config": "chinese_semantic",
+        "output": " To find the approximate acceleration due to gravity on Earth, we can use the formula:\n\na = g\n\nwhere a is the acceleration due to gravity and g is approximately 9.81 m/s^2.\n\nTherefore, the approximate acceleration due to gravity on Earth is 9.81 meters per second squared (",
+        "baseline_output": " To determine the approximate acceleration due to gravity on Earth, we can use the formula:\n\n\\[ g = \\frac{GM}{R^2} \\]\n\nwhere:\n- \\( g \\) is the acceleration due to gravity,\n- \\( G \\) is the gravitational constant (\\( 6.674 \\times"
+      }
+    ]
+  },
+  "best_by_sample": [
+    {
+      "index": 0,
+      "category": "arithmetic",
+      "prompt": "What is 18 + 24?",
+      "best_config": "baseline",
+      "best_score": 0.0,
+      "baseline_score": 0.0,
+      "delta": 0.0
+    },
+    {
+      "index": 1,
+      "category": "arithmetic",
+      "prompt": "What is 37 + 45?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 2,
+      "category": "arithmetic",
+      "prompt": "What is 56 + 29?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 3,
+      "category": "arithmetic",
+      "prompt": "What is 123 + 77?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 4,
+      "category": "arithmetic",
+      "prompt": "What is 208 + 315?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 5,
+      "category": "arithmetic",
+      "prompt": "What is 91 + 64?",
+      "best_config": "chinese_semantic",
+      "best_score": 1.0,
+      "baseline_score": 0.0,
+      "delta": 1.0
+    },
+    {
+      "index": 6,
+      "category": "arithmetic",
+      "prompt": "What is 72 + 38?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 7,
+      "category": "arithmetic",
+      "prompt": "What is 145 + 255?",
+      "best_config": "chinese_semantic",
+      "best_score": 1.0,
+      "baseline_score": 0.0,
+      "delta": 1.0
+    },
+    {
+      "index": 8,
+      "category": "arithmetic",
+      "prompt": "What is 9 times 8?",
+      "best_config": "baseline",
+      "best_score": 0.0,
+      "baseline_score": 0.0,
+      "delta": 0.0
+    },
+    {
+      "index": 9,
+      "category": "arithmetic",
+      "prompt": "What is 12 times 11?",
+      "best_config": "baseline",
+      "best_score": 0.0,
+      "baseline_score": 0.0,
+      "delta": 0.0
+    },
+    {
+      "index": 10,
+      "category": "factual_constants",
+      "prompt": "What is the speed of light in vacuum in meters per second?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 11,
+      "category": "factual_constants",
+      "prompt": "Answer briefly: What is the speed of light in vacuum in meters per second?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 12,
+      "category": "factual_constants",
+      "prompt": "Give the standard value: What is the speed of light in vacuum in meters per second?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 13,
+      "category": "factual_constants",
+      "prompt": "In one short answer, What is the speed of light in vacuum in meters per second?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 14,
+      "category": "factual_constants",
+      "prompt": "State the commonly used answer: What is the speed of light in vacuum in meters per second?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 15,
+      "category": "factual_constants",
+      "prompt": "What is the approximate acceleration due to gravity on Earth in m/s^2?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 16,
+      "category": "factual_constants",
+      "prompt": "Answer briefly: What is the approximate acceleration due to gravity on Earth in m/s^2?",
+      "best_config": "chinese_semantic",
+      "best_score": 1.0,
+      "baseline_score": 0.0,
+      "delta": 1.0
+    },
+    {
+      "index": 17,
+      "category": "factual_constants",
+      "prompt": "Give the standard value: What is the approximate acceleration due to gravity on Earth in m/s^2?",
+      "best_config": "chinese_semantic",
+      "best_score": 1.0,
+      "baseline_score": 0.0,
+      "delta": 1.0
+    },
+    {
+      "index": 18,
+      "category": "factual_constants",
+      "prompt": "In one short answer, What is the approximate acceleration due to gravity on Earth in m/s^2?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 19,
+      "category": "factual_constants",
+      "prompt": "State the commonly used answer: What is the approximate acceleration due to gravity on Earth in m/s^2?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 20,
+      "category": "commonsense",
+      "prompt": "What is the capital of France?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 21,
+      "category": "commonsense",
+      "prompt": "Which planet is known as the Red Planet?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 22,
+      "category": "commonsense",
+      "prompt": "What color is the sky on a clear day?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 23,
+      "category": "commonsense",
+      "prompt": "Which ocean is the largest on Earth?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 24,
+      "category": "commonsense",
+      "prompt": "How many continents are commonly counted on Earth?",
+      "best_config": "commonsense_choice",
+      "best_score": 1.0,
+      "baseline_score": 0.0,
+      "delta": 1.0
+    },
+    {
+      "index": 25,
+      "category": "commonsense",
+      "prompt": "Which organ pumps blood through the body?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 26,
+      "category": "commonsense",
+      "prompt": "What do bees produce?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 27,
+      "category": "commonsense",
+      "prompt": "Which gas do plants absorb from the atmosphere?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 28,
+      "category": "commonsense",
+      "prompt": "What is the tallest mountain in the world?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 29,
+      "category": "commonsense",
+      "prompt": "Which country is famous for the Eiffel Tower?",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 30,
+      "category": "code",
+      "prompt": "Write a Python function that returns the sum of a list of integers. Use concise wording. Variant 1.",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 31,
+      "category": "code",
+      "prompt": "Write Python code to reverse a string. Use concise wording. Variant 1.",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 32,
+      "category": "code",
+      "prompt": "Explain what a hash map is in one paragraph. Use concise wording. Variant 1.",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 33,
+      "category": "code",
+      "prompt": "Write a SQL query to select all rows from a users table. Use concise wording. Variant 1.",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 34,
+      "category": "code",
+      "prompt": "What is the time complexity of binary search? Use concise wording. Variant 1.",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 35,
+      "category": "code",
+      "prompt": "Write a regex that roughly validates an email address. Use concise wording. Variant 1.",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 36,
+      "category": "code",
+      "prompt": "Explain the difference between GET and POST. Use concise wording. Variant 1.",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 37,
+      "category": "code",
+      "prompt": "Write Python code to count words in a string. Use concise wording. Variant 1.",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 38,
+      "category": "code",
+      "prompt": "What is a unit test? Use concise wording. Variant 1.",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 39,
+      "category": "code",
+      "prompt": "Explain recursion with a short example. Use concise wording. Variant 1.",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 40,
+      "category": "chinese",
+      "prompt": "中国的首都是哪个城市？ 请简短回答。版本1。",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 41,
+      "category": "chinese",
+      "prompt": "请用中文解释什么是人工智能。 请简短回答。版本1。",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 42,
+      "category": "chinese",
+      "prompt": "一年有多少个月？ 请简短回答。版本1。",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 43,
+      "category": "chinese",
+      "prompt": "请写一句关于学习的中文句子。 请简短回答。版本1。",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 44,
+      "category": "chinese",
+      "prompt": "水的化学式是什么？ 请简短回答。版本1。",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 45,
+      "category": "chinese",
+      "prompt": "太阳从哪个方向升起？ 请简短回答。版本1。",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 46,
+      "category": "chinese",
+      "prompt": "什么是自然语言处理？ 请简短回答。版本1。",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 47,
+      "category": "chinese",
+      "prompt": "中秋节通常会吃什么？ 请简短回答。版本1。",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 48,
+      "category": "chinese",
+      "prompt": "请列举三种水果。 请简短回答。版本1。",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 49,
+      "category": "chinese",
+      "prompt": "长城位于哪个国家？ 请简短回答。版本1。",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 50,
+      "category": "reasoning",
+      "prompt": "If a book costs $20 after a 20% discount, what was the original price? Explain briefly. Variant 1.",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 51,
+      "category": "reasoning",
+      "prompt": "A farmer has chickens and cows. There are 10 heads and 28 legs. How many chickens are there? Explain briefly. Variant 1.",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 52,
+      "category": "reasoning",
+      "prompt": "If today is Monday, what day will it be in 10 days? Explain briefly. Variant 1.",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 53,
+      "category": "reasoning",
+      "prompt": "Two people start at the same point and walk in opposite directions for 3 km. How far apart are they? Explain briefly. Variant 1.",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 54,
+      "category": "reasoning",
+      "prompt": "You flip a fair coin twice. What is the probability of two heads? Explain briefly. Variant 1.",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 55,
+      "category": "reasoning",
+      "prompt": "A car travels 30 km in 30 minutes. What is its average speed in km/h? Explain briefly. Variant 1.",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 56,
+      "category": "reasoning",
+      "prompt": "If one box holds 6 bottles, how many boxes are needed for 26 bottles? Explain briefly. Variant 1.",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 57,
+      "category": "reasoning",
+      "prompt": "What is heavier: one kilogram of iron or one kilogram of cotton? Explain briefly. Variant 1.",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 58,
+      "category": "reasoning",
+      "prompt": "If all roses are flowers and some flowers fade quickly, must all roses fade quickly? Explain briefly. Variant 1.",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    },
+    {
+      "index": 59,
+      "category": "reasoning",
+      "prompt": "A doctor gives you 3 pills and says take one every half hour. How long will the pills last? Explain briefly. Variant 1.",
+      "best_config": "baseline",
+      "best_score": 1.0,
+      "baseline_score": 1.0,
+      "delta": 0.0
+    }
+  ]
+}

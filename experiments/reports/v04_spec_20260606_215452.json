@@ -1,0 +1,92 @@
+[
+  {
+    "model_name": "Baseline",
+    "quant": "FP16",
+    "num_params": "0.5B",
+    "device": "cpu",
+    "category_scores": {
+      "commonsense": 0.7,
+      "math": 0.3,
+      "code": 1.0,
+      "chinese": 1.0,
+      "reasoning": 1.0
+    },
+    "overall_score": 0.7777777777777778,
+    "avg_tokens_per_sec": 20.90405665468646,
+    "avg_latency_ms": 1754.045507642958,
+    "peak_memory_mb": 942.29296875,
+    "total_prompts": 45
+  },
+  {
+    "model_name": "Only general",
+    "quant": "FP16+blocks",
+    "num_params": "0.5B",
+    "device": "cpu",
+    "category_scores": {
+      "commonsense": 0.7,
+      "math": 0.3,
+      "code": 1.0,
+      "chinese": 1.0,
+      "reasoning": 1.0
+    },
+    "overall_score": 0.7777777777777778,
+    "avg_tokens_per_sec": 15.535068726958675,
+    "avg_latency_ms": 2194.318511750963,
+    "peak_memory_mb": 942.29296875,
+    "total_prompts": 45
+  },
+  {
+    "model_name": "Only math",
+    "quant": "FP16+blocks",
+    "num_params": "0.5B",
+    "device": "cpu",
+    "category_scores": {
+      "commonsense": 0.8,
+      "math": 0.3,
+      "code": 1.0,
+      "chinese": 1.0,
+      "reasoning": 1.0
+    },
+    "overall_score": 0.8,
+    "avg_tokens_per_sec": 16.36493541899189,
+    "avg_latency_ms": 2191.677861743503,
+    "peak_memory_mb": 942.29296875,
+    "total_prompts": 45
+  },
+  {
+    "model_name": "Only code",
+    "quant": "FP16+blocks",
+    "num_params": "0.5B",
+    "device": "cpu",
+    "category_scores": {
+      "commonsense": 0.8,
+      "math": 0.3,
+      "code": 1.0,
+      "chinese": 0.95,
+      "reasoning": 1.0
+    },
+    "overall_score": 0.7888888888888889,
+    "avg_tokens_per_sec": 16.874142876591716,
+    "avg_latency_ms": 2074.17942682902,
+    "peak_memory_mb": 942.29296875,
+    "total_prompts": 45
+  },
+  {
+    "model_name": "Only chinese",
+    "quant": "FP16+blocks",
+    "num_params": "0.5B",
+    "device": "cpu",
+    "category_scores": {
+      "commonsense": 0.8,
+      "math": 0.3,
+      "code": 1.0,
+      "chinese": 1.0,
+      "reasoning": 1.0
+    },
+    "overall_score": 0.8,
+    "avg_tokens_per_sec": 16.83516831502195,
+    "avg_latency_ms": 2196.460236443414,
+    "peak_memory_mb": 942.29296875,
+    "total_prompts": 45
+  }
+]

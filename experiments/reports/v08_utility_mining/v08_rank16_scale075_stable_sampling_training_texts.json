@@ -1,0 +1,7 @@
+[
+  "Utility block: format_following\nQuestion: What is the speed of light in vacuum?\nPreferred answer:\nThe speed of light in a vacuum is approximately 299,792,458 meters per second. This value has been determined through experiments with various materials and conditions, including air, water, and glass.\n\nThe speed of light in a vacuum is also known as the speed of electromagnetic waves or the",
+  "Utility block: format_following\nQuestion: What is the square root of 144?\nPreferred answer:\nTo find the square root of \\(144\\), we can use a calculator or estimate it using known perfect squares. Let's go through the steps:\n\n1. **Estimate the square root**: We know that \\(12^2 = 144\\) and \\(13^2 = 1",
+  "Utility block: chinese_semantic\nQuestion: What is 18 + 24?\nPreferred answer:\nTo find the sum of 18 and 24, you simply add them together:\n\n\\[ 18 + 24 = 42 \\]\n\nSo, 18 plus 24 equals 42.",
+  "Utility block: commonsense_choice\nQuestion: What is 18 + 24?\nPreferred answer:\nTo solve the problem of adding 18 and 24, we can follow these steps:\n\n1. Start with the number 18.\n2. Add the next whole number to it, which is 24.\n\nSo, \\(18 + 24 = 42\\).\n\nTherefore, the",
+  "Utility block: format_following\nQuestion: What is 15% of 80?\nPreferred answer:\nTo find 15% of 80, you can multiply 80 by 0.15 (since 15% is the same as 15/100 or 0.1).\n\n\\( 80 \\times 0.15 = 12 \\)\n\nSo"
+]
