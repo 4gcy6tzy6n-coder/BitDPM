@@ -6,19 +6,19 @@
   <title>BitDPM - Runtime Selective Parameter Blocks</title>
   <style>
     :root {
-      --bg: #080b11;
-      --panel: #101722;
-      --panel-2: #141f2d;
-      --line: #263545;
-      --text: #eef4f8;
-      --muted: #8b9bad;
-      --blue: #52a8ff;
-      --cyan: #2de2d1;
-      --green: #41d985;
-      --amber: #f6b44b;
-      --red: #ff6961;
-      --violet: #9d8cff;
-      --shadow: 0 24px 80px rgba(0, 0, 0, 0.32);
+      --bg: #f7f9fc;
+      --panel: #ffffff;
+      --panel-2: #f1f5f9;
+      --line: #d9e3ee;
+      --text: #172033;
+      --muted: #687789;
+      --blue: #2563eb;
+      --cyan: #0f9f9a;
+      --green: #17a765;
+      --amber: #d88418;
+      --red: #dc4a43;
+      --violet: #7467d6;
+      --shadow: 0 18px 54px rgba(40, 58, 84, 0.12);
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -28,9 +28,9 @@
     body {
       min-height: 100vh;
       background:
-        radial-gradient(circle at 18% 8%, rgba(82, 168, 255, 0.18), transparent 30%),
-        radial-gradient(circle at 88% 18%, rgba(45, 226, 209, 0.12), transparent 24%),
-        linear-gradient(180deg, #080b11 0%, #0c1119 46%, #080b11 100%);
+        linear-gradient(120deg, rgba(37, 99, 235, 0.08), transparent 34%),
+        linear-gradient(240deg, rgba(15, 159, 154, 0.09), transparent 32%),
+        linear-gradient(180deg, #ffffff 0%, #f7f9fc 48%, #eef4f8 100%);
       color: var(--text);
       font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       line-height: 1.45;
@@ -45,7 +45,7 @@
       align-items: center;
       justify-content: space-between;
       gap: 16px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      border-bottom: 1px solid var(--line);
     }
 
     .brand {
@@ -59,14 +59,15 @@
       width: 34px;
       height: 34px;
       border-radius: 8px;
-      background: linear-gradient(135deg, var(--blue), var(--cyan));
-      box-shadow: 0 0 32px rgba(82, 168, 255, 0.38);
+      background: #ffffff;
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
       display: grid;
       place-items: center;
       flex: 0 0 auto;
     }
 
-    .mark svg { width: 22px; height: 22px; fill: none; stroke: #071018; stroke-width: 2.6; stroke-linecap: round; stroke-linejoin: round; }
+    .mark svg { width: 22px; height: 22px; fill: none; stroke: var(--blue); stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
 
     .brand h1 { font-size: 18px; letter-spacing: 0; line-height: 1; }
     .brand span { color: var(--muted); font-size: 12px; white-space: nowrap; }
@@ -88,7 +89,7 @@
       transition: 0.2s ease;
     }
 
-    .nav a:hover { color: var(--text); border-color: rgba(255, 255, 255, 0.12); background: rgba(255,255,255,0.04); }
+    .nav a:hover { color: var(--text); border-color: var(--line); background: #ffffff; }
 
     .hero {
       display: grid;
@@ -111,7 +112,7 @@
 
     .hero h2 span {
       color: transparent;
-      background: linear-gradient(90deg, var(--blue), var(--cyan) 50%, var(--green));
+      background: linear-gradient(90deg, var(--blue), var(--cyan) 54%, var(--green));
       -webkit-background-clip: text;
       background-clip: text;
     }
@@ -131,8 +132,8 @@
 
     .signal {
       min-height: 86px;
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      background: rgba(16, 23, 34, 0.76);
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.88);
       border-radius: 8px;
       padding: 14px;
       box-shadow: var(--shadow);
@@ -143,7 +144,7 @@
 
     .cta-row { display: flex; gap: 12px; flex-wrap: wrap; }
     .button {
-      border: 1px solid rgba(255,255,255,0.14);
+      border: 1px solid var(--line);
       color: var(--text);
       text-decoration: none;
       border-radius: 8px;
@@ -152,22 +153,22 @@
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      background: rgba(255, 255, 255, 0.04);
+      background: #ffffff;
       font-size: 13px;
       font-weight: 700;
     }
-    .button.primary { background: linear-gradient(135deg, rgba(82,168,255,0.24), rgba(45,226,209,0.16)); border-color: rgba(82,168,255,0.4); }
+    .button.primary { background: linear-gradient(135deg, rgba(37,99,235,0.12), rgba(15,159,154,0.12)); border-color: rgba(37,99,235,0.28); color: #113b78; }
     .button svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2; }
 
     .stage {
       position: relative;
       min-height: 560px;
-      border: 1px solid rgba(255, 255, 255, 0.12);
+      border: 1px solid var(--line);
       border-radius: 12px;
       background:
-        linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px),
-        rgba(8, 13, 20, 0.72);
+        linear-gradient(rgba(37,99,235,0.07) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(37,99,235,0.07) 1px, transparent 1px),
+        rgba(255, 255, 255, 0.84);
       background-size: 34px 34px;
       box-shadow: var(--shadow);
       overflow: hidden;
@@ -177,17 +178,17 @@
       content: "";
       position: absolute;
       inset: 0;
-      background: radial-gradient(circle at 50% 45%, rgba(82,168,255,0.14), transparent 42%);
+      background: radial-gradient(circle at 50% 45%, rgba(37,99,235,0.1), transparent 44%);
       pointer-events: none;
     }
 
     .engine { position: absolute; inset: 24px; }
     .engine svg { width: 100%; height: 100%; overflow: visible; }
 
-    .node rect { fill: rgba(16, 23, 34, 0.92); stroke: rgba(255, 255, 255, 0.16); stroke-width: 1; }
+    .node rect { fill: rgba(255, 255, 255, 0.96); stroke: rgba(104, 119, 137, 0.28); stroke-width: 1; }
     .node text { fill: var(--text); font-weight: 800; font-size: 13px; }
     .node .label { fill: var(--muted); font-weight: 600; font-size: 10px; }
-    .node.active rect { stroke: var(--cyan); filter: drop-shadow(0 0 12px rgba(45, 226, 209, 0.28)); }
+    .node.active rect { stroke: var(--cyan); filter: drop-shadow(0 8px 16px rgba(15, 159, 154, 0.12)); }
 
     .route-line {
       fill: none;
@@ -210,7 +211,7 @@
       position: absolute;
       width: 220px;
       height: 220px;
-      border: 1px solid rgba(82,168,255,0.18);
+      border: 1px solid rgba(37,99,235,0.16);
       border-radius: 50%;
       left: calc(50% - 110px);
       top: calc(50% - 110px);
@@ -222,8 +223,8 @@
       width: 10px;
       height: 10px;
       border-radius: 50%;
-      background: var(--cyan);
-      box-shadow: 0 0 24px var(--cyan);
+      background: var(--blue);
+      box-shadow: 0 0 18px rgba(37, 99, 235, 0.34);
       position: absolute;
       left: 50%;
       top: -5px;
@@ -238,22 +239,22 @@
     .grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
 
     .panel {
-      border: 1px solid rgba(255, 255, 255, 0.11);
-      background: rgba(16, 23, 34, 0.78);
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.92);
       border-radius: 10px;
       padding: 18px;
       min-width: 0;
-      box-shadow: 0 16px 48px rgba(0,0,0,0.22);
+      box-shadow: var(--shadow);
     }
 
     .panel-title { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 14px; }
     .panel-title h4 { font-size: 14px; letter-spacing: 0; }
-    .badge { color: var(--muted); border: 1px solid rgba(255,255,255,0.12); border-radius: 999px; padding: 5px 9px; font-size: 11px; }
+    .badge { color: var(--muted); border: 1px solid var(--line); background: #f8fafc; border-radius: 999px; padding: 5px 9px; font-size: 11px; }
 
     .donut-grid { display: grid; grid-template-columns: 130px 1fr; gap: 18px; align-items: center; min-height: 164px; }
     .donut { width: 130px; height: 130px; transform: rotate(-90deg); }
     .donut circle { fill: none; stroke-width: 14; }
-    .donut .track { stroke: rgba(255,255,255,0.08); }
+    .donut .track { stroke: #e5edf5; }
     .donut .meter { stroke: var(--green); stroke-linecap: round; stroke-dasharray: 290; stroke-dashoffset: 290; animation: draw 1.4s ease forwards; }
     .donut-label { position: absolute; inset: 0; display: grid; place-items: center; text-align: center; pointer-events: none; }
     .donut-wrap { position: relative; width: 130px; height: 130px; }
@@ -262,7 +263,7 @@
 
     .metric-list { display: grid; gap: 10px; }
     .metric-line { display: grid; grid-template-columns: 64px 1fr 48px; gap: 10px; align-items: center; font-size: 12px; color: var(--muted); }
-    .rail { height: 8px; background: rgba(255,255,255,0.08); border-radius: 999px; overflow: hidden; }
+    .rail { height: 8px; background: #e8eef5; border-radius: 999px; overflow: hidden; }
     .fill { height: 100%; border-radius: inherit; transform-origin: left; animation: rise 1.2s ease forwards; }
 
     .bars { height: 260px; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 10px; align-items: end; padding-top: 10px; }
@@ -272,8 +273,8 @@
     .bar-cell span { display: block; margin-top: 8px; white-space: normal; }
 
     .line-chart { width: 100%; height: 230px; }
-    .line-chart .grid { stroke: rgba(255,255,255,0.08); stroke-width: 1; }
-    .line-chart .axis { stroke: rgba(255,255,255,0.18); stroke-width: 1; }
+    .line-chart .grid { stroke: #e8eef5; stroke-width: 1; }
+    .line-chart .axis { stroke: #cfdbe8; stroke-width: 1; }
     .line-chart .series { fill: none; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 700; stroke-dashoffset: 700; animation: draw 1.8s ease forwards; }
     .line-chart text { fill: var(--muted); font-size: 11px; }
     .dot { animation: pulse 1.8s ease-in-out infinite; transform-origin: center; }
@@ -281,10 +282,10 @@
     .matrix { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 9px; }
     .matrix-item {
       min-height: 80px;
-      border: 1px solid rgba(255,255,255,0.1);
+      border: 1px solid var(--line);
       border-radius: 8px;
       padding: 11px;
-      background: rgba(255,255,255,0.035);
+      background: #f8fafc;
       position: relative;
       overflow: hidden;
     }
@@ -302,9 +303,9 @@
     .timeline { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 12px; position: relative; }
     .step {
       min-height: 116px;
-      border: 1px solid rgba(255,255,255,0.11);
+      border: 1px solid var(--line);
       border-radius: 8px;
-      background: rgba(255,255,255,0.04);
+      background: #ffffff;
       padding: 14px;
       position: relative;
     }
@@ -325,7 +326,7 @@
     .footer {
       padding: 32px 0 18px;
       color: var(--muted);
-      border-top: 1px solid rgba(255,255,255,0.08);
+      border-top: 1px solid var(--line);
       display: flex;
       justify-content: space-between;
       gap: 20px;
@@ -374,7 +375,7 @@
     <header class="topbar">
       <div class="brand">
         <div class="mark" aria-hidden="true">
-          <svg viewBox="0 0 24 24"><path d="M5 12h14"/><path d="M12 5v14"/><path d="M7 7l10 10"/><path d="M17 7L7 17"/></svg>
+          <svg viewBox="0 0 24 24"><rect x="4" y="5" width="7" height="6" rx="1.5"/><rect x="13" y="5" width="7" height="6" rx="1.5"/><rect x="8.5" y="13" width="7" height="6" rx="1.5"/><path d="M11 8h2"/><path d="M12 11v2"/></svg>
         </div>
         <div>
           <h1>BitDPM</h1>
@@ -406,9 +407,9 @@
               <svg viewBox="0 0 24 24"><path d="M4 19V5"/><path d="M4 19h16"/><path d="M8 16V9"/><path d="M13 16V6"/><path d="M18 16v-4"/></svg>
               View metrics
             </a>
-            <a class="button" href="https://github.com/4gcy6tzy6n-coder/BitDPM">
-              <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3"/><path d="M15 22v-3.9a3.4 3.4 0 0 0-.9-2.6c3-.3 6.1-1.5 6.1-6.7a5.2 5.2 0 0 0-1.4-3.6 4.8 4.8 0 0 0-.1-3.6s-1.1-.3-3.7 1.4a12.8 12.8 0 0 0-6.7 0C5.7.3 4.6.6 4.6.6a4.8 4.8 0 0 0-.1 3.6 5.2 5.2 0 0 0-1.4 3.6c0 5.2 3.1 6.4 6.1 6.7a3.4 3.4 0 0 0-.9 2.6V22"/></svg>
-              GitHub
+            <a class="button" href="#ablation">
+              <svg viewBox="0 0 24 24"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/><path d="M8 5v14"/><path d="M16 5v14"/></svg>
+              Ablation map
             </a>
           </div>
         </div>
@@ -421,7 +422,7 @@
               <desc id="arch-desc">CPU router selects active parameter blocks, GPU composes them with the frozen backbone, and inactive blocks stay cold in storage.</desc>
               <defs>
                 <marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
-                  <path d="M0,0 L9,4.5 L0,9 Z" fill="#52a8ff"/>
+                  <path d="M0,0 L9,4.5 L0,9 Z" fill="#2563eb"/>
                 </marker>
               </defs>
               <path class="route-line" marker-end="url(#arrow)" d="M116 130 C230 80 260 240 350 212"/>
@@ -459,9 +460,9 @@
               </g>
 
               <g transform="translate(532 314)">
-                <rect width="116" height="116" rx="58" fill="rgba(65,217,133,0.12)" stroke="rgba(65,217,133,0.56)"/>
-                <text x="58" y="55" text-anchor="middle" fill="#41d985" font-size="28" font-weight="900">+6</text>
-                <text x="58" y="78" text-anchor="middle" fill="#8b9bad" font-size="12" font-weight="700">net gain</text>
+                <rect width="116" height="116" rx="58" fill="rgba(23,167,101,0.1)" stroke="rgba(23,167,101,0.46)"/>
+                <text x="58" y="55" text-anchor="middle" fill="#17a765" font-size="28" font-weight="900">+6</text>
+                <text x="58" y="78" text-anchor="middle" fill="#687789" font-size="12" font-weight="700">net gain</text>
               </g>
             </svg>
           </div>
@@ -509,14 +510,14 @@
             <svg class="line-chart" viewBox="0 0 360 230" role="img" aria-label="Router result line chart">
               <path class="grid" d="M36 38H330M36 88H330M36 138H330M36 188H330"/>
               <path class="axis" d="M36 24V196H330"/>
-              <path class="series" stroke="#41d985" d="M46 178C82 172 96 146 126 132C160 116 174 124 202 92C230 62 262 48 320 42"/>
-              <path class="series" stroke="#ff6961" style="animation-delay:.25s" d="M46 188C112 188 168 188 222 188C262 188 292 188 320 188"/>
-              <circle class="dot" cx="320" cy="42" r="6" fill="#41d985"/>
-              <circle cx="320" cy="188" r="5" fill="#ff6961"/>
+              <path class="series" stroke="#17a765" d="M46 178C82 172 96 146 126 132C160 116 174 124 202 92C230 62 262 48 320 42"/>
+              <path class="series" stroke="#dc4a43" style="animation-delay:.25s" d="M46 188C112 188 168 188 222 188C262 188 292 188 320 188"/>
+              <circle class="dot" cx="320" cy="42" r="6" fill="#17a765"/>
+              <circle cx="320" cy="188" r="5" fill="#dc4a43"/>
               <text x="42" y="216">fixes</text>
               <text x="260" y="216">breaks</text>
-              <text x="292" y="35" fill="#41d985">6</text>
-              <text x="292" y="181" fill="#ff6961">0</text>
+              <text x="292" y="35" fill="#17a765">6</text>
+              <text x="292" y="181" fill="#dc4a43">0</text>
             </svg>
           </article>
         </div>
@@ -545,29 +546,29 @@
             <svg viewBox="0 0 560 260" style="width:100%; height:260px;" role="img" aria-label="BitDPM composition rule">
               <defs>
                 <marker id="flow-arrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
-                  <path d="M0,0 L9,4.5 L0,9 Z" fill="#2de2d1"/>
+                  <path d="M0,0 L9,4.5 L0,9 Z" fill="#0f9f9a"/>
                 </marker>
               </defs>
               <rect x="24" y="82" width="122" height="96" rx="10" fill="rgba(82,168,255,.12)" stroke="rgba(82,168,255,.56)"/>
-              <text x="85" y="124" text-anchor="middle" fill="#eef4f8" font-size="16" font-weight="900">W_main</text>
-              <text x="85" y="150" text-anchor="middle" fill="#8b9bad" font-size="12">frozen</text>
-              <path d="M154 130H216" stroke="#2de2d1" stroke-width="3" marker-end="url(#flow-arrow)"/>
+              <text x="85" y="124" text-anchor="middle" fill="#172033" font-size="16" font-weight="900">W_main</text>
+              <text x="85" y="150" text-anchor="middle" fill="#687789" font-size="12">frozen</text>
+              <path d="M154 130H216" stroke="#0f9f9a" stroke-width="3" marker-end="url(#flow-arrow)"/>
               <g transform="translate(226 42)">
                 <rect width="122" height="54" rx="9" fill="rgba(65,217,133,.12)" stroke="rgba(65,217,133,.56)"/>
-                <text x="61" y="33" text-anchor="middle" fill="#41d985" font-size="14" font-weight="900">g1 Delta W</text>
+                <text x="61" y="33" text-anchor="middle" fill="#17a765" font-size="14" font-weight="900">g1 Delta W</text>
               </g>
               <g transform="translate(226 104)">
                 <rect width="122" height="54" rx="9" fill="rgba(82,168,255,.12)" stroke="rgba(82,168,255,.56)"/>
-                <text x="61" y="33" text-anchor="middle" fill="#52a8ff" font-size="14" font-weight="900">g2 Delta W</text>
+                <text x="61" y="33" text-anchor="middle" fill="#2563eb" font-size="14" font-weight="900">g2 Delta W</text>
               </g>
               <g transform="translate(226 166)">
                 <rect width="122" height="54" rx="9" fill="rgba(255,105,97,.10)" stroke="rgba(255,105,97,.44)" stroke-dasharray="5 5"/>
-                <text x="61" y="33" text-anchor="middle" fill="#ff6961" font-size="14" font-weight="900">inactive</text>
+                <text x="61" y="33" text-anchor="middle" fill="#dc4a43" font-size="14" font-weight="900">inactive</text>
               </g>
-              <path d="M356 130H420" stroke="#2de2d1" stroke-width="3" marker-end="url(#flow-arrow)"/>
+              <path d="M356 130H420" stroke="#0f9f9a" stroke-width="3" marker-end="url(#flow-arrow)"/>
               <rect x="430" y="82" width="106" height="96" rx="10" fill="rgba(45,226,209,.13)" stroke="rgba(45,226,209,.58)"/>
-              <text x="483" y="124" text-anchor="middle" fill="#eef4f8" font-size="16" font-weight="900">W_eff</text>
-              <text x="483" y="150" text-anchor="middle" fill="#8b9bad" font-size="12">composed</text>
+              <text x="483" y="124" text-anchor="middle" fill="#172033" font-size="16" font-weight="900">W_eff</text>
+              <text x="483" y="150" text-anchor="middle" fill="#687789" font-size="12">composed</text>
             </svg>
           </article>
         </div>
